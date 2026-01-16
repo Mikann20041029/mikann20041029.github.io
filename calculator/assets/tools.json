@@ -1,12 +1,12 @@
-﻿[
-    {
-        "slug":  "length-mm-to-m",
-        "title":  "mm→m 変換",
-        "url":  "/calculator/tools/length-mm-to-m/"
-    },
-    {
-        "slug":  "mass-kg-to-lb",
-        "title":  "kg→lb 変換",
-        "url":  "/calculator/tools/mass-kg-to-lb/"
-    }
+[
+  {
+    "slug": "length-mm-to-m",
+    "title": "mm→m 変換",
+    "url": "/calculator/tools/length-mm-to-m/"
+  },
+  {
+    "slug": "mass-kg-to-lb",
+    "title": "kg→lb 変換",
+    "url": "/calculator/tools/mass-kg-to-lb/"
+  }
 ]
