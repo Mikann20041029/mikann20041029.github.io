@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AdSense収益シミュレーター</title>
+  <link rel="stylesheet" href="/toolbox/assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <a class="brand" href="/toolbox/">
+        <span class="logo"></span><strong>Toolbox</strong>
+      </a>
+      <div class="nav">
+        <a class="chip" href="/toolbox/">ツール一覧</a>
+        <a class="chip" href="/toolbox/disclosure.html">広告/PR</a>
+      </div>
+    </div>
+
+    <div class="hero">
+      <h1>AdSense収益シミュレーター</h1>
+      <p>PV と RPM（1000PVあたりの収益）から、月の目安を出す。</p>
+    </div>
+
+    <div class="card">
+      <div class="row">
+        <div class="field">
+          <label>月間PV</label>
+          <input id="pv" type="number" inputmode="numeric" value="30000" />
+        </div>
+        <div class="field">
+          <label>RPM（円/1000PV）</label>
+          <input id="rpm" type="number" inputmode="decimal" value="200" />
+        </div>
+        <div class="field">
+          <label>—</label>
+          <button class="btn" id="calc">計算</button>
+        </div>
+      </div>
+
+      <div class="kpi">
+        <div class="box">
+          <small>推定月収</small>
+          <strong id="out">-</strong>
+        </div>
+        <div class="box">
+          <small>式</small>
+          <strong id="eq">-</strong>
+        </div>
+      </div>
+
+      <div class="note">
+        RPMはジャンル・国・季節でブレる。まずは「現実の数値」を入れて見積もり用に使う。
+      </div>
+
+      <div class="adbox">
+        <small>AdSense枠（ここに広告コードを入れる）</small>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="/toolbox/">← ツール一覧へ</a>
+    </div>
+  </div>
+
+  <script type="module">
+    import { yen, n } from "/toolbox/assets/util.js";
+    const pv = document.getElementById("pv");
+    const rpm = document.getElementById("rpm");
+    const out = document.getElementById("out");
+    const eq = document.getElementById("eq");
+    document.getElementById("calc").addEventListener("click", () => {
+      const PV = Number(pv.value);
+      const RPM = Number(rpm.value);
+      const y = (PV/1000) * RPM;
+      out.textContent = yen(y);
+      eq.textContent = n(PV) + " / 1000 × " + n(RPM);
+    });
+    document.getElementById("calc").click();
+  </script>
+</body>
+</html>
