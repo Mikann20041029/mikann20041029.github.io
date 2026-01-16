@@ -1,0 +1,86 @@
+﻿name: calculator refresh
+
+on:
+  push:
+    paths:
+      - "calculator/**"
+      - ".github/workflows/calculator-refresh.yml"
+  schedule:
+    - cron: "17 3 * * *"  # JST 12:17
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Rebuild calculator sitemap + tools.json
+        shell: bash
+        run: |
+          python - << 'PY'
+          import os, json, re
+          from datetime import datetime, timezone
+
+          site = "https://mikann20041029.github.io"
+          base = site + "/calculator"
+
+          tool_root = os.path.join("calculator","tools")
+          tools = []
+          if os.path.isdir(tool_root):
+            for slug in sorted(os.listdir(tool_root)):
+              p = os.path.join(tool_root, slug, "index.html")
+              if os.path.isfile(p):
+                title = slug
+                try:
+                  raw = open(p, "r", encoding="utf-8").read()
+                  m = re.search(r"<title>(.*?)</title>", raw, re.I|re.S)
+                  if m: title = re.sub(r"\s+"," ", m.group(1)).strip()
+                except Exception:
+                  pass
+                tools.append({"slug":slug,"title":title,"url":f"/calculator/tools/{slug}/"})
+
+          os.makedirs(os.path.join("calculator","assets"), exist_ok=True)
+          with open(os.path.join("calculator","assets","tools.json"), "w", encoding="utf-8") as f:
+            json.dump(tools, f, ensure_ascii=False, indent=2)
+
+          urls = [
+            base + "/",
+            base + "/about.html",
+            base + "/privacy.html",
+            base + "/contact.html",
+            base + "/404.html",
+          ] + [base + t["url"].replace("/calculator","") for t in tools]
+
+          now = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+          lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+                   '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+          for u in dict.fromkeys(urls):
+            lines += ["  <url>",
+                      f"    <loc>{u}</loc>",
+                      f"    <lastmod>{now}</lastmod>",
+                      "    <changefreq>weekly</changefreq>",
+                      "    <priority>0.6</priority>",
+                      "  </url>"]
+          lines.append("</urlset>")
+
+          with open(os.path.join("calculator","sitemap.xml"), "w", encoding="utf-8") as f:
+            f.write("\n".join(lines))
+          PY
+
+      - name: Commit changes (if any)
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add calculator/assets/tools.json calculator/sitemap.xml || true
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "auto: refresh calculator index"
+            git push
+          fi

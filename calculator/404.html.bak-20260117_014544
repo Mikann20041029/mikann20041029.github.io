@@ -1,0 +1,19 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Not Found | Calculator</title>
+  <link rel="stylesheet" href="/calculator/assets/style.css?v=1">
+  <script defer src="/calculator/assets/chrome.js?v=1"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2>404</h2>
+      <p class="muted">ページが見つからない。</p>
+      <p><a class="btn primary" href="/calculator/">/calculator に戻る</a></p>
+    </div>
+  </div>
+</body>
+</html>

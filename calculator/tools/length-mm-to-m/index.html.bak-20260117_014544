@@ -3,27 +3,26 @@
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
 
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Calculator</title>
+<title>mm→m 変換</title>
 <link rel="stylesheet" href="/calculator/assets/style.css"/>
 <!-- AdSense loader: replace ca-pub-5643751507480712 later -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
 
-  <script defer src="/calculator/assets/chrome.js?v=1"></script>
-</head><body>
+<script src="/calculator/assets/units.js"></script><script src="/calculator/assets/app.js" defer></script>
+</head><body data-page="convert" data-cat="length" data-from="mm" data-to="m">
 <header>
   <meta name="google-adsense-account" content="ca-pub-5643751507480712">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
 <nav><a href="/calculator/">Calculator</a></nav></header>
 <main>
-<h1>Calculator</h1>
+<h1>mm→m 変換</h1>
 <div class="card">
-<ul>
-<li><a href="/calculator/tools/length-mm-to-m/">長さ：mm→m</a></li>
-<li><a href="/calculator/tools/mass-kg-to-lb/">重さ：kg→lb</a></li>
-</ul>
+<label>数値</label><input id="val" inputmode="decimal" value="1"/>
+<label>変換元</label><select id="fromUnit"></select>
+<label>変換先</label><select id="toUnit"></select>
+<button id="swap" type="button">入れ替え</button>
+<div class="result" id="out"></div>
 </div>
-<p class="small">URLは /calculator/ 配下のみ。SNSgroathに干渉しない。</p>
 </main></body></html>
-
 
 
