@@ -1,0 +1,150 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>BMI計算（体重と身長）｜Mikann20041029 Toolbox</title>
+  <meta name="description" content="BMI計算（体重kg・身長cm）と判定（やせ/標準/肥満）を即表示。適正体重（BMI22）も出します。無料。"/>
+  <link rel="canonical" href="https://mikann20041029.github.io/toolbox/bmi.html"/>
+  <link rel="stylesheet" href="./assets/style.css"/>
+  <meta property="og:title" content="BMI計算（体重と身長）｜Mikann20041029 Toolbox"/>
+  <meta property="og:description" content="BMI計算と判定、適正体重（BMI22）を即表示。無料。"/>
+  <meta property="og:url" content="https://mikann20041029.github.io/toolbox/bmi.html"/>
+  <meta property="og:type" content="website"/>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Toolbox Home">
+        <span class="logo"></span>
+        <span class="mascot" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M6 12c0-4 2.7-7 6-7s6 3 6 7-2.7 7-6 7-6-3-6-7Z" fill="rgba(255,95,162,.35)"/>
+            <path d="M8.8 12.3c0-.6.5-1.1 1.1-1.1s1.1.5 1.1 1.1-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1Z" fill="rgba(20,22,28,.75)"/>
+            <path d="M13 12.3c0-.6.5-1.1 1.1-1.1s1.1.5 1.1 1.1-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1Z" fill="rgba(20,22,28,.75)"/>
+            <path d="M9.6 15.3c1 .9 3.8.9 4.8 0" stroke="rgba(20,22,28,.65)" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M5.2 8.2c.9-1.5 2.6-3 4.4-3.6" stroke="rgba(92,200,255,.75)" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M18.8 8.2c-.9-1.5-2.6-3-4.4-3.6" stroke="rgba(123,108,255,.55)" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <strong>Toolbox</strong>
+      </a>
+
+      <nav class="nav">
+        <a class="pill" href="./calc.html">計算機一覧</a>
+        <a class="pill" href="./disclosure.html">広告/PR</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>BMI計算（体重と身長）</h1>
+      <p>体重(kg)と身長(cm)からBMIを計算し、判定と適正体重（BMI22）も出します。</p>
+    </section>
+
+    <section class="grid">
+      <div class="card half">
+        <h2>入力</h2>
+        <div class="row">
+          <div class="field">
+            <label>身長（cm）</label>
+            <input id="h" type="number" inputmode="decimal" placeholder="例：172" value="172"/>
+          </div>
+          <div class="field">
+            <label>体重（kg）</label>
+            <input id="w" type="number" inputmode="decimal" placeholder="例：60" value="60"/>
+          </div>
+          <div class="field" style="flex:0 0 140px; min-width:140px">
+            <label>&nbsp;</label>
+            <button class="btn" id="go">計算</button>
+          </div>
+        </div>
+
+        <div class="kpi">
+          <div class="box">
+            <small>BMI</small>
+            <strong id="bmi">—</strong>
+          </div>
+          <div class="box">
+            <small>判定（目安）</small>
+            <strong id="judge">—</strong>
+          </div>
+          <div class="box">
+            <small>適正体重（BMI22）</small>
+            <strong id="ideal">—</strong>
+          </div>
+        </div>
+
+        <div class="note" id="note">
+          BMI = 体重(kg) ÷ 身長(m)^2。判定は目安です。
+        </div>
+
+        <div class="adbox">
+          <small>PR枠（例：宅食/ジム/健康系）※コンテンツと区別して配置</small>
+        </div>
+
+        <div class="footer">
+          <a href="./calc.html">← 計算機一覧へ</a>
+        </div>
+      </div>
+
+      <div class="card half">
+        <h2>BMIとは？</h2>
+        <p>BMI（Body Mass Index）は、身長と体重から体格の目安を出す指標です。健康の状態は筋肉量や体脂肪率などでも変わるため、BMIはあくまで参考値として使うのが安全です。</p>
+        <h2>よくある質問</h2>
+        <p><b>Q. BMIはいくつが標準？</b><br/>一般的にはBMI 18.5〜25が標準の目安として扱われます（目安）。</p>
+        <p><b>Q. 適正体重（BMI22）って？</b><br/>BMI22を基準にした体重の目安で、身長(m)^2 × 22 で計算します。</p>
+      </div>
+    </section>
+  </div>
+
+<script>
+(function(){
+  const $ = (id)=>document.getElementById(id);
+  function calc(){
+    const hcm = parseFloat($("h").value);
+    const wkg = parseFloat($("w").value);
+    if(!isFinite(hcm) || !isFinite(wkg) || hcm<=0 || wkg<=0){
+      $("bmi").textContent = "—";
+      $("judge").textContent = "—";
+      $("ideal").textContent = "—";
+      $("note").textContent = "数値を正しく入れてください。";
+      return;
+    }
+    const hm = hcm/100;
+    const bmi = wkg/(hm*hm);
+    const bmi2 = Math.round(bmi*10)/10;
+
+    let judge = "標準（目安）";
+    if(bmi < 18.5) judge = "やせ（目安）";
+    else if(bmi < 25) judge = "標準（目安）";
+    else if(bmi < 30) judge = "肥満（1度 目安）";
+    else if(bmi < 35) judge = "肥満（2度 目安）";
+    else if(bmi < 40) judge = "肥満（3度 目安）";
+    else judge = "肥満（4度 目安）";
+
+    const ideal = hm*hm*22;
+    const ideal1 = Math.round(ideal*10)/10;
+
+    $("bmi").textContent = bmi2.toFixed(1);
+    $("judge").textContent = judge;
+    $("ideal").textContent = ideal1.toFixed(1) + " kg";
+    $("note").textContent = `BMI = ${wkg} ÷ (${hm.toFixed(2)}^2) = ${bmi2.toFixed(1)}`;
+  }
+  $("go").addEventListener("click", calc);
+  calc();
+})();
+</script>
+
+<!-- 構造化データ（検索理解を補助） -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"BMI計算（体重と身長）｜Mikann20041029 Toolbox",
+  "url":"https://mikann20041029.github.io/toolbox/bmi.html",
+  "description":"BMI計算（体重kg・身長cm）と判定（やせ/標準/肥満）を即表示。適正体重（BMI22）も出します。無料。"
+}
+</script>
+</body>
+</html>
