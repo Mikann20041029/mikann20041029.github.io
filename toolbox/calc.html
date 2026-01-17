@@ -297,7 +297,31 @@
   }catch(e){}
 })();
 </script>
+<script>
+/*__TOOLBOX_HASH_ROUTER__*/
+(function(){
+  const IDS = ["mortgage","loan","repay","compound","roi","income","bmi","bmr","tdee","bmi22","bodyfat","navy","percent","increase","discount","tip","split","age","days","sleep","gb","fuel","gpa","ads"];
+
+  function goByHash(){
+    const h = (location.hash || '').replace('#','').trim();
+    if(!h) return;
+    // 許可IDだけ遷移（変なhashに飛ばない）
+    if(IDS.indexOf(h) === -1) return;
+    const to = './' + h + '.html';
+    // すでに個別ページなら何もしない
+    if(location.pathname.endsWith('/' + h + '.html')) return;
+    location.replace(to);
+  }
+
+  // hashが変わったら即遷移
+  window.addEventListener('hashchange', goByHash, true);
+
+  // 初回ロード時にhashが付いてたら遷移
+  goByHash();
+})();
+</script>
 </body>
 </html>
+
 
 
