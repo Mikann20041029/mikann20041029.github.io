@@ -1,6 +1,6 @@
 <!doctype html><html lang="ja" lang="en" data-lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Video Compressor (MP4) 鬩包ｽｯ繝ｻ・ｶ驛｢譎｢・ｽ・ｻReduce Size in Browser</title>
+<title>Video Compressor (MP4) 鬯ｩ蛹・ｽｽ・ｯ郢晢ｽｻ繝ｻ・ｶ鬩幢ｽ｢隴趣ｽ｢繝ｻ・ｽ繝ｻ・ｻReduce Size in Browser</title>
 <meta name="description" content="Upload an MP4, choose resolution/FPS/bitrate, see an estimated output size, and compress in your browser (client-side)."/>
 <link rel="stylesheet" href="./style.css"/><!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-VBN5P977ZY"></script>
@@ -16,7 +16,7 @@
 <div class="container">
   <div class="header">
     <div class="brand"><div class="logo" aria-hidden="true"></div>
-      <div><h1>Video Compressor (MP4)</h1><div class="sub">Upload MP4 鬩包ｽｶ驗呻ｽｫ郢晢ｽｻpick settings 鬩包ｽｶ驗呻ｽｫ郢晢ｽｻsee estimate 鬩包ｽｶ驗呻ｽｫ郢晢ｽｻrun in browser.</div></div>
+      <div><h1>Video Compressor (MP4)</h1><div class="sub">Upload MP4 鬯ｩ蛹・ｽｽ・ｶ鬩怜遜・ｽ・ｫ驛｢譎｢・ｽ・ｻpick settings 鬯ｩ蛹・ｽｽ・ｶ鬩怜遜・ｽ・ｫ驛｢譎｢・ｽ・ｻsee estimate 鬯ｩ蛹・ｽｽ・ｶ鬩怜遜・ｽ・ｫ驛｢譎｢・ｽ・ｻrun in browser.</div></div>
     </div>
     <div class="badge">URL: /video-compressor/</div>
   </div>
@@ -32,12 +32,12 @@
 
       <hr/>
 <div class="tipRow">
-  <div class="botIcon" aria-hidden="true"><div class="botFace">・滓ｩｸ・ｽ・､郢晢ｽｻ/div></div>
+  <div class="botIcon" aria-hidden="true"><div class="botFace">繝ｻ貊難ｽｩ・ｸ繝ｻ・ｽ繝ｻ・､驛｢譎｢・ｽ・ｻ/div></div>
   <div class="bubble">
     <b>Heads up (important)</b>
     <ul>
       <li>This tool runs <b>inside your browser</b> (no upload).</li>
-      <li>Max workable file size depends on your device驕ｯ・ｶ陷・ｱ <b>memory (RAM)</b> and browser limits.</li>
+      <li>Max workable file size depends on your device鬩包ｽｯ繝ｻ・ｶ髯ｷﾂ繝ｻ・ｱ <b>memory (RAM)</b> and browser limits.</li>
       <li>If it fails on phone/tablet, try <b>desktop Chrome/Edge</b> or use a smaller clip.</li>
     </ul>
   </div>
@@ -72,15 +72,15 @@
 
       <div class="sectionTitle">3) Estimate & Run</div>
       <div class="kpi">
-        <div><div class="badge">Input</div><div class="v" id="metaIn">鬩包ｽｯ繝ｻ・ｶ驛｢譎｢・ｽ・ｻ/div><div class="sub">Size: <b id="sizeIn">鬩包ｽｯ繝ｻ・ｶ驛｢譎｢・ｽ・ｻ/b></div></div>
-        <div><div class="badge">Estimated output</div><div class="v" id="sizeEst">鬩包ｽｯ繝ｻ・ｶ驛｢譎｢・ｽ・ｻ/div><div class="sub">Actual: <b id="sizeOut">鬩包ｽｯ繝ｻ・ｶ驛｢譎｢・ｽ・ｻ/b></div></div>
+        <div><div class="badge">Input</div><div class="v" id="metaIn">鬯ｩ蛹・ｽｽ・ｯ郢晢ｽｻ繝ｻ・ｶ鬩幢ｽ｢隴趣ｽ｢繝ｻ・ｽ繝ｻ・ｻ/div><div class="sub">Size: <b id="sizeIn">鬯ｩ蛹・ｽｽ・ｯ郢晢ｽｻ繝ｻ・ｶ鬩幢ｽ｢隴趣ｽ｢繝ｻ・ｽ繝ｻ・ｻ/b></div></div>
+        <div><div class="badge">Estimated output</div><div class="v" id="sizeEst">鬯ｩ蛹・ｽｽ・ｯ郢晢ｽｻ繝ｻ・ｶ鬩幢ｽ｢隴趣ｽ｢繝ｻ・ｽ繝ｻ・ｻ/div><div class="sub">Actual: <b id="sizeOut">鬯ｩ蛹・ｽｽ・ｯ郢晢ｽｻ繝ｻ・ｶ鬩幢ｽ｢隴趣ｽ｢繝ｻ・ｽ繝ｻ・ｻ/b></div></div>
       </div>
 
       <div class="row" style="margin-top:12px">
-        <span class="badge">Target: <b id="targetRes">鬩包ｽｯ繝ｻ・ｶ驛｢譎｢・ｽ・ｻ/b></span>
-        <span class="badge">FPS: <b id="targetFps">鬩包ｽｯ繝ｻ・ｶ驛｢譎｢・ｽ・ｻ/b></span>
-        <span class="badge">Video: <b id="videoKbps">鬩包ｽｯ繝ｻ・ｶ驛｢譎｢・ｽ・ｻ/b></span>
-        <span class="badge">Audio: <b id="audioKbps">鬩包ｽｯ繝ｻ・ｶ驛｢譎｢・ｽ・ｻ/b></span>
+        <span class="badge">Target: <b id="targetRes">鬯ｩ蛹・ｽｽ・ｯ郢晢ｽｻ繝ｻ・ｶ鬩幢ｽ｢隴趣ｽ｢繝ｻ・ｽ繝ｻ・ｻ/b></span>
+        <span class="badge">FPS: <b id="targetFps">鬯ｩ蛹・ｽｽ・ｯ郢晢ｽｻ繝ｻ・ｶ鬩幢ｽ｢隴趣ｽ｢繝ｻ・ｽ繝ｻ・ｻ/b></span>
+        <span class="badge">Video: <b id="videoKbps">鬯ｩ蛹・ｽｽ・ｯ郢晢ｽｻ繝ｻ・ｶ鬩幢ｽ｢隴趣ｽ｢繝ｻ・ｽ繝ｻ・ｻ/b></span>
+        <span class="badge">Audio: <b id="audioKbps">鬯ｩ蛹・ｽｽ・ｯ郢晢ｽｻ繝ｻ・ｶ鬩幢ｽ｢隴趣ｽ｢繝ｻ・ｽ繝ｻ・ｻ/b></span>
       </div>
 
       <div class="row" style="margin-top:14px">
@@ -94,7 +94,7 @@
       <div id="log" class="log"></div>
 
       <div class="adSlot">
-  <div class="adTitle">・滓ｫ・ｽｨ繝ｻAd space (paste AdSense code here later)</div>
+  <div class="adTitle">繝ｻ貊難ｽｫ繝ｻ・ｽ・ｨ郢晢ｽｻAd space (paste AdSense code here later)</div>
   <div class="adBox2">AdSense / affiliate code will be inserted here.</div>
   <div class="codeHint">When you are ready, replace <b>&lt;div class="adBox2"&gt;...&lt;/div&gt;</b> with your AdSense snippet.</div>
 </div>
@@ -103,7 +103,7 @@
     <div class="card">
       <div class="sectionTitle">Japanese version</div>
       <div class="sub"><a href="/video-compressor-ja/">/video-compressor-ja/</a></div>
-      <div class="footer"><hr/>郢晢ｽｻ郢ｧ謇假ｽｽ・ｽ繝ｻ・ｩ 2026 mikann20041029.github.io</div>
+      <div class="footer"><hr/>驛｢譎｢・ｽ・ｻ驛｢・ｧ隰・∞・ｽ・ｽ繝ｻ・ｽ郢晢ｽｻ繝ｻ・ｩ 2026 mikann20041029.github.io</div>
     </div>
   </div>
 </div>
