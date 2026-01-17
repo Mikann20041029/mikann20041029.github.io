@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>割り勘｜Toolbox</title>
-  <meta name="description" content="合計を人数で割る（端数調整なし）。"/>
+  <title>蜑ｲ繧雁鋸・弋oolbox</title>
+  <meta name="description" content="蜷郁ｨ医ｒ莠ｺ謨ｰ縺ｧ蜑ｲ繧具ｼ育ｫｯ謨ｰ隱ｿ謨ｴ縺ｪ縺暦ｼ峨・/>
   <style>  :root{
     --bg1:#ffd7ee; --bg2:#d6f0ff;
     --card:rgba(255,255,255,.72);
@@ -85,6 +85,14 @@
   .toolcard h3{margin:0 0 6px;font-size:15px;}
   .toolcard p{margin:0;color:var(--muted);line-height:1.6;font-size:13px;}
   .toolcard a{font-weight:900;text-decoration:none;}</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VBN5P977ZY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VBN5P977ZY');
+</script>
 </head>
 <body>
   <div class="wrap">
@@ -92,36 +100,36 @@
       <div class="brand">Toolbox</div>
       <div class="nav">
         <a href="./index.html">Toolbox Home</a>
-        <a href="./calc.html">計算機一覧</a>
+        <a href="./calc.html">險育ｮ玲ｩ滉ｸ隕ｧ</a>
         <a href="../">Top</a>
       </div>
     </div>
 
     <div class="card hero">
-      <h1>割り勘</h1>
-      <p>合計を人数で割る（端数調整なし）。</p>
+      <h1>蜑ｲ繧雁鋸</h1>
+      <p>蜷郁ｨ医ｒ莠ｺ謨ｰ縺ｧ蜑ｲ繧具ｼ育ｫｯ謨ｰ隱ｿ謨ｴ縺ｪ縺暦ｼ峨・/p>
     </div>
 
     <div class="grid">
       <div class="card box">
-        <h2>入力</h2>
+        <h2>蜈･蜉・/h2>
 <div class="row">
   <div>
-    <label>合計（円）</label>
-    <input id="total" type="number" inputmode="numeric" placeholder="例: 12800">
+    <label>蜷郁ｨ茨ｼ亥・・・/label>
+    <input id="total" type="number" inputmode="numeric" placeholder="萓・ 12800">
   </div>
   <div>
-    <label>人数</label>
-    <input id="n" type="number" inputmode="numeric" placeholder="例: 4">
+    <label>莠ｺ謨ｰ</label>
+    <input id="n" type="number" inputmode="numeric" placeholder="萓・ 4">
   </div>
 </div>
-<button id="calc">計算</button>
-<div id="out" class="out">—</div>
+<button id="calc">險育ｮ・/button>
+<div id="out" class="out">窶・/div>
       </div>
       <div class="card box">
-        <h2>メモ</h2>
-        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
-        <div id="note" class="out">—</div>
+        <h2>繝｡繝｢</h2>
+        <div class="mini">繝ｻ蛟､繧貞・繧後※縲瑚ｨ育ｮ励阪〒蜊ｳ蜿肴丐縲・br>繝ｻ遞・謇区焚譁吶↑縺ｩ縺ｯ譛ｪ閠・・・亥ｿ・ｦ√↑繧牙ｾ後〒雜ｳ縺帙ｋ・峨・/div>
+        <div id="note" class="out">窶・/div>
       </div>
     </div>
   </div>
@@ -133,10 +141,10 @@
   function fmt(n){ return Math.round(n).toLocaleString('ja-JP'); }
   function run(){
     const t=parseFloat(total.value), k=parseInt(n.value,10);
-    if(!(t>=0 && k>0)){ out.textContent="合計と人数を入れて。"; return; }
+    if(!(t>=0 && k>0)){ out.textContent="蜷郁ｨ医→莠ｺ謨ｰ繧貞・繧後※縲・; return; }
     const each=t/k;
-    out.textContent="1人あたり: " + fmt(each) + " 円（端数なし）";
-    note.textContent="端数調整が必要なら後で足す。";
+    out.textContent="1莠ｺ縺ゅ◆繧・ " + fmt(each) + " 蜀・ｼ育ｫｯ謨ｰ縺ｪ縺暦ｼ・;
+    note.textContent="遶ｯ謨ｰ隱ｿ謨ｴ縺悟ｿ・ｦ√↑繧牙ｾ後〒雜ｳ縺吶・;
   }
   document.getElementById('calc').addEventListener('click',run);
 })();

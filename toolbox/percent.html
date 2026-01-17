@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>パーセント計算｜Toolbox</title>
-  <meta name="description" content="基準値に対する%を計算。"/>
+  <title>繝代・繧ｻ繝ｳ繝郁ｨ育ｮ暦ｽ弋oolbox</title>
+  <meta name="description" content="蝓ｺ貅門､縺ｫ蟇ｾ縺吶ｋ%繧定ｨ育ｮ励・/>
   <style>  :root{
     --bg1:#ffd7ee; --bg2:#d6f0ff;
     --card:rgba(255,255,255,.72);
@@ -85,6 +85,14 @@
   .toolcard h3{margin:0 0 6px;font-size:15px;}
   .toolcard p{margin:0;color:var(--muted);line-height:1.6;font-size:13px;}
   .toolcard a{font-weight:900;text-decoration:none;}</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VBN5P977ZY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-VBN5P977ZY');
+</script>
 </head>
 <body>
   <div class="wrap">
@@ -92,36 +100,36 @@
       <div class="brand">Toolbox</div>
       <div class="nav">
         <a href="./index.html">Toolbox Home</a>
-        <a href="./calc.html">計算機一覧</a>
+        <a href="./calc.html">險育ｮ玲ｩ滉ｸ隕ｧ</a>
         <a href="../">Top</a>
       </div>
     </div>
 
     <div class="card hero">
-      <h1>パーセント計算</h1>
-      <p>基準値に対する%を計算。</p>
+      <h1>繝代・繧ｻ繝ｳ繝郁ｨ育ｮ・/h1>
+      <p>蝓ｺ貅門､縺ｫ蟇ｾ縺吶ｋ%繧定ｨ育ｮ励・/p>
     </div>
 
     <div class="grid">
       <div class="card box">
-        <h2>入力</h2>
+        <h2>蜈･蜉・/h2>
 <div class="row">
   <div>
-    <label>基準値</label>
-    <input id="base" type="number" inputmode="decimal" placeholder="例: 200">
+    <label>蝓ｺ貅門､</label>
+    <input id="base" type="number" inputmode="decimal" placeholder="萓・ 200">
   </div>
   <div>
-    <label>割合（%）</label>
-    <input id="pct" type="number" inputmode="decimal" placeholder="例: 15">
+    <label>蜑ｲ蜷茨ｼ・・・/label>
+    <input id="pct" type="number" inputmode="decimal" placeholder="萓・ 15">
   </div>
 </div>
-<button id="calc">計算</button>
-<div id="out" class="out">—</div>
+<button id="calc">險育ｮ・/button>
+<div id="out" class="out">窶・/div>
       </div>
       <div class="card box">
-        <h2>メモ</h2>
-        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
-        <div id="note" class="out">—</div>
+        <h2>繝｡繝｢</h2>
+        <div class="mini">繝ｻ蛟､繧貞・繧後※縲瑚ｨ育ｮ励阪〒蜊ｳ蜿肴丐縲・br>繝ｻ遞・謇区焚譁吶↑縺ｩ縺ｯ譛ｪ閠・・・亥ｿ・ｦ√↑繧牙ｾ後〒雜ｳ縺帙ｋ・峨・/div>
+        <div id="note" class="out">窶・/div>
       </div>
     </div>
   </div>
@@ -132,10 +140,10 @@
   const out=document.getElementById('out'), note=document.getElementById('note');
   function run(){
     const b=parseFloat(base.value), p=parseFloat(pct.value);
-    if(!(isFinite(b) && isFinite(p))){ out.textContent="基準値と%を入れて。"; return; }
+    if(!(isFinite(b) && isFinite(p))){ out.textContent="蝓ｺ貅門､縺ｨ%繧貞・繧後※縲・; return; }
     const v=b*(p/100);
-    out.textContent = b + " の " + p + "% = " + v;
-    note.textContent="%は (p/100) を掛けるだけ。";
+    out.textContent = b + " 縺ｮ " + p + "% = " + v;
+    note.textContent="%縺ｯ (p/100) 繧呈寺縺代ｋ縺縺代・;
   }
   document.getElementById('calc').addEventListener('click',run);
 })();
