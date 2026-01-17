@@ -237,93 +237,44 @@
     const initial = hashTool() || tools[0]?.id;
     if(initial) mount(initial);
   </script>
-
+/*__FORCE_TOOL_JUMP__*/
 <script>
-/*__TOOLBOX_TOOLMODE__*/
 (function(){
-  const META = {"resultSub":{"desc":"数値を入れて即計算。","title":"計算機：resultSub"},"resultUnit":{"desc":"数値を入れて即計算。","title":"計算機：resultUnit"},"resultMain":{"desc":"数値を入れて即計算。","title":"計算機：resultMain"},"toolTitle":{"desc":"数値を入れて即計算。","title":"計算機：toolTitle"},"list":{"desc":"数値を入れて即計算。","title":"計算機：list"},"catChips":{"desc":"数値を入れて即計算。","title":"計算機：catChips"},"fields":{"desc":"数値を入れて即計算。","title":"計算機：fields"},"search":{"desc":"数値を入れて即計算。","title":"計算機：search"},"toolSelect":{"desc":"数値を入れて即計算。","title":"計算機：toolSelect"},"toolDesc":{"desc":"数値を入れて即計算。","title":"計算機：toolDesc"},"resultExtra":{"desc":"数値を入れて即計算。","title":"計算機：resultExtra"}};
-
-  // クリックしたら別ページへ（一覧→各ツールページ）
-  document.addEventListener('click', function(e){
-    const a = e.target.closest && e.target.closest('a[href]');
-    const dt = e.target.closest && e.target.closest('[data-tool]');
-    let id = null;
-
-    if(dt && dt.getAttribute('data-tool')) id = dt.getAttribute('data-tool');
-    if(!id && a){
-      const href = a.getAttribute('href') || '';
-      // #id / calc.html#id / anything#id
-      const m = href.match(/#([A-Za-z0-9_-]{2,80})/);
-      if(m) id = m[1];
-    }
-    if(id && META[id]){
-      e.preventDefault();
-      location.href = './' + id + '.html';
-    }
-  }, true);
-
-  // tool=xxx なら “そのツールだけ表示” に寄せる（bmi形式）
-  const params = new URLSearchParams(location.search);
-  const tool = params.get('tool') || (location.hash ? location.hash.slice(1) : '');
-  if(!tool) return;
-
-  // 他ツールを隠す（id一致するやつだけ残す）
-  try{
-    Object.keys(META).forEach(id=>{
-      const el = document.getElementById(id);
-      if(el && id !== tool) el.style.display = 'none';
-    });
-  }catch(e){}
-
-  // 解説ボックスをターゲットの直前に出す
-  try{
-    const t = document.getElementById(tool);
-    if(t){
-      const info = META[tool] || {title:tool, desc:'数値を入れて即計算。'};
-      const box = document.createElement('div');
-      box.style.margin = '12px auto';
-      box.style.maxWidth = '1100px';
-      box.style.padding = '0 14px';
-      box.innerHTML =
-        '<div style="border:1px solid rgba(0,0,0,.10);border-radius:18px;background:rgba(255,255,255,.70);padding:12px 12px;box-shadow:0 10px 22px rgba(18,22,40,.08);">'+
-          '<div style="font-weight:800;font-size:16px;margin:0 0 6px;">'+info.title+'</div>'+
-          '<div style="color:rgba(0,0,0,.60);line-height:1.7;margin:0 0 8px;">'+info.desc+'</div>'+
-          '<a href="./calc.html" style="font-weight:700;text-decoration:none;">← ツール一覧へ</a>'+
-        '</div>';
-      t.parentElement.insertBefore(box, t);
-      t.scrollIntoView({behavior:'instant', block:'start'});
-      window.scrollBy(0, -10);
-    }
-  }catch(e){}
-})();
-</script>
-<script>
-/*__TOOLBOX_FORCE_LINKS__*/
-(function(){
-  function go(id){ location.href = './' + id + '.html'; }
-
-  document.addEventListener('click', function(e){
-    const a = e.target.closest('a');
+  function getIdFromEl(el){
+    if(!el) return null;
+    // href="#xxx"
+    const a = el.closest && el.closest('a[href^="#"]');
     if(a){
-      const href = (a.getAttribute('href')||'').trim();
-      // #id / calc.html#id をクリックしても必ず別ページへ
-      const m1 = href.match(/^#([a-z0-9\-]{2,50})$/i);
-      const m2 = href.match(/(?:^|\/)calc\.html#([a-z0-9\-]{2,50})$/i);
-      if(m1){ e.preventDefault(); go(m1[1]); return; }
-      if(m2){ e.preventDefault(); go(m2[1]); return; }
+      const h = a.getAttribute('href');
+      if(h && h.length>2) return h.slice(1);
     }
+    // data-tool / data-id / data-target / data-calc
+    const d = el.closest && el.closest('[data-tool],[data-id],[data-target],[data-calc]');
+    if(d){
+      return d.getAttribute('data-tool') || d.getAttribute('data-id') || d.getAttribute('data-target') || d.getAttribute('data-calc');
+    }
+    return null;
+  }
 
-    // data-tool がある要素も拾う（カードがaじゃないケース用）
-    const t = e.target.closest('[data-tool]');
-    if(t){
-      const id = (t.getAttribute('data-tool')||'').trim();
-      if(id){ e.preventDefault(); go(id); }
-    }
+  document.addEventListener('click', function(ev){
+    const id = getIdFromEl(ev.target);
+    if(!id) return;
+    if(!/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(id)) return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    location.href = "./" + id + ".html";
   }, true);
+
+  // ?tool=xxx なら ./xxx.html に寄せる（共有リンク対策）
+  try{
+    const p = new URLSearchParams(location.search);
+    const t = p.get('tool');
+    if(t && /^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(t)){
+      location.replace("./" + t + ".html");
+    }
+  }catch(e){}
 })();
 </script>
 </body>
 </html>
-
-
 

@@ -115,6 +115,44 @@
   }, true);
 })();
 </script>
+/*__FORCE_TOOL_JUMP__*/
+<script>
+(function(){
+  function getIdFromEl(el){
+    if(!el) return null;
+    // href="#xxx"
+    const a = el.closest && el.closest('a[href^="#"]');
+    if(a){
+      const h = a.getAttribute('href');
+      if(h && h.length>2) return h.slice(1);
+    }
+    // data-tool / data-id / data-target / data-calc
+    const d = el.closest && el.closest('[data-tool],[data-id],[data-target],[data-calc]');
+    if(d){
+      return d.getAttribute('data-tool') || d.getAttribute('data-id') || d.getAttribute('data-target') || d.getAttribute('data-calc');
+    }
+    return null;
+  }
+
+  document.addEventListener('click', function(ev){
+    const id = getIdFromEl(ev.target);
+    if(!id) return;
+    if(!/^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(id)) return;
+    ev.preventDefault();
+    ev.stopPropagation();
+    location.href = "./" + id + ".html";
+  }, true);
+
+  // ?tool=xxx なら ./xxx.html に寄せる（共有リンク対策）
+  try{
+    const p = new URLSearchParams(location.search);
+    const t = p.get('tool');
+    if(t && /^[a-zA-Z0-9][a-zA-Z0-9_-]*$/.test(t)){
+      location.replace("./" + t + ".html");
+    }
+  }catch(e){}
+})();
+</script>
 </body>
 </html>
 
@@ -173,6 +211,7 @@
     render();
   })();
 </script>
+
 
 
 
