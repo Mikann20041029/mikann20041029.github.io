@@ -1,178 +1,161 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Toolbox</title>
-  <link rel="stylesheet" href="/toolbox/assets/style.css?v=5" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Toolbox | Home</title>
+  <meta name="description" content="計算機ツール集。検索してすぐ使える。"/>
+  <style>  :root{
+    --bg1:#ffd7ee; --bg2:#d6f0ff;
+    --card:rgba(255,255,255,.72);
+    --line:rgba(0,0,0,.10);
+    --text:rgba(0,0,0,.88);
+    --muted:rgba(0,0,0,.60);
+    --shadow:0 12px 28px rgba(18,22,40,.10);
+    --r:22px;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans JP", sans-serif;
+  }
+  body{
+    margin:0;
+    color:var(--text);
+    background:
+      radial-gradient(900px 500px at 12% 12%, var(--bg1), transparent 60%),
+      radial-gradient(900px 500px at 88% 18%, var(--bg2), transparent 60%),
+      #fff;
+    min-height:100vh;
+  }
+  .wrap{max-width:1100px;margin:20px auto;padding:0 16px;}
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:12px; margin-bottom:14px;
+  }
+  .brand{font-weight:900; letter-spacing:.2px;}
+  .nav a{color:inherit; text-decoration:none; font-weight:800; margin-left:12px; opacity:.85;}
+  .nav a:hover{opacity:1; text-decoration:underline;}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    box-shadow:var(--shadow);
+    backdrop-filter: blur(8px);
+  }
+  .hero{padding:16px 16px; margin-bottom:14px;}
+  .hero h1{font-size:18px;margin:0 0 6px;}
+  .hero p{margin:0;color:var(--muted);line-height:1.7;}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr;} }
+  .box{padding:16px;}
+  .box h2{font-size:16px;margin:0 0 10px;}
+  .row{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0;}
+  @media (min-width:520px){ .row{grid-template-columns:1fr 1fr;} }
+  label{display:block;font-weight:800;font-size:13px;margin:0 0 6px;}
+  input, select{
+    width:100%;
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.8);
+    outline:none;
+    box-sizing:border-box;
+    font-size:14px;
+  }
+  button{
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.86);
+    font-weight:900;
+    cursor:pointer;
+  }
+  button:hover{filter:brightness(0.98);}
+  .out{
+    margin-top:10px;
+    padding:12px;
+    border-radius:16px;
+    border:1px dashed rgba(0,0,0,.18);
+    background:rgba(255,255,255,.65);
+    color:rgba(0,0,0,.78);
+    line-height:1.75;
+    white-space:pre-wrap;
+  }
+  .mini{color:var(--muted); font-size:12px; line-height:1.6;}
+  .tools{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px;}
+  @media (min-width:860px){ .tools{grid-template-columns:1fr 1fr;} }
+  .toolcard{padding:14px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+  .toolcard h3{margin:0 0 6px;font-size:15px;}
+  .toolcard p{margin:0;color:var(--muted);line-height:1.6;font-size:13px;}
+  .toolcard a{font-weight:900;text-decoration:none;}</style>
 </head>
 <body>
-  <div class="container">
+  <div class="wrap">
     <div class="topbar">
-      <a class="brand" href="/toolbox/">
-        <span class="logo"></span><span class="mascot" aria-hidden="true" title="Toolboxの住人">
-  <svg viewBox="0 0 64 64" fill="none">
-    <path d="M20 10c3-6 21-6 24 0" stroke="rgba(123,108,255,.55)" stroke-width="4" stroke-linecap="round"/>
-    <path d="M12 30c0-11 8-19 20-19s20 8 20 19-8 22-20 22-20-11-20-22Z" fill="rgba(255,95,162,.28)"/>
-    <path d="M18 31c0-8 6-14 14-14s14 6 14 14-6 16-14 16-14-8-14-16Z" fill="rgba(255,255,255,.72)"/>
-    <circle cx="26" cy="32" r="3.2" fill="rgba(22,24,35,.78)"/>
-    <circle cx="38" cy="32" r="3.2" fill="rgba(22,24,35,.78)"/>
-    <path d="M28 40c3 3 5 3 8 0" stroke="rgba(22,24,35,.62)" stroke-width="3.2" stroke-linecap="round"/>
-    <circle cx="21" cy="38" r="3.5" fill="rgba(255,95,162,.35)"/>
-    <circle cx="43" cy="38" r="3.5" fill="rgba(255,95,162,.35)"/>
-    <path d="M48 18l2 4 4 2-4 2-2 4-2-4-4-2 4-2 2-4Z" fill="rgba(92,200,255,.55)"/>
-  </svg>
-</span><strong>Toolbox</strong>
-      </a>
+      <div class="brand">Toolbox</div>
       <div class="nav">
-        <a class="chip pill" href="/sns-growth-rank/">SNS Growth Rank</a>
-        <a class="chip pill" href="/calculator/">旧Calculator</a>
-        <a class="chip pill" href="/toolbox/disclosure.html">広告/PR</a>
+        <a href="./index.html">Toolbox Home</a>
+        <a href="../">Top</a>
       </div>
     </div>
 
-    <div class="hero">
-      <h1>かわいいツール箱</h1>
-      <p>サクッと計算。見た目はふわっと。</p>
+    <div class="card hero">
+      <h1>Toolbox</h1>
+      <p>計算機ツール集。検索してすぐ使える。</p>
     </div>
 
-    <div class="grid">
-<div class="card third">
-  <h2>BMI計算</h2>
-  <p>身長・体重からBMIと判定、適正体重（BMI22）を即表示。</p>
-  <a class="btn" href="./bmi.html">つかう</a>
-</div>
-      <div class="card third">
-        <h2>AdSense収益シミュレーター</h2>
-        <p>PV×RPMで月の目安。</p>
-<div class="chips"><span class="chip">🍰 かんたん</span><span class="chip">🩷 収益目安</span></div>
-        <a class="btn" href="/toolbox/adsense.html">つかう</a>
-      </div>
-
-      <div class="card third">
-        <h2>アフィ収益シミュレーター</h2>
-        <p>ざっくり期待値を出す。</p>
-<div class="chips"><span class="chip">🧸 ざっくり</span><span class="chip">🛍 期待値</span></div>
-        <a class="btn" href="/toolbox/affiliate.html">つかう</a>
-      </div>
-
-      <div class="card third">
-        <h2>通信費（旅行/留学）ざっくり試算</h2>
-        <p>日数×GBで目安。</p>
-<div class="chips"><span class="chip">🫧 GB</span><span class="chip">✈️ 旅行</span><span class="chip">🎓 留学</span></div>
-        <a class="btn" href="/toolbox/data-plan.html">つかう</a>
-      </div>
-
-      <div class="card">
-        <h2>広告メモ</h2>
-        <p>広告はコンテンツと分けて、誤クリックを誘わない。</p>
-        <div class="note">
-          これ守ると安心。
-        </div>
-      </div>
+    <div class="card box">
+      <h2>検索</h2>
+      <input id="q" placeholder="例: ローン / 複利 / BMI / 割引 / 年齢" />
+      <div class="mini">見つけたら「つかう」を押す。</div>
     </div>
 
-    <div class="footer">
-      公開URL: https://mikann20041029.github.io/toolbox/
+    <div id="list" class="tools"></div>
+
+    <div class="card box" style="margin-top:14px;">
+      <div class="mini">AdSense枠（必要ならここにコード）<br>※コンテンツと区別して配置する。</div>
     </div>
   </div>
-<div class="kawaii-float" aria-hidden="true" title="Toolbox">
-  <div class="sparkles"></div>
-  <svg viewBox="0 0 24 24" fill="none">
-    <path d="M6 12c0-4 2.7-7 6-7s6 3 6 7-2.7 7-6 7-6-3-6-7Z" fill="rgba(255,95,162,.32)"/>
-    <path d="M8.6 12.3c0-.65.52-1.18 1.18-1.18.65 0 1.18.53 1.18 1.18 0 .65-.53 1.18-1.18 1.18-.66 0-1.18-.53-1.18-1.18Z" fill="rgba(20,22,28,.75)"/>
-    <path d="M12.95 12.3c0-.65.53-1.18 1.18-1.18s1.18.53 1.18 1.18c0 .65-.53 1.18-1.18 1.18s-1.18-.53-1.18-1.18Z" fill="rgba(20,22,28,.75)"/>
-    <path d="M9.3 15.2c1.25 1.05 4.15 1.05 5.4 0" stroke="rgba(20,22,28,.62)" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M5.2 8.1c1-1.6 2.8-3.1 4.9-3.7" stroke="rgba(92,200,255,.78)" stroke-width="1.5" stroke-linecap="round"/>
-    <path d="M18.8 8.1c-1-1.6-2.8-3.1-4.9-3.7" stroke="rgba(123,108,255,.58)" stroke-width="1.5" stroke-linecap="round"/>
-  </svg>
-</div>
+
 <script>
-/*__TOOLBOX_FORCE_LINKS__*/
 (function(){
-  function go(id){ location.href = './' + id + '.html'; }
+  const tools = [
+    {id:"bmi",           title:"BMI計算",              desc:"身長・体重からBMIと判定、適正体重（BMI22）。", url:"./bmi.html"},
+    {id:"ideal-weight",  title:"適正体重（BMI22）",     desc:"身長から適正体重を計算。差分も出せる。",        url:"./ideal-weight.html"},
+    {id:"loan",          title:"ローン計算（月返済）",   desc:"借入額・金利・年数から元利均等の返済額。",      url:"./loan.html"},
+    {id:"mortgage",      title:"住宅ローン計算（月返済）",desc:"住宅ローン用の表示（中身は同じ）。",            url:"./mortgage.html"},
+    {id:"compound",      title:"複利（積立あり）",       desc:"元本＋毎月積立で将来額を概算。",                url:"./compound.html"},
+    {id:"percent",       title:"パーセント計算",         desc:"基準値に対する%を計算。",                      url:"./percent.html"},
+    {id:"discount",      title:"割引後価格",             desc:"定価と割引率から支払額を計算。",                url:"./discount.html"},
+    {id:"split",         title:"割り勘",                 desc:"合計を人数で割る（端数調整なし）。",              url:"./split.html"},
+    {id:"date-diff",     title:"日数差",                 desc:"2つの日付の差（日数）を計算。",                  url:"./date-diff.html"},
+    {id:"age",           title:"年齢計算",               desc:"生年月日から満年齢。",                          url:"./age.html"},
+  ];
 
-  document.addEventListener('click', function(e){
-    const a = e.target.closest('a');
-    if(a){
-      const href = (a.getAttribute('href')||'').trim();
-      // #id / calc.html#id をクリックしても必ず別ページへ
-      const m1 = href.match(/^#([a-z0-9\-]{2,50})$/i);
-      const m2 = href.match(/(?:^|\/)calc\.html#([a-z0-9\-]{2,50})$/i);
-      if(m1){ e.preventDefault(); go(m1[1]); return; }
-      if(m2){ e.preventDefault(); go(m2[1]); return; }
-    }
+  const list = document.getElementById('list');
+  const q = document.getElementById('q');
 
-    // data-tool がある要素も拾う（カードがaじゃないケース用）
-    const t = e.target.closest('[data-tool]');
-    if(t){
-      const id = (t.getAttribute('data-tool')||'').trim();
-      if(id){ e.preventDefault(); go(id); }
+  function render(){
+    const s = (q.value||"").trim().toLowerCase();
+    list.innerHTML = "";
+    const hit = tools.filter(t=>{
+      if(!s) return true;
+      return (t.title+t.desc+t.id).toLowerCase().includes(s);
+    });
+
+    for(const t of hit){
+      const div = document.createElement('div');
+      div.className = "card toolcard";
+      div.innerHTML =
+        '<div>' +
+          '<h3>' + t.title + '</h3>' +
+          '<p>' + t.desc + '</p>' +
+        '</div>' +
+        '<div><a href="' + t.url + '">つかう</a></div>';
+      list.appendChild(div);
     }
-  }, true);
+  }
+
+  q.addEventListener('input', render);
+  render();
 })();
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section class="card" id="all-tools">
-  <h2>みんなの計算機</h2>
-  <p class="muted">定番どころをまとめ。検索して即つかう。</p>
-  <div class="row">
-    <div class="field">
-      <label>検索</label>
-      <input id="toolSearchHome" placeholder="例：ローン / BMI / % / 割引 / 旅行 / ROI" />
-    </div>
-  </div>
-  <div class="grid toolgrid" id="toolGridHome"></div>
-  <div class="footer"><a class="btn" href="./calc.html">ぜんぶ見る</a></div>
-</section>
-
-<script src="./assets/tools.js?v=6"></script>
-<script>
-  (function(){
-    const tools = (window.TOOLBOX_TOOLS||[]).slice();
-    const grid = document.getElementById("toolGridHome");
-    const input = document.getElementById("toolSearchHome");
-    if(!grid || !input || !tools.length) return;
-
-    const esc=(s)=>String(s).replace(/[&<>"']/g,m=>({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
-    function render(){
-      const q=(input.value||"").toLowerCase().trim();
-      const top = tools.filter(t => (t.name+" "+t.desc+" "+t.cat).toLowerCase().includes(q)).slice(0,12);
-      grid.innerHTML = top.map(t=>`
-        <a class="toolcard" href="./calc.html#${esc(t.id)}">
-          <div class="toolhead">
-            <div class="toolic">${esc(t.icon||"🧩")}</div>
-            <div>
-              <div class="toolname">${esc(t.name)}</div>
-              <div class="tooldesc">${esc(t.desc)}</div>
-            </div>
-          </div>
-          <div class="toolmeta">${esc(t.cat)}</div>
-        </a>
-      `).join("");
-    }
-    input.addEventListener("input", render);
-    render();
-  })();
-</script>
-
-
-
