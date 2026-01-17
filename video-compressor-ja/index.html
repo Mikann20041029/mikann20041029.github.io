@@ -9,6 +9,98 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
+<!-- aff_layout_v1 -->
+<style>
+  /* ===== Affiliate layout: PC/iPad side ads + mobile bottom ===== */
+  .aff-shell{ position:relative; }
+  .aff-side{
+    position:fixed;
+    top:110px;
+    width:320px;
+    z-index:9999;
+    display:none;
+    pointer-events:auto;
+  }
+  .aff-left{ left:12px; }
+  .aff-right{ right:12px; }
+
+  .aff-card{
+    background:rgba(0,0,0,.25);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:14px;
+    padding:12px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    text-align:center;
+  }
+  .aff-label{
+    font-size:12px;
+    opacity:.75;
+    margin-bottom:10px;
+  }
+  .aff-card img{ max-width:100%; height:auto; }
+
+  /* keep main content readable on wide screens by adding side gutters */
+  @media (min-width: 1100px){
+    body{ padding-left:340px; padding-right:340px; }
+    .aff-side{ display:block; }
+  }
+  /* iPad-ish landscape: still show side ads but smaller gutters */
+  @media (min-width: 900px) and (max-width: 1099px){
+    body{ padding-left:280px; padding-right:280px; }
+    .aff-side{ display:block; width:260px; }
+    .aff-side .aff-card{ padding:10px; }
+  }
+  /* Mobile / narrow: no side ads */
+  @media (max-width: 899px){
+    body{ padding-left:0; padding-right:0; }
+    .aff-side{ display:none; }
+  }
+
+  /* Mobile bottom ad: only show on narrow screens */
+  .aff-bottom{
+    display:none;
+    width:100%;
+    max-width:520px;
+    margin:14px auto 0 auto;
+    padding:12px 12px 6px 12px;
+    border-top:1px solid rgba(255,255,255,.08);
+    text-align:center;
+  }
+  @media (max-width: 899px){
+    .aff-bottom{ display:block; }
+  }
+
+  /* If the 468x60 is wider than the phone, scale it */
+  .aff-bottom img{
+    width:min(468px, 92vw);
+    height:auto;
+  }
+</style>
+
+<div class="aff-shell">
+  <!-- Left side ad (PC/iPad) -->
+  <div class="aff-side aff-left">
+    <div class="aff-card">
+      <div class="aff-label">スポンサーリンク</div>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+2UEKTU+CO4+1TK1F5" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www25.a8.net/svt/bgt?aid=260117583172&wid=001&eno=01&mid=s00000001642011011000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AV80F+2UEKTU+CO4+1TK1F5" alt="">
+    </div>
+  </div>
+
+  <!-- Right side ad (PC/iPad) -->
+  <div class="aff-side aff-right">
+    <div class="aff-card">
+      <div class="aff-label">スポンサーリンク</div>
+      <a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" rel="nofollow">
+<img border="0" width="320" height="50" alt="" src="https://www23.a8.net/svt/bgt?aid=260117583179&wid=001&eno=01&mid=s00000021054001005000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" alt="">
+    </div>
+  </div>
+</div>
+<!-- /aff_layout_v1 -->
   <div class="container">
     <div class="header">
       <div class="brand">
@@ -167,5 +259,14 @@
   <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" alt="">
 </div>
 <!-- /A8 Cloud Storage Ad -->
+
+<!-- aff_mobile_bottom_v1 -->
+<div class="aff-bottom">
+  <div class="aff-label">スポンサーリンク</div>
+  <a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+2XZ6GI+4V0U+ZQV5T" rel="nofollow">
+<img border="0" width="468" height="60" alt="" src="https://www27.a8.net/svt/bgt?aid=260117583178&wid=001&eno=01&mid=s00000022683006004000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AV80F+2XZ6GI+4V0U+ZQV5T" alt="">
+</div>
+<!-- /aff_mobile_bottom_v1 -->
 </body>
 </html>
