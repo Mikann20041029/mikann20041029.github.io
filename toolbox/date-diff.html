@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>日数差｜Toolbox</title>
+  <meta name="description" content="2つの日付の差（日数）を計算。"/>
+  <style>  :root{
+    --bg1:#ffd7ee; --bg2:#d6f0ff;
+    --card:rgba(255,255,255,.72);
+    --line:rgba(0,0,0,.10);
+    --text:rgba(0,0,0,.88);
+    --muted:rgba(0,0,0,.60);
+    --shadow:0 12px 28px rgba(18,22,40,.10);
+    --r:22px;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans JP", sans-serif;
+  }
+  body{
+    margin:0;
+    color:var(--text);
+    background:
+      radial-gradient(900px 500px at 12% 12%, var(--bg1), transparent 60%),
+      radial-gradient(900px 500px at 88% 18%, var(--bg2), transparent 60%),
+      #fff;
+    min-height:100vh;
+  }
+  .wrap{max-width:1100px;margin:20px auto;padding:0 16px;}
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:12px; margin-bottom:14px;
+  }
+  .brand{font-weight:900; letter-spacing:.2px;}
+  .nav a{color:inherit; text-decoration:none; font-weight:800; margin-left:12px; opacity:.85;}
+  .nav a:hover{opacity:1; text-decoration:underline;}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    box-shadow:var(--shadow);
+    backdrop-filter: blur(8px);
+  }
+  .hero{padding:16px 16px; margin-bottom:14px;}
+  .hero h1{font-size:18px;margin:0 0 6px;}
+  .hero p{margin:0;color:var(--muted);line-height:1.7;}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr;} }
+  .box{padding:16px;}
+  .box h2{font-size:16px;margin:0 0 10px;}
+  .row{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0;}
+  @media (min-width:520px){ .row{grid-template-columns:1fr 1fr;} }
+  label{display:block;font-weight:800;font-size:13px;margin:0 0 6px;}
+  input, select{
+    width:100%;
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.8);
+    outline:none;
+    box-sizing:border-box;
+    font-size:14px;
+  }
+  button{
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.86);
+    font-weight:900;
+    cursor:pointer;
+  }
+  button:hover{filter:brightness(0.98);}
+  .out{
+    margin-top:10px;
+    padding:12px;
+    border-radius:16px;
+    border:1px dashed rgba(0,0,0,.18);
+    background:rgba(255,255,255,.65);
+    color:rgba(0,0,0,.78);
+    line-height:1.75;
+    white-space:pre-wrap;
+  }
+  .mini{color:var(--muted); font-size:12px; line-height:1.6;}
+  .tools{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px;}
+  @media (min-width:860px){ .tools{grid-template-columns:1fr 1fr;} }
+  .toolcard{padding:14px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+  .toolcard h3{margin:0 0 6px;font-size:15px;}
+  .toolcard p{margin:0;color:var(--muted);line-height:1.6;font-size:13px;}
+  .toolcard a{font-weight:900;text-decoration:none;}</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">Toolbox</div>
+      <div class="nav">
+        <a href="./index.html">Toolbox Home</a>
+        <a href="./calc.html">計算機一覧</a>
+        <a href="../">Top</a>
+      </div>
+    </div>
+
+    <div class="card hero">
+      <h1>日数差</h1>
+      <p>2つの日付の差（日数）を計算。</p>
+    </div>
+
+    <div class="grid">
+      <div class="card box">
+        <h2>入力</h2>
+<div class="row">
+  <div>
+    <label>日付A</label>
+    <input id="a" type="date">
+  </div>
+  <div>
+    <label>日付B</label>
+    <input id="b" type="date">
+  </div>
+</div>
+<button id="calc">計算</button>
+<div id="out" class="out">—</div>
+      </div>
+      <div class="card box">
+        <h2>メモ</h2>
+        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
+        <div id="note" class="out">—</div>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  const a=document.getElementById('a'), b=document.getElementById('b');
+  const out=document.getElementById('out'), note=document.getElementById('note');
+  function run(){
+    if(!a.value || !b.value){ out.textContent="日付A/Bを入れて。"; return; }
+    const da=new Date(a.value+"T00:00:00");
+    const db=new Date(b.value+"T00:00:00");
+    const diff=Math.round((db-da)/(1000*60*60*24));
+    out.textContent="B - A = " + diff + " 日";
+    note.textContent="タイムゾーン差は避けるため00:00固定。";
+  }
+  document.getElementById('calc').addEventListener('click',run);
+})();
+</script>
+</body>
+</html>
