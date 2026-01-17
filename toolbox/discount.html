@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>割引後価格｜Toolbox</title>
-  <meta name="description" content="定価と割引率から支払額を計算。"/>
+  <title>蜑ｲ蠑募ｾ御ｾ｡譬ｼ・弋oolbox</title>
+  <meta name="description" content="螳壻ｾ｡縺ｨ蜑ｲ蠑慕紫縺九ｉ謾ｯ謇暮｡阪ｒ險育ｮ励・/>
   <style>  :root{
     --bg1:#ffd7ee; --bg2:#d6f0ff;
     --card:rgba(255,255,255,.72);
@@ -100,36 +100,36 @@
       <div class="brand">Toolbox</div>
       <div class="nav">
         <a href="./index.html">Toolbox Home</a>
-        <a href="./calc.html">計算機一覧</a>
+        <a href="./calc.html">險育ｮ玲ｩ滉ｸ隕ｧ</a>
         <a href="../">Top</a>
       </div>
     </div>
 
     <div class="card hero">
-      <h1>割引後価格</h1>
-      <p>定価と割引率から支払額を計算。</p>
+      <h1>蜑ｲ蠑募ｾ御ｾ｡譬ｼ</h1>
+      <p>螳壻ｾ｡縺ｨ蜑ｲ蠑慕紫縺九ｉ謾ｯ謇暮｡阪ｒ險育ｮ励・/p>
     </div>
 
     <div class="grid">
       <div class="card box">
-        <h2>入力</h2>
+        <h2>蜈･蜉・/h2>
 <div class="row">
   <div>
-    <label>定価（円）</label>
-    <input id="price" type="number" inputmode="numeric" placeholder="例: 9800">
+    <label>螳壻ｾ｡・亥・・・/label>
+    <input id="price" type="number" inputmode="numeric" placeholder="萓・ 9800">
   </div>
   <div>
-    <label>割引率（%）</label>
-    <input id="off" type="number" inputmode="decimal" placeholder="例: 20">
+    <label>蜑ｲ蠑慕紫・・・・/label>
+    <input id="off" type="number" inputmode="decimal" placeholder="萓・ 20">
   </div>
 </div>
-<button id="calc">計算</button>
-<div id="out" class="out">—</div>
+<button id="calc">險育ｮ・/button>
+<div id="out" class="out">窶・/div>
       </div>
       <div class="card box">
-        <h2>メモ</h2>
-        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
-        <div id="note" class="out">—</div>
+        <h2>繝｡繝｢</h2>
+        <div class="mini">繝ｻ蛟､繧貞・繧後※縲瑚ｨ育ｮ励阪〒蜊ｳ蜿肴丐縲・br>繝ｻ遞・謇区焚譁吶↑縺ｩ縺ｯ譛ｪ閠・・・亥ｿ・ｦ√↑繧牙ｾ後〒雜ｳ縺帙ｋ・峨・/div>
+        <div id="note" class="out">窶・/div>
       </div>
     </div>
   </div>
@@ -141,11 +141,11 @@
   function fmt(n){ return Math.round(n).toLocaleString('ja-JP'); }
   function run(){
     const p=parseFloat(price.value), o=parseFloat(off.value);
-    if(!(p>=0 && isFinite(o))){ out.textContent="定価と割引率を入れて。"; return; }
+    if(!(p>=0 && isFinite(o))){ out.textContent="螳壻ｾ｡縺ｨ蜑ｲ蠑慕紫繧貞・繧後※縲・; return; }
     const pay = p*(1-o/100);
     const cut = p - pay;
-    out.textContent = "支払額: " + fmt(pay) + " 円\\n割引額: " + fmt(cut) + " 円";
-    note.textContent="端数処理は店のルール次第。";
+    out.textContent = "謾ｯ謇暮｡・ " + fmt(pay) + " 蜀・\n蜑ｲ蠑暮｡・ " + fmt(cut) + " 蜀・;
+    note.textContent="遶ｯ謨ｰ蜃ｦ逅・・蠎励・繝ｫ繝ｼ繝ｫ谺｡隨ｬ縲・;
   }
   document.getElementById('calc').addEventListener('click',run);
 })();

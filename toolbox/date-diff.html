@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>日数差｜Toolbox</title>
-  <meta name="description" content="2つの日付の差（日数）を計算。"/>
+  <title>譌･謨ｰ蟾ｮ・弋oolbox</title>
+  <meta name="description" content="2縺､縺ｮ譌･莉倥・蟾ｮ・域律謨ｰ・峨ｒ險育ｮ励・/>
   <style>  :root{
     --bg1:#ffd7ee; --bg2:#d6f0ff;
     --card:rgba(255,255,255,.72);
@@ -100,36 +100,36 @@
       <div class="brand">Toolbox</div>
       <div class="nav">
         <a href="./index.html">Toolbox Home</a>
-        <a href="./calc.html">計算機一覧</a>
+        <a href="./calc.html">險育ｮ玲ｩ滉ｸ隕ｧ</a>
         <a href="../">Top</a>
       </div>
     </div>
 
     <div class="card hero">
-      <h1>日数差</h1>
-      <p>2つの日付の差（日数）を計算。</p>
+      <h1>譌･謨ｰ蟾ｮ</h1>
+      <p>2縺､縺ｮ譌･莉倥・蟾ｮ・域律謨ｰ・峨ｒ險育ｮ励・/p>
     </div>
 
     <div class="grid">
       <div class="card box">
-        <h2>入力</h2>
+        <h2>蜈･蜉・/h2>
 <div class="row">
   <div>
-    <label>日付A</label>
+    <label>譌･莉連</label>
     <input id="a" type="date">
   </div>
   <div>
-    <label>日付B</label>
+    <label>譌･莉錬</label>
     <input id="b" type="date">
   </div>
 </div>
-<button id="calc">計算</button>
-<div id="out" class="out">—</div>
+<button id="calc">險育ｮ・/button>
+<div id="out" class="out">窶・/div>
       </div>
       <div class="card box">
-        <h2>メモ</h2>
-        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
-        <div id="note" class="out">—</div>
+        <h2>繝｡繝｢</h2>
+        <div class="mini">繝ｻ蛟､繧貞・繧後※縲瑚ｨ育ｮ励阪〒蜊ｳ蜿肴丐縲・br>繝ｻ遞・謇区焚譁吶↑縺ｩ縺ｯ譛ｪ閠・・・亥ｿ・ｦ√↑繧牙ｾ後〒雜ｳ縺帙ｋ・峨・/div>
+        <div id="note" class="out">窶・/div>
       </div>
     </div>
   </div>
@@ -139,12 +139,12 @@
   const a=document.getElementById('a'), b=document.getElementById('b');
   const out=document.getElementById('out'), note=document.getElementById('note');
   function run(){
-    if(!a.value || !b.value){ out.textContent="日付A/Bを入れて。"; return; }
+    if(!a.value || !b.value){ out.textContent="譌･莉連/B繧貞・繧後※縲・; return; }
     const da=new Date(a.value+"T00:00:00");
     const db=new Date(b.value+"T00:00:00");
     const diff=Math.round((db-da)/(1000*60*60*24));
-    out.textContent="B - A = " + diff + " 日";
-    note.textContent="タイムゾーン差は避けるため00:00固定。";
+    out.textContent="B - A = " + diff + " 譌･";
+    note.textContent="繧ｿ繧､繝繧ｾ繝ｼ繝ｳ蟾ｮ縺ｯ驕ｿ縺代ｋ縺溘ａ00:00蝗ｺ螳壹・;
   }
   document.getElementById('calc').addEventListener('click',run);
 })();

@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>適正体重（BMI22）｜Toolbox</title>
-  <meta name="description" content="身長から適正体重(BMI22)を計算。現在体重との差も出せる。"/>
+  <title>驕ｩ豁｣菴馴㍾・・MI22・会ｽ弋oolbox</title>
+  <meta name="description" content="霄ｫ髟ｷ縺九ｉ驕ｩ豁｣菴馴㍾(BMI22)繧定ｨ育ｮ励ら樟蝨ｨ菴馴㍾縺ｨ縺ｮ蟾ｮ繧ょ・縺帙ｋ縲・/>
   <style>  :root{
     --bg1:#ffd7ee; --bg2:#d6f0ff;
     --card:rgba(255,255,255,.72);
@@ -100,36 +100,36 @@
       <div class="brand">Toolbox</div>
       <div class="nav">
         <a href="./index.html">Toolbox Home</a>
-        <a href="./calc.html">計算機一覧</a>
+        <a href="./calc.html">險育ｮ玲ｩ滉ｸ隕ｧ</a>
         <a href="../">Top</a>
       </div>
     </div>
 
     <div class="card hero">
-      <h1>適正体重（BMI22）</h1>
-      <p>身長から適正体重(BMI22)を計算。現在体重との差も出せる。</p>
+      <h1>驕ｩ豁｣菴馴㍾・・MI22・・/h1>
+      <p>霄ｫ髟ｷ縺九ｉ驕ｩ豁｣菴馴㍾(BMI22)繧定ｨ育ｮ励ら樟蝨ｨ菴馴㍾縺ｨ縺ｮ蟾ｮ繧ょ・縺帙ｋ縲・/p>
     </div>
 
     <div class="grid">
       <div class="card box">
-        <h2>入力</h2>
+        <h2>蜈･蜉・/h2>
 <div class="row">
   <div>
-    <label>身長（cm）</label>
-    <input id="h" type="number" inputmode="decimal" placeholder="例: 172">
+    <label>霄ｫ髟ｷ・・m・・/label>
+    <input id="h" type="number" inputmode="decimal" placeholder="萓・ 172">
   </div>
   <div>
-    <label>現在体重（kg・任意）</label>
-    <input id="w" type="number" inputmode="decimal" placeholder="例: 60">
+    <label>迴ｾ蝨ｨ菴馴㍾・・g繝ｻ莉ｻ諢擾ｼ・/label>
+    <input id="w" type="number" inputmode="decimal" placeholder="萓・ 60">
   </div>
 </div>
-<button id="calc">計算</button>
-<div id="out" class="out">—</div>
+<button id="calc">險育ｮ・/button>
+<div id="out" class="out">窶・/div>
       </div>
       <div class="card box">
-        <h2>メモ</h2>
-        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
-        <div id="note" class="out">—</div>
+        <h2>繝｡繝｢</h2>
+        <div class="mini">繝ｻ蛟､繧貞・繧後※縲瑚ｨ育ｮ励阪〒蜊ｳ蜿肴丐縲・br>繝ｻ遞・謇区焚譁吶↑縺ｩ縺ｯ譛ｪ閠・・・亥ｿ・ｦ√↑繧牙ｾ後〒雜ｳ縺帙ｋ・峨・/div>
+        <div id="note" class="out">窶・/div>
       </div>
     </div>
   </div>
@@ -141,15 +141,15 @@
   function run(){
     const hc=parseFloat(h.value);
     const wc=parseFloat(w.value);
-    if(!(hc>0)){ out.textContent="身長を入れて。"; return; }
+    if(!(hc>0)){ out.textContent="霄ｫ髟ｷ繧貞・繧後※縲・; return; }
     const hm=hc/100;
     const ideal=22*(hm*hm);
-    let s="適正体重(BMI22): " + ideal.toFixed(1) + " kg";
+    let s="驕ｩ豁｣菴馴㍾(BMI22): " + ideal.toFixed(1) + " kg";
     if(isFinite(wc) && wc>0){
-      s += "\n差分: " + (wc-ideal).toFixed(1) + " kg";
+      s += "\n蟾ｮ蛻・ " + (wc-ideal).toFixed(1) + " kg";
     }
     out.textContent=s;
-    note.textContent="BMI22は一般的な目安。";
+    note.textContent="BMI22縺ｯ荳闊ｬ逧・↑逶ｮ螳峨・;
   }
   document.getElementById('calc').addEventListener('click',run);
 })();

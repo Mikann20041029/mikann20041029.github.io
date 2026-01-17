@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>複利（積立あり）｜Toolbox</title>
-  <meta name="description" content="元本＋毎月積立で将来額を概算。"/>
+  <title>隍・茜・育ｩ咲ｫ九≠繧奇ｼ会ｽ弋oolbox</title>
+  <meta name="description" content="蜈・悽・区ｯ取怦遨咲ｫ九〒蟆・擂鬘阪ｒ讎らｮ励・/>
   <style>  :root{
     --bg1:#ffd7ee; --bg2:#d6f0ff;
     --card:rgba(255,255,255,.72);
@@ -100,47 +100,47 @@
       <div class="brand">Toolbox</div>
       <div class="nav">
         <a href="./index.html">Toolbox Home</a>
-        <a href="./calc.html">計算機一覧</a>
+        <a href="./calc.html">險育ｮ玲ｩ滉ｸ隕ｧ</a>
         <a href="../">Top</a>
       </div>
     </div>
 
     <div class="card hero">
-      <h1>複利（積立あり）</h1>
-      <p>元本＋毎月積立で将来額を概算。</p>
+      <h1>隍・茜・育ｩ咲ｫ九≠繧奇ｼ・/h1>
+      <p>蜈・悽・区ｯ取怦遨咲ｫ九〒蟆・擂鬘阪ｒ讎らｮ励・/p>
     </div>
 
     <div class="grid">
       <div class="card box">
-        <h2>入力</h2>
+        <h2>蜈･蜉・/h2>
 <div class="row">
   <div>
-    <label>元本（円）</label>
-    <input id="p" type="number" inputmode="numeric" placeholder="例: 100000">
+    <label>蜈・悽・亥・・・/label>
+    <input id="p" type="number" inputmode="numeric" placeholder="萓・ 100000">
   </div>
   <div>
-    <label>毎月積立（円）</label>
-    <input id="m" type="number" inputmode="numeric" placeholder="例: 30000">
+    <label>豈取怦遨咲ｫ具ｼ亥・・・/label>
+    <input id="m" type="number" inputmode="numeric" placeholder="萓・ 30000">
   </div>
 </div>
 <div class="row">
   <div>
-    <label>年利（%）</label>
-    <input id="r" type="number" inputmode="decimal" placeholder="例: 5">
+    <label>蟷ｴ蛻ｩ・・・・/label>
+    <input id="r" type="number" inputmode="decimal" placeholder="萓・ 5">
   </div>
   <div>
-    <label>運用年数（年）</label>
-    <input id="y" type="number" inputmode="numeric" placeholder="例: 10">
+    <label>驕狗畑蟷ｴ謨ｰ・亥ｹｴ・・/label>
+    <input id="y" type="number" inputmode="numeric" placeholder="萓・ 10">
   </div>
 </div>
-<button id="calc">計算</button>
-<div id="out" class="out">—</div>
-<div class="mini">毎月末に積立する前提の概算。</div>
+<button id="calc">險育ｮ・/button>
+<div id="out" class="out">窶・/div>
+<div class="mini">豈取怦譛ｫ縺ｫ遨咲ｫ九☆繧句燕謠舌・讎らｮ励・/div>
       </div>
       <div class="card box">
-        <h2>メモ</h2>
-        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
-        <div id="note" class="out">—</div>
+        <h2>繝｡繝｢</h2>
+        <div class="mini">繝ｻ蛟､繧貞・繧後※縲瑚ｨ育ｮ励阪〒蜊ｳ蜿肴丐縲・br>繝ｻ遞・謇区焚譁吶↑縺ｩ縺ｯ譛ｪ閠・・・亥ｿ・ｦ√↑繧牙ｾ後〒雜ｳ縺帙ｋ・峨・/div>
+        <div id="note" class="out">窶・/div>
       </div>
     </div>
   </div>
@@ -154,7 +154,7 @@
     const P=Math.max(0, parseFloat(p.value)||0);
     const M=Math.max(0, parseFloat(m.value)||0);
     const R=parseFloat(r.value); const Y=parseFloat(y.value);
-    if(!(Y>0) || !(R>=0)){ out.textContent="年利と年数を入れて。"; return; }
+    if(!(Y>0) || !(R>=0)){ out.textContent="蟷ｴ蛻ｩ縺ｨ蟷ｴ謨ｰ繧貞・繧後※縲・; return; }
     const n = Math.round(Y*12);
     const i = (R/100)/12;
     let fv = P;
@@ -164,11 +164,11 @@
     const contrib = P + M*n;
     const gain = fv - contrib;
     out.textContent =
-      "将来額: " + fmt(fv) + " 円\\n" +
-      "入金合計: " + fmt(contrib) + " 円\\n" +
-      "増えた分: " + fmt(gain) + " 円\\n" +
-      "月数: " + fmt(n) + " ヶ月";
-    note.textContent="税・手数料は未考慮。";
+      "蟆・擂鬘・ " + fmt(fv) + " 蜀・\n" +
+      "蜈･驥大粋險・ " + fmt(contrib) + " 蜀・\n" +
+      "蠅励∴縺溷・: " + fmt(gain) + " 蜀・\n" +
+      "譛域焚: " + fmt(n) + " 繝ｶ譛・;
+    note.textContent="遞弱・謇区焚譁吶・譛ｪ閠・・縲・;
   }
   document.getElementById('calc').addEventListener('click',run);
 })();
