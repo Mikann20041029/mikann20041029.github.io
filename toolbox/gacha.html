@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ガチャ確率計算 | Toolbox</title>
+
+  <!-- site css -->
+  <link rel="stylesheet" href="/toolbox/assets/style.css?v=5" />
+
+  <!-- AdSense loader（既に入ってるなら無害） -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+
+  <style>
+    .gacha-wrap{max-width:980px;margin:0 auto;padding:24px 16px 120px}
+    .gacha-h1{font-size:28px;font-weight:800;margin:4px 0 8px}
+    .gacha-sub{opacity:.8;margin:0 0 16px}
+    .gacha-card{background:rgba(255,255,255,.75);backdrop-filter: blur(12px);border:1px solid rgba(0,0,0,.06);border-radius:18px;padding:18px;margin:14px 0}
+    .gacha-grid{display:grid;grid-template-columns:1fr;gap:12px}
+    @media(min-width:860px){ .gacha-grid{grid-template-columns:1fr 1fr} }
+    .gacha-row{display:grid;grid-template-columns:1fr;gap:8px}
+    .gacha-label{font-weight:700;margin:0 0 2px}
+    .gacha-in{width:100%;padding:12px 12px;border-radius:12px;border:1px solid rgba(0,0,0,.14);background:#fff}
+    .gacha-help{font-size:13px;opacity:.8;margin:4px 0 0}
+    .gacha-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .gacha-btn{border:0;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer}
+    .gacha-btn.primary{background:#111;color:#fff}
+    .gacha-btn.ghost{background:rgba(0,0,0,.06)}
+    .gacha-out{font-size:16px;line-height:1.55}
+    .gacha-big{font-size:22px;font-weight:900}
+    .gacha-warn{color:#b00020;font-weight:800}
+    .gacha-note{font-size:13px;opacity:.85}
+    .gacha-hr{height:1px;background:rgba(0,0,0,.08);margin:12px 0}
+  </style>
+<link rel="stylesheet" href="/toolbox/assets/a8-rail.css?v=1768661613" />
+</head>
+<body>
+  <div class="gacha-wrap">
+    <div class="gacha-h1">🎰 ガチャ確率計算</div>
+    <p class="gacha-sub">「当たる確率 / 引く回数 / 当選確率(少なくとも1回当たる確率)」を相互に計算。金額も出せます。</p>
+
+    <div class="gacha-card">
+      <div class="gacha-grid">
+        <div class="gacha-row">
+          <div class="gacha-label">当たる確率（1回あたり） p</div>
+          <input id="p" class="gacha-in" inputmode="decimal" placeholder="例: 0.006  または 0.6%  または 1/166" />
+          <div class="gacha-help">入力例：<b>0.006</b> / <b>0.6%</b> / <b>1/166</b></div>
+        </div>
+
+        <div class="gacha-row">
+          <div class="gacha-label">引く回数 n</div>
+          <input id="n" class="gacha-in" inputmode="numeric" placeholder="例: 100" />
+          <div class="gacha-help">整数で入力（例：100）</div>
+        </div>
+
+        <div class="gacha-row">
+          <div class="gacha-label">当選確率（少なくとも1回当たる確率） q</div>
+          <input id="q" class="gacha-in" inputmode="decimal" placeholder="例: 0.5  または 50%" />
+          <div class="gacha-help">入力例：<b>0.5</b> / <b>50%</b></div>
+        </div>
+
+        <div class="gacha-row">
+          <div class="gacha-label">1回あたりの金額（任意）</div>
+          <input id="price1" class="gacha-in" inputmode="numeric" placeholder="例: 300" />
+          <div class="gacha-help">未入力なら金額計算はスキップ</div>
+        </div>
+
+        <div class="gacha-row">
+          <div class="gacha-label">10連の金額（任意）</div>
+          <input id="price10" class="gacha-in" inputmode="numeric" placeholder="例: 3000（未入力なら 1回×10）" />
+          <div class="gacha-help">多くのガチャの「10連で少し安い」を反映</div>
+        </div>
+      </div>
+
+      <div class="gacha-btns">
+        <button class="gacha-btn primary" id="calc">計算</button>
+        <button class="gacha-btn ghost" id="clear">クリア</button>
+      </div>
+
+      <div class="gacha-hr"></div>
+      <div id="out" class="gacha-out"></div>
+
+      <div class="gacha-hr"></div>
+      <div class="gacha-note">
+        <b>使い方</b><br/>
+        ・<b>p と n</b> を入れる → <b>q（少なくとも1回当たる確率）</b>を計算<br/>
+        ・<b>p と q</b> を入れる → 必要な <b>n（回数）</b>を計算<br/>
+        ・<b>n と q</b> を入れる → 必要な <b>p（1回あたり確率）</b>を計算<br/>
+        ・金額：<b>1回の金額</b>（任意）と <b>10連の金額</b>（任意）を入れると、回数に対する総額を表示
+      </div>
+    </div>
+
+    <!-- AdSense unit（既存slotに合わせる。表示されない場合もあるがOK） -->
+    <div class="gacha-card">
+      <div class="gacha-label">スポンサー</div>
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-5643751507480712"
+           data-ad-slot="5257098390"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+  </div>
+
+<script>
+function parseProb(s){
+  if(!s) return null;
+  s = (""+s).trim();
+  if(!s) return null;
+
+  // 1/166 形式
+  if(/^\s*\d+\s*\/\s*\d+\s*$/.test(s)){
+    const parts = s.split("/");
+    const a = Number(parts[0].trim());
+    const b = Number(parts[1].trim());
+    if(!isFinite(a)||!isFinite(b)||b===0) return null;
+    return a/b;
+  }
+
+  // % 形式
+  if(s.includes("%")){
+    const v = Number(s.replace("%","").trim());
+    if(!isFinite(v)) return null;
+    return v/100;
+  }
+
+  // 小数
+  const v = Number(s);
+  if(!isFinite(v)) return null;
+  return v;
+}
+
+function parseNum(s){
+  if(s==null) return null;
+  const t = (""+s).trim();
+  if(!t) return null;
+  const v = Number(t);
+  if(!isFinite(v)) return null;
+  return v;
+}
+
+function fmtPct(x){
+  return (x*100).toFixed(4).replace(/\.?0+$/,"") + "%";
+}
+
+function ceilInt(x){
+  return Math.ceil(x - 1e-12);
+}
+
+function costForPulls(n, price1, price10){
+  if(!(price1>0)) return null;
+  const p10 = (price10>0) ? price10 : price1*10;
+  const tens = Math.floor(n/10);
+  const rem  = n%10;
+  return tens*p10 + rem*price1;
+}
+
+function render(html){ document.getElementById("out").innerHTML = html; }
+
+document.getElementById("calc").addEventListener("click", () => {
+  const p = parseProb(document.getElementById("p").value);
+  const n = parseNum(document.getElementById("n").value);
+  const q = parseProb(document.getElementById("q").value);
+
+  const price1  = parseNum(document.getElementById("price1").value);
+  const price10 = parseNum(document.getElementById("price10").value);
+
+  // どの2つが入ってるかで分岐
+  const hasP = (p!=null);
+  const hasN = (n!=null);
+  const hasQ = (q!=null);
+
+  let mode = null;
+  if(hasP && hasN && !hasQ) mode = "pn_to_q";
+  else if(hasP && hasQ && !hasN) mode = "pq_to_n";
+  else if(hasN && hasQ && !hasP) mode = "nq_to_p";
+  else if(hasP && hasN && hasQ) mode = "pn_to_q"; // 3つ入ってたらqを再計算して確認
+  else {
+    render('<div class="gacha-warn">入力が足りない：{p,n} または {p,q} または {n,q} のどれか2つを入れてください。</div>');
+    return;
+  }
+
+  // バリデーション
+  if(mode !== "nq_to_p"){
+    if(!(p>0 && p<1)){
+      render('<div class="gacha-warn">当たる確率 p は 0〜1 の範囲で入力してください。</div>');
+      return;
+    }
+  }
+  if(mode !== "pq_to_n"){
+    if(!(n>0)){
+      render('<div class="gacha-warn">引く回数 n は 1以上で入力してください。</div>');
+      return;
+    }
+  }
+  if(mode !== "pn_to_q"){
+    if(!(q>0 && q<1)){
+      render('<div class="gacha-warn">当選確率 q は 0〜1 の範囲で入力してください。</div>');
+      return;
+    }
+  }
+
+  let out = "";
+  if(mode === "pn_to_q"){
+    const qq = 1 - Math.pow(1 - p, n);
+    out += <div>当たる確率 p= / 回数 n= 回</div>;
+    out += <div class="gacha-big">当選確率 q（少なくとも1回） = </div>;
+
+    const c = costForPulls(Math.round(n), price1, price10);
+    if(c!=null){
+      out += <div class="gacha-hr"></div><div>概算コスト：<b>円</b></div>;
+      if(price10>0){
+        out += <div class="gacha-note">内訳：10連=円 / 1回=円</div>;
+      }
+    }
+  }
+
+  if(mode === "pq_to_n"){
+    const nn = Math.log(1 - q) / Math.log(1 - p);
+    const nNeed = ceilInt(nn);
+    out += <div>当たる確率 p= / 当選確率 q=</div>;
+    out += <div class="gacha-big">必要回数 n =  回（切り上げ）</div>;
+    out += <div class="gacha-note">理論値： 回</div>;
+
+    const c = costForPulls(nNeed, price1, price10);
+    if(c!=null){
+      out += <div class="gacha-hr"></div><div>概算コスト：<b>円</b></div>;
+    }
+  }
+
+  if(mode === "nq_to_p"){
+    const pp = 1 - Math.pow(1 - q, 1 / n);
+    out += <div>回数 n= 回 / 当選確率 q=</div>;
+    out += <div class="gacha-big">必要な当たる確率 p（1回あたり） = </div>;
+    out += <div class="gacha-note">小数：</div>;
+
+    const c = costForPulls(Math.round(n), price1, price10);
+    if(c!=null){
+      out += <div class="gacha-hr"></div><div>概算コスト：<b>円</b></div>;
+    }
+  }
+
+  render(out);
+});
+
+document.getElementById("clear").addEventListener("click", () => {
+  ["p","n","q","price1","price10"].forEach(id => document.getElementById(id).value="");
+  render("");
+});
+
+render("<div class='gacha-note'>p・n・q のうち <b>2つ</b>を入れて「計算」。</div>");
+</script>
+
+<!-- build:1768661613 -->
+
+<!-- A8_RAIL_START -->
+<div class="a8-rail left" data-a8-rail="1">
+  <div class="a8-label">広告 / PR</div>
+  <div class="a8-stack">
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+5VYC4Y+4SIK+HXD0X" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=260117583356&wid=001&eno=01&mid=s00000022358003011000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4AV80F+5VYC4Y+4SIK+HXD0X" alt=""></div>
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+5X57CI+5TRO+5YZ75" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www27.a8.net/svt/bgt?aid=260117583358&wid=001&eno=01&mid=s00000027186001003000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4AV80F+5X57CI+5TRO+5YZ75" alt=""></div>
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+6P4KS2+5MG2+63H8H" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=260117583405&wid=001&eno=01&mid=s00000026237001024000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AV80F+6P4KS2+5MG2+63H8H" alt=""></div>
+  </div>
+</div>
+
+<div class="a8-rail right" data-a8-rail="1">
+  <div class="a8-label">広告 / PR</div>
+  <div class="a8-stack">
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+5XQMYA+5NG6+5Z6WX" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=260117583359&wid=001&eno=01&mid=s00000026367001004000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AV80F+5XQMYA+5NG6+5Z6WX" alt=""></div>
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+6P4KS2+5MG2+63H8H" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=260117583405&wid=001&eno=01&mid=s00000026237001024000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AV80F+6P4KS2+5MG2+63H8H" alt=""></div>
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+5X57CI+5TRO+5YZ75" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www27.a8.net/svt/bgt?aid=260117583358&wid=001&eno=01&mid=s00000027186001003000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4AV80F+5X57CI+5TRO+5YZ75" alt=""></div>
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+604DDE+5L2C+5ZU29" rel="nofollow">
+<img border="0" width="100" height="100" alt="" src="https://www25.a8.net/svt/bgt?aid=260117583363&wid=001&eno=01&mid=s00000026058001007000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AV80F+604DDE+5L2C+5ZU29" alt=""></div>
+  </div>
+</div>
+
+<div class="a8-footer" data-a8-rail="1">
+  <div class="a8-label">広告 / PR</div>
+  <div class="a8-grid">
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+5VYC4Y+4SIK+HXD0X" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=260117583356&wid=001&eno=01&mid=s00000022358003011000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www18.a8.net/0.gif?a8mat=4AV80F+5VYC4Y+4SIK+HXD0X" alt=""></div>
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+5X57CI+5TRO+5YZ75" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www27.a8.net/svt/bgt?aid=260117583358&wid=001&eno=01&mid=s00000027186001003000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4AV80F+5X57CI+5TRO+5YZ75" alt=""></div>
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+5XQMYA+5NG6+5Z6WX" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www26.a8.net/svt/bgt?aid=260117583359&wid=001&eno=01&mid=s00000026367001004000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AV80F+5XQMYA+5NG6+5Z6WX" alt=""></div>
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+6P4KS2+5MG2+63H8H" rel="nofollow">
+<img border="0" width="300" height="250" alt="" src="https://www21.a8.net/svt/bgt?aid=260117583405&wid=001&eno=01&mid=s00000026237001024000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www15.a8.net/0.gif?a8mat=4AV80F+6P4KS2+5MG2+63H8H" alt=""></div>
+    <div class="a8-unit"><a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+604DDE+5L2C+5ZU29" rel="nofollow">
+<img border="0" width="100" height="100" alt="" src="https://www25.a8.net/svt/bgt?aid=260117583363&wid=001&eno=01&mid=s00000026058001007000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4AV80F+604DDE+5L2C+5ZU29" alt=""></div>
+  </div>
+</div>
+<!-- A8_RAIL_END -->
+</body>
+</html>
