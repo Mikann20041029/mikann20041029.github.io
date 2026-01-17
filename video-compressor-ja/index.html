@@ -1,48 +1,48 @@
 <!doctype html><html lang="ja" data-lang="ja"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>動画圧縮（MP4）— 画質/FPSを下げて容量削減</title>
-<meta name="description" content="MP4を入れて解像度/FPS/ビットレートを指定し、推定サイズを見てからブラウザ内で圧縮できます。"/>
+<title>蜍慕判蝨ｧ邵ｮ・・P4・俄・逕ｻ雉ｪ/FPS繧剃ｸ九￡縺ｦ螳ｹ驥丞炎貂・/title>
+<meta name="description" content="MP4繧貞・繧後※隗｣蜒丞ｺｦ/FPS/繝薙ャ繝医Ξ繝ｼ繝医ｒ謖・ｮ壹＠縲∵耳螳壹し繧､繧ｺ繧定ｦ九※縺九ｉ繝悶Λ繧ｦ繧ｶ蜀・〒蝨ｧ邵ｮ縺ｧ縺阪∪縺吶・/>
 <link rel="stylesheet" href="./style.css"/></head><body>
 <div class="container">
   <div class="header">
     <div class="brand"><div class="logo" aria-hidden="true"></div>
-      <div><h1>動画圧縮（MP4）</h1><div class="sub">MP4→設定→推定→実行（ブラウザ内で処理）</div></div>
+      <div><h1>蜍慕判蝨ｧ邵ｮ・・P4・・/h1><div class="sub">MP4竊定ｨｭ螳壺・謗ｨ螳壺・螳溯｡鯉ｼ医ヶ繝ｩ繧ｦ繧ｶ蜀・〒蜃ｦ逅・ｼ・/div></div>
     </div>
     <div class="badge">URL: /video-compressor-ja/</div>
   </div>
 
   <div class="grid">
     <div class="card">
-      <div class="sectionTitle">1) 入力</div>
+      <div class="sectionTitle">1) 蜈･蜉・/div>
       <div class="row"><div class="field" style="min-width:260px;flex:1.6">
-        <label for="file">MP4ファイル</label>
+        <label for="file">MP4繝輔ぃ繧､繝ｫ</label>
         <input id="file" type="file" accept="video/mp4"/>
-        <small class="hint">このページはブラウザ内で処理します（アップロードしません）。</small>
+        <small class="hint">縺薙・繝壹・繧ｸ縺ｯ繝悶Λ繧ｦ繧ｶ蜀・〒蜃ｦ逅・＠縺ｾ縺呻ｼ医い繝・・繝ｭ繝ｼ繝峨＠縺ｾ縺帙ｓ・峨・/small>
       </div></div>
 
       <hr/>
 
-      <div class="sectionTitle">2) 設定</div>
+      <div class="sectionTitle">2) 險ｭ螳・/div>
       <div class="row">
-        <div class="field"><label for="resolution">解像度</label>
-          <select id="resolution"><option value="keep">元のまま</option><option value="1080">1080p</option><option value="720">720p</option><option value="480">480p</option><option value="360">360p</option></select>
+        <div class="field"><label for="resolution">隗｣蜒丞ｺｦ</label>
+          <select id="resolution"><option value="keep">蜈・・縺ｾ縺ｾ</option><option value="1080">1080p</option><option value="720">720p</option><option value="480">480p</option><option value="360">360p</option></select>
         </div>
         <div class="field"><label for="fps">FPS</label>
-          <select id="fps"><option value="keep">元のまま</option><option value="60">60</option><option value="30">30</option><option value="24">24</option><option value="15">15</option></select>
+          <select id="fps"><option value="keep">蜈・・縺ｾ縺ｾ</option><option value="60">60</option><option value="30">30</option><option value="24">24</option><option value="15">15</option></select>
         </div>
-        <div class="field"><label for="audio">音声ビットレート</label>
+        <div class="field"><label for="audio">髻ｳ螢ｰ繝薙ャ繝医Ξ繝ｼ繝・/label>
           <select id="audio"><option value="96">96 kbps</option><option value="128" selected>128 kbps</option><option value="192">192 kbps</option></select>
         </div>
       </div>
 
       <div class="row" style="margin-top:10px">
-        <div class="field" style="min-width:220px"><label for="vbitmode">映像ビットレート</label>
-          <select id="vbitmode"><option value="auto" selected>自動</option><option value="manual">手動</option></select>
+        <div class="field" style="min-width:220px"><label for="vbitmode">譏蜒上ン繝・ヨ繝ｬ繝ｼ繝・/label>
+          <select id="vbitmode"><option value="auto" selected>閾ｪ蜍・/option><option value="manual">謇句虚</option></select>
         </div>
-        <div class="field" id="vbitWrap" style="min-width:220px"><label for="vbit">手動 映像ビットレート（kbps）</label>
+        <div class="field" id="vbitWrap" style="min-width:220px"><label for="vbit">謇句虚 譏蜒上ン繝・ヨ繝ｬ繝ｼ繝茨ｼ・bps・・/label>
           <input id="vbit" type="number" min="150" max="50000" step="50" value="2500"/>
         </div>
-        <div class="field" style="min-width:220px"><label for="crf">品質（CRF）</label>
+        <div class="field" style="min-width:220px"><label for="crf">蜩∬ｳｪ・・RF・・/label>
           <input id="crf" type="range" min="18" max="40" step="1" value="28"/>
           <small class="hint">CRF: <span id="crfVal">28</span></small>
         </div>
@@ -50,36 +50,39 @@
 
       <hr/>
 
-      <div class="sectionTitle">3) 推定 & 実行</div>
+      <div class="sectionTitle">3) 謗ｨ螳・& 螳溯｡・/div>
       <div class="kpi">
-        <div><div class="badge">入力</div><div class="v" id="metaIn">—</div><div class="sub">サイズ: <b id="sizeIn">—</b></div></div>
-        <div><div class="badge">推定 出力</div><div class="v" id="sizeEst">—</div><div class="sub">実サイズ: <b id="sizeOut">—</b></div></div>
+        <div><div class="badge">蜈･蜉・/div><div class="v" id="metaIn">窶・/div><div class="sub">繧ｵ繧､繧ｺ: <b id="sizeIn">窶・/b></div></div>
+        <div><div class="badge">謗ｨ螳・蜃ｺ蜉・/div><div class="v" id="sizeEst">窶・/div><div class="sub">螳溘し繧､繧ｺ: <b id="sizeOut">窶・/b></div></div>
       </div>
 
       <div class="row" style="margin-top:12px">
-        <span class="badge">目標: <b id="targetRes">—</b></span>
-        <span class="badge">FPS: <b id="targetFps">—</b></span>
-        <span class="badge">映像: <b id="videoKbps">—</b></span>
-        <span class="badge">音声: <b id="audioKbps">—</b></span>
+        <span class="badge">逶ｮ讓・ <b id="targetRes">窶・/b></span>
+        <span class="badge">FPS: <b id="targetFps">窶・/b></span>
+        <span class="badge">譏蜒・ <b id="videoKbps">窶・/b></span>
+        <span class="badge">髻ｳ螢ｰ: <b id="audioKbps">窶・/b></span>
       </div>
 
       <div class="row" style="margin-top:14px">
-        <button id="run" disabled>圧縮を実行</button>
-        <a id="download" href="#" style="display:none;gap:10px;align-items:center" class="badge">圧縮MP4をダウンロード</a>
+        <button id="run" disabled>蝨ｧ邵ｮ繧貞ｮ溯｡・/button>
+        <a id="download" href="#" style="display:none;gap:10px;align-items:center" class="badge">蝨ｧ邵ｮMP4繧偵ム繧ｦ繝ｳ繝ｭ繝ｼ繝・/a>
       </div>
 
-      <div class="sub">進捗: <span id="pText">0%</span></div>
+      <div class="sub">騾ｲ謐・ <span id="pText">0%</span></div>
       <progress id="progress" max="100" value="0"></progress>
 
       <div id="log" class="log"></div>
 
-      <div class="adBox"><b>広告の差し込み場所（想定）</b><br/>AdSense/アフィリエイトのコードを後で貼る。</div>
-    </div>
+      <div class="adSlot">
+  <div class="adTitle">📢 広告枠（後でAdSenseコードを貼る場所）</div>
+  <div class="adBox2">ここに AdSense / アフィリエイトのコードを差し込む想定。</div>
+  <div class="codeHint">準備できたら、<b>&lt;div class="adBox2"&gt;...&lt;/div&gt;</b> を AdSense スニペットに置き換えるだけ。</div>
+</div>
 
     <div class="card">
       <div class="sectionTitle">English version</div>
       <div class="sub"><a href="/video-compressor/">/video-compressor/</a></div>
-      <div class="footer"><hr/>© 2026 mikann20041029.github.io</div>
+      <div class="footer"><hr/>ﾂｩ 2026 mikann20041029.github.io</div>
     </div>
   </div>
 </div>

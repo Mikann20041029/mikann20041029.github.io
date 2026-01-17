@@ -1,12 +1,12 @@
 <!doctype html><html lang="en" data-lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>Video Compressor (MP4) — Reduce Size in Browser</title>
+<title>Video Compressor (MP4) 窶・Reduce Size in Browser</title>
 <meta name="description" content="Upload an MP4, choose resolution/FPS/bitrate, see an estimated output size, and compress in your browser (client-side)."/>
 <link rel="stylesheet" href="./style.css"/></head><body>
 <div class="container">
   <div class="header">
     <div class="brand"><div class="logo" aria-hidden="true"></div>
-      <div><h1>Video Compressor (MP4)</h1><div class="sub">Upload MP4 → pick settings → see estimate → run in browser.</div></div>
+      <div><h1>Video Compressor (MP4)</h1><div class="sub">Upload MP4 竊・pick settings 竊・see estimate 竊・run in browser.</div></div>
     </div>
     <div class="badge">URL: /video-compressor/</div>
   </div>
@@ -21,8 +21,18 @@
       </div></div>
 
       <hr/>
-
-      <div class="sectionTitle">2) Settings</div>
+<div class="tipRow">
+  <div class="botIcon" aria-hidden="true"><div class="botFace">🤖</div></div>
+  <div class="bubble">
+    <b>Heads up (important)</b>
+    <ul>
+      <li>This tool runs <b>inside your browser</b> (no upload).</li>
+      <li>Max workable file size depends on your device’s <b>memory (RAM)</b> and browser limits.</li>
+      <li>If it fails on phone/tablet, try <b>desktop Chrome/Edge</b> or use a smaller clip.</li>
+    </ul>
+  </div>
+</div>
+<div class="sectionTitle">2) Settings</div>
       <div class="row">
         <div class="field"><label for="resolution">Resolution</label>
           <select id="resolution"><option value="keep">Keep</option><option value="1080">1080p</option><option value="720">720p</option><option value="480">480p</option><option value="360">360p</option></select>
@@ -52,15 +62,15 @@
 
       <div class="sectionTitle">3) Estimate & Run</div>
       <div class="kpi">
-        <div><div class="badge">Input</div><div class="v" id="metaIn">—</div><div class="sub">Size: <b id="sizeIn">—</b></div></div>
-        <div><div class="badge">Estimated output</div><div class="v" id="sizeEst">—</div><div class="sub">Actual: <b id="sizeOut">—</b></div></div>
+        <div><div class="badge">Input</div><div class="v" id="metaIn">窶・/div><div class="sub">Size: <b id="sizeIn">窶・/b></div></div>
+        <div><div class="badge">Estimated output</div><div class="v" id="sizeEst">窶・/div><div class="sub">Actual: <b id="sizeOut">窶・/b></div></div>
       </div>
 
       <div class="row" style="margin-top:12px">
-        <span class="badge">Target: <b id="targetRes">—</b></span>
-        <span class="badge">FPS: <b id="targetFps">—</b></span>
-        <span class="badge">Video: <b id="videoKbps">—</b></span>
-        <span class="badge">Audio: <b id="audioKbps">—</b></span>
+        <span class="badge">Target: <b id="targetRes">窶・/b></span>
+        <span class="badge">FPS: <b id="targetFps">窶・/b></span>
+        <span class="badge">Video: <b id="videoKbps">窶・/b></span>
+        <span class="badge">Audio: <b id="audioKbps">窶・/b></span>
       </div>
 
       <div class="row" style="margin-top:14px">
@@ -73,13 +83,17 @@
 
       <div id="log" class="log"></div>
 
-      <div class="adBox"><b>Ad placeholder</b><br/>Paste AdSense / affiliate code here later.</div>
+      <div class="adSlot">
+  <div class="adTitle">📢 Ad space (paste AdSense code here later)</div>
+  <div class="adBox2">AdSense / affiliate code will be inserted here.</div>
+  <div class="codeHint">When you are ready, replace <b>&lt;div class="adBox2"&gt;...&lt;/div&gt;</b> with your AdSense snippet.</div>
+</div>
     </div>
 
     <div class="card">
       <div class="sectionTitle">Japanese version</div>
       <div class="sub"><a href="/video-compressor-ja/">/video-compressor-ja/</a></div>
-      <div class="footer"><hr/>© 2026 mikann20041029.github.io</div>
+      <div class="footer"><hr/>ﾂｩ 2026 mikann20041029.github.io</div>
     </div>
   </div>
 </div>
