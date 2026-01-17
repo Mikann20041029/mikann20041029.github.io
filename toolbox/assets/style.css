@@ -2,9 +2,9 @@
   --bg1:#ffe6f2;
   --bg2:#e7f0ff;
   --bg3:#f7fff0;
-  --card: rgba(255,255,255,.70);
-  --card2: rgba(255,255,255,.52);
-  --line: rgba(255,255,255,.35);
+  --card: rgba(255,255,255,.74);
+  --card2: rgba(255,255,255,.54);
+  --line: rgba(255,255,255,.42);
   --text:#161823;
   --muted: rgba(22,24,35,.62);
   --shadow: 0 18px 50px rgba(18,22,40,.12);
@@ -20,27 +20,27 @@ body{
   font-family: "M PLUS Rounded 1c","Zen Maru Gothic","Hiragino Maru Gothic ProN","Hiragino Sans","Meiryo",system-ui,sans-serif;
   color:var(--text);
   background:
-    radial-gradient(900px 520px at 12% 18%, rgba(255,95,162,.34), transparent 60%),
-    radial-gradient(900px 520px at 84% 28%, rgba(92,200,255,.34), transparent 60%),
+    radial-gradient(900px 520px at 12% 18%, rgba(255,95,162,.36), transparent 60%),
+    radial-gradient(900px 520px at 84% 28%, rgba(92,200,255,.36), transparent 60%),
     radial-gradient(900px 520px at 60% 90%, rgba(123,108,255,.22), transparent 60%),
     linear-gradient(145deg, var(--bg1), var(--bg2) 46%, var(--bg3));
 }
 
-a{color:inherit}
+/* 下線を消して “古いリンク感” を消す */
+a{color:inherit; text-decoration:none}
 
-.wrap{max-width:980px; margin:26px auto; padding:0 16px; position:relative}
+.wrap{max-width:1040px; margin:22px auto; padding:0 16px; position:relative}
 
-/* 背景ステッカー（情報量UP） */
+/* 背景ステッカー */
 .wrap:before{
   content:"";
   position:absolute;
   inset:-18px -18px auto auto;
-  width:220px; height:220px;
+  width:240px; height:240px;
   background:
     radial-gradient(circle at 30% 30%, rgba(255,95,162,.35), transparent 58%),
     radial-gradient(circle at 72% 28%, rgba(92,200,255,.35), transparent 58%),
     radial-gradient(circle at 55% 70%, rgba(123,108,255,.26), transparent 60%);
-  filter: blur(0px);
   border-radius:48%;
   transform: rotate(10deg);
   pointer-events:none;
@@ -49,9 +49,9 @@ a{color:inherit}
   content:"";
   position:absolute;
   inset:auto auto -26px -26px;
-  width:260px; height:260px;
+  width:280px; height:280px;
   background:
-    radial-gradient(circle at 40% 40%, rgba(255,255,255,.55), transparent 60%),
+    radial-gradient(circle at 40% 40%, rgba(255,255,255,.60), transparent 60%),
     radial-gradient(circle at 65% 60%, rgba(255,95,162,.16), transparent 62%),
     radial-gradient(circle at 30% 70%, rgba(92,200,255,.14), transparent 62%);
   border-radius:44%;
@@ -62,7 +62,7 @@ a{color:inherit}
   display:flex; align-items:center; justify-content:space-between;
   padding:12px 14px;
   border-radius:22px;
-  background:rgba(255,255,255,.55);
+  background:rgba(255,255,255,.58);
   border:1px solid var(--line);
   box-shadow: 0 10px 30px rgba(18,22,40,.08);
   backdrop-filter: blur(10px);
@@ -77,50 +77,40 @@ a{color:inherit}
 .brand strong{font-weight:900; letter-spacing:.2px}
 
 .mascot{
-  width:44px; height:44px;
+  width:46px; height:46px;
   display:inline-flex; align-items:center; justify-content:center;
   border-radius:18px;
-  background: rgba(255,255,255,.70);
-  border:1px solid rgba(255,255,255,.45);
+  background: rgba(255,255,255,.74);
+  border:1px solid rgba(255,255,255,.55);
   box-shadow: 0 10px 24px rgba(18,22,40,.08);
-  transform: translateY(0);
   animation: floaty 3.2s ease-in-out infinite;
 }
 .mascot svg{width:30px; height:30px}
 @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
 
-.nav{display:flex; gap:10px; flex-wrap:wrap}
+.nav{display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end}
 .pill{
   padding:9px 12px;
   border-radius:999px;
-  border:1px solid rgba(255,255,255,.45);
-  background: rgba(255,255,255,.60);
-  text-decoration:none;
-  color: rgba(22,24,35,.75);
+  border:1px solid rgba(255,255,255,.55);
+  background: rgba(255,255,255,.70);
+  color: rgba(22,24,35,.78);
   box-shadow: 0 10px 24px rgba(18,22,40,.06);
+  transition: transform .12s ease;
 }
 .pill:hover{transform:translateY(-1px)}
 
-.hero{
-  margin-top:18px;
-  padding:14px 2px;
-}
-.hero h1{
-  margin:0 0 6px;
-  font-size:22px;
-  font-weight:900;
-  letter-spacing:.2px;
-}
+.hero{margin-top:18px; padding:14px 2px}
+.hero h1{margin:0 0 6px; font-size:22px; font-weight:900; letter-spacing:.2px}
 .hero p{margin:0; color:var(--muted); line-height:1.75}
 
-/* かわいいバッジ */
 .badges{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
 .badge{
   font-size:12px;
   padding:6px 10px;
   border-radius:999px;
-  background: rgba(255,255,255,.62);
-  border:1px solid rgba(255,255,255,.45);
+  background: rgba(255,255,255,.70);
+  border:1px solid rgba(255,255,255,.55);
   box-shadow: 0 10px 20px rgba(18,22,40,.06);
 }
 .badge b{font-weight:900}
@@ -128,7 +118,7 @@ a{color:inherit}
 .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:14px; margin-top:14px}
 .card{
   grid-column:span 12;
-  border:1px solid rgba(255,255,255,.42);
+  border:1px solid rgba(255,255,255,.55);
   border-radius:26px;
   background: linear-gradient(180deg, var(--card), var(--card2));
   box-shadow: var(--shadow);
@@ -160,6 +150,17 @@ a{color:inherit}
 .card h2{margin:0 0 8px; font-size:17px; font-weight:900}
 .card p{margin:0 0 10px; color:var(--muted); line-height:1.75}
 
+/* カード内チップ（POP感） */
+.chips{display:flex; gap:8px; flex-wrap:wrap; margin:8px 0 10px}
+.chip{
+  font-size:12px;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid rgba(255,255,255,.65);
+  background: rgba(255,255,255,.64);
+  box-shadow: 0 10px 18px rgba(18,22,40,.06);
+}
+
 .row{display:flex; gap:10px; flex-wrap:wrap; align-items:end}
 .field{flex:1; min-width:220px}
 label{display:block; font-size:12px; color:var(--muted); margin:0 0 6px}
@@ -168,8 +169,8 @@ input,select{
   width:100%;
   padding:12px 12px;
   border-radius:18px;
-  border:1px solid rgba(255,255,255,.55);
-  background: rgba(255,255,255,.72);
+  border:1px solid rgba(255,255,255,.65);
+  background: rgba(255,255,255,.76);
   color:var(--text);
   outline:none;
   box-shadow: 0 10px 22px rgba(18,22,40,.06);
@@ -183,9 +184,8 @@ input:focus,select:focus{
   display:inline-flex; align-items:center; justify-content:center;
   padding:12px 14px;
   border-radius:18px;
-  border:1px solid rgba(255,255,255,.45);
+  border:1px solid rgba(255,255,255,.55);
   background: linear-gradient(135deg, rgba(255,95,162,.90), rgba(92,200,255,.78));
-  text-decoration:none;
   cursor:pointer;
   user-select:none;
   box-shadow: 0 16px 30px rgba(255,95,162,.16);
@@ -200,8 +200,8 @@ input:focus,select:focus{
   flex:1; min-width:220px;
   padding:12px 12px;
   border-radius:20px;
-  border:1px solid rgba(255,255,255,.45);
-  background: rgba(255,255,255,.64);
+  border:1px solid rgba(255,255,255,.55);
+  background: rgba(255,255,255,.66);
   box-shadow: 0 12px 24px rgba(18,22,40,.08);
 }
 .kpi .box small{display:block; color:var(--muted); margin-bottom:6px}
@@ -213,7 +213,7 @@ input:focus,select:focus{
   border-radius:20px;
   border:1px dashed rgba(22,24,35,.18);
   color:var(--muted);
-  background: rgba(255,255,255,.56);
+  background: rgba(255,255,255,.60);
   line-height:1.75;
 }
 
@@ -221,8 +221,8 @@ input:focus,select:focus{
   margin-top:12px;
   padding:12px;
   border-radius:22px;
-  border:1px solid rgba(255,255,255,.42);
-  background: rgba(255,255,255,.50);
+  border:1px solid rgba(255,255,255,.55);
+  background: rgba(255,255,255,.54);
 }
 .adbox small{color:var(--muted)}
 .footer{margin-top:22px; color:var(--muted); font-size:12px; line-height:1.7}
