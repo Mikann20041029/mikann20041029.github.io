@@ -95,18 +95,7 @@
 
       <div class="adSlot">
   <div class="adTitle">・滓ｫ・ｽｨ繝ｻAd space (paste AdSense code here later)</div>
-  <div class="adBox2">
-<!-- vc_right_1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5643751507480712"
-     data-ad-slot="5257098390"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</div>
+  <div class="adBox2">AdSense / affiliate code will be inserted here.</div>
   <div class="codeHint">When you are ready, replace <b>&lt;div class="adBox2"&gt;...&lt;/div&gt;</b> with your AdSense snippet.</div>
 </div>
     </div>
@@ -119,4 +108,26 @@
   </div>
 </div>
 <script type="module" src="./app.js"></script>
+<!-- ADS_VC_RIGHT_1_START -->
+<script>
+window.addEventListener("load", function () {
+  try{
+    var box = document.querySelector(".adBox2");
+    if(!box) return;
+
+    // 既存の内容は全部置き換え（構造を切らない＝ページが壊れない）
+    box.innerHTML =
+      '<!-- vc_right_1 -->' +
+      '<ins class="adsbygoogle" style="display:block" ' +
+      'data-ad-client="ca-pub-5643751507480712" ' +
+      'data-ad-slot="5257098390" ' +
+      'data-ad-format="auto" data-full-width-responsive="true"></ins>';
+
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  }catch(e){
+    console.log("ads init error", e);
+  }
+});
+</script>
+<!-- ADS_VC_RIGHT_1_END -->
 </body></html>
