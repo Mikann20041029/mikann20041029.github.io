@@ -1,329 +1,161 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>Toolbox | 計算機</title>
-  <meta name="description" content="よく使う計算をサクッと。お金/健康/生活/日付/旅/学業/副業の定番計算機。" />
-  <link rel="stylesheet" href="./assets/style.css?v=6" />
+  <meta name="description" content="よく使う計算機をまとめ。検索して即使う。"/>
+  <style>  :root{
+    --bg1:#ffd7ee; --bg2:#d6f0ff;
+    --card:rgba(255,255,255,.72);
+    --line:rgba(0,0,0,.10);
+    --text:rgba(0,0,0,.88);
+    --muted:rgba(0,0,0,.60);
+    --shadow:0 12px 28px rgba(18,22,40,.10);
+    --r:22px;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans JP", sans-serif;
+  }
+  body{
+    margin:0;
+    color:var(--text);
+    background:
+      radial-gradient(900px 500px at 12% 12%, var(--bg1), transparent 60%),
+      radial-gradient(900px 500px at 88% 18%, var(--bg2), transparent 60%),
+      #fff;
+    min-height:100vh;
+  }
+  .wrap{max-width:1100px;margin:20px auto;padding:0 16px;}
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:12px; margin-bottom:14px;
+  }
+  .brand{font-weight:900; letter-spacing:.2px;}
+  .nav a{color:inherit; text-decoration:none; font-weight:800; margin-left:12px; opacity:.85;}
+  .nav a:hover{opacity:1; text-decoration:underline;}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    box-shadow:var(--shadow);
+    backdrop-filter: blur(8px);
+  }
+  .hero{padding:16px 16px; margin-bottom:14px;}
+  .hero h1{font-size:18px;margin:0 0 6px;}
+  .hero p{margin:0;color:var(--muted);line-height:1.7;}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr;} }
+  .box{padding:16px;}
+  .box h2{font-size:16px;margin:0 0 10px;}
+  .row{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0;}
+  @media (min-width:520px){ .row{grid-template-columns:1fr 1fr;} }
+  label{display:block;font-weight:800;font-size:13px;margin:0 0 6px;}
+  input, select{
+    width:100%;
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.8);
+    outline:none;
+    box-sizing:border-box;
+    font-size:14px;
+  }
+  button{
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.86);
+    font-weight:900;
+    cursor:pointer;
+  }
+  button:hover{filter:brightness(0.98);}
+  .out{
+    margin-top:10px;
+    padding:12px;
+    border-radius:16px;
+    border:1px dashed rgba(0,0,0,.18);
+    background:rgba(255,255,255,.65);
+    color:rgba(0,0,0,.78);
+    line-height:1.75;
+    white-space:pre-wrap;
+  }
+  .mini{color:var(--muted); font-size:12px; line-height:1.6;}
+  .tools{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px;}
+  @media (min-width:860px){ .tools{grid-template-columns:1fr 1fr;} }
+  .toolcard{padding:14px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+  .toolcard h3{margin:0 0 6px;font-size:15px;}
+  .toolcard p{margin:0;color:var(--muted);line-height:1.6;font-size:13px;}
+  .toolcard a{font-weight:900;text-decoration:none;}</style>
 </head>
 <body>
-  <div class="bg-orb o1"></div><div class="bg-orb o2"></div><div class="bg-orb o3"></div>
   <div class="wrap">
-    <header class="top">
-      <a class="brand" href="./index.html">
-        <span class="logo"></span>
-        <span class="mascot" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none">
-            <path d="M6 12c0-4 2.7-7 6-7s6 3 6 7-2.7 7-6 7-6-3-6-7Z" fill="rgba(255,95,162,.35)"/>
-            <path d="M8.8 12.3c0-.6.5-1.1 1.1-1.1s1.1.5 1.1 1.1-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1Z" fill="rgba(20,22,28,.75)"/>
-            <path d="M13 12.3c0-.6.5-1.1 1.1-1.1s1.1.5 1.1 1.1-.5 1.1-1.1 1.1-1.1-.5-1.1-1.1Z" fill="rgba(20,22,28,.75)"/>
-            <path d="M9.6 15.3c1 .9 3.8.9 4.8 0" stroke="rgba(20,22,28,.65)" stroke-width="1.4" stroke-linecap="round"/>
-            <path d="M5.2 8.2c.9-1.5 2.6-3 4.4-3.6" stroke="rgba(92,200,255,.75)" stroke-width="1.4" stroke-linecap="round"/>
-            <path d="M18.8 8.2c-.9-1.5-2.6-3-4.4-3.6" stroke="rgba(123,108,255,.55)" stroke-width="1.4" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <strong>Toolbox</strong>
-      </a>
-      <nav class="nav">
-        <a href="../sns-growth-rank/">SNS Growth Rank</a>
-        <a href="../calculator/">旧Calculator</a>
-        <a href="./disclosure.html">広告/PR</a>
-      </nav>
-    </header>
+    <div class="topbar">
+      <div class="brand">Toolbox</div>
+      <div class="nav">
+        <a href="./index.html">Toolbox Home</a>
+        <a href="../">Top</a>
+      </div>
+    </div>
 
-    <main>
-      <section class="hero">
-        <h1>計算機</h1>
-        <p>よく使うやつ、まとめ。検索して即使う。</p>
-      </section>
+    <div class="card hero">
+      <h1>計算機</h1>
+      <p>よく使うやつをまとめ。検索して即使う。</p>
+    </div>
 
-      <section class="card">
-        <div class="row">
-          <div class="field">
-            <label>計算機</label>
-            <select id="toolSelect"></select>
-          </div>
-          <div class="field">
-            <label>検索</label>
-            <input id="search" placeholder="例：ローン / BMI / % / 旅行 / 割引" />
-          </div>
-        </div>
+    <div class="card box">
+      <h2>検索</h2>
+      <input id="q" placeholder="例: ローン / 複利 / BMI / 割引 / 年齢" />
+      <div class="mini">見つけたら「つかう」を押す。</div>
+    </div>
 
-        <div class="toolchips" id="catChips"></div>
+    <div id="list" class="tools"></div>
 
-        <div class="grid toolgrid" id="list"></div>
-      </section>
-
-      <section class="card" id="runner">
-        <h2 id="toolTitle">計算</h2>
-        <p id="toolDesc" class="muted">入力して結果を見る。</p>
-
-        <div class="row" id="fields"></div>
-
-        <div class="kpi">
-          <div class="box">
-            <small>結果</small>
-            <strong id="resultMain">—</strong> <span id="resultUnit" class="muted"></span>
-          </div>
-          <div class="box">
-            <small>メモ</small>
-            <strong id="resultSub">—</strong>
-          </div>
-        </div>
-
-        <div class="note" id="resultExtra" style="display:none"></div>
-
-        <div class="adbox">
-          <small>AdSense枠（必要ならここにコード）</small>
-          <div class="muted">※コンテンツと区別して配置する。</div>
-        </div>
-
-        <div class="footer">
-          <a href="./index.html">← ツール一覧へ</a>
-        </div>
-      </section>
-    </main>
+    <div class="card box" style="margin-top:14px;">
+      <div class="mini">AdSense枠（必要ならここにコード）<br>※コンテンツと区別して配置する。</div>
+    </div>
   </div>
 
-  <script src="./assets/tools.js?v=6"></script>
-  <script>
-    const tools = (window.TOOLBOX_TOOLS||[]).slice();
-    const byId = Object.fromEntries(tools.map(t=>[t.id,t]));
-    const $ = (q)=>document.querySelector(q);
-
-    const toolSelect = $("#toolSelect");
-    const search = $("#search");
-    const list = $("#list");
-    const fields = $("#fields");
-    const toolTitle = $("#toolTitle");
-    const toolDesc = $("#toolDesc");
-    const resultMain = $("#resultMain");
-    const resultUnit = $("#resultUnit");
-    const resultSub = $("#resultSub");
-    const resultExtra = $("#resultExtra");
-    const catChips = $("#catChips");
-
-    const cats = Array.from(new Set(tools.map(t=>t.cat)));
-    let activeCat = "すべて";
-
-    function esc(s){ return String(s).replace(/[&<>"']/g, m=>({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m])); }
-
-    function renderCats(){
-      const all = ["すべて", ...cats];
-      catChips.innerHTML = all.map(c=>{
-        const on = (c===activeCat) ? " chip on" : " chip";
-        return `<button class="${on}" type="button" data-cat="${esc(c)}">${esc(c)}</button>`;
-      }).join("");
-      catChips.querySelectorAll("button").forEach(b=>{
-        b.addEventListener("click", ()=>{
-          activeCat = b.dataset.cat;
-          renderList();
-        });
-      });
-    }
-
-    function renderList(){
-      const q = (search.value||"").toLowerCase().trim();
-      const filtered = tools.filter(t=>{
-        const hit = (t.name+" "+t.desc+" "+t.cat+" "+(t.tags||[]).join(" ")).toLowerCase().includes(q);
-        const catOk = (activeCat==="すべて") || (t.cat===activeCat);
-        return hit && catOk;
-      });
-      list.innerHTML = filtered.map(t=>`
-        <a class="toolcard" href="./calc.html#${esc(t.id)}">
-          <div class="toolhead">
-            <div class="toolic">${esc(t.icon||"🧩")}</div>
-            <div>
-              <div class="toolname">${esc(t.name)}</div>
-              <div class="tooldesc">${esc(t.desc)}</div>
-            </div>
-          </div>
-          <div class="toolmeta">${esc(t.cat)}</div>
-        </a>
-      `).join("");
-      // also sync select
-      toolSelect.innerHTML = filtered.map(t=>`<option value="${esc(t.id)}">${esc(t.icon||"")} ${esc(t.name)}（${esc(t.cat)}）</option>`).join("");
-    }
-
-    function fieldEl(f, val){
-      const id = "f_"+f.k;
-      const v = (val!==undefined && val!==null) ? val : (f.v ?? "");
-      if(f.t==="select"){
-        const opts = (f.options||[]).map(([k,l])=>{
-          const sel = String(k)===String(v) ? "selected" : "";
-          return `<option value="${esc(k)}" ${sel}>${esc(l)}</option>`;
-        }).join("");
-        return `
-          <div class="field">
-            <label for="${esc(id)}">${esc(f.l)}</label>
-            <select id="${esc(id)}" data-k="${esc(f.k)}">${opts}</select>
-          </div>`;
-      }
-      const step = f.step ?? "any";
-      const type = f.t || "number";
-      return `
-        <div class="field">
-          <label for="${esc(id)}">${esc(f.l)}</label>
-          <input id="${esc(id)}" data-k="${esc(f.k)}" type="${esc(type)}" step="${esc(step)}" value="${esc(v)}" />
-        </div>`;
-    }
-
-    function readValues(tool){
-      const v = {};
-      tool.fields.forEach(f=>{
-        const el = document.querySelector('[data-k="'+f.k+'"]');
-        if(!el) return;
-        if(f.t==="number") v[f.k] = (el.value==="") ? 0 : Number(el.value);
-        else v[f.k] = el.value;
-      });
-      return v;
-    }
-
-    function run(tool){
-      const v = readValues(tool);
-      const out = tool.compute(v) || {};
-      const main = out.main;
-      const unit = out.unit || "";
-      resultUnit.textContent = unit ? (" "+unit) : "";
-      if(typeof main==="number"){
-        resultMain.textContent = (unit==="%" ? main.toFixed(2) : Math.round(main).toLocaleString("ja-JP"));
-      }else{
-        resultMain.textContent = String(main ?? "—");
-      }
-      resultSub.textContent = String(out.sub ?? "—");
-
-      const extra = out.extra || [];
-      if(extra.length){
-        resultExtra.style.display = "";
-        resultExtra.innerHTML = extra.map(x=>`• ${esc(x)}`).join("<br>");
-      }else{
-        resultExtra.style.display = "none";
-        resultExtra.textContent = "";
-      }
-    }
-
-    function mount(toolId){
-      const tool = byId[toolId] || tools[0];
-      if(!tool) return;
-
-      toolTitle.textContent = (tool.icon?tool.icon+" ":"") + tool.name;
-      toolDesc.textContent = tool.desc || "";
-
-      fields.innerHTML = tool.fields.map(f=>fieldEl(f)).join("");
-      fields.querySelectorAll("input,select").forEach(el=>{
-        el.addEventListener("input", ()=>run(tool));
-        el.addEventListener("change", ()=>run(tool));
-      });
-
-      toolSelect.value = tool.id;
-      toolSelect.onchange = ()=>{ location.hash = toolSelect.value; };
-
-      run(tool);
-      document.getElementById("runner").scrollIntoView({behavior:"smooth", block:"start"});
-    }
-
-    function hashTool(){
-      const h = (location.hash||"").replace("#","").trim();
-      return h;
-    }
-
-    renderCats();
-    renderList();
-
-    search.addEventListener("input", renderList);
-
-    window.addEventListener("hashchange", ()=>mount(hashTool()));
-    const initial = hashTool() || tools[0]?.id;
-    if(initial) mount(initial);
-  </script>
-
 <script>
-/*__TOOLBOX_TOOLMODE__*/
 (function(){
-  const META = {"resultSub":{"desc":"数値を入れて即計算。","title":"計算機：resultSub"},"resultUnit":{"desc":"数値を入れて即計算。","title":"計算機：resultUnit"},"resultMain":{"desc":"数値を入れて即計算。","title":"計算機：resultMain"},"toolTitle":{"desc":"数値を入れて即計算。","title":"計算機：toolTitle"},"list":{"desc":"数値を入れて即計算。","title":"計算機：list"},"catChips":{"desc":"数値を入れて即計算。","title":"計算機：catChips"},"fields":{"desc":"数値を入れて即計算。","title":"計算機：fields"},"search":{"desc":"数値を入れて即計算。","title":"計算機：search"},"toolSelect":{"desc":"数値を入れて即計算。","title":"計算機：toolSelect"},"toolDesc":{"desc":"数値を入れて即計算。","title":"計算機：toolDesc"},"resultExtra":{"desc":"数値を入れて即計算。","title":"計算機：resultExtra"}};
+  const tools = [
+    {id:"bmi",           title:"BMI計算",              desc:"身長・体重からBMIと判定、適正体重（BMI22）。", url:"./bmi.html"},
+    {id:"ideal-weight",  title:"適正体重（BMI22）",     desc:"身長から適正体重を計算。差分も出せる。",        url:"./ideal-weight.html"},
+    {id:"loan",          title:"ローン計算（月返済）",   desc:"借入額・金利・年数から元利均等の返済額。",      url:"./loan.html"},
+    {id:"mortgage",      title:"住宅ローン計算（月返済）",desc:"住宅ローン用の表示（中身は同じ）。",            url:"./mortgage.html"},
+    {id:"compound",      title:"複利（積立あり）",       desc:"元本＋毎月積立で将来額を概算。",                url:"./compound.html"},
+    {id:"percent",       title:"パーセント計算",         desc:"基準値に対する%を計算。",                      url:"./percent.html"},
+    {id:"discount",      title:"割引後価格",             desc:"定価と割引率から支払額を計算。",                url:"./discount.html"},
+    {id:"split",         title:"割り勘",                 desc:"合計を人数で割る（端数なし）。",                  url:"./split.html"},
+    {id:"date-diff",     title:"日数差",                 desc:"2つの日付の差（日数）を計算。",                  url:"./date-diff.html"},
+    {id:"age",           title:"年齢計算",               desc:"生年月日から満年齢。",                          url:"./age.html"},
+  ];
 
-  // クリックしたら別ページへ（一覧→各ツールページ）
-  document.addEventListener('click', function(e){
-    const a = e.target.closest && e.target.closest('a[href]');
-    const dt = e.target.closest && e.target.closest('[data-tool]');
-    let id = null;
+  const list = document.getElementById('list');
+  const q = document.getElementById('q');
 
-    if(dt && dt.getAttribute('data-tool')) id = dt.getAttribute('data-tool');
-    if(!id && a){
-      const href = a.getAttribute('href') || '';
-      // #id / calc.html#id / anything#id
-      const m = href.match(/#([A-Za-z0-9_-]{2,80})/);
-      if(m) id = m[1];
-    }
-    if(id && META[id]){
-      e.preventDefault();
-      location.href = './' + id + '.html';
-    }
-  }, true);
-
-  // tool=xxx なら “そのツールだけ表示” に寄せる（bmi形式）
-  const params = new URLSearchParams(location.search);
-  const tool = params.get('tool') || (location.hash ? location.hash.slice(1) : '');
-  if(!tool) return;
-
-  // 他ツールを隠す（id一致するやつだけ残す）
-  try{
-    Object.keys(META).forEach(id=>{
-      const el = document.getElementById(id);
-      if(el && id !== tool) el.style.display = 'none';
+  function render(){
+    const s = (q.value||"").trim().toLowerCase();
+    list.innerHTML = "";
+    const hit = tools.filter(t=>{
+      if(!s) return true;
+      return (t.title+t.desc+t.id).toLowerCase().includes(s);
     });
-  }catch(e){}
-
-  // 解説ボックスをターゲットの直前に出す
-  try{
-    const t = document.getElementById(tool);
-    if(t){
-      const info = META[tool] || {title:tool, desc:'数値を入れて即計算。'};
-      const box = document.createElement('div');
-      box.style.margin = '12px auto';
-      box.style.maxWidth = '1100px';
-      box.style.padding = '0 14px';
-      box.innerHTML =
-        '<div style="border:1px solid rgba(0,0,0,.10);border-radius:18px;background:rgba(255,255,255,.70);padding:12px 12px;box-shadow:0 10px 22px rgba(18,22,40,.08);">'+
-          '<div style="font-weight:800;font-size:16px;margin:0 0 6px;">'+info.title+'</div>'+
-          '<div style="color:rgba(0,0,0,.60);line-height:1.7;margin:0 0 8px;">'+info.desc+'</div>'+
-          '<a href="./calc.html" style="font-weight:700;text-decoration:none;">← ツール一覧へ</a>'+
-        '</div>';
-      t.parentElement.insertBefore(box, t);
-      t.scrollIntoView({behavior:'instant', block:'start'});
-      window.scrollBy(0, -10);
+    for(const t of hit){
+      const div = document.createElement('div');
+      div.className = "card toolcard";
+      div.innerHTML = 
+        <div>
+          <h3></h3>
+          <p></p>
+        </div>
+        <div><a href="">つかう</a></div>
+      ;
+      list.appendChild(div);
     }
-  }catch(e){}
-})();
-</script>
-<script>
-/*__TOOLBOX_FORCE_LINKS__*/
-(function(){
-  function go(id){ location.href = './' + id + '.html'; }
+  }
 
-  document.addEventListener('click', function(e){
-    const a = e.target.closest('a');
-    if(a){
-      const href = (a.getAttribute('href')||'').trim();
-      // #id / calc.html#id をクリックしても必ず別ページへ
-      const m1 = href.match(/^#([a-z0-9\-]{2,50})$/i);
-      const m2 = href.match(/(?:^|\/)calc\.html#([a-z0-9\-]{2,50})$/i);
-      if(m1){ e.preventDefault(); go(m1[1]); return; }
-      if(m2){ e.preventDefault(); go(m2[1]); return; }
-    }
-
-    // data-tool がある要素も拾う（カードがaじゃないケース用）
-    const t = e.target.closest('[data-tool]');
-    if(t){
-      const id = (t.getAttribute('data-tool')||'').trim();
-      if(id){ e.preventDefault(); go(id); }
-    }
-  }, true);
+  q.addEventListener('input', render);
+  render();
 })();
 </script>
 </body>
 </html>
-
-
-

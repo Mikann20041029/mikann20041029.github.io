@@ -1,60 +1,174 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>住宅ローン計算（月返済）｜Toolbox</title>
-  <meta name="description" content="借入額・金利・年数から月返済と総返済を計算。"/>
-  <link rel="canonical" href="https://mikann20041029.github.io/toolbox/mortgage.html"/>
-  <meta property="og:title" content="住宅ローン計算（月返済）｜Toolbox"/>
-  <meta property="og:description" content="借入額・金利・年数から月返済と総返済を計算。"/>
-  <meta property="og:url" content="https://mikann20041029.github.io/toolbox/mortgage.html"/>
-  <meta property="og:type" content="website"/>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"住宅ローン計算（月返済）｜Toolbox",
-    "url":"https://mikann20041029.github.io/toolbox/mortgage.html",
-    "description":"借入額・金利・年数から月返済と総返済を計算。"
+  <meta name="description" content="借入額・金利・年数から月返済と総返済（元利均等）を計算。"/>
+  <style>  :root{
+    --bg1:#ffd7ee; --bg2:#d6f0ff;
+    --card:rgba(255,255,255,.72);
+    --line:rgba(0,0,0,.10);
+    --text:rgba(0,0,0,.88);
+    --muted:rgba(0,0,0,.60);
+    --shadow:0 12px 28px rgba(18,22,40,.10);
+    --r:22px;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans JP", sans-serif;
   }
-  </script>
-  <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Hiragino Sans","Noto Sans JP",sans-serif;background:#fff;}
-    .wrap{max-width:1100px;margin:0 auto;padding:14px 14px 0;}
-    .note{border:1px solid rgba(0,0,0,.10);border-radius:18px;background:rgba(255,255,255,.75);padding:12px;box-shadow:0 10px 22px rgba(18,22,40,.08);}
-    .t{font-weight:800;font-size:16px;margin:0 0 6px;}
-    .d{color:rgba(0,0,0,.60);line-height:1.7;margin:0 0 10px;}
-    .links a{font-weight:700;text-decoration:none;margin-right:10px;}
-    iframe{width:100%;border:0;display:block;margin-top:10px;}
-  </style>
+  body{
+    margin:0;
+    color:var(--text);
+    background:
+      radial-gradient(900px 500px at 12% 12%, var(--bg1), transparent 60%),
+      radial-gradient(900px 500px at 88% 18%, var(--bg2), transparent 60%),
+      #fff;
+    min-height:100vh;
+  }
+  .wrap{max-width:1100px;margin:20px auto;padding:0 16px;}
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:12px; margin-bottom:14px;
+  }
+  .brand{font-weight:900; letter-spacing:.2px;}
+  .nav a{color:inherit; text-decoration:none; font-weight:800; margin-left:12px; opacity:.85;}
+  .nav a:hover{opacity:1; text-decoration:underline;}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    box-shadow:var(--shadow);
+    backdrop-filter: blur(8px);
+  }
+  .hero{padding:16px 16px; margin-bottom:14px;}
+  .hero h1{font-size:18px;margin:0 0 6px;}
+  .hero p{margin:0;color:var(--muted);line-height:1.7;}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr;} }
+  .box{padding:16px;}
+  .box h2{font-size:16px;margin:0 0 10px;}
+  .row{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0;}
+  @media (min-width:520px){ .row{grid-template-columns:1fr 1fr;} }
+  label{display:block;font-weight:800;font-size:13px;margin:0 0 6px;}
+  input, select{
+    width:100%;
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.8);
+    outline:none;
+    box-sizing:border-box;
+    font-size:14px;
+  }
+  button{
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.86);
+    font-weight:900;
+    cursor:pointer;
+  }
+  button:hover{filter:brightness(0.98);}
+  .out{
+    margin-top:10px;
+    padding:12px;
+    border-radius:16px;
+    border:1px dashed rgba(0,0,0,.18);
+    background:rgba(255,255,255,.65);
+    color:rgba(0,0,0,.78);
+    line-height:1.75;
+    white-space:pre-wrap;
+  }
+  .mini{color:var(--muted); font-size:12px; line-height:1.6;}
+  .tools{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px;}
+  @media (min-width:860px){ .tools{grid-template-columns:1fr 1fr;} }
+  .toolcard{padding:14px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+  .toolcard h3{margin:0 0 6px;font-size:15px;}
+  .toolcard p{margin:0;color:var(--muted);line-height:1.6;font-size:13px;}
+  .toolcard a{font-weight:900;text-decoration:none;}</style>
 </head>
 <body>
   <div class="wrap">
-    <div class="note">
-      <div class="t">住宅ローン計算（月返済）</div>
-      <div class="d">借入額・金利・年数から月返済と総返済を計算。</div>
-      <div class="links">
-        <a href="./calc.html">← 計算機一覧へ</a>
-        <a href="https://mikann20041029.github.io/toolbox/">Toolbox Home</a>
+    <div class="topbar">
+      <div class="brand">Toolbox</div>
+      <div class="nav">
+        <a href="./index.html">Toolbox Home</a>
+        <a href="./calc.html">計算機一覧</a>
+        <a href="../">Top</a>
       </div>
     </div>
-    <iframe id="app" src="./calc.html?tool=mortgage" loading="lazy"></iframe>
+
+    <div class="card hero">
+      <h1>住宅ローン計算（月返済）</h1>
+      <p>借入額・金利・年数から月返済と総返済（元利均等）を計算。</p>
+    </div>
+
+    <div class="grid">
+      <div class="card box">
+        <h2>入力</h2>
+<div class="row">
+  <div>
+    <label>借入額（円）</label>
+    <input id="p" type="number" inputmode="numeric" placeholder="例: 3000000">
   </div>
-  <script>
-    (function(){
-      const f = document.getElementById('app');
-      function resize(){
-        try{
-          const d = f.contentDocument;
-          if(!d) return;
-          const h = Math.max(d.documentElement.scrollHeight||0, d.body?d.body.scrollHeight||0:0);
-          if(h>200) f.style.height = (h+10)+'px';
-        }catch(e){}
-      }
-      f.addEventListener('load', function(){ resize(); setInterval(resize, 500); });
-      setInterval(resize, 1200);
-    })();
-  </script>
+  <div>
+    <label>年利（%）</label>
+    <input id="r" type="number" inputmode="decimal" placeholder="例: 2.4">
+  </div>
+</div>
+<div class="row">
+  <div>
+    <label>返済期間（年）</label>
+    <input id="y" type="number" inputmode="numeric" placeholder="例: 10">
+  </div>
+  <div>
+    <label>返済回数/年</label>
+    <select id="ppy">
+      <option value="12" selected>12（毎月）</option>
+      <option value="4">4（四半期）</option>
+      <option value="2">2（半年）</option>
+      <option value="1">1（年1回）</option>
+    </select>
+  </div>
+</div>
+<button id="calc">計算</button>
+<div id="out" class="out">—</div>
+<div class="mini">元利均等のざっくり計算。</div>
+      </div>
+      <div class="card box">
+        <h2>メモ</h2>
+        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
+        <div id="note" class="out">—</div>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  const p=document.getElementById('p'), r=document.getElementById('r'), y=document.getElementById('y'), ppy=document.getElementById('ppy');
+  const out=document.getElementById('out'), note=document.getElementById('note');
+  function fmt(n){ return Math.round(n).toLocaleString('ja-JP'); }
+  function run(){
+    const P=parseFloat(p.value), R=parseFloat(r.value), Y=parseFloat(y.value), Nper=parseInt(ppy.value,10);
+    if(!(P>0 && Y>0 && Nper>0) || !(R>=0)){ out.textContent="借入額/年利/年数を入れて。"; return; }
+    const n = Y*Nper;
+    const i = (R/100)/Nper;
+    let pay;
+    if(i===0){
+      pay = P/n;
+    }else{
+      pay = P * (i*Math.pow(1+i,n)) / (Math.pow(1+i,n)-1);
+    }
+    const total = pay*n;
+    const interest = total - P;
+    out.textContent =
+      "1回あたり返済: " + fmt(pay) + " 円\\n" +
+      "総返済: " + fmt(total) + " 円\\n" +
+      "利息合計: " + fmt(interest) + " 円\\n" +
+      "回数: " + fmt(n) + " 回";
+    note.textContent="銀行の手数料/保証料は別。";
+  }
+  document.getElementById('calc').addEventListener('click',run);
+})();
+</script>
 </body>
 </html>

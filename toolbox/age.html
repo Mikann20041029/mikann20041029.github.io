@@ -1,60 +1,148 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="ja">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>年齢計算｜Toolbox</title>
-  <meta name="description" content="生年月日から年齢を計算。"/>
-  <link rel="canonical" href="https://mikann20041029.github.io/toolbox/age.html"/>
-  <meta property="og:title" content="年齢計算｜Toolbox"/>
-  <meta property="og:description" content="生年月日から年齢を計算。"/>
-  <meta property="og:url" content="https://mikann20041029.github.io/toolbox/age.html"/>
-  <meta property="og:type" content="website"/>
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"WebPage",
-    "name":"年齢計算｜Toolbox",
-    "url":"https://mikann20041029.github.io/toolbox/age.html",
-    "description":"生年月日から年齢を計算。"
+  <meta name="description" content="生年月日から満年齢を計算。"/>
+  <style>  :root{
+    --bg1:#ffd7ee; --bg2:#d6f0ff;
+    --card:rgba(255,255,255,.72);
+    --line:rgba(0,0,0,.10);
+    --text:rgba(0,0,0,.88);
+    --muted:rgba(0,0,0,.60);
+    --shadow:0 12px 28px rgba(18,22,40,.10);
+    --r:22px;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Arial, "Noto Sans JP", sans-serif;
   }
-  </script>
-  <style>
-    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Hiragino Sans","Noto Sans JP",sans-serif;background:#fff;}
-    .wrap{max-width:1100px;margin:0 auto;padding:14px 14px 0;}
-    .note{border:1px solid rgba(0,0,0,.10);border-radius:18px;background:rgba(255,255,255,.75);padding:12px;box-shadow:0 10px 22px rgba(18,22,40,.08);}
-    .t{font-weight:800;font-size:16px;margin:0 0 6px;}
-    .d{color:rgba(0,0,0,.60);line-height:1.7;margin:0 0 10px;}
-    .links a{font-weight:700;text-decoration:none;margin-right:10px;}
-    iframe{width:100%;border:0;display:block;margin-top:10px;}
-  </style>
+  body{
+    margin:0;
+    color:var(--text);
+    background:
+      radial-gradient(900px 500px at 12% 12%, var(--bg1), transparent 60%),
+      radial-gradient(900px 500px at 88% 18%, var(--bg2), transparent 60%),
+      #fff;
+    min-height:100vh;
+  }
+  .wrap{max-width:1100px;margin:20px auto;padding:0 16px;}
+  .topbar{
+    display:flex; align-items:center; justify-content:space-between;
+    gap:12px; margin-bottom:14px;
+  }
+  .brand{font-weight:900; letter-spacing:.2px;}
+  .nav a{color:inherit; text-decoration:none; font-weight:800; margin-left:12px; opacity:.85;}
+  .nav a:hover{opacity:1; text-decoration:underline;}
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    box-shadow:var(--shadow);
+    backdrop-filter: blur(8px);
+  }
+  .hero{padding:16px 16px; margin-bottom:14px;}
+  .hero h1{font-size:18px;margin:0 0 6px;}
+  .hero p{margin:0;color:var(--muted);line-height:1.7;}
+  .grid{display:grid;grid-template-columns:1fr;gap:14px;}
+  @media (min-width:860px){ .grid{grid-template-columns:1fr 1fr;} }
+  .box{padding:16px;}
+  .box h2{font-size:16px;margin:0 0 10px;}
+  .row{display:grid;grid-template-columns:1fr;gap:10px;margin:10px 0;}
+  @media (min-width:520px){ .row{grid-template-columns:1fr 1fr;} }
+  label{display:block;font-weight:800;font-size:13px;margin:0 0 6px;}
+  input, select{
+    width:100%;
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.8);
+    outline:none;
+    box-sizing:border-box;
+    font-size:14px;
+  }
+  button{
+    padding:10px 12px;
+    border-radius:14px;
+    border:1px solid var(--line);
+    background:rgba(255,255,255,.86);
+    font-weight:900;
+    cursor:pointer;
+  }
+  button:hover{filter:brightness(0.98);}
+  .out{
+    margin-top:10px;
+    padding:12px;
+    border-radius:16px;
+    border:1px dashed rgba(0,0,0,.18);
+    background:rgba(255,255,255,.65);
+    color:rgba(0,0,0,.78);
+    line-height:1.75;
+    white-space:pre-wrap;
+  }
+  .mini{color:var(--muted); font-size:12px; line-height:1.6;}
+  .tools{display:grid;grid-template-columns:1fr;gap:12px;margin-top:14px;}
+  @media (min-width:860px){ .tools{grid-template-columns:1fr 1fr;} }
+  .toolcard{padding:14px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+  .toolcard h3{margin:0 0 6px;font-size:15px;}
+  .toolcard p{margin:0;color:var(--muted);line-height:1.6;font-size:13px;}
+  .toolcard a{font-weight:900;text-decoration:none;}</style>
 </head>
 <body>
   <div class="wrap">
-    <div class="note">
-      <div class="t">年齢計算</div>
-      <div class="d">生年月日から年齢を計算。</div>
-      <div class="links">
-        <a href="./calc.html">← 計算機一覧へ</a>
-        <a href="https://mikann20041029.github.io/toolbox/">Toolbox Home</a>
+    <div class="topbar">
+      <div class="brand">Toolbox</div>
+      <div class="nav">
+        <a href="./index.html">Toolbox Home</a>
+        <a href="./calc.html">計算機一覧</a>
+        <a href="../">Top</a>
       </div>
     </div>
-    <iframe id="app" src="./calc.html?tool=age" loading="lazy"></iframe>
+
+    <div class="card hero">
+      <h1>年齢計算</h1>
+      <p>生年月日から満年齢を計算。</p>
+    </div>
+
+    <div class="grid">
+      <div class="card box">
+        <h2>入力</h2>
+<div class="row">
+  <div>
+    <label>生年月日</label>
+    <input id="bd" type="date">
   </div>
-  <script>
-    (function(){
-      const f = document.getElementById('app');
-      function resize(){
-        try{
-          const d = f.contentDocument;
-          if(!d) return;
-          const h = Math.max(d.documentElement.scrollHeight||0, d.body?d.body.scrollHeight||0:0);
-          if(h>200) f.style.height = (h+10)+'px';
-        }catch(e){}
-      }
-      f.addEventListener('load', function(){ resize(); setInterval(resize, 500); });
-      setInterval(resize, 1200);
-    })();
-  </script>
+  <div>
+    <label>基準日（空なら今日）</label>
+    <input id="ref" type="date">
+  </div>
+</div>
+<button id="calc">計算</button>
+<div id="out" class="out">—</div>
+      </div>
+      <div class="card box">
+        <h2>メモ</h2>
+        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
+        <div id="note" class="out">—</div>
+      </div>
+    </div>
+  </div>
+
+<script>
+(function(){
+  const bd=document.getElementById('bd'), ref=document.getElementById('ref');
+  const out=document.getElementById('out'), note=document.getElementById('note');
+  function run(){
+    if(!bd.value){ out.textContent="生年月日を入れて。"; return; }
+    const b=new Date(bd.value+"T00:00:00");
+    const r= ref.value ? new Date(ref.value+"T00:00:00") : new Date();
+    const ry=r.getFullYear(), rm=r.getMonth()+1, rd=r.getDate();
+    let age=ry - b.getFullYear();
+    const bm=b.getMonth()+1, bd2=b.getDate();
+    if(rm<bm || (rm===bm && rd<bd2)) age--;
+    out.textContent = "年齢: " + age + " 歳";
+    note.textContent="満年齢（誕生日基準）。";
+  }
+  document.getElementById('calc').addEventListener('click',run);
+})();
+</script>
 </body>
 </html>
