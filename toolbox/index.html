@@ -90,6 +90,31 @@
     <path d="M18.8 8.1c-1-1.6-2.8-3.1-4.9-3.7" stroke="rgba(123,108,255,.58)" stroke-width="1.5" stroke-linecap="round"/>
   </svg>
 </div>
+<script>
+/*__TOOLBOX_FORCE_LINKS__*/
+(function(){
+  function go(id){ location.href = './' + id + '.html'; }
+
+  document.addEventListener('click', function(e){
+    const a = e.target.closest('a');
+    if(a){
+      const href = (a.getAttribute('href')||'').trim();
+      // #id / calc.html#id をクリックしても必ず別ページへ
+      const m1 = href.match(/^#([a-z0-9\-]{2,50})$/i);
+      const m2 = href.match(/(?:^|\/)calc\.html#([a-z0-9\-]{2,50})$/i);
+      if(m1){ e.preventDefault(); go(m1[1]); return; }
+      if(m2){ e.preventDefault(); go(m2[1]); return; }
+    }
+
+    // data-tool がある要素も拾う（カードがaじゃないケース用）
+    const t = e.target.closest('[data-tool]');
+    if(t){
+      const id = (t.getAttribute('data-tool')||'').trim();
+      if(id){ e.preventDefault(); go(id); }
+    }
+  }, true);
+})();
+</script>
 </body>
 </html>
 
@@ -148,5 +173,6 @@
     render();
   })();
 </script>
+
 
 

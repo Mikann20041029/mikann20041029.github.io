@@ -298,26 +298,28 @@
 })();
 </script>
 <script>
-/*__TOOLBOX_HASH_ROUTER__*/
+/*__TOOLBOX_FORCE_LINKS__*/
 (function(){
-  const IDS = ["mortgage","loan","repay","compound","roi","income","bmi","bmr","tdee","bmi22","bodyfat","navy","percent","increase","discount","tip","split","age","days","sleep","gb","fuel","gpa","ads"];
+  function go(id){ location.href = './' + id + '.html'; }
 
-  function goByHash(){
-    const h = (location.hash || '').replace('#','').trim();
-    if(!h) return;
-    // 許可IDだけ遷移（変なhashに飛ばない）
-    if(IDS.indexOf(h) === -1) return;
-    const to = './' + h + '.html';
-    // すでに個別ページなら何もしない
-    if(location.pathname.endsWith('/' + h + '.html')) return;
-    location.replace(to);
-  }
+  document.addEventListener('click', function(e){
+    const a = e.target.closest('a');
+    if(a){
+      const href = (a.getAttribute('href')||'').trim();
+      // #id / calc.html#id をクリックしても必ず別ページへ
+      const m1 = href.match(/^#([a-z0-9\-]{2,50})$/i);
+      const m2 = href.match(/(?:^|\/)calc\.html#([a-z0-9\-]{2,50})$/i);
+      if(m1){ e.preventDefault(); go(m1[1]); return; }
+      if(m2){ e.preventDefault(); go(m2[1]); return; }
+    }
 
-  // hashが変わったら即遷移
-  window.addEventListener('hashchange', goByHash, true);
-
-  // 初回ロード時にhashが付いてたら遷移
-  goByHash();
+    // data-tool がある要素も拾う（カードがaじゃないケース用）
+    const t = e.target.closest('[data-tool]');
+    if(t){
+      const id = (t.getAttribute('data-tool')||'').trim();
+      if(id){ e.preventDefault(); go(id); }
+    }
+  }, true);
 })();
 </script>
 </body>
