@@ -100,3 +100,47 @@
 
 
 
+
+<section class="card" id="all-tools">
+  <h2>みんなの計算機</h2>
+  <p class="muted">定番どころをまとめ。検索して即つかう。</p>
+  <div class="row">
+    <div class="field">
+      <label>検索</label>
+      <input id="toolSearchHome" placeholder="例：ローン / BMI / % / 割引 / 旅行 / ROI" />
+    </div>
+  </div>
+  <div class="grid toolgrid" id="toolGridHome"></div>
+  <div class="footer"><a class="btn" href="./calc.html">ぜんぶ見る</a></div>
+</section>
+
+<script src="./assets/tools.js?v=6"></script>
+<script>
+  (function(){
+    const tools = (window.TOOLBOX_TOOLS||[]).slice();
+    const grid = document.getElementById("toolGridHome");
+    const input = document.getElementById("toolSearchHome");
+    if(!grid || !input || !tools.length) return;
+
+    const esc=(s)=>String(s).replace(/[&<>"']/g,m=>({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
+    function render(){
+      const q=(input.value||"").toLowerCase().trim();
+      const top = tools.filter(t => (t.name+" "+t.desc+" "+t.cat).toLowerCase().includes(q)).slice(0,12);
+      grid.innerHTML = top.map(t=>`
+        <a class="toolcard" href="./calc.html#${esc(t.id)}">
+          <div class="toolhead">
+            <div class="toolic">${esc(t.icon||"🧩")}</div>
+            <div>
+              <div class="toolname">${esc(t.name)}</div>
+              <div class="tooldesc">${esc(t.desc)}</div>
+            </div>
+          </div>
+          <div class="toolmeta">${esc(t.cat)}</div>
+        </a>
+      `).join("");
+    }
+    input.addEventListener("input", render);
+    render();
+  })();
+</script>
+

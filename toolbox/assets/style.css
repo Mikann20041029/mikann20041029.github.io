@@ -331,3 +331,42 @@ body{ font-family: var(--font) !important; }
 }
 /* v=5 bump */
 
+
+.muted{color:var(--muted)}
+.toolchips{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+.chip{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.66);
+  border-radius:999px;
+  padding:8px 10px;
+  font-weight:700;
+  cursor:pointer;
+}
+.chip.on{
+  background:linear-gradient(135deg, rgba(255,95,162,.18), rgba(92,200,255,.16));
+  border-color: rgba(255,95,162,.25);
+}
+.toolgrid{margin-top:12px}
+.toolcard{
+  grid-column:span 12;
+  text-decoration:none;
+  color:var(--text);
+  border:1px solid var(--line);
+  border-radius:20px;
+  background:rgba(255,255,255,.58);
+  box-shadow: 0 10px 22px rgba(18,22,40,.08);
+  padding:12px;
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.toolcard:hover{transform: translateY(-1px); box-shadow: 0 16px 30px rgba(18,22,40,.10)}
+.toolhead{display:flex; gap:10px; align-items:center}
+.toolic{width:42px;height:42px;border-radius:14px; display:flex; align-items:center; justify-content:center;
+  background:linear-gradient(135deg, rgba(255,95,162,.26), rgba(92,200,255,.22));
+  border:1px solid rgba(0,0,0,.06);
+}
+.toolname{font-weight:900}
+.tooldesc{color:var(--muted); margin-top:2px; line-height:1.45}
+.toolmeta{margin-top:10px; color:var(--muted); font-size:12px}
+@media(min-width:860px){
+  .toolcard{grid-column:span 4}
+}
