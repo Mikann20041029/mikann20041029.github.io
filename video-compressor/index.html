@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Video Compressor (MP4) — Reduce Size in Browser</title>
+  <meta name="description" content="Upload an MP4, choose resolution/FPS/bitrate, see an estimated output size, and compress in your browser (client-side)." />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Video Compressor (MP4)</h1>
+          <div class="sub">
+            Upload an MP4 → pick resolution / FPS / bitrate → see an estimate → run compression in your browser.
+          </div>
+        </div>
+      </div>
+      <div class="badge">URL: /video-compressor/</div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <div class="sectionTitle">1) Input</div>
+        <div class="row">
+          <div class="field" style="min-width:260px;flex:1.6">
+            <label for="file">MP4 file</label>
+            <input id="file" type="file" accept="video/mp4" />
+            <small class="hint">All processing runs locally in your browser. Your video is not uploaded to a server by this page.</small>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="sectionTitle">2) Settings</div>
+        <div class="row">
+          <div class="field">
+            <label for="resolution">Resolution</label>
+            <select id="resolution">
+              <option value="keep">Keep</option>
+              <option value="1080">1080p (height)</option>
+              <option value="720">720p (height)</option>
+              <option value="480">480p (height)</option>
+              <option value="360">360p (height)</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="fps">FPS</label>
+            <select id="fps">
+              <option value="keep">Keep</option>
+              <option value="60">60</option>
+              <option value="30">30</option>
+              <option value="24">24</option>
+              <option value="15">15</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="audio">Audio bitrate</label>
+            <select id="audio">
+              <option value="96">96 kbps</option>
+              <option value="128" selected>128 kbps</option>
+              <option value="192">192 kbps</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:10px">
+          <div class="field" style="min-width:220px">
+            <label for="vbitmode">Video bitrate</label>
+            <select id="vbitmode">
+              <option value="auto" selected>Auto (recommended)</option>
+              <option value="manual">Manual</option>
+            </select>
+            <small class="hint">Auto picks a reasonable bitrate based on resolution + FPS.</small>
+          </div>
+          <div class="field" id="vbitWrap" style="min-width:220px">
+            <label for="vbit">Manual video bitrate (kbps)</label>
+            <input id="vbit" type="number" min="150" max="50000" step="50" value="2500" />
+          </div>
+          <div class="field" style="min-width:220px">
+            <label for="crf">Quality (CRF, lower = better / larger)</label>
+            <input id="crf" type="range" min="18" max="40" step="1" value="28" />
+            <small class="hint">CRF: <span id="crfVal">28</span></small>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="sectionTitle">3) Estimate & Run</div>
+
+        <div class="kpi">
+          <div>
+            <div class="badge">Input</div>
+            <div class="v" id="metaIn">—</div>
+            <div class="sub">Size: <b id="sizeIn">—</b></div>
+          </div>
+          <div>
+            <div class="badge">Estimated output</div>
+            <div class="v" id="sizeEst">—</div>
+            <div class="sub">Actual after run: <b id="sizeOut">—</b></div>
+          </div>
+        </div>
+
+        <div class="row" style="margin-top:12px">
+          <span class="badge">Target: <b id="targetRes">—</b></span>
+          <span class="badge">FPS: <b id="targetFps">—</b></span>
+          <span class="badge">Video: <b id="videoKbps">—</b></span>
+          <span class="badge">Audio: <b id="audioKbps">—</b></span>
+        </div>
+
+        <div class="row" style="margin-top:14px">
+          <button id="run" disabled>Run compression</button>
+          <a id="download" href="#" style="display:none;gap:10px;align-items:center" class="badge">Download compressed MP4</a>
+        </div>
+
+        <div class="progressWrap">
+          <progress id="progress" max="100" value="0"></progress>
+          <div class="sub">Progress: <span id="pText">0%</span></div>
+        </div>
+
+        <div id="log" class="log"></div>
+
+        <div class="adBox">
+          <b>Ad placeholder</b><br/>
+          Later, paste Google AdSense / affiliate ad code here (or in a dedicated section).<br/>
+          Recommendation: keep ads outside the main controls so UX stays clean.
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="sectionTitle">Notes</div>
+        <div class="sub">
+          <div class="notice">• Big videos can fail on mobile (memory limits). Try smaller resolution/FPS/bitrate.</div>
+          <div>• This page uses FFmpeg.wasm (client-side). No server upload from this page itself.</div>
+          <div>• Output size estimate is approximate; actual size depends on video complexity.</div>
+        </div>
+
+        <hr />
+
+        <div class="sectionTitle">Japanese version</div>
+        <div class="sub">
+          Use the Japanese UI here: <a href="/video-compressor-ja/">/video-compressor-ja/</a>
+        </div>
+
+        <div class="footer">
+          <hr />
+          <div>© 2026 mikann20041029.github.io</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
