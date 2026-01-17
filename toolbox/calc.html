@@ -237,89 +237,67 @@
     const initial = hashTool() || tools[0]?.id;
     if(initial) mount(initial);
   </script>
+
 <script>
 /*__TOOLBOX_TOOLMODE__*/
 (function(){
+  const META = {"resultSub":{"desc":"数値を入れて即計算。","title":"計算機：resultSub"},"resultUnit":{"desc":"数値を入れて即計算。","title":"計算機：resultUnit"},"resultMain":{"desc":"数値を入れて即計算。","title":"計算機：resultMain"},"toolTitle":{"desc":"数値を入れて即計算。","title":"計算機：toolTitle"},"list":{"desc":"数値を入れて即計算。","title":"計算機：list"},"catChips":{"desc":"数値を入れて即計算。","title":"計算機：catChips"},"fields":{"desc":"数値を入れて即計算。","title":"計算機：fields"},"search":{"desc":"数値を入れて即計算。","title":"計算機：search"},"toolSelect":{"desc":"数値を入れて即計算。","title":"計算機：toolSelect"},"toolDesc":{"desc":"数値を入れて即計算。","title":"計算機：toolDesc"},"resultExtra":{"desc":"数値を入れて即計算。","title":"計算機：resultExtra"}};
+
+  // クリックしたら別ページへ（一覧→各ツールページ）
+  document.addEventListener('click', function(e){
+    const a = e.target.closest && e.target.closest('a[href]');
+    const dt = e.target.closest && e.target.closest('[data-tool]');
+    let id = null;
+
+    if(dt && dt.getAttribute('data-tool')) id = dt.getAttribute('data-tool');
+    if(!id && a){
+      const href = a.getAttribute('href') || '';
+      // #id / calc.html#id / anything#id
+      const m = href.match(/#([A-Za-z0-9_-]{2,80})/);
+      if(m) id = m[1];
+    }
+    if(id && META[id]){
+      e.preventDefault();
+      location.href = './' + id + '.html';
+    }
+  }, true);
+
+  // tool=xxx なら “そのツールだけ表示” に寄せる（bmi形式）
   const params = new URLSearchParams(location.search);
-  const tool = params.get('tool');
+  const tool = params.get('tool') || (location.hash ? location.hash.slice(1) : '');
   if(!tool) return;
 
-  const META = {};
-
-  document.body.classList.add('tool-only');
-
-  // 1) 一覧エリアっぽいものをなるべく消す（select/検索/タブ/カード）
+  // 他ツールを隠す（id一致するやつだけ残す）
   try{
-    const kill = [];
-    document.querySelectorAll('select, input, button').forEach(el=>{
-      const p = el.closest('section,div,header,main');
-      if(p) kill.push(p);
-    });
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      const p = a.closest('section,div,nav,header,main');
-      if(p) kill.push(p);
-    });
-    // 上位の重複を減らして、上から順に隠す（過剰に消しすぎないように main/section/div だけ）
-    const uniq = Array.from(new Set(kill)).filter(x=>x && x.tagName && x.tagName.match(/^(MAIN|SECTION|DIV|NAV)$/));
-    uniq.forEach(x=>{
-      // ターゲットを含むものは残す
-      const t = document.getElementById(tool);
-      if(t && x.contains(t)) return;
-      // ただしヘッダーっぽいのは残す（サイト名があるやつ）
-      const txt = (x.innerText||'').slice(0,80);
-      if(txt.match(/Toolbox/i)) return;
-      x.style.display = 'none';
+    Object.keys(META).forEach(id=>{
+      const el = document.getElementById(id);
+      if(el && id !== tool) el.style.display = 'none';
     });
   }catch(e){}
 
-  // 2) ターゲット以外のツールセクションを隠す（idがあれば）
+  // 解説ボックスをターゲットの直前に出す
   try{
     const t = document.getElementById(tool);
     if(t){
-      // 同階層に並んでる“ツールっぽいid要素”は全部消して、targetだけ表示
-      const ids = Object.keys(META||{});
-      ids.forEach(id=>{
-        if(id===tool) return;
-        const el = document.getElementById(id);
-        if(el) el.style.display='none';
-      });
-
-      // 解説ボックスを差し込み
-      const info = (META && META[tool]) ? META[tool] : {title:tool, desc:'数値を入れて即計算。'};
+      const info = META[tool] || {title:tool, desc:'数値を入れて即計算。'};
       const box = document.createElement('div');
-      box.className = 'tool-note';
+      box.style.margin = '12px auto';
+      box.style.maxWidth = '1100px';
+      box.style.padding = '0 14px';
       box.innerHTML =
-        '<div class="tool-note-inner">'+
-          '<div class="tool-note-title">'+info.title+'</div>'+
-          '<div class="tool-note-desc">'+info.desc+'</div>'+
-          '<div class="tool-note-links">'+
-            '<a href="./calc.html" class="tool-note-back">← ツール一覧へ</a>'+
-          '</div>'+
+        '<div style="border:1px solid rgba(0,0,0,.10);border-radius:18px;background:rgba(255,255,255,.70);padding:12px 12px;box-shadow:0 10px 22px rgba(18,22,40,.08);">'+
+          '<div style="font-weight:800;font-size:16px;margin:0 0 6px;">'+info.title+'</div>'+
+          '<div style="color:rgba(0,0,0,.60);line-height:1.7;margin:0 0 8px;">'+info.desc+'</div>'+
+          '<a href="./calc.html" style="font-weight:700;text-decoration:none;">← ツール一覧へ</a>'+
         '</div>';
       t.parentElement.insertBefore(box, t);
-
-      // ちょい上にスクロール
       t.scrollIntoView({behavior:'instant', block:'start'});
       window.scrollBy(0, -10);
     }
   }catch(e){}
-
 })();
 </script>
-<style>
-  /* tool-only mode の見た目 */
-  .tool-note{margin:12px auto; max-width:1100px; padding:0 14px;}
-  .tool-note-inner{
-    border:1px solid rgba(0,0,0,.10);
-    border-radius:18px;
-    background:rgba(255,255,255,.70);
-    padding:12px 12px;
-    box-shadow:0 10px 22px rgba(18,22,40,.08);
-  }
-  .tool-note-title{font-weight:800; font-size:16px; margin:0 0 6px;}
-  .tool-note-desc{color:rgba(0,0,0,.60); line-height:1.7; margin:0 0 8px;}
-  .tool-note-back{display:inline-block; text-decoration:none; font-weight:700;}
-</style>
 </body>
 </html>
+
 
