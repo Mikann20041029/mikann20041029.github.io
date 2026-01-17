@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>BMI險育ｮ暦ｽ弋oolbox</title>
-  <meta name="description" content="霄ｫ髟ｷ繝ｻ菴馴㍾縺九ｉBMI縺ｨ蛻､螳壹・←豁｣菴馴㍾・・MI22・峨ｒ蜊ｳ陦ｨ遉ｺ縲・/>
+  <title>BMI計算｜Toolbox</title>
+  <meta name="description" content="身長・体重からBMIと判定、適正体重（BMI22）を即表示。"/>
   <style>  :root{
     --bg1:#ffd7ee; --bg2:#d6f0ff;
     --card:rgba(255,255,255,.72);
@@ -100,37 +100,37 @@
       <div class="brand">Toolbox</div>
       <div class="nav">
         <a href="./index.html">Toolbox Home</a>
-        <a href="./calc.html">險育ｮ玲ｩ滉ｸ隕ｧ</a>
+        <a href="./calc.html">計算機一覧</a>
         <a href="../">Top</a>
       </div>
     </div>
 
     <div class="card hero">
-      <h1>BMI險育ｮ・/h1>
-      <p>霄ｫ髟ｷ繝ｻ菴馴㍾縺九ｉBMI縺ｨ蛻､螳壹・←豁｣菴馴㍾・・MI22・峨ｒ蜊ｳ陦ｨ遉ｺ縲・/p>
+      <h1>BMI計算</h1>
+      <p>身長・体重からBMIと判定、適正体重（BMI22）を即表示。</p>
     </div>
 
     <div class="grid">
       <div class="card box">
-        <h2>蜈･蜉・/h2>
+        <h2>入力</h2>
 <div class="row">
   <div>
-    <label>霄ｫ髟ｷ・・m・・/label>
-    <input id="h" type="number" inputmode="decimal" placeholder="萓・ 172">
+    <label>身長（cm）</label>
+    <input id="h" type="number" inputmode="decimal" placeholder="例: 172">
   </div>
   <div>
-    <label>菴馴㍾・・g・・/label>
-    <input id="w" type="number" inputmode="decimal" placeholder="萓・ 60">
+    <label>体重（kg）</label>
+    <input id="w" type="number" inputmode="decimal" placeholder="例: 60">
   </div>
 </div>
-<button id="calc">險育ｮ・/button>
-<div id="out" class="out">窶・/div>
-<div class="mini">蛻､螳夂岼螳会ｼ・br>18.5譛ｪ貅=菴惹ｽ馴㍾ / 18.5-25=譎ｮ騾・/ 25-30=閧･貅(1蠎ｦ) / 30莉･荳・閧･貅(2蠎ｦ莉･荳・</div>
+<button id="calc">計算</button>
+<div id="out" class="out">—</div>
+<div class="mini">判定目安：<br>18.5未満=低体重 / 18.5-25=普通 / 25-30=肥満(1度) / 30以上=肥満(2度以上)</div>
       </div>
       <div class="card box">
-        <h2>繝｡繝｢</h2>
-        <div class="mini">繝ｻ蛟､繧貞・繧後※縲瑚ｨ育ｮ励阪〒蜊ｳ蜿肴丐縲・br>繝ｻ遞・謇区焚譁吶↑縺ｩ縺ｯ譛ｪ閠・・・亥ｿ・ｦ√↑繧牙ｾ後〒雜ｳ縺帙ｋ・峨・/div>
-        <div id="note" class="out">窶・/div>
+        <h2>メモ</h2>
+        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
+        <div id="note" class="out">—</div>
       </div>
     </div>
   </div>
@@ -142,24 +142,24 @@
   const out=document.getElementById('out');
   const note=document.getElementById('note');
   function cls(bmi){
-    if(!isFinite(bmi)) return "窶・;
-    if(bmi<18.5) return "菴惹ｽ馴㍾";
-    if(bmi<25) return "譎ｮ騾・;
-    if(bmi<30) return "閧･貅・・蠎ｦ・・;
-    return "閧･貅・・蠎ｦ莉･荳奇ｼ・;
+    if(!isFinite(bmi)) return "—";
+    if(bmi<18.5) return "低体重";
+    if(bmi<25) return "普通";
+    if(bmi<30) return "肥満（1度）";
+    return "肥満（2度以上）";
   }
   function run(){
     const hc=parseFloat(h.value);
     const wc=parseFloat(w.value);
-    if(!(hc>0 && wc>0)){ out.textContent="霄ｫ髟ｷ縺ｨ菴馴㍾繧貞・繧後※縲・; return; }
+    if(!(hc>0 && wc>0)){ out.textContent="身長と体重を入れて。"; return; }
     const hm=hc/100;
     const bmi=wc/(hm*hm);
     const ideal=22*(hm*hm);
     out.textContent =
-      "BMI: " + bmi.toFixed(2) + "・・ + cls(bmi) + "・噂\n" +
-      "驕ｩ豁｣菴馴㍾(BMI22): " + ideal.toFixed(1) + " kg\\n" +
-      "蟾ｮ蛻・ " + (wc-ideal).toFixed(1) + " kg";
-    note.textContent="BMI縺ｯ逶ｮ螳峨らｭ玖ｉ驥上′螟壹＞縺ｨ鬮倥ａ縺ｫ蜃ｺ繧九・;
+      "BMI: " + bmi.toFixed(2) + "（" + cls(bmi) + "）\\n" +
+      "適正体重(BMI22): " + ideal.toFixed(1) + " kg\\n" +
+      "差分: " + (wc-ideal).toFixed(1) + " kg";
+    note.textContent="BMIは目安。筋肉量が多いと高めに出る。";
   }
   document.getElementById('calc').addEventListener('click',run);
 })();

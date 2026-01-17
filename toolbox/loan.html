@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>繝ｭ繝ｼ繝ｳ險育ｮ暦ｼ域怦霑疲ｸ茨ｼ会ｽ弋oolbox</title>
-  <meta name="description" content="蛟溷・鬘阪・驥大茜繝ｻ蟷ｴ謨ｰ縺九ｉ霑疲ｸ磯｡搾ｼ亥・蛻ｩ蝮・ｭ会ｼ峨ｒ險育ｮ励・/>
+  <title>ローン計算（月返済）｜Toolbox</title>
+  <meta name="description" content="借入額・金利・年数から返済額（元利均等）を計算。"/>
   <style>  :root{
     --bg1:#ffd7ee; --bg2:#d6f0ff;
     --card:rgba(255,255,255,.72);
@@ -100,52 +100,52 @@
       <div class="brand">Toolbox</div>
       <div class="nav">
         <a href="./index.html">Toolbox Home</a>
-        <a href="./calc.html">險育ｮ玲ｩ滉ｸ隕ｧ</a>
+        <a href="./calc.html">計算機一覧</a>
         <a href="../">Top</a>
       </div>
     </div>
 
     <div class="card hero">
-      <h1>繝ｭ繝ｼ繝ｳ險育ｮ暦ｼ域怦霑疲ｸ茨ｼ・/h1>
-      <p>蛟溷・鬘阪・驥大茜繝ｻ蟷ｴ謨ｰ縺九ｉ霑疲ｸ磯｡搾ｼ亥・蛻ｩ蝮・ｭ会ｼ峨ｒ險育ｮ励・/p>
+      <h1>ローン計算（月返済）</h1>
+      <p>借入額・金利・年数から返済額（元利均等）を計算。</p>
     </div>
 
     <div class="grid">
       <div class="card box">
-        <h2>蜈･蜉・/h2>
+        <h2>入力</h2>
 <div class="row">
   <div>
-    <label>蛟溷・鬘搾ｼ亥・・・/label>
-    <input id="p" type="number" inputmode="numeric" placeholder="萓・ 3000000">
+    <label>借入額（円）</label>
+    <input id="p" type="number" inputmode="numeric" placeholder="例: 3000000">
   </div>
   <div>
-    <label>蟷ｴ蛻ｩ・・・・/label>
-    <input id="r" type="number" inputmode="decimal" placeholder="萓・ 2.4">
+    <label>年利（%）</label>
+    <input id="r" type="number" inputmode="decimal" placeholder="例: 2.4">
   </div>
 </div>
 <div class="row">
   <div>
-    <label>霑疲ｸ域悄髢難ｼ亥ｹｴ・・/label>
-    <input id="y" type="number" inputmode="numeric" placeholder="萓・ 10">
+    <label>返済期間（年）</label>
+    <input id="y" type="number" inputmode="numeric" placeholder="例: 10">
   </div>
   <div>
-    <label>霑疲ｸ亥屓謨ｰ/蟷ｴ</label>
+    <label>返済回数/年</label>
     <select id="ppy">
-      <option value="12" selected>12・域ｯ取怦・・/option>
-      <option value="4">4・亥屁蜊頑悄・・/option>
-      <option value="2">2・亥濠蟷ｴ・・/option>
-      <option value="1">1・亥ｹｴ1蝗橸ｼ・/option>
+      <option value="12" selected>12（毎月）</option>
+      <option value="4">4（四半期）</option>
+      <option value="2">2（半年）</option>
+      <option value="1">1（年1回）</option>
     </select>
   </div>
 </div>
-<button id="calc">險育ｮ・/button>
-<div id="out" class="out">窶・/div>
-<div class="mini">蜈・茜蝮・ｭ峨・縺悶▲縺上ｊ險育ｮ励・/div>
+<button id="calc">計算</button>
+<div id="out" class="out">—</div>
+<div class="mini">元利均等のざっくり計算。</div>
       </div>
       <div class="card box">
-        <h2>繝｡繝｢</h2>
-        <div class="mini">繝ｻ蛟､繧貞・繧後※縲瑚ｨ育ｮ励阪〒蜊ｳ蜿肴丐縲・br>繝ｻ遞・謇区焚譁吶↑縺ｩ縺ｯ譛ｪ閠・・・亥ｿ・ｦ√↑繧牙ｾ後〒雜ｳ縺帙ｋ・峨・/div>
-        <div id="note" class="out">窶・/div>
+        <h2>メモ</h2>
+        <div class="mini">・値を入れて「計算」で即反映。<br>・税/手数料などは未考慮（必要なら後で足せる）。</div>
+        <div id="note" class="out">—</div>
       </div>
     </div>
   </div>
@@ -157,7 +157,7 @@
   function fmt(n){ return Math.round(n).toLocaleString('ja-JP'); }
   function run(){
     const P=parseFloat(p.value), R=parseFloat(r.value), Y=parseFloat(y.value), Nper=parseInt(ppy.value,10);
-    if(!(P>0 && Y>0 && Nper>0) || !(R>=0)){ out.textContent="蛟溷・鬘・蟷ｴ蛻ｩ/蟷ｴ謨ｰ繧貞・繧後※縲・; return; }
+    if(!(P>0 && Y>0 && Nper>0) || !(R>=0)){ out.textContent="借入額/年利/年数を入れて。"; return; }
     const n = Y*Nper;
     const i = (R/100)/Nper;
     let pay;
@@ -169,11 +169,11 @@
     const total = pay*n;
     const interest = total - P;
     out.textContent =
-      "1蝗槭≠縺溘ｊ霑疲ｸ・ " + fmt(pay) + " 蜀・\n" +
-      "邱剰ｿ疲ｸ・ " + fmt(total) + " 蜀・\n" +
-      "蛻ｩ諱ｯ蜷郁ｨ・ " + fmt(interest) + " 蜀・\n" +
-      "蝗樊焚: " + fmt(n) + " 蝗・;
-    note.textContent="驫陦後・謇区焚譁・菫晁ｨｼ譁吶・蛻･縲・;
+      "1回あたり返済: " + fmt(pay) + " 円\\n" +
+      "総返済: " + fmt(total) + " 円\\n" +
+      "利息合計: " + fmt(interest) + " 円\\n" +
+      "回数: " + fmt(n) + " 回";
+    note.textContent="銀行の手数料/保証料は別。";
   }
   document.getElementById('calc').addEventListener('click',run);
 })();
