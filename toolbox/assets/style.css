@@ -226,3 +226,10 @@ input:focus,select:focus{
 }
 .adbox small{color:var(--muted)}
 .footer{margin-top:22px; color:var(--muted); font-size:12px; line-height:1.7}
+
+
+/* v=4 force */
+.nav a{text-decoration:none}
+.pill{text-decoration:none}
+a,a:visited,a:hover,a:active{text-decoration:none}
+
