@@ -10,7 +10,7 @@
   }
 
   async function loadSites(){
-    const url = new URL('assets/sites.json', location.href).href; // 末尾スラッシュ問題回避
+    const url = new URL('assets/sites.json', location.href).href;
     const res = await fetch(url, { cache: 'no-store' });
     if(!res.ok) throw new Error('sites.json HTTP ' + res.status + ' @ ' + url);
     const data = await res.json();
@@ -21,7 +21,7 @@
 
   function normSite(s){
     const title = s.title || s.name || s.slug || '(no title)';
-    const slug  = s.slug || (title || '').toLowerCase().replace(/\s+/g,'-');
+    const slug  = (s.slug || '').trim() || String(title).toLowerCase().replace(/\s+/g,'-');
 
     let href = s.href || s.url || s.path || s.link || '';
     if(!href){
@@ -30,166 +30,296 @@
     }
 
     const tags = Array.isArray(s.tags) ? s.tags.map(String) : (s.tags ? [String(s.tags)] : []);
-    const cat  = s.cat || s.category || '';
     const desc = s.desc || s.description || '';
+    const cat  = s.cat || s.category || '';
 
-    // バッジに使う文字（タイトル先頭）
-    const badge = (String(title).trim().slice(0,1) || 'M').toUpperCase();
+    // “ボタンに出す短いタイトル” (できるだけ1ワードっぽく)
+    const short = (s.short || '').trim() || String(title).split(/[|｜:：—–\-]/)[0].trim();
 
-    return { title, slug, href, tags, cat, desc, badge };
+    return { title, short, slug, href, tags, desc, cat };
+  }
+
+  // 新サイトが来ても自動で「ジャンル箱」を作れるように：cat/tags/slug/title から推定
+  function inferGenre(site){
+    const cat = (site.cat || '').trim();
+    if(cat) return cat;
+
+    const tset = new Set((site.tags || []).map(t => String(t).toLowerCase()));
+    const pick = (arr) => arr.find(x => tset.has(x));
+    const hitTag =
+      pick(['tool','tools','guide','rank','site','utility','calc','calculator','video','image','pdf','sns']);
+    if(hitTag){
+      const map = {
+        tool:'Tool', tools:'Tool',
+        guide:'Guide',
+        rank:'Rank',
+        site:'Site',
+        utility:'Utility',
+        calc:'Calculator', calculator:'Calculator',
+        video:'Video',
+        image:'Image',
+        pdf:'PDF',
+        sns:'SNS'
+      };
+      return map[hitTag] || hitTag;
+    }
+
+    const hay = (site.slug + ' ' + site.title).toLowerCase();
+    const rules = [
+      ['Rank', ['rank','ranking','growth']],
+      ['Tool', ['tool','tools','toolbox','utils','utility','local-file-tools']],
+      ['Calculator', ['calc','calculator','pv','rpm','adsense']],
+      ['Video', ['video','mp4','compress','compression']],
+      ['PDF', ['pdf','merge','heic']],
+      ['Guide', ['guide','how','manual','docs']]
+    ];
+    for(const [g, keys] of rules){
+      if(keys.some(k => hay.includes(k))) return g;
+    }
+
+    return 'Other';
   }
 
   let SITES = [];
   let ACTIVE_TAG = '';
+  let QUERY = '';
+
+  function allTags(){
+    const set = new Set();
+    for(const s of SITES){
+      (s.tags || []).forEach(t => set.add(String(t)));
+    }
+    return [...set].sort((a,b)=>String(a).localeCompare(String(b),'ja'));
+  }
 
   function renderChips(){
     const chips = byId('chips');
     if(!chips) return;
 
-    const set = new Set();
-    SITES.forEach(s => (s.tags || []).forEach(t => set.add(t)));
-
-    const arr = [...set].sort((a,b)=>String(a).localeCompare(String(b),'ja'));
+    const tags = allTags();
     chips.innerHTML = '';
-    if(arr.length === 0) return;
 
-    arr.forEach(t => {
+    tags.forEach(t => {
       const d = document.createElement('div');
       d.className = 'chip' + (t === ACTIVE_TAG ? ' active' : '');
       d.textContent = t;
       d.addEventListener('click', () => {
         ACTIVE_TAG = (ACTIVE_TAG === t) ? '' : t;
         renderChips();
-        renderList();
+        renderGenres();
       });
       chips.appendChild(d);
     });
+
+    byId('miniCount').textContent = ACTIVE_TAG ? ('タグ：' + ACTIVE_TAG) : 'タグ：なし';
   }
 
-  function matches(site, q){
-    if(!q) return true;
-    q = q.toLowerCase();
+  function matches(site){
+    if(ACTIVE_TAG && !(site.tags || []).includes(ACTIVE_TAG)) return false;
+    if(!QUERY) return true;
+    const q = QUERY.toLowerCase();
     const hay = [
-      site.title, site.slug, site.desc, site.cat,
+      site.title, site.short, site.slug, site.desc, site.cat,
       ...(site.tags || [])
     ].join(' ').toLowerCase();
     return hay.includes(q);
   }
 
-  function setCount(n){
-    const el = byId('count');
-    if(!el) return;
-    el.textContent = '表示：' + n + ' 件';
+  function groupByGenre(list){
+    const map = new Map();
+    for(const s of list){
+      const g = inferGenre(s);
+      if(!map.has(g)) map.set(g, []);
+      map.get(g).push(s);
+    }
+    // genre sort: Tool/Guide/Rank/Site/Calculator/Other を上に
+    const order = ['Tool','Guide','Rank','Site','Calculator','Video','PDF','Utility','SNS','Other'];
+    const entries = [...map.entries()];
+    entries.sort((a,b)=>{
+      const ai = order.indexOf(a[0]); const bi = order.indexOf(b[0]);
+      if(ai !== -1 || bi !== -1){
+        if(ai === -1) return 1;
+        if(bi === -1) return -1;
+        if(ai !== bi) return ai - bi;
+      }
+      return String(a[0]).localeCompare(String(b[0]), 'ja');
+    });
+    // sites inside: title sort
+    for(const [, arr] of entries){
+      arr.sort((x,y)=>String(x.title).localeCompare(String(y.title),'ja'));
+    }
+    return entries;
   }
 
-  function renderList(){
-    const grid = byId('grid');
-    if(!grid) return;
+  function renderGenres(){
+    const wrap = byId('genres');
+    if(!wrap) return;
 
-    const q = (byId('q') ? byId('q').value : '').trim();
-    const list = SITES
-      .filter(s => matches(s, q))
-      .filter(s => !ACTIVE_TAG || (s.tags || []).includes(ACTIVE_TAG));
+    const filtered = SITES.filter(matches);
+    const total = filtered.length;
+    byId('countText').textContent = '表示：' + total + ' 件';
 
-    setCount(list.length);
+    wrap.innerHTML = '';
 
-    grid.innerHTML = '';
-
-    if(list.length === 0){
-      grid.innerHTML = '<div class="help"><h2>該当なし</h2><div style="color:#475569;font-size:13px">検索ワードを短くするか、タグを解除してみて。</div></div>';
+    if(total === 0){
+      const d = document.createElement('div');
+      d.className = 'genreCard';
+      d.style.gridColumn = 'span 12';
+      d.innerHTML = '<div class="genreHead"><div class="genreName">該当なし</div></div>';
+      wrap.appendChild(d);
       return;
     }
 
-    const frag = document.createDocumentFragment();
+    const groups = groupByGenre(filtered);
 
-    list.forEach(s => {
-      const a = document.createElement('a');
-      a.className = 'siteBtn';
-      a.href = s.href;
+    for(const [genre, arr] of groups){
+      const card = document.createElement('section');
+      card.className = 'genreCard';
 
-      const left = document.createElement('div');
-      left.className = 'siteLeft';
+      const head = document.createElement('div');
+      head.className = 'genreHead';
+      head.innerHTML =
+        '<div class="genreName">' +
+          '<span class="genreBadge">ジャンル</span>' +
+          '<span>' + escapeHtml(genre) + '</span>' +
+        '</div>' +
+        '<div class="genreCount">' + arr.length + ' 件</div>';
 
-      const badge = document.createElement('div');
-      badge.className = 'badge';
-      badge.textContent = s.badge;
+      card.appendChild(head);
 
-      const textWrap = document.createElement('div');
-      textWrap.style.minWidth = '0';
+      arr.forEach(s => {
+        const a = document.createElement('a');
+        a.className = 'siteBtn';
+        a.href = s.href;
 
-      const title = document.createElement('div');
-      title.className = 'siteTitle';
-      title.textContent = s.title;
+        const left =
+          '<div>' +
+            '<div class="siteTitle">' + escapeHtml(s.short || s.title) + '</div>' +
+          '</div>';
 
-      const tags = document.createElement('div');
-      tags.className = 'siteTags';
+        const tags = (s.tags || []).slice(0, 3).map(t => '<span class="pillTag">' + escapeHtml(t) + '</span>').join('');
+        const right =
+          '<div style="display:flex;gap:10px;align-items:center">' +
+            '<div class="siteMeta">' + tags + '</div>' +
+            '<div class="arrow">→</div>' +
+          '</div>';
 
-      const showTags = (s.tags || []).slice(0,3);
-      showTags.forEach(t => {
-        const sp = document.createElement('span');
-        sp.textContent = t;
-        tags.appendChild(sp);
+        a.innerHTML = left + right;
+        card.appendChild(a);
       });
 
-      textWrap.appendChild(title);
-      if(showTags.length) textWrap.appendChild(tags);
+      wrap.appendChild(card);
+    }
+  }
 
-      left.appendChild(badge);
-      left.appendChild(textWrap);
+  // お便り（メールアドレスは一切出さない）
+  function initMail(){
+    const fab = byId('fab');
+    const mask = byId('mask');
+    const closeBtn = byId('closeBtn');
+    const cancelBtn = byId('cancelBtn');
+    const sendBtn = byId('sendBtn');
+    const note = byId('note');
 
-      const chev = document.createElement('div');
-      chev.className = 'chev';
-      chev.innerHTML = '&rsaquo;';
+    const endpoint = (window.__MIKANN_FORM_ENDPOINT__ || '').trim();
 
-      a.appendChild(left);
-      a.appendChild(chev);
+    function open(){
+      mask.style.display = 'flex';
+      byId('message').focus();
+    }
+    function close(){
+      mask.style.display = 'none';
+    }
 
-      frag.appendChild(a);
+    fab.addEventListener('click', open);
+    closeBtn.addEventListener('click', close);
+    cancelBtn.addEventListener('click', close);
+    mask.addEventListener('click', (e)=>{ if(e.target === mask) close(); });
+
+    if(!endpoint){
+      // 送信先が未設定ならUIだけ出して「準備中」表示
+      sendBtn.disabled = true;
+      note.textContent = '※ お便り機能は準備中（送信先フォーム未設定）。管理者のみ設定できます。';
+      return;
+    }
+
+    sendBtn.addEventListener('click', async () => {
+      const name = (byId('fromName').value || '').trim();
+      const contact = (byId('fromContact').value || '').trim();
+      const msg = (byId('message').value || '').trim();
+
+      if(!msg){
+        note.textContent = '※ 内容が空です。';
+        return;
+      }
+
+      sendBtn.disabled = true;
+      note.textContent = '送信中…';
+
+      try{
+        const payload = {
+          name, contact, message: msg,
+          page: location.href,
+          ua: navigator.userAgent
+        };
+
+        // 代表的なフォームサービスは JSON POST で受けられる（Formspree等）
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type':'application/json', 'Accept':'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        if(!res.ok){
+          throw new Error('送信に失敗しました (HTTP ' + res.status + ')');
+        }
+
+        byId('fromName').value = '';
+        byId('fromContact').value = '';
+        byId('message').value = '';
+        note.textContent = '送信しました。ありがとう🍊';
+      }catch(e){
+        note.textContent = '送信エラー：' + (e && e.message ? e.message : String(e));
+      }finally{
+        sendBtn.disabled = false;
+      }
     });
+  }
 
-    grid.appendChild(frag);
+  function setupKeys(){
+    const qEl = byId('q');
+    qEl.addEventListener('input', () => {
+      QUERY = (qEl.value || '').trim();
+      renderGenres();
+    });
+    document.addEventListener('keydown', (e)=>{
+      if(e.key === 'Escape'){
+        QUERY = '';
+        ACTIVE_TAG = '';
+        qEl.value = '';
+        renderChips();
+        renderGenres();
+      }
+    });
   }
 
   async function boot(){
-    const grid = byId('grid');
     try{
+      // endpoint 注入（index.html側は空→PS側で差し替え）
+      // ここは後で確実に上書きされる
+      // window.__MIKANN_FORM_ENDPOINT__ は index.html の script で設定
       const raw = await loadSites();
       SITES = raw.map(normSite);
-
       renderChips();
-      renderList();
-
-      const qEl = byId('q');
-      const clearBtn = byId('clear');
-
-      if(qEl){
-        qEl.addEventListener('input', renderList);
-        qEl.addEventListener('keydown', (e) => {
-          if(e.key === 'Escape'){
-            qEl.value = '';
-            ACTIVE_TAG = '';
-            renderChips();
-            renderList();
-          }
-        });
-      }
-
-      if(clearBtn && qEl){
-        clearBtn.addEventListener('click', () => {
-          qEl.value = '';
-          ACTIVE_TAG = '';
-          renderChips();
-          renderList();
-          qEl.focus();
-        });
-      }
+      setupKeys();
+      renderGenres();
+      initMail();
     }catch(e){
       console.error(e);
-      if(grid){
-        const msg = (e && e.message) ? e.message : String(e);
-        grid.innerHTML = '<div class="help"><h2>読み込みに失敗</h2><div style="color:#475569;font-size:13px">' + escapeHtml(msg) + '</div></div>';
+      const wrap = byId('genres');
+      if(wrap){
+        wrap.innerHTML = '<div class="genreCard" style="grid-column:span 12">読み込みに失敗：' + escapeHtml(e && e.message ? e.message : String(e)) + '</div>';
       }
-      setCount(0);
     }
   }
 
