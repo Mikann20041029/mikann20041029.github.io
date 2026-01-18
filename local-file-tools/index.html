@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Local File Tools - PDF merge & HEIC to JPG (no upload)</title>
+  <meta name="description" content="Merge PDFs, convert HEIC to JPG/PNG, and convert images (JPG/PNG/WebP). Everything runs locally in your browser — no file upload." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="wrap">
+    <div class="hero">
+      <div class="kicker">Privacy-first • Runs locally • Free</div>
+      <h1>Local File Tools</h1>
+      <p class="sub">
+        Merge PDFs • Convert HEIC to JPG/PNG • Convert images.
+        <b>Your files never get uploaded</b> — processing happens inside your browser.
+      </p>
+      <div class="note">
+        <b>Why this exists</b>
+        <ul>
+          <li>HEIC is annoying on many PCs/apps (batch convert fast)</li>
+          <li>PDF merge should be a 10-second task (no accounts, no paywalls)</li>
+          <li>Safer for sensitive docs/photos (no upload)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- AFF_SLOT:slot1 category_hint="PDF/Office/Document tools" reason="People here are working with PDFs and docs; software/services may convert well." -->
+    <div class="aff-slot" data-slot="slot1"></div>
+  </header>
+
+  <main class="wrap">
+    <nav class="tabs" role="tablist">
+      <button class="tab is-active" data-tab="merge">PDF Merge</button>
+      <button class="tab" data-tab="heic">HEIC → JPG/PNG</button>
+      <button class="tab" data-tab="img">Image Convert</button>
+      <button class="tab" data-tab="faq">FAQ</button>
+    </nav>
+
+    <section class="panel is-active" id="tab-merge">
+      <h2>Merge PDFs (local processing)</h2>
+      <p class="muted">Select multiple PDFs and download one merged file.</p>
+      <div class="card">
+        <input id="pdfFiles" type="file" accept="application/pdf" multiple />
+        <div class="row">
+          <button id="btnMerge" class="btn">Merge & Download</button>
+          <span id="mergeStatus" class="status"></span>
+        </div>
+      </div>
+
+      <!-- AFF_SLOT:slot2 category_hint="Print/Scan/PDF workflow" reason="Natural continuation: scanning/printing/signing/backups." -->
+      <div class="aff-slot" data-slot="slot2"></div>
+    </section>
+
+    <section class="panel" id="tab-heic">
+      <h2>Convert HEIC to JPG/PNG (local processing)</h2>
+      <p class="muted">Batch convert iPhone photos without uploading anywhere.</p>
+      <div class="card">
+        <input id="heicFiles" type="file" accept="image/heic,image/heif" multiple />
+        <div class="row">
+          <label class="inline">
+            Output
+            <select id="heicOut">
+              <option value="image/jpeg">JPG</option>
+              <option value="image/png">PNG</option>
+            </select>
+          </label>
+          <button id="btnHeic" class="btn">Convert & Download ZIP</button>
+          <span id="heicStatus" class="status"></span>
+        </div>
+      </div>
+
+      <!-- AFF_SLOT:slot3 category_hint="Storage/Backup/PC utilities" reason="HEIC batch users often need storage, backup, photo management." -->
+      <div class="aff-slot" data-slot="slot3"></div>
+    </section>
+
+    <section class="panel" id="tab-img">
+      <h2>Convert images (JPG/PNG/WebP)</h2>
+      <p class="muted">Real conversion (not just renaming extensions). Batch supported.</p>
+      <div class="card">
+        <input id="imgFiles" type="file" accept="image/jpeg,image/png,image/webp" multiple />
+        <div class="row">
+          <label class="inline">
+            Output
+            <select id="imgOut">
+              <option value="image/jpeg">JPG</option>
+              <option value="image/png">PNG</option>
+              <option value="image/webp">WebP</option>
+            </select>
+          </label>
+          <button id="btnImg" class="btn">Convert & Download ZIP</button>
+          <span id="imgStatus" class="status"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" id="tab-faq">
+      <h2>FAQ</h2>
+      <div class="card">
+        <ul class="faq">
+          <li><b>Q:</b> Are my files uploaded?<br><b>A:</b> No. This page does the work in your browser (client-side).</li>
+          <li><b>Q:</b> Why HEIC is such a pain?<br><b>A:</b> Lots of apps/tools still don’t handle it smoothly, so converting to JPG/PNG is a common workaround. :contentReference[oaicite:18]{index=18}</li>
+          <li><b>Q:</b> PDF merge sometimes creates blanks / weird output?<br><b>A:</b> Some PDFs are tricky (forms, fonts, etc.). If you see odd output, try re-exporting the input PDFs, then merge again. :contentReference[oaicite:19]{index=19}</li>
+        </ul>
+      </div>
+      <p class="muted small">This is a static site (HTML/CSS/JS only). No backend file upload.</p>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    <p class="muted small">Local File Tools</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
