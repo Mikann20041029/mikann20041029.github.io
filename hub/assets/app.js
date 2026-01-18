@@ -1,6 +1,10 @@
 async function loadSites(){
-  const url = new URL('assets/sites.json', location.href).toString();
+  const base = location.pathname.endsWith('/') ? location.pathname : (location.pathname + '/');
+  const url = location.origin + base + 'assets/sites.json';
   const res = await fetch(url, { cache: 'no-store' });
+  if(!res.ok){ throw new Error('sites.json HTTP ' + res.status + ' @ ' + url); }
+  return await res.json();
+});
   if(!res.ok){ throw new Error('sites.json HTTP ' + res.status); }
   return await res.json();
 }
@@ -78,6 +82,7 @@ function applyFilter(){
     applyFilter();
   }catch(e){
     const grid = document.getElementById('grid');
-    grid.innerHTML = '<div class="card" style="grid-column:span 12">読み込みに失敗：sites.json</div>';
+    console.error(e);
+    grid.innerHTML = <div class="card" style="grid-column:span 12">読み込みに失敗：</div>;
   }
 })();

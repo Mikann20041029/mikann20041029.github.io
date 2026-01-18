@@ -6,6 +6,17 @@
   <title>Mikann Hub</title>
   <meta name="description" content="Mikann20041029 の中枢ポータル。ジャンル別に傘下サイトへ最短で飛べる。" />
   <link rel="stylesheet" href="./assets/style.css" />
+<script data-hub-slashfix="1">
+(function(){
+  try{
+    var p = location.pathname || '';
+    var want = '/hub/';
+    if(p === '/hub' || (p.endsWith('/hub') && !p.endsWith('/'))){
+      location.replace(want + (location.search||'') + (location.hash||''));
+    }
+  }catch(e){}
+})();
+</script>
 </head>
 <body>
   <header class="top">
