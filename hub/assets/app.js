@@ -50,7 +50,8 @@ function applyFilter(){
 
     const btnrow = el('div','btnrow');
     const a = el('a','btn','開く');
-    a.href = '/'+s.slug+'/';
+    const entry = (s.entry && String(s.entry).trim()) ? ('/' + s.slug + '/' + String(s.entry).replace(/^\/+/,'')) : ('/' + s.slug + '/');
+    a.href = entry;
     a.rel = 'noopener';
     btnrow.appendChild(a);
     h.appendChild(btnrow);
