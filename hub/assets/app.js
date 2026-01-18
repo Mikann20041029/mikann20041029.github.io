@@ -4,11 +4,7 @@ async function loadSites(){
   const res = await fetch(url, { cache: 'no-store' });
   if(!res.ok){ throw new Error('sites.json HTTP ' + res.status + ' @ ' + url); }
   return await res.json();
-});
-  if(!res.ok){ throw new Error('sites.json HTTP ' + res.status); }
-  return await res.json();
 }
-
 function el(tag, cls, txt){
   const e = document.createElement(tag);
   if(cls) e.className = cls;
