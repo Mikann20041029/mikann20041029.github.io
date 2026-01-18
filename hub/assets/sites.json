@@ -1,0 +1,44 @@
+[
+    {
+        "slug":  "ai-subscription-trouble-guide",
+        "title":  "海外Webサービス・AIツール・サブスク：日本語トラブル解決ガイド",
+        "desc":  "解約できない/返金されない/請求が止まらない…を最短で整理。契約経路の判定→解約/返金/問い合わせテンプレまで1ページで。",
+        "tags":  "guide"
+    },
+    {
+        "slug":  "calculator",
+        "title":  "Calculator",
+        "desc":  "URLは /calculator/ 配下のみ。SNSgroathに干渉しない。",
+        "tags":  "tool"
+    },
+    {
+        "slug":  "hub",
+        "title":  "Mikann Hub",
+        "desc":  "Mikann20041029 の中枢ポータル。ジャンル別に傘下サイトへ最短で飛べる。",
+        "tags":  "site"
+    },
+    {
+        "slug":  "local-file-tools",
+        "title":  "Local File Tools - PDF merge \u0026 HEIC to JPG (no upload)",
+        "desc":  "Merge PDFs, convert HEIC to JPG/PNG, and convert images (JPG/PNG/WebP). Everything runs locally in your browser — no file upload.",
+        "tags":  "tool"
+    },
+    {
+        "slug":  "toolbox",
+        "title":  "Toolbox",
+        "desc":  "サクッと計算。見た目はふわっと。 AdSense収益シミュレーター PV×RPMで月の目安。",
+        "tags":  "tool"
+    },
+    {
+        "slug":  "video-compressor",
+        "title":  "Video Compressor (MP4) — Reduce Size in Browser",
+        "desc":  "Upload an MP4, choose resolution/FPS/bitrate, see an estimated output size, and compress in your browser (client-side).",
+        "tags":  "tool"
+    },
+    {
+        "slug":  "video-compressor-ja",
+        "title":  "動画圧縮（MP4）— 画質/FPSを下げて容量削減",
+        "desc":  "MP4を入れて解像度/FPS/ビットレートを指定し、推定サイズを見てからブラウザ内で圧縮できます（クライアント処理）。",
+        "tags":  "tool"
+    }
+]

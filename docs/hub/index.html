@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mikann Hub</title>
+  <meta name="description" content="Mikann20041029 の中枢ポータル。ジャンル別に傘下サイトへ最短で飛べる。" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">M</div>
+        <div>
+          <div class="title">Mikann Hub</div>
+          <div class="sub">傘下サイト一覧（自動更新）</div>
+        </div>
+      </div>
+
+      <div class="searchrow">
+        <input id="q" class="search" placeholder="検索：例）tool / guide / rank / compress ..." autocomplete="off" />
+        <div class="chips" id="chips"></div>
+      </div>
+
+      <!-- AFF_SLOT:slot1 category_hint="Webサービス/ツール系" reason="Hubの上部は回遊の入口。クリック率が出やすい" -->
+      <div class="aff-slot" data-slot="slot1"></div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="grid" id="grid"></section>
+
+    <!-- AFF_SLOT:slot2 category_hint="学習/ガジェット/サブスク系" reason="カード一覧の中間。比較・検討フェーズに当たりやすい" -->
+    <div class="aff-slot mid" data-slot="slot2"></div>
+
+    <section class="note">
+      <h2>使い方</h2>
+      <ul>
+        <li>上の検索欄で絞り込み（slug / タイトル / タグ）。</li>
+        <li>新しいサブサイトを追加したら <code>scripts/update-hub.ps1</code> を実行すると一覧が更新される。</li>
+        <li>各サブサイトには「← Hubへ戻る」ボタンが自動で付き、回遊できる。</li>
+      </ul>
+    </section>
+
+    <!-- AFF_SLOT:slot3 category_hint="日用品/買い切り系" reason="ページ末尾は離脱直前。軽めの案件が合う" -->
+    <div class="aff-slot" data-slot="slot3"></div>
+
+    <footer class="foot">
+      <div class="muted">Generated portal / Static only</div>
+    </footer>
+  </main>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
