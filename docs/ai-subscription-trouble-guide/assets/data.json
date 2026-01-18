@@ -1,0 +1,53 @@
+{
+  "updated": "2026-01-18",
+  "routes": [
+    {
+      "route": "App Store (iPhone/iPad/Mac) 経由",
+      "hint": "Appleの定期購読。決済はApple側。",
+      "cancel": "設定 > Apple ID > サブスクリプション で解約（またはMacのApp Store/設定）。",
+      "refund": "Appleの返金申請（購入履歴から）※可否は審査。",
+      "notes": [
+        "アプリ内に解約ボタンが無くても、Apple側のサブスク画面が本体。",
+        "無料トライアル後の自動更新が多い。",
+        "返金は必ずしも通らない（通らない前提で“請求停止”を優先）。"
+      ]
+    },
+    {
+      "route": "Google Play (Android) 経由",
+      "hint": "Googleの定期購入。決済はGoogle側。",
+      "cancel": "Google Play > お支払いと定期購入 > 定期購入 で解約。",
+      "refund": "Google Playの払い戻し申請（期間や条件あり）。",
+      "notes": [
+        "アプリ削除＝解約ではない。",
+        "まずは“定期購入一覧”に残ってないか確認。",
+        "返金は条件・期限があるので早めに申請。"
+      ]
+    },
+    {
+      "route": "サービス公式サイトでカード直課金",
+      "hint": "AIツール/海外SaaSにクレカ番号を直接入力したケース。",
+      "cancel": "ログイン > Billing/Plan/Subscription でキャンセル。退会だけだと止まらないことあり。",
+      "refund": "原則はサービスのサポートへ。応答が無い/不正疑いはカード会社にも相談。",
+      "notes": [
+        "明細の加盟店名がサービス名と一致しない場合がある（決済代行）。",
+        "“月額→自動更新”が典型。",
+        "カード会社の問い合わせは“いつ/何に同意したか”を整理してから。"
+      ]
+    },
+    {
+      "route": "PayPal 経由（自動支払い）",
+      "hint": "PayPalの“自動支払い”が残っているケース。",
+      "cancel": "PayPalの自動支払い/定期支払いを停止（サービス側の解約も併用が無難）。",
+      "refund": "PayPalの取引/紛争解決（状況により）。",
+      "notes": [
+        "PayPal側の停止だけで止まる場合もあるが、サービス側も要確認。",
+        "“支払い停止”を先にやって被害拡大を止める。"
+      ]
+    }
+  ],
+  "templates": {
+    "short": "Subject: Subscription cancellation and billing issue\\n\\nHello Support Team,\\n\\nI am requesting immediate cancellation of my subscription and confirmation that recurring charges will stop.\\n\\nAccount email: (your email)\\nService / plan: (plan name)\\nBilling date & amount: (date, amount)\\n\\nIf any refund is possible, please advise the process and required information.\\n\\nThank you.\\n\\nBest regards,\\n(your name)",
+    "en": "Subject: Request to cancel subscription + confirm charges stop\\n\\nHello Support Team,\\n\\nI would like to cancel my subscription and confirm that recurring charges will stop immediately.\\n\\n- Account email: (your email)\\n- Plan / product: (plan)\\n- Charge details: (date, amount, currency)\\n- Payment method: (card / PayPal / App Store / Google Play)\\n\\nIf a refund is possible under your policy, please let me know the steps.\\n\\nThank you.\\n\\nSincerely,\\n(your name)",
+    "jp": "件名：サブスク解約と請求停止のお願い\\n\\nサポートご担当者様\\n\\nお世話になっております。下記アカウントのサブスクリプション解約と、今後の自動課金停止の確認をお願いいたします。\\n\\n・登録メール： (あなたのメール)\\n・プラン/サービス： (プラン名)\\n・請求情報： (請求日・金額・通貨)\\n・支払い手段： (カード/PayPal/App Store/Google Play)\\n\\n返金が可能な場合、手続き方法と必要情報をご案内ください。\\n\\n何卒よろしくお願いいたします。\\n(あなたの名前)"
+  }
+}
