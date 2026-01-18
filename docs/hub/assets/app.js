@@ -69,7 +69,8 @@ function applyFilter(){
 
 (async ()=>{
   try{
-    SITES = await loadSites();
+    const data = await loadSites();
+    SITES = Array.isArray(data) ? data : (data ? [data] : []);
     const allTags = SITES.flatMap(s=>s.tags||[]);
     renderChips(allTags);
     document.getElementById('q').addEventListener('input', applyFilter);
