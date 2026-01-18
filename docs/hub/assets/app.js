@@ -1,6 +1,7 @@
 async function loadSites(){
-  const res = await fetch('./assets/sites.json?cb=' + Date.now());
-  if(!res.ok) throw new Error('sites.json load failed');
+  const url = new URL('assets/sites.json', location.href).toString();
+  const res = await fetch(url, { cache: 'no-store' });
+  if(!res.ok){ throw new Error('sites.json HTTP ' + res.status); }
   return await res.json();
 }
 
