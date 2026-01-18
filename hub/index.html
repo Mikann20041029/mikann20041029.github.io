@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mikann Hub</title>
-  <link rel="stylesheet" href="assets/ui.css">
+  <link rel="stylesheet" href="assets/ui.v2.css">
 </head>
 <body>
   <div class="wrap">
     <div class="topbar">
       <div class="brand">
-        <!-- みかんキャラ（SVG） -->
+        <!-- 縺ｿ縺九ｓ繧ｭ繝｣繝ｩ・・VG・・-->
         <svg width="44" height="44" viewBox="0 0 64 64" aria-label="mikan" role="img">
           <defs>
             <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
@@ -28,41 +28,41 @@
 
         <div>
           <div class="name">Mikann Hub</div>
-          <div class="sub">Mikann20041029 の全下サイト一覧（自動更新）</div>
+          <div class="sub">Mikann20041029 縺ｮ蜈ｨ荳九し繧､繝井ｸ隕ｧ・郁・蜍墓峩譁ｰ・・/div>
         </div>
       </div>
 
       <div class="search">
-        <input id="q" placeholder="検索：例） tool / guide / rank / compress ..." autocomplete="off">
+        <input id="q" placeholder="讀懃ｴ｢・壻ｾ具ｼ・tool / guide / rank / compress ..." autocomplete="off">
       </div>
 
-      <div class="metaRight" id="countText">表示：0 件</div>
+      <div class="metaRight" id="countText">陦ｨ遉ｺ・・ 莉ｶ</div>
     </div>
 
     <div class="box">
-      <h3>使い方</h3>
+      <h3>菴ｿ縺・婿</h3>
       <ul>
-        <li>検索欄で絞り込み（slug / タイトル / タグ）。</li>
-        <li>新しいサイトを追加したら scripts/update-hub.ps1 で一覧更新。</li>
-        <li>Escで検索＆タグを一括解除。</li>
+        <li>讀懃ｴ｢谺・〒邨槭ｊ霎ｼ縺ｿ・・lug / 繧ｿ繧､繝医Ν / 繧ｿ繧ｰ・峨・/li>
+        <li>譁ｰ縺励＞繧ｵ繧､繝医ｒ霑ｽ蜉縺励◆繧・scripts/update-hub.ps1 縺ｧ荳隕ｧ譖ｴ譁ｰ縲・/li>
+        <li>Esc縺ｧ讀懃ｴ｢・・ち繧ｰ繧剃ｸ諡ｬ隗｣髯､縲・/li>
       </ul>
     </div>
 
     <div class="chipsRow">
       <div id="chips"></div>
-      <div class="smallCount" id="miniCount">—</div>
+      <div class="smallCount" id="miniCount">窶・/div>
     </div>
 
-    <!-- 下：ジャンル箱（オレンジ枠） -->
+    <!-- 荳具ｼ壹ず繝｣繝ｳ繝ｫ邂ｱ・医が繝ｬ繝ｳ繧ｸ譫・・-->
     <div id="genres"></div>
 
     <div class="footer">Generated portal / Static only</div>
   </div>
 
-  <!-- お便り：右下 -->
-  <button class="fab" id="fab" aria-label="お便り">
-    <div class="hint" id="fabHint">🍊「こんなサイト作って！」「ここ直して！」など募集中。</div>
-    <!-- 封筒アイコン -->
+  <!-- 縺贋ｾｿ繧奇ｼ壼承荳・-->
+  <button class="fab" id="fab" aria-label="縺贋ｾｿ繧・>
+    <div class="hint" id="fabHint">濠縲後％繧薙↑繧ｵ繧､繝井ｽ懊▲縺ｦ・√阪後％縺鍋峩縺励※・√阪↑縺ｩ蜍滄寔荳ｭ縲・/div>
+    <!-- 蟆∫ｭ偵い繧､繧ｳ繝ｳ -->
     <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M4 6h16v12H4z" fill="none" stroke="#9a3412" stroke-width="2" stroke-linejoin="round"/>
       <path d="M4 7l8 6 8-6" fill="none" stroke="#9a3412" stroke-width="2" stroke-linejoin="round"/>
@@ -72,31 +72,30 @@
   <div class="modalMask" id="mask" role="dialog" aria-modal="true">
     <div class="modal">
       <div class="modalHead">
-        <div class="modalTitle">お便りコーナー</div>
-        <button class="xbtn" id="closeBtn" aria-label="閉じる">✕</button>
+        <div class="modalTitle">縺贋ｾｿ繧翫さ繝ｼ繝翫・</div>
+        <button class="xbtn" id="closeBtn" aria-label="髢峨§繧・>笨・/button>
       </div>
 
       <div class="row">
-        <input class="inp" id="fromName" placeholder="お名前（任意）">
-        <input class="inp" id="fromContact" placeholder="返信先（任意：SNS/メールなど）">
+        <input class="inp" id="fromName" placeholder="縺雁錐蜑搾ｼ井ｻｻ諢擾ｼ・>
+        <input class="inp" id="fromContact" placeholder="霑比ｿ｡蜈茨ｼ井ｻｻ諢擾ｼ售NS/繝｡繝ｼ繝ｫ縺ｪ縺ｩ・・>
       </div>
       <div style="height:10px"></div>
-      <textarea id="message" placeholder="内容：作ってほしいサイト案 / 改善点 / バグ報告 など"></textarea>
+      <textarea id="message" placeholder="蜀・ｮｹ・壻ｽ懊▲縺ｦ縺ｻ縺励＞繧ｵ繧､繝域｡・/ 謾ｹ蝟・せ / 繝舌げ蝣ｱ蜻・縺ｪ縺ｩ"></textarea>
 
       <div class="actions">
-        <button class="btn btnGhost" id="cancelBtn">キャンセル</button>
-        <button class="btn btnPri" id="sendBtn">送信</button>
+        <button class="btn btnGhost" id="cancelBtn">繧ｭ繝｣繝ｳ繧ｻ繝ｫ</button>
+        <button class="btn btnPri" id="sendBtn">騾∽ｿ｡</button>
       </div>
 
       <div class="note" id="note">
-        ※ 送信先メールアドレスはサイト上に表示しません（アドレスはコードにも入れません）。
-      </div>
+        窶ｻ 騾∽ｿ｡蜈医Γ繝ｼ繝ｫ繧｢繝峨Ξ繧ｹ縺ｯ繧ｵ繧､繝井ｸ翫↓陦ｨ遉ｺ縺励∪縺帙ｓ・医い繝峨Ξ繧ｹ縺ｯ繧ｳ繝ｼ繝峨↓繧ょ・繧後∪縺帙ｓ・峨・      </div>
     </div>
   </div>
 
   <script>
     window.__MIKANN_FORM_ENDPOINT__ = "";
   </script>
-  <script src="assets/app.js" defer></script>
+  <script src="assets/app.v2.js" defer></script>
 </body>
 </html>
