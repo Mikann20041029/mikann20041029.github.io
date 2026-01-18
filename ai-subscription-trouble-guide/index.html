@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="解約できない/返金されない/請求が止まらない…を最短で整理。契約経路の判定→解約/返金/問い合わせテンプレまで1ページで。" />
+  <title>海外Webサービス・AIツール・サブスク：日本語トラブル解決ガイド</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <div class="name">Toolbox / Niche Guide</div>
+    </div>
+
+    <div class="hero">
+      <div class="hcard">
+        <h1>海外Webサービス・AIツール・サブスク：日本語トラブル解決ガイド</h1>
+        <p class="sub">解約できない/返金されない/請求が止まらない…を最短で整理。契約経路の判定→解約/返金/問い合わせテンプレまで1ページで。</p>
+        <div class="pills">
+          <span class="pill">契約経路の判定 → 解約場所を固定</span>
+          <span class="pill">返金は「可能性」と「期限」を分ける</span>
+          <span class="pill">サポート文テンプレ付き</span>
+          <span class="pill">広告は後で（スロットだけ）</span>
+        </div>
+
+        <div class="nav">
+          <a href="#start">最短でやる順</a>
+          <a href="#routes">契約経路の比較表</a>
+          <a href="#fails">失敗あるある</a>
+          <a href="#templates">コピペテンプレ</a>
+          <a href="#refs">参考</a>
+        </div>
+      </div>
+
+      <div class="side">
+        <div class="hcard">
+          <div class="kpi">
+            <div class="box">
+              <div class="t">まず優先</div>
+              <div class="v">請求停止（解約）</div>
+            </div>
+            <div class="box">
+              <div class="t">次にやる</div>
+              <div class="v">返金の可否確認</div>
+            </div>
+            <div class="box">
+              <div class="t">やりがち誤解</div>
+              <div class="v">アプリ削除＝解約 ✗</div>
+            </div>
+            <div class="box">
+              <div class="t">更新日</div>
+              <div class="v" id="updated">-</div>
+            </div>
+          </div>
+          <hr class="sep" />
+          <div class="muted" style="font-size:13px; line-height:1.7">
+            “どこで契約したか” が全て。<br/>
+            サービス画面に解約が見当たらない時ほど、<b>App Store / Google Play / PayPal / カード明細</b>から逆引きする。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section grid" id="start">
+      <div class="card">
+        <h2>最短でやる順（迷ったらこれだけ）</h2>
+        <ol class="list">
+          <li><b>契約経路を確定</b>：App Store / Google Play / サービス直課金 / PayPal</li>
+          <li><b>解約（請求停止）</b>：まずは次回課金を止める（返金は後でも良い）</li>
+          <li><b>証拠をメモ</b>：請求日・金額・通貨・明細の加盟店名・登録メール</li>
+          <li><b>返金ルートに乗る</b>：Apple/Google/PayPal/サービス規約の順で確認</li>
+          <li><b>不正疑いならカード会社へ</b>：ただし最初に“自分の契約の可能性”を潰す</li>
+        </ol>
+
+        <hr class="sep" />
+        <div class="badge ok">コツ：返金より先に「請求停止」を確実に</div>
+        <div class="badge warn">注意：退会してもサブスクが残るサービスがある</div>
+      </div>
+
+      <div class="card">
+        <h2>まず確認チェック（ここで8割解決）</h2>
+        <ul class="list">
+          <li>メール検索：<span class="kbd">receipt</span> / <span class="kbd">invoice</span> / <span class="kbd">subscription</span> / サービス名</li>
+          <li>iPhoneなら：設定 → Apple ID → サブスクリプション</li>
+          <li>Androidなら：Google Play → 定期購入</li>
+          <li>PayPalなら：自動支払い（定期/自動引き落とし）</li>
+          <li>クレカ明細の加盟店名は「決済代行名」になりうる</li>
+        </ul>
+
+        <hr class="sep" />
+        <!-- AFF_SLOT:slot1 category_hint="家計簿/明細管理" reason="明細の見方と請求の特定が最初の詰まりポイント。ここで“管理ツール”が自然。" -->
+        <div class="aff-slot" data-slot="slot1"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="card" id="routes">
+        <h2>契約経路の比較表（ここだけ見ればOK）</h2>
+        <p class="muted">検索フィルタ：<input id="filter" class="kbd" style="padding:6px 10px; border-radius:10px; border:1px solid rgba(15,23,42,.14); background:rgba(255,255,255,.62)" placeholder="例: App Store / 返金 / PayPal" /></p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>契約経路</th>
+                <th>解約（請求停止）</th>
+                <th>返金（目安）</th>
+                <th>注意点</th>
+              </tr>
+            </thead>
+            <tbody id="routesBody"></tbody>
+          </table>
+        </div>
+
+        <hr class="sep" />
+        <!-- AFF_SLOT:slot2 category_hint="セキュリティ/パスワード管理" reason="『どのメールで登録したか分からない』が頻出。ここで“管理系”が自然。" -->
+        <div class="aff-slot" data-slot="slot2"></div>
+      </div>
+    </div>
+
+    <div class="section grid" id="fails">
+      <div class="card">
+        <h2>失敗あるある → 回避</h2>
+        <h3>あるある</h3>
+        <ul class="list">
+          <li>アプリ削除したのに請求が続く（＝定期購入は残ってる）</li>
+          <li>退会したのに課金が止まらない（Billing側が別）</li>
+          <li>明細の店名が分からず“海外の謎請求”に見える</li>
+          <li>無料トライアルの終了日を忘れて自動更新</li>
+        </ul>
+        <h3>回避策</h3>
+        <ul class="list">
+          <li>“契約経路”を先に確定してから動く（表の順）</li>
+          <li>更新日が近いなら、とにかく解約を先に</li>
+          <li>メールの領収書・決済完了通知を探す</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>不正利用っぽい時の判断メモ</h2>
+        <p class="muted">断定は危険。まず “自分/家族/過去の登録” の可能性をチェックしてから。</p>
+        <ul class="list">
+          <li>購入日と明細の利用日がズレることがある（発送日/予約日表示など）</li>
+          <li>海外サイトでも日本語UIのケースがある（運営会社が海外）</li>
+          <li>無料トライアルが自動継続になっていることがある</li>
+        </ul>
+        <div class="footer">※詳細はカード会社/決済事業者の案内に従う（下の「参考」参照）。</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="card" id="templates">
+        <h2>コピペ：サポートに送る文（短く・通る形）</h2>
+        <p class="muted">ポイントは「解約したい」「請求停止を確認したい」「必要情報を箇条書き」。長文で感情を書かない。</p>
+
+        <h3>日本語（丁寧）</h3>
+        <div class="copy">
+          <button class="btn" data-copy="tpl_ja">COPY</button>
+          <span class="muted">貼る前に (メール/金額/日付/支払い手段) を埋める</span>
+        </div>
+        <textarea id="tpl_ja" spellcheck="false"></textarea>
+
+        <h3>English</h3>
+        <div class="copy">
+          <button class="btn" data-copy="tpl_en">COPY</button>
+          <span class="muted">短文・要点だけ</span>
+        </div>
+        <textarea id="tpl_en" spellcheck="false"></textarea>
+
+        <h3>最短（1分で送る）</h3>
+        <div class="copy">
+          <button class="btn" data-copy="tpl_short">COPY</button>
+          <span class="muted">とにかく“請求停止”を優先</span>
+        </div>
+        <textarea id="tpl_short" spellcheck="false"></textarea>
+
+        <hr class="sep" />
+        <!-- AFF_SLOT:slot3 category_hint="翻訳/英語学習・サポート文作成" reason="サポート連絡の心理的ハードルを下げる。ここが一番“役に立つ”文脈。" -->
+        <div class="aff-slot" data-slot="slot3"></div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="card" id="refs">
+        <h2>参考（出典URL）</h2>
+        <ul class="list">
+          <li>海外事業者とのトラブル相談（越境消費者センター/CCJ）：https://www.ccj.kokusen.go.jp/</li>
+          <li>Apple：サブスクリプションや購入の返金（案内）：https://support.apple.com/ja-jp/HT204084</li>
+          <li>Apple：問題を報告（返金/購入の確認）：https://reportaproblem.apple.com/</li>
+          <li>Google Play：払い戻し（ヘルプ）：https://support.google.com/googleplay/answer/2479637?hl=ja</li>
+          <li>JCB：利用覚えのない請求があった（よくある事例/確認項目）：https://www.jcb.co.jp/trouble/unknown-charges/</li>
+        </ul>
+        <div class="footer">
+          免責：本ページは一般的な整理と行動手順のガイド。個別の契約条件・返金可否は各サービス/決済事業者の規約とサポート回答に従う。
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">copied</div>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
