@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mikann Hub</title>
-  <link rel="stylesheet" href="assets/ui.v2.css">
+  <link rel="stylesheet" href="assets/ui.v3.css">
 </head>
 <body>
   <div class="wrap">
@@ -38,7 +38,7 @@
       </div>
 
       <div class="metaRight" id="countText">表示：0 件</div>
-    </div><!-- ★ここが閉じてないと全部崩れる -->
+    </div>
 
     <div class="box">
       <h3>使い方</h3>
@@ -54,16 +54,19 @@
       <div class="smallCount" id="miniCount">—</div>
     </div>
 
-    <!-- 下：ジャンル箱（オレンジ枠） -->
+    <hr class="sep">
+
+    <!-- 下：ジャンル箱（あなたの指定） -->
     <div id="genres"></div>
 
     <div class="footer">Generated portal / Static only</div>
   </div>
 
+  <div id="dbg">hub: loading…</div>
+
   <!-- お便り：右下 -->
   <button class="fab" id="fab" aria-label="お便り">
     <div class="hint" id="fabHint">🍊「こんなサイト作って！」「ここ直して！」など募集中。</div>
-    <!-- 封筒アイコン -->
     <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M4 6h16v12H4z" fill="none" stroke="#9a3412" stroke-width="2" stroke-linejoin="round"/>
       <path d="M4 7l8 6 8-6" fill="none" stroke="#9a3412" stroke-width="2" stroke-linejoin="round"/>
@@ -98,6 +101,6 @@
   <script>
     window.__MIKANN_FORM_ENDPOINT__ = "";
   </script>
-  <script src="assets/app.v2.js" defer></script>
+  <script src="assets/app.v3.js" defer></script>
 </body>
 </html>
