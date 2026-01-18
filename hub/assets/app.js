@@ -10,7 +10,7 @@
   }
 
   async function loadSites(){
-    const url = new URL('assets/sites.json', location.href).href;
+    const url = new URL('assets/sites.json', location.href).href; // 末尾スラッシュ問題回避
     const res = await fetch(url, { cache: 'no-store' });
     if(!res.ok) throw new Error('sites.json HTTP ' + res.status + ' @ ' + url);
     const data = await res.json();
@@ -30,10 +30,13 @@
     }
 
     const tags = Array.isArray(s.tags) ? s.tags.map(String) : (s.tags ? [String(s.tags)] : []);
-    const desc = s.desc || s.description || '';
     const cat  = s.cat || s.category || '';
+    const desc = s.desc || s.description || '';
 
-    return { title, slug, href, tags, desc, cat };
+    // バッジに使う文字（タイトル先頭）
+    const badge = (String(title).trim().slice(0,1) || 'M').toUpperCase();
+
+    return { title, slug, href, tags, cat, desc, badge };
   }
 
   let SITES = [];
@@ -57,7 +60,7 @@
       d.addEventListener('click', () => {
         ACTIVE_TAG = (ACTIVE_TAG === t) ? '' : t;
         renderChips();
-        renderGrid();
+        renderList();
       });
       chips.appendChild(d);
     });
@@ -73,7 +76,13 @@
     return hay.includes(q);
   }
 
-  function renderGrid(){
+  function setCount(n){
+    const el = byId('count');
+    if(!el) return;
+    el.textContent = '表示：' + n + ' 件';
+  }
+
+  function renderList(){
     const grid = byId('grid');
     if(!grid) return;
 
@@ -82,28 +91,63 @@
       .filter(s => matches(s, q))
       .filter(s => !ACTIVE_TAG || (s.tags || []).includes(ACTIVE_TAG));
 
+    setCount(list.length);
+
     grid.innerHTML = '';
 
     if(list.length === 0){
-      grid.innerHTML = '<div class="card" style="grid-column:span 12">該当なし</div>';
+      grid.innerHTML = '<div class="help"><h2>該当なし</h2><div style="color:#475569;font-size:13px">検索ワードを短くするか、タグを解除してみて。</div></div>';
       return;
     }
 
+    const frag = document.createDocumentFragment();
+
     list.forEach(s => {
       const a = document.createElement('a');
-      a.className = 'card';
+      a.className = 'siteBtn';
       a.href = s.href;
 
-      let html = '<div class="title">' + escapeHtml(s.title) + '</div>';
-      if(s.desc) html += '<div class="desc">' + escapeHtml(s.desc) + '</div>';
+      const left = document.createElement('div');
+      left.className = 'siteLeft';
 
-      if(s.tags && s.tags.length){
-        html += '<div class="tags">' + s.tags.map(t => '<span class="tag">' + escapeHtml(t) + '</span>').join('') + '</div>';
-      }
+      const badge = document.createElement('div');
+      badge.className = 'badge';
+      badge.textContent = s.badge;
 
-      a.innerHTML = html;
-      grid.appendChild(a);
+      const textWrap = document.createElement('div');
+      textWrap.style.minWidth = '0';
+
+      const title = document.createElement('div');
+      title.className = 'siteTitle';
+      title.textContent = s.title;
+
+      const tags = document.createElement('div');
+      tags.className = 'siteTags';
+
+      const showTags = (s.tags || []).slice(0,3);
+      showTags.forEach(t => {
+        const sp = document.createElement('span');
+        sp.textContent = t;
+        tags.appendChild(sp);
+      });
+
+      textWrap.appendChild(title);
+      if(showTags.length) textWrap.appendChild(tags);
+
+      left.appendChild(badge);
+      left.appendChild(textWrap);
+
+      const chev = document.createElement('div');
+      chev.className = 'chev';
+      chev.innerHTML = '&rsaquo;';
+
+      a.appendChild(left);
+      a.appendChild(chev);
+
+      frag.appendChild(a);
     });
+
+    grid.appendChild(frag);
   }
 
   async function boot(){
@@ -113,24 +157,39 @@
       SITES = raw.map(normSite);
 
       renderChips();
-      renderGrid();
+      renderList();
 
       const qEl = byId('q');
+      const clearBtn = byId('clear');
+
       if(qEl){
-        qEl.addEventListener('input', renderGrid);
+        qEl.addEventListener('input', renderList);
         qEl.addEventListener('keydown', (e) => {
           if(e.key === 'Escape'){
             qEl.value = '';
-            renderGrid();
+            ACTIVE_TAG = '';
+            renderChips();
+            renderList();
           }
+        });
+      }
+
+      if(clearBtn && qEl){
+        clearBtn.addEventListener('click', () => {
+          qEl.value = '';
+          ACTIVE_TAG = '';
+          renderChips();
+          renderList();
+          qEl.focus();
         });
       }
     }catch(e){
       console.error(e);
       if(grid){
         const msg = (e && e.message) ? e.message : String(e);
-        grid.innerHTML = '<div class="card" style="grid-column:span 12">読み込みに失敗：' + escapeHtml(msg) + '</div>';
+        grid.innerHTML = '<div class="help"><h2>読み込みに失敗</h2><div style="color:#475569;font-size:13px">' + escapeHtml(msg) + '</div></div>';
       }
+      setCount(0);
     }
   }
 
