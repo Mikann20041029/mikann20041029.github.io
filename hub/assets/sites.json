@@ -41,5 +41,11 @@
         "title":  "動画圧縮（MP4）— 画質/FPSを下げて容量削減",
         "desc":  "MP4を入れて解像度/FPS/ビットレートを指定し、推定サイズを見てからブラウザ内で圧縮できます（クライアント処理）。",
         "tags":  "tool"
+    },
+    {
+        "slug":  "sns-growth-rank",
+        "title":  "SNS Growth Rank",
+        "desc":  "SNSの成長ランキング",
+        "url":  "/sns-growth-rank/"
     }
 ]
