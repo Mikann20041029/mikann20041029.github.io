@@ -2,121 +2,105 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Hub | 無料ツール集（実用ガイド付き）</title>
-  <meta name="description" content="mikann20041029.github.io のツールをまとめたHub。各ツールの目的・使い方・注意点を文章で整理し、迷わず目的のページに辿り着けるようにしたポータルです。">
-  <link rel="canonical" href="https://mikann20041029.github.io/hub/">
-  <style>
-:root{--bg:#0b0d12;--card:#121727;--text:#e8eaf0;--muted:#a7b0c2;--line:#222a40;--accent:#7aa7ff}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.7 system-ui,-apple-system,"Segoe UI",sans-serif}
-a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
-.wrap{max-width:980px;margin:0 auto;padding:20px}
-.badge{font-size:12px;color:var(--muted);border:1px solid var(--line);padding:6px 10px;border-radius:999px;display:inline-block}
-.top{display:flex;gap:14px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:14px}
-.section{margin-top:18px}
-.section h2{margin:0 0 8px 0;font-size:18px}
-.section h3{margin:0 0 6px 0;font-size:16px}
-.note{color:var(--muted)}
-.hr{height:1px;background:var(--line);margin:18px 0}
-ul{margin:8px 0 0 18px;color:var(--muted)}
-code{background:#0f1423;border:1px solid var(--line);padding:2px 6px;border-radius:8px;color:#d7e0ff}
-.footer{margin-top:26px;color:var(--muted);font-size:13px}
-.k{color:#d9def0}
-.small{font-size:13px;color:var(--muted)}
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikann Hub</title>
+  <link rel="stylesheet" href="assets/ui.v3.css">
 </head>
 <body>
   <div class="wrap">
-    <div class="top">
-      <div>
-        <div class="badge">mikann20041029.github.io / Hub</div>
-        <div style="margin-top:8px;font-size:20px">無料ツール集ポータル（実用ガイド付き）</div>
-        <div class="note">リンク集で終わらず、「何のためのツールか」「どう使うか」「注意点」を本文としてまとめたページ。</div>
+
+    <div class="topbar">
+      <div class="brand">
+        <!-- みかんキャラ（SVG） -->
+        <svg width="44" height="44" viewBox="0 0 64 64" aria-label="mikan" role="img">
+          <defs>
+            <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#fb923c"/>
+              <stop offset="1" stop-color="#f59e0b"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="34" r="22" fill="url(#g)"/>
+          <path d="M40 14c-7 1-10 5-11 10 6-1 10-4 11-10z" fill="#22c55e"/>
+          <path d="M30 18c2-5 7-8 14-8-3 7-8 10-14 8z" fill="#16a34a"/>
+          <circle cx="24" cy="32" r="2.2" fill="#111827"/>
+          <circle cx="40" cy="32" r="2.2" fill="#111827"/>
+          <path d="M26 41c3 3 9 3 12 0" stroke="#111827" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+
+        <div>
+          <div class="name">Mikann Hub</div>
+          <div class="sub">Mikann20041029 の全下サイト一覧（自動更新）</div>
+        </div>
       </div>
-      <div class="badge">最終更新: <span id="last"></span></div>
+
+      <div class="search">
+        <input id="q" placeholder="検索：例） tool / guide / rank / compress ..." autocomplete="off">
+      </div>
+
+      <div class="metaRight" id="countText">表示：0 件</div>
     </div>
 
-    <div class="section">
-      <h2>このHubの目的</h2>
-      <div class="note">
-        このページは、サイト内のツールに最短で到達できる導線を用意しつつ、各ツールの用途・想定ユーザー・使い方の例を「本文」として整理したポータル。<br>
-        ただリンクを並べるだけだと「何を選べばいいか分からない」になりやすいので、ここでは価値と使いどころを言語化して迷いを減らす。
-      </div>
+    <div class="box">
+      <h3>使い方</h3>
       <ul>
-        <li><span class="k">1分で把握</span>：何ができるかを短文で理解</li>
-        <li><span class="k">3分で試せる</span>：そのまま使える具体例を用意</li>
-        <li><span class="k">迷ったらここ</span>：用途から逆引きして最短で選ぶ</li>
+        <li>検索欄で絞り込み（slug / タイトル / タグ）。</li>
+        <li>新しいサイトを追加したら scripts/update-hub.ps1 で一覧更新。</li>
+        <li>Escで検索＆タグを一括解除。</li>
       </ul>
     </div>
 
-    <div class="grid">
-      <div class="card">
-        <div style="font-size:16px;margin-bottom:6px">Toolbox（実用ツール）</div>
-        <div class="note">軽量でサクッと使える小ツールをまとめたページ。用途別に使い分ける前提。</div>
-        <div style="margin-top:10px"><a href="/toolbox/">/toolbox/ に行く</a></div>
-      </div>
-
-      <div class="card">
-        <div style="font-size:16px;margin-bottom:6px">AIサブスク解約トラブル整理</div>
-        <div class="note">「どこで詰まるか」を整理し、確認ポイントをチェックリスト化したガイド。</div>
-        <div style="margin-top:10px"><a href="/ai-subscription-trouble-guide/">/ai-subscription-trouble-guide/ に行く</a></div>
-      </div>
-
-      <div class="card">
-        <div style="font-size:16px;margin-bottom:6px">SNS Growth Rank</div>
-        <div class="note">SNS系の伸び方を“見える化”する系のページ。数字の動きを追う用途。</div>
-        <div style="margin-top:10px"><a href="/sns-growth-rank/">/sns-growth-rank/ に行く</a></div>
-      </div>
+    <div class="chipsRow">
+      <div id="chips"></div>
+      <div class="smallCount" id="miniCount">—</div>
     </div>
 
-    <div class="hr"></div>
+    <hr class="sep">
 
-    <div class="section">
-      <h2>用途から選ぶ（逆引き）</h2>
-      <ul>
-        <li>「とにかく何か便利な小ツールを使いたい」→ <a href="/toolbox/">Toolbox</a></li>
-        <li>「AI/サブスクの解約や請求で詰まっている」→ <a href="/ai-subscription-trouble-guide/">解約トラブル整理</a></li>
-        <li>「SNSの伸びを“数字の目線”で追いたい」→ <a href="/sns-growth-rank/">SNS Growth Rank</a></li>
-      </ul>
-      <div class="note" style="margin-top:10px">
-        どれを開けばいいか分からないときは、このページ（<code>/hub/</code>）に戻ればOK。
+    <!-- 下：ジャンル箱（あなたの指定） -->
+    <div id="genres"></div>
+
+    <div class="footer">Generated portal / Static only</div>
+  </div>
+
+  <div id="dbg">hub: loading…</div>
+
+  <!-- お便り：右下 -->
+  <button class="fab" id="fab" aria-label="お便り">
+    <div class="hint" id="fabHint">🍊「こんなサイト作って！」「ここ直して！」など募集中。</div>
+    <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4 6h16v12H4z" fill="none" stroke="#9a3412" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M4 7l8 6 8-6" fill="none" stroke="#9a3412" stroke-width="2" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <div class="modalMask" id="mask" role="dialog" aria-modal="true">
+    <div class="modal">
+      <div class="modalHead">
+        <div class="modalTitle">お便りコーナー</div>
+        <button class="xbtn" id="closeBtn" aria-label="閉じる">✕</button>
       </div>
-    </div>
 
-    <div class="section">
-      <h2>サイトの方針</h2>
-      <div class="note">
-        このサイトは「軽い・速い・使える」を優先。ツールは基本的に静的（HTML/CSS/JS）で動く。<br>
-        その代わり、各ページに本文を置き、目的と使い方を文章で説明して「何を解決するか」を明確化する。
+      <div class="row">
+        <input class="inp" id="fromName" placeholder="お名前（任意）">
+        <input class="inp" id="fromContact" placeholder="返信先（任意：SNS/メールなど）">
       </div>
-    </div>
+      <div style="height:10px"></div>
+      <textarea id="message" placeholder="内容：作ってほしいサイト案 / 改善点 / バグ報告 など"></textarea>
 
-    <div class="section">
-      <h2>運営情報</h2>
-      <ul>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/privacy.html">Privacy Policy</a></li>
-        <li><a href="/terms.html">Terms</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/disclaimer.html">Disclaimer / Ads</a></li>
-      </ul>
-    </div>
+      <div class="actions">
+        <button class="btn btnGhost" id="cancelBtn">キャンセル</button>
+        <button class="btn btnPri" id="sendBtn">送信</button>
+      </div>
 
-    <div class="footer">
-      <div>© <span id="y"></span> mikann20041029.github.io</div>
+      <div class="note" id="note">
+        ※ 送信先メールアドレスはサイト上に表示しません（アドレスはコードにも入れません）。
+      </div>
     </div>
   </div>
 
   <script>
-    const d = new Date(document.lastModified);
-    const pad = (n)=>String(n).padStart(2,"0");
-    document.getElementById("last").textContent =
-      d.getFullYear()+"-"+pad(d.getMonth()+1)+"-"+pad(d.getDate());
-    document.getElementById("y").textContent = new Date().getFullYear();
+    window.__MIKANN_FORM_ENDPOINT__ = "";
   </script>
+  <script src="assets/app.v3.js" defer></script>
 </body>
 </html>
