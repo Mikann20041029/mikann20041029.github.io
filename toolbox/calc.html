@@ -113,15 +113,15 @@
 <!-- MOBILE_AFF_START -->
 <style>
   /* HIDE_A8_ADS_ON_MOBILE_BEGIN */
-  @media (max-width: 768px){
-    /* 既存のA8枠（左右＋壊れてる .a8-mobile）をスマホでは丸ごと隠す＝二重/バグ回避 */
+  /* A8側のブレークポイント(1160px)に合わせて、<=1160pxは #a8-ads を丸ごと消す */
+  @media (max-width: 1160px){
     #a8-ads{ display:none !important; }
   }
   /* HIDE_A8_ADS_ON_MOBILE_END */
 
-  /* mobile-only fixed slot (non-sticky, non-overlay) */
+  /* mobile/tablet-only stable slot (non-sticky, non-overlay) */
   #mobile-aff-slot{ display:none; }
-  @media (max-width: 768px){
+  @media (max-width: 1160px){
     #mobile-aff-slot{
       display:block;
       max-width: 980px;
@@ -140,24 +140,21 @@
       margin: 0 0 8px 0;
     }
     #mobile-aff-slot img{ max-width:100%; height:auto; display:block; }
-    #mobile-aff-box{ display:block; }
   }
 </style>
 
 <div id="mobile-aff-slot" aria-label="affiliate">
   <div class="hint">スポンサーリンク</div>
-  <div id="mobile-aff-box">
-    <div class="a8-fixed-one">
+  <div class="a8-fixed-one">
   <a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" rel="nofollow sponsored noopener" target="_blank">
     <img border="0" width="320" height="50" alt="" src="https://www23.a8.net/svt/bgt?aid=260117583179&wid=001&eno=01&mid=s00000021054001005000&mc=1">
   </a>
   <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" alt="">
 </div>
-  </div>
 </div>
-
-
 <!-- MOBILE_AFF_END -->
+
+
 
     <header class="top">
       <a class="brand" href="./index.html">
