@@ -310,7 +310,7 @@ $index = @"
 
   <footer>
     <div class="wrap">
-      <div class="muted">ﾂｩ $(Get-Date -Format yyyy) mikann20041029</div>
+      <div class="muted">・ゑｽｩ $(Get-Date -Format yyyy) mikann20041029</div>
     </div>
   </footer>
 </body>
@@ -348,8 +348,7 @@ $homeHtml = @"
 "@
 
 [System.IO.File]::WriteAllText((Join-Path $OutDir "index.html"), $homeHtml, (New-Object System.Text.UTF8Encoding($false)))
-
-git add "$OutDir/index.html" "$OutDir/assets/style.css" "$OutDir/$final/index.html" | Out-Host
+git add -A -- "$OutDir"
 git commit -m "Auto: $OutDir/$final" | Out-Host
 git push | Out-Host
 
