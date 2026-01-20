@@ -398,7 +398,6 @@
 
 <!-- MOBILE_AFF_START -->
 <style>
-  /* mobile-only affiliate slot (non-sticky / non-overlay) */
   #mobile-aff-slot{ display:none; }
   @media (max-width: 768px){
     #mobile-aff-slot{
@@ -418,7 +417,7 @@
       opacity: 0.75;
       margin: 0 0 8px 0;
     }
-    #mobile-aff-slot img{ max-width:100%; height:auto; }
+    #mobile-aff-slot img{ max-width:100%; height:auto; display:block; }
   }
 </style>
 
@@ -431,7 +430,7 @@
 (function(){
   function isMobile(){ return window.matchMedia && window.matchMedia("(max-width: 768px)").matches; }
 
-  function findAffiliateNode(){
+  function findAffiliateAnchor(){
     var sel = [
       'a[href*="px.a8.net"]',
       'a[href*="a8.net"]',
@@ -440,32 +439,42 @@
       'a[href*="af.moshimo"]',
       'a[href*="rpx.a8.net"]'
     ].join(",");
+    return document.querySelector(sel);
+  }
 
-    var a = document.querySelector(sel);
+  function buildCleanBanner(a){
     if(!a) return null;
+    var href = a.getAttribute("href") || "";
+    if(!href) return null;
 
-    // バナー全体っぽい親を探す
-    var n = a;
-    for(var i=0;i<6;i++){
-      if(!n || !n.parentElement) break;
-      var r = n.getBoundingClientRect ? n.getBoundingClientRect() : null;
-      if(r && r.width >= 250 && r.height >= 40) return n;
-      n = n.parentElement;
+    var img = a.querySelector("img");
+    var src = img ? (img.getAttribute("src") || "") : "";
+    var alt = img ? (img.getAttribute("alt") || "sponsored") : "sponsored";
+
+    var na = document.createElement("a");
+    na.href = href;
+    na.target = "_blank";
+    na.rel = "nofollow sponsored noopener";
+
+    if(src){
+      var ni = document.createElement("img");
+      ni.src = src;
+      ni.alt = alt;
+      na.appendChild(ni);
+    } else {
+      na.textContent = "スポンサーリンク";
     }
-    return a;
+    return na;
   }
 
   function placeSlot(){
     var slot = document.getElementById("mobile-aff-slot");
     if(!slot) return;
-
-    // “邪魔にならない範囲”＝固定表示しない。ページ上部に1枠
     var anchor =
       document.querySelector("main") ||
       document.querySelector("#app") ||
       document.querySelector(".app") ||
       document.querySelector(".wrap");
-
     if(anchor && anchor.parentNode){
       anchor.parentNode.insertBefore(slot, anchor);
     } else if(document.body){
@@ -473,45 +482,30 @@
     }
   }
 
-  function moveAffiliateIntoSlot(){
-    if(!isMobile()) return false;
-    var box = document.getElementById("mobile-aff-box");
-    if(!box) return false;
-
-    // 既に入ってたら何もしない
-    if(box.children && box.children.length > 0) return true;
-
-    var src = findAffiliateNode();
-    if(!src) return false;
-
-    // “複製”じゃなく “移動”（二重表示リスク回避）
-    box.appendChild(src);
-    return true;
-  }
-
   function runWithRetry(){
     if(!isMobile()) return;
     placeSlot();
 
-    var tries = 0;
-    var maxTries = 40;     // 約10秒 (250ms * 40)
-    var interval = 250;
+    var box = document.getElementById("mobile-aff-box");
+    if(!box) return;
+    if(box.children && box.children.length > 0) return;
 
+    var tries = 0;
+    var maxTries = 40; // ~10s
     var timer = setInterval(function(){
       tries++;
-      if(moveAffiliateIntoSlot()){
+      if(box.children && box.children.length > 0){
+        clearInterval(timer); return;
+      }
+      var a = findAffiliateAnchor();
+      var banner = buildCleanBanner(a);
+      if(banner){
+        box.innerHTML = "";
+        box.appendChild(banner);
         clearInterval(timer);
       }
-      if(tries >= maxTries){
-        clearInterval(timer);
-      }
-    }, interval);
-
-    // 追加でDOM変化にも追随（後から広告DOMが来るケース）
-    var mo = new MutationObserver(function(){
-      moveAffiliateIntoSlot();
-    });
-    mo.observe(document.documentElement, {childList:true, subtree:true});
+      if(tries >= maxTries) clearInterval(timer);
+    }, 250);
   }
 
   if(document.readyState === "loading"){
