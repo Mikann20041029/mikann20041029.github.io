@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quick Tools (Free Calculators)</title>
+  <meta name="description" content="Fast, lightweight calculators and converters that work offline in your browser." />
+  <link rel="stylesheet" href="./assets/style.css" />
+  <meta name="robots" content="index,follow" />
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="./">Quick Tools</a>
+      <nav class="nav">
+        <a href="#tools">Tools</a>
+        <a href="#faq">FAQ</a>
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <h1>Quick Tools (Free Calculators)</h1>
+      <p class="lead">Fast, lightweight calculators and converters that work offline in your browser.</p>
+
+      <!-- AFF_SLOT:slot1 category_hint="Utilities / Software" reason="above-the-fold visibility without disrupting reading" -->
+      <div class="aff-slot" data-slot="slot1"></div>
+
+      <div class="cards" id="tools">
+        <article class="card">
+          <h2>Percent Calculator</h2>
+          <div class="grid2">
+            <label>Value <input id="pctValue" inputmode="decimal" placeholder="e.g. 250" /></label>
+            <label>Percent (%) <input id="pctRate" inputmode="decimal" placeholder="e.g. 12.5" /></label>
+          </div>
+          <button class="btn" id="pctBtn">Calculate</button>
+          <p class="out" id="pctOut">—</p>
+        </article>
+
+        <article class="card">
+          <h2>Unit Converter</h2>
+          <div class="grid2">
+            <label>Number <input id="uVal" inputmode="decimal" placeholder="e.g. 10" /></label>
+            <label>Type
+              <select id="uType">
+                <option value="km_mi">km ⇄ miles</option>
+                <option value="kg_lb">kg ⇄ lb</option>
+                <option value="c_f">°C ⇄ °F</option>
+              </select>
+            </label>
+          </div>
+          <button class="btn" id="uBtn">Convert</button>
+          <p class="out" id="uOut">—</p>
+        </article>
+
+        <article class="card">
+          <h2>Date Difference</h2>
+          <div class="grid2">
+            <label>Start <input id="d1" type="date" /></label>
+            <label>End <input id="d2" type="date" /></label>
+          </div>
+          <button class="btn" id="dBtn">Calculate</button>
+          <p class="out" id="dOut">—</p>
+        </article>
+      </div>
+
+      <!-- AFF_SLOT:slot2 category_hint="Productivity / SaaS" reason="mid-page after user value delivered" -->
+      <div class="aff-slot" data-slot="slot2"></div>
+    </section>
+
+    <section class="panel" id="faq">
+      <h2>FAQ</h2>
+      <details>
+        <summary>Does this send my data anywhere?</summary>
+        <p>No. Calculations run locally in your browser. No login. No tracking scripts included by default.</p>
+      </details>
+      <details>
+        <summary>Can I use this offline?</summary>
+        <p>Yes. Once loaded, it works without network access.</p>
+      </details>
+      <details>
+        <summary>Are results guaranteed?</summary>
+        <p>Use results as reference only. See <a href="./terms.html">Terms</a> for details.</p>
+      </details>
+    </section>
+
+    <section class="panel">
+      <h2>About</h2>
+      <p>This site provides small, fast tools. The goal is usability: mobile-first, lightweight, and readable.</p>
+      <p class="muted">Last updated: <span id="lastUpdated">—</span></p>
+
+      <!-- AFF_SLOT:slot3 category_hint="Finance / Subscription" reason="end-of-content slot" -->
+      <div class="aff-slot" data-slot="slot3"></div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap footgrid">
+      <div>
+        <div class="brand small">Quick Tools</div>
+        <div class="muted">© <span id="year">—</span></div>
+      </div>
+      <div class="links">
+        <a href="./privacy.html">Privacy</a>
+        <a href="./terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/app.js"></script>
+</body>
+</html>
