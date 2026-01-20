@@ -77,7 +77,7 @@
     const hay = (site.slug + ' ' + site.title).toLowerCase();
     const rules = [
       ['Rank', ['rank','ranking','growth']],
-      ['Tool', ['tool','tools','toolbox','utils','utility','local-file-tools']],
+      ['Tool', ['tool','tools','toolbox/calc.html','utils','utility','local-file-tools']],
       ['Calculator', ['calc','calculator','pv','rpm','adsense']],
       ['Video', ['video','mp4','compress','compression']],
       ['PDF', ['pdf','merge','heic']],

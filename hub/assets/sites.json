@@ -24,8 +24,8 @@
         "tags":  "tool"
     },
     {
-        "slug":  "toolbox",
-        "title":  "Toolbox",
+        "slug":  "toolbox/calc.html",
+        "title":  "toolbox/calc.html",
         "desc":  "サクッと計算。見た目はふわっと。 AdSense収益シミュレーター PV×RPMで月の目安。",
         "tags":  "tool",
         "entry":  "calc.html"
