@@ -111,22 +111,19 @@
   <div class="bg-orb o1"></div><div class="bg-orb o2"></div><div class="bg-orb o3"></div>
   <div class="wrap">
 <!-- MOBILE_AFF_START -->
+<!-- MOBILE_AFF_V3 -->
 <style>
   /* HIDE_A8_ADS_ON_MOBILE_BEGIN */
-  /* A8側のブレークポイント(1160px)に合わせて、<=1160pxは #a8-ads を丸ごと消す */
   @media (max-width: 1160px){
     #a8-ads{ display:none !important; }
   }
   /* HIDE_A8_ADS_ON_MOBILE_END */
 
-  /* mobile/tablet-only stable slot (non-sticky, non-overlay) */
-  #mobile-aff-slot{ display:block; }
-  @media (min-width: 1161px){
-    #mobile-aff-slot{ display:none; }
-  }
+  /* mobile/tablet slot: <=1160px ONLY (force show), non-sticky, non-overlay */
+  #mobile-aff-slot{ display:none; }
   @media (max-width: 1160px){
     #mobile-aff-slot{
-      display:block;
+      display:block !important;
       max-width: 980px;
       margin: 14px auto 0;
       padding: 12px 12px;
@@ -156,6 +153,8 @@
 </div>
 </div>
 <!-- MOBILE_AFF_END -->
+
+
 
 
 
