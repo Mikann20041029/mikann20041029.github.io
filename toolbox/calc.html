@@ -111,23 +111,26 @@
   <div class="bg-orb o1"></div><div class="bg-orb o2"></div><div class="bg-orb o3"></div>
   <div class="wrap">
 <!-- MOBILE_AFF_START -->
-<!-- MOBILE_AFF_V4 -->
+<!-- MOBILE_AFF_V5 -->
 <style>
-  /* HIDE_A8_ADS_ON_MOBILE_BEGIN */
+  /* 既存A8枠はモバイルで丸ごと消す */
   @media (max-width: 1160px){
     #a8-ads{ display:none !important; }
   }
-  /* HIDE_A8_ADS_ON_MOBILE_END */
 
-  /* FORCE RULES:
-     - <=1160px : 반드시表示 (block!important)
-     - >=1161px : 必ず非表示 (none!important)
-     - 既存CSSに勝つため !important を付ける
-  */
-  #mobile-aff-slot{ display:none !important; }
+  /* 最強の表示ルール（他CSSに勝つため全部 !important） */
+  #mobile-aff-slot{
+    display:none !important;
+    visibility:visible !important;
+    opacity:1 !important;
+  }
+
   @media (max-width: 1160px){
     #mobile-aff-slot{
       display:block !important;
+      visibility:visible !important;
+      opacity:1 !important;
+
       max-width: 980px;
       margin: 14px auto 0;
       padding: 12px 12px;
@@ -140,13 +143,19 @@
     #mobile-aff-slot .hint{
       font-size: 12px;
       line-height: 1.5;
-      opacity: 0.75;
+      opacity: 0.75 !important;
       margin: 0 0 8px 0;
     }
     #mobile-aff-slot img{ max-width:100%; height:auto; display:block; }
+    #mobile-aff-slot .a8-fallback{ margin-top:6px; font-size:12px; opacity:0.75; }
   }
+
   @media (min-width: 1161px){
-    #mobile-aff-slot{ display:none !important; }
+    #mobile-aff-slot{
+      display:none !important;
+      visibility:hidden !important;
+      opacity:0 !important;
+    }
   }
 </style>
 
@@ -157,9 +166,14 @@
     <img border="0" width="320" height="50" alt="" src="https://www23.a8.net/svt/bgt?aid=260117583179&wid=001&eno=01&mid=s00000021054001005000&mc=1">
   </a>
   <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" alt="">
+  <div class="a8-fallback">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" rel="nofollow sponsored noopener" target="_blank">PR: おすすめを見る</a>
+  </div>
 </div>
 </div>
 <!-- MOBILE_AFF_END -->
+
+
 
 
 
