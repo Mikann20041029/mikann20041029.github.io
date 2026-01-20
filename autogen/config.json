@@ -1,0 +1,12 @@
+{
+  "site_title": "Auto Ranking Lab",
+  "base_path": "/autogen/out",
+  "topic": "資格ランキング（サンプル）",
+  "items": [
+    {"name":"基本情報技術者","note":"IT系の定番"},
+    {"name":"TOEIC","note":"英語スコア"},
+    {"name":"日商簿記3級","note":"会計の基礎"},
+    {"name":"FP3級","note":"お金の基礎"}
+  ],
+  "max_items": 10
+}
