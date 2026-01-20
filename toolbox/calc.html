@@ -104,12 +104,61 @@
   </div>
 
   <div class="a8-mobile">
-    <div class="a8-mobile-inner"><</div>
+    <div class="a8-mobile-inner"></div>
   </div>
 </div>
 <!-- A8_SIDEBAR_ADS_END -->
   <div class="bg-orb o1"></div><div class="bg-orb o2"></div><div class="bg-orb o3"></div>
   <div class="wrap">
+<!-- MOBILE_AFF_START -->
+<style>
+  /* HIDE_A8_ADS_ON_MOBILE_BEGIN */
+  @media (max-width: 768px){
+    /* 既存のA8枠（左右＋壊れてる .a8-mobile）をスマホでは丸ごと隠す＝二重/バグ回避 */
+    #a8-ads{ display:none !important; }
+  }
+  /* HIDE_A8_ADS_ON_MOBILE_END */
+
+  /* mobile-only fixed slot (non-sticky, non-overlay) */
+  #mobile-aff-slot{ display:none; }
+  @media (max-width: 768px){
+    #mobile-aff-slot{
+      display:block;
+      max-width: 980px;
+      margin: 14px auto 0;
+      padding: 12px 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    #mobile-aff-slot .hint{
+      font-size: 12px;
+      line-height: 1.5;
+      opacity: 0.75;
+      margin: 0 0 8px 0;
+    }
+    #mobile-aff-slot img{ max-width:100%; height:auto; display:block; }
+    #mobile-aff-box{ display:block; }
+  }
+</style>
+
+<div id="mobile-aff-slot" aria-label="affiliate">
+  <div class="hint">スポンサーリンク</div>
+  <div id="mobile-aff-box">
+    <div class="a8-fixed-one">
+  <a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" rel="nofollow sponsored noopener" target="_blank">
+    <img border="0" width="320" height="50" alt="" src="https://www23.a8.net/svt/bgt?aid=260117583179&wid=001&eno=01&mid=s00000021054001005000&mc=1">
+  </a>
+  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" alt="">
+</div>
+  </div>
+</div>
+
+
+<!-- MOBILE_AFF_END -->
+
     <header class="top">
       <a class="brand" href="./index.html">
         <span class="logo"></span>
@@ -396,81 +445,6 @@
 </section>
 <!-- ADSENSE_SITEINFO_END -->
 
-<!-- MOBILE_AFF_START -->
-<style>
-  /* HIDE_A8_ADS_ON_MOBILE_BEGIN */
-  @media (max-width: 768px){
-    /* 既存のA8枠（左右＋壊れてる .a8-mobile）をスマホでは丸ごと隠す＝二重/バグ回避 */
-    #a8-ads{ display:none !important; }
-  }
-  /* HIDE_A8_ADS_ON_MOBILE_END */
 
-  /* mobile-only fixed slot (non-sticky, non-overlay) */
-  #mobile-aff-slot{ display:none; }
-  @media (max-width: 768px){
-    #mobile-aff-slot{
-      display:block;
-      max-width: 980px;
-      margin: 14px auto 0;
-      padding: 12px 12px;
-      border-radius: 14px;
-      background: rgba(255,255,255,0.55);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      border: 1px solid rgba(0,0,0,0.06);
-    }
-    #mobile-aff-slot .hint{
-      font-size: 12px;
-      line-height: 1.5;
-      opacity: 0.75;
-      margin: 0 0 8px 0;
-    }
-    #mobile-aff-slot img{ max-width:100%; height:auto; display:block; }
-    #mobile-aff-box{ display:block; }
-  }
-</style>
-
-<div id="mobile-aff-slot" aria-label="affiliate">
-  <div class="hint">スポンサーリンク</div>
-  <div id="mobile-aff-box">
-    <div class="a8-fixed-one">
-  <a href="https://px.a8.net/svt/ejp?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" rel="nofollow sponsored noopener" target="_blank">
-    <img border="0" width="320" height="50" alt="" src="https://www23.a8.net/svt/bgt?aid=260117583179&wid=001&eno=01&mid=s00000021054001005000&mc=1">
-  </a>
-  <img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4AV80F+2YKM2A+4IGC+5ZEMP" alt="">
-</div>
-  </div>
-</div>
-
-<script>
-(function(){
-  // 枠の位置だけ、上（mainの前）に移動して「邪魔にならない」表示に寄せる
-  function isMobile(){ return window.matchMedia && window.matchMedia("(max-width: 768px)").matches; }
-  function placeSlot(){
-    if(!isMobile()) return;
-    var slot = document.getElementById("mobile-aff-slot");
-    if(!slot) return;
-
-    var anchor =
-      document.querySelector("main") ||
-      document.querySelector("#app") ||
-      document.querySelector(".app") ||
-      document.querySelector(".wrap");
-
-    if(anchor && anchor.parentNode){
-      anchor.parentNode.insertBefore(slot, anchor);
-    } else if(document.body){
-      document.body.insertBefore(slot, document.body.firstChild);
-    }
-  }
-
-  if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded", placeSlot);
-  } else {
-    placeSlot();
-  }
-})();
-</script>
-<!-- MOBILE_AFF_END -->
 </body>
 </html>
