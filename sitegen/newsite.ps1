@@ -310,7 +310,7 @@ $index = @"
 
   <footer>
     <div class="wrap">
-      <div class="muted">© $(Get-Date -Format yyyy) mikann20041029</div>
+      <div class="muted">ﾂｩ $(Get-Date -Format yyyy) mikann20041029</div>
     </div>
   </footer>
 </body>
@@ -327,7 +327,7 @@ $list = ($posts | ForEach-Object {
   "<li><a href='/$OutDir/$($_.Name)/'>$($_.Name)</a></li>"
 }) -join "`n"
 
-$home = @"
+$homeHtml = @"
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>Auto Trends Index</title>
@@ -347,7 +347,7 @@ $home = @"
 </body></html>
 "@
 
-[System.IO.File]::WriteAllText((Join-Path $OutDir "index.html"), $home, (New-Object System.Text.UTF8Encoding($false)))
+[System.IO.File]::WriteAllText((Join-Path $OutDir "index.html"), $homeHtml, (New-Object System.Text.UTF8Encoding($false)))
 
 git add "$OutDir/index.html" "$OutDir/assets/style.css" "$OutDir/$final/index.html" | Out-Host
 git commit -m "Auto: $OutDir/$final" | Out-Host
