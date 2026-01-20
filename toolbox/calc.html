@@ -120,7 +120,10 @@
   /* HIDE_A8_ADS_ON_MOBILE_END */
 
   /* mobile/tablet-only stable slot (non-sticky, non-overlay) */
-  #mobile-aff-slot{ display:none; }
+  #mobile-aff-slot{ display:block; }
+  @media (min-width: 1161px){
+    #mobile-aff-slot{ display:none; }
+  }
   @media (max-width: 1160px){
     #mobile-aff-slot{
       display:block;
