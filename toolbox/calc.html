@@ -395,5 +395,112 @@
   </div>
 </section>
 <!-- ADSENSE_SITEINFO_END -->
+
+<!-- MOBILE_AFF_START -->
+<style>
+  /* mobile-only affiliate slot (non-sticky / non-overlay) */
+  #mobile-aff-slot{ display:none; }
+  @media (max-width: 768px){
+    #mobile-aff-slot{
+      display:block;
+      max-width: 980px;
+      margin: 14px auto 0;
+      padding: 12px 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(0,0,0,0.06);
+    }
+    #mobile-aff-slot .hint{
+      font-size: 12px;
+      line-height: 1.5;
+      opacity: 0.75;
+      margin: 0 0 8px 0;
+    }
+    #mobile-aff-slot .box{
+      overflow:hidden;
+    }
+    #mobile-aff-slot img{ max-width:100%; height:auto; }
+  }
+</style>
+
+<div id="mobile-aff-slot" aria-label="affiliate">
+  <div class="hint">スポンサーリンク</div>
+  <div class="box" id="mobile-aff-box"></div>
+</div>
+
+<script>
+(function(){
+  function isMobile(){ return window.matchMedia && window.matchMedia("(max-width: 768px)").matches; }
+
+  function findAffiliateNode(){
+    var sel = [
+      'a[href*="px.a8.net"]',
+      'a[href*="a8.net"]',
+      'a[href*="accesstrade"]',
+      'a[href*="moshimo"]',
+      'a[href*="af.moshimo"]',
+      'a[href*="rpx.a8.net"]'
+    ].join(",");
+    var a = document.querySelector(sel);
+    if(!a) return null;
+
+    // できるだけ“バナー全体”を複製したいので、親を少し辿る
+    var n = a;
+    for(var i=0;i<4;i++){
+      if(!n || !n.parentElement) break;
+      // バナーっぽい大きめ要素で止める
+      var r = n.getBoundingClientRect ? n.getBoundingClientRect() : null;
+      if(r && r.width >= 250 && r.height >= 40) return n;
+      n = n.parentElement;
+    }
+    return a;
+  }
+
+  function insertSlotNearTop(){
+    var slot = document.getElementById("mobile-aff-slot");
+    if(!slot) return;
+
+    // “邪魔にならない範囲”＝固定表示しない。上部に1枠だけ置く
+    var anchor =
+      document.querySelector("main") ||
+      document.querySelector("#app") ||
+      document.querySelector(".app") ||
+      document.querySelector(".wrap") ||
+      (document.body ? document.body.firstElementChild : null);
+
+    if(anchor && anchor.parentNode){
+      // anchor の直前に置く（いちばん自然）
+      anchor.parentNode.insertBefore(slot, anchor);
+    } else if(document.body){
+      document.body.insertBefore(slot, document.body.firstChild);
+    }
+  }
+
+  function run(){
+    if(!isMobile()) return;
+
+    insertSlotNearTop();
+
+    var box = document.getElementById("mobile-aff-box");
+    if(!box) return;
+
+    var src = findAffiliateNode();
+    if(!src) return;
+
+    // 複製（元の広告DOMはそのまま）
+    var clone = src.cloneNode(true);
+    box.appendChild(clone);
+  }
+
+  if(document.readyState === "loading"){
+    document.addEventListener("DOMContentLoaded", run);
+  } else {
+    run();
+  }
+})();
+</script>
+<!-- MOBILE_AFF_END -->
 </body>
 </html>
