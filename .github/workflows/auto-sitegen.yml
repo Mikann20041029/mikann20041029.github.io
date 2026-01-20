@@ -36,7 +36,18 @@ jobs:
             throw "Missing or empty secret: OPENAI_API_KEY (Repo Settings -> Secrets and variables -> Actions)"
           }
           Write-Host "OK: OPENAI_API_KEY is set."
-
+      - name: Debug OpenAI env (safe)
+        shell: pwsh
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: gpt-5-mini
+        run: |
+          if([string]::IsNullOrWhiteSpace($env:OPENAI_API_KEY)){
+            Write-Host "DBG: OPENAI_API_KEY is MISSING"
+          } else {
+            Write-Host "DBG: OPENAI_API_KEY is PRESENT (length=$($env:OPENAI_API_KEY.Length))"
+          }
+          Write-Host "DBG: OPENAI_MODEL=$env:OPENAI_MODEL"
       - name: Generate daily page
         shell: pwsh
         env:
