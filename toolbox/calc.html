@@ -418,16 +418,13 @@
       opacity: 0.75;
       margin: 0 0 8px 0;
     }
-    #mobile-aff-slot .box{
-      overflow:hidden;
-    }
     #mobile-aff-slot img{ max-width:100%; height:auto; }
   }
 </style>
 
 <div id="mobile-aff-slot" aria-label="affiliate">
   <div class="hint">スポンサーリンク</div>
-  <div class="box" id="mobile-aff-box"></div>
+  <div id="mobile-aff-box"></div>
 </div>
 
 <script>
@@ -443,14 +440,14 @@
       'a[href*="af.moshimo"]',
       'a[href*="rpx.a8.net"]'
     ].join(",");
+
     var a = document.querySelector(sel);
     if(!a) return null;
 
-    // できるだけ“バナー全体”を複製したいので、親を少し辿る
+    // バナー全体っぽい親を探す
     var n = a;
-    for(var i=0;i<4;i++){
+    for(var i=0;i<6;i++){
       if(!n || !n.parentElement) break;
-      // バナーっぽい大きめ要素で止める
       var r = n.getBoundingClientRect ? n.getBoundingClientRect() : null;
       if(r && r.width >= 250 && r.height >= 40) return n;
       n = n.parentElement;
@@ -458,46 +455,69 @@
     return a;
   }
 
-  function insertSlotNearTop(){
+  function placeSlot(){
     var slot = document.getElementById("mobile-aff-slot");
     if(!slot) return;
 
-    // “邪魔にならない範囲”＝固定表示しない。上部に1枠だけ置く
+    // “邪魔にならない範囲”＝固定表示しない。ページ上部に1枠
     var anchor =
       document.querySelector("main") ||
       document.querySelector("#app") ||
       document.querySelector(".app") ||
-      document.querySelector(".wrap") ||
-      (document.body ? document.body.firstElementChild : null);
+      document.querySelector(".wrap");
 
     if(anchor && anchor.parentNode){
-      // anchor の直前に置く（いちばん自然）
       anchor.parentNode.insertBefore(slot, anchor);
     } else if(document.body){
       document.body.insertBefore(slot, document.body.firstChild);
     }
   }
 
-  function run(){
-    if(!isMobile()) return;
-
-    insertSlotNearTop();
-
+  function moveAffiliateIntoSlot(){
+    if(!isMobile()) return false;
     var box = document.getElementById("mobile-aff-box");
-    if(!box) return;
+    if(!box) return false;
+
+    // 既に入ってたら何もしない
+    if(box.children && box.children.length > 0) return true;
 
     var src = findAffiliateNode();
-    if(!src) return;
+    if(!src) return false;
 
-    // 複製（元の広告DOMはそのまま）
-    var clone = src.cloneNode(true);
-    box.appendChild(clone);
+    // “複製”じゃなく “移動”（二重表示リスク回避）
+    box.appendChild(src);
+    return true;
+  }
+
+  function runWithRetry(){
+    if(!isMobile()) return;
+    placeSlot();
+
+    var tries = 0;
+    var maxTries = 40;     // 約10秒 (250ms * 40)
+    var interval = 250;
+
+    var timer = setInterval(function(){
+      tries++;
+      if(moveAffiliateIntoSlot()){
+        clearInterval(timer);
+      }
+      if(tries >= maxTries){
+        clearInterval(timer);
+      }
+    }, interval);
+
+    // 追加でDOM変化にも追随（後から広告DOMが来るケース）
+    var mo = new MutationObserver(function(){
+      moveAffiliateIntoSlot();
+    });
+    mo.observe(document.documentElement, {childList:true, subtree:true});
   }
 
   if(document.readyState === "loading"){
-    document.addEventListener("DOMContentLoaded", run);
+    document.addEventListener("DOMContentLoaded", runWithRetry);
   } else {
-    run();
+    runWithRetry();
   }
 })();
 </script>
