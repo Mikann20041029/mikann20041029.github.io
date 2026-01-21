@@ -116,9 +116,7 @@ def make_reply(item, site_url):
         return (f"I found a page that tackles this exact family of issues (steps + a small tool):\n"
                 f"{site_url}\n"
                 f"If it helps, skim the 1-minute conclusion first.")
-    return (f"蜷後§邉ｻ邨ｱ縺ｮ蝗ｰ繧翫＃縺ｨ繧偵∪縺ｨ繧√※隗｣豎ｺ縺吶ｋ繝壹・繧ｸ繧剃ｽ懊ｊ縺ｾ縺励◆・郁ｪｭ縺ｿ迚ｩ・九Α繝九ヤ繝ｼ繝ｫ・峨・n"
             f"{site_url}\n"
-            f"縺ｾ縺壹・縲・蛻・〒蛻・°繧句ｯｾ蜃ｦ譁ｹ驥昴阪□縺題ｦ九ｋ縺ｮ縺梧掠縺・〒縺吶・)
 
 def safe_collect(name, fn):
     try:
@@ -130,7 +128,6 @@ def safe_collect(name, fn):
         return []
 
 def fallback_items_for(topic_key):
-    # 譛菴朱剞縲悟盾閠ザRL 10譛ｬ縲阪ｒ遒ｺ菫昴＠縺ｦ繧ｵ繧､繝育函謌舌ｒ豁｢繧√↑縺・    common = [
         ("GitHub", "GitHub Search API docs", "https://docs.github.com/en/rest/search/search"),
         ("StackExchange", "StackExchange API docs", "https://api.stackexchange.com/docs"),
         ("Reddit", "Reddit API docs", "https://www.reddit.com/dev/api/"),
@@ -180,8 +177,6 @@ def build_site(slug, topic, items):
     base_data.update({
         "slug": slug,
         "title": topic["title"],
-        "desc": "逶ｴ霑代・謚慕ｨｿ蜿朱寔・九ヵ繧ｩ繝ｼ繝ｫ繝舌ャ繧ｯ蜿ら・繧貞・縺ｫ縲∬ｪｭ縺ｿ迚ｩ・九ヤ繝ｼ繝ｫ縺ｧ縺ｾ縺ｨ繧√※隗｣豎ｺ",
-        "badge": "閾ｪ蜍慕函謌撰ｼ亥庶髮・､ｱ謨玲凾縺ｯ繝輔か繝ｼ繝ｫ繝舌ャ繧ｯ・・,
         "topic": topic["key"],
         "tags": ["auto", topic.get("tag","")],
         "problem_summaries": problem_summaries[:20],
@@ -242,7 +237,6 @@ def main():
     fallback_count = sum(1 for it in uniq if it.get("fallback"))
 
     site_url = build_site(slug, topic, uniq)
-    append_sites_json(slug, topic["title"], "逶ｴ霑代・蜿朱寔・九ヵ繧ｩ繝ｼ繝ｫ繝舌ャ繧ｯ蜿ら・縺ｧ縺ｾ縺ｨ繧・ｼ郁ｪｭ縺ｿ迚ｩ・九ヤ繝ｼ繝ｫ・・, topic.get("tag","tool"))
 
     lines=[]
     lines.append(f"NEW SITE: {site_url}")
