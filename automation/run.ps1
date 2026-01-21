@@ -117,7 +117,7 @@ function Fetch-Reddit([string]$topic,[DateTime]$since){
 }
 
 function Fetch-StackOverflow([string]$topic,[DateTime]$since){
-  $from = [int][DateTimeOffset]$since.ToUniversalTime() | ForEach-Object { $_.ToUnixTimeSeconds() }
+  $from = [int]([DateTimeOffset]$since.ToUniversalTime()).ToUnixTimeSeconds()
   $q = [uri]::EscapeDataString($topic)
   $url="https://api.stackexchange.com/2.3/search/advanced?order=desc&sort=creation&site=stackoverflow&pagesize=20&fromdate=$from&q=$q&filter=default"
   try{
@@ -137,7 +137,7 @@ function Fetch-StackOverflow([string]$topic,[DateTime]$since){
   return $out
 }
 
-function Pick-Topic(){
+function Pick-Topic{
   # 回すトピックは固定集合（毎回同じジャンルを10〜20件集める）
   $topics = @(
     "npm EACCES permission denied",
@@ -409,7 +409,7 @@ $context
 
 # ---- main generate ----
 function Generate-OneSite(){
-  $topic = Pick-Topic()
+  $topic = Pick-Topic
   $since = (Get-Date).ToUniversalTime().AddDays(-30)
 
   $items = @()
