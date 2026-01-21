@@ -114,10 +114,7 @@ def make_reply(item, site_url):
     lang = detect_lang(item.get("title",""))
     if lang == "en":
         return (f"I found a page that tackles this exact family of issues (steps + a small tool):\n"
-                f"{site_url}\n"
                 f"If it helps, skim the 1-minute conclusion first.")
-            f"{site_url}\n"
-
 def safe_collect(name, fn):
     try:
         items = fn()
@@ -265,4 +262,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
