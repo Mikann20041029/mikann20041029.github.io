@@ -1,0 +1,2 @@
+:root{ --card:#fff; --line:#eee; --radius:16px; --shadow:0 8px 30px #00000014; --muted:#6b7280; }
+.card{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow); padding:16px; }
