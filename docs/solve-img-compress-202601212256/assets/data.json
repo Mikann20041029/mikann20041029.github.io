@@ -1,0 +1,188 @@
+{
+    "lang":  "en",
+    "sections":  [
+                     {
+                         "items":  [
+                                       "reddit: [META] Streamlining Our Posting Rules: No More \"Comment to Approve\"!",
+                                       "reddit: Artist interview: Rinni",
+                                       "reddit: Days Gone Remastered screenshot 2026 (continued)",
+                                       "reddit: 📺 Best IPTV 2026 🔥 Honest Review of the Best IPTV Service \u0026amp; Provider – Why IPTVGREAT Is #1",
+                                       "reddit: Not worn off, time for next shot",
+                                       "reddit: Maharashtra Industries Policy 2025 Explained: Real Incentives, Hidden Conditions \u0026amp; What Investors Should Know",
+                                       "reddit: xLE Reiki Images - 2026-01-19-2 2 - Heal All Posterior Subcapsular Cataracts - PSCs - Heal All Critical Posterior Subcapsular Cataracts - PSCs - Heal All Posterior Polar Cataracts - Heal All Critical Posterior Polar Cataracts",
+                                       "reddit: How do small business owners balance clean code, speed, and usability when building software?",
+                                       "reddit: Coloring Book Digital",
+                                       "reddit: LMS Explained: How Learning Management Systems Are Redefining Modern Education and Training",
+                                       "reddit: Faction Deep Dive: Peacekeeping Forces",
+                                       "reddit: Update on Father’s scans",
+                                       "reddit: How AI is quietly reshaping manufacturing efficiency and global supply chains",
+                                       "reddit: Nature of the Interlopers ch4",
+                                       "reddit: Help with shaker door rail placement",
+                                       "reddit: Preventing and Handling Panic Situations",
+                                       "reddit: Meme post: Steven He\u0027s dad vs the Aeons",
+                                       "reddit: Heated Rivalry is not a Harlequin !",
+                                       "reddit: XBOX | EU,GER | CHERNARUS | Official++ | 3PP | PVP | Core loot | BUNKER | Weekend Raids | 32 Slots | NEW!",
+                                       "reddit: Built two fully in-browser toolkits — PDFLocal( with freeAdvanced OCR features) \u0026amp; ImageLocal [no file uploads, no servers]"
+                                   ],
+                         "title":  "1) このサイトで解決できる悩み一覧"
+                     },
+                     {
+                         "body":  "最初に上のツールを使って、あなたの条件に合う出力を得てください。うまくいかなければ、下の原因パターン→手順チェックへ進みます。",
+                         "title":  "2) まず結論（1分）"
+                     },
+                     {
+                         "items":  [
+                                       "権限/パスの問題",
+                                       "設定値の不整合",
+                                       "古いキャッシュ/ロック",
+                                       "実行ユーザーと所有者のズレ",
+                                       "環境差（OS/シェル）"
+                                   ],
+                         "title":  "3) 原因のパターン分解"
+                     },
+                     {
+                         "items":  [
+                                       "ツールで提案を生成",
+                                       "出力を上から順に1つずつ試す",
+                                       "実行ログ/エラー文をメモ",
+                                       "変化が無ければ次の手順へ",
+                                       "最終的に再現条件を整理"
+                                   ],
+                         "title":  "4) 手順（チェックリスト）"
+                     },
+                     {
+                         "items":  [
+                                       "一気に全部試して原因が分からなくなる",
+                                       "管理者/sudoで上書きして泥沼化",
+                                       "PATHを二重に通して別npmを叩く",
+                                       "キャッシュ削除で逆に壊す"
+                                   ],
+                         "title":  "5) よくある失敗"
+                     },
+                     {
+                         "items":  [
+                                       "クリーン再インストール",
+                                       "ユーザー配下に隔離して運用",
+                                       "別ランタイム/別ツールへ切替",
+                                       "最小再現を作って質問する"
+                                   ],
+                         "title":  "6) それでも直らない場合"
+                     },
+                     {
+                         "items":  [
+                                       "Q: これは送信されますか？ → いいえ（ブラウザ内処理）",
+                                       "Q: 宣伝ですか？ → 解決目的で、必要部分だけどうぞ",
+                                       "Q: 失敗したら？ → 下の代替策を順に",
+                                       "Q: 何を貼ればいい？ → 出力ブロックを丸ごと",
+                                       "Q: 似た事例は？ → 参考リンクへ"
+                                   ],
+                         "title":  "7) FAQ"
+                     },
+                     {
+                         "body":  "採用した投稿URL + 公式資料URL（最低3つ）を載せています。",
+                         "title":  "8) 参考URL"
+                     }
+                 ],
+    "desc":  "10〜20件の実例をまとめ、まずツールで解決→必要なら解説へ。",
+    "references":  [
+                       {
+                           "url":  "https://www.reddit.com/r/Watches/comments/1qiyhuf/meta_streamlining_our_posting_rules_no_more/",
+                           "title":  "reddit: [META] Streamlining Our Posting Rules: No More \"Comment to Approve\"!"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/mashit/comments/1qiyhox/artist_interview_rinni/",
+                           "title":  "reddit: Artist interview: Rinni"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/DaysGone/comments/1qiyhnd/days_gone_remastered_screenshot_2026_continued/",
+                           "title":  "reddit: Days Gone Remastered screenshot 2026 (continued)"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/No_Fear_Zone/comments/1qiyh7a/best_iptv_2026_honest_review_of_the_best_iptv/",
+                           "title":  "reddit: 📺 Best IPTV 2026 🔥 Honest Review of the Best IPTV Service \u0026amp; Provider – Why IPTVGREAT Is #1"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/Zepbound/comments/1qiyh36/not_worn_off_time_for_next_shot/",
+                           "title":  "reddit: Not worn off, time for next shot"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/subsidyschemes/comments/1qiygx5/maharashtra_industries_policy_2025_explained_real/",
+                           "title":  "reddit: Maharashtra Industries Policy 2025 Explained: Real Incentives, Hidden Conditions \u0026amp; What Investors Should Know"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/ReikiHelp/comments/1qiygn1/xle_reiki_images_202601192_2_heal_all_posterior/",
+                           "title":  "reddit: xLE Reiki Images - 2026-01-19-2 2 - Heal All Posterior Subcapsular Cataracts - PSCs - Heal All Critical Posterior Subcapsular Cataracts - PSCs - Heal All Posterior Polar Cataracts - Heal All Critical Posterior Polar Cataracts"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/smallbusiness/comments/1qiyghb/how_do_small_business_owners_balance_clean_code/",
+                           "title":  "reddit: How do small business owners balance clean code, speed, and usability when building software?"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/pinteresttrends/comments/1qiygev/coloring_book_digital/",
+                           "title":  "reddit: Coloring Book Digital"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/edtech/comments/1qiy8d7/lms_explained_how_learning_management_systems_are/",
+                           "title":  "reddit: LMS Explained: How Learning Management Systems Are Redefining Modern Education and Training"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/alphacentauri/comments/1qiy6io/faction_deep_dive_peacekeeping_forces/",
+                           "title":  "reddit: Faction Deep Dive: Peacekeeping Forces"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/lungcancer/comments/1qiy2qw/update_on_fathers_scans/",
+                           "title":  "reddit: Update on Father’s scans"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/InsightXpert/comments/1qiy1rw/how_ai_is_quietly_reshaping_manufacturing/",
+                           "title":  "reddit: How AI is quietly reshaping manufacturing efficiency and global supply chains"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/NatureofPredators/comments/1qiy09z/nature_of_the_interlopers_ch4/",
+                           "title":  "reddit: Nature of the Interlopers ch4"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/cabinetry/comments/1qixvin/help_with_shaker_door_rail_placement/",
+                           "title":  "reddit: Help with shaker door rail placement"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/ProgrammingLanguages/comments/1qixv9x/preventing_and_handling_panic_situations/",
+                           "title":  "reddit: Preventing and Handling Panic Situations"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/Hoyoverse_scaling/comments/1qiv83c/meme_post_steven_hes_dad_vs_the_aeons/",
+                           "title":  "reddit: Meme post: Steven He\u0027s dad vs the Aeons"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/MM_Romance/comments/1qius5o/heated_rivalry_is_not_a_harlequin/",
+                           "title":  "reddit: Heated Rivalry is not a Harlequin !"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/DayZServers/comments/1qiu6do/xbox_euger_chernarus_official_3pp_pvp_core_loot/",
+                           "title":  "reddit: XBOX | EU,GER | CHERNARUS | Official++ | 3PP | PVP | Core loot | BUNKER | Weekend Raids | 32 Slots | NEW!"
+                       },
+                       {
+                           "url":  "https://www.reddit.com/r/techIndia/comments/1qitblm/built_two_fully_inbrowser_toolkits_pdflocal_with/",
+                           "title":  "reddit: Built two fully in-browser toolkits — PDFLocal( with freeAdvanced OCR features) \u0026amp; ImageLocal [no file uploads, no servers]"
+                       },
+                       {
+                           "url":  "https://docs.npmjs.com/",
+                           "title":  "npm Docs (official)"
+                       },
+                       {
+                           "url":  "https://docs.github.com/",
+                           "title":  "GitHub Docs (official)"
+                       },
+                       {
+                           "url":  "https://developer.mozilla.org/",
+                           "title":  "MDN Web Docs (official)"
+                       }
+                   ],
+    "title":  {
+
+              },
+    "tool":  {
+                 "hint":  "PNG/JPG/WebPを圧縮・縮小して保存します（送信なし）",
+                 "type":  "image_compressor"
+             }
+}
