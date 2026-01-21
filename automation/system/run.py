@@ -1,4 +1,4 @@
-import os, json, re, shutil, datetime, urllib.request, sys
+﻿import os, json, re, shutil, datetime, urllib.request, sys
 from urllib.parse import quote_plus
 
 ROOT = os.getcwd()
@@ -63,7 +63,7 @@ def unique_slug(base):
         i += 1
     return slug
 
-def collect_github(query, days=30, limit=12):
+def collect_github(query, days=365, limit=12):
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
         return []
@@ -76,7 +76,7 @@ def collect_github(query, days=30, limit=12):
         out.append({"source":"GitHub","title":it.get("title",""),"url":it.get("html_url",""),"created_at":it.get("created_at","")})
     return out
 
-def collect_stackoverflow(query, days=30, limit=12):
+def collect_stackoverflow(query, days=365, limit=12):
     fromdate = int((utc_now() - datetime.timedelta(days=days)).timestamp())
     url = ("https://api.stackexchange.com/2.3/search/advanced"
            f"?order=desc&sort=creation&site=stackoverflow&pagesize={min(limit, 20)}"
@@ -88,7 +88,7 @@ def collect_stackoverflow(query, days=30, limit=12):
                     "created_at": datetime.datetime.utcfromtimestamp(it.get("creation_date",0)).isoformat()+"Z"})
     return out
 
-def collect_reddit(query, days=30, limit=12):
+def collect_reddit(query, days=365, limit=12):
     # Reddit is often 429/403 in CI; tolerate failures.
     url = f"https://www.reddit.com/search.json?q={quote_plus(query)}&sort=new&t=month&limit={min(limit, 25)}"
     j = http_get_json(url, headers={"User-Agent":"Mozilla/5.0 (mikann-autogen)"} )
@@ -116,9 +116,9 @@ def make_reply(item, site_url):
         return (f"I found a page that tackles this exact family of issues (steps + a small tool):\n"
                 f"{site_url}\n"
                 f"If it helps, skim the 1-minute conclusion first.")
-    return (f"同じ系統の困りごとをまとめて解決するページを作りました（読み物＋ミニツール）。\n"
+    return (f"蜷後§邉ｻ邨ｱ縺ｮ蝗ｰ繧翫＃縺ｨ繧偵∪縺ｨ繧√※隗｣豎ｺ縺吶ｋ繝壹・繧ｸ繧剃ｽ懊ｊ縺ｾ縺励◆・郁ｪｭ縺ｿ迚ｩ・九Α繝九ヤ繝ｼ繝ｫ・峨・n"
             f"{site_url}\n"
-            f"まずは「1分で分かる対処方針」だけ見るのが早いです。")
+            f"縺ｾ縺壹・縲・蛻・〒蛻・°繧句ｯｾ蜃ｦ譁ｹ驥昴阪□縺題ｦ九ｋ縺ｮ縺梧掠縺・〒縺吶・)
 
 def safe_collect(name, fn):
     try:
@@ -130,8 +130,7 @@ def safe_collect(name, fn):
         return []
 
 def fallback_items_for(topic_key):
-    # 最低限「参考URL 10本」を確保してサイト生成を止めない
-    common = [
+    # 譛菴朱剞縲悟盾閠ザRL 10譛ｬ縲阪ｒ遒ｺ菫昴＠縺ｦ繧ｵ繧､繝育函謌舌ｒ豁｢繧√↑縺・    common = [
         ("GitHub", "GitHub Search API docs", "https://docs.github.com/en/rest/search/search"),
         ("StackExchange", "StackExchange API docs", "https://api.stackexchange.com/docs"),
         ("Reddit", "Reddit API docs", "https://www.reddit.com/dev/api/"),
@@ -181,8 +180,8 @@ def build_site(slug, topic, items):
     base_data.update({
         "slug": slug,
         "title": topic["title"],
-        "desc": "直近の投稿収集＋フォールバック参照を元に、読み物＋ツールでまとめて解決",
-        "badge": "自動生成（収集失敗時はフォールバック）",
+        "desc": "逶ｴ霑代・謚慕ｨｿ蜿朱寔・九ヵ繧ｩ繝ｼ繝ｫ繝舌ャ繧ｯ蜿ら・繧貞・縺ｫ縲∬ｪｭ縺ｿ迚ｩ・九ヤ繝ｼ繝ｫ縺ｧ縺ｾ縺ｨ繧√※隗｣豎ｺ",
+        "badge": "閾ｪ蜍慕函謌撰ｼ亥庶髮・､ｱ謨玲凾縺ｯ繝輔か繝ｼ繝ｫ繝舌ャ繧ｯ・・,
         "topic": topic["key"],
         "tags": ["auto", topic.get("tag","")],
         "problem_summaries": problem_summaries[:20],
@@ -212,14 +211,15 @@ def append_sites_json(slug, title, desc, tag):
         f.write(s)
 
 def main():
+    LOOKBACK_DAYS = 365
     topic = pick_topic_rotate()
     base = "auto-" + slugify(topic["key"]) + "-" + utc_now().strftime("%Y%m%d")
     slug = unique_slug(base)
 
     items = []
-    items += safe_collect("github", lambda: collect_github(topic["query"], days=30, limit=12))
-    items += safe_collect("so", lambda: collect_stackoverflow(topic["query"], days=30, limit=12))
-    items += safe_collect("reddit", lambda: collect_reddit(topic["query"], days=30, limit=12))
+    items += safe_collect("github", lambda: collect_github(topic["query"], days=365, limit=12))
+    items += safe_collect("so", lambda: collect_stackoverflow(topic["query"], days=365, limit=12))
+    items += safe_collect("reddit", lambda: collect_reddit(topic["query"], days=365, limit=12))
 
     seen=set(); uniq=[]
     for it in items:
@@ -243,11 +243,12 @@ def main():
     fallback_count = sum(1 for it in uniq if it.get("fallback"))
 
     site_url = build_site(slug, topic, uniq)
-    append_sites_json(slug, topic["title"], "直近の収集＋フォールバック参照でまとめ（読み物＋ツール）", topic.get("tag","tool"))
+    append_sites_json(slug, topic["title"], "逶ｴ霑代・蜿朱寔・九ヵ繧ｩ繝ｼ繝ｫ繝舌ャ繧ｯ蜿ら・縺ｧ縺ｾ縺ｨ繧・ｼ郁ｪｭ縺ｿ迚ｩ・九ヤ繝ｼ繝ｫ・・, topic.get("tag","tool"))
 
     lines=[]
     lines.append(f"NEW SITE: {site_url}")
     lines.append(f"TOPIC: {topic['key']} / {topic['title']}")
+    lines.append(f"LOOKBACK_DAYS: {LOOKBACK_DAYS}")
     lines.append(f"POSTS: real={real_count} fallback={fallback_count}")
     lines.append("")
     lines.append("SOURCES (up to 20):")
