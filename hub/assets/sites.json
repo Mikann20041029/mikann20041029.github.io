@@ -96,5 +96,11 @@
     "title": "git push rejected permission denied をまとめて直す（権限/環境/手順）",
     "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
     "tags": "auto"
+  },
+  {
+    "slug": "auto-compress-media-20260121",
+    "title": "容量を減らしたい（画像/動画/音声）",
+    "desc": "直近の収集＋フォールバック参照でまとめ（読み物＋ツール）",
+    "tags": "media"
   }
 ]
