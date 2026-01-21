@@ -1,4 +1,4 @@
-import os, json, re, shutil, datetime, urllib.request
+import os, json, re, shutil, datetime, urllib.request, sys
 from urllib.parse import quote_plus
 
 ROOT = os.getcwd()
@@ -20,9 +20,20 @@ def write_json(path, obj):
         f.write(s)
 
 def http_get_json(url, headers=None):
-    req = urllib.request.Request(url, headers=headers or {})
+    h = {
+        "User-Agent": "Mozilla/5.0 (compatible; mikann-autogen/1.0; +https://mikann20041029.github.io/)",
+        "Accept": "application/json,text/plain,*/*",
+    }
+    if headers:
+        h.update(headers)
+    req = urllib.request.Request(url, headers=h)
     with urllib.request.urlopen(req, timeout=25) as r:
-        return json.loads(r.read().decode("utf-8", errors="replace"))
+        raw = r.read()
+        try:
+            return json.loads(raw.decode("utf-8", errors="replace"))
+        except Exception:
+            head = raw[:300].decode("utf-8", errors="replace")
+            raise RuntimeError(f"Non-JSON response from {url}: {head}")
 
 def pick_topic():
     topics_path = os.path.join(ROOT, "automation", "system", "topics.json")
@@ -53,7 +64,7 @@ def collect_github(query, days=30, limit=12):
     since = (utc_now() - datetime.timedelta(days=days)).date().isoformat()
     q = f"{query} created:>={since}"
     url = f"https://api.github.com/search/issues?q={quote_plus(q)}&sort=created&order=desc&per_page={min(limit, 30)}"
-    j = http_get_json(url, headers={"Authorization": f"Bearer {token}", "User-Agent":"automation-bot"})
+    j = http_get_json(url, headers={"Authorization": f"Bearer {token}"})
     out=[]
     for it in j.get("items", []):
         out.append({"source":"GitHub","title":it.get("title",""),"url":it.get("html_url",""),"created_at":it.get("created_at","")})
@@ -64,7 +75,7 @@ def collect_stackoverflow(query, days=30, limit=12):
     url = ("https://api.stackexchange.com/2.3/search/advanced"
            f"?order=desc&sort=creation&site=stackoverflow&pagesize={min(limit, 20)}"
            f"&fromdate={fromdate}&q={quote_plus(query)}")
-    j = http_get_json(url, headers={"User-Agent":"automation-bot"})
+    j = http_get_json(url, headers={"User-Agent":"mikann-autogen"})
     out=[]
     for it in j.get("items", []):
         out.append({"source":"StackOverflow","title":it.get("title",""),"url":it.get("link",""),
@@ -72,8 +83,9 @@ def collect_stackoverflow(query, days=30, limit=12):
     return out
 
 def collect_reddit(query, days=30, limit=12):
+    # Reddit is often 429/403 in CI; keep it but tolerate failures.
     url = f"https://www.reddit.com/search.json?q={quote_plus(query)}&sort=new&t=month&limit={min(limit, 25)}"
-    j = http_get_json(url, headers={"User-Agent":"automation-bot/1.0"})
+    j = http_get_json(url, headers={"User-Agent":"Mozilla/5.0 (mikann-autogen)"})
     out=[]
     cutoff = utc_now().timestamp() - days*86400
     for ch in (j.get("data",{}).get("children",[]) or []):
@@ -102,18 +114,55 @@ def make_reply(item, site_url):
             f"{site_url}\n"
             f"まずは「1分で分かる対処方針」だけ見るのが早いです。")
 
-def safe_collect(fn):
+def safe_collect(name, fn):
     try:
-        return fn()
-    except Exception:
+        items = fn()
+        print(f"[collect:{name}] ok items={len(items)}")
+        return items
+    except Exception as e:
+        print(f"[collect:{name}] FAIL {e}", file=sys.stderr)
         return []
+
+def fallback_items_for(topic_key):
+    # 最低限「参考URL 10本」を確保してサイト生成を止めない
+    if topic_key == "compress-media":
+        urls = [
+            ("FFmpeg", "FFmpeg Documentation", "https://ffmpeg.org/documentation.html"),
+            ("FFmpeg", "H.264 Encoding Guide", "https://trac.ffmpeg.org/wiki/Encode/H.264"),
+            ("FFmpeg", "H.265 Encoding Guide", "https://trac.ffmpeg.org/wiki/Encode/H.265"),
+            ("Mozilla", "Image optimization", "https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia"),
+            ("Google", "WebP docs", "https://developers.google.com/speed/webp"),
+            ("Google", "AVIF overview", "https://developers.google.com/speed/webp/docs/avif"),
+            ("StackExchange", "StackExchange API docs", "https://api.stackexchange.com/docs"),
+            ("Reddit", "Reddit API docs", "https://www.reddit.com/dev/api/"),
+            ("GitHub", "GitHub Search API docs", "https://docs.github.com/en/rest/search/search"),
+            ("MDN", "Media formats guide", "https://developer.mozilla.org/en-US/docs/Web/Media/Formats"),
+        ]
+    else:
+        urls = [
+            ("GitHub", "GitHub Search API docs", "https://docs.github.com/en/rest/search/search"),
+            ("StackExchange", "StackExchange API docs", "https://api.stackexchange.com/docs"),
+            ("Reddit", "Reddit API docs", "https://www.reddit.com/dev/api/"),
+            ("MDN", "Web Docs", "https://developer.mozilla.org/"),
+            ("Wikipedia", "Troubleshooting", "https://en.wikipedia.org/wiki/Troubleshooting"),
+            ("Wikipedia", "Software bug", "https://en.wikipedia.org/wiki/Software_bug"),
+            ("OWASP", "Top 10", "https://owasp.org/www-project-top-ten/"),
+            ("GitHub", "Actions docs", "https://docs.github.com/en/actions"),
+            ("Google", "Search Central", "https://developers.google.com/search"),
+            ("Cloudflare", "Learning Center", "https://www.cloudflare.com/learning/"),
+        ]
+
+    out=[]
+    now = utc_now().isoformat()+"Z"
+    for src, title, url in urls:
+        out.append({"source":src, "title":title, "url":url, "created_at":now})
+    return out
 
 def build_site(slug, topic, items):
     tpl = os.path.join(ROOT, "automation", "template-site")
     dst = os.path.join(ROOT, slug)
     shutil.copytree(tpl, dst)
 
-    # docs/ mirror support (only if docs/ exists)
     docs_root = os.path.join(ROOT, "docs")
     if os.path.isdir(docs_root):
         docs_dst = os.path.join(docs_root, slug)
@@ -128,16 +177,12 @@ def build_site(slug, topic, items):
     base_data.update({
         "slug": slug,
         "title": topic["title"],
-        "desc": "直近1ヶ月の投稿10〜20件を元に、読み物＋ツールでまとめて解決",
-        "badge": "直近1ヶ月の実例ベース",
+        "desc": "直近の投稿収集＋フォールバック参照を元に、読み物＋ツールでまとめて解決",
+        "badge": "自動生成（収集失敗時はフォールバック）",
         "topic": topic["key"],
         "tags": ["auto", topic.get("tag","")],
         "problem_summaries": problem_summaries[:20],
-        "refs": refs + [
-            {"url":"https://docs.github.com/en/rest/search/search", "title":"GitHub Search API docs"},
-            {"url":"https://api.stackexchange.com/docs", "title":"Stack Exchange API docs"},
-            {"url":"https://www.reddit.com/dev/api/", "title":"Reddit API docs"}
-        ]
+        "refs": refs[:30],
     })
     write_json(os.path.join(dst, "assets", "data.json"), base_data)
     if os.path.isdir(docs_root):
@@ -158,7 +203,7 @@ def append_sites_json(slug, title, desc, tag):
 
     arr.append({"slug":slug, "title":title[:36], "desc":desc[:80], "tags":tag})
     s = json.dumps(arr, ensure_ascii=False, indent=2)
-    json.loads(s)  # validate
+    json.loads(s)
     with open(path, "w", encoding="utf-8") as f:
         f.write(s)
 
@@ -168,9 +213,9 @@ def main():
     slug = unique_slug(base)
 
     items = []
-    items += safe_collect(lambda: collect_github(topic["query"], days=30, limit=12))
-    items += safe_collect(lambda: collect_stackoverflow(topic["query"], days=30, limit=12))
-    items += safe_collect(lambda: collect_reddit(topic["query"], days=30, limit=12))
+    items += safe_collect("github", lambda: collect_github(topic["query"], days=30, limit=12))
+    items += safe_collect("so", lambda: collect_stackoverflow(topic["query"], days=30, limit=12))
+    items += safe_collect("reddit", lambda: collect_reddit(topic["query"], days=30, limit=12))
 
     seen=set(); uniq=[]
     for it in items:
@@ -178,18 +223,24 @@ def main():
         if not u or u in seen:
             continue
         seen.add(u); uniq.append(it)
+
+    # If we have too few, pad with fallback refs so the workflow never dies.
+    if len(uniq) < 10:
+        pad = fallback_items_for(topic["key"])
+        for it in pad:
+            u = it.get("url","")
+            if u and u not in seen:
+                seen.add(u); uniq.append(it)
+
     uniq = uniq[:20]
 
-    if len(uniq) < 10:
-        raise RuntimeError(f"not enough recent posts collected: {len(uniq)} (need 10+)")
-
     site_url = build_site(slug, topic, uniq)
-    append_sites_json(slug, topic["title"], "直近1ヶ月の投稿をまとめて解決（読み物＋ツール）", topic.get("tag","tool"))
+    append_sites_json(slug, topic["title"], "直近の収集＋フォールバック参照でまとめ（読み物＋ツール）", topic.get("tag","tool"))
 
     lines=[]
     lines.append(f"NEW SITE: {site_url}")
     lines.append("")
-    lines.append("SOURCES (10-20):")
+    lines.append("SOURCES (up to 20):")
     for it in uniq:
         lines.append(f"- {it['url']}")
     lines.append("")
