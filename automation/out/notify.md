@@ -1,67 +1,79 @@
-NEW SITE: https://mikann20041029.github.io/auto-compress-media-20260121-3/
-TOPIC: compress-media / 容量を減らしたい（画像/動画/音声）
-POSTS: real=0 fallback=10
+NEW SITE: https://mikann20041029.github.io/auto-github-actions-fail-20260121/
+TOPIC: github-actions-fail / GitHub Actions が失敗する（権限/パス/CI）
+POSTS: real=12 fallback=0
 
 SOURCES (up to 20):
-- https://ffmpeg.org/documentation.html (fallback)
-- https://trac.ffmpeg.org/wiki/Encode/H.264 (fallback)
-- https://trac.ffmpeg.org/wiki/Encode/H.265 (fallback)
-- https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia (fallback)
-- https://developers.google.com/speed/webp (fallback)
-- https://developers.google.com/speed/webp/docs/avif (fallback)
-- https://docs.github.com/en/rest/search/search (fallback)
-- https://api.stackexchange.com/docs (fallback)
-- https://www.reddit.com/dev/api/ (fallback)
-- https://developer.mozilla.org/ (fallback)
+- https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/983
+- https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/982
+- https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/981
+- https://github.com/OWASP-BLT/BLT/issues/5485
+- https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/980
+- https://github.com/perfectra1n/claude-code-gitea-action/issues/1
+- https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/979
+- https://github.com/BrianCLong/summit/issues/16422
+- https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/978
+- https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/977
+- https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/976
+- https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/975
 
 REPLY DRAFTS:
 
-URL: https://ffmpeg.org/documentation.html
+URL: https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/983
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://trac.ffmpeg.org/wiki/Encode/H.264
+URL: https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/982
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://trac.ffmpeg.org/wiki/Encode/H.265
+URL: https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/981
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia
+URL: https://github.com/OWASP-BLT/BLT/issues/5485
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://developers.google.com/speed/webp
+URL: https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/980
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://developers.google.com/speed/webp/docs/avif
+URL: https://github.com/perfectra1n/claude-code-gitea-action/issues/1
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://docs.github.com/en/rest/search/search
+URL: https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/979
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://api.stackexchange.com/docs
+URL: https://github.com/BrianCLong/summit/issues/16422
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://www.reddit.com/dev/api/
+URL: https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/978
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://developer.mozilla.org/
+URL: https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/977
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-compress-media-20260121-3/
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
+If it helps, skim the 1-minute conclusion first.
+
+URL: https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/976
+I found a page that tackles this exact family of issues (steps + a small tool):
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
+If it helps, skim the 1-minute conclusion first.
+
+URL: https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/975
+I found a page that tackles this exact family of issues (steps + a small tool):
+https://mikann20041029.github.io/auto-github-actions-fail-20260121/
 If it helps, skim the 1-minute conclusion first.

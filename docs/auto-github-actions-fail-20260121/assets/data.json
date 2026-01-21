@@ -1,0 +1,116 @@
+{
+  "slug": "auto-github-actions-fail-20260121",
+  "title": "GitHub Actions が失敗する（権限/パス/CI）",
+  "desc": "10〜20件の悩みをまとめて解決する読み物＋ツール",
+  "badge": "中身が主役",
+  "topic": "github-actions-fail",
+  "tags": [
+    "auto",
+    "github"
+  ],
+  "problem_summaries": [
+    "[GitHub] ⚠️ Ansible User Deployment Failed - 2026-01-21",
+    "[GitHub] ⚠️ Ansible User Deployment Failed - 2026-01-20",
+    "[GitHub] ⚠️ Ansible User Deployment Failed - 2026-01-19",
+    "[GitHub] Discussion with coderabbitai",
+    "[GitHub] ⚠️ Ansible User Deployment Failed - 2026-01-18",
+    "[GitHub] ⚠️ Upstream Sync Conflict - Manual Resolution Required",
+    "[GitHub] ⚠️ Ansible User Deployment Failed - 2026-01-17",
+    "[GitHub] [Governance Drift] Branch protection does not match REQUIRED_CHECKS_POLICY (main)",
+    "[GitHub] ⚠️ Ansible User Deployment Failed - 2026-01-16",
+    "[GitHub] ⚠️ Ansible User Deployment Failed - 2026-01-15",
+    "[GitHub] ⚠️ Ansible User Deployment Failed - 2026-01-14",
+    "[GitHub] ⚠️ Ansible User Deployment Failed - 2026-01-13"
+  ],
+  "conclusion_steps": [
+    "まず結論：最短の対処方針を 3〜7 ステップで"
+  ],
+  "cause_patterns": [
+    "原因パターンA：〜",
+    "原因パターンB：〜"
+  ],
+  "checklist_steps": [
+    "手順1：確認する",
+    "手順2：設定する",
+    "手順3：再実行する"
+  ],
+  "common_mistakes": [
+    "失敗例：〜 → 回避策：〜"
+  ],
+  "fallbacks": [
+    "それでも直らない：代替策1",
+    "それでも直らない：別ルート2"
+  ],
+  "faqs": [
+    {
+      "q": "FAQ1",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ2",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ3",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ4",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ5",
+      "a": "回答"
+    }
+  ],
+  "refs": [
+    {
+      "url": "https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/983",
+      "title": "GitHub: ⚠️ Ansible User Deployment Failed - 2026-01-21"
+    },
+    {
+      "url": "https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/982",
+      "title": "GitHub: ⚠️ Ansible User Deployment Failed - 2026-01-20"
+    },
+    {
+      "url": "https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/981",
+      "title": "GitHub: ⚠️ Ansible User Deployment Failed - 2026-01-19"
+    },
+    {
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5485",
+      "title": "GitHub: Discussion with coderabbitai"
+    },
+    {
+      "url": "https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/980",
+      "title": "GitHub: ⚠️ Ansible User Deployment Failed - 2026-01-18"
+    },
+    {
+      "url": "https://github.com/perfectra1n/claude-code-gitea-action/issues/1",
+      "title": "GitHub: ⚠️ Upstream Sync Conflict - Manual Resolution Required"
+    },
+    {
+      "url": "https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/979",
+      "title": "GitHub: ⚠️ Ansible User Deployment Failed - 2026-01-17"
+    },
+    {
+      "url": "https://github.com/BrianCLong/summit/issues/16422",
+      "title": "GitHub: [Governance Drift] Branch protection does not match REQUIRED_CHECKS_POLICY (main)"
+    },
+    {
+      "url": "https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/978",
+      "title": "GitHub: ⚠️ Ansible User Deployment Failed - 2026-01-16"
+    },
+    {
+      "url": "https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/977",
+      "title": "GitHub: ⚠️ Ansible User Deployment Failed - 2026-01-15"
+    },
+    {
+      "url": "https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/976",
+      "title": "GitHub: ⚠️ Ansible User Deployment Failed - 2026-01-14"
+    },
+    {
+      "url": "https://github.com/BabsyIT/Babsy-SSH-Key-Managment/issues/975",
+      "title": "GitHub: ⚠️ Ansible User Deployment Failed - 2026-01-13"
+    }
+  ]
+}
