@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Threat Model: 0xj4f/genesis - Triple redundancy + code validation",
+      "url": "https://github.com/0xj4f/genesis/issues/16",
+      "created_at": "2026-01-09T08:11:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Threat Model: 0xj4f/genesis - Triple redundancy + code validation",
+      "url": "https://github.com/0xj4f/genesis/issues/17",
+      "created_at": "2026-01-09T08:12:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Uncaught exception \"RangeError: Maximum class stack size exceeded\" in terminal, process exits",
+      "url": "https://github.com/anthropics/claude-code/issues/16745",
+      "created_at": "2026-01-08T00:25:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Stack overflow",
+      "url": "https://github.com/anthropics/claude-code/issues/16760",
+      "created_at": "2026-01-08T02:06:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Stack overflow crash parsing ANSI-colored vitest output in v2.1.1",
+      "url": "https://github.com/anthropics/claude-code/issues/16786",
+      "created_at": "2026-01-08T04:54:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Tool use recursion error",
+      "url": "https://github.com/anthropics/claude-code/issues/17129",
+      "created_at": "2026-01-09T15:54:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[EPIC] cp and pp portal start using with plant api layer with secure and robust pipe which will be used for all future api integration.",
+      "url": "https://github.com/dlai-sd/WAOOAW/issues/199",
+      "created_at": "2026-01-20T15:47:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[PopKit] Feature: Adopt MCP Wildcard Permissions Syntax (Claude Code 2.0.70)",
+      "url": "https://github.com/jrc1883/popkit-claude/issues/93",
+      "created_at": "2026-01-10T05:07:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[STORY] MCP/REST Parity Validation Test Suite",
+      "url": "https://github.com/jsbattig/code-indexer/issues/631",
+      "created_at": "2025-12-28T12:05:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Test issue: Add a hello world endpoint",
+      "url": "https://github.com/Mandalorian007/aidw/issues/1",
+      "created_at": "2026-01-17T16:43:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-01-21T13:11:42.5491349Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/2",
+      "created_at": "2026-01-21T13:11:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-01-21T13:26:43.0753562Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/3",
+      "created_at": "2026-01-21T13:26:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-01-21T16:05:23.8085573Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/4",
+      "created_at": "2026-01-21T16:05:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Feature] Advanced Tool Approval & Permission System with Context-Aware Evaluation",
+      "url": "https://github.com/Nano-Collective/nanocoder/issues/290",
+      "created_at": "2026-01-07T19:59:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "dumped.",
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5383",
+      "created_at": "2026-01-01T15:22:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Simplify testing infrastructure with Firebase Hosting emulator",
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1070",
+      "created_at": "2025-12-31T02:18:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Integrate firebase-ports config into build process",
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1081",
+      "created_at": "2025-12-31T15:44:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "finparse Phase 1: Core Infrastructure",
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1257",
+      "created_at": "2026-01-08T04:09:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Budget Planning: Weekly Category Targets with Rollover and Time Selection",
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1337",
+      "created_at": "2026-01-09T17:30:46.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "all hands wiggum optimizations",
+      "url": "https://github.com/rumor-ml/commons.systems/issues/625",
+      "created_at": "2025-12-26T23:03:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202601211623/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-01-21T16:23:01.5365286Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-git-push-rejected-permission-denied-202601211623",
+    "title": "git push rejected permission denied をまとめて直す（権限/環境/手順）"
+  },
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/0xj4f/genesis/issues/16",
+      "label": "github: Threat Model: 0xj4f/genesis - Triple redundancy + code validation"
+    },
+    {
+      "url": "https://github.com/0xj4f/genesis/issues/17",
+      "label": "github: Threat Model: 0xj4f/genesis - Triple redundancy + code validation"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/16745",
+      "label": "github: [BUG] Uncaught exception \"RangeError: Maximum class stack size exceeded\" in terminal, process exits"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/16760",
+      "label": "github: [BUG] Stack overflow"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/16786",
+      "label": "github: [BUG] Stack overflow crash parsing ANSI-colored vitest output in v2.1.1"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/17129",
+      "label": "github: Tool use recursion error"
+    },
+    {
+      "url": "https://github.com/dlai-sd/WAOOAW/issues/199",
+      "label": "github: [EPIC] cp and pp portal start using with plant api layer with secure and robust pipe which will be used for all future api integration."
+    },
+    {
+      "url": "https://github.com/jrc1883/popkit-claude/issues/93",
+      "label": "github: [PopKit] Feature: Adopt MCP Wildcard Permissions Syntax (Claude Code 2.0.70)"
+    },
+    {
+      "url": "https://github.com/jsbattig/code-indexer/issues/631",
+      "label": "github: [STORY] MCP/REST Parity Validation Test Suite"
+    },
+    {
+      "url": "https://github.com/Mandalorian007/aidw/issues/1",
+      "label": "github: Test issue: Add a hello world endpoint"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/2",
+      "label": "github: mikann-autogen digest 2026-01-21T13:11:42.5491349Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/3",
+      "label": "github: mikann-autogen digest 2026-01-21T13:26:43.0753562Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/4",
+      "label": "github: mikann-autogen digest 2026-01-21T16:05:23.8085573Z"
+    },
+    {
+      "url": "https://github.com/Nano-Collective/nanocoder/issues/290",
+      "label": "github: [Feature] Advanced Tool Approval & Permission System with Context-Aware Evaluation"
+    },
+    {
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5383",
+      "label": "github: dumped."
+    },
+    {
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1070",
+      "label": "github: Simplify testing infrastructure with Firebase Hosting emulator"
+    },
+    {
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1081",
+      "label": "github: Integrate firebase-ports config into build process"
+    },
+    {
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1257",
+      "label": "github: finparse Phase 1: Core Infrastructure"
+    },
+    {
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1337",
+      "label": "github: Budget Planning: Weekly Category Targets with Rollover and Time Selection"
+    },
+    {
+      "url": "https://github.com/rumor-ml/commons.systems/issues/625",
+      "label": "github: all hands wiggum optimizations"
+    }
+  ]
+}
