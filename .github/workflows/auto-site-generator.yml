@@ -60,9 +60,11 @@ jobs:
             body = f.read()
           url = f"https://api.github.com/repos/{repo}/issues"
           payload = {"title":"[auto] New site + reply drafts","body":body[:60000]}
-          req = urllib.request.Request(url, data=json.dumps(payload).encode("utf-8"),
-                                       headers={"Authorization":f"Bearer {tok}","User-Agent":"automation-bot",
-                                                "Accept":"application/vnd.github+json"}, method="POST")
+          req = urllib.request.Request(
+            url, data=json.dumps(payload).encode("utf-8"),
+            headers={"Authorization":f"Bearer {tok}","User-Agent":"automation-bot","Accept":"application/vnd.github+json"},
+            method="POST"
+          )
           with urllib.request.urlopen(req, timeout=25) as r:
             print("issue notify ok", r.status)
           PY

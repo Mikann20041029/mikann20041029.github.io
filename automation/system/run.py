@@ -6,9 +6,6 @@ ROOT = os.getcwd()
 def utc_now():
     return datetime.datetime.utcnow()
 
-def days_ago(n):
-    return utc_now() - datetime.timedelta(days=n)
-
 def read_json(path, default):
     if not os.path.exists(path):
         return default
@@ -17,9 +14,10 @@ def read_json(path, default):
 
 def write_json(path, obj):
     os.makedirs(os.path.dirname(path), exist_ok=True)
-    data = json.dumps(obj, ensure_ascii=False, indent=2)
+    s = json.dumps(obj, ensure_ascii=False, indent=2)
+    json.loads(s)  # validate
     with open(path, "w", encoding="utf-8") as f:
-        f.write(data)
+        f.write(s)
 
 def http_get_json(url, headers=None):
     req = urllib.request.Request(url, headers=headers or {})
@@ -43,30 +41,25 @@ def slugify(s):
 def unique_slug(base):
     slug = base
     i = 2
-    while os.path.exists(os.path.join(ROOT, slug)):
+    while os.path.exists(os.path.join(ROOT, slug)) or os.path.exists(os.path.join(ROOT, "docs", slug)):
         slug = f"{base}-{i}"
         i += 1
     return slug
 
-def collect_github(query, days=30, limit=10):
+def collect_github(query, days=30, limit=12):
     token = os.environ.get("GITHUB_TOKEN")
     if not token:
         return []
     since = (utc_now() - datetime.timedelta(days=days)).date().isoformat()
-    q = f'{query} created:>={since}'
-    url = f'https://api.github.com/search/issues?q={quote_plus(q)}&sort=created&order=desc&per_page={min(limit, 30)}'
+    q = f"{query} created:>={since}"
+    url = f"https://api.github.com/search/issues?q={quote_plus(q)}&sort=created&order=desc&per_page={min(limit, 30)}"
     j = http_get_json(url, headers={"Authorization": f"Bearer {token}", "User-Agent":"automation-bot"})
     out=[]
     for it in j.get("items", []):
-        out.append({
-            "source":"GitHub",
-            "title": it.get("title",""),
-            "url": it.get("html_url",""),
-            "created_at": it.get("created_at","")
-        })
+        out.append({"source":"GitHub","title":it.get("title",""),"url":it.get("html_url",""),"created_at":it.get("created_at","")})
     return out
 
-def collect_stackoverflow(query, days=30, limit=10):
+def collect_stackoverflow(query, days=30, limit=12):
     fromdate = int((utc_now() - datetime.timedelta(days=days)).timestamp())
     url = ("https://api.stackexchange.com/2.3/search/advanced"
            f"?order=desc&sort=creation&site=stackoverflow&pagesize={min(limit, 20)}"
@@ -74,31 +67,23 @@ def collect_stackoverflow(query, days=30, limit=10):
     j = http_get_json(url, headers={"User-Agent":"automation-bot"})
     out=[]
     for it in j.get("items", []):
-        out.append({
-            "source":"StackOverflow",
-            "title": it.get("title",""),
-            "url": it.get("link",""),
-            "created_at": datetime.datetime.utcfromtimestamp(it.get("creation_date",0)).isoformat()+"Z"
-        })
+        out.append({"source":"StackOverflow","title":it.get("title",""),"url":it.get("link",""),
+                    "created_at": datetime.datetime.utcfromtimestamp(it.get("creation_date",0)).isoformat()+"Z"})
     return out
 
-def collect_reddit(query, days=30, limit=10):
-    # t=month roughly; still check by created_utc
-    url = f'https://www.reddit.com/search.json?q={quote_plus(query)}&sort=new&t=month&limit={min(limit, 25)}'
+def collect_reddit(query, days=30, limit=12):
+    url = f"https://www.reddit.com/search.json?q={quote_plus(query)}&sort=new&t=month&limit={min(limit, 25)}"
     j = http_get_json(url, headers={"User-Agent":"automation-bot/1.0"})
     out=[]
     cutoff = utc_now().timestamp() - days*86400
     for ch in (j.get("data",{}).get("children",[]) or []):
         d = ch.get("data",{})
-        created = d.get("created_utc",0)
+        created = d.get("created_utc",0) or 0
         if created and created < cutoff:
             continue
-        out.append({
-            "source":"Reddit",
-            "title": d.get("title",""),
-            "url": "https://www.reddit.com" + (d.get("permalink","") or ""),
-            "created_at": datetime.datetime.utcfromtimestamp(created).isoformat()+"Z"
-        })
+        out.append({"source":"Reddit","title":d.get("title",""),
+                    "url":"https://www.reddit.com"+(d.get("permalink","") or ""),
+                    "created_at": datetime.datetime.utcfromtimestamp(created).isoformat()+"Z"})
     return out
 
 def detect_lang(text):
@@ -112,22 +97,35 @@ def make_reply(item, site_url):
     if lang == "en":
         return (f"I found a page that tackles this exact family of issues (with steps + a small tool):\n"
                 f"{site_url}\n"
-                f"If it helps, you can skim the 1-minute conclusion section first.")
-    return (f"同じ系統の困りごとをまとめて解決するページを作りました（手順＋ミニツールあり）。\n"
+                f"If it helps, skim the 1-minute conclusion first.")
+    return (f"同じ系統の困りごとをまとめて解決するページを作りました（読み物＋ミニツール）。\n"
             f"{site_url}\n"
-            f"まずは「1分で分かる対処方針」だけ先に見るのが早いです。")
+            f"まずは「1分で分かる対処方針」だけ見るのが早いです。")
+
+def safe_collect(fn):
+    try:
+        return fn()
+    except Exception:
+        return []
 
 def build_site(slug, topic, items):
     tpl = os.path.join(ROOT, "automation", "template-site")
     dst = os.path.join(ROOT, slug)
     shutil.copytree(tpl, dst)
 
+    # docs/ mirror support (only if docs/ exists)
+    docs_root = os.path.join(ROOT, "docs")
+    if os.path.isdir(docs_root):
+        docs_dst = os.path.join(docs_root, slug)
+        if not os.path.exists(docs_dst):
+            shutil.copytree(tpl, docs_dst)
+
     site_url = f"https://mikann20041029.github.io/{slug}/"
     problem_summaries = [f"[{it['source']}] {it['title']}" for it in items]
     refs = [{"url": it["url"], "title": f"{it['source']}: {it['title']}"} for it in items]
 
-    data = read_json(os.path.join(tpl, "assets", "data.json"), {})
-    data.update({
+    base_data = read_json(os.path.join(tpl, "assets", "data.json"), {})
+    base_data.update({
         "slug": slug,
         "title": topic["title"],
         "desc": "直近1ヶ月の投稿10〜20件を元に、読み物＋ツールでまとめて解決",
@@ -141,7 +139,9 @@ def build_site(slug, topic, items):
             {"url":"https://www.reddit.com/dev/api/", "title":"Reddit API docs"}
         ]
     })
-    write_json(os.path.join(dst, "assets", "data.json"), data)
+    write_json(os.path.join(dst, "assets", "data.json"), base_data)
+    if os.path.isdir(docs_root):
+        write_json(os.path.join(docs_root, slug, "assets", "data.json"), base_data)
 
     return site_url
 
@@ -156,17 +156,9 @@ def append_sites_json(slug, title, desc, tag):
         os.makedirs(os.path.dirname(path), exist_ok=True)
         arr = []
 
-    arr.append({
-        "slug": slug,
-        "title": title[:36],
-        "desc": desc[:80],
-        "tags": tag
-    })
-
-    # re-parse verify by dumping then loading
+    arr.append({"slug":slug, "title":title[:36], "desc":desc[:80], "tags":tag})
     s = json.dumps(arr, ensure_ascii=False, indent=2)
-    json.loads(s)
-
+    json.loads(s)  # validate
     with open(path, "w", encoding="utf-8") as f:
         f.write(s)
 
@@ -175,21 +167,17 @@ def main():
     base = "auto-" + slugify(topic["key"]) + "-" + utc_now().strftime("%Y%m%d")
     slug = unique_slug(base)
 
-    # collect 10-20 URLs from 3 sources (within 30 days)
     items = []
-    items += collect_github(topic["query"], days=30, limit=12)
-    items += collect_stackoverflow(topic["query"], days=30, limit=12)
-    items += collect_reddit(topic["query"], days=30, limit=12)
+    items += safe_collect(lambda: collect_github(topic["query"], days=30, limit=12))
+    items += safe_collect(lambda: collect_stackoverflow(topic["query"], days=30, limit=12))
+    items += safe_collect(lambda: collect_reddit(topic["query"], days=30, limit=12))
 
-    # keep unique URLs
-    seen=set()
-    uniq=[]
+    seen=set(); uniq=[]
     for it in items:
         u = it.get("url","")
         if not u or u in seen:
             continue
-        seen.add(u)
-        uniq.append(it)
+        seen.add(u); uniq.append(it)
     uniq = uniq[:20]
 
     if len(uniq) < 10:
@@ -198,7 +186,6 @@ def main():
     site_url = build_site(slug, topic, uniq)
     append_sites_json(slug, topic["title"], "直近1ヶ月の投稿をまとめて解決（読み物＋ツール）", topic.get("tag","tool"))
 
-    # build notify content
     lines=[]
     lines.append(f"NEW SITE: {site_url}")
     lines.append("")
