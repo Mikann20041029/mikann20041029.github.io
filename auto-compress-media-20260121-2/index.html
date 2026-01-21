@@ -11,54 +11,56 @@
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
+<div class="adbar top">Ad (top bar) — set your AdSense unit here</div>
+<div class="adbar bottom">Ad (bottom bar) — set your AdSense unit here</div>
+<div class="sidebar left"><div class="slot">Ad (left)</div></div>
+<div class="sidebar right"><div class="slot">Ad (right)</div></div>
   <div class="wrap">
     <header class="header card">
-      <a class="brand" href="./" aria-label="トップへ">
-        <img class="mikan" src="assets/mikan.svg" alt="みかんキャラ">
+      <a class="brand" href="./" aria-label="繝医ャ繝励∈">
+        <img class="mikan" src="assets/mikan.svg" alt="縺ｿ縺九ｓ繧ｭ繝｣繝ｩ">
         <div>
           <p class="brand-title" id="title">site</p>
           <p class="brand-sub" id="desc"></p>
         </div>
       </a>
       <div style="margin-left:auto;">
-        <span class="badge" id="badge">まとめて解決</span>
+        <span class="badge" id="badge">縺ｾ縺ｨ繧√※隗｣豎ｺ</span>
       </div>
     </header>
 
     <main class="card hero">
       <div class="kv" id="tags"></div>
       <p class="lead" style="margin-top:10px;">
-        このページは「読み物＋具体ツール」で、同ジャンルの困りごとをまとめて解決します。広告より本文が主役です。
-      </p>
+        縺薙・繝壹・繧ｸ縺ｯ縲瑚ｪｭ縺ｿ迚ｩ・句・菴薙ヤ繝ｼ繝ｫ縲阪〒縲∝酔繧ｸ繝｣繝ｳ繝ｫ縺ｮ蝗ｰ繧翫＃縺ｨ繧偵∪縺ｨ繧√※隗｣豎ｺ縺励∪縺吶ょｺ・相繧医ｊ譛ｬ譁・′荳ｻ蠖ｹ縺ｧ縺吶・      </p>
     </main>
 
     <div class="grid">
       <section class="card section">
-        <div class="h2">このサイトで解決できる悩み一覧</div>
+        <div class="h2">縺薙・繧ｵ繧､繝医〒隗｣豎ｺ縺ｧ縺阪ｋ謔ｩ縺ｿ荳隕ｧ</div>
         <ul class="ul" id="problems"></ul>
 
         <hr class="hr">
-        <div class="h2">まず結論（1分で分かる対処方針）</div>
+        <div class="h2">縺ｾ縺夂ｵ占ｫ厄ｼ・蛻・〒蛻・°繧句ｯｾ蜃ｦ譁ｹ驥晢ｼ・/div>
         <ol class="ol" id="conclusion"></ol>
 
         <hr class="hr">
-        <div class="h2">原因のパターン分解</div>
+        <div class="h2">蜴溷屏縺ｮ繝代ち繝ｼ繝ｳ蛻・ｧ｣</div>
         <ul class="ul" id="causes"></ul>
 
         <hr class="hr">
-        <div class="h2">手順（チェックリスト）</div>
+        <div class="h2">謇矩・ｼ医メ繧ｧ繝・け繝ｪ繧ｹ繝茨ｼ・/div>
         <ol class="ol" id="steps"></ol>
 
         <div class="ad-slot" style="margin-top:14px;">
-          広告スロット（本文の途中）。本文が主役。
-        </div>
+          蠎・相繧ｹ繝ｭ繝・ヨ・域悽譁・・騾比ｸｭ・峨よ悽譁・′荳ｻ蠖ｹ縲・        </div>
 
         <hr class="hr">
-        <div class="h2">よくある失敗</div>
+        <div class="h2">繧医￥縺ゅｋ螟ｱ謨・/div>
         <ul class="ul" id="fails"></ul>
 
         <hr class="hr">
-        <div class="h2">それでも直らない場合</div>
+        <div class="h2">縺昴ｌ縺ｧ繧ら峩繧峨↑縺・ｴ蜷・/div>
         <ul class="ul" id="alts"></ul>
 
         <hr class="hr">
@@ -67,26 +69,26 @@
       </section>
 
       <aside class="card section">
-        <div class="h2">ミニツール（軽量・自前JS）</div>
+        <div class="h2">繝溘ル繝・・繝ｫ・郁ｻｽ驥上・閾ｪ蜑巷S・・/div>
         <div class="toolbox">
           <div>
-            <div class="badge">画像を軽くする（JPG化）</div>
-            <p class="note">PNG/JPGを選ぶ → 最大幅と品質を指定 → ダウンロード。外部CDNなし。</p>
+            <div class="badge">逕ｻ蜒上ｒ霆ｽ縺上☆繧具ｼ・PG蛹厄ｼ・/div>
+            <p class="note">PNG/JPG繧帝∈縺ｶ 竊・譛螟ｧ蟷・→蜩∬ｳｪ繧呈欠螳・竊・繝繧ｦ繝ｳ繝ｭ繝ｼ繝峨ょ､夜ΚCDN縺ｪ縺励・/p>
             <input class="input" id="imgFile" type="file" accept="image/*">
             <div style="display:flex; gap:10px; margin-top:10px;">
-              <input class="input" id="imgWidth" type="number" value="1600" min="64" max="4096" aria-label="最大幅(px)">
-              <input class="input" id="imgQuality" type="number" value="0.82" step="0.01" min="0.1" max="0.95" aria-label="品質(0.1-0.95)">
+              <input class="input" id="imgWidth" type="number" value="1600" min="64" max="4096" aria-label="譛螟ｧ蟷・px)">
+              <input class="input" id="imgQuality" type="number" value="0.82" step="0.01" min="0.1" max="0.95" aria-label="蜩∬ｳｪ(0.1-0.95)">
             </div>
-            <button class="btn" id="imgGo" style="margin-top:10px;">生成</button>
+            <button class="btn" id="imgGo" style="margin-top:10px;">逕滓・</button>
             <div id="imgOut" class="note" style="margin-top:8px;"></div>
           </div>
 
           <hr class="hr">
 
           <div>
-            <div class="badge">動画を小さくする（ffmpegコマンド生成）</div>
-            <p class="note">MP4圧縮はブラウザだけで完結しにくいので、確実な手段としてコマンド生成を用意。</p>
-            <input class="input" id="ffIn" value="input.mp4" aria-label="入力ファイル名">
+            <div class="badge">蜍慕判繧貞ｰ上＆縺上☆繧具ｼ・fmpeg繧ｳ繝槭Φ繝臥函謌撰ｼ・/div>
+            <p class="note">MP4蝨ｧ邵ｮ縺ｯ繝悶Λ繧ｦ繧ｶ縺縺代〒螳檎ｵ舌＠縺ｫ縺上＞縺ｮ縺ｧ縲∫｢ｺ螳溘↑謇区ｮｵ縺ｨ縺励※繧ｳ繝槭Φ繝臥函謌舌ｒ逕ｨ諢上・/p>
+            <input class="input" id="ffIn" value="input.mp4" aria-label="蜈･蜉帙ヵ繧｡繧､繝ｫ蜷・>
             <div style="display:flex; gap:10px; margin-top:10px;">
               <select class="input" id="ffPreset" aria-label="preset">
                 <option>fast</option>
@@ -100,18 +102,16 @@
         </div>
 
         <div class="ad-slot" style="margin-top:14px;">
-          広告スロット（サイド/下部）。本文が主役。
-        </div>
+          蠎・相繧ｹ繝ｭ繝・ヨ・医し繧､繝・荳矩Κ・峨よ悽譁・′荳ｻ蠖ｹ縲・        </div>
 
         <hr class="hr">
-        <div class="h2">参考URL</div>
+        <div class="h2">蜿りザRL</div>
         <div class="refs" id="refs"></div>
       </aside>
     </div>
 
     <p class="note" style="margin-top:14px;">
-      Generated by automation system. assets/data.json だけを更新して内容を差し替えます。
-    </p>
+      Generated by automation system. assets/data.json 縺縺代ｒ譖ｴ譁ｰ縺励※蜀・ｮｹ繧貞ｷｮ縺玲崛縺医∪縺吶・    </p>
   </div>
 
   <script src="assets/app.js"></script>
