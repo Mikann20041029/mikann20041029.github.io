@@ -1,0 +1,42 @@
+{
+  "slug": "template-site",
+  "title": "テンプレサイト",
+  "desc": "10〜20件の悩みをまとめて解決する読み物＋ツール",
+  "badge": "中身が主役",
+  "topic": "generic",
+  "tags": ["tool","guide","automation"],
+  "problem_summaries": [
+    "（ここに 10〜20 件の悩みを要約して列挙）"
+  ],
+  "conclusion_steps": [
+    "まず結論：最短の対処方針を 3〜7 ステップで"
+  ],
+  "cause_patterns": [
+    "原因パターンA：〜",
+    "原因パターンB：〜"
+  ],
+  "checklist_steps": [
+    "手順1：確認する",
+    "手順2：設定する",
+    "手順3：再実行する"
+  ],
+  "common_mistakes": [
+    "失敗例：〜 → 回避策：〜"
+  ],
+  "fallbacks": [
+    "それでも直らない：代替策1",
+    "それでも直らない：別ルート2"
+  ],
+  "faqs": [
+    {"q":"FAQ1","a":"回答"},
+    {"q":"FAQ2","a":"回答"},
+    {"q":"FAQ3","a":"回答"},
+    {"q":"FAQ4","a":"回答"},
+    {"q":"FAQ5","a":"回答"}
+  ],
+  "refs": [
+    {"url":"https://github.com/","title":"採用URL（例）"},
+    {"url":"https://stackoverflow.com/","title":"採用URL（例）"},
+    {"url":"https://www.reddit.com/","title":"採用URL（例）"}
+  ]
+}
