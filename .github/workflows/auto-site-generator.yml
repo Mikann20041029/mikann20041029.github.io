@@ -28,10 +28,12 @@ jobs:
           python-version: "3.11"
 
       - name: Run generator
-  env:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  run: |
-    python automation/system/run.py      - name: Commit & push (if changes)
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python automation/system/run.py
+
+      - name: Commit & push (if changes)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -61,13 +63,11 @@ jobs:
             let body = '';
             try { body = fs.readFileSync(path, 'utf8'); } catch (e) { body = `notify.md not found: ${e}`; }
 
-            // Title: include NEW SITE line if present
             const firstLine = (body.split(/\r?\n/)[0] || '').trim();
             const title = firstLine.startsWith('NEW SITE:')
               ? `autogen: ${firstLine.replace('NEW SITE:','').trim()}`
               : `autogen: notify (${new Date().toISOString()})`;
 
-            // Post as new issue each run (simple + reliable)
             await github.rest.issues.create({
               owner: context.repo.owner,
               repo: context.repo.repo,
