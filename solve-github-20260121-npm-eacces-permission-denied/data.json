@@ -1,0 +1,246 @@
+{
+  "generated_at": "2026-01-21T09:58:59.8946069+00:00",
+  "slug": "solve-github-20260121-npm-eacces-permission-denied",
+  "title": "npm の EACCES permission denied を直す",
+  "desc": "直近投稿(30日以内)を10〜20件集約し、原因→手順→FAQでまとめた対処ガイド",
+  "tag": "dev",
+  "site_url": "https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/",
+  "sources": [
+    {
+      "url": "https://github.com/Ajinkyap331/password-manager-cli/issues/1",
+      "source": "github",
+      "created_at": "2026-01-05T05:22:20Z",
+      "title": "Not able to install"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/15801",
+      "source": "github",
+      "created_at": "2025-12-30T12:00:24Z",
+      "title": "[BUG] Termux: Background tasks fail with malformed path - HOME sanitization breaks on deep paths"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/16955",
+      "source": "github",
+      "created_at": "2026-01-08T22:06:36Z",
+      "title": "Task agent fails on Termux: EACCES permission denied for /tmp/claude"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/18138",
+      "source": "github",
+      "created_at": "2026-01-14T11:57:22Z",
+      "title": "[Feature Request] Add side-by-side diff display in terminal output"
+    },
+    {
+      "url": "https://github.com/BA-CalderonMorales/terminal-jarvis/issues/39",
+      "source": "github",
+      "created_at": "2026-01-07T02:35:37Z",
+      "title": "v0.0.73 issue with install for claude on fresh install of terminal-jarvis"
+    },
+    {
+      "url": "https://github.com/covibes/zeroshot/issues/63",
+      "source": "github",
+      "created_at": "2026-01-14T17:36:09Z",
+      "title": "[BUG] Windows Native Version Not Working"
+    },
+    {
+      "url": "https://github.com/google-gemini/gemini-cli/issues/15501",
+      "source": "github",
+      "created_at": "2025-12-24T00:51:56Z",
+      "title": "failed to run gemini -s -p \"run shell command: env | grep SANDBOX\""
+    },
+    {
+      "url": "https://github.com/google-gemini/gemini-cli/issues/16968",
+      "source": "github",
+      "created_at": "2026-01-18T12:54:36Z",
+      "title": "permission denied with sandbox mode"
+    },
+    {
+      "url": "https://github.com/kaorahi/lizgoban/issues/124",
+      "source": "github",
+      "created_at": "2026-01-15T03:45:34Z",
+      "title": "npm install error in macOS15.7.3"
+    },
+    {
+      "url": "https://github.com/leonbreukelman/env-bootstrap-public/issues/1",
+      "source": "github",
+      "created_at": "2026-01-19T19:50:03Z",
+      "title": "Use official Claude Code installation method"
+    },
+    {
+      "url": "https://github.com/mongodb-js/vscode/issues/1228",
+      "source": "github",
+      "created_at": "2026-01-20T07:37:26Z",
+      "title": "Unable to create connection to database due to local file system permission limit"
+    },
+    {
+      "url": "https://github.com/yarnpkg/berry/issues/7028",
+      "source": "github",
+      "created_at": "2026-01-02T18:28:42Z",
+      "title": "[Bug?]: Mysterious `Internal Error` message with no clues"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79858294/how-to-install-yarn-with-mise-version-manager",
+      "source": "stackoverflow",
+      "created_at": "2025-12-31T17:04:04.0000000+00:00",
+      "title": "How to install Yarn with mise version manager?"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79859650/how-to-solve-electron-prebuilt-compile-build-and-install-error",
+      "source": "stackoverflow",
+      "created_at": "2026-01-03T11:09:33.0000000+00:00",
+      "title": "How to solve electron-prebuilt-compile build and install error"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79862787/pnpm-npm-overrides-resolution-logic",
+      "source": "stackoverflow",
+      "created_at": "2026-01-07T21:52:45.0000000+00:00",
+      "title": "PNPM/NPM Overrides Resolution Logic"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79867168/http-toolkit-setting-invalid-node-options",
+      "source": "stackoverflow",
+      "created_at": "2026-01-13T17:09:52.0000000+00:00",
+      "title": "HTTP Toolkit setting invalid NODE_OPTIONS"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79867486/turborepo-installation-errorsgiving-offline-even-tho-i-have-a-good-internet",
+      "source": "stackoverflow",
+      "created_at": "2026-01-14T05:02:23.0000000+00:00",
+      "title": "turborepo installation errors(giving offline even tho I have a good internet)"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79867996/on-my-package-json-exports-i-want-to-match-something-like-lib-js-is-t",
+      "source": "stackoverflow",
+      "created_at": "2026-01-14T17:52:34.0000000+00:00",
+      "title": "On my `package.json` exports, I want to match something like `lib/**/*.js`, is this possible?"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79868212/what-it-the-c-net-nuget-equivalent-of-peer-dependencies-of-npm",
+      "source": "stackoverflow",
+      "created_at": "2026-01-15T03:15:00.0000000+00:00",
+      "title": "What it the C#/.NET/NuGet equivalent of peer dependencies of npm?"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79869999/the-system-cannot-find-the-path-specified-error-cannot-find-module",
+      "source": "stackoverflow",
+      "created_at": "2026-01-17T09:20:45.0000000+00:00",
+      "title": "The system cannot find the path specified. Error: Cannot find module"
+    }
+  ],
+  "replies": [
+    {
+      "url": "https://github.com/Ajinkyap331/password-manager-cli/issues/1",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/15801",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/16955",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/18138",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/BA-CalderonMorales/terminal-jarvis/issues/39",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/covibes/zeroshot/issues/63",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/google-gemini/gemini-cli/issues/15501",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/google-gemini/gemini-cli/issues/16968",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/kaorahi/lizgoban/issues/124",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/leonbreukelman/env-bootstrap-public/issues/1",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/mongodb-js/vscode/issues/1228",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://github.com/yarnpkg/berry/issues/7028",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79858294/how-to-install-yarn-with-mise-version-manager",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79859650/how-to-solve-electron-prebuilt-compile-build-and-install-error",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79862787/pnpm-npm-overrides-resolution-logic",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79867168/http-toolkit-setting-invalid-node-options",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79867486/turborepo-installation-errorsgiving-offline-even-tho-i-have-a-good-internet",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79867996/on-my-package-json-exports-i-want-to-match-something-like-lib-js-is-t",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79868212/what-it-the-c-net-nuget-equivalent-of-peer-dependencies-of-npm",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79869999/the-system-cannot-find-the-path-specified-error-cannot-find-module",
+      "lang": "en",
+      "draft": "I put together a step-by-step checklist that consolidates the common root causes and fixes for this kind of issue (with commands/log examples). If it matches your situation, it may help: https://mikann20041029.github.io/solve-github-20260121-npm-eacces-permission-denied/ (no hard sell — just a practical guide)."
+    }
+  ],
+  "refs": [
+    {
+      "url": "https://git-scm.com/docs/git-push",
+      "title": "Git documentation: git-push"
+    },
+    {
+      "url": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts",
+      "title": "GitHub Docs: resolving merge conflicts"
+    },
+    {
+      "url": "https://stackoverflow.com/help",
+      "title": "Stack Overflow Help Center"
+    }
+  ]
+}

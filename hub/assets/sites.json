@@ -66,5 +66,11 @@
     "title": "ガンマ線バーストの観測入門",
     "desc": "Auto-generated quick guide.",
     "tags": "auto"
+  },
+  {
+    "slug": "solve-github-20260121-npm-eacces-permission-denied",
+    "title": "npm の EACCES permission denied を直す",
+    "desc": "直近30日トラブルを10〜20件集約して解決",
+    "tags": "dev"
   }
 ]
