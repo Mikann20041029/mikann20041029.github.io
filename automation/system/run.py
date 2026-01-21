@@ -2,6 +2,7 @@ import os, json, re, shutil, datetime, urllib.request, sys
 from urllib.parse import quote_plus
 
 ROOT = os.getcwd()
+STATE_PATH = os.path.join(ROOT, "automation", "system", "state.json")
 
 def utc_now():
     return datetime.datetime.utcnow()
@@ -21,7 +22,7 @@ def write_json(path, obj):
 
 def http_get_json(url, headers=None):
     h = {
-        "User-Agent": "Mozilla/5.0 (compatible; mikann-autogen/1.0; +https://mikann20041029.github.io/)",
+        "User-Agent": "Mozilla/5.0 (compatible; mikann-autogen/1.1; +https://mikann20041029.github.io/)",
         "Accept": "application/json,text/plain,*/*",
     }
     if headers:
@@ -35,14 +36,19 @@ def http_get_json(url, headers=None):
             head = raw[:300].decode("utf-8", errors="replace")
             raise RuntimeError(f"Non-JSON response from {url}: {head}")
 
-def pick_topic():
+def pick_topic_rotate():
     topics_path = os.path.join(ROOT, "automation", "system", "topics.json")
-    topics = read_json(topics_path, {
-        "topics": [
-            {"key":"compress-media", "title":"容量を減らしたい（画像/動画/音声）", "query":"mp4 compress file size reduce image compress jpg png webp", "tag":"media"}
-        ]
-    })
-    return topics["topics"][0]
+    topics = read_json(topics_path, {"topics": []}).get("topics", [])
+    if not topics:
+        raise RuntimeError("topics.json has no topics")
+
+    state = read_json(STATE_PATH, {"idx": -1})
+    idx = int(state.get("idx", -1))
+    idx = (idx + 1) % len(topics)
+    state["idx"] = idx
+    state["last_run_utc"] = utc_now().isoformat() + "Z"
+    write_json(STATE_PATH, state)
+    return topics[idx]
 
 def slugify(s):
     s = s.lower()
@@ -83,9 +89,9 @@ def collect_stackoverflow(query, days=30, limit=12):
     return out
 
 def collect_reddit(query, days=30, limit=12):
-    # Reddit is often 429/403 in CI; keep it but tolerate failures.
+    # Reddit is often 429/403 in CI; tolerate failures.
     url = f"https://www.reddit.com/search.json?q={quote_plus(query)}&sort=new&t=month&limit={min(limit, 25)}"
-    j = http_get_json(url, headers={"User-Agent":"Mozilla/5.0 (mikann-autogen)"})
+    j = http_get_json(url, headers={"User-Agent":"Mozilla/5.0 (mikann-autogen)"} )
     out=[]
     cutoff = utc_now().timestamp() - days*86400
     for ch in (j.get("data",{}).get("children",[]) or []):
@@ -107,7 +113,7 @@ def detect_lang(text):
 def make_reply(item, site_url):
     lang = detect_lang(item.get("title",""))
     if lang == "en":
-        return (f"I found a page that tackles this exact family of issues (with steps + a small tool):\n"
+        return (f"I found a page that tackles this exact family of issues (steps + a small tool):\n"
                 f"{site_url}\n"
                 f"If it helps, skim the 1-minute conclusion first.")
     return (f"同じ系統の困りごとをまとめて解決するページを作りました（読み物＋ミニツール）。\n"
@@ -125,6 +131,14 @@ def safe_collect(name, fn):
 
 def fallback_items_for(topic_key):
     # 最低限「参考URL 10本」を確保してサイト生成を止めない
+    common = [
+        ("GitHub", "GitHub Search API docs", "https://docs.github.com/en/rest/search/search"),
+        ("StackExchange", "StackExchange API docs", "https://api.stackexchange.com/docs"),
+        ("Reddit", "Reddit API docs", "https://www.reddit.com/dev/api/"),
+        ("MDN", "Web Docs", "https://developer.mozilla.org/"),
+        ("OWASP", "Top 10", "https://owasp.org/www-project-top-ten/"),
+        ("Google", "Search Central", "https://developers.google.com/search")
+    ]
     if topic_key == "compress-media":
         urls = [
             ("FFmpeg", "FFmpeg Documentation", "https://ffmpeg.org/documentation.html"),
@@ -133,29 +147,19 @@ def fallback_items_for(topic_key):
             ("Mozilla", "Image optimization", "https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia"),
             ("Google", "WebP docs", "https://developers.google.com/speed/webp"),
             ("Google", "AVIF overview", "https://developers.google.com/speed/webp/docs/avif"),
-            ("StackExchange", "StackExchange API docs", "https://api.stackexchange.com/docs"),
-            ("Reddit", "Reddit API docs", "https://www.reddit.com/dev/api/"),
-            ("GitHub", "GitHub Search API docs", "https://docs.github.com/en/rest/search/search"),
-            ("MDN", "Media formats guide", "https://developer.mozilla.org/en-US/docs/Web/Media/Formats"),
-        ]
+        ] + common
     else:
-        urls = [
-            ("GitHub", "GitHub Search API docs", "https://docs.github.com/en/rest/search/search"),
-            ("StackExchange", "StackExchange API docs", "https://api.stackexchange.com/docs"),
-            ("Reddit", "Reddit API docs", "https://www.reddit.com/dev/api/"),
-            ("MDN", "Web Docs", "https://developer.mozilla.org/"),
+        urls = common + [
             ("Wikipedia", "Troubleshooting", "https://en.wikipedia.org/wiki/Troubleshooting"),
             ("Wikipedia", "Software bug", "https://en.wikipedia.org/wiki/Software_bug"),
-            ("OWASP", "Top 10", "https://owasp.org/www-project-top-ten/"),
             ("GitHub", "Actions docs", "https://docs.github.com/en/actions"),
-            ("Google", "Search Central", "https://developers.google.com/search"),
-            ("Cloudflare", "Learning Center", "https://www.cloudflare.com/learning/"),
+            ("Cloudflare", "Learning Center", "https://www.cloudflare.com/learning/")
         ]
 
     out=[]
     now = utc_now().isoformat()+"Z"
-    for src, title, url in urls:
-        out.append({"source":src, "title":title, "url":url, "created_at":now})
+    for src, title, url in urls[:10]:
+        out.append({"source":src, "title":title, "url":url, "created_at":now, "fallback": True})
     return out
 
 def build_site(slug, topic, items):
@@ -208,7 +212,7 @@ def append_sites_json(slug, title, desc, tag):
         f.write(s)
 
 def main():
-    topic = pick_topic()
+    topic = pick_topic_rotate()
     base = "auto-" + slugify(topic["key"]) + "-" + utc_now().strftime("%Y%m%d")
     slug = unique_slug(base)
 
@@ -222,9 +226,12 @@ def main():
         u = it.get("url","")
         if not u or u in seen:
             continue
-        seen.add(u); uniq.append(it)
+        seen.add(u)
+        it["fallback"] = False
+        uniq.append(it)
 
-    # If we have too few, pad with fallback refs so the workflow never dies.
+    real_count = len(uniq)
+
     if len(uniq) < 10:
         pad = fallback_items_for(topic["key"])
         for it in pad:
@@ -233,16 +240,20 @@ def main():
                 seen.add(u); uniq.append(it)
 
     uniq = uniq[:20]
+    fallback_count = sum(1 for it in uniq if it.get("fallback"))
 
     site_url = build_site(slug, topic, uniq)
     append_sites_json(slug, topic["title"], "直近の収集＋フォールバック参照でまとめ（読み物＋ツール）", topic.get("tag","tool"))
 
     lines=[]
     lines.append(f"NEW SITE: {site_url}")
+    lines.append(f"TOPIC: {topic['key']} / {topic['title']}")
+    lines.append(f"POSTS: real={real_count} fallback={fallback_count}")
     lines.append("")
     lines.append("SOURCES (up to 20):")
     for it in uniq:
-        lines.append(f"- {it['url']}")
+        mark = " (fallback)" if it.get("fallback") else ""
+        lines.append(f"- {it['url']}{mark}")
     lines.append("")
     lines.append("REPLY DRAFTS:")
     for it in uniq:

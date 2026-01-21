@@ -1,0 +1,12 @@
+{
+  "topics": [
+    { "key":"compress-media", "title":"容量を減らしたい（画像/動画/音声）", "query":"mp4 compress file size reduce image compress jpg png webp ffmpeg", "tag":"media" },
+    { "key":"github-actions-fail", "title":"GitHub Actions が失敗する（権限/パス/CI）", "query":"GitHub Actions failed permissions denied workflow yaml", "tag":"github" },
+    { "key":"git-push-rejected", "title":"git push rejected / rebase で詰まる", "query":"git push rejected fetch first rebase conflict", "tag":"git" },
+    { "key":"windows-encoding", "title":"文字化け・UTF-8・BOMのトラブル", "query":"UTF-8 BOM mojibake PowerShell encoding", "tag":"windows" },
+    { "key":"npm-build-errors", "title":"npm / build エラー（依存/権限/キャッシュ）", "query":"npm install error EACCES package-lock build failed", "tag":"web" },
+    { "key":"service-worker-cache", "title":"Service Worker / キャッシュが原因で壊れる", "query":"service worker cache stale site broken hard refresh", "tag":"web" },
+    { "key":"cors-fetch", "title":"CORS / fetch が通らない", "query":"CORS policy blocked fetch preflight error", "tag":"web" },
+    { "key":"adsense-policy", "title":"AdSense ポリシー（低価値/コンテンツ不足）", "query":"AdSense policy thin content Google-served ads on screens without publisher-content", "tag":"adsense" }
+  ]
+}
