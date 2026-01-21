@@ -1,0 +1,63 @@
+name: mikann-autogen
+on:
+  schedule:
+    - cron: "0 */8 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+  actions: read
+
+concurrency:
+  group: mikann-autogen
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: gpt-5-mini
+      OPENAI_MAX_OUTPUT_TOKENS: "1200"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run generator
+        shell: pwsh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          pwsh -NoProfile -File automation/run.ps1
+
+      - name: Commit & push (with frozen guards)
+        shell: bash
+        run: |
+          set -e
+          git config user.name "mikann-autogen"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+
+          bad=$(git diff --cached --name-only | grep -E '^(toolbox/|ai-subscription-trouble-guide/|sns-growth-rank/|hub/index.html|hub/assets/app.v3.js|hub/assets/ui.v3.css)' || true)
+          if [ -n "$bad" ]; then
+            echo "NG: frozen paths touched:"
+            echo "$bad"
+            exit 1
+          fi
+
+          bad2=$(git diff --cached --name-only | grep -E '^hub/assets/' | grep -v -E '^hub/assets/sites.json$' || true)
+          if [ -n "$bad2" ]; then
+            echo "NG: forbidden hub/assets change:"
+            echo "$bad2"
+            exit 1
+          fi
+
+          git commit -m "chore: bootstrap autogen workflow"
+          git push
