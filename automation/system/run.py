@@ -114,7 +114,11 @@ def make_reply(item, site_url):
     lang = detect_lang(item.get("title",""))
     if lang == "en":
         return (f"I found a page that tackles this exact family of issues (steps + a small tool):\n"
+                f"{site_url}\n"
                 f"If it helps, skim the 1-minute conclusion first.")
+    return (f"この悩みど真ん中の解決ページ（手順＋ミニツール）を見つけました:\n"
+            f"{site_url}\n"
+            f"よければ先に「1分結論」だけ流し読みしてください。")
 def safe_collect(name, fn):
     try:
         items = fn()
@@ -125,36 +129,20 @@ def safe_collect(name, fn):
         return []
 
 def fallback_items_for(topic_key):
+    # Common docs used as a safe fallback when collectors fail / rate-limit
+    common = [
+        ("FFmpeg", "FFmpeg Documentation", "https://ffmpeg.org/documentation.html"),
+        ("FFmpeg", "H.264 Encoding Guide", "https://trac.ffmpeg.org/wiki/Encode/H.264"),
+        ("FFmpeg", "H.265 Encoding Guide", "https://trac.ffmpeg.org/wiki/Encode/H.265"),
+        ("Mozilla", "Image optimization", "https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia"),
+        ("Google", "WebP docs", "https://developers.google.com/speed/webp"),
+        ("Google", "AVIF overview", "https://developers.google.com/speed/webp/docs/avif"),
         ("GitHub", "GitHub Search API docs", "https://docs.github.com/en/rest/search/search"),
         ("StackExchange", "StackExchange API docs", "https://api.stackexchange.com/docs"),
         ("Reddit", "Reddit API docs", "https://www.reddit.com/dev/api/"),
         ("MDN", "Web Docs", "https://developer.mozilla.org/"),
-        ("OWASP", "Top 10", "https://owasp.org/www-project-top-ten/"),
-        ("Google", "Search Central", "https://developers.google.com/search")
     ]
-    if topic_key == "compress-media":
-        urls = [
-            ("FFmpeg", "FFmpeg Documentation", "https://ffmpeg.org/documentation.html"),
-            ("FFmpeg", "H.264 Encoding Guide", "https://trac.ffmpeg.org/wiki/Encode/H.264"),
-            ("FFmpeg", "H.265 Encoding Guide", "https://trac.ffmpeg.org/wiki/Encode/H.265"),
-            ("Mozilla", "Image optimization", "https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia"),
-            ("Google", "WebP docs", "https://developers.google.com/speed/webp"),
-            ("Google", "AVIF overview", "https://developers.google.com/speed/webp/docs/avif"),
-        ] + common
-    else:
-        urls = common + [
-            ("Wikipedia", "Troubleshooting", "https://en.wikipedia.org/wiki/Troubleshooting"),
-            ("Wikipedia", "Software bug", "https://en.wikipedia.org/wiki/Software_bug"),
-            ("GitHub", "Actions docs", "https://docs.github.com/en/actions"),
-            ("Cloudflare", "Learning Center", "https://www.cloudflare.com/learning/")
-        ]
-
-    out=[]
-    now = utc_now().isoformat()+"Z"
-    for src, title, url in urls[:10]:
-        out.append({"source":src, "title":title, "url":url, "created_at":now, "fallback": True})
-    return out
-
+    return common
 def build_site(slug, topic, items):
     tpl = os.path.join(ROOT, "automation", "template-site")
     dst = os.path.join(ROOT, slug)
@@ -262,5 +250,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
