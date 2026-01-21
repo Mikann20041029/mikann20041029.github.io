@@ -9,6 +9,10 @@ permissions:
   contents: write
   issues: write
 
+concurrency:
+  group: auto-site-generator
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -24,47 +28,49 @@ jobs:
           python-version: "3.11"
 
       - name: Run generator
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python automation/system/run.py
 
-      - name: Commit & push
+      - name: Commit & push (if changes)
         run: |
-          git config user.name "automation-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add -A
-          git commit -m "Auto: generate new site" || echo "No changes"
-          git push
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "chore: auto-site-generator update"
+            git push
+          else
+            echo "No changes to commit."
+          fi
 
       - name: Upload notify artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: notify
           path: automation/out/notify.md
+          if-no-files-found: warn
 
-      - name: Create issue (fallback notify)
+      - name: Create issue (notify)
         if: always()
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          python - <<'PY'
-          import os, json, urllib.request
-          repo = os.environ.get("GITHUB_REPOSITORY")
-          tok  = os.environ.get("GITHUB_TOKEN")
-          path = "automation/out/notify.md"
-          if not (repo and tok and os.path.exists(path)):
-            print("skip issue notify")
-            raise SystemExit(0)
-          with open(path,"r",encoding="utf-8") as f:
-            body = f.read()
-          url = f"https://api.github.com/repos/{repo}/issues"
-          payload = {"title":"[auto] New site + reply drafts","body":body[:60000]}
-          req = urllib.request.Request(
-            url, data=json.dumps(payload).encode("utf-8"),
-            headers={"Authorization":f"Bearer {tok}","User-Agent":"automation-bot","Accept":"application/vnd.github+json"},
-            method="POST"
-          )
-          with urllib.request.urlopen(req, timeout=25) as r:
-            print("issue notify ok", r.status)
-          PY
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const path = 'automation/out/notify.md';
+            let body = '';
+            try { body = fs.readFileSync(path, 'utf8'); } catch (e) { body = `notify.md not found: ${e}`; }
+
+            // Title: include NEW SITE line if present
+            const firstLine = (body.split(/\r?\n/)[0] || '').trim();
+            const title = firstLine.startsWith('NEW SITE:')
+              ? `autogen: ${firstLine.replace('NEW SITE:','').trim()}`
+              : `autogen: notify (${new Date().toISOString()})`;
+
+            // Post as new issue each run (simple + reliable)
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              body
+            });
