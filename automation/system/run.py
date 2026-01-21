@@ -211,7 +211,6 @@ def append_sites_json(slug, title, desc, tag):
         f.write(s)
 
 def main():
-    LOOKBACK_DAYS = 365
     topic = pick_topic_rotate()
     base = "auto-" + slugify(topic["key"]) + "-" + utc_now().strftime("%Y%m%d")
     slug = unique_slug(base)
@@ -248,7 +247,6 @@ def main():
     lines=[]
     lines.append(f"NEW SITE: {site_url}")
     lines.append(f"TOPIC: {topic['key']} / {topic['title']}")
-    lines.append(f"LOOKBACK_DAYS: {LOOKBACK_DAYS}")
     lines.append(f"POSTS: real={real_count} fallback={fallback_count}")
     lines.append("")
     lines.append("SOURCES (up to 20):")
