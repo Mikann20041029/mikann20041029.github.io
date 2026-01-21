@@ -63,7 +63,7 @@ function Collect-GitHub([string]$q, [int]$need){
   $since = Get-IsoDate 30
   $query = [uri]::EscapeDataString("$q in:title,body is:issue created:>=$since")
   $url = "https://api.github.com/search/issues?q=$query&per_page=50"
-  $ua = @{ "User-Agent"="mikann-autogen" "Accept"="application/vnd.github+json" }
+  $ua = @{ "User-Agent"="mikann-autogen"; "Accept"="application/vnd.github+json" }
   $r = CurlJson $url $ua
   $out=@()
   foreach($it in $r.items){
