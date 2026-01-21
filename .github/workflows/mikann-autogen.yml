@@ -11,7 +11,7 @@ permissions:
 
 concurrency:
   group: mikann-autogen
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   generate:
@@ -20,6 +20,7 @@ jobs:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       OPENAI_MODEL: gpt-5-mini
       OPENAI_MAX_OUTPUT_TOKENS: "1200"
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,31 +34,56 @@ jobs:
         run: |
           pwsh -NoProfile -File automation/run.ps1
 
-      - name: Commit & push (with frozen guards)
-        shell: bash
+      - name: Commit & push (with frozen guards + retry)
+        shell: pwsh
         run: |
-          set -e
+          $ErrorActionPreference = "Stop"
+
           git config user.name "mikann-autogen"
           git config user.email "actions@users.noreply.github.com"
+
           git add -A
-          if git diff --cached --quiet; then
-            echo "No changes"
+
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "No changes"
             exit 0
-          fi
+          }
 
-          bad=$(git diff --cached --name-only | grep -E '^(toolbox/|ai-subscription-trouble-guide/|sns-growth-rank/|hub/index.html|hub/assets/app.v3.js|hub/assets/ui.v3.css)' || true)
-          if [ -n "$bad" ]; then
-            echo "NG: frozen paths touched:"
-            echo "$bad"
+          # frozen paths guard
+          $bad = git diff --cached --name-only | Select-String -Pattern '^(toolbox/|ai-subscription-trouble-guide/|sns-growth-rank/|hub/index\.html|hub/assets/app\.v3\.js|hub/assets/ui\.v3\.css)' | ForEach-Object { $_.Line }
+          if ($bad) {
+            Write-Host "NG: frozen paths touched:"
+            $bad | ForEach-Object { Write-Host $_ }
             exit 1
-          fi
+          }
 
-          bad2=$(git diff --cached --name-only | grep -E '^hub/assets/' | grep -v -E '^hub/assets/sites.json$' || true)
-          if [ -n "$bad2" ]; then
-            echo "NG: forbidden hub/assets change:"
-            echo "$bad2"
+          # hub/assets guard (allow only sites.json)
+          $bad2 = git diff --cached --name-only | Select-String -Pattern '^hub/assets/' | ForEach-Object { $_.Line } | Where-Object { $_ -ne 'hub/assets/sites.json' }
+          if ($bad2) {
+            Write-Host "NG: forbidden hub/assets change:"
+            $bad2 | ForEach-Object { Write-Host $_ }
             exit 1
-          fi
+          }
+
+          git commit -m "chore: autogen update" | Out-Host
+
+          # integrate remote updates (avoid non-fast-forward)
+          for ($i=0; $i -lt 5; $i++) {
+            git pull --rebase origin main
+            if ($LASTEXITCODE -eq 0) { break }
+            Start-Sleep -Seconds (2 + $i)
+          }
+
+          # push retry
+          for ($i=0; $i -lt 5; $i++) {
+            git push
+            if ($LASTEXITCODE -eq 0) { exit 0 }
+            Start-Sleep -Seconds (2 + $i)
+          }
+
+          throw "push failed after retries"
+
 
           git commit -m "chore: bootstrap autogen workflow"
           git push
