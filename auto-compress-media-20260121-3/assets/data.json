@@ -1,0 +1,106 @@
+{
+  "slug": "auto-compress-media-20260121-3",
+  "title": "容量を減らしたい（画像/動画/音声）",
+  "desc": "直近の投稿収集＋フォールバック参照を元に、読み物＋ツールでまとめて解決",
+  "badge": "自動生成（収集失敗時はフォールバック）",
+  "topic": "compress-media",
+  "tags": [
+    "auto",
+    "media"
+  ],
+  "problem_summaries": [
+    "[FFmpeg] FFmpeg Documentation",
+    "[FFmpeg] H.264 Encoding Guide",
+    "[FFmpeg] H.265 Encoding Guide",
+    "[Mozilla] Image optimization",
+    "[Google] WebP docs",
+    "[Google] AVIF overview",
+    "[GitHub] GitHub Search API docs",
+    "[StackExchange] StackExchange API docs",
+    "[Reddit] Reddit API docs",
+    "[MDN] Web Docs"
+  ],
+  "conclusion_steps": [
+    "まず結論：最短の対処方針を 3〜7 ステップで"
+  ],
+  "cause_patterns": [
+    "原因パターンA：〜",
+    "原因パターンB：〜"
+  ],
+  "checklist_steps": [
+    "手順1：確認する",
+    "手順2：設定する",
+    "手順3：再実行する"
+  ],
+  "common_mistakes": [
+    "失敗例：〜 → 回避策：〜"
+  ],
+  "fallbacks": [
+    "それでも直らない：代替策1",
+    "それでも直らない：別ルート2"
+  ],
+  "faqs": [
+    {
+      "q": "FAQ1",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ2",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ3",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ4",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ5",
+      "a": "回答"
+    }
+  ],
+  "refs": [
+    {
+      "url": "https://ffmpeg.org/documentation.html",
+      "title": "FFmpeg: FFmpeg Documentation"
+    },
+    {
+      "url": "https://trac.ffmpeg.org/wiki/Encode/H.264",
+      "title": "FFmpeg: H.264 Encoding Guide"
+    },
+    {
+      "url": "https://trac.ffmpeg.org/wiki/Encode/H.265",
+      "title": "FFmpeg: H.265 Encoding Guide"
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Learn/Performance/Multimedia",
+      "title": "Mozilla: Image optimization"
+    },
+    {
+      "url": "https://developers.google.com/speed/webp",
+      "title": "Google: WebP docs"
+    },
+    {
+      "url": "https://developers.google.com/speed/webp/docs/avif",
+      "title": "Google: AVIF overview"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "title": "GitHub: GitHub Search API docs"
+    },
+    {
+      "url": "https://api.stackexchange.com/docs",
+      "title": "StackExchange: StackExchange API docs"
+    },
+    {
+      "url": "https://www.reddit.com/dev/api/",
+      "title": "Reddit: Reddit API docs"
+    },
+    {
+      "url": "https://developer.mozilla.org/",
+      "title": "MDN: Web Docs"
+    }
+  ]
+}
