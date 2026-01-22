@@ -1,0 +1,116 @@
+{
+  "slug": "auto-git-push-rejected-20260122",
+  "title": "git push rejected / rebase で詰まる",
+  "desc": "10〜20件の悩みをまとめて解決する読み物＋ツール",
+  "badge": "中身が主役",
+  "topic": "git-push-rejected",
+  "tags": [
+    "auto",
+    "git"
+  ],
+  "problem_summaries": [
+    "[GitHub] Dump",
+    "[GitHub] [SECURITY] Comprehensive Security Hardening Session - Jan 18, 2026",
+    "[GitHub] pmod",
+    "[GitHub] fix: add fetch+rebase retry logic for git push non-fast-forward rejection in SimpleGitTool",
+    "[GitHub] Integrare UI prototip (Dock + FAB + Wheel) în aplicația reală: mapare navigație, rute și gesturi",
+    "[GitHub] Potential Race condition in build-and-commit workflow causes data loss",
+    "[GitHub] Refactor git-rebase skill to avoid permission prompts at every step",
+    "[GitHub] Add Markdown Rendering to JSONL Viewer [erk-plan]",
+    "[GitHub] Add Duration to Agent Session Display [erk-plan]",
+    "[GitHub] [Bug]: Endpoint: cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Status: 404",
+    "[GitHub] issue with deploy pr review",
+    "[GitHub] Multi-System Agentic Coordination & Crystallizer"
+  ],
+  "conclusion_steps": [
+    "まず結論：最短の対処方針を 3〜7 ステップで"
+  ],
+  "cause_patterns": [
+    "原因パターンA：〜",
+    "原因パターンB：〜"
+  ],
+  "checklist_steps": [
+    "手順1：確認する",
+    "手順2：設定する",
+    "手順3：再実行する"
+  ],
+  "common_mistakes": [
+    "失敗例：〜 → 回避策：〜"
+  ],
+  "fallbacks": [
+    "それでも直らない：代替策1",
+    "それでも直らない：別ルート2"
+  ],
+  "faqs": [
+    {
+      "q": "FAQ1",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ2",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ3",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ4",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ5",
+      "a": "回答"
+    }
+  ],
+  "refs": [
+    {
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5502",
+      "title": "GitHub: Dump"
+    },
+    {
+      "url": "https://github.com/BrianCLong/summit/issues/16512",
+      "title": "GitHub: [SECURITY] Comprehensive Security Hardening Session - Jan 18, 2026"
+    },
+    {
+      "url": "https://github.com/OmniBlocks/scratch-gui/issues/725",
+      "title": "GitHub: pmod"
+    },
+    {
+      "url": "https://github.com/RC918/morningai/issues/3609",
+      "title": "GitHub: fix: add fetch+rebase retry logic for git push non-fast-forward rejection in SimpleGitTool"
+    },
+    {
+      "url": "https://github.com/SuperPartyByAI/Aplicatie-SuperpartyByAi/issues/8",
+      "title": "GitHub: Integrare UI prototip (Dock + FAB + Wheel) în aplicația reală: mapare navigație, rute și gesturi"
+    },
+    {
+      "url": "https://github.com/emeryberger/CSrankings/issues/9685",
+      "title": "GitHub: Potential Race condition in build-and-commit workflow causes data loss"
+    },
+    {
+      "url": "https://github.com/JacobPEvans/ai-assistant-instructions/issues/371",
+      "title": "GitHub: Refactor git-rebase skill to avoid permission prompts at every step"
+    },
+    {
+      "url": "https://github.com/dagster-io/erk/issues/3331",
+      "title": "GitHub: Add Markdown Rendering to JSONL Viewer [erk-plan]"
+    },
+    {
+      "url": "https://github.com/dagster-io/erk/issues/3300",
+      "title": "GitHub: Add Duration to Agent Session Display [erk-plan]"
+    },
+    {
+      "url": "https://github.com/shekohex/opencode-google-antigravity-auth/issues/9",
+      "title": "GitHub: [Bug]: Endpoint: cloudcode-pa.googleapis.com/v1internal:streamGenerateContent?alt=sse Status: 404"
+    },
+    {
+      "url": "https://github.com/ap0ught/matrix/issues/76",
+      "title": "GitHub: issue with deploy pr review"
+    },
+    {
+      "url": "https://github.com/Synaptic724/melder/issues/96",
+      "title": "GitHub: Multi-System Agentic Coordination & Crystallizer"
+    }
+  ]
+}
