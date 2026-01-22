@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/AstrBotDevs/AstrBot/issues/4540'>[Plugin] astrbot_plugin_service_watcher</a> <small>[github] 2026-01-17</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/BadKiko/steam-online-fix-launcher/issues/64'>[B] SOLF doesn't start</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/cnpem/ssc-raft/issues/1'>error to install and import</a> <small>[github] 2026-01-20</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/dotnet/runtime/issues/122979'>[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]</a> <small>[github] 2026-01-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/frappe/frappe_docker/issues/1792'>frappe_docker installer breaks on Python 3.14 (pypika ast.Str error)</a> <small>[github] 2026-01-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/helmholtz-analytics/heat/issues/2084'>[Bug]: Unable to install dependencies for running examples with Python>3.12</a> <small>[github] 2026-01-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/jlowin/fastmcp/issues/2965'>ModuleNotFoundError: No module named 'fastmcp.utilities.lifespan'</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Lan131/CyGym/issues/2'>Code is missing</a> <small>[github] 2026-01-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/linkml/linkml-store/issues/65'>CLI requires heavy optional dependencies (matplotlib, scipy) for basic operations</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/magillos/Cable/issues/32'>--- StopIteration</a> <small>[github] 2025-12-31</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/nunchaku-ai/nunchaku/issues/858'>[Request] SVDQuant int4 weights for Qwen/Qwen-Image-2512 and Qwen/Qwen-Image-Edit-2511</a> <small>[github] 2025-12-31</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/NVIDIA-NeMo/Skills/issues/1171'>compute_eval</a> <small>[github] 2026-01-16</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/osrf/buildfarm-tools/issues/205'>Buildfarmer log 2026/01/19 - 2026/01/26</a> <small>[github] 2026-01-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/pypa/wheel/issues/676'>[regression?] v0.46.2 seems to be crashing under Python 3.9</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/seven-lynx/HoundMind/issues/2'>unable to install houndmind</a> <small>[github] 2026-01-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Synria-Robotics/Alicia-D-SDK/issues/10'>我在安装完alicia-d-sdk 的环境后，测试使用 python 00_demo_read_version.py会报错：ModuleNotFoundError: No module named 'robocore.planning.trajectory'，查看robocore包里面确实没有这个</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/VedangCR7/Test/issues/4'>[PR #10] docs: Add comprehensive documentation (35 files, ~15,000 lines) (Migrated)</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/wejoncy/sfllm/issues/20'>ModuleNotFoundError: No module named 'sf_kernel'</a> <small>[github] 2026-01-20</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/wesnoth/wesnoth/issues/10900'>F-Droid build failed</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/zenml-io/zenml/issues/4408'>Git submodules not included when downloading code from artifact store</a> <small>[github] 2026-01-16</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/AstrBotDevs/AstrBot/issues/4540'>github: [Plugin] astrbot_plugin_service_watcher</a></li>
+<li><a href='https://github.com/BadKiko/steam-online-fix-launcher/issues/64'>github: [B] SOLF doesn't start</a></li>
+<li><a href='https://github.com/cnpem/ssc-raft/issues/1'>github: error to install and import</a></li>
+<li><a href='https://github.com/dotnet/runtime/issues/122979'>github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]</a></li>
+<li><a href='https://github.com/frappe/frappe_docker/issues/1792'>github: frappe_docker installer breaks on Python 3.14 (pypika ast.Str error)</a></li>
+<li><a href='https://github.com/helmholtz-analytics/heat/issues/2084'>github: [Bug]: Unable to install dependencies for running examples with Python>3.12</a></li>
+<li><a href='https://github.com/jlowin/fastmcp/issues/2965'>github: ModuleNotFoundError: No module named 'fastmcp.utilities.lifespan'</a></li>
+<li><a href='https://github.com/Lan131/CyGym/issues/2'>github: Code is missing</a></li>
+<li><a href='https://github.com/linkml/linkml-store/issues/65'>github: CLI requires heavy optional dependencies (matplotlib, scipy) for basic operations</a></li>
+<li><a href='https://github.com/magillos/Cable/issues/32'>github: --- StopIteration</a></li>
+<li><a href='https://github.com/nunchaku-ai/nunchaku/issues/858'>github: [Request] SVDQuant int4 weights for Qwen/Qwen-Image-2512 and Qwen/Qwen-Image-Edit-2511</a></li>
+<li><a href='https://github.com/NVIDIA-NeMo/Skills/issues/1171'>github: compute_eval</a></li>
+<li><a href='https://github.com/osrf/buildfarm-tools/issues/205'>github: Buildfarmer log 2026/01/19 - 2026/01/26</a></li>
+<li><a href='https://github.com/pypa/wheel/issues/676'>github: [regression?] v0.46.2 seems to be crashing under Python 3.9</a></li>
+<li><a href='https://github.com/seven-lynx/HoundMind/issues/2'>github: unable to install houndmind</a></li>
+<li><a href='https://github.com/Synria-Robotics/Alicia-D-SDK/issues/10'>github: 我在安装完alicia-d-sdk 的环境后，测试使用 python 00_demo_read_version.py会报错：ModuleNotFoundError: No module named 'robocore.planning.trajectory'，查看robocore包里面确实没有这个</a></li>
+<li><a href='https://github.com/VedangCR7/Test/issues/4'>github: [PR #10] docs: Add comprehensive documentation (35 files, ~15,000 lines) (Migrated)</a></li>
+<li><a href='https://github.com/wejoncy/sfllm/issues/20'>github: ModuleNotFoundError: No module named 'sf_kernel'</a></li>
+<li><a href='https://github.com/wesnoth/wesnoth/issues/10900'>github: F-Droid build failed</a></li>
+<li><a href='https://github.com/zenml-io/zenml/issues/4408'>github: Git submodules not included when downloading code from artifact store</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-01-22T16:20:03.2398223Z</small></p>
+</main>
+</body>
+</html>

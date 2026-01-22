@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/AstrBotDevs/AstrBot/issues/4540",
+      "label": "github: [Plugin] astrbot_plugin_service_watcher"
+    },
+    {
+      "url": "https://github.com/BadKiko/steam-online-fix-launcher/issues/64",
+      "label": "github: [B] SOLF doesn't start"
+    },
+    {
+      "url": "https://github.com/cnpem/ssc-raft/issues/1",
+      "label": "github: error to install and import"
+    },
+    {
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "label": "github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]"
+    },
+    {
+      "url": "https://github.com/frappe/frappe_docker/issues/1792",
+      "label": "github: frappe_docker installer breaks on Python 3.14 (pypika ast.Str error)"
+    },
+    {
+      "url": "https://github.com/helmholtz-analytics/heat/issues/2084",
+      "label": "github: [Bug]: Unable to install dependencies for running examples with Python>3.12"
+    },
+    {
+      "url": "https://github.com/jlowin/fastmcp/issues/2965",
+      "label": "github: ModuleNotFoundError: No module named 'fastmcp.utilities.lifespan'"
+    },
+    {
+      "url": "https://github.com/Lan131/CyGym/issues/2",
+      "label": "github: Code is missing"
+    },
+    {
+      "url": "https://github.com/linkml/linkml-store/issues/65",
+      "label": "github: CLI requires heavy optional dependencies (matplotlib, scipy) for basic operations"
+    },
+    {
+      "url": "https://github.com/magillos/Cable/issues/32",
+      "label": "github: --- StopIteration"
+    },
+    {
+      "url": "https://github.com/nunchaku-ai/nunchaku/issues/858",
+      "label": "github: [Request] SVDQuant int4 weights for Qwen/Qwen-Image-2512 and Qwen/Qwen-Image-Edit-2511"
+    },
+    {
+      "url": "https://github.com/NVIDIA-NeMo/Skills/issues/1171",
+      "label": "github: compute_eval"
+    },
+    {
+      "url": "https://github.com/osrf/buildfarm-tools/issues/205",
+      "label": "github: Buildfarmer log 2026/01/19 - 2026/01/26"
+    },
+    {
+      "url": "https://github.com/pypa/wheel/issues/676",
+      "label": "github: [regression?] v0.46.2 seems to be crashing under Python 3.9"
+    },
+    {
+      "url": "https://github.com/seven-lynx/HoundMind/issues/2",
+      "label": "github: unable to install houndmind"
+    },
+    {
+      "url": "https://github.com/Synria-Robotics/Alicia-D-SDK/issues/10",
+      "label": "github: 我在安装完alicia-d-sdk 的环境后，测试使用 python 00_demo_read_version.py会报错：ModuleNotFoundError: No module named 'robocore.planning.trajectory'，查看robocore包里面确实没有这个"
+    },
+    {
+      "url": "https://github.com/VedangCR7/Test/issues/4",
+      "label": "github: [PR #10] docs: Add comprehensive documentation (35 files, ~15,000 lines) (Migrated)"
+    },
+    {
+      "url": "https://github.com/wejoncy/sfllm/issues/20",
+      "label": "github: ModuleNotFoundError: No module named 'sf_kernel'"
+    },
+    {
+      "url": "https://github.com/wesnoth/wesnoth/issues/10900",
+      "label": "github: F-Droid build failed"
+    },
+    {
+      "url": "https://github.com/zenml-io/zenml/issues/4408",
+      "label": "github: Git submodules not included when downloading code from artifact store"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "[Plugin] astrbot_plugin_service_watcher",
+      "url": "https://github.com/AstrBotDevs/AstrBot/issues/4540",
+      "created_at": "2026-01-17T11:18:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[B] SOLF doesn't start",
+      "url": "https://github.com/BadKiko/steam-online-fix-launcher/issues/64",
+      "created_at": "2026-01-22T14:22:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "error to install and import",
+      "url": "https://github.com/cnpem/ssc-raft/issues/1",
+      "created_at": "2026-01-20T12:37:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]",
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "created_at": "2026-01-07T17:28:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "frappe_docker installer breaks on Python 3.14 (pypika ast.Str error)",
+      "url": "https://github.com/frappe/frappe_docker/issues/1792",
+      "created_at": "2026-01-15T05:29:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Unable to install dependencies for running examples with Python>3.12",
+      "url": "https://github.com/helmholtz-analytics/heat/issues/2084",
+      "created_at": "2026-01-05T12:53:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'fastmcp.utilities.lifespan'",
+      "url": "https://github.com/jlowin/fastmcp/issues/2965",
+      "created_at": "2026-01-21T07:22:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Code is missing",
+      "url": "https://github.com/Lan131/CyGym/issues/2",
+      "created_at": "2026-01-07T11:59:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "CLI requires heavy optional dependencies (matplotlib, scipy) for basic operations",
+      "url": "https://github.com/linkml/linkml-store/issues/65",
+      "created_at": "2026-01-22T15:01:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "--- StopIteration",
+      "url": "https://github.com/magillos/Cable/issues/32",
+      "created_at": "2025-12-31T13:40:40.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Request] SVDQuant int4 weights for Qwen/Qwen-Image-2512 and Qwen/Qwen-Image-Edit-2511",
+      "url": "https://github.com/nunchaku-ai/nunchaku/issues/858",
+      "created_at": "2025-12-31T20:54:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "compute_eval",
+      "url": "https://github.com/NVIDIA-NeMo/Skills/issues/1171",
+      "created_at": "2026-01-16T16:16:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Buildfarmer log 2026/01/19 - 2026/01/26",
+      "url": "https://github.com/osrf/buildfarm-tools/issues/205",
+      "created_at": "2026-01-19T11:37:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[regression?] v0.46.2 seems to be crashing under Python 3.9",
+      "url": "https://github.com/pypa/wheel/issues/676",
+      "created_at": "2026-01-22T11:22:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "unable to install houndmind",
+      "url": "https://github.com/seven-lynx/HoundMind/issues/2",
+      "created_at": "2026-01-19T12:27:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "我在安装完alicia-d-sdk 的环境后，测试使用 python 00_demo_read_version.py会报错：ModuleNotFoundError: No module named 'robocore.planning.trajectory'，查看robocore包里面确实没有这个",
+      "url": "https://github.com/Synria-Robotics/Alicia-D-SDK/issues/10",
+      "created_at": "2026-01-21T11:52:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[PR #10] docs: Add comprehensive documentation (35 files, ~15,000 lines) (Migrated)",
+      "url": "https://github.com/VedangCR7/Test/issues/4",
+      "created_at": "2026-01-22T12:30:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'sf_kernel'",
+      "url": "https://github.com/wejoncy/sfllm/issues/20",
+      "created_at": "2026-01-20T11:10:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "F-Droid build failed",
+      "url": "https://github.com/wesnoth/wesnoth/issues/10900",
+      "created_at": "2026-01-22T11:41:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Git submodules not included when downloading code from artifact store",
+      "url": "https://github.com/zenml-io/zenml/issues/4408",
+      "created_at": "2026-01-16T08:42:40.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601221620/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "slug": "solve-multi-python-modulenotfounderror-202601221620",
+    "generated_at": "2026-01-22T16:20:03.2398223Z"
+  }
+}
