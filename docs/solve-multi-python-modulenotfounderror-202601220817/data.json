@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/angr/angrop/issues/151",
+      "label": "github: `Dockerfile` added for `ropbot` cannot build"
+    },
+    {
+      "url": "https://github.com/basecamp/omarchy/issues/4263",
+      "label": "github: missing module TerminalTextEffects after update"
+    },
+    {
+      "url": "https://github.com/BazedFrog/SongGeneration-Studio/issues/27",
+      "label": "github: New Install, [GEN a4af3be4] ERROR: Generation failed: invalid load key, 'v'."
+    },
+    {
+      "url": "https://github.com/brianirish/laravel-mcp-companion/issues/169",
+      "label": "github: Container fails to start: missing Python dependency toon_format"
+    },
+    {
+      "url": "https://github.com/camel-ai/seta/issues/2",
+      "label": "github: setup.sh fails on Linux due to case-sensitive path mismatch (AReaL vs areal) and missing torch dependency"
+    },
+    {
+      "url": "https://github.com/datawhalechina/hello-agents/issues/255",
+      "label": "github: [问题/Issue] 章节10.3.3：ModuleNotFoundError: No module named 'flask'"
+    },
+    {
+      "url": "https://github.com/dlai-sd/WAOOAW/issues/328",
+      "label": "github: [EPIC] cp and pp portal start using with plant api layer with secure and robust pipe which will be used for all future api integration."
+    },
+    {
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "label": "github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]"
+    },
+    {
+      "url": "https://github.com/h5netcdf/h5netcdf/issues/310",
+      "label": "github: Missing Dependencies - numpy and h5py"
+    },
+    {
+      "url": "https://github.com/Lan131/CyGym/issues/2",
+      "label": "github: Code is missing"
+    },
+    {
+      "url": "https://github.com/langchain-ai/langchain-google/issues/1532",
+      "label": "github: gemma modules entire disappear in langchain_google_vertexai v3 ?"
+    },
+    {
+      "url": "https://github.com/man-group/ArcticDB/issues/2866",
+      "label": "github: Dependency issue: ModuleNotFoundError: No module named 'pytz' with pandas >= 3.0.0"
+    },
+    {
+      "url": "https://github.com/mikelane/valid8r/issues/283",
+      "label": "github: CLI Starter Template Uses Relative Imports That Break When Copied"
+    },
+    {
+      "url": "https://github.com/pypa/setuptools/issues/5145",
+      "label": "github: [FR] `package-dir`-aware `find:` directive"
+    },
+    {
+      "url": "https://github.com/ramses-rf/ramses_rf/issues/407",
+      "label": "github: Replace pre-commit hook with prek"
+    },
+    {
+      "url": "https://github.com/ROCm/torch_migraphx/issues/279",
+      "label": "github: [Issue]: torch.ao.quantization.quantize_pt2e is deprecated and will be migrated to torchao"
+    },
+    {
+      "url": "https://github.com/TheHardeep/fenix/issues/4",
+      "label": "github: ModuleNotFoundError: No module named 'distutils'"
+    },
+    {
+      "url": "https://github.com/TheLastBen/fast-stable-diffusion/issues/3106",
+      "label": "github: i have problem with automatic1111"
+    },
+    {
+      "url": "https://github.com/wheelnext/nvidia-variant-provider/issues/8",
+      "label": "github: No compatible version found for: nvidia-variant-provider on Windows"
+    },
+    {
+      "url": "https://github.com/youzaiAGI/agent-skills-hub/issues/1",
+      "label": "github: run \"skill search\" with error"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "`Dockerfile` added for `ropbot` cannot build",
+      "url": "https://github.com/angr/angrop/issues/151",
+      "created_at": "2026-01-21T20:04:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "missing module TerminalTextEffects after update",
+      "url": "https://github.com/basecamp/omarchy/issues/4263",
+      "created_at": "2026-01-14T17:44:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "New Install, [GEN a4af3be4] ERROR: Generation failed: invalid load key, 'v'.",
+      "url": "https://github.com/BazedFrog/SongGeneration-Studio/issues/27",
+      "created_at": "2026-01-21T01:04:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Container fails to start: missing Python dependency toon_format",
+      "url": "https://github.com/brianirish/laravel-mcp-companion/issues/169",
+      "created_at": "2026-01-08T11:46:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "setup.sh fails on Linux due to case-sensitive path mismatch (AReaL vs areal) and missing torch dependency",
+      "url": "https://github.com/camel-ai/seta/issues/2",
+      "created_at": "2026-01-15T06:52:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[问题/Issue] 章节10.3.3：ModuleNotFoundError: No module named 'flask'",
+      "url": "https://github.com/datawhalechina/hello-agents/issues/255",
+      "created_at": "2025-12-30T06:11:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[EPIC] cp and pp portal start using with plant api layer with secure and robust pipe which will be used for all future api integration.",
+      "url": "https://github.com/dlai-sd/WAOOAW/issues/328",
+      "created_at": "2026-01-22T04:50:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]",
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "created_at": "2026-01-07T17:28:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Missing Dependencies - numpy and h5py",
+      "url": "https://github.com/h5netcdf/h5netcdf/issues/310",
+      "created_at": "2026-01-19T16:08:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Code is missing",
+      "url": "https://github.com/Lan131/CyGym/issues/2",
+      "created_at": "2026-01-07T11:59:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "gemma modules entire disappear in langchain_google_vertexai v3 ?",
+      "url": "https://github.com/langchain-ai/langchain-google/issues/1532",
+      "created_at": "2026-01-22T02:47:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Dependency issue: ModuleNotFoundError: No module named 'pytz' with pandas >= 3.0.0",
+      "url": "https://github.com/man-group/ArcticDB/issues/2866",
+      "created_at": "2026-01-22T07:58:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "CLI Starter Template Uses Relative Imports That Break When Copied",
+      "url": "https://github.com/mikelane/valid8r/issues/283",
+      "created_at": "2026-01-22T01:19:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[FR] `package-dir`-aware `find:` directive",
+      "url": "https://github.com/pypa/setuptools/issues/5145",
+      "created_at": "2026-01-19T13:09:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Replace pre-commit hook with prek",
+      "url": "https://github.com/ramses-rf/ramses_rf/issues/407",
+      "created_at": "2026-01-20T16:13:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Issue]: torch.ao.quantization.quantize_pt2e is deprecated and will be migrated to torchao",
+      "url": "https://github.com/ROCm/torch_migraphx/issues/279",
+      "created_at": "2026-01-20T04:03:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'distutils'",
+      "url": "https://github.com/TheHardeep/fenix/issues/4",
+      "created_at": "2026-01-22T03:06:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "i have problem with automatic1111",
+      "url": "https://github.com/TheLastBen/fast-stable-diffusion/issues/3106",
+      "created_at": "2026-01-22T02:05:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No compatible version found for: nvidia-variant-provider on Windows",
+      "url": "https://github.com/wheelnext/nvidia-variant-provider/issues/8",
+      "created_at": "2026-01-20T06:17:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "run \"skill search\" with error",
+      "url": "https://github.com/youzaiAGI/agent-skills-hub/issues/1",
+      "created_at": "2026-01-22T02:56:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "slug": "solve-multi-python-modulenotfounderror-202601220817",
+    "generated_at": "2026-01-22T08:17:13.6776738Z"
+  }
+}
