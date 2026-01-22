@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Build from source failed",
+      "url": "https://github.com/21st-dev/1code/issues/61",
+      "created_at": "2026-01-21T04:18:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "`Dockerfile` added for `ropbot` cannot build",
+      "url": "https://github.com/angr/angrop/issues/151",
+      "created_at": "2026-01-21T20:04:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "`uv sync` removes base dependencies when switching extras (at least impacts typer/typer-slim)",
+      "url": "https://github.com/astral-sh/uv/issues/17645",
+      "created_at": "2026-01-21T19:40:22.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Wrong Gazelle mappings after upgrading to 1.8",
+      "url": "https://github.com/bazel-contrib/rules_python/issues/3528",
+      "created_at": "2026-01-21T14:59:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "jupyterconfig error while running on server",
+      "url": "https://github.com/danforthcenter/plantcv/issues/1869",
+      "created_at": "2026-01-20T22:04:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package",
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/226",
+      "created_at": "2026-01-19T14:46:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]",
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "created_at": "2026-01-07T17:28:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error when running the play.py files in the tutorial.",
+      "url": "https://github.com/enactic/openarm_isaac_lab/issues/13",
+      "created_at": "2026-01-21T19:30:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] `ModuleNotFoundError: No module named 'resource'` when importing `eval_protocol` in v0.3.11",
+      "url": "https://github.com/eval-protocol/python-sdk/issues/416",
+      "created_at": "2026-01-21T15:08:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] python-sdk adds broken scripts to bin of virtual environments",
+      "url": "https://github.com/hatchet-dev/hatchet/issues/2824",
+      "created_at": "2026-01-20T10:17:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Jupyter Notebook not working on DGX Spark. IsaacSim 5.1/6.0_preview",
+      "url": "https://github.com/isaac-sim/IsaacSim/issues/429",
+      "created_at": "2026-01-21T22:36:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'fastmcp.utilities.lifespan'",
+      "url": "https://github.com/jlowin/fastmcp/issues/2965",
+      "created_at": "2026-01-21T07:22:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Errors when running tutorial.ipynb (ModuleNotFoundError / ImportError)",
+      "url": "https://github.com/LevensteinLab/pRNN/issues/39",
+      "created_at": "2026-01-13T12:34:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "import prody requires matplotlib",
+      "url": "https://github.com/prody/ProDy/issues/2206",
+      "created_at": "2026-01-21T21:53:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Broken test: test_hello_test_hello_fixed.py has incorrect import causing pytest collection failure",
+      "url": "https://github.com/promptdriven/pdd/issues/361",
+      "created_at": "2026-01-21T20:26:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "unable to install houndmind",
+      "url": "https://github.com/seven-lynx/HoundMind/issues/2",
+      "created_at": "2026-01-19T12:27:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Variable explorer raises error on a np.datetime64 object",
+      "url": "https://github.com/spyder-ide/spyder/issues/25589",
+      "created_at": "2026-01-19T12:31:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "kafka-python 2.0.2 broken on Rocky 10",
+      "url": "https://github.com/StephenSorriaux/ansible-kafka-admin/issues/195",
+      "created_at": "2026-01-21T19:22:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Maybe ESpeak NG is the problem.",
+      "url": "https://github.com/TigreGotico/phoonnx-AddonNVDA/issues/2",
+      "created_at": "2026-01-07T21:07:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "не удается запустить бота",
+      "url": "https://github.com/tinechelovec/Funpay-Telegram-Gifts/issues/1",
+      "created_at": "2026-01-20T22:18:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601220053/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-01-22T00:53:09.7239945Z",
+    "slug": "solve-multi-python-modulenotfounderror-202601220053",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/21st-dev/1code/issues/61",
+      "label": "github: Build from source failed"
+    },
+    {
+      "url": "https://github.com/angr/angrop/issues/151",
+      "label": "github: `Dockerfile` added for `ropbot` cannot build"
+    },
+    {
+      "url": "https://github.com/astral-sh/uv/issues/17645",
+      "label": "github: `uv sync` removes base dependencies when switching extras (at least impacts typer/typer-slim)"
+    },
+    {
+      "url": "https://github.com/bazel-contrib/rules_python/issues/3528",
+      "label": "github: Wrong Gazelle mappings after upgrading to 1.8"
+    },
+    {
+      "url": "https://github.com/danforthcenter/plantcv/issues/1869",
+      "label": "github: jupyterconfig error while running on server"
+    },
+    {
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/226",
+      "label": "github: Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package"
+    },
+    {
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "label": "github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]"
+    },
+    {
+      "url": "https://github.com/enactic/openarm_isaac_lab/issues/13",
+      "label": "github: Error when running the play.py files in the tutorial."
+    },
+    {
+      "url": "https://github.com/eval-protocol/python-sdk/issues/416",
+      "label": "github: [BUG] `ModuleNotFoundError: No module named 'resource'` when importing `eval_protocol` in v0.3.11"
+    },
+    {
+      "url": "https://github.com/hatchet-dev/hatchet/issues/2824",
+      "label": "github: [BUG] python-sdk adds broken scripts to bin of virtual environments"
+    },
+    {
+      "url": "https://github.com/isaac-sim/IsaacSim/issues/429",
+      "label": "github: Jupyter Notebook not working on DGX Spark. IsaacSim 5.1/6.0_preview"
+    },
+    {
+      "url": "https://github.com/jlowin/fastmcp/issues/2965",
+      "label": "github: ModuleNotFoundError: No module named 'fastmcp.utilities.lifespan'"
+    },
+    {
+      "url": "https://github.com/LevensteinLab/pRNN/issues/39",
+      "label": "github: Errors when running tutorial.ipynb (ModuleNotFoundError / ImportError)"
+    },
+    {
+      "url": "https://github.com/prody/ProDy/issues/2206",
+      "label": "github: import prody requires matplotlib"
+    },
+    {
+      "url": "https://github.com/promptdriven/pdd/issues/361",
+      "label": "github: Broken test: test_hello_test_hello_fixed.py has incorrect import causing pytest collection failure"
+    },
+    {
+      "url": "https://github.com/seven-lynx/HoundMind/issues/2",
+      "label": "github: unable to install houndmind"
+    },
+    {
+      "url": "https://github.com/spyder-ide/spyder/issues/25589",
+      "label": "github: Variable explorer raises error on a np.datetime64 object"
+    },
+    {
+      "url": "https://github.com/StephenSorriaux/ansible-kafka-admin/issues/195",
+      "label": "github: kafka-python 2.0.2 broken on Rocky 10"
+    },
+    {
+      "url": "https://github.com/TigreGotico/phoonnx-AddonNVDA/issues/2",
+      "label": "github: Maybe ESpeak NG is the problem."
+    },
+    {
+      "url": "https://github.com/tinechelovec/Funpay-Telegram-Gifts/issues/1",
+      "label": "github: не удается запустить бота"
+    }
+  ]
+}
