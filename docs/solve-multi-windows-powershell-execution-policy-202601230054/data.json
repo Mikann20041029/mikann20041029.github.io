@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Create Windows bootstrap script",
+      "url": "https://github.com/abijith-suresh/dotfiles/issues/10",
+      "created_at": "2026-01-22T16:46:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Powershell Native Install does not copy claude.exe",
+      "url": "https://github.com/anthropics/claude-code/issues/16041",
+      "created_at": "2026-01-02T05:21:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "COMMAND:** UPDATE SYSTEM PERSONA & AGENT ALLOCATION",
+      "url": "https://github.com/appsefilepro-cell/Copy-Agentx5-APPS-HOLDINGS-WY-INC/issues/10",
+      "created_at": "2026-01-11T16:01:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "cortex6 reqs",
+      "url": "https://github.com/asifhussain60/CORTEX/issues/6",
+      "created_at": "2026-01-10T13:20:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Make this into a single Datto RMM component with input vars so cover all scenarios",
+      "url": "https://github.com/aybouzaglou/Datto-RMM-Powershell-Scripts/issues/7",
+      "created_at": "2026-01-22T04:22:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ebook2audiobook.cmd won´t install on Windows 11",
+      "url": "https://github.com/DrewThomasson/ebook2audiobook/issues/1572",
+      "created_at": "2026-01-22T01:55:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] installation on Windows fails",
+      "url": "https://github.com/numman-ali/cc-mirror/issues/7",
+      "created_at": "2026-01-04T19:44:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": ".codex/superpowers-codex not support powershell env (windows + powershell env)",
+      "url": "https://github.com/obra/superpowers/issues/285",
+      "created_at": "2026-01-18T07:15:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows native: sandbox command execution fails with `CreateProcessWithLogonW failed: 5` and approval mode appears inconsistent across onboarding/session",
+      "url": "https://github.com/openai/codex/issues/9062",
+      "created_at": "2026-01-11T22:57:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Critical Error Messages Get Truncated During Output Truncation",
+      "url": "https://github.com/openai/codex/issues/9502",
+      "created_at": "2026-01-19T22:56:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Sandbox Policy Ignored During Non‑Interactive Execution",
+      "url": "https://github.com/PlatformNetwork/bounty-challenge/issues/459",
+      "created_at": "2026-01-22T11:58:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Sandbox Approval Deadlock in fabric run",
+      "url": "https://github.com/PlatformNetwork/bounty-challenge/issues/506",
+      "created_at": "2026-01-22T12:31:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "feat: New Benign Behavior Workload Types - Creative Expansion Proposals",
+      "url": "https://github.com/rysweet/AzureHayMaker/issues/296",
+      "created_at": "2026-01-21T21:50:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Tool Submission]: FixMyADMX",
+      "url": "https://github.com/ugurkocde/AwesomeIntune/issues/59",
+      "created_at": "2026-01-20T21:50:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[CRITICAL] Application Requires Python Runtime Installation",
+      "url": "https://github.com/wareflowx/wareflow-ems/issues/28",
+      "created_at": "2026-01-22T15:38:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Release 4.14.3 - RC 1 - Upgrade tests",
+      "url": "https://github.com/wazuh/wazuh/issues/33995",
+      "created_at": "2026-01-16T16:20:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Release 4.14.3 - RC 1 - E2E UX tests - Central components upgrade",
+      "url": "https://github.com/wazuh/wazuh/issues/34007",
+      "created_at": "2026-01-16T16:51:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Release 4.14.3 - RC 1 - E2E UX tests - Windows events",
+      "url": "https://github.com/wazuh/wazuh/issues/34008",
+      "created_at": "2026-01-16T16:52:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Release 4.14.3 - RC 1 - E2E UX tests - Vulnerability Detection",
+      "url": "https://github.com/wazuh/wazuh/issues/34010",
+      "created_at": "2026-01-16T16:52:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Release 4.14.3 - RC 1 - E2E UX tests - Active response",
+      "url": "https://github.com/wazuh/wazuh/issues/34011",
+      "created_at": "2026-01-16T16:52:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202601230054/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: Create Windows bootstrap script",
+      "url": "https://github.com/abijith-suresh/dotfiles/issues/10"
+    },
+    {
+      "label": "github: [BUG] Powershell Native Install does not copy claude.exe",
+      "url": "https://github.com/anthropics/claude-code/issues/16041"
+    },
+    {
+      "label": "github: COMMAND:** UPDATE SYSTEM PERSONA & AGENT ALLOCATION",
+      "url": "https://github.com/appsefilepro-cell/Copy-Agentx5-APPS-HOLDINGS-WY-INC/issues/10"
+    },
+    {
+      "label": "github: cortex6 reqs",
+      "url": "https://github.com/asifhussain60/CORTEX/issues/6"
+    },
+    {
+      "label": "github: Make this into a single Datto RMM component with input vars so cover all scenarios",
+      "url": "https://github.com/aybouzaglou/Datto-RMM-Powershell-Scripts/issues/7"
+    },
+    {
+      "label": "github: ebook2audiobook.cmd won´t install on Windows 11",
+      "url": "https://github.com/DrewThomasson/ebook2audiobook/issues/1572"
+    },
+    {
+      "label": "github: [Bug] installation on Windows fails",
+      "url": "https://github.com/numman-ali/cc-mirror/issues/7"
+    },
+    {
+      "label": "github: .codex/superpowers-codex not support powershell env (windows + powershell env)",
+      "url": "https://github.com/obra/superpowers/issues/285"
+    },
+    {
+      "label": "github: Windows native: sandbox command execution fails with `CreateProcessWithLogonW failed: 5` and approval mode appears inconsistent across onboarding/session",
+      "url": "https://github.com/openai/codex/issues/9062"
+    },
+    {
+      "label": "github: Critical Error Messages Get Truncated During Output Truncation",
+      "url": "https://github.com/openai/codex/issues/9502"
+    },
+    {
+      "label": "github: [BUG] Sandbox Policy Ignored During Non‑Interactive Execution",
+      "url": "https://github.com/PlatformNetwork/bounty-challenge/issues/459"
+    },
+    {
+      "label": "github: [BUG] Sandbox Approval Deadlock in fabric run",
+      "url": "https://github.com/PlatformNetwork/bounty-challenge/issues/506"
+    },
+    {
+      "label": "github: feat: New Benign Behavior Workload Types - Creative Expansion Proposals",
+      "url": "https://github.com/rysweet/AzureHayMaker/issues/296"
+    },
+    {
+      "label": "github: [Tool Submission]: FixMyADMX",
+      "url": "https://github.com/ugurkocde/AwesomeIntune/issues/59"
+    },
+    {
+      "label": "github: [CRITICAL] Application Requires Python Runtime Installation",
+      "url": "https://github.com/wareflowx/wareflow-ems/issues/28"
+    },
+    {
+      "label": "github: Release 4.14.3 - RC 1 - Upgrade tests",
+      "url": "https://github.com/wazuh/wazuh/issues/33995"
+    },
+    {
+      "label": "github: Release 4.14.3 - RC 1 - E2E UX tests - Central components upgrade",
+      "url": "https://github.com/wazuh/wazuh/issues/34007"
+    },
+    {
+      "label": "github: Release 4.14.3 - RC 1 - E2E UX tests - Windows events",
+      "url": "https://github.com/wazuh/wazuh/issues/34008"
+    },
+    {
+      "label": "github: Release 4.14.3 - RC 1 - E2E UX tests - Vulnerability Detection",
+      "url": "https://github.com/wazuh/wazuh/issues/34010"
+    },
+    {
+      "label": "github: Release 4.14.3 - RC 1 - E2E UX tests - Active response",
+      "url": "https://github.com/wazuh/wazuh/issues/34011"
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-01-23T00:54:07.7571372Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "title": "windows powershell execution policy をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "slug": "solve-multi-windows-powershell-execution-policy-202601230054"
+  }
+}
