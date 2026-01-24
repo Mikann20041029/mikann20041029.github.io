@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: 🐛: Broken Home navigation link on Get Educated page (404 error)",
+      "url": "https://github.com/archangel2006/SafeHaven/issues/113"
+    },
+    {
+      "label": "github: [BUG] 500 {\"type\":\"error\",\"error\":{\"type\":\"api_error\",\"message\":\"Max retries exceeded\"}}",
+      "url": "https://github.com/badrisnarayanan/antigravity-claude-proxy/issues/168"
+    },
+    {
+      "label": "github: FRONTEND:  Create Landing Page Hero Section",
+      "url": "https://github.com/DistinctCodes/ManageHub/issues/404"
+    },
+    {
+      "label": "github: “荆门掇刀区有偿捐卵哪家好?”中文语言理解测评Y",
+      "url": "https://github.com/iveviseti/uo/issues/404"
+    },
+    {
+      "label": "github: Marathon Coding: Build Ringmaster MVP",
+      "url": "https://github.com/jedarden/ringmaster/issues/1"
+    },
+    {
+      "label": "github: Serene Seasons",
+      "url": "https://github.com/LilTOJustice/TrueAdaptiveMusic/issues/404"
+    },
+    {
+      "label": "github: docs: update `pnpm link` command in guide (#21442)",
+      "url": "https://github.com/LiquidITGuy/docs-fr/issues/404"
+    },
+    {
+      "label": "github: Can't connect on my Tizen TV",
+      "url": "https://github.com/loki-47-6F-64/sunshine/issues/404"
+    },
+    {
+      "label": "github: Create a 404 NotFound Page",
+      "url": "https://github.com/Lumina-eX/AnonChat/issues/19"
+    },
+    {
+      "label": "github: [E2E Edge Test] Pagination test 1769247363240",
+      "url": "https://github.com/mason105/notion-sync-e2e-test/issues/404"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-01-24T08:14:03.9708027Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/26"
+    },
+    {
+      "label": "github: dumped.",
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5383"
+    },
+    {
+      "label": "github: [Bug]: Minecraft Proxy Velocity",
+      "url": "https://github.com/pterodactyl/game-eggs/issues/404"
+    },
+    {
+      "label": "github: Raspberry Pi OS kernel dbg packages lack .debug_line section in .ko files",
+      "url": "https://github.com/RPi-Distro/repo/issues/404"
+    },
+    {
+      "label": "github: Can Python versions > 3.11 be used (without asyncore)?",
+      "url": "https://github.com/simonrob/email-oauth2-proxy/issues/404"
+    },
+    {
+      "label": "github: Chapter 2：Claude CodeによるAI起動開発の基礎",
+      "url": "https://github.com/Tatsukiyoshi/Tatsukiyoshi.github.io/issues/714"
+    },
+    {
+      "label": "github: Customizability: let users add/remove the Watchlist from the homepage",
+      "url": "https://github.com/trakt/trakt-web/issues/1525"
+    },
+    {
+      "label": "github: tech-debt: Refactor files exceeding 400-line limit",
+      "url": "https://github.com/williamzujkowski/nexus-agents/issues/404"
+    },
+    {
+      "label": "github: fun detected blizz nuke Mountspecial (all emotes) via addon in bgs",
+      "url": "https://github.com/xod-wow/LiteMount/issues/404"
+    },
+    {
+      "label": "github: Install `0.11-2` fails on compiling src/pkey.o with OpenSSL 3.5.4",
+      "url": "https://github.com/zhaozg/lua-openssl/issues/404"
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-github-pages-404-not-found-202601241611",
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "generated_at": "2026-01-24T16:11:51.2566895Z",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "🐛: Broken Home navigation link on Get Educated page (404 error)",
+      "url": "https://github.com/archangel2006/SafeHaven/issues/113",
+      "created_at": "2026-01-16T08:13:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] 500 {\"type\":\"error\",\"error\":{\"type\":\"api_error\",\"message\":\"Max retries exceeded\"}}",
+      "url": "https://github.com/badrisnarayanan/antigravity-claude-proxy/issues/168",
+      "created_at": "2026-01-20T19:45:46.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "FRONTEND:  Create Landing Page Hero Section",
+      "url": "https://github.com/DistinctCodes/ManageHub/issues/404",
+      "created_at": "2026-01-20T02:34:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "“荆门掇刀区有偿捐卵哪家好?”中文语言理解测评Y",
+      "url": "https://github.com/iveviseti/uo/issues/404",
+      "created_at": "2026-01-24T08:25:22.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Marathon Coding: Build Ringmaster MVP",
+      "url": "https://github.com/jedarden/ringmaster/issues/1",
+      "created_at": "2026-01-15T04:46:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Serene Seasons",
+      "url": "https://github.com/LilTOJustice/TrueAdaptiveMusic/issues/404",
+      "created_at": "2026-01-24T08:49:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "docs: update `pnpm link` command in guide (#21442)",
+      "url": "https://github.com/LiquidITGuy/docs-fr/issues/404",
+      "created_at": "2026-01-20T04:08:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Can't connect on my Tizen TV",
+      "url": "https://github.com/loki-47-6F-64/sunshine/issues/404",
+      "created_at": "2026-01-24T14:42:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Create a 404 NotFound Page",
+      "url": "https://github.com/Lumina-eX/AnonChat/issues/19",
+      "created_at": "2026-01-23T15:30:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[E2E Edge Test] Pagination test 1769247363240",
+      "url": "https://github.com/mason105/notion-sync-e2e-test/issues/404",
+      "created_at": "2026-01-24T09:36:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-01-24T08:14:03.9708027Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/26",
+      "created_at": "2026-01-24T08:14:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "dumped.",
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5383",
+      "created_at": "2026-01-01T15:22:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Minecraft Proxy Velocity",
+      "url": "https://github.com/pterodactyl/game-eggs/issues/404",
+      "created_at": "2026-01-24T12:42:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Raspberry Pi OS kernel dbg packages lack .debug_line section in .ko files",
+      "url": "https://github.com/RPi-Distro/repo/issues/404",
+      "created_at": "2026-01-05T16:55:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Can Python versions > 3.11 be used (without asyncore)?",
+      "url": "https://github.com/simonrob/email-oauth2-proxy/issues/404",
+      "created_at": "2026-01-24T00:43:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Chapter 2：Claude CodeによるAI起動開発の基礎",
+      "url": "https://github.com/Tatsukiyoshi/Tatsukiyoshi.github.io/issues/714",
+      "created_at": "2026-01-24T11:51:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Customizability: let users add/remove the Watchlist from the homepage",
+      "url": "https://github.com/trakt/trakt-web/issues/1525",
+      "created_at": "2026-01-15T11:13:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "tech-debt: Refactor files exceeding 400-line limit",
+      "url": "https://github.com/williamzujkowski/nexus-agents/issues/404",
+      "created_at": "2026-01-24T13:34:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fun detected blizz nuke Mountspecial (all emotes) via addon in bgs",
+      "url": "https://github.com/xod-wow/LiteMount/issues/404",
+      "created_at": "2026-01-24T06:18:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Install `0.11-2` fails on compiling src/pkey.o with OpenSSL 3.5.4",
+      "url": "https://github.com/zhaozg/lua-openssl/issues/404",
+      "created_at": "2026-01-23T21:49:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601241611/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
