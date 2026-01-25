@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-01-25T00:58:42.2796809Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "title": "npm EACCES permission denied をまとめて直す（権限/環境/手順）",
+    "slug": "solve-multi-npm-eacces-permission-denied-202601250058"
+  },
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: Hardcoded /tmp/claude paths break on Termux (Android)",
+      "url": "https://github.com/anthropics/claude-code/issues/15637"
+    },
+    {
+      "label": "github: [BUG] Background tasks ignore $TMPDIR and hardcode /tmp/claude/",
+      "url": "https://github.com/anthropics/claude-code/issues/15700"
+    },
+    {
+      "label": "github: Task agent fails on Termux: EACCES permission denied for /tmp/claude",
+      "url": "https://github.com/anthropics/claude-code/issues/16955"
+    },
+    {
+      "label": "github: EACCES permission denied on /tmp/claude/* on Android/Termux",
+      "url": "https://github.com/anthropics/claude-code/issues/17366"
+    },
+    {
+      "label": "github: v0.0.73 issue with install for claude on fresh install of terminal-jarvis",
+      "url": "https://github.com/BA-CalderonMorales/terminal-jarvis/issues/39"
+    },
+    {
+      "label": "github: fix(scaffold): TypeScript agent Docker Compose issues",
+      "url": "https://github.com/dhyansraj/mcp-mesh/issues/470"
+    },
+    {
+      "label": "github: Error: listen EACCES: permission denied 127.0.0.1:8000",
+      "url": "https://github.com/ElectronNET/Electron.NET/issues/1006"
+    },
+    {
+      "label": "github: permission denied with sandbox mode",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/16968"
+    },
+    {
+      "label": "github: `Error: EACCES: permission denied, open '/.config/graphile-workerrc'`",
+      "url": "https://github.com/graphile/worker/issues/571"
+    },
+    {
+      "label": "github: Roadmap: Production Readiness for v0.1 Release - Code Quality & Cleanup",
+      "url": "https://github.com/JavaScriptSolidServer/JavaScriptSolidServer/issues/100"
+    },
+    {
+      "label": "github: Use official Claude Code installation method",
+      "url": "https://github.com/leonbreukelman/env-bootstrap-public/issues/1"
+    },
+    {
+      "label": "github: Test issue: Add a hello world endpoint",
+      "url": "https://github.com/Mandalorian007/aidw/issues/1"
+    },
+    {
+      "label": "github: [autogen] npm の EACCES permission denied を直す / 2026-01-21 09:58",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/1"
+    },
+    {
+      "label": "github: Unable to create connection to database due to local file system permission limit",
+      "url": "https://github.com/mongodb-js/vscode/issues/1228"
+    },
+    {
+      "label": "github: fetchNpmDeps may need some fixes for nodejs 24",
+      "url": "https://github.com/NixOS/nixpkgs/issues/474535"
+    },
+    {
+      "label": "github: Sharp module failed to load. Image processing functionality will be limited.",
+      "url": "https://github.com/ONLYOFFICE/DocumentServer/issues/3568"
+    },
+    {
+      "label": "github: Linux workspace-write sandbox fails under AppArmor unprivileged_userns (EACCES /proc/self/setgroups) since 0.81.0",
+      "url": "https://github.com/openai/codex/issues/9273"
+    },
+    {
+      "label": "github: Error in Supabase MCP authentication (mcp auth <supabase-mcp>)",
+      "url": "https://github.com/QwenLM/qwen-code/issues/1566"
+    },
+    {
+      "label": "github: sudo make pack 的时候报错",
+      "url": "https://github.com/TencentCloudADP/adp-chat-client/issues/21"
+    },
+    {
+      "label": "github: Bug: Docker-based E2E script creates root-owned test-results/playwright-report",
+      "url": "https://github.com/timothyfroehlich/PinPoint/issues/722"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "Hardcoded /tmp/claude paths break on Termux (Android)",
+      "url": "https://github.com/anthropics/claude-code/issues/15637",
+      "created_at": "2025-12-29T00:48:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Background tasks ignore $TMPDIR and hardcode /tmp/claude/",
+      "url": "https://github.com/anthropics/claude-code/issues/15700",
+      "created_at": "2025-12-29T15:26:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Task agent fails on Termux: EACCES permission denied for /tmp/claude",
+      "url": "https://github.com/anthropics/claude-code/issues/16955",
+      "created_at": "2026-01-08T22:06:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "EACCES permission denied on /tmp/claude/* on Android/Termux",
+      "url": "https://github.com/anthropics/claude-code/issues/17366",
+      "created_at": "2026-01-10T19:27:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "v0.0.73 issue with install for claude on fresh install of terminal-jarvis",
+      "url": "https://github.com/BA-CalderonMorales/terminal-jarvis/issues/39",
+      "created_at": "2026-01-07T02:35:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fix(scaffold): TypeScript agent Docker Compose issues",
+      "url": "https://github.com/dhyansraj/mcp-mesh/issues/470",
+      "created_at": "2026-01-23T02:42:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error: listen EACCES: permission denied 127.0.0.1:8000",
+      "url": "https://github.com/ElectronNET/Electron.NET/issues/1006",
+      "created_at": "2026-01-13T14:17:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "permission denied with sandbox mode",
+      "url": "https://github.com/google-gemini/gemini-cli/issues/16968",
+      "created_at": "2026-01-18T12:54:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "`Error: EACCES: permission denied, open '/.config/graphile-workerrc'`",
+      "url": "https://github.com/graphile/worker/issues/571",
+      "created_at": "2026-01-22T22:58:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Roadmap: Production Readiness for v0.1 Release - Code Quality & Cleanup",
+      "url": "https://github.com/JavaScriptSolidServer/JavaScriptSolidServer/issues/100",
+      "created_at": "2026-01-19T13:33:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Use official Claude Code installation method",
+      "url": "https://github.com/leonbreukelman/env-bootstrap-public/issues/1",
+      "created_at": "2026-01-19T19:50:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Test issue: Add a hello world endpoint",
+      "url": "https://github.com/Mandalorian007/aidw/issues/1",
+      "created_at": "2026-01-17T16:43:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[autogen] npm の EACCES permission denied を直す / 2026-01-21 09:58",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/1",
+      "created_at": "2026-01-21T09:59:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Unable to create connection to database due to local file system permission limit",
+      "url": "https://github.com/mongodb-js/vscode/issues/1228",
+      "created_at": "2026-01-20T07:37:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fetchNpmDeps may need some fixes for nodejs 24",
+      "url": "https://github.com/NixOS/nixpkgs/issues/474535",
+      "created_at": "2025-12-27T10:37:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Sharp module failed to load. Image processing functionality will be limited.",
+      "url": "https://github.com/ONLYOFFICE/DocumentServer/issues/3568",
+      "created_at": "2026-01-21T14:51:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Linux workspace-write sandbox fails under AppArmor unprivileged_userns (EACCES /proc/self/setgroups) since 0.81.0",
+      "url": "https://github.com/openai/codex/issues/9273",
+      "created_at": "2026-01-15T11:28:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error in Supabase MCP authentication (mcp auth <supabase-mcp>)",
+      "url": "https://github.com/QwenLM/qwen-code/issues/1566",
+      "created_at": "2026-01-21T11:46:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "sudo make pack 的时候报错",
+      "url": "https://github.com/TencentCloudADP/adp-chat-client/issues/21",
+      "created_at": "2026-01-20T03:04:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bug: Docker-based E2E script creates root-owned test-results/playwright-report",
+      "url": "https://github.com/timothyfroehlich/PinPoint/issues/722",
+      "created_at": "2026-01-06T16:13:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202601250058/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
