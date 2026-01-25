@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>npm EACCES permission denied をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>npm EACCES permission denied をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/anthropics/claude-code/issues/15637'>Hardcoded /tmp/claude paths break on Termux (Android)</a> <small>[github] 2025-12-29</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/15700'>[BUG] Background tasks ignore $TMPDIR and hardcode /tmp/claude/</a> <small>[github] 2025-12-29</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/16955'>Task agent fails on Termux: EACCES permission denied for /tmp/claude</a> <small>[github] 2026-01-08</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/17366'>EACCES permission denied on /tmp/claude/* on Android/Termux</a> <small>[github] 2026-01-10</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/20691'>[Bug] Anthropic API Error: Invalid message format with thinking blocks</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/BA-CalderonMorales/terminal-jarvis/issues/39'>v0.0.73 issue with install for claude on fresh install of terminal-jarvis</a> <small>[github] 2026-01-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/dhyansraj/mcp-mesh/issues/470'>fix(scaffold): TypeScript agent Docker Compose issues</a> <small>[github] 2026-01-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/google-gemini/gemini-cli/issues/16968'>permission denied with sandbox mode</a> <small>[github] 2026-01-18</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/graphile/worker/issues/571'>`Error: EACCES: permission denied, open '/.config/graphile-workerrc'`</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/JavaScriptSolidServer/JavaScriptSolidServer/issues/100'>Roadmap: Production Readiness for v0.1 Release - Code Quality & Cleanup</a> <small>[github] 2026-01-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/leonbreukelman/env-bootstrap-public/issues/1'>Use official Claude Code installation method</a> <small>[github] 2026-01-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mandalorian007/aidw/issues/1'>Test issue: Add a hello world endpoint</a> <small>[github] 2026-01-17</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/1'>[autogen] npm の EACCES permission denied を直す / 2026-01-21 09:58</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/30'>mikann-autogen digest 2026-01-25T00:58:42.2796809Z</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/mongodb-js/vscode/issues/1228'>Unable to create connection to database due to local file system permission limit</a> <small>[github] 2026-01-20</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/NixOS/nixpkgs/issues/474535'>fetchNpmDeps may need some fixes for nodejs 24</a> <small>[github] 2025-12-27</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ONLYOFFICE/DocumentServer/issues/3568'>Sharp module failed to load. Image processing functionality will be limited.</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/QwenLM/qwen-code/issues/1566'>Error in Supabase MCP authentication (mcp auth <supabase-mcp>)</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/TencentCloudADP/adp-chat-client/issues/21'>sudo make pack 的时候报错</a> <small>[github] 2026-01-20</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/timothyfroehlich/PinPoint/issues/722'>Bug: Docker-based E2E script creates root-owned test-results/playwright-report</a> <small>[github] 2026-01-06</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/15637'>github: Hardcoded /tmp/claude paths break on Termux (Android)</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/15700'>github: [BUG] Background tasks ignore $TMPDIR and hardcode /tmp/claude/</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/16955'>github: Task agent fails on Termux: EACCES permission denied for /tmp/claude</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/17366'>github: EACCES permission denied on /tmp/claude/* on Android/Termux</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/20691'>github: [Bug] Anthropic API Error: Invalid message format with thinking blocks</a></li>
+<li><a href='https://github.com/BA-CalderonMorales/terminal-jarvis/issues/39'>github: v0.0.73 issue with install for claude on fresh install of terminal-jarvis</a></li>
+<li><a href='https://github.com/dhyansraj/mcp-mesh/issues/470'>github: fix(scaffold): TypeScript agent Docker Compose issues</a></li>
+<li><a href='https://github.com/google-gemini/gemini-cli/issues/16968'>github: permission denied with sandbox mode</a></li>
+<li><a href='https://github.com/graphile/worker/issues/571'>github: `Error: EACCES: permission denied, open '/.config/graphile-workerrc'`</a></li>
+<li><a href='https://github.com/JavaScriptSolidServer/JavaScriptSolidServer/issues/100'>github: Roadmap: Production Readiness for v0.1 Release - Code Quality & Cleanup</a></li>
+<li><a href='https://github.com/leonbreukelman/env-bootstrap-public/issues/1'>github: Use official Claude Code installation method</a></li>
+<li><a href='https://github.com/Mandalorian007/aidw/issues/1'>github: Test issue: Add a hello world endpoint</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/1'>github: [autogen] npm の EACCES permission denied を直す / 2026-01-21 09:58</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/30'>github: mikann-autogen digest 2026-01-25T00:58:42.2796809Z</a></li>
+<li><a href='https://github.com/mongodb-js/vscode/issues/1228'>github: Unable to create connection to database due to local file system permission limit</a></li>
+<li><a href='https://github.com/NixOS/nixpkgs/issues/474535'>github: fetchNpmDeps may need some fixes for nodejs 24</a></li>
+<li><a href='https://github.com/ONLYOFFICE/DocumentServer/issues/3568'>github: Sharp module failed to load. Image processing functionality will be limited.</a></li>
+<li><a href='https://github.com/QwenLM/qwen-code/issues/1566'>github: Error in Supabase MCP authentication (mcp auth <supabase-mcp>)</a></li>
+<li><a href='https://github.com/TencentCloudADP/adp-chat-client/issues/21'>github: sudo make pack 的时候报错</a></li>
+<li><a href='https://github.com/timothyfroehlich/PinPoint/issues/722'>github: Bug: Docker-based E2E script creates root-owned test-results/playwright-report</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-01-25T08:14:14.7074119Z</small></p>
+</main>
+</body>
+</html>
