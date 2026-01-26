@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>git push rejected permission denied をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>git push rejected permission denied をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/0xj4f/genesis/issues/16'>Threat Model: 0xj4f/genesis - Triple redundancy + code validation</a> <small>[github] 2026-01-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/0xj4f/genesis/issues/17'>Threat Model: 0xj4f/genesis - Triple redundancy + code validation</a> <small>[github] 2026-01-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/16760'>[BUG] Stack overflow</a> <small>[github] 2026-01-08</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/17129'>Tool use recursion error</a> <small>[github] 2026-01-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/dlai-sd/WAOOAW/issues/199'>[EPIC] cp and pp portal start using with plant api layer with secure and robust pipe which will be used for all future api integration.</a> <small>[github] 2026-01-20</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/geoant229-jpg/The-Kingdom-of-Ire/issues/8'>Ryan Marshall Duarte of Victor Montana</a> <small>[github] 2026-01-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/jrc1883/popkit-claude/issues/93'>[PopKit] Feature: Adopt MCP Wildcard Permissions Syntax (Claude Code 2.0.70)</a> <small>[github] 2026-01-10</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mandalorian007/aidw/issues/1'>Test issue: Add a hello world endpoint</a> <small>[github] 2026-01-17</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/2'>mikann-autogen digest 2026-01-21T13:11:42.5491349Z</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/3'>mikann-autogen digest 2026-01-21T13:26:43.0753562Z</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/4'>mikann-autogen digest 2026-01-21T16:05:23.8085573Z</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/5'>mikann-autogen digest 2026-01-21T16:23:01.5365286Z</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/NoeFabris/opencode-antigravity-auth/issues/276'>Switching all accounts</a> <small>[github] 2026-01-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/OWASP-BLT/BLT-Action/issues/105'>Disable assignment workflow for pull requests</a> <small>[github] 2026-01-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/OWASP-BLT/BLT/issues/5383'>dumped.</a> <small>[github] 2026-01-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/OWASP-BLT/BLT/issues/5534'>Ai security bot (proposal )</a> <small>[github] 2026-01-24</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/rumor-ml/commons.systems/issues/1337'>Budget Planning: Weekly Category Targets with Rollover and Time Selection</a> <small>[github] 2026-01-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/rumor-ml/commons.systems/issues/1514'>Set timezone to US Eastern in nix home config</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/rumor-ml/commons.systems/issues/779'>Add validation for GitError exit code and stderr fields</a> <small>[github] 2025-12-28</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/vm0-ai/vm0/issues/1527'>refactor: simplify E2E tests to focus on happy paths, move corner cases to unit tests</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/0xj4f/genesis/issues/16'>github: Threat Model: 0xj4f/genesis - Triple redundancy + code validation</a></li>
+<li><a href='https://github.com/0xj4f/genesis/issues/17'>github: Threat Model: 0xj4f/genesis - Triple redundancy + code validation</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/16760'>github: [BUG] Stack overflow</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/17129'>github: Tool use recursion error</a></li>
+<li><a href='https://github.com/dlai-sd/WAOOAW/issues/199'>github: [EPIC] cp and pp portal start using with plant api layer with secure and robust pipe which will be used for all future api integration.</a></li>
+<li><a href='https://github.com/geoant229-jpg/The-Kingdom-of-Ire/issues/8'>github: Ryan Marshall Duarte of Victor Montana</a></li>
+<li><a href='https://github.com/jrc1883/popkit-claude/issues/93'>github: [PopKit] Feature: Adopt MCP Wildcard Permissions Syntax (Claude Code 2.0.70)</a></li>
+<li><a href='https://github.com/Mandalorian007/aidw/issues/1'>github: Test issue: Add a hello world endpoint</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/2'>github: mikann-autogen digest 2026-01-21T13:11:42.5491349Z</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/3'>github: mikann-autogen digest 2026-01-21T13:26:43.0753562Z</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/4'>github: mikann-autogen digest 2026-01-21T16:05:23.8085573Z</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/5'>github: mikann-autogen digest 2026-01-21T16:23:01.5365286Z</a></li>
+<li><a href='https://github.com/NoeFabris/opencode-antigravity-auth/issues/276'>github: Switching all accounts</a></li>
+<li><a href='https://github.com/OWASP-BLT/BLT-Action/issues/105'>github: Disable assignment workflow for pull requests</a></li>
+<li><a href='https://github.com/OWASP-BLT/BLT/issues/5383'>github: dumped.</a></li>
+<li><a href='https://github.com/OWASP-BLT/BLT/issues/5534'>github: Ai security bot (proposal )</a></li>
+<li><a href='https://github.com/rumor-ml/commons.systems/issues/1337'>github: Budget Planning: Weekly Category Targets with Rollover and Time Selection</a></li>
+<li><a href='https://github.com/rumor-ml/commons.systems/issues/1514'>github: Set timezone to US Eastern in nix home config</a></li>
+<li><a href='https://github.com/rumor-ml/commons.systems/issues/779'>github: Add validation for GitError exit code and stderr fields</a></li>
+<li><a href='https://github.com/vm0-ai/vm0/issues/1527'>github: refactor: simplify E2E tests to focus on happy paths, move corner cases to unit tests</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-01-26T00:57:59.2188499Z</small></p>
+</main>
+</body>
+</html>
