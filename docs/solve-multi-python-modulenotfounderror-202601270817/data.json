@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "pgbouncer incorrectly applies global .Values.volumes / .Values.volumeMounts",
+      "url": "https://github.com/apache/airflow/issues/61062",
+      "created_at": "2026-01-26T10:13:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[erk-learn] Consolidate Gateways Phases 4-7: Move BranchManager, PromptExecutor, ClaudeInstallation, and LiveDis",
+      "url": "https://github.com/dagster-io/erk/issues/6147",
+      "created_at": "2026-01-26T23:08:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Unclear Behavior] Where to clone to? Where to run from? Which Python environment gets updated?",
+      "url": "https://github.com/DazzleML/comfyui-triton-and-sageattention-installer/issues/25",
+      "created_at": "2026-01-24T23:29:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]",
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "created_at": "2026-01-07T17:28:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Building attempt from DietPi",
+      "url": "https://github.com/FEX-Emu/FEX/issues/5194",
+      "created_at": "2026-01-03T18:12:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'matcha.models.components.decoder'",
+      "url": "https://github.com/filliptm/ComfyUI_FL-CosyVoice3/issues/12",
+      "created_at": "2026-01-27T06:04:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "❌ [Qwen3-TTS] Model class is not loaded because the 'qwen_tts' package failed to import. Please check the ComfyUI console for the detailed 'Critical Import Error' above.",
+      "url": "https://github.com/flybirdxx/ComfyUI-Qwen-TTS/issues/26",
+      "created_at": "2026-01-24T19:58:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] (Probably just a me issue) Cannot Compile The Project",
+      "url": "https://github.com/GBALATRO/balatro-gba/issues/376",
+      "created_at": "2026-01-27T04:41:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'distutils' when target python version >= 3.12",
+      "url": "https://github.com/gluster/gluster-ansible-collection/issues/34",
+      "created_at": "2026-01-27T05:47:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "提示 未找到微信注册表路径，可能安装未安装3.9版本PC微信或手动删除注册表",
+      "url": "https://github.com/Hello-Mr-Crab/pywechat/issues/145",
+      "created_at": "2026-01-08T17:31:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🔧 Deployment Failure: Deploy to Azure",
+      "url": "https://github.com/ismaelloveexcel/AZURE-DEPLOYMENT-HR-PORTAL/issues/108",
+      "created_at": "2026-01-25T11:49:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Dependency Issue with Transformers 5.0",
+      "url": "https://github.com/microsoft/VibeVoice/issues/215",
+      "created_at": "2026-01-26T19:45:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "npbackup windows too large for 1080p screen",
+      "url": "https://github.com/netinvent/npbackup/issues/175",
+      "created_at": "2026-01-04T18:10:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Couldn't load plugin from .zip",
+      "url": "https://github.com/nlebovits/censo-argentino-qgis/issues/9",
+      "created_at": "2026-01-26T19:41:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Missing module \"omni.client\" when running end-to-end workflows",
+      "url": "https://github.com/nvidia-cosmos/cosmos-cookbook/issues/130",
+      "created_at": "2026-01-05T08:21:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No module named 'megatron.bridge' when using Torchrun in Docker",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/issues/2074",
+      "created_at": "2026-01-27T01:41:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Cannot override coordinates",
+      "url": "https://github.com/originalankur/maptoposter/issues/132",
+      "created_at": "2026-01-26T18:49:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Dependency issues with numpy and chemprop",
+      "url": "https://github.com/swansonk14/SyntheMol/issues/28",
+      "created_at": "2026-01-09T08:22:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Missing dependencies (onnxruntime, sox) for Qwen3-TTS model support",
+      "url": "https://github.com/vllm-project/vllm-omni/issues/945",
+      "created_at": "2026-01-25T23:28:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "MacOS Dev Setup",
+      "url": "https://github.com/voicetreelab/voicetree/issues/1",
+      "created_at": "2026-01-27T04:05:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: pgbouncer incorrectly applies global .Values.volumes / .Values.volumeMounts",
+      "url": "https://github.com/apache/airflow/issues/61062"
+    },
+    {
+      "label": "github: [erk-learn] Consolidate Gateways Phases 4-7: Move BranchManager, PromptExecutor, ClaudeInstallation, and LiveDis",
+      "url": "https://github.com/dagster-io/erk/issues/6147"
+    },
+    {
+      "label": "github: [Unclear Behavior] Where to clone to? Where to run from? Which Python environment gets updated?",
+      "url": "https://github.com/DazzleML/comfyui-triton-and-sageattention-installer/issues/25"
+    },
+    {
+      "label": "github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]",
+      "url": "https://github.com/dotnet/runtime/issues/122979"
+    },
+    {
+      "label": "github: Building attempt from DietPi",
+      "url": "https://github.com/FEX-Emu/FEX/issues/5194"
+    },
+    {
+      "label": "github: ModuleNotFoundError: No module named 'matcha.models.components.decoder'",
+      "url": "https://github.com/filliptm/ComfyUI_FL-CosyVoice3/issues/12"
+    },
+    {
+      "label": "github: ❌ [Qwen3-TTS] Model class is not loaded because the 'qwen_tts' package failed to import. Please check the ComfyUI console for the detailed 'Critical Import Error' above.",
+      "url": "https://github.com/flybirdxx/ComfyUI-Qwen-TTS/issues/26"
+    },
+    {
+      "label": "github: [BUG] (Probably just a me issue) Cannot Compile The Project",
+      "url": "https://github.com/GBALATRO/balatro-gba/issues/376"
+    },
+    {
+      "label": "github: ModuleNotFoundError: No module named 'distutils' when target python version >= 3.12",
+      "url": "https://github.com/gluster/gluster-ansible-collection/issues/34"
+    },
+    {
+      "label": "github: 提示 未找到微信注册表路径，可能安装未安装3.9版本PC微信或手动删除注册表",
+      "url": "https://github.com/Hello-Mr-Crab/pywechat/issues/145"
+    },
+    {
+      "label": "github: 🔧 Deployment Failure: Deploy to Azure",
+      "url": "https://github.com/ismaelloveexcel/AZURE-DEPLOYMENT-HR-PORTAL/issues/108"
+    },
+    {
+      "label": "github: Dependency Issue with Transformers 5.0",
+      "url": "https://github.com/microsoft/VibeVoice/issues/215"
+    },
+    {
+      "label": "github: npbackup windows too large for 1080p screen",
+      "url": "https://github.com/netinvent/npbackup/issues/175"
+    },
+    {
+      "label": "github: Couldn't load plugin from .zip",
+      "url": "https://github.com/nlebovits/censo-argentino-qgis/issues/9"
+    },
+    {
+      "label": "github: [BUG] Missing module \"omni.client\" when running end-to-end workflows",
+      "url": "https://github.com/nvidia-cosmos/cosmos-cookbook/issues/130"
+    },
+    {
+      "label": "github: No module named 'megatron.bridge' when using Torchrun in Docker",
+      "url": "https://github.com/NVIDIA-NeMo/Megatron-Bridge/issues/2074"
+    },
+    {
+      "label": "github: Cannot override coordinates",
+      "url": "https://github.com/originalankur/maptoposter/issues/132"
+    },
+    {
+      "label": "github: Dependency issues with numpy and chemprop",
+      "url": "https://github.com/swansonk14/SyntheMol/issues/28"
+    },
+    {
+      "label": "github: [Bug]: Missing dependencies (onnxruntime, sox) for Qwen3-TTS model support",
+      "url": "https://github.com/vllm-project/vllm-omni/issues/945"
+    },
+    {
+      "label": "github: MacOS Dev Setup",
+      "url": "https://github.com/voicetreelab/voicetree/issues/1"
+    }
+  ],
+  "meta": {
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-python-modulenotfounderror-202601270817",
+    "generated_at": "2026-01-27T08:17:29.6094273Z",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）"
+  }
+}
