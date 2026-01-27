@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/agit8or1/huduglue/issues/4'>when trying to sync to tactical rmm</a> <small>[github] 2026-01-12</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/allenai/rslearn/issues/449'>bug: OlmoEarth missing dependency olmoearth_pretrain</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/CharlesPikachu/videodl/issues/51'>[Bug]: curl_cffi should be disabled by default, but app cannot launch without it</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Comfy-Org/ComfyUI/issues/12077'>Not working</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/crt26/PQC-LEO/issues/77'>setup.sh fails to complete installation</a> <small>[github] 2026-01-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/dagster-io/erk/issues/6147'>[erk-learn] Consolidate Gateways Phases 4-7: Move BranchManager, PromptExecutor, ClaudeInstallation, and LiveDis</a> <small>[github] 2026-01-26</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/DazzleML/comfyui-triton-and-sageattention-installer/issues/25'>[Unclear Behavior] Where to clone to? Where to run from? Which Python environment gets updated?</a> <small>[github] 2026-01-24</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/dotnet/runtime/issues/122979'>[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]</a> <small>[github] 2026-01-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/dummylabs/thewatchman/issues/222'>After update for the  v0.8.1 2026-01-25 it briked my HA</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/flybirdxx/ComfyUI-Qwen-TTS/issues/41'>❌ [Qwen3-TTS] Model class is not loaded because the 'qwen_tts' package failed to import.</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/idiap/coqui-ai-TTS/issues/546'>[Bug] Error that Pytorch is not installed</a> <small>[github] 2026-01-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/inyourface34456/rug_auto_daily/issues/1'>UC Package Error</a> <small>[github] 2026-01-12</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ismaelloveexcel/AZURE-DEPLOYMENT-HR-PORTAL/issues/108'>🔧 Deployment Failure: Deploy to Azure</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/kelsorj/Concept2-PM5-Rowing-Video-Analysis/issues/1'>No module named 'cv2'</a> <small>[github] 2026-01-26</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/langgenius/dify/issues/30529'>launch local plugin failed: failed to check virtual environment: failed to find python:</a> <small>[github] 2026-01-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/netinvent/npbackup/issues/175'>npbackup windows too large for 1080p screen</a> <small>[github] 2026-01-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/nvidia-cosmos/cosmos-cookbook/issues/130'>[BUG] Missing module "omni.client" when running end-to-end workflows</a> <small>[github] 2026-01-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/NVIDIA/spark-rapids-benchmarks/issues/244'>[BUG] NDS2.0 test fails with ModuleNotFoundError: No module named 'spark_utils'</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ROCm/ROCm/issues/5871'>[Issue]: amdhip64_7.dll crash (0xc0000005) on Windows 11 with RX 7900 XTX during PyTorch inference</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/UBC-MDS/autoeda/issues/36'>Peer review - Group 5</a> <small>[github] 2026-01-27</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/agit8or1/huduglue/issues/4'>github: when trying to sync to tactical rmm</a></li>
+<li><a href='https://github.com/allenai/rslearn/issues/449'>github: bug: OlmoEarth missing dependency olmoearth_pretrain</a></li>
+<li><a href='https://github.com/CharlesPikachu/videodl/issues/51'>github: [Bug]: curl_cffi should be disabled by default, but app cannot launch without it</a></li>
+<li><a href='https://github.com/Comfy-Org/ComfyUI/issues/12077'>github: Not working</a></li>
+<li><a href='https://github.com/crt26/PQC-LEO/issues/77'>github: setup.sh fails to complete installation</a></li>
+<li><a href='https://github.com/dagster-io/erk/issues/6147'>github: [erk-learn] Consolidate Gateways Phases 4-7: Move BranchManager, PromptExecutor, ClaudeInstallation, and LiveDis</a></li>
+<li><a href='https://github.com/DazzleML/comfyui-triton-and-sageattention-installer/issues/25'>github: [Unclear Behavior] Where to clone to? Where to run from? Which Python environment gets updated?</a></li>
+<li><a href='https://github.com/dotnet/runtime/issues/122979'>github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]</a></li>
+<li><a href='https://github.com/dummylabs/thewatchman/issues/222'>github: After update for the  v0.8.1 2026-01-25 it briked my HA</a></li>
+<li><a href='https://github.com/flybirdxx/ComfyUI-Qwen-TTS/issues/41'>github: ❌ [Qwen3-TTS] Model class is not loaded because the 'qwen_tts' package failed to import.</a></li>
+<li><a href='https://github.com/idiap/coqui-ai-TTS/issues/546'>github: [Bug] Error that Pytorch is not installed</a></li>
+<li><a href='https://github.com/inyourface34456/rug_auto_daily/issues/1'>github: UC Package Error</a></li>
+<li><a href='https://github.com/ismaelloveexcel/AZURE-DEPLOYMENT-HR-PORTAL/issues/108'>github: 🔧 Deployment Failure: Deploy to Azure</a></li>
+<li><a href='https://github.com/kelsorj/Concept2-PM5-Rowing-Video-Analysis/issues/1'>github: No module named 'cv2'</a></li>
+<li><a href='https://github.com/langgenius/dify/issues/30529'>github: launch local plugin failed: failed to check virtual environment: failed to find python:</a></li>
+<li><a href='https://github.com/netinvent/npbackup/issues/175'>github: npbackup windows too large for 1080p screen</a></li>
+<li><a href='https://github.com/nvidia-cosmos/cosmos-cookbook/issues/130'>github: [BUG] Missing module "omni.client" when running end-to-end workflows</a></li>
+<li><a href='https://github.com/NVIDIA/spark-rapids-benchmarks/issues/244'>github: [BUG] NDS2.0 test fails with ModuleNotFoundError: No module named 'spark_utils'</a></li>
+<li><a href='https://github.com/ROCm/ROCm/issues/5871'>github: [Issue]: amdhip64_7.dll crash (0xc0000005) on Windows 11 with RX 7900 XTX during PyTorch inference</a></li>
+<li><a href='https://github.com/UBC-MDS/autoeda/issues/36'>github: Peer review - Group 5</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-01-27T00:56:23.7121587Z</small></p>
+</main>
+</body>
+</html>

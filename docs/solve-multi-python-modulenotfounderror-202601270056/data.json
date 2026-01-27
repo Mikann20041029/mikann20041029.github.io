@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "when trying to sync to tactical rmm",
+      "url": "https://github.com/agit8or1/huduglue/issues/4",
+      "created_at": "2026-01-12T02:55:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: OlmoEarth missing dependency olmoearth_pretrain",
+      "url": "https://github.com/allenai/rslearn/issues/449",
+      "created_at": "2026-01-25T02:15:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: curl_cffi should be disabled by default, but app cannot launch without it",
+      "url": "https://github.com/CharlesPikachu/videodl/issues/51",
+      "created_at": "2026-01-25T10:28:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Not working",
+      "url": "https://github.com/Comfy-Org/ComfyUI/issues/12077",
+      "created_at": "2026-01-25T22:33:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "setup.sh fails to complete installation",
+      "url": "https://github.com/crt26/PQC-LEO/issues/77",
+      "created_at": "2026-01-23T19:54:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[erk-learn] Consolidate Gateways Phases 4-7: Move BranchManager, PromptExecutor, ClaudeInstallation, and LiveDis",
+      "url": "https://github.com/dagster-io/erk/issues/6147",
+      "created_at": "2026-01-26T23:08:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Unclear Behavior] Where to clone to? Where to run from? Which Python environment gets updated?",
+      "url": "https://github.com/DazzleML/comfyui-triton-and-sageattention-installer/issues/25",
+      "created_at": "2026-01-24T23:29:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]",
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "created_at": "2026-01-07T17:28:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "After update for the  v0.8.1 2026-01-25 it briked my HA",
+      "url": "https://github.com/dummylabs/thewatchman/issues/222",
+      "created_at": "2026-01-25T21:48:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "❌ [Qwen3-TTS] Model class is not loaded because the 'qwen_tts' package failed to import.",
+      "url": "https://github.com/flybirdxx/ComfyUI-Qwen-TTS/issues/41",
+      "created_at": "2026-01-25T22:09:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] Error that Pytorch is not installed",
+      "url": "https://github.com/idiap/coqui-ai-TTS/issues/546",
+      "created_at": "2026-01-23T08:30:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "UC Package Error",
+      "url": "https://github.com/inyourface34456/rug_auto_daily/issues/1",
+      "created_at": "2026-01-12T01:19:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🔧 Deployment Failure: Deploy to Azure",
+      "url": "https://github.com/ismaelloveexcel/AZURE-DEPLOYMENT-HR-PORTAL/issues/108",
+      "created_at": "2026-01-25T11:49:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No module named 'cv2'",
+      "url": "https://github.com/kelsorj/Concept2-PM5-Rowing-Video-Analysis/issues/1",
+      "created_at": "2026-01-26T22:24:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "launch local plugin failed: failed to check virtual environment: failed to find python:",
+      "url": "https://github.com/langgenius/dify/issues/30529",
+      "created_at": "2026-01-04T11:54:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "npbackup windows too large for 1080p screen",
+      "url": "https://github.com/netinvent/npbackup/issues/175",
+      "created_at": "2026-01-04T18:10:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Missing module \"omni.client\" when running end-to-end workflows",
+      "url": "https://github.com/nvidia-cosmos/cosmos-cookbook/issues/130",
+      "created_at": "2026-01-05T08:21:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] NDS2.0 test fails with ModuleNotFoundError: No module named 'spark_utils'",
+      "url": "https://github.com/NVIDIA/spark-rapids-benchmarks/issues/244",
+      "created_at": "2026-01-25T04:04:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Issue]: amdhip64_7.dll crash (0xc0000005) on Windows 11 with RX 7900 XTX during PyTorch inference",
+      "url": "https://github.com/ROCm/ROCm/issues/5871",
+      "created_at": "2026-01-21T01:28:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Peer review - Group 5",
+      "url": "https://github.com/UBC-MDS/autoeda/issues/36",
+      "created_at": "2026-01-27T00:07:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202601270056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/agit8or1/huduglue/issues/4",
+      "label": "github: when trying to sync to tactical rmm"
+    },
+    {
+      "url": "https://github.com/allenai/rslearn/issues/449",
+      "label": "github: bug: OlmoEarth missing dependency olmoearth_pretrain"
+    },
+    {
+      "url": "https://github.com/CharlesPikachu/videodl/issues/51",
+      "label": "github: [Bug]: curl_cffi should be disabled by default, but app cannot launch without it"
+    },
+    {
+      "url": "https://github.com/Comfy-Org/ComfyUI/issues/12077",
+      "label": "github: Not working"
+    },
+    {
+      "url": "https://github.com/crt26/PQC-LEO/issues/77",
+      "label": "github: setup.sh fails to complete installation"
+    },
+    {
+      "url": "https://github.com/dagster-io/erk/issues/6147",
+      "label": "github: [erk-learn] Consolidate Gateways Phases 4-7: Move BranchManager, PromptExecutor, ClaudeInstallation, and LiveDis"
+    },
+    {
+      "url": "https://github.com/DazzleML/comfyui-triton-and-sageattention-installer/issues/25",
+      "label": "github: [Unclear Behavior] Where to clone to? Where to run from? Which Python environment gets updated?"
+    },
+    {
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "label": "github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]"
+    },
+    {
+      "url": "https://github.com/dummylabs/thewatchman/issues/222",
+      "label": "github: After update for the  v0.8.1 2026-01-25 it briked my HA"
+    },
+    {
+      "url": "https://github.com/flybirdxx/ComfyUI-Qwen-TTS/issues/41",
+      "label": "github: ❌ [Qwen3-TTS] Model class is not loaded because the 'qwen_tts' package failed to import."
+    },
+    {
+      "url": "https://github.com/idiap/coqui-ai-TTS/issues/546",
+      "label": "github: [Bug] Error that Pytorch is not installed"
+    },
+    {
+      "url": "https://github.com/inyourface34456/rug_auto_daily/issues/1",
+      "label": "github: UC Package Error"
+    },
+    {
+      "url": "https://github.com/ismaelloveexcel/AZURE-DEPLOYMENT-HR-PORTAL/issues/108",
+      "label": "github: 🔧 Deployment Failure: Deploy to Azure"
+    },
+    {
+      "url": "https://github.com/kelsorj/Concept2-PM5-Rowing-Video-Analysis/issues/1",
+      "label": "github: No module named 'cv2'"
+    },
+    {
+      "url": "https://github.com/langgenius/dify/issues/30529",
+      "label": "github: launch local plugin failed: failed to check virtual environment: failed to find python:"
+    },
+    {
+      "url": "https://github.com/netinvent/npbackup/issues/175",
+      "label": "github: npbackup windows too large for 1080p screen"
+    },
+    {
+      "url": "https://github.com/nvidia-cosmos/cosmos-cookbook/issues/130",
+      "label": "github: [BUG] Missing module \"omni.client\" when running end-to-end workflows"
+    },
+    {
+      "url": "https://github.com/NVIDIA/spark-rapids-benchmarks/issues/244",
+      "label": "github: [BUG] NDS2.0 test fails with ModuleNotFoundError: No module named 'spark_utils'"
+    },
+    {
+      "url": "https://github.com/ROCm/ROCm/issues/5871",
+      "label": "github: [Issue]: amdhip64_7.dll crash (0xc0000005) on Windows 11 with RX 7900 XTX during PyTorch inference"
+    },
+    {
+      "url": "https://github.com/UBC-MDS/autoeda/issues/36",
+      "label": "github: Peer review - Group 5"
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-01-27T00:56:23.7121587Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "slug": "solve-multi-python-modulenotfounderror-202601270056"
+  }
+}
