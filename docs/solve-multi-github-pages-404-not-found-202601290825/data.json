@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "slug": "solve-multi-github-pages-404-not-found-202601290825",
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "generated_at": "2026-01-29T08:25:34.4604271Z",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "Nicer adding/installations of github repositories",
+      "url": "https://github.com/A2-ai/rv/issues/404",
+      "created_at": "2026-01-28T22:26:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Documentation: Add WebSocket Protocol Documentation",
+      "url": "https://github.com/acikabubo/fastapi-http-websocket/issues/135",
+      "created_at": "2026-01-11T06:33:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Stage 4.5: UX Enhancements & SEO Optimization — App",
+      "url": "https://github.com/bryce-seefieldt/portfolio-app/issues/62",
+      "created_at": "2026-01-28T22:03:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Stage 4.3: Observability & Operational Readiness — Docs",
+      "url": "https://github.com/bryce-seefieldt/portfolio-docs/issues/63",
+      "created_at": "2026-01-26T21:43:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Link Checker Report: Broken links found",
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/21",
+      "created_at": "2026-01-29T06:10:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Manifold 3 dpk application - No USB serial port access",
+      "url": "https://github.com/dji-sdk/Payload-SDK/issues/404",
+      "created_at": "2026-01-27T22:12:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Vercel deploy",
+      "url": "https://github.com/kakao-try-catch/main-game/issues/404",
+      "created_at": "2026-01-29T01:15:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Does Gemini plugin support Veo2 or Veo3 video models?",
+      "url": "https://github.com/langgenius/dify-official-plugins/issues/2361",
+      "created_at": "2026-01-05T06:48:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[AI 소송] YouTube/Google had used their AI to terminate my AdSense",
+      "url": "https://github.com/leemgs/ai-law-suit-tracker/issues/404",
+      "created_at": "2026-01-29T06:46:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Create a 404 NotFound Page",
+      "url": "https://github.com/Lumina-eX/AnonChat/issues/19",
+      "created_at": "2026-01-23T15:30:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-01-29T01:01:03.2413702Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/54",
+      "created_at": "2026-01-29T01:01:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🛑 repiped.wireway.ch is down",
+      "url": "https://github.com/obvTiger/monitor/issues/404",
+      "created_at": "2026-01-29T01:53:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "feat: Helpdesk Module",
+      "url": "https://github.com/open-mercato/open-mercato/issues/430",
+      "created_at": "2026-01-24T11:49:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Web Extractor return only title for cnb.cool",
+      "url": "https://github.com/opendatalab/MinerU/issues/4385",
+      "created_at": "2026-01-18T03:38:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Lennox iComfort S30 alerts_num_in_active_array vs alert_list inconsistency",
+      "url": "https://github.com/PeteRager/lennoxs30/issues/404",
+      "created_at": "2026-01-27T13:28:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "RA061: Avoid raw pointer arithmetic",
+      "url": "https://github.com/RAprogramm/masterror/issues/404",
+      "created_at": "2026-01-29T08:09:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Protect private routes and restrict access to authenticated users only",
+      "url": "https://github.com/Renu-code123/ExpenseFlow/issues/404",
+      "created_at": "2026-01-28T09:09:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Optional alternative: GitHub Actions-ready fork (fully compatible with all params)",
+      "url": "https://github.com/ryo-ma/github-profile-trophy/issues/404",
+      "created_at": "2026-01-18T05:48:22.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Draft a typescript bun rust website for stevedores.org",
+      "url": "https://github.com/stevedores-org/stevedores.org/issues/3",
+      "created_at": "2026-01-29T04:04:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[MEDIUM] Duplicate rate limiting logic between create_task and create_dependent_task",
+      "url": "https://github.com/tetsuo-ai/AgenC/issues/404",
+      "created_at": "2026-01-29T00:14:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601290825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/A2-ai/rv/issues/404",
+      "label": "github: Nicer adding/installations of github repositories"
+    },
+    {
+      "url": "https://github.com/acikabubo/fastapi-http-websocket/issues/135",
+      "label": "github: Documentation: Add WebSocket Protocol Documentation"
+    },
+    {
+      "url": "https://github.com/bryce-seefieldt/portfolio-app/issues/62",
+      "label": "github: Stage 4.5: UX Enhancements & SEO Optimization — App"
+    },
+    {
+      "url": "https://github.com/bryce-seefieldt/portfolio-docs/issues/63",
+      "label": "github: Stage 4.3: Observability & Operational Readiness — Docs"
+    },
+    {
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/21",
+      "label": "github: Link Checker Report: Broken links found"
+    },
+    {
+      "url": "https://github.com/dji-sdk/Payload-SDK/issues/404",
+      "label": "github: Manifold 3 dpk application - No USB serial port access"
+    },
+    {
+      "url": "https://github.com/kakao-try-catch/main-game/issues/404",
+      "label": "github: Vercel deploy"
+    },
+    {
+      "url": "https://github.com/langgenius/dify-official-plugins/issues/2361",
+      "label": "github: Does Gemini plugin support Veo2 or Veo3 video models?"
+    },
+    {
+      "url": "https://github.com/leemgs/ai-law-suit-tracker/issues/404",
+      "label": "github: [AI 소송] YouTube/Google had used their AI to terminate my AdSense"
+    },
+    {
+      "url": "https://github.com/Lumina-eX/AnonChat/issues/19",
+      "label": "github: Create a 404 NotFound Page"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/54",
+      "label": "github: mikann-autogen digest 2026-01-29T01:01:03.2413702Z"
+    },
+    {
+      "url": "https://github.com/obvTiger/monitor/issues/404",
+      "label": "github: 🛑 repiped.wireway.ch is down"
+    },
+    {
+      "url": "https://github.com/open-mercato/open-mercato/issues/430",
+      "label": "github: feat: Helpdesk Module"
+    },
+    {
+      "url": "https://github.com/opendatalab/MinerU/issues/4385",
+      "label": "github: Web Extractor return only title for cnb.cool"
+    },
+    {
+      "url": "https://github.com/PeteRager/lennoxs30/issues/404",
+      "label": "github: Lennox iComfort S30 alerts_num_in_active_array vs alert_list inconsistency"
+    },
+    {
+      "url": "https://github.com/RAprogramm/masterror/issues/404",
+      "label": "github: RA061: Avoid raw pointer arithmetic"
+    },
+    {
+      "url": "https://github.com/Renu-code123/ExpenseFlow/issues/404",
+      "label": "github: Protect private routes and restrict access to authenticated users only"
+    },
+    {
+      "url": "https://github.com/ryo-ma/github-profile-trophy/issues/404",
+      "label": "github: Optional alternative: GitHub Actions-ready fork (fully compatible with all params)"
+    },
+    {
+      "url": "https://github.com/stevedores-org/stevedores.org/issues/3",
+      "label": "github: Draft a typescript bun rust website for stevedores.org"
+    },
+    {
+      "url": "https://github.com/tetsuo-ai/AgenC/issues/404",
+      "label": "github: [MEDIUM] Duplicate rate limiting logic between create_task and create_dependent_task"
+    }
+  ]
+}
