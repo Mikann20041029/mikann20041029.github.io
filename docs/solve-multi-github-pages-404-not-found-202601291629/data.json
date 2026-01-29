@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: Challenge editorial/hints page missing",
+      "url": "https://github.com/ANU-2524/JustCoding/issues/404"
+    },
+    {
+      "label": "github: Navigation Mega Menus overlap when one is clicked and another is hovered",
+      "url": "https://github.com/cardano-foundation/cardano-org/issues/404"
+    },
+    {
+      "label": "github: UI/UX Design: Design and implement error pages (404, 500, and other error states)",
+      "url": "https://github.com/Commitlabs-Org/Commitlabs-Frontend/issues/11"
+    },
+    {
+      "label": "github: New Composer tag: 2.9.5",
+      "url": "https://github.com/composer/docker/issues/404"
+    },
+    {
+      "label": "github: [TASK] Simulation/Projects flow",
+      "url": "https://github.com/EPFL-ENAC/co2-calculator/issues/404"
+    },
+    {
+      "label": "github: Enemy: Ice Dragon (Red)",
+      "url": "https://github.com/eshaffer321/MageKnight/issues/404"
+    },
+    {
+      "label": "github: Hosting on GitHub pages breaks the app",
+      "url": "https://github.com/fisiognomico/webusb-unpinner/issues/1"
+    },
+    {
+      "label": "github: FA: Define functionalities for the SmartDots webapp to select and copy annotations in batch into a ref col (age & maturity)",
+      "url": "https://github.com/ices-eg/SmartDots/issues/404"
+    },
+    {
+      "label": "github: Anvay Vahia Individual Review",
+      "url": "https://github.com/illuminati1618/pages-databaseguys-sprint4/issues/55"
+    },
+    {
+      "label": "github: Afficher/Cacher les probabilités sur les liens dans le builder",
+      "url": "https://github.com/JeremieLeymarie/story-builder/issues/404"
+    },
+    {
+      "label": "github: [Docs] Broken \"Sign In\" link, widespread 404 errors, and missing content (Auto Approve...)",
+      "url": "https://github.com/Kilo-Org/kilocode/issues/5483"
+    },
+    {
+      "label": "github: News page cards show missing images + console 404 errors for /page-data/company/news/*",
+      "url": "https://github.com/layer5io/layer5/issues/7374"
+    },
+    {
+      "label": "github: Capstone Demo: Mock-to-Fake Migration Video",
+      "url": "https://github.com/mikelane/dioxide/issues/404"
+    },
+    {
+      "label": "github: Collaboration Wopi with OnlyOffice not working (NixOS)",
+      "url": "https://github.com/opencloud-eu/opencloud/issues/2180"
+    },
+    {
+      "label": "github: Review region enable/disable page",
+      "url": "https://github.com/pendulum-project/nts-pool/issues/404"
+    },
+    {
+      "label": "github: WriteEngine memory exhaustion protection needed",
+      "url": "https://github.com/pmcfadin/cqlite/issues/404"
+    },
+    {
+      "label": "github: YouTube Automation Failed: Secrets May Be Expired",
+      "url": "https://github.com/shashan-kh/MrBeast-clips-yt-Automation/issues/404"
+    },
+    {
+      "label": "github: Pairing Session: Connor F",
+      "url": "https://github.com/sourceallies/interviews/issues/404"
+    },
+    {
+      "label": "github: Upgrade testing in devupgrade env",
+      "url": "https://github.com/Test-unito/inji-certify/issues/404"
+    },
+    {
+      "label": "github: 🛑 Credo Join is down",
+      "url": "https://github.com/toothpaster/upptime/issues/404"
+    }
+  ],
+  "meta": {
+    "slug": "solve-multi-github-pages-404-not-found-202601291629",
+    "generated_at": "2026-01-29T16:29:19.7635864Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "Challenge editorial/hints page missing",
+      "url": "https://github.com/ANU-2524/JustCoding/issues/404",
+      "created_at": "2026-01-29T12:55:40.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Navigation Mega Menus overlap when one is clicked and another is hovered",
+      "url": "https://github.com/cardano-foundation/cardano-org/issues/404",
+      "created_at": "2026-01-26T15:06:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "UI/UX Design: Design and implement error pages (404, 500, and other error states)",
+      "url": "https://github.com/Commitlabs-Org/Commitlabs-Frontend/issues/11",
+      "created_at": "2026-01-18T18:54:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "New Composer tag: 2.9.5",
+      "url": "https://github.com/composer/docker/issues/404",
+      "created_at": "2026-01-29T10:43:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[TASK] Simulation/Projects flow",
+      "url": "https://github.com/EPFL-ENAC/co2-calculator/issues/404",
+      "created_at": "2026-01-29T09:21:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Enemy: Ice Dragon (Red)",
+      "url": "https://github.com/eshaffer321/MageKnight/issues/404",
+      "created_at": "2026-01-29T15:11:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Hosting on GitHub pages breaks the app",
+      "url": "https://github.com/fisiognomico/webusb-unpinner/issues/1",
+      "created_at": "2026-01-15T14:08:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "FA: Define functionalities for the SmartDots webapp to select and copy annotations in batch into a ref col (age & maturity)",
+      "url": "https://github.com/ices-eg/SmartDots/issues/404",
+      "created_at": "2026-01-28T14:35:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Anvay Vahia Individual Review",
+      "url": "https://github.com/illuminati1618/pages-databaseguys-sprint4/issues/55",
+      "created_at": "2026-01-23T03:47:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Afficher/Cacher les probabilités sur les liens dans le builder",
+      "url": "https://github.com/JeremieLeymarie/story-builder/issues/404",
+      "created_at": "2026-01-29T14:22:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Docs] Broken \"Sign In\" link, widespread 404 errors, and missing content (Auto Approve...)",
+      "url": "https://github.com/Kilo-Org/kilocode/issues/5483",
+      "created_at": "2026-01-29T00:44:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "News page cards show missing images + console 404 errors for /page-data/company/news/*",
+      "url": "https://github.com/layer5io/layer5/issues/7374",
+      "created_at": "2026-01-25T18:31:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Capstone Demo: Mock-to-Fake Migration Video",
+      "url": "https://github.com/mikelane/dioxide/issues/404",
+      "created_at": "2026-01-29T15:35:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Collaboration Wopi with OnlyOffice not working (NixOS)",
+      "url": "https://github.com/opencloud-eu/opencloud/issues/2180",
+      "created_at": "2026-01-19T16:14:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Review region enable/disable page",
+      "url": "https://github.com/pendulum-project/nts-pool/issues/404",
+      "created_at": "2026-01-29T11:29:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "WriteEngine memory exhaustion protection needed",
+      "url": "https://github.com/pmcfadin/cqlite/issues/404",
+      "created_at": "2026-01-29T15:27:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "YouTube Automation Failed: Secrets May Be Expired",
+      "url": "https://github.com/shashan-kh/MrBeast-clips-yt-Automation/issues/404",
+      "created_at": "2026-01-29T09:41:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Pairing Session: Connor F",
+      "url": "https://github.com/sourceallies/interviews/issues/404",
+      "created_at": "2026-01-29T15:10:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Upgrade testing in devupgrade env",
+      "url": "https://github.com/Test-unito/inji-certify/issues/404",
+      "created_at": "2026-01-28T14:38:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🛑 Credo Join is down",
+      "url": "https://github.com/toothpaster/upptime/issues/404",
+      "created_at": "2026-01-29T08:31:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202601291629/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
