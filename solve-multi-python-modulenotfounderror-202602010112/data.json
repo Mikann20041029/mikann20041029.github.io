@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-02-01T01:12:03.6093189Z",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "slug": "solve-multi-python-modulenotfounderror-202602010112"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "Requires chrome version newer than current stable version. \"This version of ChromeDriver only supports Chrome version 145 Current browser version is 144.0.7559.110\"",
+      "url": "https://github.com/carl0smat3us/undetected/issues/8",
+      "created_at": "2026-01-29T20:37:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] Qwen3-TTS cloning error. V. 4.19.12",
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/238",
+      "created_at": "2026-01-30T23:22:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]",
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "created_at": "2026-01-07T17:28:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bug: Invalid requirement error when installing demucs (extra empty string in pip command)",
+      "url": "https://github.com/DrewThomasson/ebook2audiobook/issues/1603",
+      "created_at": "2026-01-30T07:02:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "After update for the  v0.8.1 2026-01-25 it briked my HA",
+      "url": "https://github.com/dummylabs/thewatchman/issues/222",
+      "created_at": "2026-01-25T21:48:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Gamelauncher not working",
+      "url": "https://github.com/HyDE-Project/HyDE/issues/1577",
+      "created_at": "2026-01-27T22:04:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Newly opened windows attaching to existing scratchpads",
+      "url": "https://github.com/hyprland-community/pyprland/issues/202",
+      "created_at": "2026-01-04T17:49:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Installation Error",
+      "url": "https://github.com/jordoh/ComfyUI-Deepface/issues/8",
+      "created_at": "2026-02-01T00:22:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Installing on MacOS?",
+      "url": "https://github.com/kunwarmahen/audio-transcriber/issues/1",
+      "created_at": "2026-01-31T21:37:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Need more Examples",
+      "url": "https://github.com/langchain-ai/deepagents/issues/951",
+      "created_at": "2026-01-29T12:17:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Starting Kiri also opens eeschema",
+      "url": "https://github.com/leoheck/kiri/issues/141",
+      "created_at": "2026-01-30T12:36:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No module named 'dotenv' on NixOS",
+      "url": "https://github.com/MidnightJava/led-matrix/issues/41",
+      "created_at": "2026-01-31T15:15:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fails to import isolated from comfy_env",
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-SAM3DBody/issues/31",
+      "created_at": "2026-01-29T16:39:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[tests] ModuleNotFoundError: No module named 'ray._raylet'",
+      "url": "https://github.com/ray-project/ray/issues/60638",
+      "created_at": "2026-01-31T16:05:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "loom-tools Python tests fail to import: ModuleNotFoundError for loom_tools",
+      "url": "https://github.com/rjwalters/loom/issues/1885",
+      "created_at": "2026-01-31T22:46:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "feat(pipeline): Pipeline Class for Multi-Pipeline Support (Phase 2)",
+      "url": "https://github.com/sjawhar/pivot/issues/309",
+      "created_at": "2026-01-31T18:52:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Missing Python Package Structure (init.py files)",
+      "url": "https://github.com/sr-857/AstraGuard-AI-Apertre-3.0/issues/3",
+      "created_at": "2026-01-31T23:38:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Cannot use template2define2-1.py",
+      "url": "https://github.com/swhume/template2define/issues/2",
+      "created_at": "2026-01-28T16:43:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Implement validate_contract and associated test cases",
+      "url": "https://github.com/UBC-MDS/DSCI_524_G26_Data_Validation/issues/22",
+      "created_at": "2026-01-14T23:07:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Set up GitHub Actions workflow for continuous integration",
+      "url": "https://github.com/UBC-MDS/DSCI_524_G26_Data_Validation/issues/32",
+      "created_at": "2026-01-21T23:40:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010112/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/carl0smat3us/undetected/issues/8",
+      "label": "github: Requires chrome version newer than current stable version. \"This version of ChromeDriver only supports Chrome version 145 Current browser version is 144.0.7559.110\""
+    },
+    {
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/238",
+      "label": "github: [Bug] Qwen3-TTS cloning error. V. 4.19.12"
+    },
+    {
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "label": "github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]"
+    },
+    {
+      "url": "https://github.com/DrewThomasson/ebook2audiobook/issues/1603",
+      "label": "github: Bug: Invalid requirement error when installing demucs (extra empty string in pip command)"
+    },
+    {
+      "url": "https://github.com/dummylabs/thewatchman/issues/222",
+      "label": "github: After update for the  v0.8.1 2026-01-25 it briked my HA"
+    },
+    {
+      "url": "https://github.com/HyDE-Project/HyDE/issues/1577",
+      "label": "github: [Bug]: Gamelauncher not working"
+    },
+    {
+      "url": "https://github.com/hyprland-community/pyprland/issues/202",
+      "label": "github: [BUG] Newly opened windows attaching to existing scratchpads"
+    },
+    {
+      "url": "https://github.com/jordoh/ComfyUI-Deepface/issues/8",
+      "label": "github: Installation Error"
+    },
+    {
+      "url": "https://github.com/kunwarmahen/audio-transcriber/issues/1",
+      "label": "github: Installing on MacOS?"
+    },
+    {
+      "url": "https://github.com/langchain-ai/deepagents/issues/951",
+      "label": "github: Need more Examples"
+    },
+    {
+      "url": "https://github.com/leoheck/kiri/issues/141",
+      "label": "github: Starting Kiri also opens eeschema"
+    },
+    {
+      "url": "https://github.com/MidnightJava/led-matrix/issues/41",
+      "label": "github: No module named 'dotenv' on NixOS"
+    },
+    {
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-SAM3DBody/issues/31",
+      "label": "github: fails to import isolated from comfy_env"
+    },
+    {
+      "url": "https://github.com/ray-project/ray/issues/60638",
+      "label": "github: [tests] ModuleNotFoundError: No module named 'ray._raylet'"
+    },
+    {
+      "url": "https://github.com/rjwalters/loom/issues/1885",
+      "label": "github: loom-tools Python tests fail to import: ModuleNotFoundError for loom_tools"
+    },
+    {
+      "url": "https://github.com/sjawhar/pivot/issues/309",
+      "label": "github: feat(pipeline): Pipeline Class for Multi-Pipeline Support (Phase 2)"
+    },
+    {
+      "url": "https://github.com/sr-857/AstraGuard-AI-Apertre-3.0/issues/3",
+      "label": "github: [Bug]: Missing Python Package Structure (init.py files)"
+    },
+    {
+      "url": "https://github.com/swhume/template2define/issues/2",
+      "label": "github: Cannot use template2define2-1.py"
+    },
+    {
+      "url": "https://github.com/UBC-MDS/DSCI_524_G26_Data_Validation/issues/22",
+      "label": "github: Implement validate_contract and associated test cases"
+    },
+    {
+      "url": "https://github.com/UBC-MDS/DSCI_524_G26_Data_Validation/issues/32",
+      "label": "github: Set up GitHub Actions workflow for continuous integration"
+    }
+  ]
+}
