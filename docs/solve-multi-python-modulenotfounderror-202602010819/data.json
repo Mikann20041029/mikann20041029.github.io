@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/1038lab/ComfyUI-RMBG/issues/177",
+      "label": "github: [Windows/Python 3.12] Critical Installation Failure: GroundingDINO Dependency (Build Error affecting RMBG & SDPose)"
+    },
+    {
+      "url": "https://github.com/adenhq/hive/issues/2220",
+      "label": "github: [Feature]: Add `hive doctor` command to diagnose common setup and environment issues"
+    },
+    {
+      "url": "https://github.com/antgroup/echomimic_v3/issues/64",
+      "label": "github: NameError: name 'AutoTokenizer' is not defined. Did you mean: 'T5Tokenizer'?"
+    },
+    {
+      "url": "https://github.com/AustL/PygameWidgets/issues/89",
+      "label": "github: pygame_widgets.update(events) fails"
+    },
+    {
+      "url": "https://github.com/Comfy-Org/ComfyUI_frontend/issues/7940",
+      "label": "github: Comfy dont running generations"
+    },
+    {
+      "url": "https://github.com/cookertron/SAM3-Audio-Windows11/issues/1",
+      "label": "github: [WinError 1114 workaround leads to ModuleNotFoundError: No module named 'core']"
+    },
+    {
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/238",
+      "label": "github: [Bug] Qwen3-TTS cloning error. V. 4.19.12"
+    },
+    {
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "label": "github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]"
+    },
+    {
+      "url": "https://github.com/DrewThomasson/ebook2audiobook/issues/1603",
+      "label": "github: Bug: Invalid requirement error when installing demucs (extra empty string in pip command)"
+    },
+    {
+      "url": "https://github.com/intel/llm-scaler/issues/269",
+      "label": "github: Pre-quantized “AWQ-Int4” model fails in intel/llm-scaler-vllm:0.11.1-b7: vLLM auto-detects torchao quant_method → missing torchao; with torchao installed it crashes due to CUDA-only codepath"
+    },
+    {
+      "url": "https://github.com/judian17/ComfyUI-SDPose-OOD/issues/27",
+      "label": "github: [Windows/Python 3.12] Critical Installation Failure: GroundingDINO Dependency (Build Error affecting RMBG & SDPose)"
+    },
+    {
+      "url": "https://github.com/lstein/InvokeAI/issues/53",
+      "label": "github: [bug]: Fix invokeai.util.db_maintenance"
+    },
+    {
+      "url": "https://github.com/magma/magma/issues/15811",
+      "label": "github: pipelined service fails to start due to missing bcc module on Ubuntu 20.04"
+    },
+    {
+      "url": "https://github.com/magma/magma/issues/15812",
+      "label": "github: pipelined service fails to start due to missing bcc module on Ubuntu 20.04"
+    },
+    {
+      "url": "https://github.com/magma/magma/issues/15813",
+      "label": "github: magmad service crash due to 'snowflake' vs 'snowflake_uuid' namespace mismatch"
+    },
+    {
+      "url": "https://github.com/MidnightJava/led-matrix/issues/41",
+      "label": "github: No module named 'dotenv' on NixOS"
+    },
+    {
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-SAM3DBody/issues/31",
+      "label": "github: fails to import isolated from comfy_env"
+    },
+    {
+      "url": "https://github.com/rjwalters/loom/issues/1785",
+      "label": "github: Bug: loom-shepherd fails with ModuleNotFoundError on PEP 668 managed Python"
+    },
+    {
+      "url": "https://github.com/sarutobi/sopds-ng/issues/3",
+      "label": "github: Problem scanning inpx"
+    },
+    {
+      "url": "https://github.com/sr-857/AstraGuard-AI-Apertre-3.0/issues/3",
+      "label": "github: [Bug]: Missing Python Package Structure (init.py files)"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "[Windows/Python 3.12] Critical Installation Failure: GroundingDINO Dependency (Build Error affecting RMBG & SDPose)",
+      "url": "https://github.com/1038lab/ComfyUI-RMBG/issues/177",
+      "created_at": "2026-02-01T06:35:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Feature]: Add `hive doctor` command to diagnose common setup and environment issues",
+      "url": "https://github.com/adenhq/hive/issues/2220",
+      "created_at": "2026-01-29T09:25:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "NameError: name 'AutoTokenizer' is not defined. Did you mean: 'T5Tokenizer'?",
+      "url": "https://github.com/antgroup/echomimic_v3/issues/64",
+      "created_at": "2026-02-01T04:09:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pygame_widgets.update(events) fails",
+      "url": "https://github.com/AustL/PygameWidgets/issues/89",
+      "created_at": "2026-01-13T20:42:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Comfy dont running generations",
+      "url": "https://github.com/Comfy-Org/ComfyUI_frontend/issues/7940",
+      "created_at": "2026-01-10T06:50:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[WinError 1114 workaround leads to ModuleNotFoundError: No module named 'core']",
+      "url": "https://github.com/cookertron/SAM3-Audio-Windows11/issues/1",
+      "created_at": "2026-02-01T07:21:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] Qwen3-TTS cloning error. V. 4.19.12",
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/238",
+      "created_at": "2026-01-30T23:22:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]",
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "created_at": "2026-01-07T17:28:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bug: Invalid requirement error when installing demucs (extra empty string in pip command)",
+      "url": "https://github.com/DrewThomasson/ebook2audiobook/issues/1603",
+      "created_at": "2026-01-30T07:02:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Pre-quantized “AWQ-Int4” model fails in intel/llm-scaler-vllm:0.11.1-b7: vLLM auto-detects torchao quant_method → missing torchao; with torchao installed it crashes due to CUDA-only codepath",
+      "url": "https://github.com/intel/llm-scaler/issues/269",
+      "created_at": "2026-02-01T05:01:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Windows/Python 3.12] Critical Installation Failure: GroundingDINO Dependency (Build Error affecting RMBG & SDPose)",
+      "url": "https://github.com/judian17/ComfyUI-SDPose-OOD/issues/27",
+      "created_at": "2026-02-01T06:34:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[bug]: Fix invokeai.util.db_maintenance",
+      "url": "https://github.com/lstein/InvokeAI/issues/53",
+      "created_at": "2026-02-01T04:17:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pipelined service fails to start due to missing bcc module on Ubuntu 20.04",
+      "url": "https://github.com/magma/magma/issues/15811",
+      "created_at": "2026-02-01T04:47:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pipelined service fails to start due to missing bcc module on Ubuntu 20.04",
+      "url": "https://github.com/magma/magma/issues/15812",
+      "created_at": "2026-02-01T04:54:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "magmad service crash due to 'snowflake' vs 'snowflake_uuid' namespace mismatch",
+      "url": "https://github.com/magma/magma/issues/15813",
+      "created_at": "2026-02-01T05:03:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No module named 'dotenv' on NixOS",
+      "url": "https://github.com/MidnightJava/led-matrix/issues/41",
+      "created_at": "2026-01-31T15:15:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fails to import isolated from comfy_env",
+      "url": "https://github.com/PozzettiAndrea/ComfyUI-SAM3DBody/issues/31",
+      "created_at": "2026-01-29T16:39:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bug: loom-shepherd fails with ModuleNotFoundError on PEP 668 managed Python",
+      "url": "https://github.com/rjwalters/loom/issues/1785",
+      "created_at": "2026-01-31T05:26:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Problem scanning inpx",
+      "url": "https://github.com/sarutobi/sopds-ng/issues/3",
+      "created_at": "2026-01-25T18:47:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Missing Python Package Structure (init.py files)",
+      "url": "https://github.com/sr-857/AstraGuard-AI-Apertre-3.0/issues/3",
+      "created_at": "2026-01-31T23:38:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602010819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "slug": "solve-multi-python-modulenotfounderror-202602010819",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "generated_at": "2026-02-01T08:19:03.2638073Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  }
+}
