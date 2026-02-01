@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "when trying to sync to tactical rmm",
+      "url": "https://github.com/agit8or1/huduglue/issues/4",
+      "created_at": "2026-01-12T02:55:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Documentation for FLASH_ATTENTION_SKIP_CUDA_BUILD is misleading and causes silent installation of broken packages.",
+      "url": "https://github.com/astral-sh/uv/issues/17794",
+      "created_at": "2026-02-01T13:15:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] 由于 python 版本低于 3.11，缺少 `tomllib` 库而无法载入插件",
+      "url": "https://github.com/DBJD-CR/astrbot_plugin_disaster_warning/issues/61",
+      "created_at": "2026-01-31T15:53:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'mmgp'",
+      "url": "https://github.com/deepbeepmeep/Wan2GP/issues/1462",
+      "created_at": "2026-02-01T14:53:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Question regarding the source of gen_run.py",
+      "url": "https://github.com/devdanzin/lafleur/issues/349",
+      "created_at": "2026-02-01T13:01:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package",
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/226",
+      "created_at": "2026-01-19T14:46:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] Qwen3-TTS cloning error. V. 4.19.12 [transformers 5.0.0 incompatibility] ",
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/238",
+      "created_at": "2026-01-30T23:22:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]",
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "created_at": "2026-01-07T17:28:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bug: Invalid requirement error when installing demucs (extra empty string in pip command)",
+      "url": "https://github.com/DrewThomasson/ebook2audiobook/issues/1603",
+      "created_at": "2026-01-30T07:02:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pyyaml dependency missing",
+      "url": "https://github.com/DrMarkusVoss/pumla/issues/58",
+      "created_at": "2026-01-26T15:06:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "After update for the  v0.8.1 2026-01-25 it briked my HA",
+      "url": "https://github.com/dummylabs/thewatchman/issues/222",
+      "created_at": "2026-01-25T21:48:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Newly opened windows attaching to existing scratchpads",
+      "url": "https://github.com/hyprland-community/pyprland/issues/202",
+      "created_at": "2026-01-04T17:49:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Matplotlib is not an optional dependency",
+      "url": "https://github.com/ksmet1977/luxpy/issues/39",
+      "created_at": "2026-02-01T14:28:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "failed compilation icu4c-78",
+      "url": "https://github.com/LadybirdBrowser/ladybird/issues/7688",
+      "created_at": "2026-01-30T17:56:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pipelined service fails to start due to missing bcc module on Ubuntu 20.04",
+      "url": "https://github.com/magma/magma/issues/15812",
+      "created_at": "2026-02-01T04:54:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Select Interface - no selection available",
+      "url": "https://github.com/mnh-jansson/open-battery-information/issues/138",
+      "created_at": "2026-01-29T03:08:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Installation will not work no matter what I do",
+      "url": "https://github.com/SeargeDP/ComfyUI_Searge_LLM/issues/56",
+      "created_at": "2026-02-01T14:58:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Custom Python Module with Setting GUI: ModuleNotFoundError: No module named 'PyQt6'",
+      "url": "https://github.com/syntalos/syntalos/issues/37",
+      "created_at": "2026-02-01T15:06:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'transformer_semi_dit_2_patch_embedders'",
+      "url": "https://github.com/Tele-AI/TeleStyle/issues/6",
+      "created_at": "2026-02-01T13:26:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "CRITICAL: Core service pods crashing - grpcio-health-checking not installed in Docker image",
+      "url": "https://github.com/zaebee/aura/issues/26",
+      "created_at": "2026-01-29T13:01:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602011615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-02-01T16:15:51.0973395Z",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "slug": "solve-multi-python-modulenotfounderror-202602011615"
+  },
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/agit8or1/huduglue/issues/4",
+      "label": "github: when trying to sync to tactical rmm"
+    },
+    {
+      "url": "https://github.com/astral-sh/uv/issues/17794",
+      "label": "github: Documentation for FLASH_ATTENTION_SKIP_CUDA_BUILD is misleading and causes silent installation of broken packages."
+    },
+    {
+      "url": "https://github.com/DBJD-CR/astrbot_plugin_disaster_warning/issues/61",
+      "label": "github: [Bug] 由于 python 版本低于 3.11，缺少 `tomllib` 库而无法载入插件"
+    },
+    {
+      "url": "https://github.com/deepbeepmeep/Wan2GP/issues/1462",
+      "label": "github: ModuleNotFoundError: No module named 'mmgp'"
+    },
+    {
+      "url": "https://github.com/devdanzin/lafleur/issues/349",
+      "label": "github: Question regarding the source of gen_run.py"
+    },
+    {
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/226",
+      "label": "github: Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package"
+    },
+    {
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/238",
+      "label": "github: [Bug] Qwen3-TTS cloning error. V. 4.19.12 [transformers 5.0.0 incompatibility] "
+    },
+    {
+      "url": "https://github.com/dotnet/runtime/issues/122979",
+      "label": "github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]"
+    },
+    {
+      "url": "https://github.com/DrewThomasson/ebook2audiobook/issues/1603",
+      "label": "github: Bug: Invalid requirement error when installing demucs (extra empty string in pip command)"
+    },
+    {
+      "url": "https://github.com/DrMarkusVoss/pumla/issues/58",
+      "label": "github: pyyaml dependency missing"
+    },
+    {
+      "url": "https://github.com/dummylabs/thewatchman/issues/222",
+      "label": "github: After update for the  v0.8.1 2026-01-25 it briked my HA"
+    },
+    {
+      "url": "https://github.com/hyprland-community/pyprland/issues/202",
+      "label": "github: [BUG] Newly opened windows attaching to existing scratchpads"
+    },
+    {
+      "url": "https://github.com/ksmet1977/luxpy/issues/39",
+      "label": "github: Matplotlib is not an optional dependency"
+    },
+    {
+      "url": "https://github.com/LadybirdBrowser/ladybird/issues/7688",
+      "label": "github: failed compilation icu4c-78"
+    },
+    {
+      "url": "https://github.com/magma/magma/issues/15812",
+      "label": "github: pipelined service fails to start due to missing bcc module on Ubuntu 20.04"
+    },
+    {
+      "url": "https://github.com/mnh-jansson/open-battery-information/issues/138",
+      "label": "github: Select Interface - no selection available"
+    },
+    {
+      "url": "https://github.com/SeargeDP/ComfyUI_Searge_LLM/issues/56",
+      "label": "github: Installation will not work no matter what I do"
+    },
+    {
+      "url": "https://github.com/syntalos/syntalos/issues/37",
+      "label": "github: Custom Python Module with Setting GUI: ModuleNotFoundError: No module named 'PyQt6'"
+    },
+    {
+      "url": "https://github.com/Tele-AI/TeleStyle/issues/6",
+      "label": "github: ModuleNotFoundError: No module named 'transformer_semi_dit_2_patch_embedders'"
+    },
+    {
+      "url": "https://github.com/zaebee/aura/issues/26",
+      "label": "github: CRITICAL: Core service pods crashing - grpcio-health-checking not installed in Docker image"
+    }
+  ]
+}

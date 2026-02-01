@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/agit8or1/huduglue/issues/4'>when trying to sync to tactical rmm</a> <small>[github] 2026-01-12</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/astral-sh/uv/issues/17794'>Documentation for FLASH_ATTENTION_SKIP_CUDA_BUILD is misleading and causes silent installation of broken packages.</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/DBJD-CR/astrbot_plugin_disaster_warning/issues/61'>[Bug] 由于 python 版本低于 3.11，缺少 `tomllib` 库而无法载入插件</a> <small>[github] 2026-01-31</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/deepbeepmeep/Wan2GP/issues/1462'>ModuleNotFoundError: No module named 'mmgp'</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/devdanzin/lafleur/issues/349'>Question regarding the source of gen_run.py</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/diodiogod/TTS-Audio-Suite/issues/226'>Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package</a> <small>[github] 2026-01-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/diodiogod/TTS-Audio-Suite/issues/238'>[Bug] Qwen3-TTS cloning error. V. 4.19.12 [transformers 5.0.0 incompatibility] </a> <small>[github] 2026-01-30</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/dotnet/runtime/issues/122979'>[8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]</a> <small>[github] 2026-01-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/DrewThomasson/ebook2audiobook/issues/1603'>Bug: Invalid requirement error when installing demucs (extra empty string in pip command)</a> <small>[github] 2026-01-30</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/DrMarkusVoss/pumla/issues/58'>pyyaml dependency missing</a> <small>[github] 2026-01-26</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/dummylabs/thewatchman/issues/222'>After update for the  v0.8.1 2026-01-25 it briked my HA</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/hyprland-community/pyprland/issues/202'>[BUG] Newly opened windows attaching to existing scratchpads</a> <small>[github] 2026-01-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ksmet1977/luxpy/issues/39'>Matplotlib is not an optional dependency</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/LadybirdBrowser/ladybird/issues/7688'>failed compilation icu4c-78</a> <small>[github] 2026-01-30</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/magma/magma/issues/15812'>pipelined service fails to start due to missing bcc module on Ubuntu 20.04</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/mnh-jansson/open-battery-information/issues/138'>Select Interface - no selection available</a> <small>[github] 2026-01-29</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/SeargeDP/ComfyUI_Searge_LLM/issues/56'>Installation will not work no matter what I do</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/syntalos/syntalos/issues/37'>Custom Python Module with Setting GUI: ModuleNotFoundError: No module named 'PyQt6'</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Tele-AI/TeleStyle/issues/6'>ModuleNotFoundError: No module named 'transformer_semi_dit_2_patch_embedders'</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/zaebee/aura/issues/26'>CRITICAL: Core service pods crashing - grpcio-health-checking not installed in Docker image</a> <small>[github] 2026-01-29</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/agit8or1/huduglue/issues/4'>github: when trying to sync to tactical rmm</a></li>
+<li><a href='https://github.com/astral-sh/uv/issues/17794'>github: Documentation for FLASH_ATTENTION_SKIP_CUDA_BUILD is misleading and causes silent installation of broken packages.</a></li>
+<li><a href='https://github.com/DBJD-CR/astrbot_plugin_disaster_warning/issues/61'>github: [Bug] 由于 python 版本低于 3.11，缺少 `tomllib` 库而无法载入插件</a></li>
+<li><a href='https://github.com/deepbeepmeep/Wan2GP/issues/1462'>github: ModuleNotFoundError: No module named 'mmgp'</a></li>
+<li><a href='https://github.com/devdanzin/lafleur/issues/349'>github: Question regarding the source of gen_run.py</a></li>
+<li><a href='https://github.com/diodiogod/TTS-Audio-Suite/issues/226'>github: Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package</a></li>
+<li><a href='https://github.com/diodiogod/TTS-Audio-Suite/issues/238'>github: [Bug] Qwen3-TTS cloning error. V. 4.19.12 [transformers 5.0.0 incompatibility] </a></li>
+<li><a href='https://github.com/dotnet/runtime/issues/122979'>github: [8.0] tracing/eventpipe/providervalidation/providervalidation/providervalidation.sh [FAIL]</a></li>
+<li><a href='https://github.com/DrewThomasson/ebook2audiobook/issues/1603'>github: Bug: Invalid requirement error when installing demucs (extra empty string in pip command)</a></li>
+<li><a href='https://github.com/DrMarkusVoss/pumla/issues/58'>github: pyyaml dependency missing</a></li>
+<li><a href='https://github.com/dummylabs/thewatchman/issues/222'>github: After update for the  v0.8.1 2026-01-25 it briked my HA</a></li>
+<li><a href='https://github.com/hyprland-community/pyprland/issues/202'>github: [BUG] Newly opened windows attaching to existing scratchpads</a></li>
+<li><a href='https://github.com/ksmet1977/luxpy/issues/39'>github: Matplotlib is not an optional dependency</a></li>
+<li><a href='https://github.com/LadybirdBrowser/ladybird/issues/7688'>github: failed compilation icu4c-78</a></li>
+<li><a href='https://github.com/magma/magma/issues/15812'>github: pipelined service fails to start due to missing bcc module on Ubuntu 20.04</a></li>
+<li><a href='https://github.com/mnh-jansson/open-battery-information/issues/138'>github: Select Interface - no selection available</a></li>
+<li><a href='https://github.com/SeargeDP/ComfyUI_Searge_LLM/issues/56'>github: Installation will not work no matter what I do</a></li>
+<li><a href='https://github.com/syntalos/syntalos/issues/37'>github: Custom Python Module with Setting GUI: ModuleNotFoundError: No module named 'PyQt6'</a></li>
+<li><a href='https://github.com/Tele-AI/TeleStyle/issues/6'>github: ModuleNotFoundError: No module named 'transformer_semi_dit_2_patch_embedders'</a></li>
+<li><a href='https://github.com/zaebee/aura/issues/26'>github: CRITICAL: Core service pods crashing - grpcio-health-checking not installed in Docker image</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-02-01T16:15:51.0973395Z</small></p>
+</main>
+</body>
+</html>
