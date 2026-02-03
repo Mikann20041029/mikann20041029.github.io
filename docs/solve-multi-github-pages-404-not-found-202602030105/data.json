@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "feat(config): create and configure `package.json`",
+      "url": "https://github.com/beatrizsmerino/vitepress-setup/issues/1",
+      "created_at": "2026-01-07T12:39:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "auth() -> connectedCallback() -> tpen-project-loaded -> CheckPermissions -> render() -> register event listeners -> disconnectedCallback() Audit Report",
+      "url": "https://github.com/CenterForDigitalHumanities/TPEN-interfaces/issues/404",
+      "created_at": "2026-01-27T21:24:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Documentation] Add API documentation",
+      "url": "https://github.com/emu-sync/EmuSync/issues/18",
+      "created_at": "2026-01-31T11:45:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Compatibility issue",
+      "url": "https://github.com/Finsys/dockhand/issues/404",
+      "created_at": "2026-01-30T07:13:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway",
+      "url": "https://github.com/hypernetix/hyperspot/issues/404",
+      "created_at": "2026-02-02T08:10:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DBA: Creación de tabla Requirement SP CreateRequirement()",
+      "url": "https://github.com/Integrity-Solutions-Consulting/isc-tmr-backend/issues/404",
+      "created_at": "2026-02-02T20:19:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] <title> generation of  non working peers",
+      "url": "https://github.com/linuxserver/docker-wireguard/issues/404",
+      "created_at": "2026-02-02T17:07:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Dashboard: Child job detail page returns 404 for hierarchical job IDs",
+      "url": "https://github.com/marin-community/marin/issues/2633",
+      "created_at": "2026-02-03T00:19:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[공통] Event Type 이 Kafka 가 아닌경우 Kafka Bean 을 불러오지 않도록 설정",
+      "url": "https://github.com/prgrms-be-adv-devcourse/beadv4_4_DDD_BE/issues/404",
+      "created_at": "2026-02-03T00:44:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "(28) Deverá ser apresentado o relatório.",
+      "url": "https://github.com/Ricardo-Dinucci/cestas-de-precos-tarefas/issues/404",
+      "created_at": "2026-01-28T12:27:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Parity: IAP offer code prices, base territory, and one-time code lookup",
+      "url": "https://github.com/rudrankriyam/App-Store-Connect-CLI/issues/404",
+      "created_at": "2026-02-02T16:20:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Player stuck in server player list + add average ping",
+      "url": "https://github.com/SnipeZilla/HLstatsX-v2/issues/3",
+      "created_at": "2026-01-22T00:05:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "로그인 이후 페이지 미이동",
+      "url": "https://github.com/solid-connection/solid-connect-web/issues/404",
+      "created_at": "2026-02-02T16:06:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Admin portal hangs after Smart Widget integration: metrics and navigation fail to load",
+      "url": "https://github.com/spospordo/Local-Server-Site-Pusher/issues/404",
+      "created_at": "2026-02-02T17:06:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "docs: static site on Cloudflare Workers",
+      "url": "https://github.com/sveltejs/kit/issues/15233",
+      "created_at": "2026-01-31T06:39:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Calculate width of a sidewalk segment (PCA Version)",
+      "url": "https://github.com/TaskarCenterAtUW/iOSPointMapper/issues/404",
+      "created_at": "2026-02-02T21:20:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Results page fails to load (missing chunk ResultsPage-*.js / 404 on /ergebnis)",
+      "url": "https://github.com/TheMorpheus407/LinuxChooser/issues/13",
+      "created_at": "2026-02-02T10:11:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Support for PM-241-BT",
+      "url": "https://github.com/transcriptionstream/phomymo/issues/10",
+      "created_at": "2026-01-30T17:54:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "App Router includes unused CSS module in unrelated routes (bundle analyzer + runtime)",
+      "url": "https://github.com/vercel/next.js/issues/89252",
+      "created_at": "2026-01-29T16:38:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Release 4.14.3 - RC 2 - Installation assistant",
+      "url": "https://github.com/wazuh/wazuh/issues/34239",
+      "created_at": "2026-01-30T12:19:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/beatrizsmerino/vitepress-setup/issues/1",
+      "label": "github: feat(config): create and configure `package.json`"
+    },
+    {
+      "url": "https://github.com/CenterForDigitalHumanities/TPEN-interfaces/issues/404",
+      "label": "github: auth() -> connectedCallback() -> tpen-project-loaded -> CheckPermissions -> render() -> register event listeners -> disconnectedCallback() Audit Report"
+    },
+    {
+      "url": "https://github.com/emu-sync/EmuSync/issues/18",
+      "label": "github: [Documentation] Add API documentation"
+    },
+    {
+      "url": "https://github.com/Finsys/dockhand/issues/404",
+      "label": "github: Compatibility issue"
+    },
+    {
+      "url": "https://github.com/hypernetix/hyperspot/issues/404",
+      "label": "github: PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway"
+    },
+    {
+      "url": "https://github.com/Integrity-Solutions-Consulting/isc-tmr-backend/issues/404",
+      "label": "github: DBA: Creación de tabla Requirement SP CreateRequirement()"
+    },
+    {
+      "url": "https://github.com/linuxserver/docker-wireguard/issues/404",
+      "label": "github: [BUG] <title> generation of  non working peers"
+    },
+    {
+      "url": "https://github.com/marin-community/marin/issues/2633",
+      "label": "github: Dashboard: Child job detail page returns 404 for hierarchical job IDs"
+    },
+    {
+      "url": "https://github.com/prgrms-be-adv-devcourse/beadv4_4_DDD_BE/issues/404",
+      "label": "github: [공통] Event Type 이 Kafka 가 아닌경우 Kafka Bean 을 불러오지 않도록 설정"
+    },
+    {
+      "url": "https://github.com/Ricardo-Dinucci/cestas-de-precos-tarefas/issues/404",
+      "label": "github: (28) Deverá ser apresentado o relatório."
+    },
+    {
+      "url": "https://github.com/rudrankriyam/App-Store-Connect-CLI/issues/404",
+      "label": "github: Parity: IAP offer code prices, base territory, and one-time code lookup"
+    },
+    {
+      "url": "https://github.com/SnipeZilla/HLstatsX-v2/issues/3",
+      "label": "github: Player stuck in server player list + add average ping"
+    },
+    {
+      "url": "https://github.com/solid-connection/solid-connect-web/issues/404",
+      "label": "github: 로그인 이후 페이지 미이동"
+    },
+    {
+      "url": "https://github.com/spospordo/Local-Server-Site-Pusher/issues/404",
+      "label": "github: Admin portal hangs after Smart Widget integration: metrics and navigation fail to load"
+    },
+    {
+      "url": "https://github.com/sveltejs/kit/issues/15233",
+      "label": "github: docs: static site on Cloudflare Workers"
+    },
+    {
+      "url": "https://github.com/TaskarCenterAtUW/iOSPointMapper/issues/404",
+      "label": "github: Calculate width of a sidewalk segment (PCA Version)"
+    },
+    {
+      "url": "https://github.com/TheMorpheus407/LinuxChooser/issues/13",
+      "label": "github: Results page fails to load (missing chunk ResultsPage-*.js / 404 on /ergebnis)"
+    },
+    {
+      "url": "https://github.com/transcriptionstream/phomymo/issues/10",
+      "label": "github: Support for PM-241-BT"
+    },
+    {
+      "url": "https://github.com/vercel/next.js/issues/89252",
+      "label": "github: App Router includes unused CSS module in unrelated routes (bundle analyzer + runtime)"
+    },
+    {
+      "url": "https://github.com/wazuh/wazuh/issues/34239",
+      "label": "github: Release 4.14.3 - RC 2 - Installation assistant"
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-02-03T01:05:30.1351318Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "slug": "solve-multi-github-pages-404-not-found-202602030105",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）"
+  }
+}

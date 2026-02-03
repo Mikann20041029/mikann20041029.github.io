@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>github pages 404 not found をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>github pages 404 not found をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/beatrizsmerino/vitepress-setup/issues/1'>feat(config): create and configure `package.json`</a> <small>[github] 2026-01-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/CenterForDigitalHumanities/TPEN-interfaces/issues/404'>auth() -> connectedCallback() -> tpen-project-loaded -> CheckPermissions -> render() -> register event listeners -> disconnectedCallback() Audit Report</a> <small>[github] 2026-01-27</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/emu-sync/EmuSync/issues/18'>[Documentation] Add API documentation</a> <small>[github] 2026-01-31</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Finsys/dockhand/issues/404'>Compatibility issue</a> <small>[github] 2026-01-30</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/hypernetix/hyperspot/issues/404'>PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Integrity-Solutions-Consulting/isc-tmr-backend/issues/404'>DBA: Creación de tabla Requirement SP CreateRequirement()</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/linuxserver/docker-wireguard/issues/404'>[BUG] <title> generation of  non working peers</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/marin-community/marin/issues/2633'>Dashboard: Child job detail page returns 404 for hierarchical job IDs</a> <small>[github] 2026-02-03</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/prgrms-be-adv-devcourse/beadv4_4_DDD_BE/issues/404'>[공통] Event Type 이 Kafka 가 아닌경우 Kafka Bean 을 불러오지 않도록 설정</a> <small>[github] 2026-02-03</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Ricardo-Dinucci/cestas-de-precos-tarefas/issues/404'>(28) Deverá ser apresentado o relatório.</a> <small>[github] 2026-01-28</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/rudrankriyam/App-Store-Connect-CLI/issues/404'>Parity: IAP offer code prices, base territory, and one-time code lookup</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/SnipeZilla/HLstatsX-v2/issues/3'>Player stuck in server player list + add average ping</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/solid-connection/solid-connect-web/issues/404'>로그인 이후 페이지 미이동</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/spospordo/Local-Server-Site-Pusher/issues/404'>Admin portal hangs after Smart Widget integration: metrics and navigation fail to load</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/sveltejs/kit/issues/15233'>docs: static site on Cloudflare Workers</a> <small>[github] 2026-01-31</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/TaskarCenterAtUW/iOSPointMapper/issues/404'>Calculate width of a sidewalk segment (PCA Version)</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/TheMorpheus407/LinuxChooser/issues/13'>Results page fails to load (missing chunk ResultsPage-*.js / 404 on /ergebnis)</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/transcriptionstream/phomymo/issues/10'>Support for PM-241-BT</a> <small>[github] 2026-01-30</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/vercel/next.js/issues/89252'>App Router includes unused CSS module in unrelated routes (bundle analyzer + runtime)</a> <small>[github] 2026-01-29</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/wazuh/wazuh/issues/34239'>Release 4.14.3 - RC 2 - Installation assistant</a> <small>[github] 2026-01-30</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/beatrizsmerino/vitepress-setup/issues/1'>github: feat(config): create and configure `package.json`</a></li>
+<li><a href='https://github.com/CenterForDigitalHumanities/TPEN-interfaces/issues/404'>github: auth() -> connectedCallback() -> tpen-project-loaded -> CheckPermissions -> render() -> register event listeners -> disconnectedCallback() Audit Report</a></li>
+<li><a href='https://github.com/emu-sync/EmuSync/issues/18'>github: [Documentation] Add API documentation</a></li>
+<li><a href='https://github.com/Finsys/dockhand/issues/404'>github: Compatibility issue</a></li>
+<li><a href='https://github.com/hypernetix/hyperspot/issues/404'>github: PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway</a></li>
+<li><a href='https://github.com/Integrity-Solutions-Consulting/isc-tmr-backend/issues/404'>github: DBA: Creación de tabla Requirement SP CreateRequirement()</a></li>
+<li><a href='https://github.com/linuxserver/docker-wireguard/issues/404'>github: [BUG] <title> generation of  non working peers</a></li>
+<li><a href='https://github.com/marin-community/marin/issues/2633'>github: Dashboard: Child job detail page returns 404 for hierarchical job IDs</a></li>
+<li><a href='https://github.com/prgrms-be-adv-devcourse/beadv4_4_DDD_BE/issues/404'>github: [공통] Event Type 이 Kafka 가 아닌경우 Kafka Bean 을 불러오지 않도록 설정</a></li>
+<li><a href='https://github.com/Ricardo-Dinucci/cestas-de-precos-tarefas/issues/404'>github: (28) Deverá ser apresentado o relatório.</a></li>
+<li><a href='https://github.com/rudrankriyam/App-Store-Connect-CLI/issues/404'>github: Parity: IAP offer code prices, base territory, and one-time code lookup</a></li>
+<li><a href='https://github.com/SnipeZilla/HLstatsX-v2/issues/3'>github: Player stuck in server player list + add average ping</a></li>
+<li><a href='https://github.com/solid-connection/solid-connect-web/issues/404'>github: 로그인 이후 페이지 미이동</a></li>
+<li><a href='https://github.com/spospordo/Local-Server-Site-Pusher/issues/404'>github: Admin portal hangs after Smart Widget integration: metrics and navigation fail to load</a></li>
+<li><a href='https://github.com/sveltejs/kit/issues/15233'>github: docs: static site on Cloudflare Workers</a></li>
+<li><a href='https://github.com/TaskarCenterAtUW/iOSPointMapper/issues/404'>github: Calculate width of a sidewalk segment (PCA Version)</a></li>
+<li><a href='https://github.com/TheMorpheus407/LinuxChooser/issues/13'>github: Results page fails to load (missing chunk ResultsPage-*.js / 404 on /ergebnis)</a></li>
+<li><a href='https://github.com/transcriptionstream/phomymo/issues/10'>github: Support for PM-241-BT</a></li>
+<li><a href='https://github.com/vercel/next.js/issues/89252'>github: App Router includes unused CSS module in unrelated routes (bundle analyzer + runtime)</a></li>
+<li><a href='https://github.com/wazuh/wazuh/issues/34239'>github: Release 4.14.3 - RC 2 - Installation assistant</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-02-03T01:05:30.1351318Z</small></p>
+</main>
+</body>
+</html>
