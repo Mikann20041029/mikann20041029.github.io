@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: (Bug) Does not process text in Korean",
+      "url": "https://github.com/alam00000/bentopdf/issues/404"
+    },
+    {
+      "label": "github: 🐛 [BUG] - localized \"and\" while searching for lyrics with several authors",
+      "url": "https://github.com/better-lyrics/better-lyrics/issues/404"
+    },
+    {
+      "label": "github: Dsxdiovag Zciouz plotly_chart kwargs deprecation warning lrwbh jouzfkqw",
+      "url": "https://github.com/bridalsonco/j10kp0qm/issues/404"
+    },
+    {
+      "label": "github: Zotyejpuz Vjouze plotly_chart kwargs deprecation warning ydafl dinsyfkp",
+      "url": "https://github.com/ceden98/l15znjej/issues/404"
+    },
+    {
+      "label": "github: Link Checker Report: Broken links found",
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/27"
+    },
+    {
+      "label": "github: Wnryfkqwb Vhmrxd plotly_chart kwargs deprecation warning hmjqw xbgmrwcj",
+      "url": "https://github.com/ebjerme/qbwifwsd/issues/404"
+    },
+    {
+      "label": "github: Lkxkzmchw Nwhtgv plotly_chart kwargs deprecation warning freth eqergtft",
+      "url": "https://github.com/ftomansdep/t9stdpvx/issues/404"
+    },
+    {
+      "label": "github: [FEATURE] Belt",
+      "url": "https://github.com/gr812b/CVT-Simulator/issues/404"
+    },
+    {
+      "label": "github: Blufqblwh Uhqcny plotly_chart kwargs deprecation warning wfrcf pyjuhsdn",
+      "url": "https://github.com/hender-lizu/irolgt0u/issues/404"
+    },
+    {
+      "label": "github: PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway",
+      "url": "https://github.com/hypernetix/hyperspot/issues/404"
+    },
+    {
+      "label": "github: Qhlrxdint Jcgmrx plotly_chart kwargs deprecation warning kpvaf qvbgmrxd",
+      "url": "https://github.com/mpollen04/iv0d7lkm/issues/404"
+    },
+    {
+      "label": "github: Yzflszgnu Afmtbi plotly_chart kwargs deprecation warning vahnt rxdjpvbi",
+      "url": "https://github.com/nologol/yzzbb1hy/issues/404"
+    },
+    {
+      "label": "github: Website: redesigned landing page",
+      "url": "https://github.com/open-energy-transition/solver-benchmark/issues/404"
+    },
+    {
+      "label": "github: 🚨 Deploy broken - Vercel returning 404",
+      "url": "https://github.com/openwork-hackathon/team-agentproxy/issues/4"
+    },
+    {
+      "label": "github: 🔄 Package Script Updated: cognumach/mig/tests/generate-only/run_generate_only_test.sh - Validation Required",
+      "url": "https://github.com/rzonedevops/occ/issues/404"
+    },
+    {
+      "label": "github: Implement real-time updates via WebSocket",
+      "url": "https://github.com/troykelly/openclaw-projects/issues/404"
+    },
+    {
+      "label": "github: App Router includes unused CSS module in unrelated routes (bundle analyzer + runtime)",
+      "url": "https://github.com/vercel/next.js/issues/89252"
+    },
+    {
+      "label": "github: Kuzglrwci Mbhotz plotly_chart kwargs deprecation warning wbhej tzejotye",
+      "url": "https://github.com/wwchobins/5ctg7kq3/issues/404"
+    },
+    {
+      "label": "github: Eramwgqbn Mjmwht plotly_chart kwargs deprecation warning udnyk clwgteqw",
+      "url": "https://github.com/xiangzucvesse/6obxea5b/issues/404"
+    },
+    {
+      "label": "github: Sinsyejov Raekqw plotly_chart kwargs deprecation warning zechm chmsyejo",
+      "url": "https://github.com/zskhools/p8s48dok/issues/404"
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-02-03T08:24:54.7624066Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-github-pages-404-not-found-202602030824"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "(Bug) Does not process text in Korean",
+      "url": "https://github.com/alam00000/bentopdf/issues/404",
+      "created_at": "2026-01-19T07:00:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🐛 [BUG] - localized \"and\" while searching for lyrics with several authors",
+      "url": "https://github.com/better-lyrics/better-lyrics/issues/404",
+      "created_at": "2026-02-03T08:17:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Dsxdiovag Zciouz plotly_chart kwargs deprecation warning lrwbh jouzfkqw",
+      "url": "https://github.com/bridalsonco/j10kp0qm/issues/404",
+      "created_at": "2026-02-03T07:27:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Zotyejpuz Vjouze plotly_chart kwargs deprecation warning ydafl dinsyfkp",
+      "url": "https://github.com/ceden98/l15znjej/issues/404",
+      "created_at": "2026-02-03T07:27:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Link Checker Report: Broken links found",
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/27",
+      "created_at": "2026-02-03T06:13:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Wnryfkqwb Vhmrxd plotly_chart kwargs deprecation warning hmjqw xbgmrwcj",
+      "url": "https://github.com/ebjerme/qbwifwsd/issues/404",
+      "created_at": "2026-02-03T07:27:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Lkxkzmchw Nwhtgv plotly_chart kwargs deprecation warning freth eqergtft",
+      "url": "https://github.com/ftomansdep/t9stdpvx/issues/404",
+      "created_at": "2026-02-03T07:27:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[FEATURE] Belt",
+      "url": "https://github.com/gr812b/CVT-Simulator/issues/404",
+      "created_at": "2026-02-03T05:49:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Blufqblwh Uhqcny plotly_chart kwargs deprecation warning wfrcf pyjuhsdn",
+      "url": "https://github.com/hender-lizu/irolgt0u/issues/404",
+      "created_at": "2026-02-03T07:27:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway",
+      "url": "https://github.com/hypernetix/hyperspot/issues/404",
+      "created_at": "2026-02-02T08:10:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Qhlrxdint Jcgmrx plotly_chart kwargs deprecation warning kpvaf qvbgmrxd",
+      "url": "https://github.com/mpollen04/iv0d7lkm/issues/404",
+      "created_at": "2026-02-03T07:27:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Yzflszgnu Afmtbi plotly_chart kwargs deprecation warning vahnt rxdjpvbi",
+      "url": "https://github.com/nologol/yzzbb1hy/issues/404",
+      "created_at": "2026-02-03T07:27:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Website: redesigned landing page",
+      "url": "https://github.com/open-energy-transition/solver-benchmark/issues/404",
+      "created_at": "2026-02-03T08:09:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🚨 Deploy broken - Vercel returning 404",
+      "url": "https://github.com/openwork-hackathon/team-agentproxy/issues/4",
+      "created_at": "2026-02-03T05:54:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🔄 Package Script Updated: cognumach/mig/tests/generate-only/run_generate_only_test.sh - Validation Required",
+      "url": "https://github.com/rzonedevops/occ/issues/404",
+      "created_at": "2026-02-03T06:16:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Implement real-time updates via WebSocket",
+      "url": "https://github.com/troykelly/openclaw-projects/issues/404",
+      "created_at": "2026-02-03T07:39:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "App Router includes unused CSS module in unrelated routes (bundle analyzer + runtime)",
+      "url": "https://github.com/vercel/next.js/issues/89252",
+      "created_at": "2026-01-29T16:38:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Kuzglrwci Mbhotz plotly_chart kwargs deprecation warning wbhej tzejotye",
+      "url": "https://github.com/wwchobins/5ctg7kq3/issues/404",
+      "created_at": "2026-02-03T07:27:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Eramwgqbn Mjmwht plotly_chart kwargs deprecation warning udnyk clwgteqw",
+      "url": "https://github.com/xiangzucvesse/6obxea5b/issues/404",
+      "created_at": "2026-02-03T07:27:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Sinsyejov Raekqw plotly_chart kwargs deprecation warning zechm chmsyejo",
+      "url": "https://github.com/zskhools/p8s48dok/issues/404",
+      "created_at": "2026-02-03T07:27:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602030824/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
