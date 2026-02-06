@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "slug": "solve-multi-python-modulenotfounderror-202602061630",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-02-06T16:30:50.1099170Z",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "健康检查失败",
+      "url": "https://github.com/666ghj/BettaFish/issues/568",
+      "created_at": "2026-01-29T18:13:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Cumesh issue",
+      "url": "https://github.com/abauerenator/TRELLIS.2-Pinokio-Backup/issues/1",
+      "created_at": "2026-02-06T14:03:22.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "API: Examples use stale import paths (src.config instead of ergodic_insurance)",
+      "url": "https://github.com/AlexFiliakov/Ergodic-Insurance-Limits/issues/392",
+      "created_at": "2026-02-06T14:32:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Prompt 1: The \"UV Bridge\" (GitHub Actions Update)",
+      "url": "https://github.com/brewmarsh/pickaladder/issues/731",
+      "created_at": "2026-02-06T14:20:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[fud2] Trouble setting up fud2",
+      "url": "https://github.com/calyxir/calyx/issues/2624",
+      "created_at": "2026-02-06T02:38:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Update from 11>12 not possible",
+      "url": "https://github.com/Comfy-Org/ComfyUI/issues/12254",
+      "created_at": "2026-02-03T19:52:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Missing 'requests' dependency in pyproject.toml",
+      "url": "https://github.com/fastino-ai/GLiNER2/issues/60",
+      "created_at": "2026-02-06T15:34:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No module named 'asciimatics' when run node",
+      "url": "https://github.com/jeminism/ros2plot/issues/2",
+      "created_at": "2026-02-03T06:45:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🚨 Nightwatch needs help: ModuleNotFoundError in tests/test_calculator.py",
+      "url": "https://github.com/Jeremicarose/nightwatch-test-repo-/issues/13",
+      "created_at": "2026-02-06T13:39:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🚨 Nightwatch needs help: ModuleNotFoundError in tests/test_calculator.py",
+      "url": "https://github.com/Jeremicarose/nightwatch-test-repo-/issues/14",
+      "created_at": "2026-02-06T13:39:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Race condition: InferenceService predictor pods start before NotebookValidationJobs train models",
+      "url": "https://github.com/KubeHeal/openshift-aiops-platform/issues/34",
+      "created_at": "2026-02-06T14:39:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "`import` from main script directory succeeds",
+      "url": "https://github.com/msys2-contrib/cpython-mingw/issues/207",
+      "created_at": "2026-02-06T15:25:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pip install problem on Windows",
+      "url": "https://github.com/nerrixde/DSBApi/issues/34",
+      "created_at": "2026-02-06T06:09:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Modelbaker 8.2.2 python error no chance to install",
+      "url": "https://github.com/opengisch/QgisModelBaker/issues/1116",
+      "created_at": "2026-01-29T13:20:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Buildfarmer log 2026/02/02 - 2026/02/09",
+      "url": "https://github.com/osrf/buildfarm-tools/issues/214",
+      "created_at": "2026-02-02T11:44:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error: Failed to install Python dependencies (exit code: 2) Error: Failed to install Python dependencies into penv",
+      "url": "https://github.com/pioarduino/platform-espressif32/issues/383",
+      "created_at": "2026-02-05T07:01:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Reticulate in Positron fails to load Python kernel with ModuleNotFoundError for 'positron_ipykernel'",
+      "url": "https://github.com/posit-dev/positron/issues/11682",
+      "created_at": "2026-02-04T02:42:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fissa 1.0.0 correct dependencies resolution",
+      "url": "https://github.com/rochefort-lab/fissa/issues/302",
+      "created_at": "2026-02-06T15:50:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Issue]: New installation using uv won't work.",
+      "url": "https://github.com/vladmandic/sdnext/issues/4623",
+      "created_at": "2026-02-05T21:51:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Auth issue",
+      "url": "https://github.com/walljm/homeassistant-dominionpower-integration/issues/1",
+      "created_at": "2026-01-10T23:54:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602061630/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: 健康检查失败",
+      "url": "https://github.com/666ghj/BettaFish/issues/568"
+    },
+    {
+      "label": "github: Cumesh issue",
+      "url": "https://github.com/abauerenator/TRELLIS.2-Pinokio-Backup/issues/1"
+    },
+    {
+      "label": "github: API: Examples use stale import paths (src.config instead of ergodic_insurance)",
+      "url": "https://github.com/AlexFiliakov/Ergodic-Insurance-Limits/issues/392"
+    },
+    {
+      "label": "github: Prompt 1: The \"UV Bridge\" (GitHub Actions Update)",
+      "url": "https://github.com/brewmarsh/pickaladder/issues/731"
+    },
+    {
+      "label": "github: [fud2] Trouble setting up fud2",
+      "url": "https://github.com/calyxir/calyx/issues/2624"
+    },
+    {
+      "label": "github: Update from 11>12 not possible",
+      "url": "https://github.com/Comfy-Org/ComfyUI/issues/12254"
+    },
+    {
+      "label": "github: Missing 'requests' dependency in pyproject.toml",
+      "url": "https://github.com/fastino-ai/GLiNER2/issues/60"
+    },
+    {
+      "label": "github: No module named 'asciimatics' when run node",
+      "url": "https://github.com/jeminism/ros2plot/issues/2"
+    },
+    {
+      "label": "github: 🚨 Nightwatch needs help: ModuleNotFoundError in tests/test_calculator.py",
+      "url": "https://github.com/Jeremicarose/nightwatch-test-repo-/issues/13"
+    },
+    {
+      "label": "github: 🚨 Nightwatch needs help: ModuleNotFoundError in tests/test_calculator.py",
+      "url": "https://github.com/Jeremicarose/nightwatch-test-repo-/issues/14"
+    },
+    {
+      "label": "github: Race condition: InferenceService predictor pods start before NotebookValidationJobs train models",
+      "url": "https://github.com/KubeHeal/openshift-aiops-platform/issues/34"
+    },
+    {
+      "label": "github: `import` from main script directory succeeds",
+      "url": "https://github.com/msys2-contrib/cpython-mingw/issues/207"
+    },
+    {
+      "label": "github: pip install problem on Windows",
+      "url": "https://github.com/nerrixde/DSBApi/issues/34"
+    },
+    {
+      "label": "github: Modelbaker 8.2.2 python error no chance to install",
+      "url": "https://github.com/opengisch/QgisModelBaker/issues/1116"
+    },
+    {
+      "label": "github: Buildfarmer log 2026/02/02 - 2026/02/09",
+      "url": "https://github.com/osrf/buildfarm-tools/issues/214"
+    },
+    {
+      "label": "github: Error: Failed to install Python dependencies (exit code: 2) Error: Failed to install Python dependencies into penv",
+      "url": "https://github.com/pioarduino/platform-espressif32/issues/383"
+    },
+    {
+      "label": "github: Reticulate in Positron fails to load Python kernel with ModuleNotFoundError for 'positron_ipykernel'",
+      "url": "https://github.com/posit-dev/positron/issues/11682"
+    },
+    {
+      "label": "github: fissa 1.0.0 correct dependencies resolution",
+      "url": "https://github.com/rochefort-lab/fissa/issues/302"
+    },
+    {
+      "label": "github: [Issue]: New installation using uv won't work.",
+      "url": "https://github.com/vladmandic/sdnext/issues/4623"
+    },
+    {
+      "label": "github: Auth issue",
+      "url": "https://github.com/walljm/homeassistant-dominionpower-integration/issues/1"
+    }
+  ]
+}
