@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "健康检查失败",
+      "url": "https://github.com/666ghj/BettaFish/issues/568",
+      "created_at": "2026-01-29T18:13:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Has anyone actually gotten this to work?",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/108",
+      "created_at": "2026-02-04T12:46:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "when trying to sync to tactical rmm",
+      "url": "https://github.com/agit8or1/huduglue/issues/4",
+      "created_at": "2026-01-12T02:55:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Part 1: The Build Upgrade (UV Integration)",
+      "url": "https://github.com/brewmarsh/pickaladder/issues/723",
+      "created_at": "2026-02-06T01:43:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Requires chrome version newer than current stable version. \"This version of ChromeDriver only supports Chrome version 145 Current browser version is 144.0.7559.110\"",
+      "url": "https://github.com/carl0smat3us/undetected/issues/8",
+      "created_at": "2026-01-29T20:37:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "如何通过命令行或者API方式创建和删除向量库",
+      "url": "https://github.com/chatchat-space/Langchain-Chatchat/issues/5447",
+      "created_at": "2026-02-06T04:45:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "be able to run just dev setup for unit tests locally and mimic the CI better",
+      "url": "https://github.com/chipi/podcast_scraper/issues/403",
+      "created_at": "2026-02-05T18:02:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Please add support for Centauri Carbon 2",
+      "url": "https://github.com/danielcherubini/elegoo-homeassistant/issues/315",
+      "created_at": "2026-01-30T22:09:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Support for Sage-Attention v1 and Flash-Attention v2 for AMD on ROCm",
+      "url": "https://github.com/Haoming02/sd-webui-forge-classic/issues/706",
+      "created_at": "2026-02-04T19:02:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Cache-Dit Accelerator error",
+      "url": "https://github.com/Jasonzzt/ComfyUI-CacheDiT/issues/22",
+      "created_at": "2026-02-05T03:27:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Adversarial Testing Workflow: Separation of Implementation from Verification",
+      "url": "https://github.com/martymcenroe/AssemblyZero/issues/80",
+      "created_at": "2026-01-29T05:46:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "`identifiers` function in the `vegbankapi` is unable to import module",
+      "url": "https://github.com/NCEAS/vegbank2/issues/289",
+      "created_at": "2026-02-06T04:17:46.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "라즈베리파이 5 설치 오류입니다.",
+      "url": "https://github.com/openNAMU/openNAMU/issues/2608",
+      "created_at": "2026-02-04T10:15:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error: Failed to install Python dependencies (exit code: 2) Error: Failed to install Python dependencies into penv",
+      "url": "https://github.com/pioarduino/platform-espressif32/issues/383",
+      "created_at": "2026-02-05T07:01:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Reticulate in Positron fails to load Python kernel with ModuleNotFoundError for 'positron_ipykernel'",
+      "url": "https://github.com/posit-dev/positron/issues/11682",
+      "created_at": "2026-02-04T02:42:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "missing pylibfive library",
+      "url": "https://github.com/pythonscad/pythonscad/issues/425",
+      "created_at": "2026-02-03T07:39:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: ModuleNotFoundError for model-specific pipelines (LongCat-Image / GLM-Image) in diffusers namespace",
+      "url": "https://github.com/vllm-project/vllm-omni/issues/1215",
+      "created_at": "2026-02-05T06:40:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "运行 Qwen3-VL-Embedding-8B 提示 No module named 'transformers.models.qwen3_vl'",
+      "url": "https://github.com/xorbitsai/inference/issues/4585",
+      "created_at": "2026-02-06T07:55:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "运行 IndexTTS2 缺少依赖",
+      "url": "https://github.com/xorbitsai/inference/issues/4586",
+      "created_at": "2026-02-06T08:11:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'robotrustbench.envs.rt_habitat.config' when running rt-hab evaluation",
+      "url": "https://github.com/Zxy-MLlab/RoboTrustBench/issues/2",
+      "created_at": "2026-02-06T07:37:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060828/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/666ghj/BettaFish/issues/568",
+      "label": "github: 健康检查失败"
+    },
+    {
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/108",
+      "label": "github: Has anyone actually gotten this to work?"
+    },
+    {
+      "url": "https://github.com/agit8or1/huduglue/issues/4",
+      "label": "github: when trying to sync to tactical rmm"
+    },
+    {
+      "url": "https://github.com/brewmarsh/pickaladder/issues/723",
+      "label": "github: Part 1: The Build Upgrade (UV Integration)"
+    },
+    {
+      "url": "https://github.com/carl0smat3us/undetected/issues/8",
+      "label": "github: Requires chrome version newer than current stable version. \"This version of ChromeDriver only supports Chrome version 145 Current browser version is 144.0.7559.110\""
+    },
+    {
+      "url": "https://github.com/chatchat-space/Langchain-Chatchat/issues/5447",
+      "label": "github: 如何通过命令行或者API方式创建和删除向量库"
+    },
+    {
+      "url": "https://github.com/chipi/podcast_scraper/issues/403",
+      "label": "github: be able to run just dev setup for unit tests locally and mimic the CI better"
+    },
+    {
+      "url": "https://github.com/danielcherubini/elegoo-homeassistant/issues/315",
+      "label": "github: Please add support for Centauri Carbon 2"
+    },
+    {
+      "url": "https://github.com/Haoming02/sd-webui-forge-classic/issues/706",
+      "label": "github: Support for Sage-Attention v1 and Flash-Attention v2 for AMD on ROCm"
+    },
+    {
+      "url": "https://github.com/Jasonzzt/ComfyUI-CacheDiT/issues/22",
+      "label": "github: Cache-Dit Accelerator error"
+    },
+    {
+      "url": "https://github.com/martymcenroe/AssemblyZero/issues/80",
+      "label": "github: Adversarial Testing Workflow: Separation of Implementation from Verification"
+    },
+    {
+      "url": "https://github.com/NCEAS/vegbank2/issues/289",
+      "label": "github: `identifiers` function in the `vegbankapi` is unable to import module"
+    },
+    {
+      "url": "https://github.com/openNAMU/openNAMU/issues/2608",
+      "label": "github: 라즈베리파이 5 설치 오류입니다."
+    },
+    {
+      "url": "https://github.com/pioarduino/platform-espressif32/issues/383",
+      "label": "github: Error: Failed to install Python dependencies (exit code: 2) Error: Failed to install Python dependencies into penv"
+    },
+    {
+      "url": "https://github.com/posit-dev/positron/issues/11682",
+      "label": "github: Reticulate in Positron fails to load Python kernel with ModuleNotFoundError for 'positron_ipykernel'"
+    },
+    {
+      "url": "https://github.com/pythonscad/pythonscad/issues/425",
+      "label": "github: missing pylibfive library"
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm-omni/issues/1215",
+      "label": "github: [Bug]: ModuleNotFoundError for model-specific pipelines (LongCat-Image / GLM-Image) in diffusers namespace"
+    },
+    {
+      "url": "https://github.com/xorbitsai/inference/issues/4585",
+      "label": "github: 运行 Qwen3-VL-Embedding-8B 提示 No module named 'transformers.models.qwen3_vl'"
+    },
+    {
+      "url": "https://github.com/xorbitsai/inference/issues/4586",
+      "label": "github: 运行 IndexTTS2 缺少依赖"
+    },
+    {
+      "url": "https://github.com/Zxy-MLlab/RoboTrustBench/issues/2",
+      "label": "github: ModuleNotFoundError: No module named 'robotrustbench.envs.rt_habitat.config' when running rt-hab evaluation"
+    }
+  ],
+  "meta": {
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "generated_at": "2026-02-06T08:28:30.6148511Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-python-modulenotfounderror-202602060828"
+  }
+}
