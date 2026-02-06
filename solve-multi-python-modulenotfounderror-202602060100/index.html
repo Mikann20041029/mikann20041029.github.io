@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/ace-step/ACE-Step-1.5/issues/108'>Has anyone actually gotten this to work?</a> <small>[github] 2026-02-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/carl0smat3us/undetected/issues/8'>Requires chrome version newer than current stable version. "This version of ChromeDriver only supports Chrome version 145 Current browser version is 144.0.7559.110"</a> <small>[github] 2026-01-29</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ChuckNorrison/Hydrosys/issues/4'>Install on Debian 13 fails</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/datalad/datalad/issues/7801'>FileNotFoundError when running datalad containers-run cmd in git worktree</a> <small>[github] 2026-02-03</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/diodiogod/TTS-Audio-Suite/issues/226'>Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package</a> <small>[github] 2026-01-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/djacoo/nlp-project/issues/7'>Fix main.py imports to work with python -m src.main</a> <small>[github] 2026-02-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/eliabntt/GRADE-RR/issues/6'>Installation Guide for Isaac Sim 5.0.0 (Post-Launcher Deprecation)</a> <small>[github] 2026-02-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/flet-dev/flet/issues/6085'>bug: Pillow library does not work on andoid aab</a> <small>[github] 2026-01-28</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Haoming02/sd-webui-forge-classic/issues/706'>Support for Sage-Attention v1 and Flash-Attention v2 for AMD on ROCm</a> <small>[github] 2026-02-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Incurian/NEXUS3/issues/2'>mcpagentbridge</a> <small>[github] 2026-01-28</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/luigifreda/pyslam/issues/223'>ModuleNotFoundError: No module named 'pyslam_utils'</a> <small>[github] 2026-02-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/microsoft/onnxruntime/issues/27257'>onnxruntime 1.24 has implicit ml_dtypes dependency</a> <small>[github] 2026-02-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/mudler/LocalAI/issues/8402'>ROCm NeuTTS backend throws exception on startup</a> <small>[github] 2026-02-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Nuitka/Nuitka/issues/3719'>[Nuitka 2.8.9, Python 3.12.5] ModuleNotFoundError: No module named 'duckdb.duckdb.functional'; 'duckdb.duckdb' is not a package</a> <small>[github] 2026-01-08</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/pioarduino/platform-espressif32/issues/383'>Error: Failed to install Python dependencies (exit code: 2) Error: Failed to install Python dependencies into penv</a> <small>[github] 2026-02-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/pytorch/pytorch/issues/174315'>sdpa.py no longer works out of box</a> <small>[github] 2026-02-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/RickDB/PlexAniSync/issues/330'>ModuleNotFoundError: No module named 'coloredlogs'</a> <small>[github] 2026-02-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/vladmandic/sdnext/issues/4623'>[Issue]: New installation using uv won't work.</a> <small>[github] 2026-02-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/vortex-data/vortex/issues/6306'>Import failure 'No module named 'substrait.gen.proto'</a> <small>[github] 2026-02-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/zephyrproject-rtos/zephyr/issues/103373'>hal_espressif blobs fail to install</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/ace-step/ACE-Step-1.5/issues/108'>github: Has anyone actually gotten this to work?</a></li>
+<li><a href='https://github.com/carl0smat3us/undetected/issues/8'>github: Requires chrome version newer than current stable version. "This version of ChromeDriver only supports Chrome version 145 Current browser version is 144.0.7559.110"</a></li>
+<li><a href='https://github.com/ChuckNorrison/Hydrosys/issues/4'>github: Install on Debian 13 fails</a></li>
+<li><a href='https://github.com/datalad/datalad/issues/7801'>github: FileNotFoundError when running datalad containers-run cmd in git worktree</a></li>
+<li><a href='https://github.com/diodiogod/TTS-Audio-Suite/issues/226'>github: Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package</a></li>
+<li><a href='https://github.com/djacoo/nlp-project/issues/7'>github: Fix main.py imports to work with python -m src.main</a></li>
+<li><a href='https://github.com/eliabntt/GRADE-RR/issues/6'>github: Installation Guide for Isaac Sim 5.0.0 (Post-Launcher Deprecation)</a></li>
+<li><a href='https://github.com/flet-dev/flet/issues/6085'>github: bug: Pillow library does not work on andoid aab</a></li>
+<li><a href='https://github.com/Haoming02/sd-webui-forge-classic/issues/706'>github: Support for Sage-Attention v1 and Flash-Attention v2 for AMD on ROCm</a></li>
+<li><a href='https://github.com/Incurian/NEXUS3/issues/2'>github: mcpagentbridge</a></li>
+<li><a href='https://github.com/luigifreda/pyslam/issues/223'>github: ModuleNotFoundError: No module named 'pyslam_utils'</a></li>
+<li><a href='https://github.com/microsoft/onnxruntime/issues/27257'>github: onnxruntime 1.24 has implicit ml_dtypes dependency</a></li>
+<li><a href='https://github.com/mudler/LocalAI/issues/8402'>github: ROCm NeuTTS backend throws exception on startup</a></li>
+<li><a href='https://github.com/Nuitka/Nuitka/issues/3719'>github: [Nuitka 2.8.9, Python 3.12.5] ModuleNotFoundError: No module named 'duckdb.duckdb.functional'; 'duckdb.duckdb' is not a package</a></li>
+<li><a href='https://github.com/pioarduino/platform-espressif32/issues/383'>github: Error: Failed to install Python dependencies (exit code: 2) Error: Failed to install Python dependencies into penv</a></li>
+<li><a href='https://github.com/pytorch/pytorch/issues/174315'>github: sdpa.py no longer works out of box</a></li>
+<li><a href='https://github.com/RickDB/PlexAniSync/issues/330'>github: ModuleNotFoundError: No module named 'coloredlogs'</a></li>
+<li><a href='https://github.com/vladmandic/sdnext/issues/4623'>github: [Issue]: New installation using uv won't work.</a></li>
+<li><a href='https://github.com/vortex-data/vortex/issues/6306'>github: Import failure 'No module named 'substrait.gen.proto'</a></li>
+<li><a href='https://github.com/zephyrproject-rtos/zephyr/issues/103373'>github: hal_espressif blobs fail to install</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-02-06T01:00:45.2294380Z</small></p>
+</main>
+</body>
+</html>

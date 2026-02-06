@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "generated_at": "2026-02-06T01:00:45.2294380Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "slug": "solve-multi-python-modulenotfounderror-202602060100",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "Has anyone actually gotten this to work?",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/108",
+      "created_at": "2026-02-04T12:46:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Requires chrome version newer than current stable version. \"This version of ChromeDriver only supports Chrome version 145 Current browser version is 144.0.7559.110\"",
+      "url": "https://github.com/carl0smat3us/undetected/issues/8",
+      "created_at": "2026-01-29T20:37:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Install on Debian 13 fails",
+      "url": "https://github.com/ChuckNorrison/Hydrosys/issues/4",
+      "created_at": "2026-02-01T00:25:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "FileNotFoundError when running datalad containers-run cmd in git worktree",
+      "url": "https://github.com/datalad/datalad/issues/7801",
+      "created_at": "2026-02-03T12:45:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package",
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/226",
+      "created_at": "2026-01-19T14:46:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Fix main.py imports to work with python -m src.main",
+      "url": "https://github.com/djacoo/nlp-project/issues/7",
+      "created_at": "2026-02-05T22:13:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Installation Guide for Isaac Sim 5.0.0 (Post-Launcher Deprecation)",
+      "url": "https://github.com/eliabntt/GRADE-RR/issues/6",
+      "created_at": "2026-02-05T09:34:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: Pillow library does not work on andoid aab",
+      "url": "https://github.com/flet-dev/flet/issues/6085",
+      "created_at": "2026-01-28T19:47:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Support for Sage-Attention v1 and Flash-Attention v2 for AMD on ROCm",
+      "url": "https://github.com/Haoming02/sd-webui-forge-classic/issues/706",
+      "created_at": "2026-02-04T19:02:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mcpagentbridge",
+      "url": "https://github.com/Incurian/NEXUS3/issues/2",
+      "created_at": "2026-01-28T23:46:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'pyslam_utils'",
+      "url": "https://github.com/luigifreda/pyslam/issues/223",
+      "created_at": "2026-02-05T19:27:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "onnxruntime 1.24 has implicit ml_dtypes dependency",
+      "url": "https://github.com/microsoft/onnxruntime/issues/27257",
+      "created_at": "2026-02-05T19:36:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ROCm NeuTTS backend throws exception on startup",
+      "url": "https://github.com/mudler/LocalAI/issues/8402",
+      "created_at": "2026-02-05T03:44:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Nuitka 2.8.9, Python 3.12.5] ModuleNotFoundError: No module named 'duckdb.duckdb.functional'; 'duckdb.duckdb' is not a package",
+      "url": "https://github.com/Nuitka/Nuitka/issues/3719",
+      "created_at": "2026-01-08T20:10:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error: Failed to install Python dependencies (exit code: 2) Error: Failed to install Python dependencies into penv",
+      "url": "https://github.com/pioarduino/platform-espressif32/issues/383",
+      "created_at": "2026-02-05T07:01:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "sdpa.py no longer works out of box",
+      "url": "https://github.com/pytorch/pytorch/issues/174315",
+      "created_at": "2026-02-04T20:14:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'coloredlogs'",
+      "url": "https://github.com/RickDB/PlexAniSync/issues/330",
+      "created_at": "2026-02-05T05:58:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Issue]: New installation using uv won't work.",
+      "url": "https://github.com/vladmandic/sdnext/issues/4623",
+      "created_at": "2026-02-05T21:51:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Import failure 'No module named 'substrait.gen.proto'",
+      "url": "https://github.com/vortex-data/vortex/issues/6306",
+      "created_at": "2026-02-04T17:03:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "hal_espressif blobs fail to install",
+      "url": "https://github.com/zephyrproject-rtos/zephyr/issues/103373",
+      "created_at": "2026-02-02T22:42:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602060100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/108",
+      "label": "github: Has anyone actually gotten this to work?"
+    },
+    {
+      "url": "https://github.com/carl0smat3us/undetected/issues/8",
+      "label": "github: Requires chrome version newer than current stable version. \"This version of ChromeDriver only supports Chrome version 145 Current browser version is 144.0.7559.110\""
+    },
+    {
+      "url": "https://github.com/ChuckNorrison/Hydrosys/issues/4",
+      "label": "github: Install on Debian 13 fails"
+    },
+    {
+      "url": "https://github.com/datalad/datalad/issues/7801",
+      "label": "github: FileNotFoundError when running datalad containers-run cmd in git worktree"
+    },
+    {
+      "url": "https://github.com/diodiogod/TTS-Audio-Suite/issues/226",
+      "label": "github: Step Audio EditX Engine: ImportError: Step Audio EditX dependencies not available. Error: No module named 'config.prompts'; 'config' is not a package"
+    },
+    {
+      "url": "https://github.com/djacoo/nlp-project/issues/7",
+      "label": "github: Fix main.py imports to work with python -m src.main"
+    },
+    {
+      "url": "https://github.com/eliabntt/GRADE-RR/issues/6",
+      "label": "github: Installation Guide for Isaac Sim 5.0.0 (Post-Launcher Deprecation)"
+    },
+    {
+      "url": "https://github.com/flet-dev/flet/issues/6085",
+      "label": "github: bug: Pillow library does not work on andoid aab"
+    },
+    {
+      "url": "https://github.com/Haoming02/sd-webui-forge-classic/issues/706",
+      "label": "github: Support for Sage-Attention v1 and Flash-Attention v2 for AMD on ROCm"
+    },
+    {
+      "url": "https://github.com/Incurian/NEXUS3/issues/2",
+      "label": "github: mcpagentbridge"
+    },
+    {
+      "url": "https://github.com/luigifreda/pyslam/issues/223",
+      "label": "github: ModuleNotFoundError: No module named 'pyslam_utils'"
+    },
+    {
+      "url": "https://github.com/microsoft/onnxruntime/issues/27257",
+      "label": "github: onnxruntime 1.24 has implicit ml_dtypes dependency"
+    },
+    {
+      "url": "https://github.com/mudler/LocalAI/issues/8402",
+      "label": "github: ROCm NeuTTS backend throws exception on startup"
+    },
+    {
+      "url": "https://github.com/Nuitka/Nuitka/issues/3719",
+      "label": "github: [Nuitka 2.8.9, Python 3.12.5] ModuleNotFoundError: No module named 'duckdb.duckdb.functional'; 'duckdb.duckdb' is not a package"
+    },
+    {
+      "url": "https://github.com/pioarduino/platform-espressif32/issues/383",
+      "label": "github: Error: Failed to install Python dependencies (exit code: 2) Error: Failed to install Python dependencies into penv"
+    },
+    {
+      "url": "https://github.com/pytorch/pytorch/issues/174315",
+      "label": "github: sdpa.py no longer works out of box"
+    },
+    {
+      "url": "https://github.com/RickDB/PlexAniSync/issues/330",
+      "label": "github: ModuleNotFoundError: No module named 'coloredlogs'"
+    },
+    {
+      "url": "https://github.com/vladmandic/sdnext/issues/4623",
+      "label": "github: [Issue]: New installation using uv won't work."
+    },
+    {
+      "url": "https://github.com/vortex-data/vortex/issues/6306",
+      "label": "github: Import failure 'No module named 'substrait.gen.proto'"
+    },
+    {
+      "url": "https://github.com/zephyrproject-rtos/zephyr/issues/103373",
+      "label": "github: hal_espressif blobs fail to install"
+    }
+  ]
+}
