@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/adenhq/hive/issues/3662",
+      "label": "github: [Feature Request]: Implement Dedicated Windows OS Resilience Sentinel"
+    },
+    {
+      "url": "https://github.com/adenhq/hive/issues/3840",
+      "label": "github: [Bug]: Missing documentation for common Windows-specific setup errors"
+    },
+    {
+      "url": "https://github.com/adolago/rustible/issues/431",
+      "label": "github: Milestone: Phase 4 — Enterprise Readiness"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/20862",
+      "label": "github: [BUG] MCP tools fail with \"Browser extension is not connected\" despite /chrome showing Connected"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/23564",
+      "label": "github: [BUG] Bash tool returns exit code 5 on native Windows in Parallels VM"
+    },
+    {
+      "url": "https://github.com/edzhu/mailmerge/issues/4",
+      "label": "github: Update README.md with more content"
+    },
+    {
+      "url": "https://github.com/edzhu/mailmerge/issues/6",
+      "label": "github: Generate RELEASE.md file describing the release process"
+    },
+    {
+      "url": "https://github.com/k-dot-greyz/neuro-spicy-devkit/issues/3",
+      "label": "github: [AUDIT] Comprehensive Repository Audit - Onboarding Script & Security Review"
+    },
+    {
+      "url": "https://github.com/MicrosoftDocs/PowerShell-Docs/issues/12738",
+      "label": "github: .\\Get-TimeService.ps1 : The term '.\\Get-TimeService.ps1' is not recognized"
+    },
+    {
+      "url": "https://github.com/obra/superpowers/issues/285",
+      "label": "github: .codex/superpowers-codex not support powershell env (windows + powershell env)"
+    },
+    {
+      "url": "https://github.com/obra/superpowers/issues/417",
+      "label": "github: SessionStart hook fails on Windows due to HCS sandbox blocking bash execution"
+    },
+    {
+      "url": "https://github.com/openai/codex/issues/9062",
+      "label": "github: Windows native: sandbox command execution fails with `CreateProcessWithLogonW failed: 5` and approval mode appears inconsistent across onboarding/session"
+    },
+    {
+      "url": "https://github.com/pedramamini/Maestro/issues/301",
+      "label": "github: 0,15,0 RC  fails when asking for my idea in wizard mode."
+    },
+    {
+      "url": "https://github.com/pollen-robotics/reachy-mini-desktop-app/issues/134",
+      "label": "github: Windows Prerequisite - script execution policy"
+    },
+    {
+      "url": "https://github.com/promptdriven/pdd/issues/471",
+      "label": "github: Inefficient and Cross-Platform Incompatible String Splitting Pattern (.strip().split('\\n') vs .splitlines())"
+    },
+    {
+      "url": "https://github.com/PubInv/ADaM/issues/12",
+      "label": "github: Journal of ADaM Install, Windows 10"
+    },
+    {
+      "url": "https://github.com/sandboxie-plus/Sandboxie/issues/5209",
+      "label": "github: Firewall doesn't work as expected."
+    },
+    {
+      "url": "https://github.com/svelderrainruiz/labview-icon-editor/issues/35",
+      "label": "github: Stateless Runner: .NET CLI bootstrap + contract validation"
+    },
+    {
+      "url": "https://github.com/wazuh/wazuh/issues/34096",
+      "label": "github: Windows agent has unexpectedly stopped in 4.14.3-rc1"
+    },
+    {
+      "url": "https://github.com/wyre-technology/msp-claude-plugins/issues/2",
+      "label": "github: [Plugin Request] Datto RMM"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "[Feature Request]: Implement Dedicated Windows OS Resilience Sentinel",
+      "url": "https://github.com/adenhq/hive/issues/3662",
+      "created_at": "2026-02-05T14:20:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Missing documentation for common Windows-specific setup errors",
+      "url": "https://github.com/adenhq/hive/issues/3840",
+      "created_at": "2026-02-06T19:39:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Milestone: Phase 4 — Enterprise Readiness",
+      "url": "https://github.com/adolago/rustible/issues/431",
+      "created_at": "2026-02-02T22:54:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] MCP tools fail with \"Browser extension is not connected\" despite /chrome showing Connected",
+      "url": "https://github.com/anthropics/claude-code/issues/20862",
+      "created_at": "2026-01-25T22:14:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Bash tool returns exit code 5 on native Windows in Parallels VM",
+      "url": "https://github.com/anthropics/claude-code/issues/23564",
+      "created_at": "2026-02-06T03:33:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Update README.md with more content",
+      "url": "https://github.com/edzhu/mailmerge/issues/4",
+      "created_at": "2026-02-06T03:47:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Generate RELEASE.md file describing the release process",
+      "url": "https://github.com/edzhu/mailmerge/issues/6",
+      "created_at": "2026-02-06T07:42:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[AUDIT] Comprehensive Repository Audit - Onboarding Script & Security Review",
+      "url": "https://github.com/k-dot-greyz/neuro-spicy-devkit/issues/3",
+      "created_at": "2026-02-05T18:47:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": ".\\Get-TimeService.ps1 : The term '.\\Get-TimeService.ps1' is not recognized",
+      "url": "https://github.com/MicrosoftDocs/PowerShell-Docs/issues/12738",
+      "created_at": "2026-02-05T04:55:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": ".codex/superpowers-codex not support powershell env (windows + powershell env)",
+      "url": "https://github.com/obra/superpowers/issues/285",
+      "created_at": "2026-01-18T07:15:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "SessionStart hook fails on Windows due to HCS sandbox blocking bash execution",
+      "url": "https://github.com/obra/superpowers/issues/417",
+      "created_at": "2026-02-04T19:32:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows native: sandbox command execution fails with `CreateProcessWithLogonW failed: 5` and approval mode appears inconsistent across onboarding/session",
+      "url": "https://github.com/openai/codex/issues/9062",
+      "created_at": "2026-01-11T22:57:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "0,15,0 RC  fails when asking for my idea in wizard mode.",
+      "url": "https://github.com/pedramamini/Maestro/issues/301",
+      "created_at": "2026-02-05T03:19:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows Prerequisite - script execution policy",
+      "url": "https://github.com/pollen-robotics/reachy-mini-desktop-app/issues/134",
+      "created_at": "2026-02-06T05:11:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Inefficient and Cross-Platform Incompatible String Splitting Pattern (.strip().split('\\n') vs .splitlines())",
+      "url": "https://github.com/promptdriven/pdd/issues/471",
+      "created_at": "2026-02-05T21:23:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Journal of ADaM Install, Windows 10",
+      "url": "https://github.com/PubInv/ADaM/issues/12",
+      "created_at": "2026-02-05T11:17:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Firewall doesn't work as expected.",
+      "url": "https://github.com/sandboxie-plus/Sandboxie/issues/5209",
+      "created_at": "2026-02-03T08:10:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Stateless Runner: .NET CLI bootstrap + contract validation",
+      "url": "https://github.com/svelderrainruiz/labview-icon-editor/issues/35",
+      "created_at": "2026-02-05T19:44:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows agent has unexpectedly stopped in 4.14.3-rc1",
+      "url": "https://github.com/wazuh/wazuh/issues/34096",
+      "created_at": "2026-01-21T16:46:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Plugin Request] Datto RMM",
+      "url": "https://github.com/wyre-technology/msp-claude-plugins/issues/2",
+      "created_at": "2026-02-04T20:41:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602070059/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "title": "windows powershell execution policy をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-02-07T00:59:49.3171190Z",
+    "slug": "solve-multi-windows-powershell-execution-policy-202602070059"
+  }
+}
