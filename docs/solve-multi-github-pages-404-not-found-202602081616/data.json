@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: [운영] 1/25",
+      "url": "https://github.com/2pewscom/gs2.0-Renewal/issues/404"
+    },
+    {
+      "label": "github: Release pipeline does not push the tags",
+      "url": "https://github.com/ai-dynamo/grove/issues/404"
+    },
+    {
+      "label": "github: 🔗 Broken Links Detected in Documentation",
+      "url": "https://github.com/Anselmoo/mcp-ai-agent-guidelines/issues/1132"
+    },
+    {
+      "label": "github: CVE-2026-0992 (MEDIUM): detected in Lambda Docker Images.",
+      "url": "https://github.com/aws/aws-lambda-base-images/issues/404"
+    },
+    {
+      "label": "github: PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway",
+      "url": "https://github.com/cyberfabric/cyberfabric-core/issues/404"
+    },
+    {
+      "label": "github: \"Deadzones\" and other Mouse issues.",
+      "url": "https://github.com/delzhand/isocon/issues/404"
+    },
+    {
+      "label": "github: Logo Image Not Found When Opening Case File",
+      "url": "https://github.com/Gooichand/blockchain-evidence/issues/196"
+    },
+    {
+      "label": "github: Investigate use-after-free kernel bug involving BPF map-in-map",
+      "url": "https://github.com/javierhonduco/lightswitch/issues/404"
+    },
+    {
+      "label": "github: Container selector dropdown flows behind log output area on Log Viewer page",
+      "url": "https://github.com/kenhaesler/ai-portainer-dashboard/issues/404"
+    },
+    {
+      "label": "github: Sitemap page returns 404 error",
+      "url": "https://github.com/Nikhilrsingh/car-transport-service/issues/972"
+    },
+    {
+      "label": "github: Task: Add state filter support to /auth matrix diagnostics",
+      "url": "https://github.com/njfio/rsBot/issues/404"
+    },
+    {
+      "label": "github: dumped.",
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5612"
+    },
+    {
+      "label": "github: Entity IDs not sanitized from device name → invalid IDs on newer Home Assistant versions",
+      "url": "https://github.com/robbinjanssen/home-assistant-omnik-inverter/issues/404"
+    },
+    {
+      "label": "github: [Chore]: Sprint 8 -- SEO & Content",
+      "url": "https://github.com/roma-mart/romamart.ca/issues/105"
+    },
+    {
+      "label": "github: [Bug]: Issue Template Link Not Opening as Markdown (SWOC)",
+      "url": "https://github.com/sayeeg-11/OpenSource-Compass/issues/682"
+    },
+    {
+      "label": "github: [Enhancement]: Implement Centralized Error Boundary and 404 Routing Logic",
+      "url": "https://github.com/Shubham-cyber-prog/100-Days-Of-Web-Development-ECWoC26/issues/1395"
+    },
+    {
+      "label": "github: 2.6: API Client Module",
+      "url": "https://github.com/steilerDev/cornerstone/issues/31"
+    },
+    {
+      "label": "github: Raw Datasets (Team 1)",
+      "url": "https://github.com/The-School-of-AI/LLM/issues/404"
+    },
+    {
+      "label": "github: Support for PM-241-BT",
+      "url": "https://github.com/transcriptionstream/phomymo/issues/10"
+    },
+    {
+      "label": "github: Add support for ursulablicklevideoarchiv.com.",
+      "url": "https://github.com/yt-dlp/yt-dlp/issues/15804"
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "generated_at": "2026-02-08T16:16:59.2860730Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "slug": "solve-multi-github-pages-404-not-found-202602081616"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "[운영] 1/25",
+      "url": "https://github.com/2pewscom/gs2.0-Renewal/issues/404",
+      "created_at": "2026-01-25T11:44:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Release pipeline does not push the tags",
+      "url": "https://github.com/ai-dynamo/grove/issues/404",
+      "created_at": "2026-02-08T10:00:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🔗 Broken Links Detected in Documentation",
+      "url": "https://github.com/Anselmoo/mcp-ai-agent-guidelines/issues/1132",
+      "created_at": "2026-02-08T13:49:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "CVE-2026-0992 (MEDIUM): detected in Lambda Docker Images.",
+      "url": "https://github.com/aws/aws-lambda-base-images/issues/404",
+      "created_at": "2026-02-08T12:01:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway",
+      "url": "https://github.com/cyberfabric/cyberfabric-core/issues/404",
+      "created_at": "2026-02-02T08:10:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "\"Deadzones\" and other Mouse issues.",
+      "url": "https://github.com/delzhand/isocon/issues/404",
+      "created_at": "2026-01-31T01:30:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Logo Image Not Found When Opening Case File",
+      "url": "https://github.com/Gooichand/blockchain-evidence/issues/196",
+      "created_at": "2026-02-08T09:45:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Investigate use-after-free kernel bug involving BPF map-in-map",
+      "url": "https://github.com/javierhonduco/lightswitch/issues/404",
+      "created_at": "2026-02-03T22:54:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Container selector dropdown flows behind log output area on Log Viewer page",
+      "url": "https://github.com/kenhaesler/ai-portainer-dashboard/issues/404",
+      "created_at": "2026-02-08T15:43:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Sitemap page returns 404 error",
+      "url": "https://github.com/Nikhilrsingh/car-transport-service/issues/972",
+      "created_at": "2026-02-08T04:35:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Task: Add state filter support to /auth matrix diagnostics",
+      "url": "https://github.com/njfio/rsBot/issues/404",
+      "created_at": "2026-02-08T13:17:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "dumped.",
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5612",
+      "created_at": "2026-02-08T14:05:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Entity IDs not sanitized from device name → invalid IDs on newer Home Assistant versions",
+      "url": "https://github.com/robbinjanssen/home-assistant-omnik-inverter/issues/404",
+      "created_at": "2026-02-05T16:50:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Chore]: Sprint 8 -- SEO & Content",
+      "url": "https://github.com/roma-mart/romamart.ca/issues/105",
+      "created_at": "2026-02-06T17:39:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Issue Template Link Not Opening as Markdown (SWOC)",
+      "url": "https://github.com/sayeeg-11/OpenSource-Compass/issues/682",
+      "created_at": "2026-02-03T05:41:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Enhancement]: Implement Centralized Error Boundary and 404 Routing Logic",
+      "url": "https://github.com/Shubham-cyber-prog/100-Days-Of-Web-Development-ECWoC26/issues/1395",
+      "created_at": "2026-02-06T15:50:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "2.6: API Client Module",
+      "url": "https://github.com/steilerDev/cornerstone/issues/31",
+      "created_at": "2026-02-08T01:24:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Raw Datasets (Team 1)",
+      "url": "https://github.com/The-School-of-AI/LLM/issues/404",
+      "created_at": "2026-02-05T11:55:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Support for PM-241-BT",
+      "url": "https://github.com/transcriptionstream/phomymo/issues/10",
+      "created_at": "2026-01-30T17:54:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Add support for ursulablicklevideoarchiv.com.",
+      "url": "https://github.com/yt-dlp/yt-dlp/issues/15804",
+      "created_at": "2026-02-02T16:42:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602081616/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
