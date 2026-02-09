@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "snyk integration",
+      "url": "https://github.com/agit8or1/huduglue/issues/36",
+      "created_at": "2026-01-22T10:34:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "T-055: Implement MockPAL",
+      "url": "https://github.com/Anselmoo/mcp-ai-agent-guidelines/issues/1085",
+      "created_at": "2026-02-04T07:48:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "T-055: Implement MockPAL",
+      "url": "https://github.com/Anselmoo/mcp-ai-agent-guidelines/issues/1196",
+      "created_at": "2026-02-08T14:05:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Feature Request] Add side-by-side diff display in terminal output",
+      "url": "https://github.com/anthropics/claude-code/issues/18138",
+      "created_at": "2026-01-14T11:57:22.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Sentry] Investigation erreur écriture des stats par le cron en production",
+      "url": "https://github.com/betagouv/aides-jeunes/issues/5065",
+      "created_at": "2026-02-04T10:41:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "feat: Code snippet generation from errors",
+      "url": "https://github.com/devArchOverclocked/TermLet/issues/57",
+      "created_at": "2026-02-01T13:49:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Self hosted url does not save and provides errors of unrecognized token and access denied.",
+      "url": "https://github.com/dongdongbh/Mindwtr/issues/116",
+      "created_at": "2026-02-04T12:20:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error: listen EACCES: permission denied 127.0.0.1:8000",
+      "url": "https://github.com/ElectronNET/Electron.NET/issues/1006",
+      "created_at": "2026-01-13T14:17:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "root用户，qwen认证后提示没有权限。",
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/21",
+      "created_at": "2026-02-02T06:57:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Daily Test Coverage Improver - Coverage Steps Failed to Execute",
+      "url": "https://github.com/lablup/backend.ai-webui/issues/5266",
+      "created_at": "2026-02-09T00:19:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-09T01:06:55.4988130Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/120",
+      "created_at": "2026-02-09T01:06:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-04T08:27:08.0553104Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/92",
+      "created_at": "2026-02-04T08:27:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-04T16:32:23.0838245Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/94",
+      "created_at": "2026-02-04T16:32:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "gateway update.run attempts update when already on latest version",
+      "url": "https://github.com/openclaw/openclaw/issues/10690",
+      "created_at": "2026-02-06T21:17:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error: EACCES: permission denied, open '/home/node/.openclaw/openclaw.json.7.2ede223b-aa90-4aa5-8f0d-97049696b626.tmp'",
+      "url": "https://github.com/openclaw/openclaw/issues/5434",
+      "created_at": "2026-01-31T13:49:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ClawdHub skill installer fails with EACCES in official Docker container",
+      "url": "https://github.com/openclaw/openclaw/issues/6620",
+      "created_at": "2026-02-01T21:49:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Discord handler uses /root/.openclaw for session store and fails with EACCES even when running as non-root with OPENCLAW_STATE_DIR set",
+      "url": "https://github.com/openclaw/openclaw/issues/8793",
+      "created_at": "2026-02-04T11:50:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Cannot install skills",
+      "url": "https://github.com/phioranex/openclaw-docker/issues/11",
+      "created_at": "2026-02-03T12:16:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🔴 CRITICAL: Fix error handling in story test generation script",
+      "url": "https://github.com/tinkermonkey/documentation_robotics_viewer/issues/245",
+      "created_at": "2026-02-07T21:12:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "✗ Daemon failed to start (socket: C:\\Users\\rayle\\.agent-browser\\bilibili.sock) in windows",
+      "url": "https://github.com/vercel-labs/agent-browser/issues/390",
+      "created_at": "2026-02-07T13:21:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202602090837/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/agit8or1/huduglue/issues/36",
+      "label": "github: snyk integration"
+    },
+    {
+      "url": "https://github.com/Anselmoo/mcp-ai-agent-guidelines/issues/1085",
+      "label": "github: T-055: Implement MockPAL"
+    },
+    {
+      "url": "https://github.com/Anselmoo/mcp-ai-agent-guidelines/issues/1196",
+      "label": "github: T-055: Implement MockPAL"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/18138",
+      "label": "github: [Feature Request] Add side-by-side diff display in terminal output"
+    },
+    {
+      "url": "https://github.com/betagouv/aides-jeunes/issues/5065",
+      "label": "github: [Sentry] Investigation erreur écriture des stats par le cron en production"
+    },
+    {
+      "url": "https://github.com/devArchOverclocked/TermLet/issues/57",
+      "label": "github: feat: Code snippet generation from errors"
+    },
+    {
+      "url": "https://github.com/dongdongbh/Mindwtr/issues/116",
+      "label": "github: [BUG] Self hosted url does not save and provides errors of unrecognized token and access denied."
+    },
+    {
+      "url": "https://github.com/ElectronNET/Electron.NET/issues/1006",
+      "label": "github: Error: listen EACCES: permission denied 127.0.0.1:8000"
+    },
+    {
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/21",
+      "label": "github: root用户，qwen认证后提示没有权限。"
+    },
+    {
+      "url": "https://github.com/lablup/backend.ai-webui/issues/5266",
+      "label": "github: Daily Test Coverage Improver - Coverage Steps Failed to Execute"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/120",
+      "label": "github: mikann-autogen digest 2026-02-09T01:06:55.4988130Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/92",
+      "label": "github: mikann-autogen digest 2026-02-04T08:27:08.0553104Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/94",
+      "label": "github: mikann-autogen digest 2026-02-04T16:32:23.0838245Z"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw/issues/10690",
+      "label": "github: gateway update.run attempts update when already on latest version"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw/issues/5434",
+      "label": "github: Error: EACCES: permission denied, open '/home/node/.openclaw/openclaw.json.7.2ede223b-aa90-4aa5-8f0d-97049696b626.tmp'"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw/issues/6620",
+      "label": "github: ClawdHub skill installer fails with EACCES in official Docker container"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw/issues/8793",
+      "label": "github: [Bug]: Discord handler uses /root/.openclaw for session store and fails with EACCES even when running as non-root with OPENCLAW_STATE_DIR set"
+    },
+    {
+      "url": "https://github.com/phioranex/openclaw-docker/issues/11",
+      "label": "github: Cannot install skills"
+    },
+    {
+      "url": "https://github.com/tinkermonkey/documentation_robotics_viewer/issues/245",
+      "label": "github: 🔴 CRITICAL: Fix error handling in story test generation script"
+    },
+    {
+      "url": "https://github.com/vercel-labs/agent-browser/issues/390",
+      "label": "github: ✗ Daemon failed to start (socket: C:\\Users\\rayle\\.agent-browser\\bilibili.sock) in windows"
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-npm-eacces-permission-denied-202602090837",
+    "generated_at": "2026-02-09T08:37:13.2689422Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "npm EACCES permission denied をまとめて直す（権限/環境/手順）"
+  }
+}
