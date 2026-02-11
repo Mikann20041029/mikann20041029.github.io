@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Gradio Web UI does not start",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/430",
+      "created_at": "2026-02-10T23:53:40.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[REQUEST] arm v7 compatible image",
+      "url": "https://github.com/Arrowar/StreamingCommunity/issues/516",
+      "created_at": "2026-02-01T15:12:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "polylith-cli requires typing_extensions but it isn't specified as a dependency",
+      "url": "https://github.com/DavidVujic/python-polylith/issues/420",
+      "created_at": "2026-02-11T06:05:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug Report] ModuleNotFoundError: No module named 'isaaclab'",
+      "url": "https://github.com/isaac-sim/IsaacLab/issues/4576",
+      "created_at": "2026-02-09T03:36:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "amd support?",
+      "url": "https://github.com/Jasonzzt/ComfyUI-CacheDiT/issues/30",
+      "created_at": "2026-02-07T13:46:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Missing camera_utils module",
+      "url": "https://github.com/kwanyun/FFaceNeRF/issues/2",
+      "created_at": "2026-02-10T16:23:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Need more Examples",
+      "url": "https://github.com/langchain-ai/deepagents/issues/951",
+      "created_at": "2026-01-29T12:17:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Problems installing PySLAM on MacOS",
+      "url": "https://github.com/luigifreda/pyslam/issues/224",
+      "created_at": "2026-02-11T08:03:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] setup.py raises `ModuleNotFoundError: No module named 'pkg_resources'` after release of setuptools 82.0",
+      "url": "https://github.com/open-mmlab/mmcv/issues/3325",
+      "created_at": "2026-02-09T10:41:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Please remove the dependency on pkg_resources",
+      "url": "https://github.com/oracle/accelerated-data-science/issues/1332",
+      "created_at": "2026-02-10T16:58:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'pkg_resources'",
+      "url": "https://github.com/petermg/Chatterbox-TTS-Extended/issues/59",
+      "created_at": "2026-02-10T08:56:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Nightly latest dependencies notebooks tests failed (macos-latest Python 3.13)",
+      "url": "https://github.com/pybop-team/PyBOP/issues/886",
+      "created_at": "2026-02-11T05:13:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Custom Python Module with Setting GUI: ModuleNotFoundError: No module named 'PyQt6'",
+      "url": "https://github.com/syntalos/syntalos/issues/37",
+      "created_at": "2026-02-01T15:06:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "CGRA-Flow failing to generate Sverilog",
+      "url": "https://github.com/tancheng/CGRA-Flow/issues/104",
+      "created_at": "2026-02-11T03:36:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] .gitignore에서 lib/ 폴더 무시되어있음.",
+      "url": "https://github.com/UNITA2026/unita_minicar_sim_ws/issues/1",
+      "created_at": "2026-02-11T06:01:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] gitignore에서 lib/ 폴더 무시되어있음.",
+      "url": "https://github.com/UNITA2026/unita_minicar_sim_ws/issues/2",
+      "created_at": "2026-02-11T06:04:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "无法在虚拟环境下加载模型",
+      "url": "https://github.com/xorbitsai/inference/issues/4593",
+      "created_at": "2026-02-11T07:13:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] ModuleNotFoundError: No module named 'robot.config' when running reset script",
+      "url": "https://github.com/XsparkAI/X-One-Pipeline/issues/12",
+      "created_at": "2026-02-11T08:20:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Examples for plot_model seems incorrect",
+      "url": "https://github.com/yexiang92/opstool/issues/76",
+      "created_at": "2026-02-10T14:46:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] Installation failure: ModuleNotFoundError 'pkg_resources' (metadata-generation-failed)",
+      "url": "https://github.com/YunoHost-Apps/grist_ynh/issues/125",
+      "created_at": "2026-02-11T08:20:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110834/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "slug": "solve-multi-python-modulenotfounderror-202602110834",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "generated_at": "2026-02-11T08:34:26.0462914Z"
+  },
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: Gradio Web UI does not start",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/430"
+    },
+    {
+      "label": "github: [REQUEST] arm v7 compatible image",
+      "url": "https://github.com/Arrowar/StreamingCommunity/issues/516"
+    },
+    {
+      "label": "github: polylith-cli requires typing_extensions but it isn't specified as a dependency",
+      "url": "https://github.com/DavidVujic/python-polylith/issues/420"
+    },
+    {
+      "label": "github: [Bug Report] ModuleNotFoundError: No module named 'isaaclab'",
+      "url": "https://github.com/isaac-sim/IsaacLab/issues/4576"
+    },
+    {
+      "label": "github: amd support?",
+      "url": "https://github.com/Jasonzzt/ComfyUI-CacheDiT/issues/30"
+    },
+    {
+      "label": "github: Missing camera_utils module",
+      "url": "https://github.com/kwanyun/FFaceNeRF/issues/2"
+    },
+    {
+      "label": "github: Need more Examples",
+      "url": "https://github.com/langchain-ai/deepagents/issues/951"
+    },
+    {
+      "label": "github: Problems installing PySLAM on MacOS",
+      "url": "https://github.com/luigifreda/pyslam/issues/224"
+    },
+    {
+      "label": "github: [Bug] setup.py raises `ModuleNotFoundError: No module named 'pkg_resources'` after release of setuptools 82.0",
+      "url": "https://github.com/open-mmlab/mmcv/issues/3325"
+    },
+    {
+      "label": "github: [Bug]: Please remove the dependency on pkg_resources",
+      "url": "https://github.com/oracle/accelerated-data-science/issues/1332"
+    },
+    {
+      "label": "github: ModuleNotFoundError: No module named 'pkg_resources'",
+      "url": "https://github.com/petermg/Chatterbox-TTS-Extended/issues/59"
+    },
+    {
+      "label": "github: Nightly latest dependencies notebooks tests failed (macos-latest Python 3.13)",
+      "url": "https://github.com/pybop-team/PyBOP/issues/886"
+    },
+    {
+      "label": "github: Custom Python Module with Setting GUI: ModuleNotFoundError: No module named 'PyQt6'",
+      "url": "https://github.com/syntalos/syntalos/issues/37"
+    },
+    {
+      "label": "github: CGRA-Flow failing to generate Sverilog",
+      "url": "https://github.com/tancheng/CGRA-Flow/issues/104"
+    },
+    {
+      "label": "github: [Bug] .gitignore에서 lib/ 폴더 무시되어있음.",
+      "url": "https://github.com/UNITA2026/unita_minicar_sim_ws/issues/1"
+    },
+    {
+      "label": "github: [Bug] gitignore에서 lib/ 폴더 무시되어있음.",
+      "url": "https://github.com/UNITA2026/unita_minicar_sim_ws/issues/2"
+    },
+    {
+      "label": "github: 无法在虚拟环境下加载模型",
+      "url": "https://github.com/xorbitsai/inference/issues/4593"
+    },
+    {
+      "label": "github: [Bug] ModuleNotFoundError: No module named 'robot.config' when running reset script",
+      "url": "https://github.com/XsparkAI/X-One-Pipeline/issues/12"
+    },
+    {
+      "label": "github: Examples for plot_model seems incorrect",
+      "url": "https://github.com/yexiang92/opstool/issues/76"
+    },
+    {
+      "label": "github: [Bug] Installation failure: ModuleNotFoundError 'pkg_resources' (metadata-generation-failed)",
+      "url": "https://github.com/YunoHost-Apps/grist_ynh/issues/125"
+    }
+  ]
+}
