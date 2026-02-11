@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "generated_at": "2026-02-11T01:13:31.9879987Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-python-modulenotfounderror-202602110113",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）"
+  },
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: Missing dependencies: python-multipart and setuptools",
+      "url": "https://github.com/abhishekray07/support-console/issues/5"
+    },
+    {
+      "label": "github: Gradio Web UI does not start",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/430"
+    },
+    {
+      "label": "github: Auto focus errors",
+      "url": "https://github.com/EtalumaSupport/LumaViewPro/issues/550"
+    },
+    {
+      "label": "github: ImportError: No module named 'pkg_resources' during migration (caused by setuptools)",
+      "url": "https://github.com/frappe/frappe/issues/36905"
+    },
+    {
+      "label": "github: [BUG] hybracter 0.12 install issue",
+      "url": "https://github.com/gbouras13/hybracter/issues/152"
+    },
+    {
+      "label": "github: [JOSS-Review] Installation-Related Issues",
+      "url": "https://github.com/hannes-holey/GaPFlow/issues/55"
+    },
+    {
+      "label": "github: Support for Sage-Attention v1 and Flash-Attention v2 for AMD on ROCm",
+      "url": "https://github.com/Haoming02/sd-webui-forge-classic/issues/706"
+    },
+    {
+      "label": "github: Logger is not defined",
+      "url": "https://github.com/huggingface/diffusers/issues/13104"
+    },
+    {
+      "label": "github: Python 3.14.2 SyntaxWarning: \"\\d\" is an invalid escape sequence. Such sequences",
+      "url": "https://github.com/joda32/CertCrunchy/issues/7"
+    },
+    {
+      "label": "github: fix: Make era2c dbsearch/dbrename scripts self-contained",
+      "url": "https://github.com/jonschull/ERA_Admin/issues/172"
+    },
+    {
+      "label": "github: Fix Fathom sync reliability: 10-day silent failure, missing calls",
+      "url": "https://github.com/jonschull/ERA_Admin/issues/437"
+    },
+    {
+      "label": "github: refactor: scriptsのsys.path依存を廃止しCLIエントリーポイントへ統一する",
+      "url": "https://github.com/kambarakun/fetch-tokyo-idsc-github-actions/issues/300"
+    },
+    {
+      "label": "github: Issue with pip installing the pipeline",
+      "url": "https://github.com/Keck-DataReductionPipelines/KCWI_DRP/issues/200"
+    },
+    {
+      "label": "github: readthedocs build fails missing pkg_resources",
+      "url": "https://github.com/moinwiki/moin/issues/2153"
+    },
+    {
+      "label": "github: Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release",
+      "url": "https://github.com/NASA-PDS/doi-service/issues/513"
+    },
+    {
+      "label": "github: uc-sleep.nix services fail",
+      "url": "https://github.com/nixos-uconsole/nixos-uconsole/issues/9"
+    },
+    {
+      "label": "github: Need some compatibility coverage",
+      "url": "https://github.com/NuSTAR/nustar-clock-utils/issues/155"
+    },
+    {
+      "label": "github: [BUG] Initializer error while running subquery unit tests",
+      "url": "https://github.com/NVIDIA/spark-rapids/issues/14258"
+    },
+    {
+      "label": "github: [Issue] Pytorch wheel builds failed with error `ModuleNotFoundError: No module named 'pkg_resources'`",
+      "url": "https://github.com/ROCm/TheRock/issues/3311"
+    },
+    {
+      "label": "github: unable to install houndmind",
+      "url": "https://github.com/seven-lynx/HoundMind/issues/2"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "Missing dependencies: python-multipart and setuptools",
+      "url": "https://github.com/abhishekray07/support-console/issues/5",
+      "created_at": "2026-02-10T23:44:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Gradio Web UI does not start",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/430",
+      "created_at": "2026-02-10T23:53:40.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Auto focus errors",
+      "url": "https://github.com/EtalumaSupport/LumaViewPro/issues/550",
+      "created_at": "2026-02-09T20:57:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ImportError: No module named 'pkg_resources' during migration (caused by setuptools)",
+      "url": "https://github.com/frappe/frappe/issues/36905",
+      "created_at": "2026-02-09T13:14:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] hybracter 0.12 install issue",
+      "url": "https://github.com/gbouras13/hybracter/issues/152",
+      "created_at": "2026-02-10T12:23:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[JOSS-Review] Installation-Related Issues",
+      "url": "https://github.com/hannes-holey/GaPFlow/issues/55",
+      "created_at": "2026-01-23T17:17:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Support for Sage-Attention v1 and Flash-Attention v2 for AMD on ROCm",
+      "url": "https://github.com/Haoming02/sd-webui-forge-classic/issues/706",
+      "created_at": "2026-02-04T19:02:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Logger is not defined",
+      "url": "https://github.com/huggingface/diffusers/issues/13104",
+      "created_at": "2026-02-08T20:57:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Python 3.14.2 SyntaxWarning: \"\\d\" is an invalid escape sequence. Such sequences",
+      "url": "https://github.com/joda32/CertCrunchy/issues/7",
+      "created_at": "2026-02-11T00:56:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fix: Make era2c dbsearch/dbrename scripts self-contained",
+      "url": "https://github.com/jonschull/ERA_Admin/issues/172",
+      "created_at": "2026-01-20T21:17:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Fix Fathom sync reliability: 10-day silent failure, missing calls",
+      "url": "https://github.com/jonschull/ERA_Admin/issues/437",
+      "created_at": "2026-02-10T23:32:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "refactor: scriptsのsys.path依存を廃止しCLIエントリーポイントへ統一する",
+      "url": "https://github.com/kambarakun/fetch-tokyo-idsc-github-actions/issues/300",
+      "created_at": "2026-02-10T12:36:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Issue with pip installing the pipeline",
+      "url": "https://github.com/Keck-DataReductionPipelines/KCWI_DRP/issues/200",
+      "created_at": "2026-02-10T22:55:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "readthedocs build fails missing pkg_resources",
+      "url": "https://github.com/moinwiki/moin/issues/2153",
+      "created_at": "2026-02-10T19:25:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Tests fail with ModuleNotFoundError for pkg_resources after setuptools 81 release",
+      "url": "https://github.com/NASA-PDS/doi-service/issues/513",
+      "created_at": "2026-02-10T15:26:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "uc-sleep.nix services fail",
+      "url": "https://github.com/nixos-uconsole/nixos-uconsole/issues/9",
+      "created_at": "2026-02-01T21:42:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Need some compatibility coverage",
+      "url": "https://github.com/NuSTAR/nustar-clock-utils/issues/155",
+      "created_at": "2026-02-10T20:19:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Initializer error while running subquery unit tests",
+      "url": "https://github.com/NVIDIA/spark-rapids/issues/14258",
+      "created_at": "2026-02-03T21:01:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Issue] Pytorch wheel builds failed with error `ModuleNotFoundError: No module named 'pkg_resources'`",
+      "url": "https://github.com/ROCm/TheRock/issues/3311",
+      "created_at": "2026-02-09T13:22:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "unable to install houndmind",
+      "url": "https://github.com/seven-lynx/HoundMind/issues/2",
+      "created_at": "2026-01-19T12:27:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602110113/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
