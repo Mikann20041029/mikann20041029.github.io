@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-windows-powershell-execution-policy-202602121644",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "windows powershell execution policy をまとめて直す（権限/環境/手順）",
+    "generated_at": "2026-02-12T16:44:35.2311664Z"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "[Feature Request]: Implement Dedicated Windows OS Resilience Sentinel",
+      "url": "https://github.com/adenhq/hive/issues/3662",
+      "created_at": "2026-02-05T14:20:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Missing documentation for common Windows-specific setup errors",
+      "url": "https://github.com/adenhq/hive/issues/3840",
+      "created_at": "2026-02-06T19:39:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Feature]: Add native Windows setup scripts and documentation",
+      "url": "https://github.com/adenhq/hive/issues/4061",
+      "created_at": "2026-02-08T08:25:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] MCP tools fail with \"Browser extension is not connected\" despite /chrome showing Connected",
+      "url": "https://github.com/anthropics/claude-code/issues/20862",
+      "created_at": "2026-01-25T22:14:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Cowork VM fails on Windows 11 Home: wrong DNS config, missing sessiondata.vhdx, no NAT",
+      "url": "https://github.com/anthropics/claude-code/issues/24962",
+      "created_at": "2026-02-11T11:29:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Even though it's unnecessary, $vm.StorageProfile.ImageReference was automatically inserted the value when executing New-AzVM cmdlet after the Set-AzVMOSDisk cmdlet with -CreateOption Attach option.",
+      "url": "https://github.com/Azure/azure-powershell/issues/29158",
+      "created_at": "2026-02-10T05:30:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "8.0 Build Cross-Platform Shell Aliases & Stop Hooks",
+      "url": "https://github.com/bjudd21/workflow-orchestration-system/issues/8",
+      "created_at": "2026-02-11T21:16:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Telemetry: CompatTelRunner.exe",
+      "url": "https://github.com/ChrisTitusTech/winutil/issues/4035",
+      "created_at": "2026-02-12T14:11:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "SCuBA Unable To Authenticate Sharepoint Or Powerplatform",
+      "url": "https://github.com/cisagov/ScubaGear/issues/1933",
+      "created_at": "2026-01-16T20:35:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Request] PowerShell 7",
+      "url": "https://github.com/microsoft/litebox/issues/658",
+      "created_at": "2026-02-11T14:21:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Billing can be bypassed using a combination of subagents with an agent definition, resulting in unlimited free premium requests.",
+      "url": "https://github.com/microsoft/vscode/issues/292452",
+      "created_at": "2026-02-03T03:30:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-12T01:05:43.0596695Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/138",
+      "created_at": "2026-02-12T01:05:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-12T08:32:37.7960853Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/140",
+      "created_at": "2026-02-12T08:32:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Sandbox setup error on Windows",
+      "url": "https://github.com/openai/codex/issues/10601",
+      "created_at": "2026-02-04T07:40:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Read tool validation error causes infinite retry loop until context window exhaustion",
+      "url": "https://github.com/openclaw/openclaw/issues/14729",
+      "created_at": "2026-02-12T15:14:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[SECURITY] [v0.0.7] Windows sandbox backend is a no-op; execute_sandboxed runs unsandboxed commands",
+      "url": "https://github.com/PlatformNetwork/bounty-challenge/issues/7466",
+      "created_at": "2026-02-10T19:48:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "discussions",
+      "url": "https://github.com/S3DFX-CYBER/AI-Cyber-Defender/issues/6",
+      "created_at": "2026-01-26T15:30:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Windows] NPM installation fails with file locking error during postinstall script",
+      "url": "https://github.com/steveyegge/beads/issues/1683",
+      "created_at": "2026-02-11T14:44:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "process handles",
+      "url": "https://github.com/supervoidcoder/win-witr/issues/77",
+      "created_at": "2026-02-06T22:02:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Cannot run the tool on windows 11",
+      "url": "https://github.com/webb1es/dotenvify/issues/3",
+      "created_at": "2026-02-11T11:31:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602121644/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/adenhq/hive/issues/3662",
+      "label": "github: [Feature Request]: Implement Dedicated Windows OS Resilience Sentinel"
+    },
+    {
+      "url": "https://github.com/adenhq/hive/issues/3840",
+      "label": "github: [Bug]: Missing documentation for common Windows-specific setup errors"
+    },
+    {
+      "url": "https://github.com/adenhq/hive/issues/4061",
+      "label": "github: [Feature]: Add native Windows setup scripts and documentation"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/20862",
+      "label": "github: [BUG] MCP tools fail with \"Browser extension is not connected\" despite /chrome showing Connected"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/24962",
+      "label": "github: Cowork VM fails on Windows 11 Home: wrong DNS config, missing sessiondata.vhdx, no NAT"
+    },
+    {
+      "url": "https://github.com/Azure/azure-powershell/issues/29158",
+      "label": "github: Even though it's unnecessary, $vm.StorageProfile.ImageReference was automatically inserted the value when executing New-AzVM cmdlet after the Set-AzVMOSDisk cmdlet with -CreateOption Attach option."
+    },
+    {
+      "url": "https://github.com/bjudd21/workflow-orchestration-system/issues/8",
+      "label": "github: 8.0 Build Cross-Platform Shell Aliases & Stop Hooks"
+    },
+    {
+      "url": "https://github.com/ChrisTitusTech/winutil/issues/4035",
+      "label": "github: Telemetry: CompatTelRunner.exe"
+    },
+    {
+      "url": "https://github.com/cisagov/ScubaGear/issues/1933",
+      "label": "github: SCuBA Unable To Authenticate Sharepoint Or Powerplatform"
+    },
+    {
+      "url": "https://github.com/microsoft/litebox/issues/658",
+      "label": "github: [Request] PowerShell 7"
+    },
+    {
+      "url": "https://github.com/microsoft/vscode/issues/292452",
+      "label": "github: Billing can be bypassed using a combination of subagents with an agent definition, resulting in unlimited free premium requests."
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/138",
+      "label": "github: mikann-autogen digest 2026-02-12T01:05:43.0596695Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/140",
+      "label": "github: mikann-autogen digest 2026-02-12T08:32:37.7960853Z"
+    },
+    {
+      "url": "https://github.com/openai/codex/issues/10601",
+      "label": "github: Sandbox setup error on Windows"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw/issues/14729",
+      "label": "github: Read tool validation error causes infinite retry loop until context window exhaustion"
+    },
+    {
+      "url": "https://github.com/PlatformNetwork/bounty-challenge/issues/7466",
+      "label": "github: [SECURITY] [v0.0.7] Windows sandbox backend is a no-op; execute_sandboxed runs unsandboxed commands"
+    },
+    {
+      "url": "https://github.com/S3DFX-CYBER/AI-Cyber-Defender/issues/6",
+      "label": "github: discussions"
+    },
+    {
+      "url": "https://github.com/steveyegge/beads/issues/1683",
+      "label": "github: [Windows] NPM installation fails with file locking error during postinstall script"
+    },
+    {
+      "url": "https://github.com/supervoidcoder/win-witr/issues/77",
+      "label": "github: process handles"
+    },
+    {
+      "url": "https://github.com/webb1es/dotenvify/issues/3",
+      "label": "github: Cannot run the tool on windows 11"
+    }
+  ]
+}
