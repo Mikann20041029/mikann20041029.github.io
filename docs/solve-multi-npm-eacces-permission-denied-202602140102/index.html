@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>npm EACCES permission denied をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>npm EACCES permission denied をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/agit8or1/huduglue/issues/36'>snyk integration</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Anselmoo/mcp-ai-agent-guidelines/issues/1196'>T-055: Implement MockPAL</a> <small>[github] 2026-02-08</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/20691'>[Bug] Anthropic API Error: Invalid message format with thinking blocks</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/dongdongbh/Mindwtr/issues/116'>[BUG] Self hosted url does not save and provides errors of unrecognized token and access denied.</a> <small>[github] 2026-02-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/lablup/backend.ai-webui/issues/5266'>Daily Test Coverage Improver - Coverage Steps Failed to Execute</a> <small>[github] 2026-02-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/lwndev/ai-skills-manager/issues/76'>CHORE-017: Test scaffold API error code paths (EACCES, EPERM, ENOENT)</a> <small>[github] 2026-02-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/lwndev/ai-skills-manager/issues/78'>CHORE-019: Add permission error tests consistently across all APIs</a> <small>[github] 2026-02-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/120'>mikann-autogen digest 2026-02-09T01:06:55.4988130Z</a> <small>[github] 2026-02-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/122'>mikann-autogen digest 2026-02-09T08:37:13.2689422Z</a> <small>[github] 2026-02-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/moldovancsaba/mvp-factory-control/issues/145'>[Bug] WarRoom: Portability gate parity + route-level runtime regression checks</a> <small>[github] 2026-02-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/NJLaPrell/ShipIt/issues/78'>Expose ShipIt as an npm CLI for new and existing projects</a> <small>[github] 2026-02-10</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/10690'>gateway update.run attempts update when already on latest version</a> <small>[github] 2026-02-06</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/5434'>Error: EACCES: permission denied, open '/home/node/.openclaw/openclaw.json.7.2ede223b-aa90-4aa5-8f0d-97049696b626.tmp'</a> <small>[github] 2026-01-31</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/6620'>ClawdHub skill installer fails with EACCES in official Docker container</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/QwenLM/qwen-code/issues/1566'>Error in Supabase MCP authentication (mcp auth <supabase-mcp>)</a> <small>[github] 2026-01-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ruvnet/claude-flow/issues/1144'>@xenova/transformers cache EACCES on global install</a> <small>[github] 2026-02-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/tarides/ocaml-devcontainer/issues/36'>Issue with `npm` while trying to run  in local mode (Any Editor)</a> <small>[github] 2026-02-10</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/TencentCloudADP/adp-chat-client/issues/21'>sudo make pack 的时候报错</a> <small>[github] 2026-01-20</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/vercel-labs/agent-browser/issues/132'>Windows: Daemon failed to start when session port falls in excluded port range (EACCES on 127.0.0.1:<port>)</a> <small>[github] 2026-01-16</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/vercel-labs/agent-browser/issues/390'>✗ Daemon failed to start (socket: C:\Users\rayle\.agent-browser\bilibili.sock) in windows</a> <small>[github] 2026-02-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/agit8or1/huduglue/issues/36'>github: snyk integration</a></li>
+<li><a href='https://github.com/Anselmoo/mcp-ai-agent-guidelines/issues/1196'>github: T-055: Implement MockPAL</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/20691'>github: [Bug] Anthropic API Error: Invalid message format with thinking blocks</a></li>
+<li><a href='https://github.com/dongdongbh/Mindwtr/issues/116'>github: [BUG] Self hosted url does not save and provides errors of unrecognized token and access denied.</a></li>
+<li><a href='https://github.com/lablup/backend.ai-webui/issues/5266'>github: Daily Test Coverage Improver - Coverage Steps Failed to Execute</a></li>
+<li><a href='https://github.com/lwndev/ai-skills-manager/issues/76'>github: CHORE-017: Test scaffold API error code paths (EACCES, EPERM, ENOENT)</a></li>
+<li><a href='https://github.com/lwndev/ai-skills-manager/issues/78'>github: CHORE-019: Add permission error tests consistently across all APIs</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/120'>github: mikann-autogen digest 2026-02-09T01:06:55.4988130Z</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/122'>github: mikann-autogen digest 2026-02-09T08:37:13.2689422Z</a></li>
+<li><a href='https://github.com/moldovancsaba/mvp-factory-control/issues/145'>github: [Bug] WarRoom: Portability gate parity + route-level runtime regression checks</a></li>
+<li><a href='https://github.com/NJLaPrell/ShipIt/issues/78'>github: Expose ShipIt as an npm CLI for new and existing projects</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/10690'>github: gateway update.run attempts update when already on latest version</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/5434'>github: Error: EACCES: permission denied, open '/home/node/.openclaw/openclaw.json.7.2ede223b-aa90-4aa5-8f0d-97049696b626.tmp'</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/6620'>github: ClawdHub skill installer fails with EACCES in official Docker container</a></li>
+<li><a href='https://github.com/QwenLM/qwen-code/issues/1566'>github: Error in Supabase MCP authentication (mcp auth <supabase-mcp>)</a></li>
+<li><a href='https://github.com/ruvnet/claude-flow/issues/1144'>github: @xenova/transformers cache EACCES on global install</a></li>
+<li><a href='https://github.com/tarides/ocaml-devcontainer/issues/36'>github: Issue with `npm` while trying to run  in local mode (Any Editor)</a></li>
+<li><a href='https://github.com/TencentCloudADP/adp-chat-client/issues/21'>github: sudo make pack 的时候报错</a></li>
+<li><a href='https://github.com/vercel-labs/agent-browser/issues/132'>github: Windows: Daemon failed to start when session port falls in excluded port range (EACCES on 127.0.0.1:<port>)</a></li>
+<li><a href='https://github.com/vercel-labs/agent-browser/issues/390'>github: ✗ Daemon failed to start (socket: C:\Users\rayle\.agent-browser\bilibili.sock) in windows</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-02-14T01:02:22.5094858Z</small></p>
+</main>
+</body>
+</html>
