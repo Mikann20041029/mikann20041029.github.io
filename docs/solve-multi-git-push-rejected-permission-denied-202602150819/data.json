@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "git push rejected permission denied をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-git-push-rejected-permission-denied-202602150819",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-02-15T08:19:41.5641758Z"
+  },
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/0xHoneyJar/loa-finn/issues/31",
+      "label": "github: RFC: The Hounfour — Multi-Model Provider Abstraction, Cloud Deployment & Agent Distribution"
+    },
+    {
+      "url": "https://github.com/agit8or1/huduglue/issues/65",
+      "label": "github: updater broken"
+    },
+    {
+      "url": "https://github.com/Blb3D/filaops/issues/283",
+      "label": "github: Docker-entrypoint.sh permission denied for Frontend"
+    },
+    {
+      "url": "https://github.com/DrDonik/ai-recipe-planner/issues/70",
+      "label": "github: Risk of prompt injection in issue validation"
+    },
+    {
+      "url": "https://github.com/hivemoot/colony/issues/234",
+      "label": "github: Proposal: Add External Visibility health module for scout intelligence"
+    },
+    {
+      "url": "https://github.com/hivemoot/hivemoot-agent/issues/24",
+      "label": "github: Harden input validation: agent ID path traversal and WORKSPACE_ROOT checks"
+    },
+    {
+      "url": "https://github.com/hivemoot/hivemoot-bot/issues/25",
+      "label": "github: Handle stale PR cross-reference verification failures"
+    },
+    {
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/18",
+      "label": "github: Thermalright GrandVision 360 AIO"
+    },
+    {
+      "url": "https://github.com/malbeclabs/doublezero/issues/2962",
+      "label": "github: client: add local route-table fallback for public IP detection"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/125",
+      "label": "github: mikann-autogen digest 2026-02-10T01:15:20.7428667Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/127",
+      "label": "github: mikann-autogen digest 2026-02-10T08:37:17.7144542Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/129",
+      "label": "github: mikann-autogen digest 2026-02-10T16:52:28.5137533Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/157",
+      "label": "github: mikann-autogen digest 2026-02-15T01:08:22.8442151Z"
+    },
+    {
+      "url": "https://github.com/NoeFabris/opencode-antigravity-auth/issues/396",
+      "label": "github: [BUG] \"Verify your account to continue\" or \"Failed to process error response\" despite verifying all accounts."
+    },
+    {
+      "url": "https://github.com/NoeFabris/opencode-antigravity-auth/issues/426",
+      "label": "github: Unable to Access Gemini Models Due to Permission Denied Error (403)"
+    },
+    {
+      "url": "https://github.com/NoeFabris/opencode-antigravity-auth/issues/428",
+      "label": "github: # [Bug] managedProjectId stuck on inaccessible project — server-side issue preventing login"
+    },
+    {
+      "url": "https://github.com/ruifrvaz/smaqit-extensions/issues/12",
+      "label": "github: Break Down Release Agent Into 5 Reusable Skills"
+    },
+    {
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1514",
+      "label": "github: Set timezone to US Eastern in nix home config"
+    },
+    {
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1559",
+      "label": "github: Manage wezterm configuration with home-manager"
+    },
+    {
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1644",
+      "label": "github: Add WezTerm via Home Manager with declarative config"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "RFC: The Hounfour — Multi-Model Provider Abstraction, Cloud Deployment & Agent Distribution",
+      "url": "https://github.com/0xHoneyJar/loa-finn/issues/31",
+      "created_at": "2026-02-08T00:06:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "updater broken",
+      "url": "https://github.com/agit8or1/huduglue/issues/65",
+      "created_at": "2026-02-09T00:49:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Docker-entrypoint.sh permission denied for Frontend",
+      "url": "https://github.com/Blb3D/filaops/issues/283",
+      "created_at": "2026-02-09T23:30:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Risk of prompt injection in issue validation",
+      "url": "https://github.com/DrDonik/ai-recipe-planner/issues/70",
+      "created_at": "2026-02-06T05:34:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Proposal: Add External Visibility health module for scout intelligence",
+      "url": "https://github.com/hivemoot/colony/issues/234",
+      "created_at": "2026-02-10T15:35:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Harden input validation: agent ID path traversal and WORKSPACE_ROOT checks",
+      "url": "https://github.com/hivemoot/hivemoot-agent/issues/24",
+      "created_at": "2026-02-14T23:14:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Handle stale PR cross-reference verification failures",
+      "url": "https://github.com/hivemoot/hivemoot-bot/issues/25",
+      "created_at": "2026-02-12T12:43:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Thermalright GrandVision 360 AIO",
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/18",
+      "created_at": "2026-02-11T20:30:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "client: add local route-table fallback for public IP detection",
+      "url": "https://github.com/malbeclabs/doublezero/issues/2962",
+      "created_at": "2026-02-13T02:34:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-10T01:15:20.7428667Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/125",
+      "created_at": "2026-02-10T01:15:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-10T08:37:17.7144542Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/127",
+      "created_at": "2026-02-10T08:37:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-10T16:52:28.5137533Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/129",
+      "created_at": "2026-02-10T16:52:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-15T01:08:22.8442151Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/157",
+      "created_at": "2026-02-15T01:08:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] \"Verify your account to continue\" or \"Failed to process error response\" despite verifying all accounts.",
+      "url": "https://github.com/NoeFabris/opencode-antigravity-auth/issues/396",
+      "created_at": "2026-02-07T09:42:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Unable to Access Gemini Models Due to Permission Denied Error (403)",
+      "url": "https://github.com/NoeFabris/opencode-antigravity-auth/issues/426",
+      "created_at": "2026-02-11T05:44:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "# [Bug] managedProjectId stuck on inaccessible project — server-side issue preventing login",
+      "url": "https://github.com/NoeFabris/opencode-antigravity-auth/issues/428",
+      "created_at": "2026-02-11T07:08:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Break Down Release Agent Into 5 Reusable Skills",
+      "url": "https://github.com/ruifrvaz/smaqit-extensions/issues/12",
+      "created_at": "2026-02-12T20:56:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Set timezone to US Eastern in nix home config",
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1514",
+      "created_at": "2026-01-22T17:27:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Manage wezterm configuration with home-manager",
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1559",
+      "created_at": "2026-01-23T20:43:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Add WezTerm via Home Manager with declarative config",
+      "url": "https://github.com/rumor-ml/commons.systems/issues/1644",
+      "created_at": "2026-01-29T20:30:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602150819/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
