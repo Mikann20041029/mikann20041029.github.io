@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Windows installation problems and their solutions",
+      "url": "https://github.com/ack00gar/FunGen-AI-Powered-Funscript-Generator/issues/101",
+      "created_at": "2026-02-15T22:02:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DoFuzz.py cannot run",
+      "url": "https://github.com/ADSTestKit/DoFuzz/issues/1",
+      "created_at": "2026-02-16T07:19:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Feature]支持一下pyproject.toml?",
+      "url": "https://github.com/AstrBotDevs/AstrBot/issues/5132",
+      "created_at": "2026-02-16T04:48:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "error setting g:python3_host_prog in Neovim",
+      "url": "https://github.com/Coacher/vim-virtualenv/issues/21",
+      "created_at": "2026-02-15T18:25:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pyproject.toml is missing half the deps, install breaks immediately",
+      "url": "https://github.com/ControlCore-Project/concore/issues/354",
+      "created_at": "2026-02-16T06:05:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug Report] ModuleNotFoundError: No module named 'isaaclab'",
+      "url": "https://github.com/isaac-sim/IsaacLab/issues/4576",
+      "created_at": "2026-02-09T03:36:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'langchain.chains' on fresh install",
+      "url": "https://github.com/langchain-ai/langchain/issues/35240",
+      "created_at": "2026-02-15T14:48:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Problems installing PySLAM on MacOS",
+      "url": "https://github.com/luigifreda/pyslam/issues/224",
+      "created_at": "2026-02-11T08:03:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bug Report & Issues Encountered",
+      "url": "https://github.com/mir-ashiq/metaai-api/issues/5",
+      "created_at": "2026-02-15T21:13:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "cleanup_old_records job fails with \"ModuleNotFoundError: No module named 'sqlmodel'",
+      "url": "https://github.com/Muhammad-Hamza-Khan-03/youtube_to_discord/issues/1",
+      "created_at": "2026-02-16T04:42:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "openvoice module is not found",
+      "url": "https://github.com/myshell-ai/OpenVoice/issues/471",
+      "created_at": "2026-02-16T01:48:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Flatdict no longer builds due to Setuptools removing the pkg-resources module",
+      "url": "https://github.com/okta/okta-sdk-python/issues/499",
+      "created_at": "2026-02-12T20:47:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Can not install \"pip install openbabel\"",
+      "url": "https://github.com/openbabel/openbabel/issues/2856",
+      "created_at": "2026-02-16T06:18:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: Unguarded Unitree SDK imports cause NameError and ModuleNotFoundError, breaking 470 tests",
+      "url": "https://github.com/OpenMind/OM1/issues/2279",
+      "created_at": "2026-02-16T05:17:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'mc.JavaUtils'",
+      "url": "https://github.com/pythonengineer/minecraft-python/issues/3",
+      "created_at": "2026-02-16T05:00:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "CI Health & Stability",
+      "url": "https://github.com/RC219805/Transformation_Portal/issues/796",
+      "created_at": "2026-02-02T22:03:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Verify all relative imports are correct across codebase",
+      "url": "https://github.com/Rubybeer123/GayChudTrader/issues/11",
+      "created_at": "2026-02-16T05:47:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "還有更簡單的安裝嗎？？",
+      "url": "https://github.com/Saganaki22/ComfyUI-SoulX-Singer/issues/4",
+      "created_at": "2026-02-14T01:43:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Trellis2PreProcessImage: No module named 'pooch'",
+      "url": "https://github.com/Tavris1/ComfyUI-Easy-Install/issues/129",
+      "created_at": "2026-02-16T05:20:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Can't start truckersmp-cli",
+      "url": "https://github.com/truckersmp-cli/truckersmp-cli/issues/380",
+      "created_at": "2026-02-16T05:45:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160833/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-python-modulenotfounderror-202602160833",
+    "generated_at": "2026-02-16T08:33:14.9802744Z",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）"
+  },
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: Windows installation problems and their solutions",
+      "url": "https://github.com/ack00gar/FunGen-AI-Powered-Funscript-Generator/issues/101"
+    },
+    {
+      "label": "github: DoFuzz.py cannot run",
+      "url": "https://github.com/ADSTestKit/DoFuzz/issues/1"
+    },
+    {
+      "label": "github: [Feature]支持一下pyproject.toml?",
+      "url": "https://github.com/AstrBotDevs/AstrBot/issues/5132"
+    },
+    {
+      "label": "github: error setting g:python3_host_prog in Neovim",
+      "url": "https://github.com/Coacher/vim-virtualenv/issues/21"
+    },
+    {
+      "label": "github: pyproject.toml is missing half the deps, install breaks immediately",
+      "url": "https://github.com/ControlCore-Project/concore/issues/354"
+    },
+    {
+      "label": "github: [Bug Report] ModuleNotFoundError: No module named 'isaaclab'",
+      "url": "https://github.com/isaac-sim/IsaacLab/issues/4576"
+    },
+    {
+      "label": "github: ModuleNotFoundError: No module named 'langchain.chains' on fresh install",
+      "url": "https://github.com/langchain-ai/langchain/issues/35240"
+    },
+    {
+      "label": "github: Problems installing PySLAM on MacOS",
+      "url": "https://github.com/luigifreda/pyslam/issues/224"
+    },
+    {
+      "label": "github: Bug Report & Issues Encountered",
+      "url": "https://github.com/mir-ashiq/metaai-api/issues/5"
+    },
+    {
+      "label": "github: cleanup_old_records job fails with \"ModuleNotFoundError: No module named 'sqlmodel'",
+      "url": "https://github.com/Muhammad-Hamza-Khan-03/youtube_to_discord/issues/1"
+    },
+    {
+      "label": "github: openvoice module is not found",
+      "url": "https://github.com/myshell-ai/OpenVoice/issues/471"
+    },
+    {
+      "label": "github: Flatdict no longer builds due to Setuptools removing the pkg-resources module",
+      "url": "https://github.com/okta/okta-sdk-python/issues/499"
+    },
+    {
+      "label": "github: Can not install \"pip install openbabel\"",
+      "url": "https://github.com/openbabel/openbabel/issues/2856"
+    },
+    {
+      "label": "github: bug: Unguarded Unitree SDK imports cause NameError and ModuleNotFoundError, breaking 470 tests",
+      "url": "https://github.com/OpenMind/OM1/issues/2279"
+    },
+    {
+      "label": "github: ModuleNotFoundError: No module named 'mc.JavaUtils'",
+      "url": "https://github.com/pythonengineer/minecraft-python/issues/3"
+    },
+    {
+      "label": "github: CI Health & Stability",
+      "url": "https://github.com/RC219805/Transformation_Portal/issues/796"
+    },
+    {
+      "label": "github: Verify all relative imports are correct across codebase",
+      "url": "https://github.com/Rubybeer123/GayChudTrader/issues/11"
+    },
+    {
+      "label": "github: 還有更簡單的安裝嗎？？",
+      "url": "https://github.com/Saganaki22/ComfyUI-SoulX-Singer/issues/4"
+    },
+    {
+      "label": "github: Trellis2PreProcessImage: No module named 'pooch'",
+      "url": "https://github.com/Tavris1/ComfyUI-Easy-Install/issues/129"
+    },
+    {
+      "label": "github: Can't start truckersmp-cli",
+      "url": "https://github.com/truckersmp-cli/truckersmp-cli/issues/380"
+    }
+  ]
+}
