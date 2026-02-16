@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>python ModuleNotFoundError をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/ack00gar/FunGen-AI-Powered-Funscript-Generator/issues/101'>Windows installation problems and their solutions</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/adenhq/hive/issues/4816'>[Bug]: Unguarded 'import resend' in email_tool crashes entire tool registration`</a> <small>[github] 2026-02-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/adenhq/hive/issues/569'>[Bug]: PYTHONPATH is overwritten instead of extended Missing --stdio flag in agent-builder server Relative paths (cwd and PYTHONPATH) can break depending on launch location Direct execution of mcp_server.py is fragile</a> <small>[github] 2026-01-26</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/22087'>BUG: classifyHandoffIfNeeded is not defined - SubagentStop hook failure</a> <small>[github] 2026-01-31</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ArchieDxncan/Cobblemon-Transporter/issues/7'>Can't import .dat files</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/D-Jeffrey/gedcom-to-visualmap/issues/71'>Using pre-commit</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/esphome/esphome/issues/13517'>ESP-IDF build fails with `ModuleNotFoundError: No module named 'fatfs.wrapper'` - missing `fatfs-ng` dependency</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/firebase/genkit/issues/4674'>Unable to load samples</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/jhj0517/Whisper-WebUI/issues/628'>Broken docker build via jhj0517-whisper.git:  No module named 'pkg_resources'</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/kubeedge/ianvs/issues/360'>[Bug](missing dependency + broken import + undocumented API requirement)</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Lexonight1/thermalright-trcc-linux/issues/15'>[DEVICE]</a> <small>[github] 2026-02-10</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Lexonight1/thermalright-trcc-linux/issues/5'>Please add support for Assassin X 120 R Digital (USB ID 0416:8001)</a> <small>[github] 2026-02-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/luigifreda/pyslam/issues/224'>Problems installing PySLAM on MacOS</a> <small>[github] 2026-02-11</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/mir-ashiq/metaai-api/issues/5'>Bug Report & Issues Encountered</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Panchovix/stable-diffusion-webui-reForge/issues/467'>[Bug]: Instaling clip</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/rakuri255/UltraSinger/issues/296'>Running script throws a 'bash: line 1: .venvScriptsactivate: command not found' error</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/RC219805/Transformation_Portal/issues/796'>CI Health & Stability</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Seeed-Studio/platform-seeedboards/issues/35'>Missing rich-click and intelhex python packages</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/SulfurNitride/Fluorine-Manager/issues/9'>Build fails on Arch Linux</a> <small>[github] 2026-02-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/zanesmit29/OPITHackathon2026/issues/11'>__init__.py</a> <small>[github] 2026-02-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/ack00gar/FunGen-AI-Powered-Funscript-Generator/issues/101'>github: Windows installation problems and their solutions</a></li>
+<li><a href='https://github.com/adenhq/hive/issues/4816'>github: [Bug]: Unguarded 'import resend' in email_tool crashes entire tool registration`</a></li>
+<li><a href='https://github.com/adenhq/hive/issues/569'>github: [Bug]: PYTHONPATH is overwritten instead of extended Missing --stdio flag in agent-builder server Relative paths (cwd and PYTHONPATH) can break depending on launch location Direct execution of mcp_server.py is fragile</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/22087'>github: BUG: classifyHandoffIfNeeded is not defined - SubagentStop hook failure</a></li>
+<li><a href='https://github.com/ArchieDxncan/Cobblemon-Transporter/issues/7'>github: Can't import .dat files</a></li>
+<li><a href='https://github.com/D-Jeffrey/gedcom-to-visualmap/issues/71'>github: Using pre-commit</a></li>
+<li><a href='https://github.com/esphome/esphome/issues/13517'>github: ESP-IDF build fails with `ModuleNotFoundError: No module named 'fatfs.wrapper'` - missing `fatfs-ng` dependency</a></li>
+<li><a href='https://github.com/firebase/genkit/issues/4674'>github: Unable to load samples</a></li>
+<li><a href='https://github.com/jhj0517/Whisper-WebUI/issues/628'>github: Broken docker build via jhj0517-whisper.git:  No module named 'pkg_resources'</a></li>
+<li><a href='https://github.com/kubeedge/ianvs/issues/360'>github: [Bug](missing dependency + broken import + undocumented API requirement)</a></li>
+<li><a href='https://github.com/Lexonight1/thermalright-trcc-linux/issues/15'>github: [DEVICE]</a></li>
+<li><a href='https://github.com/Lexonight1/thermalright-trcc-linux/issues/5'>github: Please add support for Assassin X 120 R Digital (USB ID 0416:8001)</a></li>
+<li><a href='https://github.com/luigifreda/pyslam/issues/224'>github: Problems installing PySLAM on MacOS</a></li>
+<li><a href='https://github.com/mir-ashiq/metaai-api/issues/5'>github: Bug Report & Issues Encountered</a></li>
+<li><a href='https://github.com/Panchovix/stable-diffusion-webui-reForge/issues/467'>github: [Bug]: Instaling clip</a></li>
+<li><a href='https://github.com/rakuri255/UltraSinger/issues/296'>github: Running script throws a 'bash: line 1: .venvScriptsactivate: command not found' error</a></li>
+<li><a href='https://github.com/RC219805/Transformation_Portal/issues/796'>github: CI Health & Stability</a></li>
+<li><a href='https://github.com/Seeed-Studio/platform-seeedboards/issues/35'>github: Missing rich-click and intelhex python packages</a></li>
+<li><a href='https://github.com/SulfurNitride/Fluorine-Manager/issues/9'>github: Build fails on Arch Linux</a></li>
+<li><a href='https://github.com/zanesmit29/OPITHackathon2026/issues/11'>github: __init__.py</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-02-16T01:06:10.3880722Z</small></p>
+</main>
+</body>
+</html>

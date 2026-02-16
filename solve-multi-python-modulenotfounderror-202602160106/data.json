@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-python-modulenotfounderror-202602160106",
+    "generated_at": "2026-02-16T01:06:10.3880722Z",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "Windows installation problems and their solutions",
+      "url": "https://github.com/ack00gar/FunGen-AI-Powered-Funscript-Generator/issues/101",
+      "created_at": "2026-02-15T22:02:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Unguarded 'import resend' in email_tool crashes entire tool registration`",
+      "url": "https://github.com/adenhq/hive/issues/4816",
+      "created_at": "2026-02-14T15:12:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: PYTHONPATH is overwritten instead of extended Missing --stdio flag in agent-builder server Relative paths (cwd and PYTHONPATH) can break depending on launch location Direct execution of mcp_server.py is fragile",
+      "url": "https://github.com/adenhq/hive/issues/569",
+      "created_at": "2026-01-26T07:07:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "BUG: classifyHandoffIfNeeded is not defined - SubagentStop hook failure",
+      "url": "https://github.com/anthropics/claude-code/issues/22087",
+      "created_at": "2026-01-31T03:05:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Can't import .dat files",
+      "url": "https://github.com/ArchieDxncan/Cobblemon-Transporter/issues/7",
+      "created_at": "2026-02-15T17:53:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Using pre-commit",
+      "url": "https://github.com/D-Jeffrey/gedcom-to-visualmap/issues/71",
+      "created_at": "2026-02-15T19:30:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ESP-IDF build fails with `ModuleNotFoundError: No module named 'fatfs.wrapper'` - missing `fatfs-ng` dependency",
+      "url": "https://github.com/esphome/esphome/issues/13517",
+      "created_at": "2026-01-25T06:21:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Unable to load samples",
+      "url": "https://github.com/firebase/genkit/issues/4674",
+      "created_at": "2026-02-15T04:42:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Broken docker build via jhj0517-whisper.git:  No module named 'pkg_resources'",
+      "url": "https://github.com/jhj0517/Whisper-WebUI/issues/628",
+      "created_at": "2026-02-15T10:52:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug](missing dependency + broken import + undocumented API requirement)",
+      "url": "https://github.com/kubeedge/ianvs/issues/360",
+      "created_at": "2026-02-15T17:13:22.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[DEVICE]",
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/15",
+      "created_at": "2026-02-10T02:35:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Please add support for Assassin X 120 R Digital (USB ID 0416:8001)",
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/5",
+      "created_at": "2026-02-07T21:08:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Problems installing PySLAM on MacOS",
+      "url": "https://github.com/luigifreda/pyslam/issues/224",
+      "created_at": "2026-02-11T08:03:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bug Report & Issues Encountered",
+      "url": "https://github.com/mir-ashiq/metaai-api/issues/5",
+      "created_at": "2026-02-15T21:13:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Instaling clip",
+      "url": "https://github.com/Panchovix/stable-diffusion-webui-reForge/issues/467",
+      "created_at": "2026-02-15T22:37:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Running script throws a 'bash: line 1: .venvScriptsactivate: command not found' error",
+      "url": "https://github.com/rakuri255/UltraSinger/issues/296",
+      "created_at": "2026-02-01T21:40:46.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "CI Health & Stability",
+      "url": "https://github.com/RC219805/Transformation_Portal/issues/796",
+      "created_at": "2026-02-02T22:03:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Missing rich-click and intelhex python packages",
+      "url": "https://github.com/Seeed-Studio/platform-seeedboards/issues/35",
+      "created_at": "2026-02-15T20:23:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Build fails on Arch Linux",
+      "url": "https://github.com/SulfurNitride/Fluorine-Manager/issues/9",
+      "created_at": "2026-02-14T20:42:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "__init__.py",
+      "url": "https://github.com/zanesmit29/OPITHackathon2026/issues/11",
+      "created_at": "2026-02-14T14:17:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602160106/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/ack00gar/FunGen-AI-Powered-Funscript-Generator/issues/101",
+      "label": "github: Windows installation problems and their solutions"
+    },
+    {
+      "url": "https://github.com/adenhq/hive/issues/4816",
+      "label": "github: [Bug]: Unguarded 'import resend' in email_tool crashes entire tool registration`"
+    },
+    {
+      "url": "https://github.com/adenhq/hive/issues/569",
+      "label": "github: [Bug]: PYTHONPATH is overwritten instead of extended Missing --stdio flag in agent-builder server Relative paths (cwd and PYTHONPATH) can break depending on launch location Direct execution of mcp_server.py is fragile"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/22087",
+      "label": "github: BUG: classifyHandoffIfNeeded is not defined - SubagentStop hook failure"
+    },
+    {
+      "url": "https://github.com/ArchieDxncan/Cobblemon-Transporter/issues/7",
+      "label": "github: Can't import .dat files"
+    },
+    {
+      "url": "https://github.com/D-Jeffrey/gedcom-to-visualmap/issues/71",
+      "label": "github: Using pre-commit"
+    },
+    {
+      "url": "https://github.com/esphome/esphome/issues/13517",
+      "label": "github: ESP-IDF build fails with `ModuleNotFoundError: No module named 'fatfs.wrapper'` - missing `fatfs-ng` dependency"
+    },
+    {
+      "url": "https://github.com/firebase/genkit/issues/4674",
+      "label": "github: Unable to load samples"
+    },
+    {
+      "url": "https://github.com/jhj0517/Whisper-WebUI/issues/628",
+      "label": "github: Broken docker build via jhj0517-whisper.git:  No module named 'pkg_resources'"
+    },
+    {
+      "url": "https://github.com/kubeedge/ianvs/issues/360",
+      "label": "github: [Bug](missing dependency + broken import + undocumented API requirement)"
+    },
+    {
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/15",
+      "label": "github: [DEVICE]"
+    },
+    {
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/5",
+      "label": "github: Please add support for Assassin X 120 R Digital (USB ID 0416:8001)"
+    },
+    {
+      "url": "https://github.com/luigifreda/pyslam/issues/224",
+      "label": "github: Problems installing PySLAM on MacOS"
+    },
+    {
+      "url": "https://github.com/mir-ashiq/metaai-api/issues/5",
+      "label": "github: Bug Report & Issues Encountered"
+    },
+    {
+      "url": "https://github.com/Panchovix/stable-diffusion-webui-reForge/issues/467",
+      "label": "github: [Bug]: Instaling clip"
+    },
+    {
+      "url": "https://github.com/rakuri255/UltraSinger/issues/296",
+      "label": "github: Running script throws a 'bash: line 1: .venvScriptsactivate: command not found' error"
+    },
+    {
+      "url": "https://github.com/RC219805/Transformation_Portal/issues/796",
+      "label": "github: CI Health & Stability"
+    },
+    {
+      "url": "https://github.com/Seeed-Studio/platform-seeedboards/issues/35",
+      "label": "github: Missing rich-click and intelhex python packages"
+    },
+    {
+      "url": "https://github.com/SulfurNitride/Fluorine-Manager/issues/9",
+      "label": "github: Build fails on Arch Linux"
+    },
+    {
+      "url": "https://github.com/zanesmit29/OPITHackathon2026/issues/11",
+      "label": "github: __init__.py"
+    }
+  ]
+}
