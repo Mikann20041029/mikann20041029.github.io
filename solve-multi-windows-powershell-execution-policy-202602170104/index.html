@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>windows powershell execution policy をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>windows powershell execution policy をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/anthropics/claude-code/issues/23221'>[BUG]   Claude in Chrome extension broken after Windows update - CSP blocking scripts</a> <small>[github] 2026-02-05</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/23564'>[BUG] Bash tool returns exit code 5 on native Windows in Parallels VM</a> <small>[github] 2026-02-06</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/24962'>Cowork VM fails on Windows 11 Home: wrong DNS config, missing sessiondata.vhdx, no NAT</a> <small>[github] 2026-02-11</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/BasedHardware/omi/issues/4806'>Windows Setup Failed: Encoding error in whisper_flutter_new dependency</a> <small>[github] 2026-02-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/12'>Admin on my system but program won't work</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/github/copilot-cli/issues/1081'>copilot cli returns: AggregateError: Failed to list models</a> <small>[github] 2026-01-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/github/copilot-cli/issues/1434'>PowerShell Tool Hangs Indefinitely on Windows 11 Pro</a> <small>[github] 2026-02-12</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/lingadevaru-hp/ai-agent-collaboration/issues/1'>Agent Coordination Thread</a> <small>[github] 2026-02-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/memstechtips/Winhance/issues/450'>[FEATURE] Add other features to Optimization, Privacy & Security</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Naver-Dunamu-Merge-TF/NSC-infra/issues/1'>NSC Azure Native Infrastructure_TEST (TEST_LOG)</a> <small>[github] 2026-02-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/njfio/Tau/issues/1480'>Task: 5.3 Delivery Plan and Execution</a> <small>[github] 2026-02-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/14729'>Read tool validation error causes infinite retry loop until context window exhaustion</a> <small>[github] 2026-02-12</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/pocketpaw/pocketpaw/issues/155'>F1 Add Windows PowerShell instructions for installation #154</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/rjmurillo/ai-agents/issues/1049'>Epic: PowerShell-to-Python Migration (ADR-042)</a> <small>[github] 2026-02-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/S3DFX-CYBER/AI-Cyber-Defender/issues/6'>discussions</a> <small>[github] 2026-01-26</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/svelderrainruiz/labview-icon-editor/issues/8'>Hard-fail LabVIEWCLI port resolution and auto prerelease on develop merges</a> <small>[github] 2026-02-16</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Uchida16104/TaskBoard/issues/86'>[Migration / Reliability] Integrate Lumos-Language artifacts into LumOS with minimal refactor, deploy plan and safety checklist</a> <small>[github] 2026-02-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Uchida16104/TaskBoard/issues/88'>[Idea] LumOS Full-Stack Online OS Completion Plan with Unified Execution, Network Tooling, and Zero-Error Hardening</a> <small>[github] 2026-02-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Yeachan-Heo/oh-my-codex/issues/36'>[Feature] Native Windows support for omx team (without tmux)</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/zhongyu09/openchatbi/issues/10'>Security Vulnerability Report: save_tool in latest openchatbi</a> <small>[github] 2026-01-25</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/23221'>github: [BUG]   Claude in Chrome extension broken after Windows update - CSP blocking scripts</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/23564'>github: [BUG] Bash tool returns exit code 5 on native Windows in Parallels VM</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/24962'>github: Cowork VM fails on Windows 11 Home: wrong DNS config, missing sessiondata.vhdx, no NAT</a></li>
+<li><a href='https://github.com/BasedHardware/omi/issues/4806'>github: Windows Setup Failed: Encoding error in whisper_flutter_new dependency</a></li>
+<li><a href='https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/12'>github: Admin on my system but program won't work</a></li>
+<li><a href='https://github.com/github/copilot-cli/issues/1081'>github: copilot cli returns: AggregateError: Failed to list models</a></li>
+<li><a href='https://github.com/github/copilot-cli/issues/1434'>github: PowerShell Tool Hangs Indefinitely on Windows 11 Pro</a></li>
+<li><a href='https://github.com/lingadevaru-hp/ai-agent-collaboration/issues/1'>github: Agent Coordination Thread</a></li>
+<li><a href='https://github.com/memstechtips/Winhance/issues/450'>github: [FEATURE] Add other features to Optimization, Privacy & Security</a></li>
+<li><a href='https://github.com/Naver-Dunamu-Merge-TF/NSC-infra/issues/1'>github: NSC Azure Native Infrastructure_TEST (TEST_LOG)</a></li>
+<li><a href='https://github.com/njfio/Tau/issues/1480'>github: Task: 5.3 Delivery Plan and Execution</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/14729'>github: Read tool validation error causes infinite retry loop until context window exhaustion</a></li>
+<li><a href='https://github.com/pocketpaw/pocketpaw/issues/155'>github: F1 Add Windows PowerShell instructions for installation #154</a></li>
+<li><a href='https://github.com/rjmurillo/ai-agents/issues/1049'>github: Epic: PowerShell-to-Python Migration (ADR-042)</a></li>
+<li><a href='https://github.com/S3DFX-CYBER/AI-Cyber-Defender/issues/6'>github: discussions</a></li>
+<li><a href='https://github.com/svelderrainruiz/labview-icon-editor/issues/8'>github: Hard-fail LabVIEWCLI port resolution and auto prerelease on develop merges</a></li>
+<li><a href='https://github.com/Uchida16104/TaskBoard/issues/86'>github: [Migration / Reliability] Integrate Lumos-Language artifacts into LumOS with minimal refactor, deploy plan and safety checklist</a></li>
+<li><a href='https://github.com/Uchida16104/TaskBoard/issues/88'>github: [Idea] LumOS Full-Stack Online OS Completion Plan with Unified Execution, Network Tooling, and Zero-Error Hardening</a></li>
+<li><a href='https://github.com/Yeachan-Heo/oh-my-codex/issues/36'>github: [Feature] Native Windows support for omx team (without tmux)</a></li>
+<li><a href='https://github.com/zhongyu09/openchatbi/issues/10'>github: Security Vulnerability Report: save_tool in latest openchatbi</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-02-17T01:04:37.3348709Z</small></p>
+</main>
+</body>
+</html>

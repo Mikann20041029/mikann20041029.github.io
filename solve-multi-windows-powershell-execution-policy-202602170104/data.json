@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: [BUG]   Claude in Chrome extension broken after Windows update - CSP blocking scripts",
+      "url": "https://github.com/anthropics/claude-code/issues/23221"
+    },
+    {
+      "label": "github: [BUG] Bash tool returns exit code 5 on native Windows in Parallels VM",
+      "url": "https://github.com/anthropics/claude-code/issues/23564"
+    },
+    {
+      "label": "github: Cowork VM fails on Windows 11 Home: wrong DNS config, missing sessiondata.vhdx, no NAT",
+      "url": "https://github.com/anthropics/claude-code/issues/24962"
+    },
+    {
+      "label": "github: Windows Setup Failed: Encoding error in whisper_flutter_new dependency",
+      "url": "https://github.com/BasedHardware/omi/issues/4806"
+    },
+    {
+      "label": "github: Admin on my system but program won't work",
+      "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/12"
+    },
+    {
+      "label": "github: copilot cli returns: AggregateError: Failed to list models",
+      "url": "https://github.com/github/copilot-cli/issues/1081"
+    },
+    {
+      "label": "github: PowerShell Tool Hangs Indefinitely on Windows 11 Pro",
+      "url": "https://github.com/github/copilot-cli/issues/1434"
+    },
+    {
+      "label": "github: Agent Coordination Thread",
+      "url": "https://github.com/lingadevaru-hp/ai-agent-collaboration/issues/1"
+    },
+    {
+      "label": "github: [FEATURE] Add other features to Optimization, Privacy & Security",
+      "url": "https://github.com/memstechtips/Winhance/issues/450"
+    },
+    {
+      "label": "github: NSC Azure Native Infrastructure_TEST (TEST_LOG)",
+      "url": "https://github.com/Naver-Dunamu-Merge-TF/NSC-infra/issues/1"
+    },
+    {
+      "label": "github: Task: 5.3 Delivery Plan and Execution",
+      "url": "https://github.com/njfio/Tau/issues/1480"
+    },
+    {
+      "label": "github: Read tool validation error causes infinite retry loop until context window exhaustion",
+      "url": "https://github.com/openclaw/openclaw/issues/14729"
+    },
+    {
+      "label": "github: F1 Add Windows PowerShell instructions for installation #154",
+      "url": "https://github.com/pocketpaw/pocketpaw/issues/155"
+    },
+    {
+      "label": "github: Epic: PowerShell-to-Python Migration (ADR-042)",
+      "url": "https://github.com/rjmurillo/ai-agents/issues/1049"
+    },
+    {
+      "label": "github: discussions",
+      "url": "https://github.com/S3DFX-CYBER/AI-Cyber-Defender/issues/6"
+    },
+    {
+      "label": "github: Hard-fail LabVIEWCLI port resolution and auto prerelease on develop merges",
+      "url": "https://github.com/svelderrainruiz/labview-icon-editor/issues/8"
+    },
+    {
+      "label": "github: [Migration / Reliability] Integrate Lumos-Language artifacts into LumOS with minimal refactor, deploy plan and safety checklist",
+      "url": "https://github.com/Uchida16104/TaskBoard/issues/86"
+    },
+    {
+      "label": "github: [Idea] LumOS Full-Stack Online OS Completion Plan with Unified Execution, Network Tooling, and Zero-Error Hardening",
+      "url": "https://github.com/Uchida16104/TaskBoard/issues/88"
+    },
+    {
+      "label": "github: [Feature] Native Windows support for omx team (without tmux)",
+      "url": "https://github.com/Yeachan-Heo/oh-my-codex/issues/36"
+    },
+    {
+      "label": "github: Security Vulnerability Report: save_tool in latest openchatbi",
+      "url": "https://github.com/zhongyu09/openchatbi/issues/10"
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "generated_at": "2026-02-17T01:04:37.3348709Z",
+    "title": "windows powershell execution policy をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "slug": "solve-multi-windows-powershell-execution-policy-202602170104"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "[BUG]   Claude in Chrome extension broken after Windows update - CSP blocking scripts",
+      "url": "https://github.com/anthropics/claude-code/issues/23221",
+      "created_at": "2026-02-05T00:36:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Bash tool returns exit code 5 on native Windows in Parallels VM",
+      "url": "https://github.com/anthropics/claude-code/issues/23564",
+      "created_at": "2026-02-06T03:33:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Cowork VM fails on Windows 11 Home: wrong DNS config, missing sessiondata.vhdx, no NAT",
+      "url": "https://github.com/anthropics/claude-code/issues/24962",
+      "created_at": "2026-02-11T11:29:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows Setup Failed: Encoding error in whisper_flutter_new dependency",
+      "url": "https://github.com/BasedHardware/omi/issues/4806",
+      "created_at": "2026-02-13T21:22:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Admin on my system but program won't work",
+      "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/12",
+      "created_at": "2026-02-15T16:48:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "copilot cli returns: AggregateError: Failed to list models",
+      "url": "https://github.com/github/copilot-cli/issues/1081",
+      "created_at": "2026-01-22T23:14:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PowerShell Tool Hangs Indefinitely on Windows 11 Pro",
+      "url": "https://github.com/github/copilot-cli/issues/1434",
+      "created_at": "2026-02-12T23:07:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Agent Coordination Thread",
+      "url": "https://github.com/lingadevaru-hp/ai-agent-collaboration/issues/1",
+      "created_at": "2026-02-14T18:06:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[FEATURE] Add other features to Optimization, Privacy & Security",
+      "url": "https://github.com/memstechtips/Winhance/issues/450",
+      "created_at": "2026-02-15T21:53:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "NSC Azure Native Infrastructure_TEST (TEST_LOG)",
+      "url": "https://github.com/Naver-Dunamu-Merge-TF/NSC-infra/issues/1",
+      "created_at": "2026-02-09T02:28:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Task: 5.3 Delivery Plan and Execution",
+      "url": "https://github.com/njfio/Tau/issues/1480",
+      "created_at": "2026-02-14T15:21:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Read tool validation error causes infinite retry loop until context window exhaustion",
+      "url": "https://github.com/openclaw/openclaw/issues/14729",
+      "created_at": "2026-02-12T15:14:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "F1 Add Windows PowerShell instructions for installation #154",
+      "url": "https://github.com/pocketpaw/pocketpaw/issues/155",
+      "created_at": "2026-02-15T18:01:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Epic: PowerShell-to-Python Migration (ADR-042)",
+      "url": "https://github.com/rjmurillo/ai-agents/issues/1049",
+      "created_at": "2026-02-07T15:47:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "discussions",
+      "url": "https://github.com/S3DFX-CYBER/AI-Cyber-Defender/issues/6",
+      "created_at": "2026-01-26T15:30:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Hard-fail LabVIEWCLI port resolution and auto prerelease on develop merges",
+      "url": "https://github.com/svelderrainruiz/labview-icon-editor/issues/8",
+      "created_at": "2026-02-16T19:31:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Migration / Reliability] Integrate Lumos-Language artifacts into LumOS with minimal refactor, deploy plan and safety checklist",
+      "url": "https://github.com/Uchida16104/TaskBoard/issues/86",
+      "created_at": "2026-02-14T11:08:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Idea] LumOS Full-Stack Online OS Completion Plan with Unified Execution, Network Tooling, and Zero-Error Hardening",
+      "url": "https://github.com/Uchida16104/TaskBoard/issues/88",
+      "created_at": "2026-02-14T23:47:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Feature] Native Windows support for omx team (without tmux)",
+      "url": "https://github.com/Yeachan-Heo/oh-my-codex/issues/36",
+      "created_at": "2026-02-15T11:51:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Security Vulnerability Report: save_tool in latest openchatbi",
+      "url": "https://github.com/zhongyu09/openchatbi/issues/10",
+      "created_at": "2026-01-25T08:09:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602170104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
