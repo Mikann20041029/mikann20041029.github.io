@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "slug": "solve-multi-github-pages-404-not-found-202602180832",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "generated_at": "2026-02-18T08:32:09.0674499Z"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "🛑 Caja Registradora (App) is down",
+      "url": "https://github.com/absortian/AbsorStatus/issues/404",
+      "created_at": "2026-02-18T07:32:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "WebSub: Add HTTP Link header discovery for hub URLs",
+      "url": "https://github.com/brendanlong/lion-reader/issues/404",
+      "created_at": "2026-01-25T08:25:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[EPIC](floating-ip):  Implement FloatingIp functionality",
+      "url": "https://github.com/cobaltcore-dev/aurora-dashboard/issues/477",
+      "created_at": "2026-01-21T09:24:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Link Checker Report: Broken links found",
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/44",
+      "created_at": "2026-02-18T06:19:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Stoogle MVP — Council Design & PRD",
+      "url": "https://github.com/dtsong/stoogle/issues/1",
+      "created_at": "2026-02-18T06:12:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Expense - Duplicate not resolve when admin \"Keep this one\" for duplicated expenses on 2 reports",
+      "url": "https://github.com/Expensify/App/issues/82568",
+      "created_at": "2026-02-16T15:20:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Proposal: re-approve static proposal-body pages with quorum plan",
+      "url": "https://github.com/hivemoot/colony/issues/404",
+      "created_at": "2026-02-17T19:54:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[follow-up] Normalize auth-denied errors in React payment action handlers",
+      "url": "https://github.com/joelklabo/nostrstack/issues/404",
+      "created_at": "2026-02-18T04:03:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🚨 CRITICAL: Render Production Deployment Completely Offline",
+      "url": "https://github.com/KaiOpenClaw/talon-private/issues/36",
+      "created_at": "2026-02-18T03:32:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🚨 CRITICAL: Render deployment completely down - service returning 404s",
+      "url": "https://github.com/KaiOpenClaw/talon-private/issues/42",
+      "created_at": "2026-02-18T05:32:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[CNCF Insights] UX patterns from 2026-02-18",
+      "url": "https://github.com/kubestellar/console/issues/1126",
+      "created_at": "2026-02-18T05:27:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "\"Download missing media\" reports successful updates, in fact all attempts ended in 404",
+      "url": "https://github.com/lutris/lutris/issues/6395",
+      "created_at": "2026-02-08T19:08:22.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "「mavenブランチ」サポート終了",
+      "url": "https://github.com/MirrgieRiana/xarpeg-kotlin-peg-parser/issues/404",
+      "created_at": "2026-02-17T04:43:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "COU-126: View Next of Kin [PARENT]",
+      "url": "https://github.com/Old-St-Labs/old-st-template-v1/issues/404",
+      "created_at": "2026-02-18T05:59:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Core workflow test suite - daemon, loop, pipeline foundations",
+      "url": "https://github.com/sethdford/shipwright/issues/93",
+      "created_at": "2026-02-15T12:57:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Automated] Broken links detected",
+      "url": "https://github.com/snapsynapse/ai-feature-tracker/issues/80",
+      "created_at": "2026-02-07T22:47:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "RDP Session terminates immediately after connection",
+      "url": "https://github.com/sol1/rustguac/issues/26",
+      "created_at": "2026-02-15T14:55:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Calculate width of a sidewalk segment (PCA Version)",
+      "url": "https://github.com/TaskarCenterAtUW/iOSPointMapper/issues/404",
+      "created_at": "2026-02-02T21:20:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Roadmap",
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "created_at": "2026-02-15T04:26:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Audit and migrate legacy scripts from RPi.GPIO to gpio_client",
+      "url": "https://github.com/zane-lazare/Mothbox/issues/404",
+      "created_at": "2026-02-12T19:12:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602180832/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: 🛑 Caja Registradora (App) is down",
+      "url": "https://github.com/absortian/AbsorStatus/issues/404"
+    },
+    {
+      "label": "github: WebSub: Add HTTP Link header discovery for hub URLs",
+      "url": "https://github.com/brendanlong/lion-reader/issues/404"
+    },
+    {
+      "label": "github: [EPIC](floating-ip):  Implement FloatingIp functionality",
+      "url": "https://github.com/cobaltcore-dev/aurora-dashboard/issues/477"
+    },
+    {
+      "label": "github: Link Checker Report: Broken links found",
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/44"
+    },
+    {
+      "label": "github: Stoogle MVP — Council Design & PRD",
+      "url": "https://github.com/dtsong/stoogle/issues/1"
+    },
+    {
+      "label": "github: Expense - Duplicate not resolve when admin \"Keep this one\" for duplicated expenses on 2 reports",
+      "url": "https://github.com/Expensify/App/issues/82568"
+    },
+    {
+      "label": "github: Proposal: re-approve static proposal-body pages with quorum plan",
+      "url": "https://github.com/hivemoot/colony/issues/404"
+    },
+    {
+      "label": "github: [follow-up] Normalize auth-denied errors in React payment action handlers",
+      "url": "https://github.com/joelklabo/nostrstack/issues/404"
+    },
+    {
+      "label": "github: 🚨 CRITICAL: Render Production Deployment Completely Offline",
+      "url": "https://github.com/KaiOpenClaw/talon-private/issues/36"
+    },
+    {
+      "label": "github: 🚨 CRITICAL: Render deployment completely down - service returning 404s",
+      "url": "https://github.com/KaiOpenClaw/talon-private/issues/42"
+    },
+    {
+      "label": "github: [CNCF Insights] UX patterns from 2026-02-18",
+      "url": "https://github.com/kubestellar/console/issues/1126"
+    },
+    {
+      "label": "github: \"Download missing media\" reports successful updates, in fact all attempts ended in 404",
+      "url": "https://github.com/lutris/lutris/issues/6395"
+    },
+    {
+      "label": "github: 「mavenブランチ」サポート終了",
+      "url": "https://github.com/MirrgieRiana/xarpeg-kotlin-peg-parser/issues/404"
+    },
+    {
+      "label": "github: COU-126: View Next of Kin [PARENT]",
+      "url": "https://github.com/Old-St-Labs/old-st-template-v1/issues/404"
+    },
+    {
+      "label": "github: Core workflow test suite - daemon, loop, pipeline foundations",
+      "url": "https://github.com/sethdford/shipwright/issues/93"
+    },
+    {
+      "label": "github: [Automated] Broken links detected",
+      "url": "https://github.com/snapsynapse/ai-feature-tracker/issues/80"
+    },
+    {
+      "label": "github: RDP Session terminates immediately after connection",
+      "url": "https://github.com/sol1/rustguac/issues/26"
+    },
+    {
+      "label": "github: Calculate width of a sidewalk segment (PCA Version)",
+      "url": "https://github.com/TaskarCenterAtUW/iOSPointMapper/issues/404"
+    },
+    {
+      "label": "github: Roadmap",
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50"
+    },
+    {
+      "label": "github: Audit and migrate legacy scripts from RPi.GPIO to gpio_client",
+      "url": "https://github.com/zane-lazare/Mothbox/issues/404"
+    }
+  ]
+}
