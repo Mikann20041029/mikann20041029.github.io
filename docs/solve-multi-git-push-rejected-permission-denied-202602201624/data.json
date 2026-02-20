@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "RFC: The Hounfour — Multi-Model Provider Abstraction, Cloud Deployment & Agent Distribution",
+      "url": "https://github.com/0xHoneyJar/loa-finn/issues/31",
+      "created_at": "2026-02-08T00:06:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[RFC] BCC 多语言提取架构重构：从手写遍历到声明式 Query",
+      "url": "https://github.com/biantaishabi2/Cli/issues/115",
+      "created_at": "2026-02-17T01:51:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Harden input validation: agent ID path traversal and WORKSPACE_ROOT checks",
+      "url": "https://github.com/hivemoot/hivemoot-agent/issues/24",
+      "created_at": "2026-02-14T23:14:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Agents lack merge permissions — approved PRs are piling up",
+      "url": "https://github.com/hivemoot/hivemoot-agent/issues/37",
+      "created_at": "2026-02-15T07:30:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Voting signal docs omit priority order and majority thresholds",
+      "url": "https://github.com/hivemoot/hivemoot-bot/issues/154",
+      "created_at": "2026-02-15T08:40:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Feature: Implement Living Pinned Design/Alignment Document for Issue Workflows",
+      "url": "https://github.com/hivemoot/hivemoot-bot/issues/184",
+      "created_at": "2026-02-15T22:26:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Include recently closed/rejected author's issues and PRs",
+      "url": "https://github.com/hivemoot/hivemoot/issues/28",
+      "created_at": "2026-02-16T15:22:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "upstream(security): 移植 5 个冲突 commit (P0) — v2026.2.17→v2026.2.19",
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/241",
+      "created_at": "2026-02-20T08:37:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "upstream(security-part4): 移植 5 个冲突 commit (P0) — v2026.2.17→v2026.2.19",
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/247",
+      "created_at": "2026-02-20T08:37:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Thermalright GrandVision 360 AIO",
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/18",
+      "created_at": "2026-02-11T20:30:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Implement CSV file upload UI with client-side validation",
+      "url": "https://github.com/mdklab/interactive-table-codex/issues/8",
+      "created_at": "2026-02-15T15:06:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-15T01:08:22.8442151Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/157",
+      "created_at": "2026-02-15T01:08:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-15T08:19:41.5641758Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/159",
+      "created_at": "2026-02-15T08:19:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-15T16:15:43.4271801Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/161",
+      "created_at": "2026-02-15T16:15:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-20T01:02:25.9076866Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/188",
+      "created_at": "2026-02-20T01:02:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-20T08:28:13.1394203Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/190",
+      "created_at": "2026-02-20T08:28:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Unable to Access Gemini Models Due to Permission Denied Error (403)",
+      "url": "https://github.com/NoeFabris/opencode-antigravity-auth/issues/426",
+      "created_at": "2026-02-11T05:44:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "git-obs staging group --target doesn't work if the PR is created by another user",
+      "url": "https://github.com/openSUSE/osc/issues/2053",
+      "created_at": "2026-02-20T10:11:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Build loop context injection — preserve full conversation history across restarts",
+      "url": "https://github.com/sethdford/shipwright/issues/96",
+      "created_at": "2026-02-16T08:13:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Migrate from GKE to Cloud Run for cost reduction",
+      "url": "https://github.com/Tesseract-Nexus/FanZone-Battle-Ground/issues/10",
+      "created_at": "2026-02-19T14:25:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202602201624/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/0xHoneyJar/loa-finn/issues/31",
+      "label": "github: RFC: The Hounfour — Multi-Model Provider Abstraction, Cloud Deployment & Agent Distribution"
+    },
+    {
+      "url": "https://github.com/biantaishabi2/Cli/issues/115",
+      "label": "github: [RFC] BCC 多语言提取架构重构：从手写遍历到声明式 Query"
+    },
+    {
+      "url": "https://github.com/hivemoot/hivemoot-agent/issues/24",
+      "label": "github: Harden input validation: agent ID path traversal and WORKSPACE_ROOT checks"
+    },
+    {
+      "url": "https://github.com/hivemoot/hivemoot-agent/issues/37",
+      "label": "github: Agents lack merge permissions — approved PRs are piling up"
+    },
+    {
+      "url": "https://github.com/hivemoot/hivemoot-bot/issues/154",
+      "label": "github: Voting signal docs omit priority order and majority thresholds"
+    },
+    {
+      "url": "https://github.com/hivemoot/hivemoot-bot/issues/184",
+      "label": "github: Feature: Implement Living Pinned Design/Alignment Document for Issue Workflows"
+    },
+    {
+      "url": "https://github.com/hivemoot/hivemoot/issues/28",
+      "label": "github: Include recently closed/rejected author's issues and PRs"
+    },
+    {
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/241",
+      "label": "github: upstream(security): 移植 5 个冲突 commit (P0) — v2026.2.17→v2026.2.19"
+    },
+    {
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/247",
+      "label": "github: upstream(security-part4): 移植 5 个冲突 commit (P0) — v2026.2.17→v2026.2.19"
+    },
+    {
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/18",
+      "label": "github: Thermalright GrandVision 360 AIO"
+    },
+    {
+      "url": "https://github.com/mdklab/interactive-table-codex/issues/8",
+      "label": "github: Implement CSV file upload UI with client-side validation"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/157",
+      "label": "github: mikann-autogen digest 2026-02-15T01:08:22.8442151Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/159",
+      "label": "github: mikann-autogen digest 2026-02-15T08:19:41.5641758Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/161",
+      "label": "github: mikann-autogen digest 2026-02-15T16:15:43.4271801Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/188",
+      "label": "github: mikann-autogen digest 2026-02-20T01:02:25.9076866Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/190",
+      "label": "github: mikann-autogen digest 2026-02-20T08:28:13.1394203Z"
+    },
+    {
+      "url": "https://github.com/NoeFabris/opencode-antigravity-auth/issues/426",
+      "label": "github: Unable to Access Gemini Models Due to Permission Denied Error (403)"
+    },
+    {
+      "url": "https://github.com/openSUSE/osc/issues/2053",
+      "label": "github: git-obs staging group --target doesn't work if the PR is created by another user"
+    },
+    {
+      "url": "https://github.com/sethdford/shipwright/issues/96",
+      "label": "github: Build loop context injection — preserve full conversation history across restarts"
+    },
+    {
+      "url": "https://github.com/Tesseract-Nexus/FanZone-Battle-Ground/issues/10",
+      "label": "github: Migrate from GKE to Cloud Run for cost reduction"
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-02-20T16:24:03.4420943Z",
+    "slug": "solve-multi-git-push-rejected-permission-denied-202602201624",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "git push rejected permission denied をまとめて直す（権限/環境/手順）"
+  }
+}
