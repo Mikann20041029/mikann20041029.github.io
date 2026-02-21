@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: ModuleNotFoundError: No module named geomix_utils when running fit_GMM.py",
+      "url": "https://github.com/abbahaddou/GRATIN/issues/1"
+    },
+    {
+      "label": "github: Pytorch incompatible with Torchao",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/98"
+    },
+    {
+      "label": "github: pip install donkeycar[pi] fails on RPi 4 with latest 64bit OS",
+      "url": "https://github.com/autorope/donkeycar/issues/1226"
+    },
+    {
+      "label": "github: Python package is incomplete: missing subpackages at install time",
+      "url": "https://github.com/chipsec/chipsec/issues/2685"
+    },
+    {
+      "label": "github: bug: DataAgent inconsistent error handling — sync raises KeyError, async yields event for same invalid tool",
+      "url": "https://github.com/codeninja/ninja-stack/issues/138"
+    },
+    {
+      "label": "github: bug: Setup assistant tool functions accept unvalidated entity/field/domain names from LLM",
+      "url": "https://github.com/codeninja/ninja-stack/issues/188"
+    },
+    {
+      "label": "github: Epic: Input Validation & Error Handling",
+      "url": "https://github.com/codeninja/ninja-stack/issues/58"
+    },
+    {
+      "label": "github: [Strategy] コンポーネント単位の独立テストと「自己改善（Self-Optimization）」基盤の導入",
+      "url": "https://github.com/dx-junkyard/plura/issues/60"
+    },
+    {
+      "label": "github: ModuleNotFoundError after upgrading from previous version (nanobot-ai v0.1.3.x)",
+      "url": "https://github.com/HKUDS/nanobot/issues/846"
+    },
+    {
+      "label": "github: [BUG][PLUGINS]: External plugin Containerfiles missing or using stale mcp-contextforge-gateway install",
+      "url": "https://github.com/IBM/mcp-context-forge/issues/3046"
+    },
+    {
+      "label": "github: Missing camera_utils module",
+      "url": "https://github.com/kwanyun/FFaceNeRF/issues/2"
+    },
+    {
+      "label": "github: Fix and Update Ralph Mode Example",
+      "url": "https://github.com/langchain-ai/deepagents/issues/1456"
+    },
+    {
+      "label": "github: [DEVICE]",
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/15"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-02-21T01:00:29.1467784Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/194"
+    },
+    {
+      "label": "github: [BUG]: MAX model compilation is crashing on WSL2",
+      "url": "https://github.com/modular/modular/issues/5955"
+    },
+    {
+      "label": "github: 라즈베리파이 5 설치 오류입니다.",
+      "url": "https://github.com/openNAMU/openNAMU/issues/2608"
+    },
+    {
+      "label": "github: Documentation references 12 non-existent functions and methods",
+      "url": "https://github.com/Personaut/python-pdk/issues/3"
+    },
+    {
+      "label": "github: DXT package has broken/incomplete bundled dependencies on macOS with Python 3.10 — one-click install does not work as advertised",
+      "url": "https://github.com/Positronikal/davinci-mcp-professional/issues/4"
+    },
+    {
+      "label": "github: Post-mortem of Ubuntu image breakage",
+      "url": "https://github.com/PrairieLearn/PrairieLearn/issues/14197"
+    },
+    {
+      "label": "github: Build failure: Invalid build-backend 'setuptools.backends._legacy' in pyproject.toml",
+      "url": "https://github.com/roex-audio/dawproject-py/issues/9"
+    }
+  ],
+  "meta": {
+    "slug": "solve-multi-python-modulenotfounderror-202602210817",
+    "generated_at": "2026-02-21T08:17:19.1088894Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named geomix_utils when running fit_GMM.py",
+      "url": "https://github.com/abbahaddou/GRATIN/issues/1",
+      "created_at": "2026-02-21T04:52:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Pytorch incompatible with Torchao",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/98",
+      "created_at": "2026-02-04T10:22:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pip install donkeycar[pi] fails on RPi 4 with latest 64bit OS",
+      "url": "https://github.com/autorope/donkeycar/issues/1226",
+      "created_at": "2026-02-21T05:16:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Python package is incomplete: missing subpackages at install time",
+      "url": "https://github.com/chipsec/chipsec/issues/2685",
+      "created_at": "2026-02-21T00:04:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: DataAgent inconsistent error handling — sync raises KeyError, async yields event for same invalid tool",
+      "url": "https://github.com/codeninja/ninja-stack/issues/138",
+      "created_at": "2026-02-21T01:13:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: Setup assistant tool functions accept unvalidated entity/field/domain names from LLM",
+      "url": "https://github.com/codeninja/ninja-stack/issues/188",
+      "created_at": "2026-02-21T02:30:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Epic: Input Validation & Error Handling",
+      "url": "https://github.com/codeninja/ninja-stack/issues/58",
+      "created_at": "2026-02-21T00:12:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Strategy] コンポーネント単位の独立テストと「自己改善（Self-Optimization）」基盤の導入",
+      "url": "https://github.com/dx-junkyard/plura/issues/60",
+      "created_at": "2026-02-18T22:19:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError after upgrading from previous version (nanobot-ai v0.1.3.x)",
+      "url": "https://github.com/HKUDS/nanobot/issues/846",
+      "created_at": "2026-02-19T09:37:40.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG][PLUGINS]: External plugin Containerfiles missing or using stale mcp-contextforge-gateway install",
+      "url": "https://github.com/IBM/mcp-context-forge/issues/3046",
+      "created_at": "2026-02-18T20:04:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Missing camera_utils module",
+      "url": "https://github.com/kwanyun/FFaceNeRF/issues/2",
+      "created_at": "2026-02-10T16:23:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Fix and Update Ralph Mode Example",
+      "url": "https://github.com/langchain-ai/deepagents/issues/1456",
+      "created_at": "2026-02-20T18:56:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[DEVICE]",
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/15",
+      "created_at": "2026-02-10T02:35:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-21T01:00:29.1467784Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/194",
+      "created_at": "2026-02-21T01:00:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG]: MAX model compilation is crashing on WSL2",
+      "url": "https://github.com/modular/modular/issues/5955",
+      "created_at": "2026-02-17T00:06:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "라즈베리파이 5 설치 오류입니다.",
+      "url": "https://github.com/openNAMU/openNAMU/issues/2608",
+      "created_at": "2026-02-04T10:15:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Documentation references 12 non-existent functions and methods",
+      "url": "https://github.com/Personaut/python-pdk/issues/3",
+      "created_at": "2026-02-21T00:34:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DXT package has broken/incomplete bundled dependencies on macOS with Python 3.10 — one-click install does not work as advertised",
+      "url": "https://github.com/Positronikal/davinci-mcp-professional/issues/4",
+      "created_at": "2026-02-21T05:23:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Post-mortem of Ubuntu image breakage",
+      "url": "https://github.com/PrairieLearn/PrairieLearn/issues/14197",
+      "created_at": "2026-02-21T03:27:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Build failure: Invalid build-backend 'setuptools.backends._legacy' in pyproject.toml",
+      "url": "https://github.com/roex-audio/dawproject-py/issues/9",
+      "created_at": "2026-02-18T21:44:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
