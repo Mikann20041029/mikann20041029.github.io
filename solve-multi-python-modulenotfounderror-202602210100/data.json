@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "generated_at": "2026-02-21T01:00:29.1467784Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-python-modulenotfounderror-202602210100",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）"
+  },
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: [CQ-005] Replace custom TOML parser with standard library",
+      "url": "https://github.com/andrewlasiter/fda-tools/issues/134"
+    },
+    {
+      "label": "github: Python package is incomplete: missing subpackages at install time",
+      "url": "https://github.com/chipsec/chipsec/issues/2685"
+    },
+    {
+      "label": "github: ModuleNotFoundError: No module named 'pointops'",
+      "url": "https://github.com/czvvd/PartSAM/issues/3"
+    },
+    {
+      "label": "github: [Strategy] コンポーネント単位の独立テストと「自己改善（Self-Optimization）」基盤の導入",
+      "url": "https://github.com/dx-junkyard/plura/issues/60"
+    },
+    {
+      "label": "github: Build failing on Python 3.12 due to a module deprecation",
+      "url": "https://github.com/Felicious/odoo-writer-setup/issues/6"
+    },
+    {
+      "label": "github: mqtt_io 2.6.0 incompatible with setuptools 82.0.0+ (missing pkg_resources)",
+      "url": "https://github.com/flyte/mqtt-io/issues/435"
+    },
+    {
+      "label": "github: Transform tool does not work in CAM",
+      "url": "https://github.com/FreeCAD/FreeCAD/issues/27294"
+    },
+    {
+      "label": "github: Games Not Launching",
+      "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues/5231"
+    },
+    {
+      "label": "github: ModuleNotFoundError after upgrading from previous version (nanobot-ai v0.1.3.x)",
+      "url": "https://github.com/HKUDS/nanobot/issues/846"
+    },
+    {
+      "label": "github: [BUG][PLUGINS]: External plugin Containerfiles missing or using stale mcp-contextforge-gateway install",
+      "url": "https://github.com/IBM/mcp-context-forge/issues/3046"
+    },
+    {
+      "label": "github: Impossible to install Whisper-WebUI",
+      "url": "https://github.com/jhj0517/Whisper-WebUI/issues/632"
+    },
+    {
+      "label": "github: [DEVICE]",
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/15"
+    },
+    {
+      "label": "github: [BUG]: MAX model compilation is crashing on WSL2",
+      "url": "https://github.com/modular/modular/issues/5955"
+    },
+    {
+      "label": "github: Missing dependency to `rich` package",
+      "url": "https://github.com/neogeny/TatSu/issues/397"
+    },
+    {
+      "label": "github: Documentation references 12 non-existent functions and methods",
+      "url": "https://github.com/Personaut/python-pdk/issues/3"
+    },
+    {
+      "label": "github: Wont start",
+      "url": "https://github.com/phoenixthrush/AniWorld-Downloader/issues/151"
+    },
+    {
+      "label": "github: `get` command results in ModuleNotFoundError",
+      "url": "https://github.com/Rishang/install-release/issues/283"
+    },
+    {
+      "label": "github: [Week 5]: Working on the adding prompt based on NLP and retieval process latency",
+      "url": "https://github.com/SE4CPS/Research-on-Software-Updates/issues/169"
+    },
+    {
+      "label": "github: Installation with searxng.sh fails: ModuleNotFoundError: No module named 'typing_extensions'",
+      "url": "https://github.com/searxng/searxng/issues/5761"
+    },
+    {
+      "label": "github: WordDumb repeatedly giving the same error",
+      "url": "https://github.com/xxyzz/WordDumb/issues/351"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "[CQ-005] Replace custom TOML parser with standard library",
+      "url": "https://github.com/andrewlasiter/fda-tools/issues/134",
+      "created_at": "2026-02-20T21:40:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Python package is incomplete: missing subpackages at install time",
+      "url": "https://github.com/chipsec/chipsec/issues/2685",
+      "created_at": "2026-02-21T00:04:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'pointops'",
+      "url": "https://github.com/czvvd/PartSAM/issues/3",
+      "created_at": "2026-02-20T21:12:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Strategy] コンポーネント単位の独立テストと「自己改善（Self-Optimization）」基盤の導入",
+      "url": "https://github.com/dx-junkyard/plura/issues/60",
+      "created_at": "2026-02-18T22:19:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Build failing on Python 3.12 due to a module deprecation",
+      "url": "https://github.com/Felicious/odoo-writer-setup/issues/6",
+      "created_at": "2026-02-20T23:29:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mqtt_io 2.6.0 incompatible with setuptools 82.0.0+ (missing pkg_resources)",
+      "url": "https://github.com/flyte/mqtt-io/issues/435",
+      "created_at": "2026-02-20T22:17:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Transform tool does not work in CAM",
+      "url": "https://github.com/FreeCAD/FreeCAD/issues/27294",
+      "created_at": "2026-02-02T05:23:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Games Not Launching",
+      "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/issues/5231",
+      "created_at": "2026-01-27T13:16:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError after upgrading from previous version (nanobot-ai v0.1.3.x)",
+      "url": "https://github.com/HKUDS/nanobot/issues/846",
+      "created_at": "2026-02-19T09:37:40.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG][PLUGINS]: External plugin Containerfiles missing or using stale mcp-contextforge-gateway install",
+      "url": "https://github.com/IBM/mcp-context-forge/issues/3046",
+      "created_at": "2026-02-18T20:04:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Impossible to install Whisper-WebUI",
+      "url": "https://github.com/jhj0517/Whisper-WebUI/issues/632",
+      "created_at": "2026-02-20T22:56:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[DEVICE]",
+      "url": "https://github.com/Lexonight1/thermalright-trcc-linux/issues/15",
+      "created_at": "2026-02-10T02:35:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG]: MAX model compilation is crashing on WSL2",
+      "url": "https://github.com/modular/modular/issues/5955",
+      "created_at": "2026-02-17T00:06:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Missing dependency to `rich` package",
+      "url": "https://github.com/neogeny/TatSu/issues/397",
+      "created_at": "2026-02-17T08:15:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Documentation references 12 non-existent functions and methods",
+      "url": "https://github.com/Personaut/python-pdk/issues/3",
+      "created_at": "2026-02-21T00:34:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Wont start",
+      "url": "https://github.com/phoenixthrush/AniWorld-Downloader/issues/151",
+      "created_at": "2026-02-20T21:27:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "`get` command results in ModuleNotFoundError",
+      "url": "https://github.com/Rishang/install-release/issues/283",
+      "created_at": "2026-02-20T21:33:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Week 5]: Working on the adding prompt based on NLP and retieval process latency",
+      "url": "https://github.com/SE4CPS/Research-on-Software-Updates/issues/169",
+      "created_at": "2026-02-20T22:46:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Installation with searxng.sh fails: ModuleNotFoundError: No module named 'typing_extensions'",
+      "url": "https://github.com/searxng/searxng/issues/5761",
+      "created_at": "2026-02-20T22:16:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "WordDumb repeatedly giving the same error",
+      "url": "https://github.com/xxyzz/WordDumb/issues/351",
+      "created_at": "2026-02-20T22:18:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602210100/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
