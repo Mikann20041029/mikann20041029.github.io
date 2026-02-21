@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Can we use --quantization None to disable quantization?",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/632",
+      "created_at": "2026-02-18T07:01:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Issue with CLIP",
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/17284",
+      "created_at": "2026-02-12T16:13:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: current build fails to build CLIP",
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/17287",
+      "created_at": "2026-02-14T03:18:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pip install donkeycar[pi] fails on RPi 4 with latest 64bit OS",
+      "url": "https://github.com/autorope/donkeycar/issues/1226",
+      "created_at": "2026-02-21T05:16:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug:  ERROR: No matching distribution found for msgpack>=1.1.0",
+      "url": "https://github.com/flet-dev/flet/issues/6179",
+      "created_at": "2026-02-16T20:23:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Unit testing after napari adjustments.",
+      "url": "https://github.com/galizia-lab/pyview/issues/50",
+      "created_at": "2026-02-15T11:22:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "lazy-object-proxy 1.6.0 incompatible with Python 3.13 (Debian 13)",
+      "url": "https://github.com/gristlabs/grist-core/issues/2102",
+      "created_at": "2026-02-10T12:28:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "`setuptools` > 81 doesn't include `pkg_resources`",
+      "url": "https://github.com/html5lib/html5lib-python/issues/593",
+      "created_at": "2026-02-21T13:28:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Import errors in inventree-server startup on upgrade to Inventree 1.2.0",
+      "url": "https://github.com/inventree/InvenTree/issues/11335",
+      "created_at": "2026-02-15T22:05:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG]: Missing pypdf and ollama dependencies in requirements.txt",
+      "url": "https://github.com/juanalvv/FireForm/issues/18",
+      "created_at": "2026-02-21T12:38:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error: No module named 'pkg_resources'",
+      "url": "https://github.com/loodos/zemberek-python/issues/22",
+      "created_at": "2026-02-21T11:04:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "create_fake_users.py app.app_context() errors",
+      "url": "https://github.com/miguelgrinberg/flask-gridjs/issues/12",
+      "created_at": "2026-02-21T13:07:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "`m css` fails looking for bootstrap",
+      "url": "https://github.com/moinwiki/moin/issues/2172",
+      "created_at": "2026-02-20T21:11:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Linux version python had no mcp package error",
+      "url": "https://github.com/nowledge-co/community/issues/64",
+      "created_at": "2026-02-20T15:32:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Linux] systemd service fails to start with ModuleNotFoundError: No module named 'mcp.types' on Ubuntu 24.04",
+      "url": "https://github.com/nowledge-co/community/issues/66",
+      "created_at": "2026-02-21T15:53:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "라즈베리파이 5 설치 오류입니다.",
+      "url": "https://github.com/openNAMU/openNAMU/issues/2608",
+      "created_at": "2026-02-04T10:15:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No module named 'utils'",
+      "url": "https://github.com/PiSugar/whisplay-lumon-mdr-ui/issues/1",
+      "created_at": "2026-02-21T12:30:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Installation with searxng.sh fails: ModuleNotFoundError: No module named 'typing_extensions'",
+      "url": "https://github.com/searxng/searxng/issues/5761",
+      "created_at": "2026-02-20T22:16:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "CI Failure - ModuleNotFoundError: No module named 'pkg_resources' in sentsplit",
+      "url": "https://github.com/speedyk-005/chunklet-py/issues/11",
+      "created_at": "2026-02-21T15:05:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "'sqlalchemy' again",
+      "url": "https://github.com/Tavris1/ComfyUI-Easy-Install/issues/128",
+      "created_at": "2026-02-14T22:23:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202602211614/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-02-21T16:14:34.8701342Z",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "slug": "solve-multi-python-modulenotfounderror-202602211614"
+  },
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/ace-step/ACE-Step-1.5/issues/632",
+      "label": "github: Can we use --quantization None to disable quantization?"
+    },
+    {
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/17284",
+      "label": "github: [Bug]: Issue with CLIP"
+    },
+    {
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/issues/17287",
+      "label": "github: [Bug]: current build fails to build CLIP"
+    },
+    {
+      "url": "https://github.com/autorope/donkeycar/issues/1226",
+      "label": "github: pip install donkeycar[pi] fails on RPi 4 with latest 64bit OS"
+    },
+    {
+      "url": "https://github.com/flet-dev/flet/issues/6179",
+      "label": "github: bug:  ERROR: No matching distribution found for msgpack>=1.1.0"
+    },
+    {
+      "url": "https://github.com/galizia-lab/pyview/issues/50",
+      "label": "github: Unit testing after napari adjustments."
+    },
+    {
+      "url": "https://github.com/gristlabs/grist-core/issues/2102",
+      "label": "github: lazy-object-proxy 1.6.0 incompatible with Python 3.13 (Debian 13)"
+    },
+    {
+      "url": "https://github.com/html5lib/html5lib-python/issues/593",
+      "label": "github: `setuptools` > 81 doesn't include `pkg_resources`"
+    },
+    {
+      "url": "https://github.com/inventree/InvenTree/issues/11335",
+      "label": "github: Import errors in inventree-server startup on upgrade to Inventree 1.2.0"
+    },
+    {
+      "url": "https://github.com/juanalvv/FireForm/issues/18",
+      "label": "github: [BUG]: Missing pypdf and ollama dependencies in requirements.txt"
+    },
+    {
+      "url": "https://github.com/loodos/zemberek-python/issues/22",
+      "label": "github: Error: No module named 'pkg_resources'"
+    },
+    {
+      "url": "https://github.com/miguelgrinberg/flask-gridjs/issues/12",
+      "label": "github: create_fake_users.py app.app_context() errors"
+    },
+    {
+      "url": "https://github.com/moinwiki/moin/issues/2172",
+      "label": "github: `m css` fails looking for bootstrap"
+    },
+    {
+      "url": "https://github.com/nowledge-co/community/issues/64",
+      "label": "github: Linux version python had no mcp package error"
+    },
+    {
+      "url": "https://github.com/nowledge-co/community/issues/66",
+      "label": "github: [Linux] systemd service fails to start with ModuleNotFoundError: No module named 'mcp.types' on Ubuntu 24.04"
+    },
+    {
+      "url": "https://github.com/openNAMU/openNAMU/issues/2608",
+      "label": "github: 라즈베리파이 5 설치 오류입니다."
+    },
+    {
+      "url": "https://github.com/PiSugar/whisplay-lumon-mdr-ui/issues/1",
+      "label": "github: No module named 'utils'"
+    },
+    {
+      "url": "https://github.com/searxng/searxng/issues/5761",
+      "label": "github: Installation with searxng.sh fails: ModuleNotFoundError: No module named 'typing_extensions'"
+    },
+    {
+      "url": "https://github.com/speedyk-005/chunklet-py/issues/11",
+      "label": "github: CI Failure - ModuleNotFoundError: No module named 'pkg_resources' in sentsplit"
+    },
+    {
+      "url": "https://github.com/Tavris1/ComfyUI-Easy-Install/issues/128",
+      "label": "github: 'sqlalchemy' again"
+    }
+  ]
+}
