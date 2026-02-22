@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "[BUG] Cowork tab not showing on Windows 11 Pro x64 — \"yukonSilver\" marked as unsupported + CoworkVMService cannot be removed",
+      "url": "https://github.com/anthropics/claude-code/issues/25136",
+      "created_at": "2026-02-12T00:45:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Cowork shows \"Virtualization is not enabled\" on Windows 10 Pro despite Hyper-V fully enabled",
+      "url": "https://github.com/anthropics/claude-code/issues/27316",
+      "created_at": "2026-02-21T03:39:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Awareness: az acr supply-chain workflow create --run-immediately fails in Azure Cloud Shell: ORAS receives 403 without WWW-Authenticate during OCI artifact push to csscpolicies",
+      "url": "https://github.com/Azure/azure-cli/issues/32817",
+      "created_at": "2026-02-19T22:11:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Create worker deployment script (PowerShell for Windows)",
+      "url": "https://github.com/baloworks/endla-ai/issues/4",
+      "created_at": "2026-02-20T21:51:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "POC: Windows setup experience flow: If critical software fails, don't let end user through",
+      "url": "https://github.com/fleetdm/fleet/issues/38786",
+      "created_at": "2026-01-26T18:16:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows login blocked after Intune → Fleet migration (tattooed policy)",
+      "url": "https://github.com/fleetdm/fleet/issues/38985",
+      "created_at": "2026-01-29T10:51:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "upstream(security): 移植 5 个冲突 commit (P0) — v2026.2.17→v2026.2.19",
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/241",
+      "created_at": "2026-02-20T08:37:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows installer fails with \"Failed to fetch latest version: Not Found\" — /electron/latest returns HTTP 404",
+      "url": "https://github.com/lukilabs/craft-agents-oss/issues/273",
+      "created_at": "2026-02-21T18:28:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Bug Report: Application Crash Due to AVX512 Instruction Set Incompatibility",
+      "url": "https://github.com/MaxITService/AIVORelay/issues/2",
+      "created_at": "2026-02-17T21:51:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[ServerErrors][TypeScript] linux-x64-7.0.0-dev.20260212.1 vs ",
+      "url": "https://github.com/microsoft/typescript-go/issues/2778",
+      "created_at": "2026-02-13T03:58:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Updates not finishing",
+      "url": "https://github.com/microsoft/vscode/issues/294546",
+      "created_at": "2026-02-11T11:50:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Connect-MgGraph 'InteractiveBrowserCredential authentication failed' Elevated PowerShell Window",
+      "url": "https://github.com/microsoftgraph/msgraph-sdk-powershell/issues/3538",
+      "created_at": "2026-02-20T18:35:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "SessionStart hook fails on Windows due to HCS sandbox blocking bash execution",
+      "url": "https://github.com/obra/superpowers/issues/417",
+      "created_at": "2026-02-04T19:32:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "execution error: Io(Error { kind: InvalidInput, message: \"batch file arguments are invalid\" })",
+      "url": "https://github.com/openai/codex/issues/12089",
+      "created_at": "2026-02-18T05:25:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows PowerShell PATH updates silently ignored",
+      "url": "https://github.com/Praesto-Pro/openframe-cli/issues/7",
+      "created_at": "2026-02-21T02:16:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Journal of ADaM Install, Windows 10",
+      "url": "https://github.com/PubInv/ADaM/issues/12",
+      "created_at": "2026-02-05T11:17:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "POST-004 - Industry-standard quality and value roadmap tracker",
+      "url": "https://github.com/raven-dev-ops/Unity_Fishing_Steam_Game/issues/205",
+      "created_at": "2026-02-21T02:25:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "1.0-003 - Hardware perf/memory baseline capture and lock",
+      "url": "https://github.com/raven-dev-ops/Unity_Fishing_Steam_Game/issues/207",
+      "created_at": "2026-02-21T03:31:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Windows] NPM installation fails with file locking error during postinstall script",
+      "url": "https://github.com/steveyegge/beads/issues/1683",
+      "created_at": "2026-02-11T14:44:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "funny",
+      "url": "https://github.com/supervoidcoder/win-witr/issues/92",
+      "created_at": "2026-02-21T03:57:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202602220105/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: [BUG] Cowork tab not showing on Windows 11 Pro x64 — \"yukonSilver\" marked as unsupported + CoworkVMService cannot be removed",
+      "url": "https://github.com/anthropics/claude-code/issues/25136"
+    },
+    {
+      "label": "github: [BUG] Cowork shows \"Virtualization is not enabled\" on Windows 10 Pro despite Hyper-V fully enabled",
+      "url": "https://github.com/anthropics/claude-code/issues/27316"
+    },
+    {
+      "label": "github: Awareness: az acr supply-chain workflow create --run-immediately fails in Azure Cloud Shell: ORAS receives 403 without WWW-Authenticate during OCI artifact push to csscpolicies",
+      "url": "https://github.com/Azure/azure-cli/issues/32817"
+    },
+    {
+      "label": "github: Create worker deployment script (PowerShell for Windows)",
+      "url": "https://github.com/baloworks/endla-ai/issues/4"
+    },
+    {
+      "label": "github: POC: Windows setup experience flow: If critical software fails, don't let end user through",
+      "url": "https://github.com/fleetdm/fleet/issues/38786"
+    },
+    {
+      "label": "github: Windows login blocked after Intune → Fleet migration (tattooed policy)",
+      "url": "https://github.com/fleetdm/fleet/issues/38985"
+    },
+    {
+      "label": "github: upstream(security): 移植 5 个冲突 commit (P0) — v2026.2.17→v2026.2.19",
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/241"
+    },
+    {
+      "label": "github: Windows installer fails with \"Failed to fetch latest version: Not Found\" — /electron/latest returns HTTP 404",
+      "url": "https://github.com/lukilabs/craft-agents-oss/issues/273"
+    },
+    {
+      "label": "github: [BUG] Bug Report: Application Crash Due to AVX512 Instruction Set Incompatibility",
+      "url": "https://github.com/MaxITService/AIVORelay/issues/2"
+    },
+    {
+      "label": "github: [ServerErrors][TypeScript] linux-x64-7.0.0-dev.20260212.1 vs ",
+      "url": "https://github.com/microsoft/typescript-go/issues/2778"
+    },
+    {
+      "label": "github: Updates not finishing",
+      "url": "https://github.com/microsoft/vscode/issues/294546"
+    },
+    {
+      "label": "github: Connect-MgGraph 'InteractiveBrowserCredential authentication failed' Elevated PowerShell Window",
+      "url": "https://github.com/microsoftgraph/msgraph-sdk-powershell/issues/3538"
+    },
+    {
+      "label": "github: SessionStart hook fails on Windows due to HCS sandbox blocking bash execution",
+      "url": "https://github.com/obra/superpowers/issues/417"
+    },
+    {
+      "label": "github: execution error: Io(Error { kind: InvalidInput, message: \"batch file arguments are invalid\" })",
+      "url": "https://github.com/openai/codex/issues/12089"
+    },
+    {
+      "label": "github: Windows PowerShell PATH updates silently ignored",
+      "url": "https://github.com/Praesto-Pro/openframe-cli/issues/7"
+    },
+    {
+      "label": "github: Journal of ADaM Install, Windows 10",
+      "url": "https://github.com/PubInv/ADaM/issues/12"
+    },
+    {
+      "label": "github: POST-004 - Industry-standard quality and value roadmap tracker",
+      "url": "https://github.com/raven-dev-ops/Unity_Fishing_Steam_Game/issues/205"
+    },
+    {
+      "label": "github: 1.0-003 - Hardware perf/memory baseline capture and lock",
+      "url": "https://github.com/raven-dev-ops/Unity_Fishing_Steam_Game/issues/207"
+    },
+    {
+      "label": "github: [Windows] NPM installation fails with file locking error during postinstall script",
+      "url": "https://github.com/steveyegge/beads/issues/1683"
+    },
+    {
+      "label": "github: funny",
+      "url": "https://github.com/supervoidcoder/win-witr/issues/92"
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-windows-powershell-execution-policy-202602220105",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-02-22T01:05:09.6400421Z",
+    "title": "windows powershell execution policy をまとめて直す（権限/環境/手順）"
+  }
+}
