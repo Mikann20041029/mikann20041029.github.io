@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>github pages 404 not found をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>github pages 404 not found をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/3veryDay/Growing/issues/404'>[2026-02-24] 오늘의 1시간 공부: JMX (Java Management Extensions)</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Anamitra-Sarkar/AgroMind/issues/31'>Important and serious Fixes which must not be ignored and are required for production!</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/aneeshd/schedule_state/issues/404'>Unwanted events created</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/biantaishabi2/Cli-niuma-test/issues/404'>[niuma-test-46037] Integration Test</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/cyberfabric/cyberfabric-core/issues/404'>PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway</a> <small>[github] 2026-02-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/evomimic/map-holons/issues/404'>MAP Commands Phase 2.1 -- Define initial command set (v0)</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/foxyberry/quant-investment/issues/404'>[Condition] 매출 안정성 점수 조건 추가 (revenue_stability_score)</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/gitgitgadget/gitgitgadget.github.io/issues/30'>No 404 page handling</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/jasonacox/pypowerwall-server/issues/7'>Login to see power flow keeps popping up</a> <small>[github] 2026-02-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/owainow/ai-sdlc-modernisation/issues/2'>Modernise Monolith Billing Platform  Spring Boot Microservices on Azure Container Apps</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/OWASP-BLT/BLT/issues/5741'>CSRF error briefly appears after signup/login despite successful authentication</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ReVanced/revanced-patcher/issues/404'>bug: Failed to patch Google Photos</a> <small>[github] 2026-02-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/rhernaus/tyrum/issues/404'>[D6] Implement typing modes never/message/thinking/instant with bounded refresh cadence</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/softeerbootcamp-7th/WEB-Team6-Navisa/issues/404'>[BE] refactor : 외국인과 행정사의 수임 제안 생성 동시성 문제 해결</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/templarsco/lightweight/issues/404'>[Upstream #14788] bug: Vertex AI 400 error - Tool schemas with anyOf are incompatible with Gemini API</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/thomaspryor/Broadwayscore/issues/50'>Roadmap</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/tosin2013/mcp-adr-analysis-server/issues/520'>[agentics] No-Op Runs</a> <small>[github] 2026-02-20</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/WebWakaHub/webwaka-cell-universe/issues/404'>[CEL-MONITOR-v0.1.0-P1-T01] Design Task 1</a> <small>[github] 2026-02-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/WebWakaHub/webwaka-organelle-universe/issues/404'>[ORG-RG-GOVERNANCE_REGISTRY-v0.1.0-P6-T01] Ratification Task 1</a> <small>[github] 2026-02-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/zkpayroll/zk-payroll-dashboard/issues/15'>[Architecture] Implement React Error Boundaries and Global Error Handling</a> <small>[github] 2026-02-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/3veryDay/Growing/issues/404'>github: [2026-02-24] 오늘의 1시간 공부: JMX (Java Management Extensions)</a></li>
+<li><a href='https://github.com/Anamitra-Sarkar/AgroMind/issues/31'>github: Important and serious Fixes which must not be ignored and are required for production!</a></li>
+<li><a href='https://github.com/aneeshd/schedule_state/issues/404'>github: Unwanted events created</a></li>
+<li><a href='https://github.com/biantaishabi2/Cli-niuma-test/issues/404'>github: [niuma-test-46037] Integration Test</a></li>
+<li><a href='https://github.com/cyberfabric/cyberfabric-core/issues/404'>github: PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway</a></li>
+<li><a href='https://github.com/evomimic/map-holons/issues/404'>github: MAP Commands Phase 2.1 -- Define initial command set (v0)</a></li>
+<li><a href='https://github.com/foxyberry/quant-investment/issues/404'>github: [Condition] 매출 안정성 점수 조건 추가 (revenue_stability_score)</a></li>
+<li><a href='https://github.com/gitgitgadget/gitgitgadget.github.io/issues/30'>github: No 404 page handling</a></li>
+<li><a href='https://github.com/jasonacox/pypowerwall-server/issues/7'>github: Login to see power flow keeps popping up</a></li>
+<li><a href='https://github.com/owainow/ai-sdlc-modernisation/issues/2'>github: Modernise Monolith Billing Platform  Spring Boot Microservices on Azure Container Apps</a></li>
+<li><a href='https://github.com/OWASP-BLT/BLT/issues/5741'>github: CSRF error briefly appears after signup/login despite successful authentication</a></li>
+<li><a href='https://github.com/ReVanced/revanced-patcher/issues/404'>github: bug: Failed to patch Google Photos</a></li>
+<li><a href='https://github.com/rhernaus/tyrum/issues/404'>github: [D6] Implement typing modes never/message/thinking/instant with bounded refresh cadence</a></li>
+<li><a href='https://github.com/softeerbootcamp-7th/WEB-Team6-Navisa/issues/404'>github: [BE] refactor : 외국인과 행정사의 수임 제안 생성 동시성 문제 해결</a></li>
+<li><a href='https://github.com/templarsco/lightweight/issues/404'>github: [Upstream #14788] bug: Vertex AI 400 error - Tool schemas with anyOf are incompatible with Gemini API</a></li>
+<li><a href='https://github.com/thomaspryor/Broadwayscore/issues/50'>github: Roadmap</a></li>
+<li><a href='https://github.com/tosin2013/mcp-adr-analysis-server/issues/520'>github: [agentics] No-Op Runs</a></li>
+<li><a href='https://github.com/WebWakaHub/webwaka-cell-universe/issues/404'>github: [CEL-MONITOR-v0.1.0-P1-T01] Design Task 1</a></li>
+<li><a href='https://github.com/WebWakaHub/webwaka-organelle-universe/issues/404'>github: [ORG-RG-GOVERNANCE_REGISTRY-v0.1.0-P6-T01] Ratification Task 1</a></li>
+<li><a href='https://github.com/zkpayroll/zk-payroll-dashboard/issues/15'>github: [Architecture] Implement React Error Boundaries and Global Error Handling</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-02-23T16:40:59.5352452Z</small></p>
+</main>
+</body>
+</html>

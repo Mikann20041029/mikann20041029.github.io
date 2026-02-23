@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "slug": "solve-multi-github-pages-404-not-found-202602231640",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-02-23T16:40:59.5352452Z",
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）"
+  },
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: [2026-02-24] 오늘의 1시간 공부: JMX (Java Management Extensions)",
+      "url": "https://github.com/3veryDay/Growing/issues/404"
+    },
+    {
+      "label": "github: Important and serious Fixes which must not be ignored and are required for production!",
+      "url": "https://github.com/Anamitra-Sarkar/AgroMind/issues/31"
+    },
+    {
+      "label": "github: Unwanted events created",
+      "url": "https://github.com/aneeshd/schedule_state/issues/404"
+    },
+    {
+      "label": "github: [niuma-test-46037] Integration Test",
+      "url": "https://github.com/biantaishabi2/Cli-niuma-test/issues/404"
+    },
+    {
+      "label": "github: PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway",
+      "url": "https://github.com/cyberfabric/cyberfabric-core/issues/404"
+    },
+    {
+      "label": "github: MAP Commands Phase 2.1 -- Define initial command set (v0)",
+      "url": "https://github.com/evomimic/map-holons/issues/404"
+    },
+    {
+      "label": "github: [Condition] 매출 안정성 점수 조건 추가 (revenue_stability_score)",
+      "url": "https://github.com/foxyberry/quant-investment/issues/404"
+    },
+    {
+      "label": "github: No 404 page handling",
+      "url": "https://github.com/gitgitgadget/gitgitgadget.github.io/issues/30"
+    },
+    {
+      "label": "github: Login to see power flow keeps popping up",
+      "url": "https://github.com/jasonacox/pypowerwall-server/issues/7"
+    },
+    {
+      "label": "github: Modernise Monolith Billing Platform  Spring Boot Microservices on Azure Container Apps",
+      "url": "https://github.com/owainow/ai-sdlc-modernisation/issues/2"
+    },
+    {
+      "label": "github: CSRF error briefly appears after signup/login despite successful authentication",
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5741"
+    },
+    {
+      "label": "github: bug: Failed to patch Google Photos",
+      "url": "https://github.com/ReVanced/revanced-patcher/issues/404"
+    },
+    {
+      "label": "github: [D6] Implement typing modes never/message/thinking/instant with bounded refresh cadence",
+      "url": "https://github.com/rhernaus/tyrum/issues/404"
+    },
+    {
+      "label": "github: [BE] refactor : 외국인과 행정사의 수임 제안 생성 동시성 문제 해결",
+      "url": "https://github.com/softeerbootcamp-7th/WEB-Team6-Navisa/issues/404"
+    },
+    {
+      "label": "github: [Upstream #14788] bug: Vertex AI 400 error - Tool schemas with anyOf are incompatible with Gemini API",
+      "url": "https://github.com/templarsco/lightweight/issues/404"
+    },
+    {
+      "label": "github: Roadmap",
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50"
+    },
+    {
+      "label": "github: [agentics] No-Op Runs",
+      "url": "https://github.com/tosin2013/mcp-adr-analysis-server/issues/520"
+    },
+    {
+      "label": "github: [CEL-MONITOR-v0.1.0-P1-T01] Design Task 1",
+      "url": "https://github.com/WebWakaHub/webwaka-cell-universe/issues/404"
+    },
+    {
+      "label": "github: [ORG-RG-GOVERNANCE_REGISTRY-v0.1.0-P6-T01] Ratification Task 1",
+      "url": "https://github.com/WebWakaHub/webwaka-organelle-universe/issues/404"
+    },
+    {
+      "label": "github: [Architecture] Implement React Error Boundaries and Global Error Handling",
+      "url": "https://github.com/zkpayroll/zk-payroll-dashboard/issues/15"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "[2026-02-24] 오늘의 1시간 공부: JMX (Java Management Extensions)",
+      "url": "https://github.com/3veryDay/Growing/issues/404",
+      "created_at": "2026-02-23T15:55:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Important and serious Fixes which must not be ignored and are required for production!",
+      "url": "https://github.com/Anamitra-Sarkar/AgroMind/issues/31",
+      "created_at": "2026-02-23T16:02:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Unwanted events created",
+      "url": "https://github.com/aneeshd/schedule_state/issues/404",
+      "created_at": "2026-02-23T15:43:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[niuma-test-46037] Integration Test",
+      "url": "https://github.com/biantaishabi2/Cli-niuma-test/issues/404",
+      "created_at": "2026-02-23T03:44:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway",
+      "url": "https://github.com/cyberfabric/cyberfabric-core/issues/404",
+      "created_at": "2026-02-02T08:10:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "MAP Commands Phase 2.1 -- Define initial command set (v0)",
+      "url": "https://github.com/evomimic/map-holons/issues/404",
+      "created_at": "2026-02-23T16:33:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Condition] 매출 안정성 점수 조건 추가 (revenue_stability_score)",
+      "url": "https://github.com/foxyberry/quant-investment/issues/404",
+      "created_at": "2026-02-23T15:56:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No 404 page handling",
+      "url": "https://github.com/gitgitgadget/gitgitgadget.github.io/issues/30",
+      "created_at": "2026-02-23T16:00:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Login to see power flow keeps popping up",
+      "url": "https://github.com/jasonacox/pypowerwall-server/issues/7",
+      "created_at": "2026-02-04T22:45:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Modernise Monolith Billing Platform  Spring Boot Microservices on Azure Container Apps",
+      "url": "https://github.com/owainow/ai-sdlc-modernisation/issues/2",
+      "created_at": "2026-02-23T13:59:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "CSRF error briefly appears after signup/login despite successful authentication",
+      "url": "https://github.com/OWASP-BLT/BLT/issues/5741",
+      "created_at": "2026-02-15T21:39:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: Failed to patch Google Photos",
+      "url": "https://github.com/ReVanced/revanced-patcher/issues/404",
+      "created_at": "2026-02-19T04:22:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[D6] Implement typing modes never/message/thinking/instant with bounded refresh cadence",
+      "url": "https://github.com/rhernaus/tyrum/issues/404",
+      "created_at": "2026-02-23T15:51:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BE] refactor : 외국인과 행정사의 수임 제안 생성 동시성 문제 해결",
+      "url": "https://github.com/softeerbootcamp-7th/WEB-Team6-Navisa/issues/404",
+      "created_at": "2026-02-23T13:37:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Upstream #14788] bug: Vertex AI 400 error - Tool schemas with anyOf are incompatible with Gemini API",
+      "url": "https://github.com/templarsco/lightweight/issues/404",
+      "created_at": "2026-02-23T14:28:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Roadmap",
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "created_at": "2026-02-15T04:26:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[agentics] No-Op Runs",
+      "url": "https://github.com/tosin2013/mcp-adr-analysis-server/issues/520",
+      "created_at": "2026-02-20T14:09:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[CEL-MONITOR-v0.1.0-P1-T01] Design Task 1",
+      "url": "https://github.com/WebWakaHub/webwaka-cell-universe/issues/404",
+      "created_at": "2026-02-19T14:33:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[ORG-RG-GOVERNANCE_REGISTRY-v0.1.0-P6-T01] Ratification Task 1",
+      "url": "https://github.com/WebWakaHub/webwaka-organelle-universe/issues/404",
+      "created_at": "2026-02-19T13:15:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Architecture] Implement React Error Boundaries and Global Error Handling",
+      "url": "https://github.com/zkpayroll/zk-payroll-dashboard/issues/15",
+      "created_at": "2026-02-22T17:42:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602231640/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
