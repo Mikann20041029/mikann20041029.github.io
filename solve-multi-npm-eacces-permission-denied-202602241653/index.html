@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>npm EACCES permission denied をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>npm EACCES permission denied をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/f5xc-salesdemos/devcontainer/issues/52'>fix: npm install -g fails with EACCES at runtime</a> <small>[github] 2026-02-24</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/hao-ai-lab/research-agent/issues/170'>[Bugs] Onboarding Issues for manual setup</a> <small>[github] 2026-02-17</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/jiulingyun/openclaw-cn/issues/380'>upstream(security-part6): 移植 5 个冲突 commit (P0) — v2026.2.21→v2026.2.23</a> <small>[github] 2026-02-24</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/jiulingyun/openclaw-cn/issues/414'>upstream(config): 移植 5 个冲突 commit (P0,P1) — v2026.2.21→v2026.2.23</a> <small>[github] 2026-02-24</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/186'>mikann-autogen digest 2026-02-19T16:38:19.4875028Z</a> <small>[github] 2026-02-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/212'>mikann-autogen digest 2026-02-24T01:03:01.1601365Z</a> <small>[github] 2026-02-24</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/214'>mikann-autogen digest 2026-02-24T08:33:11.1497900Z</a> <small>[github] 2026-02-24</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/10690'>gateway update.run attempts update when already on latest version</a> <small>[github] 2026-02-06</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/23861'>[Bug]: Open claw installation fails on npm: ! npm install failed for openclaw@latest</a> <small>[github] 2026-02-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/25622'>[Bug]: Onboarding wizard validates workspace directory too late, wasting user setup time</a> <small>[github] 2026-02-24</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/5434'>Error: EACCES: permission denied, open '/home/node/.openclaw/openclaw.json.7.2ede223b-aa90-4aa5-8f0d-97049696b626.tmp'</a> <small>[github] 2026-01-31</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/6620'>ClawdHub skill installer fails with EACCES in official Docker container</a> <small>[github] 2026-02-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/8793'>[Bug]: Discord handler uses /root/.openclaw for session store and fails with EACCES even when running as non-root with OPENCLAW_STATE_DIR set</a> <small>[github] 2026-02-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ruvnet/claude-flow/issues/1144'>@xenova/transformers cache EACCES on global install</a> <small>[github] 2026-02-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/tinkermonkey/documentation_robotics_viewer/issues/317'>[PR Review] Medium issues from PR Code Review</a> <small>[github] 2026-02-20</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/tinkermonkey/documentation_robotics/issues/441'>[PR Review] Medium issues from PR Code Review</a> <small>[github] 2026-02-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/vercel-labs/agent-browser/issues/390'>✗ Daemon failed to start (socket: C:\Users\rayle\.agent-browser\bilibili.sock) in windows</a> <small>[github] 2026-02-07</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/vig-os/devcontainer/issues/111'>[BUG] just init fails to install devcontainer CLI — npm global install permission denied</a> <small>[github] 2026-02-20</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/xianyu110/awesome-openclaw-tutorial/issues/10'>📢 OpenClaw 新版本发布: v2026.2.22</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/yasha-dev1/codefactory/issues/26'>feat: release pipeline, curl-installable CLI, and self-update command</a> <small>[github] 2026-02-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/f5xc-salesdemos/devcontainer/issues/52'>github: fix: npm install -g fails with EACCES at runtime</a></li>
+<li><a href='https://github.com/hao-ai-lab/research-agent/issues/170'>github: [Bugs] Onboarding Issues for manual setup</a></li>
+<li><a href='https://github.com/jiulingyun/openclaw-cn/issues/380'>github: upstream(security-part6): 移植 5 个冲突 commit (P0) — v2026.2.21→v2026.2.23</a></li>
+<li><a href='https://github.com/jiulingyun/openclaw-cn/issues/414'>github: upstream(config): 移植 5 个冲突 commit (P0,P1) — v2026.2.21→v2026.2.23</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/186'>github: mikann-autogen digest 2026-02-19T16:38:19.4875028Z</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/212'>github: mikann-autogen digest 2026-02-24T01:03:01.1601365Z</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/214'>github: mikann-autogen digest 2026-02-24T08:33:11.1497900Z</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/10690'>github: gateway update.run attempts update when already on latest version</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/23861'>github: [Bug]: Open claw installation fails on npm: ! npm install failed for openclaw@latest</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/25622'>github: [Bug]: Onboarding wizard validates workspace directory too late, wasting user setup time</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/5434'>github: Error: EACCES: permission denied, open '/home/node/.openclaw/openclaw.json.7.2ede223b-aa90-4aa5-8f0d-97049696b626.tmp'</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/6620'>github: ClawdHub skill installer fails with EACCES in official Docker container</a></li>
+<li><a href='https://github.com/openclaw/openclaw/issues/8793'>github: [Bug]: Discord handler uses /root/.openclaw for session store and fails with EACCES even when running as non-root with OPENCLAW_STATE_DIR set</a></li>
+<li><a href='https://github.com/ruvnet/claude-flow/issues/1144'>github: @xenova/transformers cache EACCES on global install</a></li>
+<li><a href='https://github.com/tinkermonkey/documentation_robotics_viewer/issues/317'>github: [PR Review] Medium issues from PR Code Review</a></li>
+<li><a href='https://github.com/tinkermonkey/documentation_robotics/issues/441'>github: [PR Review] Medium issues from PR Code Review</a></li>
+<li><a href='https://github.com/vercel-labs/agent-browser/issues/390'>github: ✗ Daemon failed to start (socket: C:\Users\rayle\.agent-browser\bilibili.sock) in windows</a></li>
+<li><a href='https://github.com/vig-os/devcontainer/issues/111'>github: [BUG] just init fails to install devcontainer CLI — npm global install permission denied</a></li>
+<li><a href='https://github.com/xianyu110/awesome-openclaw-tutorial/issues/10'>github: 📢 OpenClaw 新版本发布: v2026.2.22</a></li>
+<li><a href='https://github.com/yasha-dev1/codefactory/issues/26'>github: feat: release pipeline, curl-installable CLI, and self-update command</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-02-24T16:53:05.5559506Z</small></p>
+</main>
+</body>
+</html>
