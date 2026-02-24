@@ -708,5 +708,11 @@
     "title": "npm EACCES permission denied をまとめて直す（権限/環境/手順）",
     "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
     "tags": "auto"
+  },
+  {
+    "slug": "solve-multi-npm-eacces-permission-denied-202602240833",
+    "title": "npm EACCES permission denied をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": "auto"
   }
 ]
