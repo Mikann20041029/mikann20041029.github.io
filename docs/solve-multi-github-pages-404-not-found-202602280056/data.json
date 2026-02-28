@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/8ryanWh1t3/DeepSigma/issues/404",
+      "label": "github: CHILD: Decision Cost Ledger Schema + Emitter"
+    },
+    {
+      "url": "https://github.com/agslima/file-server-management/issues/241",
+      "label": "github: [fixbug] Review coderabbit issues"
+    },
+    {
+      "url": "https://github.com/chminc/status/issues/404",
+      "label": "github: 🛑 cPortal is down"
+    },
+    {
+      "url": "https://github.com/clinical-biomarkers/biomarker-issue-repo/issues/401",
+      "label": "github: Homepage -> Explore -> Biomarker Ontology link doesn't work"
+    },
+    {
+      "url": "https://github.com/cloudflare/vinext/issues/181",
+      "label": "github: [cloudflare@vinext] Path Traversal in vinext static file handler could lead to Arbitrary File Read via tryServeStatic"
+    },
+    {
+      "url": "https://github.com/codevantaio/eco-base/issues/404",
+      "label": "github: 全面的維修"
+    },
+    {
+      "url": "https://github.com/cyberfabric/cyberfabric-core/issues/404",
+      "label": "github: PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway"
+    },
+    {
+      "url": "https://github.com/elastic/ai-github-actions-playground/issues/712",
+      "label": "github: [aw] No-Op Runs"
+    },
+    {
+      "url": "https://github.com/LegendApp/legend-list/issues/404",
+      "label": "github: [web] [beta] [investigation] window scroll at end issues"
+    },
+    {
+      "url": "https://github.com/nimbus9inc/api-monitor/issues/404",
+      "label": "github: 🛑 Nimbus9 Floor Plan API is down"
+    },
+    {
+      "url": "https://github.com/poong92/pruviq/issues/21",
+      "label": "github: chore(research): enable BRAVE_API_KEY for automated agent research"
+    },
+    {
+      "url": "https://github.com/samuelkahessay/prd-to-prod/issues/123",
+      "label": "github: PRD: Ticket Deflection Service (Run 04 — C#/.NET 8)"
+    },
+    {
+      "url": "https://github.com/samuelkahessay/prd-to-prod/issues/62",
+      "label": "github: PRD: DevCard — Developer Identity Card Generator"
+    },
+    {
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/159",
+      "label": "github: Build a Beacon Atlas City visualization (75 RTC Bounty)"
+    },
+    {
+      "url": "https://github.com/stevenson-space/shs/issues/404",
+      "label": "github: bug: ScrollablePeriodList index mismatch with 'Up Next' indicator"
+    },
+    {
+      "url": "https://github.com/tess1o/geopulse/issues/333",
+      "label": "github: [Feature request] Show location analytics on a map"
+    },
+    {
+      "url": "https://github.com/thechelsuk/uk.thechels/issues/571",
+      "label": "github: Link Checker Report - 22502003878"
+    },
+    {
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "label": "github: Roadmap"
+    },
+    {
+      "url": "https://github.com/ViitasaariVille/Finnish-law/issues/404",
+      "label": "github: [ONTOLOGY-GAP-035] Missing DistributionSystem enum values for §231"
+    },
+    {
+      "url": "https://github.com/zensical/zensical/issues/404",
+      "label": "github: Support for VSCode DevContainers for development"
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-02-28T00:56:35.3662671Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-github-pages-404-not-found-202602280056",
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "CHILD: Decision Cost Ledger Schema + Emitter",
+      "url": "https://github.com/8ryanWh1t3/DeepSigma/issues/404",
+      "created_at": "2026-02-24T13:49:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[fixbug] Review coderabbit issues",
+      "url": "https://github.com/agslima/file-server-management/issues/241",
+      "created_at": "2026-02-28T00:12:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🛑 cPortal is down",
+      "url": "https://github.com/chminc/status/issues/404",
+      "created_at": "2026-02-27T22:43:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Homepage -> Explore -> Biomarker Ontology link doesn't work",
+      "url": "https://github.com/clinical-biomarkers/biomarker-issue-repo/issues/401",
+      "created_at": "2026-02-18T13:04:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[cloudflare@vinext] Path Traversal in vinext static file handler could lead to Arbitrary File Read via tryServeStatic",
+      "url": "https://github.com/cloudflare/vinext/issues/181",
+      "created_at": "2026-02-28T00:35:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "全面的維修",
+      "url": "https://github.com/codevantaio/eco-base/issues/404",
+      "created_at": "2026-02-27T19:46:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway",
+      "url": "https://github.com/cyberfabric/cyberfabric-core/issues/404",
+      "created_at": "2026-02-02T08:10:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[aw] No-Op Runs",
+      "url": "https://github.com/elastic/ai-github-actions-playground/issues/712",
+      "created_at": "2026-02-27T03:49:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[web] [beta] [investigation] window scroll at end issues",
+      "url": "https://github.com/LegendApp/legend-list/issues/404",
+      "created_at": "2026-02-27T12:45:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🛑 Nimbus9 Floor Plan API is down",
+      "url": "https://github.com/nimbus9inc/api-monitor/issues/404",
+      "created_at": "2026-02-27T23:13:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "chore(research): enable BRAVE_API_KEY for automated agent research",
+      "url": "https://github.com/poong92/pruviq/issues/21",
+      "created_at": "2026-02-23T14:07:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PRD: Ticket Deflection Service (Run 04 — C#/.NET 8)",
+      "url": "https://github.com/samuelkahessay/prd-to-prod/issues/123",
+      "created_at": "2026-02-27T21:12:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PRD: DevCard — Developer Identity Card Generator",
+      "url": "https://github.com/samuelkahessay/prd-to-prod/issues/62",
+      "created_at": "2026-02-25T22:57:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Build a Beacon Atlas City visualization (75 RTC Bounty)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/159",
+      "created_at": "2026-02-13T21:05:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: ScrollablePeriodList index mismatch with 'Up Next' indicator",
+      "url": "https://github.com/stevenson-space/shs/issues/404",
+      "created_at": "2026-02-27T20:51:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Feature request] Show location analytics on a map",
+      "url": "https://github.com/tess1o/geopulse/issues/333",
+      "created_at": "2026-02-21T08:54:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Link Checker Report - 22502003878",
+      "url": "https://github.com/thechelsuk/uk.thechels/issues/571",
+      "created_at": "2026-02-27T20:10:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Roadmap",
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "created_at": "2026-02-15T04:26:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[ONTOLOGY-GAP-035] Missing DistributionSystem enum values for §231",
+      "url": "https://github.com/ViitasaariVille/Finnish-law/issues/404",
+      "created_at": "2026-02-27T18:55:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Support for VSCode DevContainers for development",
+      "url": "https://github.com/zensical/zensical/issues/404",
+      "created_at": "2026-02-27T20:00:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280056/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
