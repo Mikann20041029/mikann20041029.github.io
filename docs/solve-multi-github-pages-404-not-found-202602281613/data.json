@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/acnicholls/Cypher/issues/15",
+      "label": "github: Ask Claude to solve it"
+    },
+    {
+      "url": "https://github.com/boundlessfi/boundless/issues/391",
+      "label": "github: Implement Public Earnings Section in Profile"
+    },
+    {
+      "url": "https://github.com/boundlessfi/boundless/issues/392",
+      "label": "github: Implement Organization Profile Page ui"
+    },
+    {
+      "url": "https://github.com/bradyoo12/ai-dev-request/issues/2192",
+      "label": "github: Done column에 있는 티켓 위에서 부터 400개 티켓 b-review 댠계 실행하고 이슈 발견되면 해결하고 또는 성취되지않은 goal발견되면 성취"
+    },
+    {
+      "url": "https://github.com/cfg-is/cfgms/issues/404",
+      "label": "github: Steward-side secret management: OS-native encrypted storage provider"
+    },
+    {
+      "url": "https://github.com/cyberfabric/cyberfabric-core/issues/404",
+      "label": "github: PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway"
+    },
+    {
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1121",
+      "label": "github: Feature Request: On-Device Persistent Memory with Cryptographic Identity Binding (Local Storage Architecture)"
+    },
+    {
+      "url": "https://github.com/delzhand/isocon/issues/404",
+      "label": "github: \"Deadzones\" and other Mouse issues."
+    },
+    {
+      "url": "https://github.com/greghavens/triggerfish/issues/181",
+      "label": "github: Notion Integration"
+    },
+    {
+      "url": "https://github.com/jasoncolburne/kels/issues/52",
+      "label": "github: paginate kels requests"
+    },
+    {
+      "url": "https://github.com/nextcloud/spreed/issues/17204",
+      "label": "github: Talk Desktop: First call after idle fails – signaling token expired, stuck in \"Connecting\" until restart"
+    },
+    {
+      "url": "https://github.com/poong92/pruviq/issues/21",
+      "label": "github: chore(research): enable BRAVE_API_KEY for automated agent research"
+    },
+    {
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/226",
+      "label": "github: DAST Scan Report - f8645b4270f16f70b6e183c5e6c365af338453c9"
+    },
+    {
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "label": "github: Roadmap"
+    },
+    {
+      "url": "https://github.com/Trancendos/infinity-portal/issues/404",
+      "label": "github: [MEDIUM] PYSEC-2020-151: uvicorn@unknown"
+    },
+    {
+      "url": "https://github.com/unovue/shadcn-vue/issues/1702",
+      "label": "github: [Bug]: Most components have disappeared"
+    },
+    {
+      "url": "https://github.com/xadupre/yet-another-onnx-builder/issues/404",
+      "label": "github: add more test case for _remove_inplace"
+    },
+    {
+      "url": "https://github.com/yuichi1000/ghostinthearchive/issues/404",
+      "label": "github: feat: ブログ記事分析ダッシュボード（コンテンツ・コスト・タグ統計）"
+    },
+    {
+      "url": "https://github.com/zensical/zensical/issues/404",
+      "label": "github: Support for VSCode DevContainers for development"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79887290/sidebase-nuxt-auth-throwing-404-page-not-found-session-error",
+      "label": "stackoverflow: @sidebase/nuxt-auth throwing &#39;404 Page not found: /session&#39; error"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "Ask Claude to solve it",
+      "url": "https://github.com/acnicholls/Cypher/issues/15",
+      "created_at": "2026-02-28T06:06:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Implement Public Earnings Section in Profile",
+      "url": "https://github.com/boundlessfi/boundless/issues/391",
+      "created_at": "2026-02-23T03:12:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Implement Organization Profile Page ui",
+      "url": "https://github.com/boundlessfi/boundless/issues/392",
+      "created_at": "2026-02-23T10:52:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Done column에 있는 티켓 위에서 부터 400개 티켓 b-review 댠계 실행하고 이슈 발견되면 해결하고 또는 성취되지않은 goal발견되면 성취",
+      "url": "https://github.com/bradyoo12/ai-dev-request/issues/2192",
+      "created_at": "2026-02-28T08:48:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Steward-side secret management: OS-native encrypted storage provider",
+      "url": "https://github.com/cfg-is/cfgms/issues/404",
+      "created_at": "2026-02-26T21:32:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PR #402 - [WIP] feat(web-search-gateway): add PRD and Design for Web Search Gateway",
+      "url": "https://github.com/cyberfabric/cyberfabric-core/issues/404",
+      "created_at": "2026-02-02T08:10:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Feature Request: On-Device Persistent Memory with Cryptographic Identity Binding (Local Storage Architecture)",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1121",
+      "created_at": "2026-02-24T00:44:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "\"Deadzones\" and other Mouse issues.",
+      "url": "https://github.com/delzhand/isocon/issues/404",
+      "created_at": "2026-01-31T01:30:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Notion Integration",
+      "url": "https://github.com/greghavens/triggerfish/issues/181",
+      "created_at": "2026-02-24T17:37:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "paginate kels requests",
+      "url": "https://github.com/jasoncolburne/kels/issues/52",
+      "created_at": "2026-02-23T21:19:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Talk Desktop: First call after idle fails – signaling token expired, stuck in \"Connecting\" until restart",
+      "url": "https://github.com/nextcloud/spreed/issues/17204",
+      "created_at": "2026-02-24T15:04:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "chore(research): enable BRAVE_API_KEY for automated agent research",
+      "url": "https://github.com/poong92/pruviq/issues/21",
+      "created_at": "2026-02-23T14:07:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DAST Scan Report - f8645b4270f16f70b6e183c5e6c365af338453c9",
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/226",
+      "created_at": "2026-02-28T12:47:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Roadmap",
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "created_at": "2026-02-15T04:26:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[MEDIUM] PYSEC-2020-151: uvicorn@unknown",
+      "url": "https://github.com/Trancendos/infinity-portal/issues/404",
+      "created_at": "2026-02-28T12:15:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Most components have disappeared",
+      "url": "https://github.com/unovue/shadcn-vue/issues/1702",
+      "created_at": "2026-02-26T12:22:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "add more test case for _remove_inplace",
+      "url": "https://github.com/xadupre/yet-another-onnx-builder/issues/404",
+      "created_at": "2026-02-28T11:21:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "feat: ブログ記事分析ダッシュボード（コンテンツ・コスト・タグ統計）",
+      "url": "https://github.com/yuichi1000/ghostinthearchive/issues/404",
+      "created_at": "2026-02-28T14:05:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Support for VSCode DevContainers for development",
+      "url": "https://github.com/zensical/zensical/issues/404",
+      "created_at": "2026-02-27T20:00:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "stackoverflow",
+      "title": "@sidebase/nuxt-auth throwing &#39;404 Page not found: /session&#39; error",
+      "url": "https://stackoverflow.com/questions/79887290/sidebase-nuxt-auth-throwing-404-page-not-found-session-error",
+      "created_at": "2026-02-11T10:37:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602281613/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-02-28T16:13:34.6626486Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-github-pages-404-not-found-202602281613"
+  }
+}
