@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/0xHoneyJar/loa-finn/issues/66",
+      "label": "github: RFC: Launch Readiness — finnNFT Agent Capabilities, User Surfaces & E2E Infrastructure Gap Analysis"
+    },
+    {
+      "url": "https://github.com/acnicholls/Cypher/issues/15",
+      "label": "github: Ask Claude to solve it"
+    },
+    {
+      "url": "https://github.com/DarshitAkbari57/frontend-with-ai/issues/1",
+      "label": "github: PRD: Frontend Web Portal (Experience Portal)"
+    },
+    {
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/55",
+      "label": "github: Link Checker Report: Broken links found"
+    },
+    {
+      "url": "https://github.com/internkalamtech/IMS/issues/404",
+      "label": "github: View Personal Weekly Schedule"
+    },
+    {
+      "url": "https://github.com/MickaelV0/roxabi_boilerplate/issues/404",
+      "label": "github: fix: module-level mutable cache in UserService breaks test isolation"
+    },
+    {
+      "url": "https://github.com/midagedev/jongodb/issues/404",
+      "label": "github: [phase:r4] Reduce skipped cases by evaluating test-level runOnRequirements"
+    },
+    {
+      "url": "https://github.com/poong92/pruviq/issues/115",
+      "label": "github: [P2] /indicators 엔드포인트 404"
+    },
+    {
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/217",
+      "label": "github: DAST Scan Report - 7b8087cd12f89fc77ef7f518c1a795fd31dc3db6"
+    },
+    {
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/219",
+      "label": "github: DAST Scan Report - 244835a2dc95556fe52743a6fc51b912ee06c3d0"
+    },
+    {
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/220",
+      "label": "github: DAST Scan Report - 08f1c5ba859fb851786501e9423334ec541ca732"
+    },
+    {
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/221",
+      "label": "github: DAST Scan Report - 92e77be1cb0fe0d30173d6d2e92ed702454a95b2"
+    },
+    {
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/222",
+      "label": "github: DAST Scan Report - d14bd28fe1fb65cf8846c52bd2fc7e5e4fbfde06"
+    },
+    {
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/223",
+      "label": "github: DAST Scan Report - 90e8daff74a48bac64496350f525f43399ed249e"
+    },
+    {
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/224",
+      "label": "github: DAST Scan Report - 581d692c2563e812d767efbd51abf62a483cbe40"
+    },
+    {
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/225",
+      "label": "github: DAST Scan Report - e99d40c6fd2489bc3db1351c4b4b0cd5ddd58394"
+    },
+    {
+      "url": "https://github.com/pymc-devs/pymc/issues/8126",
+      "label": "github: DOC+BUG: Confusing sampling example and RuntimeError on Windows in usage_overview.rst"
+    },
+    {
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/73",
+      "label": "github: [BOUNTY] Code Review Bounty Program — Review PRs, Earn RTC (100 RTC Pool)"
+    },
+    {
+      "url": "https://github.com/sudarshansudarshan/vinternship/issues/404",
+      "label": "github: Feature: Centralize Essential Daily Actions on Cohort Pages"
+    },
+    {
+      "url": "https://github.com/tosin2013/mcp-adr-analysis-server/issues/520",
+      "label": "github: [agentics] No-Op Runs"
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-02-28T08:15:13.6418022Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-github-pages-404-not-found-202602280815",
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "RFC: Launch Readiness — finnNFT Agent Capabilities, User Surfaces & E2E Infrastructure Gap Analysis",
+      "url": "https://github.com/0xHoneyJar/loa-finn/issues/66",
+      "created_at": "2026-02-13T05:22:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Ask Claude to solve it",
+      "url": "https://github.com/acnicholls/Cypher/issues/15",
+      "created_at": "2026-02-28T06:06:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PRD: Frontend Web Portal (Experience Portal)",
+      "url": "https://github.com/DarshitAkbari57/frontend-with-ai/issues/1",
+      "created_at": "2026-02-28T05:53:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Link Checker Report: Broken links found",
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/55",
+      "created_at": "2026-02-28T06:05:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "View Personal Weekly Schedule",
+      "url": "https://github.com/internkalamtech/IMS/issues/404",
+      "created_at": "2026-02-16T11:25:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fix: module-level mutable cache in UserService breaks test isolation",
+      "url": "https://github.com/MickaelV0/roxabi_boilerplate/issues/404",
+      "created_at": "2026-02-27T16:07:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[phase:r4] Reduce skipped cases by evaluating test-level runOnRequirements",
+      "url": "https://github.com/midagedev/jongodb/issues/404",
+      "created_at": "2026-02-28T08:10:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[P2] /indicators 엔드포인트 404",
+      "url": "https://github.com/poong92/pruviq/issues/115",
+      "created_at": "2026-02-28T03:09:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DAST Scan Report - 7b8087cd12f89fc77ef7f518c1a795fd31dc3db6",
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/217",
+      "created_at": "2026-02-28T05:13:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DAST Scan Report - 244835a2dc95556fe52743a6fc51b912ee06c3d0",
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/219",
+      "created_at": "2026-02-28T05:25:46.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DAST Scan Report - 08f1c5ba859fb851786501e9423334ec541ca732",
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/220",
+      "created_at": "2026-02-28T05:31:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DAST Scan Report - 92e77be1cb0fe0d30173d6d2e92ed702454a95b2",
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/221",
+      "created_at": "2026-02-28T05:33:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DAST Scan Report - d14bd28fe1fb65cf8846c52bd2fc7e5e4fbfde06",
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/222",
+      "created_at": "2026-02-28T05:35:46.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DAST Scan Report - 90e8daff74a48bac64496350f525f43399ed249e",
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/223",
+      "created_at": "2026-02-28T05:44:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DAST Scan Report - 581d692c2563e812d767efbd51abf62a483cbe40",
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/224",
+      "created_at": "2026-02-28T05:49:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DAST Scan Report - e99d40c6fd2489bc3db1351c4b4b0cd5ddd58394",
+      "url": "https://github.com/preludio-lab/preludio-lab/issues/225",
+      "created_at": "2026-02-28T05:51:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DOC+BUG: Confusing sampling example and RuntimeError on Windows in usage_overview.rst",
+      "url": "https://github.com/pymc-devs/pymc/issues/8126",
+      "created_at": "2026-02-27T14:18:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BOUNTY] Code Review Bounty Program — Review PRs, Earn RTC (100 RTC Pool)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/73",
+      "created_at": "2026-02-06T01:14:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Feature: Centralize Essential Daily Actions on Cohort Pages",
+      "url": "https://github.com/sudarshansudarshan/vinternship/issues/404",
+      "created_at": "2026-02-28T07:29:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[agentics] No-Op Runs",
+      "url": "https://github.com/tosin2013/mcp-adr-analysis-server/issues/520",
+      "created_at": "2026-02-20T14:09:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202602280815/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
