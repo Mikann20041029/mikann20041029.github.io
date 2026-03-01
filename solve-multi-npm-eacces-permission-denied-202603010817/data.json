@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: Install with bun fails due to DB error (hardcoded $HOME)",
+      "url": "https://github.com/diegosouzapw/OmniRoute/issues/156"
+    },
+    {
+      "label": "github: fix: npm install -g fails with EACCES at runtime",
+      "url": "https://github.com/f5xc-salesdemos/devcontainer/issues/52"
+    },
+    {
+      "label": "github: upstream(security-part6): 移植 5 个冲突 commit (P0) — v2026.2.21→v2026.2.23",
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/380"
+    },
+    {
+      "label": "github: upstream(config): 移植 5 个冲突 commit (P0,P1) — v2026.2.21→v2026.2.23",
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/414"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-02-24T01:03:01.1601365Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/212"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-02-24T08:33:11.1497900Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/214"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-02-24T16:53:05.5559506Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/216"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-03-01T01:10:46.7039247Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/242"
+    },
+    {
+      "label": "github: npm install (i -g) @openai/codex -> \"operation rejected by your operating system.\"",
+      "url": "https://github.com/openai/codex/issues/10342"
+    },
+    {
+      "label": "github: gateway update.run attempts update when already on latest version",
+      "url": "https://github.com/openclaw/openclaw/issues/10690"
+    },
+    {
+      "label": "github: [Bug]: Openclaw fails to install on a clean MacOS install with every install method I tried",
+      "url": "https://github.com/openclaw/openclaw/issues/21464"
+    },
+    {
+      "label": "github: [Bug]: Open claw installation fails on npm: ! npm install failed for openclaw@latest",
+      "url": "https://github.com/openclaw/openclaw/issues/23861"
+    },
+    {
+      "label": "github: [Bug]: Onboarding wizard validates workspace directory too late, wasting user setup time",
+      "url": "https://github.com/openclaw/openclaw/issues/25622"
+    },
+    {
+      "label": "github: Error: EACCES: permission denied, open '/home/node/.openclaw/openclaw.json.7.2ede223b-aa90-4aa5-8f0d-97049696b626.tmp'",
+      "url": "https://github.com/openclaw/openclaw/issues/5434"
+    },
+    {
+      "label": "github: ClawdHub skill installer fails with EACCES in official Docker container",
+      "url": "https://github.com/openclaw/openclaw/issues/6620"
+    },
+    {
+      "label": "github: [Bug]: Discord handler uses /root/.openclaw for session store and fails with EACCES even when running as non-root with OPENCLAW_STATE_DIR set",
+      "url": "https://github.com/openclaw/openclaw/issues/8793"
+    },
+    {
+      "label": "github: [Good First Issue] Improve error messages for MCP server startup failures",
+      "url": "https://github.com/PCIRCLE-AI/claude-code-buddy/issues/18"
+    },
+    {
+      "label": "github: ✗ Daemon failed to start (socket: C:\\Users\\rayle\\.agent-browser\\bilibili.sock) in windows",
+      "url": "https://github.com/vercel-labs/agent-browser/issues/390"
+    },
+    {
+      "label": "github: Tools that store into $HOME fail",
+      "url": "https://github.com/vojtabiberle/agentbox/issues/21"
+    },
+    {
+      "label": "github: 📢 OpenClaw 新版本发布: v2026.2.22",
+      "url": "https://github.com/xianyu110/awesome-openclaw-tutorial/issues/10"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "Install with bun fails due to DB error (hardcoded $HOME)",
+      "url": "https://github.com/diegosouzapw/OmniRoute/issues/156",
+      "created_at": "2026-02-28T13:34:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fix: npm install -g fails with EACCES at runtime",
+      "url": "https://github.com/f5xc-salesdemos/devcontainer/issues/52",
+      "created_at": "2026-02-24T07:33:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "upstream(security-part6): 移植 5 个冲突 commit (P0) — v2026.2.21→v2026.2.23",
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/380",
+      "created_at": "2026-02-24T08:46:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "upstream(config): 移植 5 个冲突 commit (P0,P1) — v2026.2.21→v2026.2.23",
+      "url": "https://github.com/jiulingyun/openclaw-cn/issues/414",
+      "created_at": "2026-02-24T08:47:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-24T01:03:01.1601365Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/212",
+      "created_at": "2026-02-24T01:03:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-24T08:33:11.1497900Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/214",
+      "created_at": "2026-02-24T08:33:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-02-24T16:53:05.5559506Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/216",
+      "created_at": "2026-02-24T16:53:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-01T01:10:46.7039247Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/242",
+      "created_at": "2026-03-01T01:10:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "npm install (i -g) @openai/codex -> \"operation rejected by your operating system.\"",
+      "url": "https://github.com/openai/codex/issues/10342",
+      "created_at": "2026-02-01T18:52:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "gateway update.run attempts update when already on latest version",
+      "url": "https://github.com/openclaw/openclaw/issues/10690",
+      "created_at": "2026-02-06T21:17:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Openclaw fails to install on a clean MacOS install with every install method I tried",
+      "url": "https://github.com/openclaw/openclaw/issues/21464",
+      "created_at": "2026-02-20T00:03:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Open claw installation fails on npm: ! npm install failed for openclaw@latest",
+      "url": "https://github.com/openclaw/openclaw/issues/23861",
+      "created_at": "2026-02-22T19:33:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Onboarding wizard validates workspace directory too late, wasting user setup time",
+      "url": "https://github.com/openclaw/openclaw/issues/25622",
+      "created_at": "2026-02-24T16:41:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error: EACCES: permission denied, open '/home/node/.openclaw/openclaw.json.7.2ede223b-aa90-4aa5-8f0d-97049696b626.tmp'",
+      "url": "https://github.com/openclaw/openclaw/issues/5434",
+      "created_at": "2026-01-31T13:49:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ClawdHub skill installer fails with EACCES in official Docker container",
+      "url": "https://github.com/openclaw/openclaw/issues/6620",
+      "created_at": "2026-02-01T21:49:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Discord handler uses /root/.openclaw for session store and fails with EACCES even when running as non-root with OPENCLAW_STATE_DIR set",
+      "url": "https://github.com/openclaw/openclaw/issues/8793",
+      "created_at": "2026-02-04T11:50:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Good First Issue] Improve error messages for MCP server startup failures",
+      "url": "https://github.com/PCIRCLE-AI/claude-code-buddy/issues/18",
+      "created_at": "2026-02-01T20:32:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "✗ Daemon failed to start (socket: C:\\Users\\rayle\\.agent-browser\\bilibili.sock) in windows",
+      "url": "https://github.com/vercel-labs/agent-browser/issues/390",
+      "created_at": "2026-02-07T13:21:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Tools that store into $HOME fail",
+      "url": "https://github.com/vojtabiberle/agentbox/issues/21",
+      "created_at": "2026-02-26T11:32:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📢 OpenClaw 新版本发布: v2026.2.22",
+      "url": "https://github.com/xianyu110/awesome-openclaw-tutorial/issues/10",
+      "created_at": "2026-02-23T04:12:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603010817/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-03-01T08:17:42.9428696Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-npm-eacces-permission-denied-202603010817",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "npm EACCES permission denied をまとめて直す（権限/環境/手順）"
+  }
+}
