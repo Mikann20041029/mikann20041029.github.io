@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Zig Port Master Tracking: Go v2.10.2 baseline parity",
+      "url": "https://github.com/adybag14-cyber/openclaw-zig-port/issues/1",
+      "created_at": "2026-03-01T23:40:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Critical Bug: Claude Code executed 'rm -rf' and deleted project files unexpectedly",
+      "url": "https://github.com/anthropics/claude-code/issues/29082",
+      "created_at": "2026-02-26T18:21:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Permission denied error after every Bash command when Windows username contains a space",
+      "url": "https://github.com/anthropics/claude-code/issues/29538",
+      "created_at": "2026-02-28T08:16:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Cowork completely unusable on Windows — recurring VM crashes, tab disappearing, and brief recovery followed by immediate failure (Max plan subscriber)",
+      "url": "https://github.com/anthropics/claude-code/issues/29848",
+      "created_at": "2026-03-01T15:41:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG]",
+      "url": "https://github.com/anthropics/claude-code/issues/30621",
+      "created_at": "2026-03-04T05:44:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[GCS Connector] Add Workload Identity Federation as authentication type",
+      "url": "https://github.com/Azure/Azure-DataFactory/issues/749",
+      "created_at": "2026-03-04T05:22:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Current overview of bugs",
+      "url": "https://github.com/dataplat/dbatools/issues/10203",
+      "created_at": "2026-03-02T18:39:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "MSI installer Error - MSI installer failed with exit code: 1603",
+      "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/14",
+      "created_at": "2026-02-18T14:30:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Pinned] 1h Kanban Board (Daily Snapshot)",
+      "url": "https://github.com/Keith-CY/carrier/issues/119",
+      "created_at": "2026-02-14T09:04:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Installer for newest service fabric version broken",
+      "url": "https://github.com/microsoft/service-fabric/issues/1566",
+      "created_at": "2026-03-03T14:17:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "WSL2 crashes on waking up from sleep",
+      "url": "https://github.com/microsoft/WSL/issues/14193",
+      "created_at": "2026-02-11T09:20:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-04T01:01:45.7232834Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/260",
+      "created_at": "2026-03-04T01:01:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Read tool validation error causes infinite retry loop until context window exhaustion",
+      "url": "https://github.com/openclaw/openclaw/issues/14729",
+      "created_at": "2026-02-12T15:14:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Non-PTY exec returns empty output on Windows (PTY works fine)",
+      "url": "https://github.com/openclaw/openclaw/issues/19332",
+      "created_at": "2026-02-17T17:56:25.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Phase 3: Extract session protocol + quality gates plugins",
+      "url": "https://github.com/rjmurillo/ai-agents/issues/1076",
+      "created_at": "2026-02-07T21:40:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI 工具社区动态日报 2026-03-04",
+      "url": "https://github.com/rollysys/agents-radar/issues/32",
+      "created_at": "2026-03-04T02:31:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Refactor: performance/stability pass + modern tray UX (phase plan)",
+      "url": "https://github.com/SGribanov/TimeZoneChanger/issues/1",
+      "created_at": "2026-03-03T15:39:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Security Review: Critical vulnerabilities found in Rust backend and Tauri configuration",
+      "url": "https://github.com/skillhub-club/skillhub-desktop/issues/11",
+      "created_at": "2026-03-03T12:32:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Build task shadow-copy lock on Uno.UI.Tasks.v0.dll during SamplesApp.Skia.Generic build",
+      "url": "https://github.com/unoplatform/uno/issues/22765",
+      "created_at": "2026-03-03T09:20:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows + psmux compatibility issues (launch, doctor, setup config duplication)",
+      "url": "https://github.com/Yeachan-Heo/oh-my-codex/issues/486",
+      "created_at": "2026-03-03T11:14:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603040825/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/adybag14-cyber/openclaw-zig-port/issues/1",
+      "label": "github: Zig Port Master Tracking: Go v2.10.2 baseline parity"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/29082",
+      "label": "github: [BUG] Critical Bug: Claude Code executed 'rm -rf' and deleted project files unexpectedly"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/29538",
+      "label": "github: Permission denied error after every Bash command when Windows username contains a space"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/29848",
+      "label": "github: [BUG] Cowork completely unusable on Windows — recurring VM crashes, tab disappearing, and brief recovery followed by immediate failure (Max plan subscriber)"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/30621",
+      "label": "github: [BUG]"
+    },
+    {
+      "url": "https://github.com/Azure/Azure-DataFactory/issues/749",
+      "label": "github: [GCS Connector] Add Workload Identity Federation as authentication type"
+    },
+    {
+      "url": "https://github.com/dataplat/dbatools/issues/10203",
+      "label": "github: Current overview of bugs"
+    },
+    {
+      "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/14",
+      "label": "github: MSI installer Error - MSI installer failed with exit code: 1603"
+    },
+    {
+      "url": "https://github.com/Keith-CY/carrier/issues/119",
+      "label": "github: [Pinned] 1h Kanban Board (Daily Snapshot)"
+    },
+    {
+      "url": "https://github.com/microsoft/service-fabric/issues/1566",
+      "label": "github: [BUG] Installer for newest service fabric version broken"
+    },
+    {
+      "url": "https://github.com/microsoft/WSL/issues/14193",
+      "label": "github: WSL2 crashes on waking up from sleep"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/260",
+      "label": "github: mikann-autogen digest 2026-03-04T01:01:45.7232834Z"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw/issues/14729",
+      "label": "github: Read tool validation error causes infinite retry loop until context window exhaustion"
+    },
+    {
+      "url": "https://github.com/openclaw/openclaw/issues/19332",
+      "label": "github: [Bug]: Non-PTY exec returns empty output on Windows (PTY works fine)"
+    },
+    {
+      "url": "https://github.com/rjmurillo/ai-agents/issues/1076",
+      "label": "github: Phase 3: Extract session protocol + quality gates plugins"
+    },
+    {
+      "url": "https://github.com/rollysys/agents-radar/issues/32",
+      "label": "github: 📊 AI CLI 工具社区动态日报 2026-03-04"
+    },
+    {
+      "url": "https://github.com/SGribanov/TimeZoneChanger/issues/1",
+      "label": "github: Refactor: performance/stability pass + modern tray UX (phase plan)"
+    },
+    {
+      "url": "https://github.com/skillhub-club/skillhub-desktop/issues/11",
+      "label": "github: Security Review: Critical vulnerabilities found in Rust backend and Tauri configuration"
+    },
+    {
+      "url": "https://github.com/unoplatform/uno/issues/22765",
+      "label": "github: Build task shadow-copy lock on Uno.UI.Tasks.v0.dll during SamplesApp.Skia.Generic build"
+    },
+    {
+      "url": "https://github.com/Yeachan-Heo/oh-my-codex/issues/486",
+      "label": "github: Windows + psmux compatibility issues (launch, doctor, setup config duplication)"
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "generated_at": "2026-03-04T08:25:08.2267806Z",
+    "slug": "solve-multi-windows-powershell-execution-policy-202603040825",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "windows powershell execution policy をまとめて直す（権限/環境/手順）"
+  }
+}
