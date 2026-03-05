@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "slug": "solve-multi-github-pages-404-not-found-202603050104",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "generated_at": "2026-03-05T01:04:15.6375926Z"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "[API Docs] GET /partner-trials/config/{partner_code}",
+      "url": "https://github.com/Alpaca-Network/gatewayz-backend/issues/1908",
+      "created_at": "2026-03-04T04:38:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[API Docs] GET /providers/{provider_id}/models/stats",
+      "url": "https://github.com/Alpaca-Network/gatewayz-backend/issues/1963",
+      "created_at": "2026-03-04T04:41:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: Menu bar Windows path expansion (%APPDATA%) fails in Command::new",
+      "url": "https://github.com/amiable-dev/conductor/issues/404",
+      "created_at": "2026-03-04T22:42:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Hackathon Participation Registration & Status-Based Banner States",
+      "url": "https://github.com/boundlessfi/boundless/issues/404",
+      "created_at": "2026-02-23T17:54:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Special symbols in access key",
+      "url": "https://github.com/catalyst/moodle-auth_outage/issues/404",
+      "created_at": "2026-03-04T22:59:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Dependency Dashboard",
+      "url": "https://github.com/ChainArgos/blockchain-nodes/issues/404",
+      "created_at": "2026-02-08T00:03:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: Branch rename (master → main) breaks Wikipedia selector, Content Explorer manifests, and Easy Setup",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad/issues/199",
+      "created_at": "2026-03-04T01:10:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Feature Request: On-Device Persistent Memory with Cryptographic Identity Binding (Local Storage Architecture)",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1121",
+      "created_at": "2026-02-24T00:44:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[0781 Supporting Documents]: Testing",
+      "url": "https://github.com/department-of-veterans-affairs/va.gov-team/issues/133402",
+      "created_at": "2026-02-17T18:52:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Security design review for Phase 3 architecture",
+      "url": "https://github.com/Divinity10/GLADyS/issues/404",
+      "created_at": "2026-03-04T23:13:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] eval() crashes when an image in the dataset has zero annotations.",
+      "url": "https://github.com/JdeRobot/PerceptionMetrics/issues/404",
+      "created_at": "2026-03-04T22:19:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "M7-01: KPI Governance & Ownership Ops",
+      "url": "https://github.com/MegaPhoenix92/botnix/issues/404",
+      "created_at": "2026-03-04T17:38:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Orange Pi 3 LTS - Only 1 CPU Core working",
+      "url": "https://github.com/MichaIng/DietPi/issues/7974",
+      "created_at": "2026-02-23T07:16:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Feature: Symphony-Style Autonomous Issue Resolution — Poll-Dispatch-Resolve-Land Workflow (inspired by OpenAI Symphony)",
+      "url": "https://github.com/NousResearch/hermes-agent/issues/404",
+      "created_at": "2026-03-04T22:54:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BOUNTY] Code Review Bounty Program — Review PRs, Earn RTC (100 RTC Pool)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/73",
+      "created_at": "2026-02-06T01:14:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "DBD::mysql::db do failed",
+      "url": "https://github.com/SnipeZilla/HLSTATS-2/issues/5",
+      "created_at": "2026-03-03T23:03:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Roadmap",
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "created_at": "2026-02-15T04:26:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows Modules Not Returning Results",
+      "url": "https://github.com/volatilityfoundation/volatility3/issues/1944",
+      "created_at": "2026-02-24T01:43:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Japanese font is not suitable for documentation sites in Japanese Windows, Japanese/Chinese fonts are not used in Japanese/Chinese pages in Chinese/Japanese Windows, and Segoe is not used in English pages in CJK Windows due to `system-ui`",
+      "url": "https://github.com/withastro/starlight/issues/3721",
+      "created_at": "2026-02-23T13:27:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug] 个股分析的筹码数据总是去不回来",
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis/issues/404",
+      "created_at": "2026-02-25T13:55:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/Alpaca-Network/gatewayz-backend/issues/1908",
+      "label": "github: [API Docs] GET /partner-trials/config/{partner_code}"
+    },
+    {
+      "url": "https://github.com/Alpaca-Network/gatewayz-backend/issues/1963",
+      "label": "github: [API Docs] GET /providers/{provider_id}/models/stats"
+    },
+    {
+      "url": "https://github.com/amiable-dev/conductor/issues/404",
+      "label": "github: bug: Menu bar Windows path expansion (%APPDATA%) fails in Command::new"
+    },
+    {
+      "url": "https://github.com/boundlessfi/boundless/issues/404",
+      "label": "github: Hackathon Participation Registration & Status-Based Banner States"
+    },
+    {
+      "url": "https://github.com/catalyst/moodle-auth_outage/issues/404",
+      "label": "github: Special symbols in access key"
+    },
+    {
+      "url": "https://github.com/ChainArgos/blockchain-nodes/issues/404",
+      "label": "github: Dependency Dashboard"
+    },
+    {
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad/issues/199",
+      "label": "github: bug: Branch rename (master → main) breaks Wikipedia selector, Content Explorer manifests, and Easy Setup"
+    },
+    {
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1121",
+      "label": "github: Feature Request: On-Device Persistent Memory with Cryptographic Identity Binding (Local Storage Architecture)"
+    },
+    {
+      "url": "https://github.com/department-of-veterans-affairs/va.gov-team/issues/133402",
+      "label": "github: [0781 Supporting Documents]: Testing"
+    },
+    {
+      "url": "https://github.com/Divinity10/GLADyS/issues/404",
+      "label": "github: Security design review for Phase 3 architecture"
+    },
+    {
+      "url": "https://github.com/JdeRobot/PerceptionMetrics/issues/404",
+      "label": "github: [Bug] eval() crashes when an image in the dataset has zero annotations."
+    },
+    {
+      "url": "https://github.com/MegaPhoenix92/botnix/issues/404",
+      "label": "github: M7-01: KPI Governance & Ownership Ops"
+    },
+    {
+      "url": "https://github.com/MichaIng/DietPi/issues/7974",
+      "label": "github: Orange Pi 3 LTS - Only 1 CPU Core working"
+    },
+    {
+      "url": "https://github.com/NousResearch/hermes-agent/issues/404",
+      "label": "github: Feature: Symphony-Style Autonomous Issue Resolution — Poll-Dispatch-Resolve-Land Workflow (inspired by OpenAI Symphony)"
+    },
+    {
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/73",
+      "label": "github: [BOUNTY] Code Review Bounty Program — Review PRs, Earn RTC (100 RTC Pool)"
+    },
+    {
+      "url": "https://github.com/SnipeZilla/HLSTATS-2/issues/5",
+      "label": "github: DBD::mysql::db do failed"
+    },
+    {
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "label": "github: Roadmap"
+    },
+    {
+      "url": "https://github.com/volatilityfoundation/volatility3/issues/1944",
+      "label": "github: Windows Modules Not Returning Results"
+    },
+    {
+      "url": "https://github.com/withastro/starlight/issues/3721",
+      "label": "github: Japanese font is not suitable for documentation sites in Japanese Windows, Japanese/Chinese fonts are not used in Japanese/Chinese pages in Chinese/Japanese Windows, and Segoe is not used in English pages in CJK Windows due to `system-ui`"
+    },
+    {
+      "url": "https://github.com/ZhuLinsen/daily_stock_analysis/issues/404",
+      "label": "github: [Bug] 个股分析的筹码数据总是去不回来"
+    }
+  ]
+}
