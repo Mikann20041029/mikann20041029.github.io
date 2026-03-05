@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "generated_at": "2026-03-05T08:27:02.4083882Z",
+    "slug": "solve-multi-github-pages-404-not-found-202603050827"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "[Submission]: project 7",
+      "url": "https://github.com/1ucian0/ecosystem/issues/404",
+      "created_at": "2026-03-05T08:10:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[speckit.plan] Audit & Refactor FastAPI + React GitHub Projects V2 Codebase",
+      "url": "https://github.com/Boykai/github-workflows/issues/1657",
+      "created_at": "2026-03-05T05:54:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Dependency Dashboard",
+      "url": "https://github.com/ChainArgos/blockchain-nodes/issues/404",
+      "created_at": "2026-02-08T00:03:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Link Checker Report: Broken links found",
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/64",
+      "created_at": "2026-03-05T06:12:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Feature Request: On-Device Persistent Memory with Cryptographic Identity Binding (Local Storage Architecture)",
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1121",
+      "created_at": "2026-02-24T00:44:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🚨 同步失败 | Sync Fail",
+      "url": "https://github.com/Feiyuyu0503/lobe-chat/issues/404",
+      "created_at": "2026-02-25T07:01:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug(shared): IPFS images fail to load — Storacha gateway pins expired",
+      "url": "https://github.com/greenpill-dev-guild/green-goods/issues/404",
+      "created_at": "2026-03-05T05:20:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Orange Pi 3 LTS - Only 1 CPU Core working",
+      "url": "https://github.com/MichaIng/DietPi/issues/7974",
+      "created_at": "2026-02-23T07:16:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[FEATURE] 펀딩 생성 이벤트 기반 주문 업데이트",
+      "url": "https://github.com/prgrms-be-adv-devcourse/beadv4_4_Team201_BE/issues/404",
+      "created_at": "2026-03-05T06:26:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Domain model: App, AppCommand, AppAuth, AppSandbox entities",
+      "url": "https://github.com/riccardomerolla/llm4zio/issues/404",
+      "created_at": "2026-03-05T05:41:20.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BOUNTY] Discovery Mode — Find Elyan Labs Software, Open PRs, Earn RTC",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/100",
+      "created_at": "2026-02-12T03:04:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Build a Beacon Atlas City visualization (75 RTC Bounty)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/159",
+      "created_at": "2026-02-13T21:05:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "x402 Integration Testing: Coinbase Wallets + Premium API",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/351",
+      "created_at": "2026-02-19T17:42:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BOUNTY] Code Review Bounty Program — Review PRs, Earn RTC (100 RTC Pool)",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/73",
+      "created_at": "2026-02-06T01:14:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Roadmap",
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "created_at": "2026-02-15T04:26:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[agentics] No-Op Runs",
+      "url": "https://github.com/tosin2013/mcp-adr-analysis-server/issues/520",
+      "created_at": "2026-02-20T14:09:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "reports.js パス修正 + PDF/MD 出力内容検証テスト追加",
+      "url": "https://github.com/uminomae/creation-space/issues/22",
+      "created_at": "2026-03-05T04:14:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Codex may show vibe-browser as enabled but with 0 tools after startup",
+      "url": "https://github.com/VibeTechnologies/vibe-mcp/issues/11",
+      "created_at": "2026-03-04T22:22:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "EV session details",
+      "url": "https://github.com/victronenergy/node-red-contrib-victron/issues/404",
+      "created_at": "2026-03-05T07:44:40.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Product Review: github-issue-collab — Roundtable Discussion",
+      "url": "https://github.com/vyshnavsdeepak/github-issue-collab/issues/3",
+      "created_at": "2026-03-04T13:18:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603050827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/1ucian0/ecosystem/issues/404",
+      "label": "github: [Submission]: project 7"
+    },
+    {
+      "url": "https://github.com/Boykai/github-workflows/issues/1657",
+      "label": "github: [speckit.plan] Audit & Refactor FastAPI + React GitHub Projects V2 Codebase"
+    },
+    {
+      "url": "https://github.com/ChainArgos/blockchain-nodes/issues/404",
+      "label": "github: Dependency Dashboard"
+    },
+    {
+      "url": "https://github.com/daveworth/daveworth.github.com/issues/64",
+      "label": "github: Link Checker Report: Broken links found"
+    },
+    {
+      "url": "https://github.com/deepseek-ai/DeepSeek-V3/issues/1121",
+      "label": "github: Feature Request: On-Device Persistent Memory with Cryptographic Identity Binding (Local Storage Architecture)"
+    },
+    {
+      "url": "https://github.com/Feiyuyu0503/lobe-chat/issues/404",
+      "label": "github: 🚨 同步失败 | Sync Fail"
+    },
+    {
+      "url": "https://github.com/greenpill-dev-guild/green-goods/issues/404",
+      "label": "github: bug(shared): IPFS images fail to load — Storacha gateway pins expired"
+    },
+    {
+      "url": "https://github.com/MichaIng/DietPi/issues/7974",
+      "label": "github: Orange Pi 3 LTS - Only 1 CPU Core working"
+    },
+    {
+      "url": "https://github.com/prgrms-be-adv-devcourse/beadv4_4_Team201_BE/issues/404",
+      "label": "github: [FEATURE] 펀딩 생성 이벤트 기반 주문 업데이트"
+    },
+    {
+      "url": "https://github.com/riccardomerolla/llm4zio/issues/404",
+      "label": "github: Domain model: App, AppCommand, AppAuth, AppSandbox entities"
+    },
+    {
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/100",
+      "label": "github: [BOUNTY] Discovery Mode — Find Elyan Labs Software, Open PRs, Earn RTC"
+    },
+    {
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/159",
+      "label": "github: Build a Beacon Atlas City visualization (75 RTC Bounty)"
+    },
+    {
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/351",
+      "label": "github: x402 Integration Testing: Coinbase Wallets + Premium API"
+    },
+    {
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/73",
+      "label": "github: [BOUNTY] Code Review Bounty Program — Review PRs, Earn RTC (100 RTC Pool)"
+    },
+    {
+      "url": "https://github.com/thomaspryor/Broadwayscore/issues/50",
+      "label": "github: Roadmap"
+    },
+    {
+      "url": "https://github.com/tosin2013/mcp-adr-analysis-server/issues/520",
+      "label": "github: [agentics] No-Op Runs"
+    },
+    {
+      "url": "https://github.com/uminomae/creation-space/issues/22",
+      "label": "github: reports.js パス修正 + PDF/MD 出力内容検証テスト追加"
+    },
+    {
+      "url": "https://github.com/VibeTechnologies/vibe-mcp/issues/11",
+      "label": "github: Codex may show vibe-browser as enabled but with 0 tools after startup"
+    },
+    {
+      "url": "https://github.com/victronenergy/node-red-contrib-victron/issues/404",
+      "label": "github: EV session details"
+    },
+    {
+      "url": "https://github.com/vyshnavsdeepak/github-issue-collab/issues/3",
+      "label": "github: Product Review: github-issue-collab — Roundtable Discussion"
+    }
+  ]
+}
