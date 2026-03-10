@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>github pages 404 not found をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>github pages 404 not found をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/01msmr/makerspac.es/issues/404'>[Workshop-Daten] MakerLab Murnau e.V. (#203)</a> <small>[github] 2026-03-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/adybag14-cyber/openclaw-zig-port/issues/1'>Zig Port Master Tracking: parity lock complete + full-stack replacement in progress</a> <small>[github] 2026-03-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/BlackbirdWorks/gopherstack/issues/404'>Implement Service: Backup</a> <small>[github] 2026-03-08</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/404'>2i2c access for building parallel calibration tool</a> <small>[github] 2026-03-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/deepseek-ai/DeepSeek-V3/issues/1121'>Feature Request: On-Device Persistent Memory with Cryptographic Identity Binding (Local Storage Architecture)</a> <small>[github] 2026-02-24</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/DR-Danke/Kompass/issues/140'>[TradeFair] Wave 1: Business Card Photo Ingestion</a> <small>[github] 2026-03-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/DR-Danke/Kompass/issues/141'>[TradeFair] Wave 1: Business Card AI Data Extraction</a> <small>[github] 2026-03-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/DR-Danke/Kompass/issues/142'>[TradeFair] Wave 2: Auto-Create Supplier from Extracted Data</a> <small>[github] 2026-03-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/evomimic/map-holons/issues/404'>MAP Commands -- Phase 2.1 -- Define initial command set (v0)</a> <small>[github] 2026-02-23</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/geoant229-jpg/GeoAnt-LLC-/issues/32'>It's just business</a> <small>[github] 2026-03-04</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/HewlettPackard/py-spiffe/issues/404'>JwtSvid audience parsed incorrectly when JWT contains a single audience string</a> <small>[github] 2026-03-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/jamcalli/Pulsarr/issues/1030'>[BUG] Radarr hanging due to timeout</a> <small>[github] 2026-03-02</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Kilo-Org/cloud/issues/204'>Gastown Cloud: Cloud-first rewrite of Gastown as a Kilo platform feature</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/machinewrapped/llm-subtrans/issues/404'>Local LLM degeneration causes "No matches found" — batch splitting on token limit</a> <small>[github] 2026-03-10</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/mlflow/mlflow/issues/21002'>[BUG] mlflow.genai.evaluate of traces fail with Error running evaluations: BAD_REQUEST: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "entity_associations_pk"</a> <small>[github] 2026-02-19</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/neobnsrnd-team/spider-admin/issues/404'>[QA] 거래중지</a> <small>[github] 2026-03-10</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Scottcjn/rustchain-bounties/issues/159'>Build a Beacon Atlas City visualization (75 RTC Bounty)</a> <small>[github] 2026-02-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/sethdford/shipwright/issues/93'>Core workflow test suite - daemon, loop, pipeline foundations</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/zed-industries/claude-agent-acp/issues/404'>Always sets `options.env`, which breaks default env inheritance for Bash tool execution</a> <small>[github] 2026-03-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/zfogg/ascii-chat/issues/404'>api.ascii-chat.com</a> <small>[github] 2026-03-06</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/01msmr/makerspac.es/issues/404'>github: [Workshop-Daten] MakerLab Murnau e.V. (#203)</a></li>
+<li><a href='https://github.com/adybag14-cyber/openclaw-zig-port/issues/1'>github: Zig Port Master Tracking: parity lock complete + full-stack replacement in progress</a></li>
+<li><a href='https://github.com/BlackbirdWorks/gopherstack/issues/404'>github: Implement Service: Backup</a></li>
+<li><a href='https://github.com/CIROH-UA/NGIAB-CloudInfra/issues/404'>github: 2i2c access for building parallel calibration tool</a></li>
+<li><a href='https://github.com/deepseek-ai/DeepSeek-V3/issues/1121'>github: Feature Request: On-Device Persistent Memory with Cryptographic Identity Binding (Local Storage Architecture)</a></li>
+<li><a href='https://github.com/DR-Danke/Kompass/issues/140'>github: [TradeFair] Wave 1: Business Card Photo Ingestion</a></li>
+<li><a href='https://github.com/DR-Danke/Kompass/issues/141'>github: [TradeFair] Wave 1: Business Card AI Data Extraction</a></li>
+<li><a href='https://github.com/DR-Danke/Kompass/issues/142'>github: [TradeFair] Wave 2: Auto-Create Supplier from Extracted Data</a></li>
+<li><a href='https://github.com/evomimic/map-holons/issues/404'>github: MAP Commands -- Phase 2.1 -- Define initial command set (v0)</a></li>
+<li><a href='https://github.com/geoant229-jpg/GeoAnt-LLC-/issues/32'>github: It's just business</a></li>
+<li><a href='https://github.com/HewlettPackard/py-spiffe/issues/404'>github: JwtSvid audience parsed incorrectly when JWT contains a single audience string</a></li>
+<li><a href='https://github.com/jamcalli/Pulsarr/issues/1030'>github: [BUG] Radarr hanging due to timeout</a></li>
+<li><a href='https://github.com/Kilo-Org/cloud/issues/204'>github: Gastown Cloud: Cloud-first rewrite of Gastown as a Kilo platform feature</a></li>
+<li><a href='https://github.com/machinewrapped/llm-subtrans/issues/404'>github: Local LLM degeneration causes "No matches found" — batch splitting on token limit</a></li>
+<li><a href='https://github.com/mlflow/mlflow/issues/21002'>github: [BUG] mlflow.genai.evaluate of traces fail with Error running evaluations: BAD_REQUEST: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "entity_associations_pk"</a></li>
+<li><a href='https://github.com/neobnsrnd-team/spider-admin/issues/404'>github: [QA] 거래중지</a></li>
+<li><a href='https://github.com/Scottcjn/rustchain-bounties/issues/159'>github: Build a Beacon Atlas City visualization (75 RTC Bounty)</a></li>
+<li><a href='https://github.com/sethdford/shipwright/issues/93'>github: Core workflow test suite - daemon, loop, pipeline foundations</a></li>
+<li><a href='https://github.com/zed-industries/claude-agent-acp/issues/404'>github: Always sets `options.env`, which breaks default env inheritance for Bash tool execution</a></li>
+<li><a href='https://github.com/zfogg/ascii-chat/issues/404'>github: api.ascii-chat.com</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-03-10T00:59:31.0675218Z</small></p>
+</main>
+</body>
+</html>
