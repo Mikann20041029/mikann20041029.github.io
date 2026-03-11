@@ -1,6 +1,0 @@
-{
-  "site": "Local File Tools",
-  "version": "1.0.0",
-  "features": ["pdf-merge", "heic-to-jpg-png", "image-convert"],
-  "privacy": "client-side only, no uploads"
-}
