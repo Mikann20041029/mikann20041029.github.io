@@ -1,0 +1,116 @@
+{
+  "slug": "auto-npm-build-errors-20260313",
+  "title": "npm / build エラー（依存/権限/キャッシュ）",
+  "desc": "10〜20件の悩みをまとめて解決する読み物＋ツール",
+  "badge": "中身が主役",
+  "topic": "npm-build-errors",
+  "tags": [
+    "auto",
+    "web"
+  ],
+  "problem_summaries": [
+    "[GitHub] log after running $oa uninstall and reinstall from curl command --details for devs <3",
+    "[GitHub] sudo make pack 的时候报错",
+    "[GitHub] fetchNpmDeps may need some fixes for nodejs 24",
+    "[GitHub] Build failure: basedpyright",
+    "[GitHub] Build failure: basedpyright",
+    "[GitHub] azurite: 3.35.0 fails to build on aarch64-darwin",
+    "[GitHub] 🤖 Docker Build Failed - Automated Repair Needed",
+    "[GitHub] 🤖 Docker Build Failed - Automated Repair Needed",
+    "[GitHub] 🐞 - Stackbliz 'extensive demo' is not working",
+    "[GitHub] cross-seed fails to build",
+    "[GitHub] claude-code: build failure as of `8ddddcd3`",
+    "[GitHub] Web Search with SearxNG fails due to failure to scrape websites that were returned by SearxNG"
+  ],
+  "conclusion_steps": [
+    "まず結論：最短の対処方針を 3〜7 ステップで"
+  ],
+  "cause_patterns": [
+    "原因パターンA：〜",
+    "原因パターンB：〜"
+  ],
+  "checklist_steps": [
+    "手順1：確認する",
+    "手順2：設定する",
+    "手順3：再実行する"
+  ],
+  "common_mistakes": [
+    "失敗例：〜 → 回避策：〜"
+  ],
+  "fallbacks": [
+    "それでも直らない：代替策1",
+    "それでも直らない：別ルート2"
+  ],
+  "faqs": [
+    {
+      "q": "FAQ1",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ2",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ3",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ4",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ5",
+      "a": "回答"
+    }
+  ],
+  "refs": [
+    {
+      "url": "https://github.com/AidanPark/openclaw-android/issues/23",
+      "title": "GitHub: log after running $oa uninstall and reinstall from curl command --details for devs <3"
+    },
+    {
+      "url": "https://github.com/TencentCloudADP/adp-chat-client/issues/21",
+      "title": "GitHub: sudo make pack 的时候报错"
+    },
+    {
+      "url": "https://github.com/NixOS/nixpkgs/issues/474535",
+      "title": "GitHub: fetchNpmDeps may need some fixes for nodejs 24"
+    },
+    {
+      "url": "https://github.com/NixOS/nixpkgs/issues/449893",
+      "title": "GitHub: Build failure: basedpyright"
+    },
+    {
+      "url": "https://github.com/NixOS/nixpkgs/issues/449891",
+      "title": "GitHub: Build failure: basedpyright"
+    },
+    {
+      "url": "https://github.com/NixOS/nixpkgs/issues/449650",
+      "title": "GitHub: azurite: 3.35.0 fails to build on aarch64-darwin"
+    },
+    {
+      "url": "https://github.com/frazier-at-cpcc/DockerIDE/issues/33",
+      "title": "GitHub: 🤖 Docker Build Failed - Automated Repair Needed"
+    },
+    {
+      "url": "https://github.com/frazier-at-cpcc/DockerIDE/issues/27",
+      "title": "GitHub: 🤖 Docker Build Failed - Automated Repair Needed"
+    },
+    {
+      "url": "https://github.com/taiga-family/polymorpheus/issues/944",
+      "title": "GitHub: 🐞 - Stackbliz 'extensive demo' is not working"
+    },
+    {
+      "url": "https://github.com/nix-media-server/nixarr/issues/54",
+      "title": "GitHub: cross-seed fails to build"
+    },
+    {
+      "url": "https://github.com/NixOS/nixpkgs/issues/404199",
+      "title": "GitHub: claude-code: build failure as of `8ddddcd3`"
+    },
+    {
+      "url": "https://github.com/huggingface/chat-ui/issues/1811",
+      "title": "GitHub: Web Search with SearxNG fails due to failure to scrape websites that were returned by SearxNG"
+    }
+  ]
+}

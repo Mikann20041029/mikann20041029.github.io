@@ -1,67 +1,79 @@
-NEW SITE: https://mikann20041029.github.io/auto-windows-encoding-20260313/
-TOPIC: windows-encoding / 文字化け・UTF-8・BOMのトラブル
-POSTS: real=10 fallback=0
+NEW SITE: https://mikann20041029.github.io/auto-npm-build-errors-20260313/
+TOPIC: npm-build-errors / npm / build エラー（依存/権限/キャッシュ）
+POSTS: real=12 fallback=0
 
 SOURCES (up to 20):
-- https://github.com/jsboige/roo-extensions/issues/664
-- https://github.com/anthropics/claude-code/issues/31740
-- https://github.com/TrevorSLong/ROG-Ally-Debloater/issues/1
-- https://github.com/ThosRTanner/notepad-pp-linter/issues/94
-- https://github.com/microsoft/vscode/issues/284891
-- https://github.com/asgardeo/thunder/issues/950
-- https://github.com/benbuzz790/bots/issues/162
-- https://github.com/openai/codex/issues/4013
-- https://github.com/anthropics/claude-code/issues/7490
-- https://github.com/google-gemini/gemini-cli/issues/5961
+- https://github.com/AidanPark/openclaw-android/issues/23
+- https://github.com/TencentCloudADP/adp-chat-client/issues/21
+- https://github.com/NixOS/nixpkgs/issues/474535
+- https://github.com/NixOS/nixpkgs/issues/449893
+- https://github.com/NixOS/nixpkgs/issues/449891
+- https://github.com/NixOS/nixpkgs/issues/449650
+- https://github.com/frazier-at-cpcc/DockerIDE/issues/33
+- https://github.com/frazier-at-cpcc/DockerIDE/issues/27
+- https://github.com/taiga-family/polymorpheus/issues/944
+- https://github.com/nix-media-server/nixarr/issues/54
+- https://github.com/NixOS/nixpkgs/issues/404199
+- https://github.com/huggingface/chat-ui/issues/1811
 
 REPLY DRAFTS:
 
-URL: https://github.com/jsboige/roo-extensions/issues/664
+URL: https://github.com/AidanPark/openclaw-android/issues/23
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://github.com/anthropics/claude-code/issues/31740
+URL: https://github.com/TencentCloudADP/adp-chat-client/issues/21
+この悩みど真ん中の解決ページ（手順＋ミニツール）を見つけました:
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
+よければ先に「1分結論」だけ流し読みしてください。
+
+URL: https://github.com/NixOS/nixpkgs/issues/474535
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://github.com/TrevorSLong/ROG-Ally-Debloater/issues/1
+URL: https://github.com/NixOS/nixpkgs/issues/449893
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://github.com/ThosRTanner/notepad-pp-linter/issues/94
+URL: https://github.com/NixOS/nixpkgs/issues/449891
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://github.com/microsoft/vscode/issues/284891
+URL: https://github.com/NixOS/nixpkgs/issues/449650
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://github.com/asgardeo/thunder/issues/950
+URL: https://github.com/frazier-at-cpcc/DockerIDE/issues/33
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://github.com/benbuzz790/bots/issues/162
+URL: https://github.com/frazier-at-cpcc/DockerIDE/issues/27
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://github.com/openai/codex/issues/4013
+URL: https://github.com/taiga-family/polymorpheus/issues/944
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://github.com/anthropics/claude-code/issues/7490
+URL: https://github.com/nix-media-server/nixarr/issues/54
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
 
-URL: https://github.com/google-gemini/gemini-cli/issues/5961
+URL: https://github.com/NixOS/nixpkgs/issues/404199
 I found a page that tackles this exact family of issues (steps + a small tool):
-https://mikann20041029.github.io/auto-windows-encoding-20260313/
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
+If it helps, skim the 1-minute conclusion first.
+
+URL: https://github.com/huggingface/chat-ui/issues/1811
+I found a page that tackles this exact family of issues (steps + a small tool):
+https://mikann20041029.github.io/auto-npm-build-errors-20260313/
 If it helps, skim the 1-minute conclusion first.
