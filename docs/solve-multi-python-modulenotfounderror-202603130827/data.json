@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "generated_at": "2026-03-13T08:27:21.9426286Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-python-modulenotfounderror-202603130827"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "graph_longrange module missing when loading MACE-POLAR-1",
+      "url": "https://github.com/ACEsuit/mace/issues/1408",
+      "created_at": "2026-03-13T04:04:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "always uses activate Python",
+      "url": "https://github.com/boltgolt/howdy/issues/1093",
+      "created_at": "2026-03-13T08:10:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PLATON installation fails, update needed",
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652",
+      "created_at": "2026-03-02T11:57:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "app module not found ",
+      "url": "https://github.com/irshadazmi/ExpenseApp/issues/1",
+      "created_at": "2026-03-13T07:34:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "执行python train.py报错，提示No module named 'mamba_ssm'，请问这个是pip install 安装的么",
+      "url": "https://github.com/jssc-ZhaoBG/jssc-CVDepth/issues/1",
+      "created_at": "2026-03-11T13:33:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Homebrew release please",
+      "url": "https://github.com/jundot/omlx/issues/38",
+      "created_at": "2026-02-25T05:56:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Use of deprecated / removed pkg_resources",
+      "url": "https://github.com/MagicStack/uvloop/issues/729",
+      "created_at": "2026-03-01T04:18:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]:Unknown error occurred",
+      "url": "https://github.com/mampfes/hacs_waste_collection_schedule/issues/5606",
+      "created_at": "2026-03-13T06:55:49.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[P1] Harden conductor worktree lifecycle under concurrency and transient failures",
+      "url": "https://github.com/misty-step/bitterblossom/issues/538",
+      "created_at": "2026-03-11T01:53:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "npm installation does not work",
+      "url": "https://github.com/n8n-io/n8n/issues/26960",
+      "created_at": "2026-03-12T21:08:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "no NOVA_VERSION in nova-db-sync-xxx pod",
+      "url": "https://github.com/openkcloud/kcloud-nova/issues/13",
+      "created_at": "2026-02-13T09:08:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "requirements image build fails due to XStatic-* wheel build error (ModuleNotFoundError: pkg_resources)",
+      "url": "https://github.com/openkcloud/kcloud-requirements/issues/1",
+      "created_at": "2026-02-19T09:05:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Deployment error",
+      "url": "https://github.com/Overseer66/comfyui-helm-chart/issues/1",
+      "created_at": "2026-02-26T11:14:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "点击开始生成出现异常",
+      "url": "https://github.com/ReinerBRO/codexs/issues/1",
+      "created_at": "2026-03-13T03:36:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Minor Bug: No camera settings in overlay - DJI Mini 3 Pro",
+      "url": "https://github.com/Romancha/GPStitch/issues/8",
+      "created_at": "2026-03-12T17:05:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "unittest.loader._FailedTest.suites fails with setuptools 82 due to missing pkg_resources",
+      "url": "https://github.com/tarantool/tarantool-python/issues/335",
+      "created_at": "2026-03-13T07:28:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Issue with Running unitree_rl_lab.sh on Isaac Sim 5.1 (KeyError: 'class_name')",
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/115",
+      "created_at": "2026-03-10T00:35:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[CI Failure Doctor] CI Failure Investigation - Run #23036750916",
+      "url": "https://github.com/vercel/vercel/issues/15514",
+      "created_at": "2026-03-13T05:14:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[CI Failure Doctor] CI Failure Investigation - Run #3916",
+      "url": "https://github.com/vercel/vercel/issues/15517",
+      "created_at": "2026-03-13T05:56:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Omni-Modality model benchmarks",
+      "url": "https://github.com/vllm-project/vllm-omni/issues/1872",
+      "created_at": "2026-03-13T07:01:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130827/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: graph_longrange module missing when loading MACE-POLAR-1",
+      "url": "https://github.com/ACEsuit/mace/issues/1408"
+    },
+    {
+      "label": "github: always uses activate Python",
+      "url": "https://github.com/boltgolt/howdy/issues/1093"
+    },
+    {
+      "label": "github: PLATON installation fails, update needed",
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652"
+    },
+    {
+      "label": "github: app module not found ",
+      "url": "https://github.com/irshadazmi/ExpenseApp/issues/1"
+    },
+    {
+      "label": "github: 执行python train.py报错，提示No module named 'mamba_ssm'，请问这个是pip install 安装的么",
+      "url": "https://github.com/jssc-ZhaoBG/jssc-CVDepth/issues/1"
+    },
+    {
+      "label": "github: Homebrew release please",
+      "url": "https://github.com/jundot/omlx/issues/38"
+    },
+    {
+      "label": "github: Use of deprecated / removed pkg_resources",
+      "url": "https://github.com/MagicStack/uvloop/issues/729"
+    },
+    {
+      "label": "github: [Bug]:Unknown error occurred",
+      "url": "https://github.com/mampfes/hacs_waste_collection_schedule/issues/5606"
+    },
+    {
+      "label": "github: [P1] Harden conductor worktree lifecycle under concurrency and transient failures",
+      "url": "https://github.com/misty-step/bitterblossom/issues/538"
+    },
+    {
+      "label": "github: npm installation does not work",
+      "url": "https://github.com/n8n-io/n8n/issues/26960"
+    },
+    {
+      "label": "github: no NOVA_VERSION in nova-db-sync-xxx pod",
+      "url": "https://github.com/openkcloud/kcloud-nova/issues/13"
+    },
+    {
+      "label": "github: requirements image build fails due to XStatic-* wheel build error (ModuleNotFoundError: pkg_resources)",
+      "url": "https://github.com/openkcloud/kcloud-requirements/issues/1"
+    },
+    {
+      "label": "github: Deployment error",
+      "url": "https://github.com/Overseer66/comfyui-helm-chart/issues/1"
+    },
+    {
+      "label": "github: 点击开始生成出现异常",
+      "url": "https://github.com/ReinerBRO/codexs/issues/1"
+    },
+    {
+      "label": "github: Minor Bug: No camera settings in overlay - DJI Mini 3 Pro",
+      "url": "https://github.com/Romancha/GPStitch/issues/8"
+    },
+    {
+      "label": "github: unittest.loader._FailedTest.suites fails with setuptools 82 due to missing pkg_resources",
+      "url": "https://github.com/tarantool/tarantool-python/issues/335"
+    },
+    {
+      "label": "github: Issue with Running unitree_rl_lab.sh on Isaac Sim 5.1 (KeyError: 'class_name')",
+      "url": "https://github.com/unitreerobotics/unitree_rl_lab/issues/115"
+    },
+    {
+      "label": "github: [CI Failure Doctor] CI Failure Investigation - Run #23036750916",
+      "url": "https://github.com/vercel/vercel/issues/15514"
+    },
+    {
+      "label": "github: [CI Failure Doctor] CI Failure Investigation - Run #3916",
+      "url": "https://github.com/vercel/vercel/issues/15517"
+    },
+    {
+      "label": "github: [Bug]: Omni-Modality model benchmarks",
+      "url": "https://github.com/vllm-project/vllm-omni/issues/1872"
+    }
+  ]
+}
