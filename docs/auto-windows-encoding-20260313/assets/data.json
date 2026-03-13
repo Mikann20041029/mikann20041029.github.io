@@ -1,0 +1,106 @@
+{
+  "slug": "auto-windows-encoding-20260313",
+  "title": "文字化け・UTF-8・BOMのトラブル",
+  "desc": "10〜20件の悩みをまとめて解決する読み物＋ツール",
+  "badge": "中身が主役",
+  "topic": "windows-encoding",
+  "tags": [
+    "auto",
+    "windows"
+  ],
+  "problem_summaries": [
+    "[GitHub] [BUG] BOM UTF-8 récurrent dans mcp_settings.json - Reprendre en main l'encodage OS/terminal",
+    "[GitHub] Windows: Bash tool garbles output from native Windows commands due to UTF-16LE encoding mismatch",
+    "[GitHub] Bug report: PowerShell parser errors running rog-ally-debloater.ps1 (-DryRun) on Windows PowerShell 5.1",
+    "[GitHub] UTF-8 Encoding issues with JSHint",
+    "[GitHub] VS Code PowerShell extension fails to detect corrupted UTF‑8 Chinese strings, causing silent syntax corruption",
+    "[GitHub] PS1 scripts compatibility with default Windows PowerShell 5.1 (Windows 10/11)",
+    "[GitHub] Persistent mojibake and control character issues across codebase",
+    "[GitHub] Cannot force UTF-8",
+    "[GitHub] [FEATURE] Allow users to configure which shell the Bash tool uses or inherit initial shell",
+    "[GitHub] Bug: isBinaryFile misclassifies UTF-16/32 files with BOM as binary, causing context ingestion failure"
+  ],
+  "conclusion_steps": [
+    "まず結論：最短の対処方針を 3〜7 ステップで"
+  ],
+  "cause_patterns": [
+    "原因パターンA：〜",
+    "原因パターンB：〜"
+  ],
+  "checklist_steps": [
+    "手順1：確認する",
+    "手順2：設定する",
+    "手順3：再実行する"
+  ],
+  "common_mistakes": [
+    "失敗例：〜 → 回避策：〜"
+  ],
+  "fallbacks": [
+    "それでも直らない：代替策1",
+    "それでも直らない：別ルート2"
+  ],
+  "faqs": [
+    {
+      "q": "FAQ1",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ2",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ3",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ4",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ5",
+      "a": "回答"
+    }
+  ],
+  "refs": [
+    {
+      "url": "https://github.com/jsboige/roo-extensions/issues/664",
+      "title": "GitHub: [BUG] BOM UTF-8 récurrent dans mcp_settings.json - Reprendre en main l'encodage OS/terminal"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/31740",
+      "title": "GitHub: Windows: Bash tool garbles output from native Windows commands due to UTF-16LE encoding mismatch"
+    },
+    {
+      "url": "https://github.com/TrevorSLong/ROG-Ally-Debloater/issues/1",
+      "title": "GitHub: Bug report: PowerShell parser errors running rog-ally-debloater.ps1 (-DryRun) on Windows PowerShell 5.1"
+    },
+    {
+      "url": "https://github.com/ThosRTanner/notepad-pp-linter/issues/94",
+      "title": "GitHub: UTF-8 Encoding issues with JSHint"
+    },
+    {
+      "url": "https://github.com/microsoft/vscode/issues/284891",
+      "title": "GitHub: VS Code PowerShell extension fails to detect corrupted UTF‑8 Chinese strings, causing silent syntax corruption"
+    },
+    {
+      "url": "https://github.com/asgardeo/thunder/issues/950",
+      "title": "GitHub: PS1 scripts compatibility with default Windows PowerShell 5.1 (Windows 10/11)"
+    },
+    {
+      "url": "https://github.com/benbuzz790/bots/issues/162",
+      "title": "GitHub: Persistent mojibake and control character issues across codebase"
+    },
+    {
+      "url": "https://github.com/openai/codex/issues/4013",
+      "title": "GitHub: Cannot force UTF-8"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/7490",
+      "title": "GitHub: [FEATURE] Allow users to configure which shell the Bash tool uses or inherit initial shell"
+    },
+    {
+      "url": "https://github.com/google-gemini/gemini-cli/issues/5961",
+      "title": "GitHub: Bug: isBinaryFile misclassifies UTF-16/32 files with BOM as binary, causing context ingestion failure"
+    }
+  ]
+}
