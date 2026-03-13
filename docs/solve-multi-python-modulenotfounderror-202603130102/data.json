@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/beeware/beeware-tutorial/issues/67",
+      "label": "github: Mistakes / lack of clarity in the tutorial"
+    },
+    {
+      "url": "https://github.com/chalie-ai/chalie/issues/180",
+      "label": "github: Installation script exits with code 1, no artifacts created (Linux)"
+    },
+    {
+      "url": "https://github.com/chalie-ai/chalie/issues/183",
+      "label": "github: Service fails to start on custom port due to missing 'requests' dependency"
+    },
+    {
+      "url": "https://github.com/Delgan/loguru/issues/1444",
+      "label": "github: Import multiprocessing only on enqueue=True"
+    },
+    {
+      "url": "https://github.com/filliptm/ComfyUI-FL-FishSpeech/issues/1",
+      "label": "github: UnboundLocalError: cannot access local variable 'tokenizer' where it is not associated with a value"
+    },
+    {
+      "url": "https://github.com/flet-dev/flet/issues/6292",
+      "label": "github: Protecting Flet code with Cython - loading Android `.so` modules in app.zip"
+    },
+    {
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652",
+      "label": "github: PLATON installation fails, update needed"
+    },
+    {
+      "url": "https://github.com/Haoming02/sd-webui-forge-classic/issues/886",
+      "label": "github: The following Controlnet Preprocessors are non-fuctional - v2"
+    },
+    {
+      "url": "https://github.com/Jasonzzt/ComfyUI-CacheDiT/issues/36",
+      "label": "github: No module named 'cache_dit'"
+    },
+    {
+      "url": "https://github.com/mdomke/python-ulid/issues/52",
+      "label": "github: How to install for contribution"
+    },
+    {
+      "url": "https://github.com/misty-step/bitterblossom/issues/538",
+      "label": "github: [P1] Harden conductor worktree lifecycle under concurrency and transient failures"
+    },
+    {
+      "url": "https://github.com/misty-step/cerberus/issues/361",
+      "label": "github: [P1] verdict job fails after PASS verdict when scripts/lib/github.py cannot import lib.github_platform"
+    },
+    {
+      "url": "https://github.com/misty-step/cerberus/issues/365",
+      "label": "github: [P1] verdict job bootstrap fails when read-defaults-config.py imports yaml without PyYAML"
+    },
+    {
+      "url": "https://github.com/n8n-io/n8n/issues/26960",
+      "label": "github: npm installation does not work"
+    },
+    {
+      "url": "https://github.com/nasirus/pbi-agent/issues/34",
+      "label": "github: Python Exec tool"
+    },
+    {
+      "url": "https://github.com/navicoby/orion/issues/1",
+      "label": "github: 360° Video AI Upscaler for Apple Vision Pro"
+    },
+    {
+      "url": "https://github.com/oakensoul/aida-core-plugin/issues/38",
+      "label": "github: Bootstrap not called before third-party imports in detect.py/install.py"
+    },
+    {
+      "url": "https://github.com/tox-dev/tox-uv/issues/309",
+      "label": "github: No module named `tox_uv.plugin`"
+    },
+    {
+      "url": "https://github.com/troylar/anteroom/issues/825",
+      "label": "github: Add vendored model path resolution for offline embedding/reranker use"
+    },
+    {
+      "url": "https://github.com/vllm-project/vllm-omni/issues/1846",
+      "label": "github: [Bug]: No module named 'vllm.renderers.protocol'"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "Mistakes / lack of clarity in the tutorial",
+      "url": "https://github.com/beeware/beeware-tutorial/issues/67",
+      "created_at": "2026-03-10T22:46:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Installation script exits with code 1, no artifacts created (Linux)",
+      "url": "https://github.com/chalie-ai/chalie/issues/180",
+      "created_at": "2026-03-12T23:42:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Service fails to start on custom port due to missing 'requests' dependency",
+      "url": "https://github.com/chalie-ai/chalie/issues/183",
+      "created_at": "2026-03-12T23:42:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Import multiprocessing only on enqueue=True",
+      "url": "https://github.com/Delgan/loguru/issues/1444",
+      "created_at": "2026-03-11T08:54:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "UnboundLocalError: cannot access local variable 'tokenizer' where it is not associated with a value",
+      "url": "https://github.com/filliptm/ComfyUI-FL-FishSpeech/issues/1",
+      "created_at": "2026-03-12T23:46:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Protecting Flet code with Cython - loading Android `.so` modules in app.zip",
+      "url": "https://github.com/flet-dev/flet/issues/6292",
+      "created_at": "2026-03-10T15:57:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PLATON installation fails, update needed",
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652",
+      "created_at": "2026-03-02T11:57:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "The following Controlnet Preprocessors are non-fuctional - v2",
+      "url": "https://github.com/Haoming02/sd-webui-forge-classic/issues/886",
+      "created_at": "2026-03-11T06:36:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No module named 'cache_dit'",
+      "url": "https://github.com/Jasonzzt/ComfyUI-CacheDiT/issues/36",
+      "created_at": "2026-03-01T16:36:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "How to install for contribution",
+      "url": "https://github.com/mdomke/python-ulid/issues/52",
+      "created_at": "2026-03-08T08:19:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[P1] Harden conductor worktree lifecycle under concurrency and transient failures",
+      "url": "https://github.com/misty-step/bitterblossom/issues/538",
+      "created_at": "2026-03-11T01:53:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[P1] verdict job fails after PASS verdict when scripts/lib/github.py cannot import lib.github_platform",
+      "url": "https://github.com/misty-step/cerberus/issues/361",
+      "created_at": "2026-03-12T17:55:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[P1] verdict job bootstrap fails when read-defaults-config.py imports yaml without PyYAML",
+      "url": "https://github.com/misty-step/cerberus/issues/365",
+      "created_at": "2026-03-12T19:59:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "npm installation does not work",
+      "url": "https://github.com/n8n-io/n8n/issues/26960",
+      "created_at": "2026-03-12T21:08:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Python Exec tool",
+      "url": "https://github.com/nasirus/pbi-agent/issues/34",
+      "created_at": "2026-03-12T23:56:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "360° Video AI Upscaler for Apple Vision Pro",
+      "url": "https://github.com/navicoby/orion/issues/1",
+      "created_at": "2026-03-12T23:19:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bootstrap not called before third-party imports in detect.py/install.py",
+      "url": "https://github.com/oakensoul/aida-core-plugin/issues/38",
+      "created_at": "2026-03-13T00:03:46.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "No module named `tox_uv.plugin`",
+      "url": "https://github.com/tox-dev/tox-uv/issues/309",
+      "created_at": "2026-03-10T13:18:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Add vendored model path resolution for offline embedding/reranker use",
+      "url": "https://github.com/troylar/anteroom/issues/825",
+      "created_at": "2026-03-08T10:29:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: No module named 'vllm.renderers.protocol'",
+      "url": "https://github.com/vllm-project/vllm-omni/issues/1846",
+      "created_at": "2026-03-12T09:59:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603130102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-python-modulenotfounderror-202603130102",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "generated_at": "2026-03-13T01:02:31.8985816Z"
+  }
+}
