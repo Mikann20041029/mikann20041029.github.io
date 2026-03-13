@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: [CI][Python] Doctest fails when pyarrow._cuda absent",
+      "url": "https://github.com/apache/arrow/issues/49506"
+    },
+    {
+      "label": "github: HATS.testing subpackage doesn't appear to be defined in distribution",
+      "url": "https://github.com/astronomy-commons/hats/issues/651"
+    },
+    {
+      "label": "github: super-linter GitHub action has failed",
+      "url": "https://github.com/electrocucaracha/openstack-multinode/issues/288"
+    },
+    {
+      "label": "github: fix: Homebrew Python 3.14 shadows system Python 3.13, breaking pip-installed packages",
+      "url": "https://github.com/f5xc-salesdemos/devcontainer/issues/284"
+    },
+    {
+      "label": "github: PLATON installation fails, update needed",
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652"
+    },
+    {
+      "label": "github: [BUG] Can't run the python -m hacxgpt.main",
+      "url": "https://github.com/HacxGPT-Official/HacxGPT-CLI/issues/51"
+    },
+    {
+      "label": "github: Is wigglystuff html-wasm export compatible in marimo?",
+      "url": "https://github.com/koaning/wigglystuff/issues/166"
+    },
+    {
+      "label": "github: bug: ModuleNotFoundError: No module named 'langchain' when use langfuse-python 4.0",
+      "url": "https://github.com/langfuse/langfuse/issues/12544"
+    },
+    {
+      "label": "github: Python SDK: bare `import _scp_core` fails — native module installed as `scp_sdk._scp_core`",
+      "url": "https://github.com/limn-works/scp/issues/1033"
+    },
+    {
+      "label": "github: ModuleNotFoundError: No module named 'cp_parallel'",
+      "url": "https://github.com/LIVR-VUB/IA-eHeps-Bodipy-pipeline/issues/2"
+    },
+    {
+      "label": "github: 0.5.6版本，import efinance 直接报错",
+      "url": "https://github.com/Micro-sheep/efinance/issues/239"
+    },
+    {
+      "label": "github: [P1] Harden conductor worktree lifecycle under concurrency and transient failures",
+      "url": "https://github.com/misty-step/bitterblossom/issues/538"
+    },
+    {
+      "label": "github: docs: Verify command accuracy in google-colab.md",
+      "url": "https://github.com/nf-core/website/issues/3916"
+    },
+    {
+      "label": "github: people_counter_demo - When will you support NPU with Yolo26 ?",
+      "url": "https://github.com/openvinotoolkit/openvino_build_deploy/issues/465"
+    },
+    {
+      "label": "github: Cleanup Paparazzi mavlabCourse Overview",
+      "url": "https://github.com/paparazzi/paparazzi/issues/3596"
+    },
+    {
+      "label": "github: [Issue] AttributeError and TypeError in  Linux Pytorch `nightly` Tests: Test Inputs and CustomDecompTable Mapping",
+      "url": "https://github.com/ROCm/TheRock/issues/3750"
+    },
+    {
+      "label": "github: [BOUNTY: 10 RTC each] RustChain Windows miner bundle smoke test + failure notes",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1501"
+    },
+    {
+      "label": "github: Docs and Coordination Updates",
+      "url": "https://github.com/SorraTheOrc/SorraAgents/issues/289"
+    },
+    {
+      "label": "github: Unable to run nhp_model_databricks due to ModuleNotFoundError",
+      "url": "https://github.com/The-Strategy-Unit/nhp_model/issues/533"
+    },
+    {
+      "label": "github: Missing module 'yaml' after upgrade to 7.0.0",
+      "url": "https://github.com/voxpupuli/puppetboard/issues/1391"
+    }
+  ],
+  "meta": {
+    "slug": "solve-multi-python-modulenotfounderror-202603131625",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-03-13T16:25:28.5450390Z"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "[CI][Python] Doctest fails when pyarrow._cuda absent",
+      "url": "https://github.com/apache/arrow/issues/49506",
+      "created_at": "2026-03-13T11:16:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "HATS.testing subpackage doesn't appear to be defined in distribution",
+      "url": "https://github.com/astronomy-commons/hats/issues/651",
+      "created_at": "2026-03-12T11:53:08.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "super-linter GitHub action has failed",
+      "url": "https://github.com/electrocucaracha/openstack-multinode/issues/288",
+      "created_at": "2026-03-13T16:04:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fix: Homebrew Python 3.14 shadows system Python 3.13, breaking pip-installed packages",
+      "url": "https://github.com/f5xc-salesdemos/devcontainer/issues/284",
+      "created_at": "2026-03-13T16:20:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PLATON installation fails, update needed",
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652",
+      "created_at": "2026-03-02T11:57:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Can't run the python -m hacxgpt.main",
+      "url": "https://github.com/HacxGPT-Official/HacxGPT-CLI/issues/51",
+      "created_at": "2026-03-11T01:13:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Is wigglystuff html-wasm export compatible in marimo?",
+      "url": "https://github.com/koaning/wigglystuff/issues/166",
+      "created_at": "2026-03-13T12:38:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: ModuleNotFoundError: No module named 'langchain' when use langfuse-python 4.0",
+      "url": "https://github.com/langfuse/langfuse/issues/12544",
+      "created_at": "2026-03-12T01:47:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Python SDK: bare `import _scp_core` fails — native module installed as `scp_sdk._scp_core`",
+      "url": "https://github.com/limn-works/scp/issues/1033",
+      "created_at": "2026-03-13T15:59:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'cp_parallel'",
+      "url": "https://github.com/LIVR-VUB/IA-eHeps-Bodipy-pipeline/issues/2",
+      "created_at": "2026-03-13T14:21:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "0.5.6版本，import efinance 直接报错",
+      "url": "https://github.com/Micro-sheep/efinance/issues/239",
+      "created_at": "2026-03-13T15:06:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[P1] Harden conductor worktree lifecycle under concurrency and transient failures",
+      "url": "https://github.com/misty-step/bitterblossom/issues/538",
+      "created_at": "2026-03-11T01:53:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "docs: Verify command accuracy in google-colab.md",
+      "url": "https://github.com/nf-core/website/issues/3916",
+      "created_at": "2026-03-10T04:07:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "people_counter_demo - When will you support NPU with Yolo26 ?",
+      "url": "https://github.com/openvinotoolkit/openvino_build_deploy/issues/465",
+      "created_at": "2026-02-16T11:50:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Cleanup Paparazzi mavlabCourse Overview",
+      "url": "https://github.com/paparazzi/paparazzi/issues/3596",
+      "created_at": "2026-02-13T15:32:11.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Issue] AttributeError and TypeError in  Linux Pytorch `nightly` Tests: Test Inputs and CustomDecompTable Mapping",
+      "url": "https://github.com/ROCm/TheRock/issues/3750",
+      "created_at": "2026-03-04T14:32:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BOUNTY: 10 RTC each] RustChain Windows miner bundle smoke test + failure notes",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/1501",
+      "created_at": "2026-03-08T20:22:29.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Docs and Coordination Updates",
+      "url": "https://github.com/SorraTheOrc/SorraAgents/issues/289",
+      "created_at": "2026-02-21T20:01:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Unable to run nhp_model_databricks due to ModuleNotFoundError",
+      "url": "https://github.com/The-Strategy-Unit/nhp_model/issues/533",
+      "created_at": "2026-03-12T12:47:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Missing module 'yaml' after upgrade to 7.0.0",
+      "url": "https://github.com/voxpupuli/puppetboard/issues/1391",
+      "created_at": "2026-03-12T11:22:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603131625/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
