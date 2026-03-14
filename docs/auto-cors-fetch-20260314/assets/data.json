@@ -1,0 +1,156 @@
+{
+  "slug": "auto-cors-fetch-20260314",
+  "title": "CORS / fetch が通らない",
+  "desc": "10〜20件の悩みをまとめて解決する読み物＋ツール",
+  "badge": "中身が主役",
+  "topic": "cors-fetch",
+  "tags": [
+    "auto",
+    "web"
+  ],
+  "problem_summaries": [
+    "[GitHub] let's create this architecture!",
+    "[GitHub] Fix CORS issues for production API calls",
+    "[GitHub] CORS config missing PATCH/DELETE methods — host settings save fails from dashboard",
+    "[GitHub] P0: CORS policy blocking all API calls to Railway backend",
+    "[GitHub] Uploading images into the task detail isn't working",
+    "[GitHub] Request header field cache-control is not allowed by Access-Control-Allow-Headers in preflight response",
+    "[GitHub] [#2345] Traefik CORS config missing X-Namespace / X-Namespaces headers — login broken after namespace UI deployment",
+    "[GitHub] [Bug]目前MCP服务器可能会出现前端无法显示的BUG",
+    "[GitHub] Unable to log in",
+    "[GitHub] Message Batches API CORS misconfiguration",
+    "[GitHub] Enable CORS headers on the human-pangenomics S3 bucket for browser-based genome tools",
+    "[GitHub] [bug] 总是自动生成”整理笔记_xxxxxx.md\"的文档",
+    "[StackOverflow] Why am I getting a CORS error with Apollo Client using credentials: &quot;include&quot;?",
+    "[StackOverflow] Enabling CORS in ASP.net Core WebAPI not working",
+    "[StackOverflow] Citrix giving CORS error for Azure Signa R",
+    "[StackOverflow] SignalR configuration with NGINX CORS",
+    "[StackOverflow] Does quickbook API required to execute on server side code only?",
+    "[StackOverflow] How to correctly configure CORS in Laravel 12.13 with the HandleCors middleware in bootstrap/app.php?",
+    "[StackOverflow] OPTIONS request returns a 405 Method Not Allowed error",
+    "[StackOverflow] Why is the WhatsApp Meta Flow Manager Interactive Mode failing with CORS error despite successful health check?"
+  ],
+  "conclusion_steps": [
+    "まず結論：最短の対処方針を 3〜7 ステップで"
+  ],
+  "cause_patterns": [
+    "原因パターンA：〜",
+    "原因パターンB：〜"
+  ],
+  "checklist_steps": [
+    "手順1：確認する",
+    "手順2：設定する",
+    "手順3：再実行する"
+  ],
+  "common_mistakes": [
+    "失敗例：〜 → 回避策：〜"
+  ],
+  "fallbacks": [
+    "それでも直らない：代替策1",
+    "それでも直らない：別ルート2"
+  ],
+  "faqs": [
+    {
+      "q": "FAQ1",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ2",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ3",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ4",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ5",
+      "a": "回答"
+    }
+  ],
+  "refs": [
+    {
+      "url": "https://github.com/jamesdlevine/bookmarks-arch-test/issues/1",
+      "title": "GitHub: let's create this architecture!"
+    },
+    {
+      "url": "https://github.com/gxcsoccer/AlphaArena/issues/54",
+      "title": "GitHub: Fix CORS issues for production API calls"
+    },
+    {
+      "url": "https://github.com/cvsloane/agent-commander/issues/54",
+      "title": "GitHub: CORS config missing PATCH/DELETE methods — host settings save fails from dashboard"
+    },
+    {
+      "url": "https://github.com/gxcsoccer/AlphaArena/issues/51",
+      "title": "GitHub: P0: CORS policy blocking all API calls to Railway backend"
+    },
+    {
+      "url": "https://github.com/jpmenichetti/owldone-src/issues/8",
+      "title": "GitHub: Uploading images into the task detail isn't working"
+    },
+    {
+      "url": "https://github.com/MoreMeng/kiosk-checkpoint/issues/1",
+      "title": "GitHub: Request header field cache-control is not allowed by Access-Control-Allow-Headers in preflight response"
+    },
+    {
+      "url": "https://github.com/troykelly/openclaw-projects/issues/2369",
+      "title": "GitHub: [#2345] Traefik CORS config missing X-Namespace / X-Namespaces headers — login broken after namespace UI deployment"
+    },
+    {
+      "url": "https://github.com/AstrBotDevs/AstrBot/issues/5977",
+      "title": "GitHub: [Bug]目前MCP服务器可能会出现前端无法显示的BUG"
+    },
+    {
+      "url": "https://github.com/freeCodeCamp/freeCodeCamp/issues/66319",
+      "title": "GitHub: Unable to log in"
+    },
+    {
+      "url": "https://github.com/anthropics/anthropic-sdk-typescript/issues/930",
+      "title": "GitHub: Message Batches API CORS misconfiguration"
+    },
+    {
+      "url": "https://github.com/human-pangenomics/hprc_intermediate_assembly/issues/17",
+      "title": "GitHub: Enable CORS headers on the human-pangenomics S3 bucket for browser-based genome tools"
+    },
+    {
+      "url": "https://github.com/codexu/note-gen/issues/953",
+      "title": "GitHub: [bug] 总是自动生成”整理笔记_xxxxxx.md\"的文档"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79777767/why-am-i-getting-a-cors-error-with-apollo-client-using-credentials-include",
+      "title": "StackOverflow: Why am I getting a CORS error with Apollo Client using credentials: &quot;include&quot;?"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79768194/enabling-cors-in-asp-net-core-webapi-not-working",
+      "title": "StackOverflow: Enabling CORS in ASP.net Core WebAPI not working"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79702514/citrix-giving-cors-error-for-azure-signa-r",
+      "title": "StackOverflow: Citrix giving CORS error for Azure Signa R"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79664442/signalr-configuration-with-nginx-cors",
+      "title": "StackOverflow: SignalR configuration with NGINX CORS"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79646052/does-quickbook-api-required-to-execute-on-server-side-code-only",
+      "title": "StackOverflow: Does quickbook API required to execute on server side code only?"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79639332/how-to-correctly-configure-cors-in-laravel-12-13-with-the-handlecors-middleware",
+      "title": "StackOverflow: How to correctly configure CORS in Laravel 12.13 with the HandleCors middleware in bootstrap/app.php?"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79622508/options-request-returns-a-405-method-not-allowed-error",
+      "title": "StackOverflow: OPTIONS request returns a 405 Method Not Allowed error"
+    },
+    {
+      "url": "https://stackoverflow.com/questions/79619024/why-is-the-whatsapp-meta-flow-manager-interactive-mode-failing-with-cors-error-d",
+      "title": "StackOverflow: Why is the WhatsApp Meta Flow Manager Interactive Mode failing with CORS error despite successful health check?"
+    }
+  ]
+}
