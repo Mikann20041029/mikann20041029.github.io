@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Track strict full-stack Zig replacement (FS1-FS6 + FS5.5 hardware pivot)",
+      "url": "https://github.com/adybag14-cyber/openclaw-zig-port/issues/1",
+      "created_at": "2026-03-01T23:40:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Cowork shows \"Virtualization is not enabled\" on Windows 10 Pro despite Hyper-V fully enabled",
+      "url": "https://github.com/anthropics/claude-code/issues/27316",
+      "created_at": "2026-02-21T03:39:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "RPC error -1: virtiofs mount failure after ~1 hour of use on Windows",
+      "url": "https://github.com/anthropics/claude-code/issues/27576",
+      "created_at": "2026-02-22T05:12:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Windows-MCP extension fails with os error 4551 (Application Control Policy) on MSIX build v1.1.4498",
+      "url": "https://github.com/anthropics/claude-code/issues/29302",
+      "created_at": "2026-02-27T11:21:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "VS Code integration: Auto-trigger Copilot session in integrated terminal on workflow start",
+      "url": "https://github.com/ayaiayorg/agentic-devtools/issues/866",
+      "created_at": "2026-03-13T14:45:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "feat: one-click Docker installer for non-developer users",
+      "url": "https://github.com/Blb3D/filaops/issues/413",
+      "created_at": "2026-03-13T08:59:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-14",
+      "url": "https://github.com/duanyytop/agents-radar/issues/169",
+      "created_at": "2026-03-14T00:29:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Problem: Infinite elevation loop on Windows 11 Pro — Group Policy or UAC misconfiguration",
+      "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/12",
+      "created_at": "2026-02-15T16:48:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Problem: MSI installer Error - MSI installer failed with exit code: 1603",
+      "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/14",
+      "created_at": "2026-02-18T14:30:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI 工具社区动态日报 2026-03-13",
+      "url": "https://github.com/jstamagal/agents-radar/issues/10",
+      "created_at": "2026-03-13T06:31:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-13",
+      "url": "https://github.com/jstamagal/agents-radar/issues/12",
+      "created_at": "2026-03-13T06:31:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-14",
+      "url": "https://github.com/jstamagal/agents-radar/issues/22",
+      "created_at": "2026-03-14T00:15:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Pinned] 1h Kanban Board (Daily Snapshot)",
+      "url": "https://github.com/Keith-CY/carrier/issues/119",
+      "created_at": "2026-02-14T09:04:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "unable to install",
+      "url": "https://github.com/Luka12-dev/Windows-XP-Theme/issues/1",
+      "created_at": "2026-03-13T13:22:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] #453 issue unresolved with latest update",
+      "url": "https://github.com/memstechtips/Winhance/issues/514",
+      "created_at": "2026-03-10T00:03:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[FEATURE] Windows Native Support",
+      "url": "https://github.com/microsoft/apm/issues/88",
+      "created_at": "2026-02-16T14:06:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Incorrectly stating \"The Bitbucket MCP tools are not available.\"",
+      "url": "https://github.com/microsoft/vscode/issues/297982",
+      "created_at": "2026-02-26T12:29:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows: bundled rg in Codex Desktop resolves on PATH but fails with Access Denied in integrated PowerShell",
+      "url": "https://github.com/openai/codex/issues/13542",
+      "created_at": "2026-03-05T06:00:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Deprecation Warning: INJECT_FACTS_AS_VARS in Ansible Core 2.1x+",
+      "url": "https://github.com/wazuh/wazuh-ansible/issues/1963",
+      "created_at": "2026-03-10T12:12:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Release 4.14.4 - RC 1 - Upgrade tests",
+      "url": "https://github.com/wazuh/wazuh/issues/34756",
+      "created_at": "2026-03-06T16:45:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603140102/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "slug": "solve-multi-windows-powershell-execution-policy-202603140102",
+    "title": "windows powershell execution policy をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "generated_at": "2026-03-14T01:02:20.9029127Z",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/adybag14-cyber/openclaw-zig-port/issues/1",
+      "label": "github: Track strict full-stack Zig replacement (FS1-FS6 + FS5.5 hardware pivot)"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/27316",
+      "label": "github: [BUG] Cowork shows \"Virtualization is not enabled\" on Windows 10 Pro despite Hyper-V fully enabled"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/27576",
+      "label": "github: RPC error -1: virtiofs mount failure after ~1 hour of use on Windows"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/29302",
+      "label": "github: [BUG] Windows-MCP extension fails with os error 4551 (Application Control Policy) on MSIX build v1.1.4498"
+    },
+    {
+      "url": "https://github.com/ayaiayorg/agentic-devtools/issues/866",
+      "label": "github: VS Code integration: Auto-trigger Copilot session in integrated terminal on workflow start"
+    },
+    {
+      "url": "https://github.com/Blb3D/filaops/issues/413",
+      "label": "github: feat: one-click Docker installer for non-developer users"
+    },
+    {
+      "url": "https://github.com/duanyytop/agents-radar/issues/169",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-14"
+    },
+    {
+      "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/12",
+      "label": "github: Problem: Infinite elevation loop on Windows 11 Pro — Group Policy or UAC misconfiguration"
+    },
+    {
+      "url": "https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/14",
+      "label": "github: Problem: MSI installer Error - MSI installer failed with exit code: 1603"
+    },
+    {
+      "url": "https://github.com/jstamagal/agents-radar/issues/10",
+      "label": "github: 📊 AI CLI 工具社区动态日报 2026-03-13"
+    },
+    {
+      "url": "https://github.com/jstamagal/agents-radar/issues/12",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-13"
+    },
+    {
+      "url": "https://github.com/jstamagal/agents-radar/issues/22",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-14"
+    },
+    {
+      "url": "https://github.com/Keith-CY/carrier/issues/119",
+      "label": "github: [Pinned] 1h Kanban Board (Daily Snapshot)"
+    },
+    {
+      "url": "https://github.com/Luka12-dev/Windows-XP-Theme/issues/1",
+      "label": "github: unable to install"
+    },
+    {
+      "url": "https://github.com/memstechtips/Winhance/issues/514",
+      "label": "github: [BUG] #453 issue unresolved with latest update"
+    },
+    {
+      "url": "https://github.com/microsoft/apm/issues/88",
+      "label": "github: [FEATURE] Windows Native Support"
+    },
+    {
+      "url": "https://github.com/microsoft/vscode/issues/297982",
+      "label": "github: Incorrectly stating \"The Bitbucket MCP tools are not available.\""
+    },
+    {
+      "url": "https://github.com/openai/codex/issues/13542",
+      "label": "github: Windows: bundled rg in Codex Desktop resolves on PATH but fails with Access Denied in integrated PowerShell"
+    },
+    {
+      "url": "https://github.com/wazuh/wazuh-ansible/issues/1963",
+      "label": "github: Deprecation Warning: INJECT_FACTS_AS_VARS in Ansible Core 2.1x+"
+    },
+    {
+      "url": "https://github.com/wazuh/wazuh/issues/34756",
+      "label": "github: Release 4.14.4 - RC 1 - Upgrade tests"
+    }
+  ]
+}
