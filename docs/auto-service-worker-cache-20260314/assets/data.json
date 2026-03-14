@@ -1,0 +1,116 @@
+{
+  "slug": "auto-service-worker-cache-20260314",
+  "title": "Service Worker / キャッシュが原因で壊れる",
+  "desc": "10〜20件の悩みをまとめて解決する読み物＋ツール",
+  "badge": "中身が主役",
+  "topic": "service-worker-cache",
+  "tags": [
+    "auto",
+    "web"
+  ],
+  "problem_summaries": [
+    "[GitHub] WebSocket disconnects after login with Microsoft Entra ID on self-hosted Docker Compose deployment",
+    "[GitHub] $1,000 to the first person who finds something poorly engineered in this ~91k LOC vibe-coded codebase",
+    "[GitHub] Tactical RMM asset import",
+    "[GitHub] Screen 3: Recommendation Algorithm – User Input & Filtering",
+    "[GitHub] An error occurred accessing AlexaAPI: An exception of type AlexapyTooManyRequestsError occurred. Arguments: ('Too Many Requests',)",
+    "[GitHub] v2.0 Ship Deterministic Response Lifecycle for platforms",
+    "[GitHub] RFC: Launch Readiness — finnNFT Agent Capabilities, User Surfaces & E2E Infrastructure Gap Analysis",
+    "[GitHub] Agent Tracker",
+    "[GitHub] Sprint - Jan 26 to Feb 7",
+    "[GitHub] 🪲 Bug Report - omniblocks just doesn't load anymore",
+    "[GitHub] SpotifyPlus Card fails with “action requires responses” while SpotifyPlus integration works",
+    "[GitHub] [BUG] Instantly hitting usage limits with Max subscription"
+  ],
+  "conclusion_steps": [
+    "まず結論：最短の対処方針を 3〜7 ステップで"
+  ],
+  "cause_patterns": [
+    "原因パターンA：〜",
+    "原因パターンB：〜"
+  ],
+  "checklist_steps": [
+    "手順1：確認する",
+    "手順2：設定する",
+    "手順3：再実行する"
+  ],
+  "common_mistakes": [
+    "失敗例：〜 → 回避策：〜"
+  ],
+  "fallbacks": [
+    "それでも直らない：代替策1",
+    "それでも直らない：別ルート2"
+  ],
+  "faqs": [
+    {
+      "q": "FAQ1",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ2",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ3",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ4",
+      "a": "回答"
+    },
+    {
+      "q": "FAQ5",
+      "a": "回答"
+    }
+  ],
+  "refs": [
+    {
+      "url": "https://github.com/workadventure/workadventure/issues/5825",
+      "title": "GitHub: WebSocket disconnects after login with Microsoft Entra ID on self-hosted Docker Compose deployment"
+    },
+    {
+      "url": "https://github.com/peteromallet/desloppify/issues/204",
+      "title": "GitHub: $1,000 to the first person who finds something poorly engineered in this ~91k LOC vibe-coded codebase"
+    },
+    {
+      "url": "https://github.com/agit8or1/clientst0r/issues/98",
+      "title": "GitHub: Tactical RMM asset import"
+    },
+    {
+      "url": "https://github.com/khenlevy/booze/issues/3",
+      "title": "GitHub: Screen 3: Recommendation Algorithm – User Input & Filtering"
+    },
+    {
+      "url": "https://github.com/alandtse/alexa_media_player/issues/3387",
+      "title": "GitHub: An error occurred accessing AlexaAPI: An exception of type AlexapyTooManyRequestsError occurred. Arguments: ('Too Many Requests',)"
+    },
+    {
+      "url": "https://github.com/ragaeeb/blackiya/issues/6",
+      "title": "GitHub: v2.0 Ship Deterministic Response Lifecycle for platforms"
+    },
+    {
+      "url": "https://github.com/0xHoneyJar/loa-finn/issues/66",
+      "title": "GitHub: RFC: Launch Readiness — finnNFT Agent Capabilities, User Surfaces & E2E Infrastructure Gap Analysis"
+    },
+    {
+      "url": "https://github.com/sarchlab/m2sim/issues/311",
+      "title": "GitHub: Agent Tracker"
+    },
+    {
+      "url": "https://github.com/PostHog/posthog/issues/45357",
+      "title": "GitHub: Sprint - Jan 26 to Feb 7"
+    },
+    {
+      "url": "https://github.com/OmniBlocks/scratch-gui/issues/710",
+      "title": "GitHub: 🪲 Bug Report - omniblocks just doesn't load anymore"
+    },
+    {
+      "url": "https://github.com/thlucas1/spotifyplus_card/issues/88",
+      "title": "GitHub: SpotifyPlus Card fails with “action requires responses” while SpotifyPlus integration works"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/16157",
+      "title": "GitHub: [BUG] Instantly hitting usage limits with Max subscription"
+    }
+  ]
+}
