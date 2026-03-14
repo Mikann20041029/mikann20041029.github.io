@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>windows powershell execution policy をまとめて直す（権限/環境/手順）</title>
+<meta name="description" content="直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5643751507480712" crossorigin="anonymous"></script>
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans JP",sans-serif;line-height:1.7;margin:0;background:#fff;color:#111}
+main{max-width:920px;margin:0 auto;padding:24px}
+h1{font-size:28px;margin:0 0 8px}
+.lead{margin:0 0 16px;color:#333}
+.card{border:1px solid #e7e7e7;border-radius:12px;padding:16px;margin:16px 0}
+.muted{color:#666}
+ol,ul{padding-left:1.2em}
+code,pre{background:#f6f6f6;border-radius:8px}
+pre{padding:12px;overflow:auto}
+hr{border:0;border-top:1px solid #eee;margin:24px 0}
+small{color:#777}
+</style>
+</head>
+<body>
+<main>
+  <h1>windows powershell execution policy をまとめて直す（権限/環境/手順）</h1>
+  <p class="lead">直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。</p>
+
+  <div class="card">
+    <h2>1) このサイトで解決できる悩み一覧（要約）</h2>
+    <ul>
+      <li><a href='https://github.com/a3tai/openclaw-go/issues/14'>Upstream release: openclaw v2026.3.13</a> <small>[github] 2026-03-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/adybag14-cyber/openclaw-zig-port/issues/1'>Track strict full-stack Zig replacement (FS1-FS6 + FS5.5 hardware pivot)</a> <small>[github] 2026-03-01</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/27316'>[BUG] Cowork shows "Virtualization is not enabled" on Windows 10 Pro despite Hyper-V fully enabled</a> <small>[github] 2026-02-21</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/27576'>RPC error -1: virtiofs mount failure after ~1 hour of use on Windows</a> <small>[github] 2026-02-22</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/29302'>[BUG] Windows-MCP extension fails with os error 4551 (Application Control Policy) on MSIX build v1.1.4498</a> <small>[github] 2026-02-27</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/ayaiayorg/agentic-devtools/issues/866'>VS Code integration: Auto-trigger Copilot session in integrated terminal on workflow start</a> <small>[github] 2026-03-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Blb3D/filaops/issues/413'>feat: one-click Docker installer for non-developer users</a> <small>[github] 2026-03-13</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/compasify/agents-radar/issues/40'>📊 Bản tin hàng ngày công cụ AI CLI 2026-03-14</a> <small>[github] 2026-03-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/duanyytop/agents-radar/issues/169'>📊 AI CLI Tools Digest 2026-03-14</a> <small>[github] 2026-03-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/12'>Problem: Infinite elevation loop on Windows 11 Pro — Group Policy or UAC misconfiguration</a> <small>[github] 2026-02-15</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/14'>Problem: MSI installer Error - MSI installer failed with exit code: 1603</a> <small>[github] 2026-02-18</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/jstamagal/agents-radar/issues/22'>📊 AI CLI Tools Digest 2026-03-14</a> <small>[github] 2026-03-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Keith-CY/carrier/issues/119'>[Pinned] 1h Kanban Board (Daily Snapshot)</a> <small>[github] 2026-02-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/memstechtips/Winhance/issues/514'>[BUG] #453 issue unresolved with latest update</a> <small>[github] 2026-03-10</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/321'>mikann-autogen digest 2026-03-14T01:02:20.9029127Z</a> <small>[github] 2026-03-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/323'>mikann-autogen digest 2026-03-14T08:20:59.8865645Z</a> <small>[github] 2026-03-14</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/pingdotgg/t3code/issues/671'>Architecture proposal: first-class remote backend targets (with WSL as the first implementation)</a> <small>[github] 2026-03-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/siegeon/.prism/issues/32'>[prism-bug] we are upto 1.7m tokens and still in review previous notes, there are no previous notes, this is a fresh ticket request</a> <small>[github] 2026-03-09</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/wazuh/wazuh-ansible/issues/1963'>Deprecation Warning: INJECT_FACTS_AS_VARS in Ansible Core 2.1x+</a> <small>[github] 2026-03-10</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+<li><a href='https://github.com/wazuh/wazuh/issues/34756'>Release 4.14.4 - RC 1 - Upgrade tests</a> <small>[github] 2026-03-06</small><br><span class='muted'>症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。</span></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>2) まず結論（1分で分かる対処方針）</h2>
+    <ol>
+      <li>権限/保存先（user領域か、管理者領域か）を確認</li>
+      <li>実行したコマンドと現在ディレクトリを固定して再現性を作る</li>
+      <li>キャッシュ/ロック/古いグローバル設定を消して最短で正常系へ戻す</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>3) 原因のパターン分解（なぜ起きるか）</h2>
+    <ul>
+      <li><b>権限不足</b>：Program Files配下やシステム領域に書こうとしている</li>
+      <li><b>npmのprefix設定</b>：グローバルインストール先が保護領域になっている</li>
+      <li><b>キャッシュ/ロック</b>：壊れたキャッシュやロックで失敗が固定化</li>
+      <li><b>PATH/Nodeバージョンの混線</b>：複数のNode/npmが共存している</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>4) 手順（チェックリスト：段階的）</h2>
+    <h3>Step A: まず状態確認</h3>
+    <pre><code>node -v
+npm -v
+npm config get prefix
+where node
+where npm</code></pre>
+
+    <h3>Step B: 権限とprefixの是正（例）</h3>
+    <p class="muted">※OSや環境で最適解が変わるので、まずは「ユーザー領域に寄せる」方針で安全に戻す。</p>
+    <pre><code># npmのグローバル先をユーザー配下へ（例）
+npm config set prefix "\npm"
+
+# PATHに必要なら追加（PowerShell例）
+[Environment]::SetEnvironmentVariable("Path",  + ";\npm", "User")</code></pre>
+
+    <h3>Step C: キャッシュ/ロック掃除</h3>
+    <pre><code>npm cache verify
+npm cache clean --force</code></pre>
+
+    <h3>Step D: それでもダメなら “別ルート”</h3>
+    <ul>
+      <li>Nodeを公式インストーラで入れ直し（混線を消す）</li>
+      <li>nvm等でバージョン管理に寄せる（環境を分離）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>5) よくある失敗（ミス例と回避策）</h2>
+    <ul>
+      <li>管理者で一度通ったからといって恒久的に管理者運用する（→将来壊れやすい）</li>
+      <li>prefixだけ変えてPATHを更新しない（→コマンドが古い方を指す）</li>
+      <li>複数nodeが共存して where node が2行以上になる（→混線）</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>6) それでも直らない場合（代替策／別ルート）</h2>
+    <ul>
+      <li>別PC/別ユーザーで同コマンドを試し、環境依存かを切り分け</li>
+      <li>CI（GitHub Actions等）で同コマンドが通るか確認し、手元環境の問題に限定</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>7) FAQ</h2>
+    <ul>
+      <li><b>Q.</b> 管理者で実行すれば直りますか？ <b>A.</b> 一時回避になることはあるが、根本はprefix/権限/混線の整理が必要。</li>
+      <li><b>Q.</b> どのログを見ればいい？ <b>A.</b> 失敗したコマンド全文と直前の出力、
+pm config get prefix、where node/npm。</li>
+      <li><b>Q.</b> node/npmの複数共存はダメ？ <b>A.</b> 混線しやすい。運用するなら管理ツールで分離が安全。</li>
+      <li><b>Q.</b> キャッシュ掃除は安全？ <b>A.</b> 通常は安全。壊れたキャッシュ由来の固定失敗を外せる。</li>
+      <li><b>Q.</b> 直った後に再発させないには？ <b>A.</b> prefix/Pathをユーザー領域で固定し、更新手順をメモする。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>8) 参考URL</h2>
+    <ul>
+      <li><a href='https://docs.npmjs.com/cli/v10/using-npm/config'>npm docs (config/prefix)</a></li>
+<li><a href='https://docs.github.com/en/rest/search/search'>GitHub REST API (search issues)</a></li>
+<li><a href='https://api.stackexchange.com/'>StackExchange API</a></li>
+<li><a href='https://github.com/a3tai/openclaw-go/issues/14'>github: Upstream release: openclaw v2026.3.13</a></li>
+<li><a href='https://github.com/adybag14-cyber/openclaw-zig-port/issues/1'>github: Track strict full-stack Zig replacement (FS1-FS6 + FS5.5 hardware pivot)</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/27316'>github: [BUG] Cowork shows "Virtualization is not enabled" on Windows 10 Pro despite Hyper-V fully enabled</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/27576'>github: RPC error -1: virtiofs mount failure after ~1 hour of use on Windows</a></li>
+<li><a href='https://github.com/anthropics/claude-code/issues/29302'>github: [BUG] Windows-MCP extension fails with os error 4551 (Application Control Policy) on MSIX build v1.1.4498</a></li>
+<li><a href='https://github.com/ayaiayorg/agentic-devtools/issues/866'>github: VS Code integration: Auto-trigger Copilot session in integrated terminal on workflow start</a></li>
+<li><a href='https://github.com/Blb3D/filaops/issues/413'>github: feat: one-click Docker installer for non-developer users</a></li>
+<li><a href='https://github.com/compasify/agents-radar/issues/40'>github: 📊 Bản tin hàng ngày công cụ AI CLI 2026-03-14</a></li>
+<li><a href='https://github.com/duanyytop/agents-radar/issues/169'>github: 📊 AI CLI Tools Digest 2026-03-14</a></li>
+<li><a href='https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/12'>github: Problem: Infinite elevation loop on Windows 11 Pro — Group Policy or UAC misconfiguration</a></li>
+<li><a href='https://github.com/FirstEverTech/Universal-Intel-Chipset-Updater/issues/14'>github: Problem: MSI installer Error - MSI installer failed with exit code: 1603</a></li>
+<li><a href='https://github.com/jstamagal/agents-radar/issues/22'>github: 📊 AI CLI Tools Digest 2026-03-14</a></li>
+<li><a href='https://github.com/Keith-CY/carrier/issues/119'>github: [Pinned] 1h Kanban Board (Daily Snapshot)</a></li>
+<li><a href='https://github.com/memstechtips/Winhance/issues/514'>github: [BUG] #453 issue unresolved with latest update</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/321'>github: mikann-autogen digest 2026-03-14T01:02:20.9029127Z</a></li>
+<li><a href='https://github.com/Mikann20041029/mikann20041029.github.io/issues/323'>github: mikann-autogen digest 2026-03-14T08:20:59.8865645Z</a></li>
+<li><a href='https://github.com/pingdotgg/t3code/issues/671'>github: Architecture proposal: first-class remote backend targets (with WSL as the first implementation)</a></li>
+<li><a href='https://github.com/siegeon/.prism/issues/32'>github: [prism-bug] we are upto 1.7m tokens and still in review previous notes, there are no previous notes, this is a fresh ticket request</a></li>
+<li><a href='https://github.com/wazuh/wazuh-ansible/issues/1963'>github: Deprecation Warning: INJECT_FACTS_AS_VARS in Ansible Core 2.1x+</a></li>
+<li><a href='https://github.com/wazuh/wazuh/issues/34756'>github: Release 4.14.4 - RC 1 - Upgrade tests</a></li>
+    </ul>
+  </div>
+
+  <hr>
+  <p><small>Generated by mikann-autogen / 2026-03-14T16:16:46.1488501Z</small></p>
+</main>
+</body>
+</html>
