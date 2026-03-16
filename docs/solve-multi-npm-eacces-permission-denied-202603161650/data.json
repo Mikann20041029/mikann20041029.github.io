@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-npm-eacces-permission-denied-202603161650",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-03-16T16:50:31.9430075Z",
+    "title": "npm EACCES permission denied をまとめて直す（権限/環境/手順）"
+  },
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/294-ray-to-rust/ray-no-fork/issues/210",
+      "label": "github: Fix UID mismatch: make checkout writable and git-safe for Docker containers"
+    },
+    {
+      "url": "https://github.com/AidanPark/openclaw-android/issues/23",
+      "label": "github: log after running $oa uninstall and reinstall from curl command --details for devs <3"
+    },
+    {
+      "url": "https://github.com/AidanPark/openclaw-android/issues/37",
+      "label": "github: openclaw backup create fails on Android/Termux — EACCES: permission denied, link (hardlinks blocked by Android)"
+    },
+    {
+      "url": "https://github.com/ambicuity/KINDX/issues/35",
+      "label": "github: bug: npm install -g @ambicuity/kindx not working"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/31948",
+      "label": "github: Bash tool fails on Termux due to hardcoded\n  /tmp path"
+    },
+    {
+      "url": "https://github.com/E339-art/browserbase/issues/15",
+      "label": "github: MCP Server: my-mcp-server - Generated Code"
+    },
+    {
+      "url": "https://github.com/E339-art/browserbase/issues/16",
+      "label": "github: MCP Server: my-mcp-server - Generated Code"
+    },
+    {
+      "url": "https://github.com/f5xc-salesdemos/devcontainer/issues/236",
+      "label": "github: Fix: npm uninstall needs sudo after USER switch"
+    },
+    {
+      "url": "https://github.com/InsForge/InsForge/issues/901",
+      "label": "github: [Bug]: README self-hosted Docker setup fails to start on a fresh clone"
+    },
+    {
+      "url": "https://github.com/KeygraphHQ/shannon/issues/197",
+      "label": "github: [BUG]: Faild to load configuration schema"
+    },
+    {
+      "url": "https://github.com/link-assistant/hive-mind/issues/1419",
+      "label": "github: Something wrong with the way we build our docker image"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/333",
+      "label": "github: mikann-autogen digest 2026-03-16T01:12:31.6503278Z"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/335",
+      "label": "github: mikann-autogen digest 2026-03-16T08:42:59.4289026Z"
+    },
+    {
+      "url": "https://github.com/tbrandenburg/sofathek/issues/101",
+      "label": "github: Handle EPERM as HTTP 403 in thumbnail endpoint"
+    },
+    {
+      "url": "https://github.com/tbrandenburg/sofathek/issues/111",
+      "label": "github: 🔴 CRITICAL: Directory Traversal Vulnerability in Thumbnail Endpoint"
+    },
+    {
+      "url": "https://github.com/tbrandenburg/sofathek/issues/122",
+      "label": "github: 🚫 MERGE BLOCKER: PR #117 Targets Wrong Endpoint - Do Not Merge"
+    },
+    {
+      "url": "https://github.com/tbrandenburg/sofathek/issues/35",
+      "label": "github: Improve thumbnail system: Add comprehensive testing and edge case handling"
+    },
+    {
+      "url": "https://github.com/tbrandenburg/sofathek/issues/37",
+      "label": "github: Add tests for VideoService.findThumbnail() method"
+    },
+    {
+      "url": "https://github.com/tbrandenburg/sofathek/issues/38",
+      "label": "github: Handle case sensitivity in thumbnail filename matching"
+    },
+    {
+      "url": "https://github.com/xianyu110/awesome-openclaw-tutorial/issues/26",
+      "label": "github: 📢 OpenClaw 新版本发布: v2026.3.8"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "Fix UID mismatch: make checkout writable and git-safe for Docker containers",
+      "url": "https://github.com/294-ray-to-rust/ray-no-fork/issues/210",
+      "created_at": "2026-03-13T03:29:10.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "log after running $oa uninstall and reinstall from curl command --details for devs <3",
+      "url": "https://github.com/AidanPark/openclaw-android/issues/23",
+      "created_at": "2026-03-10T00:58:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "openclaw backup create fails on Android/Termux — EACCES: permission denied, link (hardlinks blocked by Android)",
+      "url": "https://github.com/AidanPark/openclaw-android/issues/37",
+      "created_at": "2026-03-10T04:35:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "bug: npm install -g @ambicuity/kindx not working",
+      "url": "https://github.com/ambicuity/KINDX/issues/35",
+      "created_at": "2026-03-12T19:09:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bash tool fails on Termux due to hardcoded\n  /tmp path",
+      "url": "https://github.com/anthropics/claude-code/issues/31948",
+      "created_at": "2026-03-07T22:18:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "MCP Server: my-mcp-server - Generated Code",
+      "url": "https://github.com/E339-art/browserbase/issues/15",
+      "created_at": "2026-03-14T07:08:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "MCP Server: my-mcp-server - Generated Code",
+      "url": "https://github.com/E339-art/browserbase/issues/16",
+      "created_at": "2026-03-15T07:15:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Fix: npm uninstall needs sudo after USER switch",
+      "url": "https://github.com/f5xc-salesdemos/devcontainer/issues/236",
+      "created_at": "2026-03-12T17:40:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: README self-hosted Docker setup fails to start on a fresh clone",
+      "url": "https://github.com/InsForge/InsForge/issues/901",
+      "created_at": "2026-03-16T04:38:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG]: Faild to load configuration schema",
+      "url": "https://github.com/KeygraphHQ/shannon/issues/197",
+      "created_at": "2026-03-04T19:09:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Something wrong with the way we build our docker image",
+      "url": "https://github.com/link-assistant/hive-mind/issues/1419",
+      "created_at": "2026-03-13T07:05:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-16T01:12:31.6503278Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/333",
+      "created_at": "2026-03-16T01:12:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-16T08:42:59.4289026Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/335",
+      "created_at": "2026-03-16T08:42:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Handle EPERM as HTTP 403 in thumbnail endpoint",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/101",
+      "created_at": "2026-03-15T12:35:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🔴 CRITICAL: Directory Traversal Vulnerability in Thumbnail Endpoint",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/111",
+      "created_at": "2026-03-15T21:40:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🚫 MERGE BLOCKER: PR #117 Targets Wrong Endpoint - Do Not Merge",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/122",
+      "created_at": "2026-03-16T09:39:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Improve thumbnail system: Add comprehensive testing and edge case handling",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/35",
+      "created_at": "2026-03-08T17:55:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Add tests for VideoService.findThumbnail() method",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/37",
+      "created_at": "2026-03-08T17:59:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Handle case sensitivity in thumbnail filename matching",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/38",
+      "created_at": "2026-03-08T18:00:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📢 OpenClaw 新版本发布: v2026.3.8",
+      "url": "https://github.com/xianyu110/awesome-openclaw-tutorial/issues/26",
+      "created_at": "2026-03-12T04:04:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603161650/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
