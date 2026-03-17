@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-git-push-rejected-permission-denied-202603171653",
+    "generated_at": "2026-03-17T16:53:20.1179722Z",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "git push rejected permission denied をまとめて直す（権限/環境/手順）"
+  },
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: feat: extract audit framework into standalone Go library (axonops/go-audit)",
+      "url": "https://github.com/axonops/axonops-schema-registry/issues/371"
+    },
+    {
+      "label": "github: [Repo Assist] ci: Add timeout-minutes to all build jobs",
+      "url": "https://github.com/fable-compiler/Fable/issues/4409"
+    },
+    {
+      "label": "github: [Repo Assist] chore: add NuGet caching to CI, align docker-compose ES version, remove .bak",
+      "url": "https://github.com/fcallejon/fes/issues/8"
+    },
+    {
+      "label": "github: Ops: redeploy orchestrator after PR #226 merge and attach post-merge Decision Rail artifacts",
+      "url": "https://github.com/ferundatattoo/ethereal/issues/228"
+    },
+    {
+      "label": "github: [Repo Assist] CI: upgrade GitHub Actions — checkout v4, setup-node v4, Node 20",
+      "url": "https://github.com/fsprojects/FSharp.Control.AsyncSeq/issues/283"
+    },
+    {
+      "label": "github: [Repo Assist] ci: upgrade setup-dotnet v3→v4 and use 8.0.x patch channel",
+      "url": "https://github.com/fsprojects/FSharp.Data.SqlClient/issues/469"
+    },
+    {
+      "label": "github: [Repo Assist] ci: add job-level timeout-minutes to prevent runaway builds",
+      "url": "https://github.com/fsprojects/FSharp.Data/issues/1697"
+    },
+    {
+      "label": "github: [Repo Assist] Remove duplicate CI trigger on push to main",
+      "url": "https://github.com/fsprojects/FSharp.Formatting/issues/1086"
+    },
+    {
+      "label": "github: [Repo Assist] ci: update GitHub Actions from v1 to v4 (checkout, setup-dotnet, gh-pages)",
+      "url": "https://github.com/fsprojects/FSharp.TypeProviders.SDK/issues/473"
+    },
+    {
+      "label": "github: [Repo Assist] ci: update GitHub Actions from v1 to v4",
+      "url": "https://github.com/fsprojects/FSharp.TypeProviders.SDK/issues/474"
+    },
+    {
+      "label": "github: [Repo Assist] eng: update .NET SDK from 8.0.416 to 8.0.418",
+      "url": "https://github.com/fsprojects/FSharpx.Collections/issues/256"
+    },
+    {
+      "label": "github: [Repo Assist] Add SchemaReaderErrors property to OpenApiClientProvider (fixes #160) + CI tool caching",
+      "url": "https://github.com/fsprojects/SwaggerProvider/issues/326"
+    },
+    {
+      "label": "github: [agentics] No-Op Runs",
+      "url": "https://github.com/github/gh-aw-firewall/issues/1274"
+    },
+    {
+      "label": "github: [code-simplifier] docs(ci): document cache key dependency graph in build-toolchain.yml",
+      "url": "https://github.com/grahame-org/gnu-tools-for-stm32/issues/338"
+    },
+    {
+      "label": "github: FY27 Q1 Teleport Test Plan",
+      "url": "https://github.com/gravitational/teleport/issues/64628"
+    },
+    {
+      "label": "github: Validation Program Parent: JSON-first strategy validation and trader review layer",
+      "url": "https://github.com/iamtxena/trade-nexus/issues/223"
+    },
+    {
+      "label": "github: [Repo Assist] ci: update GitHub Actions to latest versions (checkout@v4, setup-dotnet@v4)",
+      "url": "https://github.com/ionide/FsAutoComplete/issues/1507"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-03-17T01:04:34.4854168Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/339"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-03-17T08:37:32.1429863Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/341"
+    },
+    {
+      "label": "github: [Repo Assist] ci: enforce cargo fmt in CI",
+      "url": "https://github.com/shanselman/winget-tui/issues/23"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "feat: extract audit framework into standalone Go library (axonops/go-audit)",
+      "url": "https://github.com/axonops/axonops-schema-registry/issues/371",
+      "created_at": "2026-03-17T07:06:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] ci: Add timeout-minutes to all build jobs",
+      "url": "https://github.com/fable-compiler/Fable/issues/4409",
+      "created_at": "2026-03-16T01:40:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] chore: add NuGet caching to CI, align docker-compose ES version, remove .bak",
+      "url": "https://github.com/fcallejon/fes/issues/8",
+      "created_at": "2026-03-17T16:03:14.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Ops: redeploy orchestrator after PR #226 merge and attach post-merge Decision Rail artifacts",
+      "url": "https://github.com/ferundatattoo/ethereal/issues/228",
+      "created_at": "2026-03-14T20:50:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] CI: upgrade GitHub Actions — checkout v4, setup-node v4, Node 20",
+      "url": "https://github.com/fsprojects/FSharp.Control.AsyncSeq/issues/283",
+      "created_at": "2026-03-17T00:26:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] ci: upgrade setup-dotnet v3→v4 and use 8.0.x patch channel",
+      "url": "https://github.com/fsprojects/FSharp.Data.SqlClient/issues/469",
+      "created_at": "2026-03-14T13:26:43.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] ci: add job-level timeout-minutes to prevent runaway builds",
+      "url": "https://github.com/fsprojects/FSharp.Data/issues/1697",
+      "created_at": "2026-03-16T04:00:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] Remove duplicate CI trigger on push to main",
+      "url": "https://github.com/fsprojects/FSharp.Formatting/issues/1086",
+      "created_at": "2026-03-10T08:48:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] ci: update GitHub Actions from v1 to v4 (checkout, setup-dotnet, gh-pages)",
+      "url": "https://github.com/fsprojects/FSharp.TypeProviders.SDK/issues/473",
+      "created_at": "2026-03-13T00:49:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] ci: update GitHub Actions from v1 to v4",
+      "url": "https://github.com/fsprojects/FSharp.TypeProviders.SDK/issues/474",
+      "created_at": "2026-03-13T00:49:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] eng: update .NET SDK from 8.0.416 to 8.0.418",
+      "url": "https://github.com/fsprojects/FSharpx.Collections/issues/256",
+      "created_at": "2026-03-16T13:02:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] Add SchemaReaderErrors property to OpenApiClientProvider (fixes #160) + CI tool caching",
+      "url": "https://github.com/fsprojects/SwaggerProvider/issues/326",
+      "created_at": "2026-03-16T16:51:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[agentics] No-Op Runs",
+      "url": "https://github.com/github/gh-aw-firewall/issues/1274",
+      "created_at": "2026-03-13T00:23:07.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[code-simplifier] docs(ci): document cache key dependency graph in build-toolchain.yml",
+      "url": "https://github.com/grahame-org/gnu-tools-for-stm32/issues/338",
+      "created_at": "2026-03-13T08:31:30.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "FY27 Q1 Teleport Test Plan",
+      "url": "https://github.com/gravitational/teleport/issues/64628",
+      "created_at": "2026-03-13T17:09:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Validation Program Parent: JSON-first strategy validation and trader review layer",
+      "url": "https://github.com/iamtxena/trade-nexus/issues/223",
+      "created_at": "2026-02-17T22:33:37.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] ci: update GitHub Actions to latest versions (checkout@v4, setup-dotnet@v4)",
+      "url": "https://github.com/ionide/FsAutoComplete/issues/1507",
+      "created_at": "2026-03-17T14:50:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-17T01:04:34.4854168Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/339",
+      "created_at": "2026-03-17T01:04:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-17T08:37:32.1429863Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/341",
+      "created_at": "2026-03-17T08:37:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Repo Assist] ci: enforce cargo fmt in CI",
+      "url": "https://github.com/shanselman/winget-tui/issues/23",
+      "created_at": "2026-03-17T06:24:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-git-push-rejected-permission-denied-202603171653/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
