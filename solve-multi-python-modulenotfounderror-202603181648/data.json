@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Modular Plugin Architecture (pre-work for forks and cherry-pick)",
+      "url": "https://github.com/agigante80/AgentGate/issues/32",
+      "created_at": "2026-03-18T14:36:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[FEATURE] External workaround for #273: venv-proxy — automatic  .venv resolution without activation",
+      "url": "https://github.com/anthropics/claude-code/issues/31965",
+      "created_at": "2026-03-07T23:17:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Python 3.12 compatibility: distutils removal and setuptools dependency",
+      "url": "https://github.com/apache/cassandra-ccm/issues/804",
+      "created_at": "2026-03-18T14:11:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PLATON installation fails, update needed",
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652",
+      "created_at": "2026-03-02T11:57:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "docling extra missing opencv-python — tests fail with ModuleNotFoundError: No module named 'cv2'",
+      "url": "https://github.com/generative-computing/mellea/issues/682",
+      "created_at": "2026-03-18T08:09:23.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "nvalchemiops 0.3.0 incompatibility",
+      "url": "https://github.com/isayevlab/aimnetcentral/issues/45",
+      "created_at": "2026-03-18T15:36:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module Not Found Errors running langflow-ide - missing required litellm module's",
+      "url": "https://github.com/langflow-ai/langflow/issues/12228",
+      "created_at": "2026-03-18T15:03:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: lsp does not start on windows.",
+      "url": "https://github.com/makroumi/slowql/issues/56",
+      "created_at": "2026-03-17T21:22:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Sentry SDK integration with strawberry not working",
+      "url": "https://github.com/Nuitka/Nuitka/issues/3820",
+      "created_at": "2026-03-16T05:21:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Failed to install deps with no-build-isolation",
+      "url": "https://github.com/prefix-dev/pixi/issues/5614",
+      "created_at": "2026-03-06T09:19:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'ru'",
+      "url": "https://github.com/ratschlab/sim_read_until/issues/3",
+      "created_at": "2026-03-18T15:20:05.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Troubleshoot]: Evaluation with openpi for Robotwin: ModuleNotFoundError: No module named 'robotwin'",
+      "url": "https://github.com/RLinf/RLinf/issues/906",
+      "created_at": "2026-03-18T14:41:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "dev-orchestrator recipe-runner version skew breaks smart-orchestrator under Copilot",
+      "url": "https://github.com/rysweet/amplihack/issues/3315",
+      "created_at": "2026-03-18T16:46:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Import errors in pressure broadening notebook & getting started example (command line)",
+      "url": "https://github.com/samderegt/pyROX/issues/22",
+      "created_at": "2026-03-17T16:35:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Unable to launch Stable Diffusion",
+      "url": "https://github.com/SmarakNayak/stability-matrix-nix/issues/14",
+      "created_at": "2026-03-17T23:10:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Docker Benchmarking Unzip Error",
+      "url": "https://github.com/sterrettJD/HoMi/issues/103",
+      "created_at": "2026-02-26T18:09:21.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Fix stale import in rotary embedding fused QK test",
+      "url": "https://github.com/tenstorrent/tt-metal/issues/40193",
+      "created_at": "2026-03-18T14:40:34.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Startup crash 2.40.2",
+      "url": "https://github.com/trudenboy/sendspin-bt-bridge/issues/78",
+      "created_at": "2026-03-18T15:30:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "how to run the python script test vortex with polars",
+      "url": "https://github.com/vortex-data/vortex/issues/7015",
+      "created_at": "2026-03-18T12:30:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Apicula/Windows build is broken",
+      "url": "https://github.com/YosysHQ/oss-cad-suite-build/issues/194",
+      "created_at": "2026-03-11T23:41:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603181648/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "generated_at": "2026-03-18T16:48:16.2886001Z",
+    "slug": "solve-multi-python-modulenotfounderror-202603181648",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ]
+  },
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/agigante80/AgentGate/issues/32",
+      "label": "github: Modular Plugin Architecture (pre-work for forks and cherry-pick)"
+    },
+    {
+      "url": "https://github.com/anthropics/claude-code/issues/31965",
+      "label": "github: [FEATURE] External workaround for #273: venv-proxy — automatic  .venv resolution without activation"
+    },
+    {
+      "url": "https://github.com/apache/cassandra-ccm/issues/804",
+      "label": "github: Python 3.12 compatibility: distutils removal and setuptools dependency"
+    },
+    {
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652",
+      "label": "github: PLATON installation fails, update needed"
+    },
+    {
+      "url": "https://github.com/generative-computing/mellea/issues/682",
+      "label": "github: docling extra missing opencv-python — tests fail with ModuleNotFoundError: No module named 'cv2'"
+    },
+    {
+      "url": "https://github.com/isayevlab/aimnetcentral/issues/45",
+      "label": "github: nvalchemiops 0.3.0 incompatibility"
+    },
+    {
+      "url": "https://github.com/langflow-ai/langflow/issues/12228",
+      "label": "github: Module Not Found Errors running langflow-ide - missing required litellm module's"
+    },
+    {
+      "url": "https://github.com/makroumi/slowql/issues/56",
+      "label": "github: [Bug]: lsp does not start on windows."
+    },
+    {
+      "url": "https://github.com/Nuitka/Nuitka/issues/3820",
+      "label": "github: Sentry SDK integration with strawberry not working"
+    },
+    {
+      "url": "https://github.com/prefix-dev/pixi/issues/5614",
+      "label": "github: Failed to install deps with no-build-isolation"
+    },
+    {
+      "url": "https://github.com/ratschlab/sim_read_until/issues/3",
+      "label": "github: ModuleNotFoundError: No module named 'ru'"
+    },
+    {
+      "url": "https://github.com/RLinf/RLinf/issues/906",
+      "label": "github: [Troubleshoot]: Evaluation with openpi for Robotwin: ModuleNotFoundError: No module named 'robotwin'"
+    },
+    {
+      "url": "https://github.com/rysweet/amplihack/issues/3315",
+      "label": "github: dev-orchestrator recipe-runner version skew breaks smart-orchestrator under Copilot"
+    },
+    {
+      "url": "https://github.com/samderegt/pyROX/issues/22",
+      "label": "github: Import errors in pressure broadening notebook & getting started example (command line)"
+    },
+    {
+      "url": "https://github.com/SmarakNayak/stability-matrix-nix/issues/14",
+      "label": "github: Unable to launch Stable Diffusion"
+    },
+    {
+      "url": "https://github.com/sterrettJD/HoMi/issues/103",
+      "label": "github: Docker Benchmarking Unzip Error"
+    },
+    {
+      "url": "https://github.com/tenstorrent/tt-metal/issues/40193",
+      "label": "github: Fix stale import in rotary embedding fused QK test"
+    },
+    {
+      "url": "https://github.com/trudenboy/sendspin-bt-bridge/issues/78",
+      "label": "github: Startup crash 2.40.2"
+    },
+    {
+      "url": "https://github.com/vortex-data/vortex/issues/7015",
+      "label": "github: how to run the python script test vortex with polars"
+    },
+    {
+      "url": "https://github.com/YosysHQ/oss-cad-suite-build/issues/194",
+      "label": "github: Apicula/Windows build is broken"
+    }
+  ]
+}
