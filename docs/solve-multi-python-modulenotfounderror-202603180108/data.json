@@ -1,0 +1,288 @@
+{
+  "items": [
+    {
+      "source": "github",
+      "title": "Latest version crashes when loading",
+      "url": "https://github.com/daniandtheweb/sd.cpp-webui/issues/66",
+      "created_at": "2026-03-17T17:34:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pipestat.exceptions.SchemaError: Overlap between project- and sample-level keys: Time, Success",
+      "url": "https://github.com/databio/pepatac/issues/322",
+      "created_at": "2026-03-16T22:48:00.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] 安装好了但是搜不到Smart Resolution Calculator节点",
+      "url": "https://github.com/DazzleNodes/ComfyUI-Smart-Resolution-Calc/issues/43",
+      "created_at": "2026-03-17T09:27:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "urlscan not working recently",
+      "url": "https://github.com/firecat53/urlscan/issues/160",
+      "created_at": "2026-03-17T05:06:56.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PLATON installation fails, update needed",
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652",
+      "created_at": "2026-03-02T11:57:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "beautifulsoup4 should be a dependency of google-adk package due ot load_web_page tool",
+      "url": "https://github.com/google/adk-python/issues/4852",
+      "created_at": "2026-03-16T22:49:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Stable diffusion menù missing",
+      "url": "https://github.com/intel/openvino-ai-plugins-gimp/issues/229",
+      "created_at": "2026-03-12T20:19:03.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Python install error",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/issues/3336",
+      "created_at": "2026-03-17T10:11:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[BUG] Test Failure - Missing try_except_wrapper Module",
+      "url": "https://github.com/kyegomez/swarms/issues/1470",
+      "created_at": "2026-03-17T22:23:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: lsp does not start on windows.",
+      "url": "https://github.com/makroumi/slowql/issues/56",
+      "created_at": "2026-03-17T21:22:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "pip install CPPE does not work in Jupyter notebook",
+      "url": "https://github.com/maxscheurer/cppe/issues/56",
+      "created_at": "2026-03-16T18:13:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "macOS: Qt .ui custom widget headers produce broken pyuic5 imports + DMG beta missing libgmp",
+      "url": "https://github.com/namecoin/electrum-nmc/issues/391",
+      "created_at": "2026-03-17T23:36:22.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Use Semantic Versioning",
+      "url": "https://github.com/neogeny/TatSu/issues/412",
+      "created_at": "2026-03-15T20:21:44.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "handlers.py _get_store() imports non-existent omega.store module",
+      "url": "https://github.com/omega-memory/omega-memory/issues/48",
+      "created_at": "2026-03-17T06:49:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "ModuleNotFoundError: No module named 'picasa2digikam'",
+      "url": "https://github.com/Philipp91/picasa2digikam/issues/36",
+      "created_at": "2026-03-01T16:37:06.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Failed to install deps with no-build-isolation",
+      "url": "https://github.com/prefix-dev/pixi/issues/5614",
+      "created_at": "2026-03-06T09:19:04.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "app.py line 17, no module named \"flask\"",
+      "url": "https://github.com/Slofi/overmesh/issues/1",
+      "created_at": "2026-03-17T23:03:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "errors during init.sh",
+      "url": "https://github.com/srlabs/extractor/issues/16",
+      "created_at": "2026-03-17T21:38:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: docker image has broken install of flash attention",
+      "url": "https://github.com/vllm-project/vllm-omni/issues/1946",
+      "created_at": "2026-03-17T05:05:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Apicula/Windows build is broken",
+      "url": "https://github.com/YosysHQ/oss-cad-suite-build/issues/194",
+      "created_at": "2026-03-11T23:41:31.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-python-modulenotfounderror-202603180108/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "generated_at": "2026-03-18T01:08:36.0636785Z",
+    "title": "python ModuleNotFoundError をまとめて直す（権限/環境/手順）",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-python-modulenotfounderror-202603180108"
+  },
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: Latest version crashes when loading",
+      "url": "https://github.com/daniandtheweb/sd.cpp-webui/issues/66"
+    },
+    {
+      "label": "github: pipestat.exceptions.SchemaError: Overlap between project- and sample-level keys: Time, Success",
+      "url": "https://github.com/databio/pepatac/issues/322"
+    },
+    {
+      "label": "github: [BUG] 安装好了但是搜不到Smart Resolution Calculator节点",
+      "url": "https://github.com/DazzleNodes/ComfyUI-Smart-Resolution-Calc/issues/43"
+    },
+    {
+      "label": "github: urlscan not working recently",
+      "url": "https://github.com/firecat53/urlscan/issues/160"
+    },
+    {
+      "label": "github: PLATON installation fails, update needed",
+      "url": "https://github.com/FormingWorlds/PROTEUS/issues/652"
+    },
+    {
+      "label": "github: beautifulsoup4 should be a dependency of google-adk package due ot load_web_page tool",
+      "url": "https://github.com/google/adk-python/issues/4852"
+    },
+    {
+      "label": "github: Stable diffusion menù missing",
+      "url": "https://github.com/intel/openvino-ai-plugins-gimp/issues/229"
+    },
+    {
+      "label": "github: Python install error",
+      "url": "https://github.com/k2-fsa/sherpa-onnx/issues/3336"
+    },
+    {
+      "label": "github: [BUG] Test Failure - Missing try_except_wrapper Module",
+      "url": "https://github.com/kyegomez/swarms/issues/1470"
+    },
+    {
+      "label": "github: [Bug]: lsp does not start on windows.",
+      "url": "https://github.com/makroumi/slowql/issues/56"
+    },
+    {
+      "label": "github: pip install CPPE does not work in Jupyter notebook",
+      "url": "https://github.com/maxscheurer/cppe/issues/56"
+    },
+    {
+      "label": "github: macOS: Qt .ui custom widget headers produce broken pyuic5 imports + DMG beta missing libgmp",
+      "url": "https://github.com/namecoin/electrum-nmc/issues/391"
+    },
+    {
+      "label": "github: Use Semantic Versioning",
+      "url": "https://github.com/neogeny/TatSu/issues/412"
+    },
+    {
+      "label": "github: handlers.py _get_store() imports non-existent omega.store module",
+      "url": "https://github.com/omega-memory/omega-memory/issues/48"
+    },
+    {
+      "label": "github: ModuleNotFoundError: No module named 'picasa2digikam'",
+      "url": "https://github.com/Philipp91/picasa2digikam/issues/36"
+    },
+    {
+      "label": "github: Failed to install deps with no-build-isolation",
+      "url": "https://github.com/prefix-dev/pixi/issues/5614"
+    },
+    {
+      "label": "github: app.py line 17, no module named \"flask\"",
+      "url": "https://github.com/Slofi/overmesh/issues/1"
+    },
+    {
+      "label": "github: errors during init.sh",
+      "url": "https://github.com/srlabs/extractor/issues/16"
+    },
+    {
+      "label": "github: [Bug]: docker image has broken install of flash attention",
+      "url": "https://github.com/vllm-project/vllm-omni/issues/1946"
+    },
+    {
+      "label": "github: Apicula/Windows build is broken",
+      "url": "https://github.com/YosysHQ/oss-cad-suite-build/issues/194"
+    }
+  ]
+}
