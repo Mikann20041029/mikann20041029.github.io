@@ -1,0 +1,288 @@
+{
+  "references": [
+    {
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config",
+      "label": "npm docs (config/prefix)"
+    },
+    {
+      "url": "https://docs.github.com/en/rest/search/search",
+      "label": "GitHub REST API (search issues)"
+    },
+    {
+      "url": "https://api.stackexchange.com/",
+      "label": "StackExchange API"
+    },
+    {
+      "url": "https://github.com/adybag14-cyber/ZAR-Zig-Agent-Runtime/issues/1",
+      "label": "github: Track strict full-stack ZAR-Zig-Agent-Runtime replacement (FS1-FS6 + FS5.5 hardware pivot)"
+    },
+    {
+      "url": "https://github.com/chrixbedardcad/GhostSpell/issues/178",
+      "label": "github: Deep desktop app architectural review: Go runtime, cross-platform flow, and GhostAI/llama.cpp findings"
+    },
+    {
+      "url": "https://github.com/chrixbedardcad/GhostSpell/issues/213",
+      "label": "github: Window 0.38.0 small fixes more"
+    },
+    {
+      "url": "https://github.com/compasify/agents-radar/issues/55",
+      "label": "github: 📊 Bản tin hàng ngày công cụ AI CLI 2026-03-19"
+    },
+    {
+      "url": "https://github.com/DenisZheng/agents-radar/issues/107",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-19"
+    },
+    {
+      "url": "https://github.com/DenisZheng/agents-radar/issues/97",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-18"
+    },
+    {
+      "url": "https://github.com/DenisZheng/agents-radar/issues/99",
+      "label": "github: 🦞 OpenClaw Ecosystem Digest 2026-03-18"
+    },
+    {
+      "url": "https://github.com/duanyytop/agents-radar/issues/212",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-18"
+    },
+    {
+      "url": "https://github.com/duanyytop/agents-radar/issues/223",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-19"
+    },
+    {
+      "url": "https://github.com/jstamagal/agents-radar/issues/52",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-19"
+    },
+    {
+      "url": "https://github.com/martymcenroe/unleashed/issues/113",
+      "label": "github: feat: Codex sandbox network bypass — proxy, schannel, and promotion to production"
+    },
+    {
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/351",
+      "label": "github: mikann-autogen digest 2026-03-19T01:08:02.0816525Z"
+    },
+    {
+      "url": "https://github.com/openai/codex/issues/13542",
+      "label": "github: Windows: bundled rg in Codex Desktop resolves on PATH but fails with Access Denied in integrated PowerShell"
+    },
+    {
+      "url": "https://github.com/openai/codex/issues/13917",
+      "label": "github: Codex desktop on Windows cannot start PowerShell host in session (8009001d)"
+    },
+    {
+      "url": "https://github.com/pingdotgg/t3code/issues/671",
+      "label": "github: Architecture proposal: first-class remote backend targets (with WSL as the first implementation)"
+    },
+    {
+      "url": "https://github.com/ryanries/PassFiltEx/issues/39",
+      "label": "github: PassFiltExTest.exe crashes with APPCRASH (c0000005) on Windows Server 2012 R2 after working for 1 year"
+    },
+    {
+      "url": "https://github.com/SimonSchubert/Kai/issues/48",
+      "label": "github: sighup instead of no-op"
+    },
+    {
+      "url": "https://github.com/yinwm/agents-radar/issues/17",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-19"
+    },
+    {
+      "url": "https://github.com/yinwm/agents-radar/issues/5",
+      "label": "github: 📊 AI CLI 工具社区动态日报 2026-03-19"
+    },
+    {
+      "url": "https://github.com/yinwm/agents-radar/issues/7",
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-19"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "Track strict full-stack ZAR-Zig-Agent-Runtime replacement (FS1-FS6 + FS5.5 hardware pivot)",
+      "url": "https://github.com/adybag14-cyber/ZAR-Zig-Agent-Runtime/issues/1",
+      "created_at": "2026-03-01T23:40:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Deep desktop app architectural review: Go runtime, cross-platform flow, and GhostAI/llama.cpp findings",
+      "url": "https://github.com/chrixbedardcad/GhostSpell/issues/178",
+      "created_at": "2026-03-16T15:10:22.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Window 0.38.0 small fixes more",
+      "url": "https://github.com/chrixbedardcad/GhostSpell/issues/213",
+      "created_at": "2026-03-18T14:15:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 Bản tin hàng ngày công cụ AI CLI 2026-03-19",
+      "url": "https://github.com/compasify/agents-radar/issues/55",
+      "created_at": "2026-03-19T02:11:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-19",
+      "url": "https://github.com/DenisZheng/agents-radar/issues/107",
+      "created_at": "2026-03-19T00:31:48.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-18",
+      "url": "https://github.com/DenisZheng/agents-radar/issues/97",
+      "created_at": "2026-03-18T00:34:53.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🦞 OpenClaw Ecosystem Digest 2026-03-18",
+      "url": "https://github.com/DenisZheng/agents-radar/issues/99",
+      "created_at": "2026-03-18T00:34:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-18",
+      "url": "https://github.com/duanyytop/agents-radar/issues/212",
+      "created_at": "2026-03-18T00:28:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-19",
+      "url": "https://github.com/duanyytop/agents-radar/issues/223",
+      "created_at": "2026-03-19T00:28:33.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-19",
+      "url": "https://github.com/jstamagal/agents-radar/issues/52",
+      "created_at": "2026-03-19T00:15:01.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "feat: Codex sandbox network bypass — proxy, schannel, and promotion to production",
+      "url": "https://github.com/martymcenroe/unleashed/issues/113",
+      "created_at": "2026-03-18T16:24:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-19T01:08:02.0816525Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/351",
+      "created_at": "2026-03-19T01:08:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Windows: bundled rg in Codex Desktop resolves on PATH but fails with Access Denied in integrated PowerShell",
+      "url": "https://github.com/openai/codex/issues/13542",
+      "created_at": "2026-03-05T06:00:51.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Codex desktop on Windows cannot start PowerShell host in session (8009001d)",
+      "url": "https://github.com/openai/codex/issues/13917",
+      "created_at": "2026-03-07T23:36:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Architecture proposal: first-class remote backend targets (with WSL as the first implementation)",
+      "url": "https://github.com/pingdotgg/t3code/issues/671",
+      "created_at": "2026-03-09T12:09:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "PassFiltExTest.exe crashes with APPCRASH (c0000005) on Windows Server 2012 R2 after working for 1 year",
+      "url": "https://github.com/ryanries/PassFiltEx/issues/39",
+      "created_at": "2026-03-17T08:59:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "sighup instead of no-op",
+      "url": "https://github.com/SimonSchubert/Kai/issues/48",
+      "created_at": "2026-03-18T22:57:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-19",
+      "url": "https://github.com/yinwm/agents-radar/issues/17",
+      "created_at": "2026-03-19T01:28:12.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI 工具社区动态日报 2026-03-19",
+      "url": "https://github.com/yinwm/agents-radar/issues/5",
+      "created_at": "2026-03-18T17:18:17.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-19",
+      "url": "https://github.com/yinwm/agents-radar/issues/7",
+      "created_at": "2026-03-18T17:18:18.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-windows-powershell-execution-policy-202603190829/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "meta": {
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "title": "windows powershell execution policy をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "slug": "solve-multi-windows-powershell-execution-policy-202603190829",
+    "generated_at": "2026-03-19T08:29:02.5501574Z"
+  }
+}
