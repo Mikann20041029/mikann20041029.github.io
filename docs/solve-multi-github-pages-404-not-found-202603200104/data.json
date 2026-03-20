@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "generated_at": "2026-03-20T01:04:11.2043604Z",
+    "title": "github pages 404 not found をまとめて直す（権限/環境/手順）",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "slug": "solve-multi-github-pages-404-not-found-202603200104"
+  },
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: Track strict full-stack ZAR-Zig-Agent-Runtime replacement (FS1-FS6 + FS5.5 hardware pivot)",
+      "url": "https://github.com/adybag14-cyber/ZAR-Zig-Agent-Runtime/issues/1"
+    },
+    {
+      "label": "github: [Bug]: ERR_CONNECTION_REFUSED",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad/issues/404"
+    },
+    {
+      "label": "github: Add `hGetNewlineMode` to `GHC.IO.Handle`",
+      "url": "https://github.com/haskell/core-libraries-committee/issues/404"
+    },
+    {
+      "label": "github: 📊 AI CLI Tools Digest 2026-03-20",
+      "url": "https://github.com/jstamagal/agents-radar/issues/62"
+    },
+    {
+      "label": "github: Module 6: Events (7 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/11"
+    },
+    {
+      "label": "github: Module 1: Auth & Onboarding (3 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/3"
+    },
+    {
+      "label": "github: Module 1: Auth & Onboarding (3 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/33"
+    },
+    {
+      "label": "github: Module 3: Chapter Admin Foundation (2 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/35"
+    },
+    {
+      "label": "github: Module 4: Member Management & Directory (6 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/36"
+    },
+    {
+      "label": "github: Module 5: Dues & Payments (7 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/37"
+    },
+    {
+      "label": "github: Module 6: Events (7 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/38"
+    },
+    {
+      "label": "github: Module 3: Chapter Admin Foundation (2 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/5"
+    },
+    {
+      "label": "github: Module 4: Member Management & Directory (6 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/7"
+    },
+    {
+      "label": "github: Module 5: Dues & Payments (7 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/9"
+    },
+    {
+      "label": "github: Discussion",
+      "url": "https://github.com/OWASP-BLT/BLT/issues/6019"
+    },
+    {
+      "label": "github: Testing out mdemg_linux",
+      "url": "https://github.com/reh3376/mdemg_linux/issues/2"
+    },
+    {
+      "label": "github: [Orchestrator] Work Queue",
+      "url": "https://github.com/rmwondolleck/hobby-inventory/issues/123"
+    },
+    {
+      "label": "github: [MEDIUM] Pre-commit hook doesn't run full lint pipeline — boundary violations bypass local detection",
+      "url": "https://github.com/TheMorpheus407/the-dmz/issues/404"
+    },
+    {
+      "label": "github: Push notification click leads to 404 on GitHub Pages (relay mode)",
+      "url": "https://github.com/tiann/hapi/issues/321"
+    },
+    {
+      "label": "github: Proposed 2.4.6 Guidelines: Risk of Subjective Editorial Judgment and Potential Impacts on Creative Content",
+      "url": "https://github.com/w3c/wcag/issues/5007"
+    }
+  ],
+  "items": [
+    {
+      "source": "github",
+      "title": "Track strict full-stack ZAR-Zig-Agent-Runtime replacement (FS1-FS6 + FS5.5 hardware pivot)",
+      "url": "https://github.com/adybag14-cyber/ZAR-Zig-Agent-Runtime/issues/1",
+      "created_at": "2026-03-01T23:40:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: ERR_CONNECTION_REFUSED",
+      "url": "https://github.com/Crosstalk-Solutions/project-nomad/issues/404",
+      "created_at": "2026-03-19T04:25:02.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Add `hGetNewlineMode` to `GHC.IO.Handle`",
+      "url": "https://github.com/haskell/core-libraries-committee/issues/404",
+      "created_at": "2026-03-18T20:34:26.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "📊 AI CLI Tools Digest 2026-03-20",
+      "url": "https://github.com/jstamagal/agents-radar/issues/62",
+      "created_at": "2026-03-20T00:17:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 6: Events (7 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/11",
+      "created_at": "2026-03-18T09:50:47.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 1: Auth & Onboarding (3 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/3",
+      "created_at": "2026-03-18T09:47:41.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 1: Auth & Onboarding (3 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/33",
+      "created_at": "2026-03-19T23:58:13.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 3: Chapter Admin Foundation (2 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/35",
+      "created_at": "2026-03-20T00:12:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 4: Member Management & Directory (6 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/36",
+      "created_at": "2026-03-20T00:17:57.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 5: Dues & Payments (7 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/37",
+      "created_at": "2026-03-20T00:21:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 6: Events (7 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/38",
+      "created_at": "2026-03-20T00:23:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 3: Chapter Admin Foundation (2 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/5",
+      "created_at": "2026-03-18T09:48:24.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 4: Member Management & Directory (6 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/7",
+      "created_at": "2026-03-18T09:48:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Module 5: Dues & Payments (7 screens)",
+      "url": "https://github.com/mycurelabs/product-handoff/issues/9",
+      "created_at": "2026-03-18T09:49:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Discussion",
+      "url": "https://github.com/OWASP-BLT/BLT/issues/6019",
+      "created_at": "2026-03-16T15:18:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Testing out mdemg_linux",
+      "url": "https://github.com/reh3376/mdemg_linux/issues/2",
+      "created_at": "2026-03-19T20:40:55.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Orchestrator] Work Queue",
+      "url": "https://github.com/rmwondolleck/hobby-inventory/issues/123",
+      "created_at": "2026-03-17T03:23:39.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[MEDIUM] Pre-commit hook doesn't run full lint pipeline — boundary violations bypass local detection",
+      "url": "https://github.com/TheMorpheus407/the-dmz/issues/404",
+      "created_at": "2026-03-19T23:03:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Push notification click leads to 404 on GitHub Pages (relay mode)",
+      "url": "https://github.com/tiann/hapi/issues/321",
+      "created_at": "2026-03-19T17:04:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Proposed 2.4.6 Guidelines: Risk of Subjective Editorial Judgment and Potential Impacts on Creative Content",
+      "url": "https://github.com/w3c/wcag/issues/5007",
+      "created_at": "2026-03-19T22:09:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-github-pages-404-not-found-202603200104/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ]
+}
