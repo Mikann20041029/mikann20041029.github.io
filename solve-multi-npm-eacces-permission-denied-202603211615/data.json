@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "slug": "solve-multi-npm-eacces-permission-denied-202603211615",
+    "generated_at": "2026-03-21T16:15:32.6138907Z",
+    "desc": "直近1ヶ月の投稿（10〜20件）を元に、原因パターン→チェックリスト→具体手順→FAQまで1ページに整理。",
+    "tags": [
+      "auto",
+      "guide"
+    ],
+    "title": "npm EACCES permission denied をまとめて直す（権限/環境/手順）"
+  },
+  "items": [
+    {
+      "source": "github",
+      "title": "getting error on mac m1 air",
+      "url": "https://github.com/Ahlyab/nodejs-express-starter-js/issues/2",
+      "created_at": "2026-03-17T08:49:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "log after running $oa uninstall and reinstall from curl command --details for devs <3",
+      "url": "https://github.com/AidanPark/openclaw-android/issues/23",
+      "created_at": "2026-03-10T00:58:27.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "openclaw backup create fails on Android/Termux — EACCES: permission denied, link (hardlinks blocked by Android)",
+      "url": "https://github.com/AidanPark/openclaw-android/issues/37",
+      "created_at": "2026-03-10T04:35:09.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Bash tool fails on Termux due to hardcoded\n  /tmp path",
+      "url": "https://github.com/anthropics/claude-code/issues/31948",
+      "created_at": "2026-03-07T22:18:52.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "fix: show actionable hint when npm cache clean fails with EACCES",
+      "url": "https://github.com/BlackAsteroid/mac-cleaner-cli/issues/63",
+      "created_at": "2026-03-20T22:44:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "EAS Build failing at Prebuild phase — EACCES permission denied on .expo/web",
+      "url": "https://github.com/expo/expo/issues/44062",
+      "created_at": "2026-03-18T18:57:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: README self-hosted Docker setup fails to start on a fresh clone",
+      "url": "https://github.com/InsForge/InsForge/issues/901",
+      "created_at": "2026-03-16T04:38:58.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Feature: Proper installer for OCBS (user-friendly, handles Homebrew environment)",
+      "url": "https://github.com/KHAEntertainment/clawvault/issues/29",
+      "created_at": "2026-03-07T03:46:45.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-16T16:50:31.9430075Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/337",
+      "created_at": "2026-03-16T16:50:32.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-21T01:00:16.1219457Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/363",
+      "created_at": "2026-03-21T01:00:16.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "mikann-autogen digest 2026-03-21T08:18:28.3874295Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/365",
+      "created_at": "2026-03-21T08:18:28.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Codebase conflict audit: 28 validated issues across 6 phases",
+      "url": "https://github.com/milady-ai/milady/issues/1170",
+      "created_at": "2026-03-20T08:27:50.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "installation fails with default nodejs package path",
+      "url": "https://github.com/NVIDIA/NemoClaw/issues/569",
+      "created_at": "2026-03-21T10:11:59.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "[Bug]: Sandbox file-tool edits rewrite workspace files to 0600, causing EACCES on host-side file tools",
+      "url": "https://github.com/openclaw/openclaw/issues/44077",
+      "created_at": "2026-03-12T13:40:35.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "install immich 2.6.x error",
+      "url": "https://github.com/rakhmanov/immich-in-lxc/issues/24",
+      "created_at": "2026-03-20T03:49:36.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Error 403",
+      "url": "https://github.com/regaw-leinad/homebridge-winix-purifiers/issues/32",
+      "created_at": "2026-03-16T01:33:19.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🔴 CRITICAL: Directory Traversal Vulnerability in Thumbnail Endpoint",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/111",
+      "created_at": "2026-03-15T21:40:42.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "🚫 MERGE BLOCKER: PR #117 Targets Wrong Endpoint - Do Not Merge",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/122",
+      "created_at": "2026-03-16T09:39:15.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "EACCES symlink error  ../lib/node_modules/nemoclaw/bin/nemoclaw.js to dest /usr/bin/nemoclaw",
+      "url": "https://github.com/thenewguardai/tng-nemoclaw-quickstart/issues/2",
+      "created_at": "2026-03-18T16:21:54.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    },
+    {
+      "source": "github",
+      "title": "Fedora KDE: USB Media Remap does not persist when reattaching the keyboard.",
+      "url": "https://github.com/zakstam/zenbook-duo-linux/issues/5",
+      "created_at": "2026-03-12T11:34:38.0000000Z",
+      "lang": "en",
+      "summary": "症状/環境が近い投稿。エラー文と権限・prefix・PATHが焦点になりやすい。",
+      "reply_draft": "I feel you — this kind of error is usually about permissions / install location / PATH / caches.\nI summarized a step-by-step checklist (with common mistakes + fixes) here: https://mikann20041029.github.io/solve-multi-npm-eacces-permission-denied-202603211615/\nIf you can share OS + Node/npm versions and the exact command, it's easier to pinpoint."
+    }
+  ],
+  "references": [
+    {
+      "label": "npm docs (config/prefix)",
+      "url": "https://docs.npmjs.com/cli/v10/using-npm/config"
+    },
+    {
+      "label": "GitHub REST API (search issues)",
+      "url": "https://docs.github.com/en/rest/search/search"
+    },
+    {
+      "label": "StackExchange API",
+      "url": "https://api.stackexchange.com/"
+    },
+    {
+      "label": "github: getting error on mac m1 air",
+      "url": "https://github.com/Ahlyab/nodejs-express-starter-js/issues/2"
+    },
+    {
+      "label": "github: log after running $oa uninstall and reinstall from curl command --details for devs <3",
+      "url": "https://github.com/AidanPark/openclaw-android/issues/23"
+    },
+    {
+      "label": "github: openclaw backup create fails on Android/Termux — EACCES: permission denied, link (hardlinks blocked by Android)",
+      "url": "https://github.com/AidanPark/openclaw-android/issues/37"
+    },
+    {
+      "label": "github: Bash tool fails on Termux due to hardcoded\n  /tmp path",
+      "url": "https://github.com/anthropics/claude-code/issues/31948"
+    },
+    {
+      "label": "github: fix: show actionable hint when npm cache clean fails with EACCES",
+      "url": "https://github.com/BlackAsteroid/mac-cleaner-cli/issues/63"
+    },
+    {
+      "label": "github: EAS Build failing at Prebuild phase — EACCES permission denied on .expo/web",
+      "url": "https://github.com/expo/expo/issues/44062"
+    },
+    {
+      "label": "github: [Bug]: README self-hosted Docker setup fails to start on a fresh clone",
+      "url": "https://github.com/InsForge/InsForge/issues/901"
+    },
+    {
+      "label": "github: Feature: Proper installer for OCBS (user-friendly, handles Homebrew environment)",
+      "url": "https://github.com/KHAEntertainment/clawvault/issues/29"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-03-16T16:50:31.9430075Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/337"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-03-21T01:00:16.1219457Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/363"
+    },
+    {
+      "label": "github: mikann-autogen digest 2026-03-21T08:18:28.3874295Z",
+      "url": "https://github.com/Mikann20041029/mikann20041029.github.io/issues/365"
+    },
+    {
+      "label": "github: Codebase conflict audit: 28 validated issues across 6 phases",
+      "url": "https://github.com/milady-ai/milady/issues/1170"
+    },
+    {
+      "label": "github: installation fails with default nodejs package path",
+      "url": "https://github.com/NVIDIA/NemoClaw/issues/569"
+    },
+    {
+      "label": "github: [Bug]: Sandbox file-tool edits rewrite workspace files to 0600, causing EACCES on host-side file tools",
+      "url": "https://github.com/openclaw/openclaw/issues/44077"
+    },
+    {
+      "label": "github: install immich 2.6.x error",
+      "url": "https://github.com/rakhmanov/immich-in-lxc/issues/24"
+    },
+    {
+      "label": "github: Error 403",
+      "url": "https://github.com/regaw-leinad/homebridge-winix-purifiers/issues/32"
+    },
+    {
+      "label": "github: 🔴 CRITICAL: Directory Traversal Vulnerability in Thumbnail Endpoint",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/111"
+    },
+    {
+      "label": "github: 🚫 MERGE BLOCKER: PR #117 Targets Wrong Endpoint - Do Not Merge",
+      "url": "https://github.com/tbrandenburg/sofathek/issues/122"
+    },
+    {
+      "label": "github: EACCES symlink error  ../lib/node_modules/nemoclaw/bin/nemoclaw.js to dest /usr/bin/nemoclaw",
+      "url": "https://github.com/thenewguardai/tng-nemoclaw-quickstart/issues/2"
+    },
+    {
+      "label": "github: Fedora KDE: USB Media Remap does not persist when reattaching the keyboard.",
+      "url": "https://github.com/zakstam/zenbook-duo-linux/issues/5"
+    }
+  ]
+}
